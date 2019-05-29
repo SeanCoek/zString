@@ -1,0 +1,7 @@
+digraph g {
+1[label="void <init>()"]
+2[label="void <init>()"]
+0[label="void changeRef(basic.Parent)"]
+0->1[label="specialinvoke $r0.<basic.ChildA: void <init>()>()"]
+1->2[label="specialinvoke r0.<basic.Parent: void <init>()>()"]
+}

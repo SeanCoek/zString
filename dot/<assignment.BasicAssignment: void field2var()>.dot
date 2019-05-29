@@ -1,0 +1,7 @@
+digraph g {
+0[label="void field2var()"]
+1[label="void <init>()"]
+2[label="void <init>()"]
+0->1[label="specialinvoke $r4.<basic.ObjectB: void <init>()>()"]
+0->2[label="specialinvoke $r3.<basic.ObjectA: void <init>()>()"]
+}

@@ -1,0 +1,14 @@
+digraph g {
+2[label="void <init>()"]
+3[label="void <init>()"]
+1[label="void diff(basic.Parent)"]
+0[label="void main(java.lang.String[])"]
+4[label="void m1()"]
+0->1[label="staticinvoke <callgraph.Hierarchy: void diff(basic.Parent)>(r3)"]
+0->1[label="staticinvoke <callgraph.Hierarchy: void diff(basic.Parent)>(r4)"]
+0->1[label="staticinvoke <callgraph.Hierarchy: void diff(basic.Parent)>(r4)"]
+0->2[label="specialinvoke $r2.<basic.ChildA: void <init>()>()"]
+0->3[label="specialinvoke $r1.<basic.Parent: void <init>()>()"]
+1->4[label="virtualinvoke r0.<basic.Parent: void m1()>()"]
+2->3[label="specialinvoke r0.<basic.Parent: void <init>()>()"]
+}
