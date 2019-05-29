@@ -2,6 +2,7 @@ package com.zstring.structs;
 
 import soot.SootMethod;
 import soot.Unit;
+import soot.jimple.InvokeExpr;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -12,14 +13,14 @@ public class Node {
 
     private Set<Node> parents;
     private Set<Node> children;
-    private List<Unit> cs;
+    private List<InvokeExpr> cs;
     private SootMethod m;
 
     public Node(SootMethod m) {
         this.m = m;
         this.parents = new HashSet<Node>();
         this.children = new HashSet<Node>();
-        this.cs = new ArrayList<Unit>();
+        this.cs = new ArrayList<InvokeExpr>();
     }
 
     public Set<Node> getParents() {
@@ -42,7 +43,7 @@ public class Node {
         this.children.add(child);
     }
 
-    public void addCS(Unit cs) {
+    public void addCS(InvokeExpr cs) {
         this.cs.add(cs);
     }
 
@@ -54,7 +55,7 @@ public class Node {
         return this.children.size();
     }
 
-    public List<Unit> getCS() {
+    public List<InvokeExpr> getCS() {
         return this.cs;
     }
 

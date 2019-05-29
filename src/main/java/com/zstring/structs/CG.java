@@ -4,8 +4,9 @@ import com.zstring.utils.SootUtils;
 import soot.SootMethod;
 import soot.Unit;
 import soot.Value;
+import soot.ValueBox;
+import soot.jimple.InvokeExpr;
 import soot.jimple.JimpleBody;
-import soot.jimple.internal.JInvokeStmt;
 import soot.jimple.toolkits.callgraph.CallGraph;
 import soot.jimple.toolkits.callgraph.Sources;
 
@@ -51,9 +52,16 @@ public class CG {
                 Iterator<Unit> uIter = jb.getUnits().iterator();
                 while(uIter.hasNext()) {
                     Unit stmt = uIter.next();
-                    if(stmt instanceof JInvokeStmt) {
-                        n.addCS(stmt);
+                    List<ValueBox> useAndDef = stmt.getUseAndDefBoxes();
+                    Collections.reverse(useAndDef);
+                    Iterator<ValueBox> udIter = useAndDef.iterator();
+                    while(udIter.hasNext()) {
+                        Value v = udIter.next().getValue();
+                        if(v instanceof InvokeExpr) {
+                            n.addCS((InvokeExpr) v);
+                        }
                     }
+
                 }
             }
         }
@@ -73,11 +81,11 @@ public class CG {
     public void travel(Node root) {
         System.out.print(root.getMethod().getSignature());
         System.out.print(" --> ");
-        List<Unit> cs = root.getCS();
+        List<InvokeExpr> cs = root.getCS();
         if(!cs.isEmpty()) {
-            Iterator<Unit> uIter = cs.iterator();
+            Iterator<InvokeExpr> uIter = cs.iterator();
             while(uIter.hasNext()) {
-                Unit csite = uIter.next();
+                InvokeExpr csite = uIter.next();
                 Object[] resolution = SootUtils.resolveInvokeUnit(csite);
                 if(resolution != null) {
                     SootMethod callee = (SootMethod) resolution[1];
@@ -101,7 +109,7 @@ public class CG {
         BufferedOutputStream buff = null;
         String dotName = root.getMethod().getSignature() + ".dot";
         Map<Node, Integer> nodeMap = new HashMap<Node, Integer>();
-        Map<String, Set<Unit>> transition = new HashMap<String, Set<Unit>>();
+        Map<String, Set<InvokeExpr>> transition = new HashMap<String, Set<InvokeExpr>>();
         Stack<Node> stack = new Stack<Node>();
         stack.push(root);
         int nodeNum = 0;
@@ -111,11 +119,11 @@ public class CG {
             if(!nodeMap.containsKey(n)){
                 nodeMap.put(n, nodeNum++);
             }
-            List<Unit> cs = n.getCS();
+            List<InvokeExpr> cs = n.getCS();
             Collections.reverse(cs);
             Iterator cIter = cs.iterator();
             while(cIter.hasNext()) {
-                Unit csite = (Unit) cIter.next();
+                InvokeExpr csite = (InvokeExpr) cIter.next();
                 SootMethod m = (SootMethod) SootUtils.resolveInvokeUnit(csite)[1];
                 if(method2Node.containsKey(m)) {
                     Node mNode = method2Node.get(m);
@@ -126,9 +134,9 @@ public class CG {
                     int srcNum = nodeMap.get(n);
                     int dstNum = nodeMap.get(mNode);
                     String key = srcNum + ":" + dstNum;
-                    Set<Unit> csites = transition.get(key);
+                    Set<InvokeExpr> csites = transition.get(key);
                     if(csites == null) {
-                        csites = new HashSet<Unit>();
+                        csites = new HashSet<InvokeExpr>();
                     }
                     csites.add(csite);
                     transition.put(key, csites);
@@ -148,14 +156,14 @@ public class CG {
                 buff.write((nodeEntry.getValue() + "[label=\"" + nodeEntry.getKey().getMethod().getSubSignature() + "\"]\n").getBytes());
             }
             // drawing edges
-            Iterator<Map.Entry<String, Set<Unit>>> transIter = transition.entrySet().iterator();
+            Iterator<Map.Entry<String, Set<InvokeExpr>>> transIter = transition.entrySet().iterator();
             while(transIter.hasNext()) {
-                Map.Entry<String, Set<Unit>> trans = transIter.next();
+                Map.Entry<String, Set<InvokeExpr>> trans = transIter.next();
                 String key = trans.getKey();
                 String[] keySplit = key.split(":");
                 String preNode = String.valueOf(keySplit[0]);
                 String sucNode = String.valueOf(keySplit[1]);
-                Iterator<Unit> uIter= trans.getValue().iterator();
+                Iterator<InvokeExpr> uIter= trans.getValue().iterator();
                 while(uIter.hasNext()) {
                     String label = uIter.next().toString();
                     buff.write((preNode + "->" + sucNode + "[label=\"" + label + "\"]\n").getBytes());
