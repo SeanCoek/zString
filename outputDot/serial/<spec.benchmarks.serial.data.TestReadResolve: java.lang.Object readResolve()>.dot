@@ -1,0 +1,3 @@
+digraph g {
+0[label="java.lang.Object readResolve()"]
+}

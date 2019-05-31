@@ -1,0 +1,13 @@
+digraph g {
+1[label="int checkSum(byte[])"]
+2[label="boolean check(byte[],byte[])"]
+5[label="byte[] getTestData(java.lang.String)"]
+4[label="byte[] encrypt(byte[],java.lang.String)"]
+0[label="void runMultiEncryptDecrypt(java.lang.String,java.lang.String)"]
+3[label="byte[] decrypt(byte[],java.lang.String)"]
+0->1[label="staticinvoke <spec.benchmarks.crypto.Util: int checkSum(byte[])>(r6)"]
+0->2[label="staticinvoke <spec.benchmarks.crypto.Util: boolean check(byte[],byte[])>(r4, r6)"]
+0->3[label="virtualinvoke r0.<spec.benchmarks.crypto.rsa.Main: byte[] decrypt(byte[],java.lang.String)>(r5, r1)"]
+0->4[label="virtualinvoke r0.<spec.benchmarks.crypto.rsa.Main: byte[] encrypt(byte[],java.lang.String)>(r4, r1)"]
+0->5[label="staticinvoke <spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>(r2)"]
+}

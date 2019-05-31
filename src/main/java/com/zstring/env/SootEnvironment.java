@@ -1,5 +1,6 @@
 package com.zstring.env;
 import com.zstring.structs.CG;
+import com.zstring.utils.FileUtil;
 import soot.*;
 import soot.jimple.JimpleBody;
 import soot.jimple.Stmt;
@@ -22,7 +23,7 @@ public class SootEnvironment {
     public static CG cg;
 
 
-    public static void init(String cp, String pp, String appclass) {
+    public static void init(String cp, String pp) {
         Options.v().set_keep_line_number(true);
         Options.v().set_whole_program(true);
         Options.v().set_allow_phantom_refs(true);
@@ -32,8 +33,27 @@ public class SootEnvironment {
         processDir.add(pp);
         Options.v().set_process_dir(processDir);
 
-        load(appclass);
+//        load(appclass);
+        loadClasses(pp, "class");
         initialStruct();
+    }
+
+    public static void loadClasses(String dir, String extension) {
+        allClasses = new HashSet<SootClass>();
+        if(dir.endsWith(File.separator)) {
+            dir = dir.substring(0, dir.length()-1);
+        }
+        if(extension.startsWith(".")) {
+            extension = extension.substring(1);
+        }
+        List<String> filelist = FileUtil.getFiles(dir, extension);
+        for(String filepath : filelist) {
+            String className = filepath.substring(dir.length() + 1, filepath.indexOf(extension) - 1).replace(File.separator, ".");
+            SootClass c = Scene.v().loadClassAndSupport(className);
+            c.setApplicationClass();
+            allClasses.add(c);
+        }
+        Scene.v().loadNecessaryClasses();
     }
 
     public static void load(String appclass) {

@@ -1,13 +1,7 @@
 package com.zstring.utils;
 
 import soot.SootMethod;
-import soot.Unit;
-import soot.Value;
-import soot.ValueBox;
 import soot.jimple.InvokeExpr;
-import soot.jimple.internal.JInvokeStmt;
-
-import java.util.Iterator;
 
 public class SootUtils {
 

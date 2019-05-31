@@ -1,0 +1,15 @@
+digraph g {
+0[label="void main(java.lang.String[])"]
+2[label="java.lang.String m1(java.lang.String)"]
+3[label="void <init>(callgraph.ChainInvoke)"]
+5[label="void <init>()"]
+4[label="void <init>(callgraph.ChainInvoke)"]
+1[label="java.lang.String m1(java.lang.String)"]
+0->1[label="virtualinvoke r2.<callgraph.ChainInvoke$InnerA: java.lang.String m1(java.lang.String)>($r10)"]
+0->1[label="virtualinvoke r2.<callgraph.ChainInvoke$InnerA: java.lang.String m1(java.lang.String)>($r12)"]
+0->2[label="virtualinvoke r3.<callgraph.ChainInvoke$InnerB: java.lang.String m1(java.lang.String)>('Hello, World!')"]
+0->2[label="virtualinvoke r3.<callgraph.ChainInvoke$InnerB: java.lang.String m1(java.lang.String)>($r11)"]
+0->3[label="specialinvoke $r7.<callgraph.ChainInvoke$InnerB: void <init>(callgraph.ChainInvoke)>(r1)"]
+0->4[label="specialinvoke $r5.<callgraph.ChainInvoke$InnerA: void <init>(callgraph.ChainInvoke)>(r1)"]
+0->5[label="specialinvoke $r4.<callgraph.ChainInvoke: void <init>()>()"]
+}

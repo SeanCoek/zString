@@ -5,9 +5,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import soot.*;
-import soot.jimple.toolkits.callgraph.CallGraph;
-import soot.jimple.toolkits.callgraph.Sources;
-import soot.jimple.toolkits.callgraph.Targets;
 
 import java.util.Map;
 
@@ -19,10 +16,10 @@ public class PointerBenchTest {
     @Before
     public void beforeTest() {
         analyzer = new PointsToAnalyzer();
-        String cp = "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar";
-        String pp = "/home/sean/bench_compile/";
-        String appclass = pp + "appclass.txt";
-        analyzer.analyze(cp, pp, appclass);
+        PointsToAnalyzer.cp = "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar";
+        PointsToAnalyzer.pp = "/home/sean/specjvm_compile/";
+        CG.outputDir = "/home/sean/IdeaProjects/zString/outputDot/serial/";
+        analyzer.analyze();
         pta = analyzer.pta;
         cg = SootEnvironment.cg;
     }
@@ -33,16 +30,6 @@ public class PointerBenchTest {
         String methodSig = "<callgraph.Hierarchy: void main(java.lang.String[])>";
         String sig = "<callgraph.Hierarchy: void diff(basic.Parent)>";
         Map<Integer, Value> line2valueMap = SootEnvironment.locals.get(className).get(sig);
-//        Iterator iter = line2valueMap.entrySet().iterator();
-//        while(iter.hasNext()) {
-//            Map.Entry<Integer, Value> entry = (Map.Entry<Integer, Value>) iter.next();
-//            int line = entry.getKey();
-//            Local v = (Local)entry.getValue();
-//            System.out.println("" + line + ":" + pta.reachingObjects(v));
-//        }
-
-
-
 
         // a1:10, a2:11, a3:14, a4:15
         PointsToSet a1 = pta.reachingObjects((Local) line2valueMap.get(10));
@@ -84,21 +71,21 @@ public class PointerBenchTest {
 
     @Test
     public void testCG() {
-        CallGraph cg = Scene.v().getCallGraph();
-        SootMethod m = Scene.v().getMethod("<basic.Parent: void m1()>");
-        SootMethod mc = Scene.v().getMethod("<basic.ChildA: void m1()>");
-        SootMethod diff = Scene.v().getMethod("<callgraph.Hierarchy: void diff(basic.Parent)>");
-        Sources s = new Sources(cg.edgesInto(m));
-        Sources sc = new Sources(cg.edgesInto(mc));
-        Sources in = new Sources(cg.edgesInto(diff));
-        Targets out = new Targets(cg.edgesOutOf(diff));
-        while(in.hasNext()) {
-            SootMethod me = (SootMethod) in.next();
-            String n = me.getSignature();
-        }
-        while(out.hasNext()) {
-            SootMethod me = (SootMethod) out.next();
-            String n = me.getSignature();
-        }
+//        CallGraph cg = Scene.v().getCallGraph();
+//        SootMethod m = Scene.v().getMethod("<basic.Parent: void m1()>");
+//        SootMethod mc = Scene.v().getMethod("<basic.ChildA: void m1()>");
+//        SootMethod diff = Scene.v().getMethod("<callgraph.Hierarchy: void diff(basic.Parent)>");
+//        Sources s = new Sources(cg.edgesInto(m));
+//        Sources sc = new Sources(cg.edgesInto(mc));
+//        Sources in = new Sources(cg.edgesInto(diff));
+//        Targets out = new Targets(cg.edgesOutOf(diff));
+//        while(in.hasNext()) {
+//            SootMethod me = (SootMethod) in.next();
+//            String n = me.getSignature();
+//        }
+//        while(out.hasNext()) {
+//            SootMethod me = (SootMethod) out.next();
+//            String n = me.getSignature();
+//        }
     }
 }

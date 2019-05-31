@@ -1,0 +1,5 @@
+digraph g {
+0[label="double num_flops(int)"]
+1[label="int log2(int)"]
+0->1[label="virtualinvoke r0.<spec.benchmarks.scimark.fft.FFT: int log2(int)>(i0)"]
+}

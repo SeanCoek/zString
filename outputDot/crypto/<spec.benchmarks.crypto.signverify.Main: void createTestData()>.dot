@@ -1,0 +1,7 @@
+digraph g {
+0[label="void createTestData()"]
+1[label="void createRandomTestData(java.lang.String,int)"]
+0->1[label="staticinvoke <spec.benchmarks.crypto.Util: void createRandomTestData(java.lang.String,int)>($r0, 1024)"]
+0->1[label="staticinvoke <spec.benchmarks.crypto.Util: void createRandomTestData(java.lang.String,int)>($r1, 16384)"]
+0->1[label="staticinvoke <spec.benchmarks.crypto.Util: void createRandomTestData(java.lang.String,int)>($r2, 1048576)"]
+}

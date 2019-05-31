@@ -1,8 +1,8 @@
 digraph g {
+1[label="void setA(basic.ObjectA)"]
+3[label="void <init>()"]
 0[label="void field2param()"]
 2[label="void <init>()"]
-3[label="void <init>()"]
-1[label="void setA(basic.ObjectA)"]
 0->1[label="virtualinvoke r3.<basic.ObjectB: void setA(basic.ObjectA)>($r7)"]
 0->2[label="specialinvoke $r6.<basic.ObjectB: void <init>()>()"]
 0->2[label="specialinvoke $r5.<basic.ObjectB: void <init>()>()"]

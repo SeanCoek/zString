@@ -1,8 +1,8 @@
 digraph g {
+1[label="void <init>()"]
+3[label="void <init>()"]
 0[label="void field2field()"]
 2[label="void <init>()"]
-3[label="void <init>()"]
-1[label="void <init>()"]
 0->1[label="specialinvoke $r8.<basic.ObjectC: void <init>()>()"]
 0->1[label="specialinvoke $r7.<basic.ObjectC: void <init>()>()"]
 0->2[label="specialinvoke $r6.<basic.ObjectB: void <init>()>()"]

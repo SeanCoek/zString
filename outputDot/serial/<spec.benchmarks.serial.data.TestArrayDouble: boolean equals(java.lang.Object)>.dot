@@ -1,0 +1,5 @@
+digraph g {
+1[label="boolean equals(java.lang.Object)"]
+0[label="boolean equals(java.lang.Object)"]
+0->1[label="virtualinvoke $r13.<spec.benchmarks.serial.data.TestDomainObject: boolean equals(java.lang.Object)>($r12)"]
+}

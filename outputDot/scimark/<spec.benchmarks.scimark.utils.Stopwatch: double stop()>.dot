@@ -1,0 +1,5 @@
+digraph g {
+1[label="double seconds()"]
+0[label="double stop()"]
+0->1[label="staticinvoke <spec.benchmarks.scimark.utils.Stopwatch: double seconds()>()"]
+}

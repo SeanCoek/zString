@@ -1,0 +1,5 @@
+digraph g {
+1[label="byte[] fillBuffer(java.lang.String)"]
+0[label="void <init>(java.lang.String)"]
+0->1[label="staticinvoke <spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>(r1)"]
+}

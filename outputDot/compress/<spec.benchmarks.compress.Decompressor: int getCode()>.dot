@@ -1,0 +1,8 @@
+digraph g {
+1[label="int readBytes(byte[],int)"]
+0[label="int getCode()"]
+2[label="int getMaxCode()"]
+0->1[label="virtualinvoke $r2.<spec.benchmarks.compress.InputBuffer: int readBytes(byte[],int)>($r1, $i1)"]
+0->2[label="virtualinvoke r0.<spec.benchmarks.compress.Decompressor: int getMaxCode()>()"]
+0->2[label="virtualinvoke r0.<spec.benchmarks.compress.Decompressor: int getMaxCode()>()"]
+}

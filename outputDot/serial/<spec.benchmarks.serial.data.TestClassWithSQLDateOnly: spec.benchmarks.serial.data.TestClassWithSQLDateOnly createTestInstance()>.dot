@@ -1,0 +1,5 @@
+digraph g {
+0[label="spec.benchmarks.serial.data.TestClassWithSQLDateOnly createTestInstance()"]
+1[label="void <init>()"]
+0->1[label="specialinvoke $r1.<spec.benchmarks.serial.data.TestClassWithSQLDateOnly: void <init>()>()"]
+}

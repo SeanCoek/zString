@@ -1,0 +1,7 @@
+digraph g {
+1[label="void printResult(java.io.PrintStream,java.util.BitSet)"]
+2[label="java.util.BitSet createBitSet()"]
+0[label="void serialize()"]
+0->1[label="staticinvoke <spec.benchmarks.serial.Utils: void printResult(java.io.PrintStream,java.util.BitSet)>($r12, r1)"]
+0->2[label="staticinvoke <spec.benchmarks.serial.Utils: java.util.BitSet createBitSet()>()"]
+}

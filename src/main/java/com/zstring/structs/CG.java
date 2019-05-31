@@ -16,6 +16,9 @@ import java.io.FileOutputStream;
 import java.util.*;
 
 public class CG {
+
+    public static String outputDir = null;
+
     private Set<Node> starts;
     private Map<SootMethod, Node> method2Node;
     private Set<Node> nodes;
@@ -72,7 +75,7 @@ public class CG {
             if(n.getInDeg() == 0) {
                 starts.add(n);
 //                travel(n);
-                draw(n);
+                draw(n, outputDir);
             }
         }
 
@@ -104,10 +107,14 @@ public class CG {
     }
 
 
-    public void draw(Node root) {
+    public void draw(Node root, String outDir) {
         FileOutputStream outStr = null;
         BufferedOutputStream buff = null;
         String dotName = root.getMethod().getSignature() + ".dot";
+        if(dotName.length() > 255) {
+            dotName = root.getMethod().getSignature().substring(0, 200);
+            dotName = dotName + ".dot";
+        }
         Map<Node, Integer> nodeMap = new HashMap<Node, Integer>();
         Map<String, Set<InvokeExpr>> transition = new HashMap<String, Set<InvokeExpr>>();
         Stack<Node> stack = new Stack<Node>();
@@ -138,6 +145,9 @@ public class CG {
                     if(csites == null) {
                         csites = new HashSet<InvokeExpr>();
                     }
+                    if(csites.contains(csite)) {
+                        continue;
+                    }
                     csites.add(csite);
                     transition.put(key, csites);
                     stack.push(mNode);
@@ -146,7 +156,7 @@ public class CG {
         }
 
         try{
-            outStr = new FileOutputStream(new File("/home/sean/IdeaProjects/zString/dot/" + dotName));
+            outStr = new FileOutputStream(new File(outDir + dotName));
             buff = new BufferedOutputStream(outStr);
             buff.write("digraph g {\n".getBytes());
             // drawing nodes
@@ -166,7 +176,7 @@ public class CG {
                 Iterator<InvokeExpr> uIter= trans.getValue().iterator();
                 while(uIter.hasNext()) {
                     String label = uIter.next().toString();
-                    buff.write((preNode + "->" + sucNode + "[label=\"" + label + "\"]\n").getBytes());
+                    buff.write((preNode + "->" + sucNode + "[label=\"" + label.replace("\"", "'") + "\"]\n").getBytes());
                 }
             }
             buff.write("}".getBytes());

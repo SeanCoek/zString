@@ -1,0 +1,3 @@
+digraph g {
+0[label="void <init>(spec.benchmarks.compress.InputBuffer,spec.benchmarks.compress.OutputBuffer)"]
+}

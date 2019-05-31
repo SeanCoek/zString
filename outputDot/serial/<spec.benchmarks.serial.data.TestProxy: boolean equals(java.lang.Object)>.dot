@@ -1,0 +1,6 @@
+digraph g {
+0[label="boolean equals(java.lang.Object)"]
+1[label="int doSomething()"]
+0->1[label="interfaceinvoke $r4.<spec.benchmarks.serial.data.InterfaceForProxy: int doSomething()>()"]
+0->1[label="interfaceinvoke $r2.<spec.benchmarks.serial.data.InterfaceForProxy: int doSomething()>()"]
+}

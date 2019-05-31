@@ -1,0 +1,11 @@
+digraph g {
+3[label="void printResult(java.io.PrintStream,java.util.BitSet)"]
+2[label="java.util.BitSet createBitSet()"]
+0[label="void harnessMain()"]
+1[label="void serialize()"]
+0->1[label="virtualinvoke r0.<spec.benchmarks.serial.Main: void serialize()>()"]
+0->1[label="virtualinvoke r0.<spec.benchmarks.serial.Main: void serialize()>()"]
+0->1[label="virtualinvoke r0.<spec.benchmarks.serial.Main: void serialize()>()"]
+1->2[label="staticinvoke <spec.benchmarks.serial.Utils: java.util.BitSet createBitSet()>()"]
+1->3[label="staticinvoke <spec.benchmarks.serial.Utils: void printResult(java.io.PrintStream,java.util.BitSet)>($r12, r1)"]
+}

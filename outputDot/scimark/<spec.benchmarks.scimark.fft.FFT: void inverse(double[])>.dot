@@ -1,0 +1,9 @@
+digraph g {
+3[label="int log2(int)"]
+0[label="void inverse(double[])"]
+2[label="void bitreverse(double[])"]
+1[label="void transform_internal(double[],int)"]
+0->1[label="virtualinvoke r0.<spec.benchmarks.scimark.fft.FFT: void transform_internal(double[],int)>(r1, 1)"]
+1->2[label="virtualinvoke r0.<spec.benchmarks.scimark.fft.FFT: void bitreverse(double[])>(r1)"]
+1->3[label="virtualinvoke r0.<spec.benchmarks.scimark.fft.FFT: int log2(int)>(i1)"]
+}

@@ -1,0 +1,5 @@
+digraph g {
+1[label="void <init>(int)"]
+0[label="spec.benchmarks.serial.data.TestExternalizable createTestInstance()"]
+0->1[label="specialinvoke $r1.<spec.benchmarks.serial.data.TestExternalizable: void <init>(int)>(i0)"]
+}

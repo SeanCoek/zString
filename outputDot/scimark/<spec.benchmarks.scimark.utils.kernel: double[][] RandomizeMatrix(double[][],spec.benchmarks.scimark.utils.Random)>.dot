@@ -1,0 +1,5 @@
+digraph g {
+1[label="double nextDouble()"]
+0[label="double[][] RandomizeMatrix(double[][],spec.benchmarks.scimark.utils.Random)"]
+0->1[label="virtualinvoke r1.<spec.benchmarks.scimark.utils.Random: double nextDouble()>()"]
+}

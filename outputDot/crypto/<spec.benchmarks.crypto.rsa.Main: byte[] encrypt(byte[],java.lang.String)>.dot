@@ -1,0 +1,3 @@
+digraph g {
+0[label="byte[] encrypt(byte[],java.lang.String)"]
+}

@@ -1,0 +1,7 @@
+digraph g {
+2[label="void <init>(int)"]
+1[label="void <init>(int,java.lang.Object)"]
+0[label="spec.benchmarks.serial.data.InterfaceForProxy createMyProxy(int,int)"]
+0->1[label="specialinvoke $r10.<spec.benchmarks.serial.data.Handler: void <init>(int,java.lang.Object)>(i1, r0)"]
+0->2[label="specialinvoke $r3.<spec.benchmarks.serial.data.ProxiedClass: void <init>(int)>(i0)"]
+}

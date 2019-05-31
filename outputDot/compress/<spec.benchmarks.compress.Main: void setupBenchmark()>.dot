@@ -1,0 +1,11 @@
+digraph g {
+1[label="void prepareBuffers()"]
+4[label="byte[] fillBuffer(java.lang.String)"]
+0[label="void setupBenchmark()"]
+2[label="void <init>(java.lang.String)"]
+3[label="void <init>()"]
+0->1[label="staticinvoke <spec.benchmarks.compress.Harness: void prepareBuffers()>()"]
+1->2[label="specialinvoke $r4.<spec.benchmarks.compress.Harness$Source: void <init>(java.lang.String)>($r13)"]
+1->3[label="specialinvoke $r0.<spec.benchmarks.compress.Compress: void <init>()>()"]
+2->4[label="staticinvoke <spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>(r1)"]
+}

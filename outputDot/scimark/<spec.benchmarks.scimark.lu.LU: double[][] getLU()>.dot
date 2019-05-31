@@ -1,0 +1,5 @@
+digraph g {
+1[label="double[][] new_copy(double[][])"]
+0[label="double[][] getLU()"]
+0->1[label="staticinvoke <spec.benchmarks.scimark.lu.LU: double[][] new_copy(double[][])>($r1)"]
+}
