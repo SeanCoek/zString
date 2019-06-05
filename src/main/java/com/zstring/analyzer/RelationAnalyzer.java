@@ -65,8 +65,7 @@ public class RelationAnalyzer {
                 }
             }
             allRelations.put(m.getSignature(), relationSet);
-            drawRelation(m.getSignature(), relationSet);
-            System.out.println("here");
+//            drawRelation(m.getSignature(), relationSet);
         }
     }
 
