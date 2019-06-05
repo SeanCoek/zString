@@ -29,6 +29,8 @@ public class CG {
         method2Node = new HashMap<SootMethod, Node>();
         nodes = new HashSet<Node>();
 
+        // times start
+        long t1 = new Date().getTime();
         Iterator<SootMethod> mIter = allMethods.iterator();
         while(mIter.hasNext()) {
             SootMethod m = mIter.next();
@@ -44,6 +46,9 @@ public class CG {
             Sources srcMethods = new Sources(cg.edgesInto(m));
             while(srcMethods.hasNext()) {
                 SootMethod srcM = (SootMethod) srcMethods.next();
+                if(!method2Node.containsKey(srcM)) {
+                    continue;
+                }
                 Node srcN = method2Node.get(srcM);
                 n.addParent(srcN);
                 srcN.addChild(n);
@@ -68,17 +73,59 @@ public class CG {
                 }
             }
         }
+        // times end
+        long t2 = new Date().getTime();
+
+        System.out.println("CallGraph Generated Times: " + (t2-t1) + "s");
 
         Iterator<Node> nIter = nodes.iterator();
+        int total_callsite = 0;
+        t1 = new Date().getTime();
         while(nIter.hasNext()) {
             Node n = nIter.next();
             if(n.getInDeg() == 0) {
                 starts.add(n);
 //                travel(n);
-                draw(n, outputDir);
+//                draw(n, outputDir);
+            }
+            int single_callsite = calc(n);
+//            System.out.println(n.getMethod().getSignature() + "-> " + single_callsite + " callsites.");
+            total_callsite += single_callsite;
+        }
+        t2 = new Date().getTime();
+
+        System.out.println("Total Callsite: " + total_callsite);
+        System.out.println("Calculate Times: " + (t2-t1) + "s");
+
+    }
+
+    public int calc(Node root) {
+        int total_callsite = 0;
+        Stack<Node> nodeStack = new Stack<Node>();
+        Set<InvokeExpr> visitedCS = new HashSet<InvokeExpr>();
+        nodeStack.push(root);
+        while(!nodeStack.isEmpty()) {
+            Node node2search = nodeStack.pop();
+            List<InvokeExpr> cs = node2search.getCS();
+            if(cs.isEmpty()) {
+                continue;
+            }
+            total_callsite += cs.size();
+            Iterator<InvokeExpr> cIter = cs.iterator();
+            while(cIter.hasNext()) {
+                InvokeExpr csite = cIter.next();
+                if(visitedCS.contains(csite)) {
+                    continue;
+                }
+                SootMethod m = (SootMethod) SootUtils.resolveInvokeUnit(csite)[1];
+                if(method2Node.containsKey(m)) {
+                    Node nextNode = method2Node.get(m);
+                    nodeStack.push(nextNode);
+                }
+                visitedCS.add(csite);
             }
         }
-
+        return total_callsite;
     }
 
     public void travel(Node root) {

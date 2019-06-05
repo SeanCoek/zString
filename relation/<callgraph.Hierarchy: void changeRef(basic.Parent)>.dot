@@ -1,0 +1,10 @@
+digraph g {
+0[label="r2"]
+1[label="$r0"]
+0->1[label=""]
+2[label="r1"]
+3[label="@parameter0: basic.Parent"]
+2->3[label=""]
+4[label="new basic.ChildA"]
+1->4[label=""]
+}

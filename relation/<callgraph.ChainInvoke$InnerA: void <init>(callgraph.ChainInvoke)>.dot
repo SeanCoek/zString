@@ -1,0 +1,9 @@
+digraph g {
+0[label="r1"]
+1[label="@parameter0: callgraph.ChainInvoke"]
+0->1[label=""]
+2[label="r0"]
+2->0[label="this$0"]
+3[label="@this: callgraph.ChainInvoke$InnerA"]
+2->3[label=""]
+}

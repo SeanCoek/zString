@@ -1,0 +1,14 @@
+digraph g {
+0[label="r1"]
+1[label="$r3"]
+0->1[label="f3"]
+2[label="r0"]
+3[label="@this: assignment.BasicAssignment"]
+2->3[label=""]
+4[label="$r2"]
+0->4[label=""]
+5[label="virtualinvoke r1.<basic.ObjectB: basic.ObjectA getA()>()"]
+1->5[label=""]
+6[label="new basic.ObjectB"]
+4->6[label=""]
+}

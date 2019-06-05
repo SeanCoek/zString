@@ -19,11 +19,11 @@ public class PointsToAnalyzer {
 
     public static void main(String[] args) {
         // we can pass classpath(cp) and process path(pp) through parameter "args"
-        String cp = "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:" + "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar";
+//        String cp = "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:" + "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar";
+        String cp = "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar";
         String pp = "/home/sean/bench_compile/";
         PointsToAnalyzer.cp = cp;
         PointsToAnalyzer.pp = pp;
-//        String appclass = pp + "appclass.txt";
         new PointsToAnalyzer().analyze(cp, pp);
     }
 

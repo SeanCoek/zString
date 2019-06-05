@@ -1,0 +1,5 @@
+digraph g {
+0[label="r0"]
+1[label="@this: basic.ObjectA"]
+0->1[label=""]
+}

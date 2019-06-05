@@ -24,6 +24,7 @@ public class SootEnvironment {
 
 
     public static void init(String cp, String pp) {
+//        pp = "/home/sean/doop-benchmarks/dacapo-2006/antlr.jar";
         Options.v().set_keep_line_number(true);
         Options.v().set_whole_program(true);
         Options.v().set_allow_phantom_refs(true);
@@ -34,7 +35,10 @@ public class SootEnvironment {
         Options.v().set_process_dir(processDir);
 
 //        load(appclass);
-        loadClasses(pp, "class");
+//        loadClasses(pp, "class");
+        Scene.v().loadNecessaryClasses();
+        allClasses = new HashSet<SootClass>();
+        allClasses.addAll(Scene.v().getApplicationClasses());
         initialStruct();
     }
 

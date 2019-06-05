@@ -1,7 +1,6 @@
 package com.zstring.structs;
 
 import soot.SootMethod;
-import soot.Unit;
 import soot.jimple.InvokeExpr;
 
 import java.util.ArrayList;
