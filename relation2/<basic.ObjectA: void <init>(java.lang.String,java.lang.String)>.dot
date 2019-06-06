@@ -1,0 +1,13 @@
+digraph g {
+0[label="@parameter1: java.lang.String"]
+1[label="r2"]
+0->1[label=""]
+2[label="@parameter0: java.lang.String"]
+3[label="r1"]
+2->3[label=""]
+4[label="@this: basic.ObjectA"]
+5[label="r0"]
+4->5[label=""]
+5->3[label="field: f1"]
+5->1[label="field: f2"]
+}

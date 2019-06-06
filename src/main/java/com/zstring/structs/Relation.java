@@ -1,23 +1,25 @@
 package com.zstring.structs;
 
 import soot.SootField;
-import soot.SootMethod;
+import soot.Type;
 import soot.Value;
 
 public class Relation {
     public static String TYPE_FIELD = "field";
-    public static String TYPE_RETURN = "return";
+    public static String TYPE_VAR2VAR = "v2v";
+    public static String TYPE_CLASS2VAR = "c2v";
     public static int count = 0;
 
+    public Type type;
     public Value left;
     public Value right;
     public String relationType;
     public SootField field;
-    public SootMethod method;
 
     public Relation(Value left, Value right) {
         this.left = left;
         this.right = right;
+        this.relationType = TYPE_VAR2VAR;
         count++;
     }
 
@@ -29,11 +31,11 @@ public class Relation {
         count++;
     }
 
-    public Relation(Value left, Value right, SootMethod method) {
+    public Relation(Value left, Value right, Type type) {
         this.left = left;
         this.right = right;
-        this.relationType = TYPE_RETURN;
-        this.method = method;
+        this.relationType = TYPE_CLASS2VAR;
+        this.type = type;
         count++;
     }
 
@@ -45,9 +47,9 @@ public class Relation {
         if(o instanceof Relation) {
             Relation r = (Relation) o;
             if(r.left.equals(this.left) && r.right.equals(this.right)) {
-                if(r.relationType == null && this.relationType == null) {
-                    return true;
-                } else if(r.relationType != null) {
+                if(r.relationType.equals(TYPE_FIELD) && this.relationType.equals(TYPE_FIELD)) {
+                    return r.field.equals(this.field);
+                } else {
                     return r.relationType.equals(this.relationType);
                 }
             }

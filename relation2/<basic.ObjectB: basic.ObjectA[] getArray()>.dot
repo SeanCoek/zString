@@ -1,0 +1,8 @@
+digraph g {
+0[label="r0.<basic.ObjectB: basic.ObjectA[] a_arr>"]
+1[label="$r1"]
+0->1[label=""]
+2[label="@this: basic.ObjectB"]
+3[label="r0"]
+2->3[label=""]
+}

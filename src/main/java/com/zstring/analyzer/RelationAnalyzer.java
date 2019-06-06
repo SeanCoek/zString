@@ -2,16 +2,10 @@ package com.zstring.analyzer;
 
 import com.zstring.env.SootEnvironment;
 import com.zstring.structs.Relation;
-import soot.SootField;
-import soot.SootMethod;
-import soot.Unit;
-import soot.Value;
+import soot.*;
 import soot.jimple.FieldRef;
 import soot.jimple.JimpleBody;
-import soot.jimple.internal.JAssignStmt;
-import soot.jimple.internal.JIdentityStmt;
-import soot.jimple.internal.JInstanceFieldRef;
-import soot.jimple.internal.JimpleLocal;
+import soot.jimple.internal.*;
 
 import java.io.*;
 import java.util.*;
@@ -47,7 +41,7 @@ public class RelationAnalyzer {
                 if(u instanceof JIdentityStmt) {
                     Value left = ((JIdentityStmt) u).getLeftOp();
                     Value right = ((JIdentityStmt) u).getRightOp();
-                    relationSet.add(new Relation(left, right));
+                    relationSet.add(new Relation(right, left));
                 } else if(u instanceof JAssignStmt) {
                     Value left = ((JAssignStmt) u).getLeftOp();
                     Value right = ((JAssignStmt) u).getRightOp();
@@ -60,12 +54,16 @@ public class RelationAnalyzer {
                         left = ((JInstanceFieldRef) left).getBase();
                         relationSet.add(new Relation(left, right, field));
                     } else if(left instanceof JimpleLocal) {
-                        relationSet.add(new Relation(left, right));
+                        relationSet.add(new Relation(right, left));
+                    }
+                    if(right instanceof JNewExpr || right instanceof JNewArrayExpr) {
+                        Type t = right.getType();
+                        relationSet.add(new Relation(right, left, t));
                     }
                 }
             }
             allRelations.put(m.getSignature(), relationSet);
-//            drawRelation(m.getSignature(), relationSet);
+            drawRelation(m.getSignature(), relationSet);
         }
     }
 
@@ -79,14 +77,28 @@ public class RelationAnalyzer {
         }
         String dotName = methodSig + ".dot";
         try {
-            outStr = new FileOutputStream(new File("/home/sean/IdeaProjects/zString/relation/" + dotName));
+            outStr = new FileOutputStream(new File("/home/sean/IdeaProjects/zString/relation2/" + dotName));
             buff = new BufferedOutputStream(outStr);
             buff.write("digraph g {\n".getBytes());
             Map<Value, Integer> nodeMap = new HashMap<Value, Integer>();
+            Map<Type, Integer> typeNodeMap = new HashMap<Type, Integer>();
 
             Iterator<Relation> rIter = relationSet.iterator();
             while(rIter.hasNext()) {
                 Relation r = rIter.next();
+                if(r.relationType.equals(Relation.TYPE_CLASS2VAR)) {
+                    if(!typeNodeMap.containsKey(r.type)) {
+                        typeNodeMap.put(r.type, nodeNum++);
+                        buff.write((typeNodeMap.get(r.type) + "[label=\"" + r.type.toString().replace("\"", "'") + "\"]\n").getBytes());
+                    }
+                    if(!nodeMap.containsKey(r.right)) {
+                        nodeMap.put(r.right, nodeNum++);
+                        buff.write((nodeMap.get(r.right) + "[label=\"" + r.right.toString().replace("\"", "'") + "\"]\n").getBytes());
+                    }
+                    String label = "type";
+                    buff.write((typeNodeMap.get(r.type) + "->" + nodeMap.get(r.right) + "[label=\"" + label.replace("\"", "'") + "\"]\n").getBytes());
+                    continue;
+                }
                 if(!nodeMap.containsKey(r.left)) {
                     nodeMap.put(r.left, nodeNum++);
                     buff.write((nodeMap.get(r.left) + "[label=\"" + r.left.toString().replace("\"", "'") + "\"]\n").getBytes());
@@ -96,12 +108,10 @@ public class RelationAnalyzer {
                     buff.write((nodeMap.get(r.right) + "[label=\"" + r.right.toString().replace("\"", "'") + "\"]\n").getBytes());
                 }
                 String label = r.relationType;
-                if(label == null) {
+                if(label.equals(Relation.TYPE_VAR2VAR)) {
                     label = "";
                 } else if(label.equals(Relation.TYPE_FIELD)) {
-                    label = r.field.getName();
-                } else {
-                    label = r.method.getSubSignature();
+                    label = "field: " + r.field.getName();
                 }
                 buff.write((nodeMap.get(r.left) + "->" + nodeMap.get(r.right) + "[label=\"" + label.replace("\"", "'") + "\"]\n").getBytes());
             }

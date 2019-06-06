@@ -1,8 +1,8 @@
 digraph g {
-0[label="$r1"]
-1[label="<java.lang.System: java.io.PrintStream out>"]
+0[label="r0"]
+1[label="@this: basic.Parent"]
 0->1[label=""]
-2[label="r0"]
-3[label="@this: basic.Parent"]
+2[label="$r1"]
+3[label="<java.lang.System: java.io.PrintStream out>"]
 2->3[label=""]
 }

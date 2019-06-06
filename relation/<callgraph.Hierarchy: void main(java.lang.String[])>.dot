@@ -8,8 +8,8 @@ digraph g {
 4[label="r0"]
 5[label="@parameter0: java.lang.String[]"]
 4->5[label=""]
-6[label="r3"]
-6->0[label=""]
-7[label="r4"]
-7->2[label=""]
+6[label="r4"]
+6->2[label=""]
+7[label="r3"]
+7->0[label=""]
 }

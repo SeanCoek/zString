@@ -1,0 +1,12 @@
+digraph g {
+0[label="$r2"]
+1[label="r1"]
+0->1[label=""]
+2[label="@this: assignment.BasicAssignment"]
+3[label="r0"]
+2->3[label=""]
+4[label="basic.ObjectB"]
+4->0[label="type"]
+5[label="new basic.ObjectB"]
+5->0[label=""]
+}

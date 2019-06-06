@@ -1,9 +1,9 @@
 digraph g {
-0[label="r1"]
-1[label="@parameter0: callgraph.Circle"]
-0->1[label=""]
-2[label="r0"]
-3[label="@this: callgraph.Circle$InnerB"]
-2->3[label=""]
-2->0[label="this$0"]
+0[label="r0"]
+1[label="r1"]
+0->1[label="this$0"]
+2[label="@this: callgraph.Circle$InnerB"]
+0->2[label=""]
+3[label="@parameter0: callgraph.Circle"]
+1->3[label=""]
 }

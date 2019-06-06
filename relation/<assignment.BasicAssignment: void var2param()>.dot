@@ -1,6 +1,6 @@
 digraph g {
-0[label="$r4"]
-1[label="new basic.ObjectB"]
+0[label="r2"]
+1[label="$r4"]
 0->1[label=""]
 2[label="r1"]
 3[label="$r3"]
@@ -10,6 +10,6 @@ digraph g {
 4->5[label=""]
 6[label="new basic.ObjectA"]
 3->6[label=""]
-7[label="r2"]
-7->0[label=""]
+7[label="new basic.ObjectB"]
+1->7[label=""]
 }

@@ -3,7 +3,42 @@
   <component name="ChangeListManager">
     <list default="true" id="6195f35d-b71f-4351-b3a3-5904f032416f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment2: void assignInLocalInitial(basic.ObjectA,basic.ObjectA[])&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment2: void assignInLocalInitial(basic.ObjectA,basic.ObjectA[])&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment2: void commonAssignment(basic.ObjectA,basic.ObjectA,basic.ObjectA[],basic.ObjectA[])&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment2: void commonAssignment(basic.ObjectA,basic.ObjectA,basic.ObjectA[],basic.ObjectA[])&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment2: void methodInvocation(basic.ObjectA,basic.ObjectA[])&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment2: void methodInvocation(basic.ObjectA,basic.ObjectA[])&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment: void arrayAssign()&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment: void arrayAssign()&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment: void call2param()&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment: void call2param()&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment: void field2call()&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment: void field2call()&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment: void field2field()&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment: void field2field()&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment: void field2param()&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment: void field2param()&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment: void field2var()&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment: void field2var()&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment: void var2field()&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment: void var2field()&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment: void var2param()&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment: void var2param()&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment: void var2var()&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;assignment.BasicAssignment: void var2var()&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;basic.ChildA: void m1()&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;basic.ChildA: void m1()&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;basic.ObjectA: void &lt;init&gt;(java.lang.String,java.lang.String)&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;basic.ObjectA: void &lt;init&gt;(java.lang.String,java.lang.String)&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;basic.ObjectB: basic.ObjectA getA()&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;basic.ObjectB: basic.ObjectA getA()&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;basic.ObjectB: basic.ObjectA[] getArray()&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;basic.ObjectB: basic.ObjectA[] getArray()&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;basic.ObjectB: void &lt;init&gt;(java.lang.String,java.lang.String)&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;basic.ObjectB: void &lt;init&gt;(java.lang.String,java.lang.String)&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;basic.ObjectB: void setArray(basic.ObjectA[])&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;basic.ObjectB: void setArray(basic.ObjectA[])&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;basic.Parent: void m1()&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;basic.Parent: void m1()&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;callgraph.ChainInvoke$InnerA: void &lt;init&gt;(callgraph.ChainInvoke)&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;callgraph.ChainInvoke$InnerA: void &lt;init&gt;(callgraph.ChainInvoke)&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;callgraph.ChainInvoke$InnerB: void &lt;init&gt;(callgraph.ChainInvoke)&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;callgraph.ChainInvoke$InnerB: void &lt;init&gt;(callgraph.ChainInvoke)&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;callgraph.ChainInvoke: void main(java.lang.String[])&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;callgraph.ChainInvoke: void main(java.lang.String[])&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;callgraph.Circle$InnerA: void &lt;init&gt;(callgraph.Circle)&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;callgraph.Circle$InnerA: void &lt;init&gt;(callgraph.Circle)&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;callgraph.Circle$InnerB: void &lt;init&gt;(callgraph.Circle)&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;callgraph.Circle$InnerB: void &lt;init&gt;(callgraph.Circle)&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;callgraph.Circle$InnerB: void m(callgraph.Circle$InnerA)&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;callgraph.Circle$InnerB: void m(callgraph.Circle$InnerA)&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;callgraph.Circle: void main(java.lang.String[])&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;callgraph.Circle: void main(java.lang.String[])&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;callgraph.Hierarchy: void assign()&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;callgraph.Hierarchy: void assign()&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;callgraph.Hierarchy: void changeRef(basic.Parent)&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;callgraph.Hierarchy: void changeRef(basic.Parent)&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;callgraph.Hierarchy: void load()&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;callgraph.Hierarchy: void load()&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;callgraph.Hierarchy: void main(java.lang.String[])&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;callgraph.Hierarchy: void main(java.lang.String[])&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation/&lt;callgraph.Hierarchy: void store()&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation/&lt;callgraph.Hierarchy: void store()&gt;.dot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zstring/env/SootEnvironment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zstring/env/SootEnvironment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zstring/analyzer/RelationAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zstring/analyzer/RelationAnalyzer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zstring/env/SootEnvironment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zstring/env/SootEnvironment.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="319">
+              <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/env/SootEnvironment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="25" column="48" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="48" />
+            <state relative-caret-position="493">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getLineNum#0;class#SootEnvironment#0" />
@@ -67,9 +102,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/structs/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            <state relative-caret-position="696">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#874#875#0" expanded="true" />
                 <element signature="e#914#915#0" expanded="true" />
               </folding>
@@ -80,10 +116,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+            <state relative-caret-position="630">
+              <caret line="100" column="17" lean-forward="true" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3403#3418#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,7 +130,7 @@
         <entry file="file://$PROJECT_DIR$/relation/&lt;callgraph.Hierarchy: void load()&gt;.dot">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="667">
-              <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -137,6 +174,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/structs/CG.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/structs/Node.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/env/SootEnvironment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zstring/structs/C2VRelation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java" />
       </list>
@@ -158,7 +196,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="865" />
     <option name="y" value="468" />
     <option name="width" value="1400" />
@@ -221,16 +259,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="zstring" type="462c0819:PsiDirectoryNode" />
-              <item name="analyzer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zString" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zString" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zstring" type="462c0819:PsiDirectoryNode" />
               <item name="structs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -258,7 +286,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559720759232" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559803903859" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../points2" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -415,7 +443,7 @@
     <frame x="130" y="-8" width="2870" height="2008" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20992091" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20992091" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -424,8 +452,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32963827" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49964055" weight="0.3302217" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.5326721" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49964055" visible="true" weight="0.3302217" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5326721" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32963827" />
@@ -478,9 +506,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java</url>
-          <line>43</line>
+          <line>79</line>
           <properties />
-          <option name="timeStamp" value="86" />
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java</url>
+          <line>88</line>
+          <properties />
+          <option name="timeStamp" value="91" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -567,34 +601,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.3.0/soot-3.3.0.jar!/soot/PointsToSet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.3.0/soot-3.3.0.jar!/soot/jimple/spark/pag/PAG.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="220" column="43" selection-start-line="220" selection-start-column="25" selection-end-line="220" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.3.0/soot-3.3.0.jar!/soot/MethodOrMethodContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.3.0/soot-3.3.0.jar!/soot/jimple/Stmt.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -634,17 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.3.0/soot-3.3.0.jar!/soot/Type.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -872,16 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="879">
-          <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.3.0/soot-3.3.0.jar!/soot/SootField.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -916,18 +901,7 @@
     <entry file="file://$PROJECT_DIR$/relation/&lt;callgraph.Hierarchy: void load()&gt;.dot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="667">
-          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/structs/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding>
-            <element signature="e#874#875#0" expanded="true" />
-            <element signature="e#914#915#0" expanded="true" />
-          </folding>
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -941,10 +915,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/structs/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#914#915#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/env/SootEnvironment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="25" column="48" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="48" />
+        <state relative-caret-position="493">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getLineNum#0;class#SootEnvironment#0" />
@@ -952,10 +938,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.3.0/soot-3.3.0.jar!/soot/util/Switchable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.3.0/soot-3.3.0.jar!/soot/util/Numberable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.3.0/soot-3.3.0.jar!/soot/Type.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="12" column="70" lean-forward="true" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/Object.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="879">
+          <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/structs/C2VRelation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="319">
+          <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -964,10 +1002,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+        <state relative-caret-position="630">
+          <caret line="100" column="17" lean-forward="true" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3403#3418#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -29,7 +29,7 @@ public class SootEnvironment {
         Options.v().set_whole_program(true);
         Options.v().set_allow_phantom_refs(true);
         Options.v().set_keep_offset(false);
-        soot.Scene.v().setSootClassPath(cp + File.pathSeparator + pp);
+        Scene.v().setSootClassPath(cp + File.pathSeparator + pp);
         List<String> processDir = new ArrayList<String>();
         processDir.add(pp);
         Options.v().set_process_dir(processDir);
