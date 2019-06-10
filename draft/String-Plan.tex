@@ -1,0 +1,505 @@
+\documentclass{llncs}
+%\usepackage[utf8]{inputenc}
+
+%\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{comment}
+\usepackage{url}
+\usepackage{color}
+\usepackage{tcolorbox}
+\usepackage{graphicx}
+\usepackage{cancel}
+\usepackage{listings, tikz}
+\usetikzlibrary{positioning,shapes}
+
+\newtheorem{Definition}{Definition}
+\newtheorem{Theorem}{Theorem}
+\newtheorem{Lemma}{Lemma}
+\newtheorem{Property}{Property}
+\newtheorem{Corollary}{Corollary}
+\newtheorem{Proof}{Proof}
+
+
+\newcommand\Loc{\mathcal{L}}
+%\newcommand\Var{\mathcal{V}}
+\newcommand\Label{\Phi}
+\newcommand\set[1]{\{#1\}}
+\newcommand\power{\mathcal{P}}
+\newcommand\join{\cup}
+\newcommand\subtype{\subseteq}
+
+\renewcommand{\ttdefault}{pcr}
+
+\lstset{language=Java,
+	breaklines=true,
+	%basicstyle=\small,
+	basicstyle=\ttfamily\footnotesize,
+	keywordstyle=\bfseries,
+	numbers=left,numberstyle=\scriptsize,
+	columns=fullflexible, keepspaces=true,
+	%numbers=left,numberstyle=\scriptsize
+	%numbers=left,numberstyle=\tiny
+	%frame=single
+}
+\definecolor{mygrey}{gray}{0.85}
+
+\newcommand{\mathword}[1]{{\tt \mathit{#1}}}
+\newcommand{\mw}[1]{\mathword{#1}}
+\newcommand{\keyword}[1]{\mathsf{#1}}
+\newcommand{\kw}[1]{\keyword{#1}}
+\newcommand{\ruledef}[3]{ $\frac{\begin{array}[c]{c}{ \rulename{#1}}\\ #2 \end{array}}{\begin{array}[c]{c}#3\end{array}}$}
+\newcommand{\ruledefN}[2]{ $\frac{\begin{array}[c]{c} #1 \end{array}}{\begin{array}[c]{c}#2\end{array}}$}
+\newcommand{\ruledefX}[2]{ $\begin{array}[c]{c} \rulename{#1}\\ #2 \end{array}$}
+\newcommand{\rulename}[1]{{\scriptsize\textsc{[\MakeUppercase{#1}]}}}
+\newcommand{\rn}[1]{\rulename{#1}}
+\newcommand{\textcode}[1]{\lstinline|#1|}
+\newcommand{\tc}[1]{\lstinline|#1|}
+
+\newcommand{\Reducesto}[0]{ \ \Downarrow \ }
+\newcommand{\equalson}[1]{ \ \stackrel{#1}{=} \ }
+\newcommand{\approxon}[1]{ \ \stackrel{#1}{\approx} \ }
+\newcommand{\simon}[1]{ \ \stackrel{#1}{\sim} \ }
+
+\newcommand{\kwnull}[0]{\keyword{null}}
+\newcommand{\kwnew}[0]{\keyword{new}}
+\newcommand{\kwextends}[0]{\keyword{extends}}
+\newcommand{\kwclass}[0]{\keyword{class}}
+\newcommand{\kwthis}[0]{\keyword{this}}
+\newcommand{\kwif}[0]{\keyword{if}}
+\newcommand{\kwthen}[0]{\keyword{then}}
+\newcommand{\kwelse}[0]{\keyword{else}}
+\newcommand{\kwskip}[0]{\keyword{skip}}
+
+\newcommand\Var{\mathtt{VAR}}
+\newcommand\Val{\mathtt{V}}
+\newcommand\Obj{\mathtt{OBJ}}
+
+%%\newcommand{\proof}[0]{\noindent{\bf \textit{Proof. }}}
+% -- END -- packages and definitions used in this paper
+
+%\setlength{\textfloatsep}{5pt}
+
+%\title{Leverage String Analysis For Java Reflection}
+%\title{A Recursive Type System for Callsite Abstraction}
+\title{Variable Flow Analysis for Callsite Abstraction}
+\author{\today}
+\institute{Jinan University}
+%\date{November 2018}
+
+
+
+\begin{document}
+
+\maketitle
+
+
+\subsection*{The Overall Framework}
+
+Our current focus is to define a new heap abstraction algorithm that is similar to the MAHJONG paper, but with a slightly different focus, which we clarify in the formalism.
+The work flow is as follows.
+\begin{enumerate}
+  \item We define a core calculus that models the basic features of a typical Object-Oriented programming language, with an evaluation semantics.
+  \item We formalize points-to analysis and heap abstraction in the above language, and propose the soundness of the points-to analysis (later to prove).
+  \item A type system for points-to and a new recursive type, and prove equivalence regarding call site devirtualization. In general, we shall have object points-to (OPT)
+        more precise than recursive type flow analysis (RTFA), followed by variable type analysis (VTA), followed by class hierarchy analysis (CHA).
+  \item Type checking algorithm
+  \item In theory, extend the result to context sensitive systems (call sensitive, object sensitive and type sensitive).
+  \item Experiment (only work out the context-insensitive inter-procedural RTA)
+\end{enumerate}
+
+\begin{figure}[!htbp]\centering
+	\begin{tabular}[c]{lll} %\hline
+		%Classes&$C$&$::=$&$\kwclass\ c\ [\kwextends\ c] \ \{\overline{c\ f};\ \overline{M}\}$\\
+		%Methods&$M$&$::=$&$c\ m(\overline{c\ x}) \ \{\overline{c\ x};\ e\}$\\
+		$C$&$::=$&$\kwclass\ c\ [\kwextends\ c] \ \{\overline{F};\ \overline{M}\}$\\
+        $F$&$::=$&$c \ f$\\
+        $D$&$::=$&$c \ z$\\
+		$M$&$::=$&$m(x) \ \{\overline{D}; s\}$\\
+		$s$&$::=$&$e\mid x{=}\kwnew^{o} \ c\mid  x {=} e \mid x.f{=}y $\\
+		&&$ \mid \kwif \ x \ \kwthen \ s \ \kwelse \ s \ |\ s;s$\\
+		$e$&$::=$&$ \kwnull\mid x \mid x.f \mid x.m(y) $\\
+        $prog$&$::=$&$\overline{C};\overline{D}; s$\\
+	\end{tabular}
+	\caption{Abstract syntax for the core language. \label{fig:syntax}}
+\end{figure}
+
+We define a core calculus in Figure~\ref{fig:syntax} consisting of all the key Object-Oriented language features.
+A program is defined as a code base $\overline{C}$ (i.e., a collection of class definitions) with $s$ to be evaluated.
+To run a program, one may assume that $s$ is the default (static) entry method with local variable declarations $\overline{D}$,
+similar to e.g., Java and C++,
+which may differ in specific language design. Let $S$ and $H$ be the runtime stack and heap, where $S:\Var\rightarrow \Val$
+maps local variables to values and $H:\Val\rightarrow \Obj\cup\set{\kwnull}$ maps values to objects.
+Two auxiliary functions are also given. Function $fields$ maps class names to its fields, and $class$ provides types (or class names)
+for objects.
+Given class $c$, if $f\in fields(c)$, then $type(c,f)$ is the defined class type of field $f$ in $c$. Similarly, give an object $o$,
+if $f\in fields(class(o))$, then $o.f$ may refer to an object of type $type(class(o),f)$, or an object of any of its subclass at runtime.
+%Sometimes we mix-use the terms \emph{type} and \emph{class} in this paper when it is clear from the context.
+We define the following evaluation semantics in Figure~\ref{fig:semantics}.
+
+%%% subclass relation to be defined if we need to explain CHA, RTA, VTA, RTFA.
+
+
+\begin{figure*}%[!htbp]
+	\centering %
+    \begin{tabular}{c}
+		\ruledef{null}
+		{ \ }
+		{S \ H \ \kwnull \Reducesto S \ H \ \kwnull
+		}
+
+		\ruledef{var}
+		{	S(x) = v  }
+		{S \ H \ x\Reducesto S \ H \ v
+		}
+		
+		%\hspace{-5pt}
+		
+		\ruledef{load}{
+			S(x) = v_1 \qquad
+			H(v_1)(f) = v_2
+		}{  S \ H \ x.f  \Reducesto S\ H\ v_2
+		}
+
+		\\
+		%\hspace{-5pt}
+		\ruledef{call}{
+			S \ H \ x  \Reducesto v_1 \qquad
+			S \ H \ y  \Reducesto v_2 \qquad
+			class(H(v_1)).m = m(z) \{\overline{D};s\} \\
+			\{\kwthis\mapsto v_1,z\mapsto v_2, z'\mapsto\kwnull\mid z'\in\overline{D}\} \ H \ s\Reducesto S_1 \ H_1 \ v_3
+		}{ S \ H \ x.m(y) \Reducesto S\ H_1\ v_3
+		}
+
+        \\
+		\ruledef{assign}{
+		    S \ H \ e  \Reducesto S'\ H'\ v
+		}{S \ H\ x{=}e \Reducesto S[x\mapsto v] \ H \ v}
+
+
+		\ruledef{store}{
+			S(x)=v_1 \qquad
+			S \ H \ y  \Reducesto S\ H\ v_2
+		}{ S \ H\  x.f{=}y  \Reducesto S \ H[(v_1,f)\mapsto v_2]\ v_2 }
+	
+		%\hspace{-5pt}
+		
+	
+		\\%[10pt]		
+		
+
+		
+		%\hspace{-5pt}
+		
+		\ruledef{new}{
+			fields(c) = \overline{f}\qquad 	
+			v \notin dom(H)
+		}{  S \ H\ (x{=}\kwnew \ c) \Reducesto S[x\mapsto
+			v] \ H\cup\set{v\mapsto (\overline{f\mapsto \kwnull})} }
+
+		\ruledef{seq}{
+			E\ s_1  \Reducesto  E_1\ v_1 \qquad
+			E_1 \ s_2 \Reducesto  E_2\ v_2
+		}{ E\ s_1; s_2  \Reducesto E_2\ v_2 }		
+
+		\\%[10pt]
+		
+
+				
+		%\hspace{10pt}
+		
+	
+		\ruledef{true}{
+			S(x)\neq\kwnull  \qquad
+			E \ s_1 \Reducesto E_1\ v_1
+		}{  E\ (\kwif \ x \ \kwthen \ s_1 \ \kwelse \ s_2) \Reducesto E_1\ v_1
+		}
+		
+		%\hspace{10pt}
+		
+		\ruledef{false}{
+			S(x)=\kwnull  \qquad
+			E \ s_2 \Reducesto E_2\ v_2
+		}{  E \ (\kwif \ x \ \kwthen \ s_1 \ \kwelse \ s_2) \Reducesto E_2\ v_2
+		}		
+		
+	\end{tabular}
+\caption{Big-step operational semantics. \label{fig:semantics}}
+\end{figure*}
+
+The operational semantics has a common form of $S\ H\ s\Reducesto S'\ H'\ v$, which represents the execution of $s$
+updates $S$ and $H$ into $S'$ and $H'$, leaving $v$ as the resulting value. Sometimes we use $E$ to represent the stack and heap pair.
+In particular, all values of interest are locations, and we only apply the calculus to illustrate the type system
+for call graph construction in the basic object-oriented setting. Note that we treat fields and methods of an object differently.
+A method is like a static member of a class, which is denoted as $c.m$ where $c$ is a class name. A field defined in a class may
+%carry different values in
+refer to different objects of the same type at runtime.
+
+%%% CHA, RTA, VTA ? then
+
+\newcommand{\VPT}{\Omega}
+\newcommand{\HPT}{\Phi}
+\newcommand{\Class}{\mathcal{C}}
+\newcommand{\Field}{\mathcal{F}}
+\newcommand{\bigO}{\mathcal{O}}
+\newcommand{\word}[1]{\langle #1\rangle}
+\newcommand{\Nat}{\mathbb{N}}
+
+\newcommand{\less}{\sqsubseteq}
+\newcommand{\tflow}{\dashrightarrow}
+\newcommand{\hflow}{\rightarrow}
+\newcommand{\lhflow}[1]{\stackrel{#1}{\hflow}}
+
+%%% weaker than points-to, but equivalent regarding call-sites
+
+The variable type analysis (VTA) provides a set of constraints which can be formalized in the follow way.
+We introduce the system as a context insensitive style %%   and we later extend the result in context-sensitive settings.
+in which a variable $a$ in $\Var$ is uniquely referred to by where it is defined in the program code, such as $c.m.a$
+for method $m$ of class $c$. An object is determined by its creation site, such as $c.m.\ell$ denotes
+that it is syntactically the $\ell$'s $\kwnew$ statement in method $c.m$.
+To formalize VTA, we define $\VPT_c:\Var\rightarrow\power(\Class)$ and $\HPT_c:\Class\times\Field\rightarrow\power(\Class)$
+as the smallest solution for the syntax directed constraints as shown in Figure~\ref{fig:constraints}.
+
+\begin{figure*}%[!htbp]
+	\centering %
+    \begin{tabular}{|l|c|c|}
+        \hline
+    \textbf{statement} & \textbf{VTA} & \textbf{Points-to} \\
+    \hline
+    $x = \kwnew\ c$ & $c\in\VPT_c(x)$ & $o_i\in\VPT_o(x)$\\
+    \hline
+    $x = y $ & $\VPT_c(y)\subseteq\VPT_c(x)$ & $\VPT_o(y)\subseteq\VPT_o(x)$\\
+    \hline
+    $x = y.f $ & $\forall c\in\VPT_c(y):\HPT_c(c,f)\subseteq\VPT_c(x)$ & $\forall o\in\VPT_o(y):\HPT_o(o,f)\subseteq\VPT_o(x)$\\
+    \hline
+    $x.f = y $ & $\forall c\in\VPT_c(x):\VPT_c(y)\subseteq\HPT_c(c,f)$ & $\forall o\in\VPT_o(x):\VPT_o(y)\subseteq\HPT_o(o,f)$\\
+    \hline
+    $x=y.m(z)$ & \(\forall c\in\VPT_c(y):\left\{\begin{array}{l}
+        \VPT_c(z)\subseteq\VPT_c(param(c,m))\\
+        \VPT_c(this(c,m))=\set{c}\\
+        \forall x'\in return(c,m): \\ \hspace{25pt}\VPT_c(x')\subseteq\VPT_c(x) \end{array}\right.\) &
+        \(\forall o\in\VPT_o(y):\left\{\begin{array}{l}
+        \VPT_o(z)\subseteq\VPT_o(param(type(o),m))\\
+        \VPT_0(this(type(o),m))=\set{o}\\
+        \forall x'\in return(type(o),m):\\ \hspace{35pt} \VPT_o(x')\subseteq\VPT_o(x) \end{array}\right.\)
+        \\
+    \hline
+	\end{tabular}
+\caption{Constraints for variable type analysis (VTA) and points-to analysis. \label{fig:constraints}}
+\end{figure*}
+
+The context insensitive points-to analysis can be formalized in a similar way, as shown on the third column of Figure~\ref{fig:constraints}, where we define $\VPT_o:\Var\rightarrow\power(\Obj)$ and $\HPT_o:\Obj\times\Field\rightarrow\power(\Obj)$.
+
+\begin{Lemma}\label{lem:abstraction}
+  Need to formalize (1) points-to derives an abstraction for dynamic calls (2) VTA is an abstract form of points-to.
+\end{Lemma}
+
+The points-to analysis provides a connection between local variables via the heap structure. Comparing to VTA, points-to
+has better precision with the price of extra space consumption in $\bigO(|C_{\kwnew}|^2\times|\Field|)$.
+(Need to figure out more about the difference on space usage later.)
+
+%%% Here we have class + fields as types
+%Next we enrich the variable type analysis with fields, and now the extended abstract domain is of the form $\word{E,\uplus}$
+%where $E=\Class\times\Field\rightarrow\power(\Class)$, i.e., a partial function from a class and field pair to a set of classes.
+%Given $e_1,e_2\in E$, class $c$ and $f\in fields(c)$, $e_1\uplus e_2 (c,f) = e_1(c,f)\cup e_1(c,f)$.
+%We refine the VTA by $\VPT_e:\Var\rightarrow E$, with the following constraints.
+%\begin{itemize}
+%  \item $x = \kwnew\ c$: $c\leq \VPT_e(x)$;
+%  \item $x = y $: $\VPT(y)\leq \VPT_e(x)$;
+%  \item $x = y.f $: for all $c\in dom(\VPT_e(y))$, $\VPT_e(c,f)\leq\VPT_e(x)$;
+%  \item $x.f = y$: for all $c\in dom(\VPT_e(x))$, $dom(\VPT_e(y))\leq\VPT_e(c,f)$;
+%\end{itemize}
+
+%\newpage
+
+The imprecision of VTA in comparison with Points-to (the motivation example) lies in the domain of $\VPT_c$ that maintains an abstract heap
+of type $\Class\times\Field\rightarrow\power(\Class)$, so that an update of any object of class $c$ affects
+all objects of class $c$, which brings imprecision.
+
+We enrich the variable type analysis with the new type flow analysis with three relations,
+a partial order on variables $\less\subseteq\Var\times\Var$, a type flow relation
+$\tflow\subseteq\Class\times\Var$, as well as a value access relation $\hflow\subseteq\Var\times\Field\times\Var$,
+which are initially given as follows.
+\begin{definition}\label{def:base}
+We have the following base conditions.
+\begin{enumerate}
+  \item $x = \kwnew\ c$: $c\tflow x$;
+  \item $x = y $: $y\less x$;
+  \item $x.f = y$: $x\lhflow{f}y$;
+  \item $x = y.f $: for all $y\lhflow{f}z: z\less x$.
+\end{enumerate}
+\end{definition}
+In order to extend the three relations inter-procedurally, we firstly complete the transitivity of type flows.
+\begin{definition}\label{def:extension}
+We extend the three relations in the following way.
+\begin{enumerate}
+  \item $c\tflow^* y$ if $c\tflow y\vee(c\tflow^* x\wedge x\less^* y)$;
+  \item $y\less^* x$ if $y\less x\vee(\exists z\in\Var:y\less^* z\wedge z\less^* x)$;
+  \item $y\lhflow{f}z$ if $x\lhflow{f}z\wedge x\less^* y$;
+  \item The type information is then used to resolve each method call $x = y.m(z)$.
+\begin{equation*}
+  \forall c\tflow^* y:\left\{\begin{array}{l}
+        z\less^* param(c,m)\\
+        c\tflow^* this(c,m)\\
+        \forall x'\in return(c,m): x'\less^* x \\
+        \end{array}\right.
+\end{equation*}
+\end{enumerate}
+%%%$\tflow^*$, in the way that $c\tflow^* y$ if $c\tflow x$ and $x\less y$.
+
+All the above constraints then derive the smallest relations $\tflow^*$, $\hflow$ and $\less$.
+\end{definition}
+
+\begin{Lemma}~\label{lem:tfa}
+  In a context-insensitive analysis, $c\tflow^*x$ iff there exists an object abstraction $o$ of class $c$ such that $o\in\VPT_o(x)$.
+\end{Lemma}
+\begin{proof} (sketch)
+For inter-procedural analysis we only check the pass of type from actual parameters to formal parameters, as the
+other information passage can be treated similarly.
+
+For the if ($\Leftarrow$) direction, we simulate the points-to computation by defining 
+a series of intermediate results $\VPT_n$ and $\HPT_n$ for $n\in\Nat$.
+Initially, for all $x\in\Var$, $\VPT^0_o(x)=\set{o_i\mid x = \kwnew\ c\mbox{ is at line }i}$, and 
+$\HPT^0_o(o,f)=\emptyset$ for all $o\in\Obj$ and $f\in\Field$, where $\Obj$ is the set of object abstractions
+that are defined in the form of $x = \kwnew\ c$, all are mutually distinguishable by their positions (i.e., line numbers) in the program.
+Obviously, we have $type(o)=c\tflow^* x$ for all such statements.
+
+For the induction step, given $\VPT^n_o$ and $\HPT^n_o$ defined, for all $v\in\Var$, $o\in\Obj$ and $f\in\Field$, we have\\
+%\begin{itemize}
+%\item 
+\begin{tabular}[c]{rll}
+      \hspace{30pt}$\VPT^{n+1}_o(x)$ & $=$ & $\VPT^{n}_o(x)\cup\bigcup_{x=y}^n\VPT_o^n(y)$\\
+      & & $\cup\bigcup_{x=y.f}^n\bigcup_{o\in\VPT_o^n(f)}\HPT_o^n(o,f)$\\
+      & & $\cup\bigcup_{x'=y.m(z)}\set{\VPT^n_o(z)\mid o\in \VPT^n_o(y)\wedge method(type(o),m)=m(x)\{\dots\}}$.\\
+      $\HPT^{n+1}_o(o,f)$ & $=$ & $\HPT^n_o(o,f)\cup\bigcup_{x.f=y}\set{o''\in\VPT^n_o(y)\mid o'\in\VPT^n_o(x)}$.      
+\end{tabular}
+%\end{itemize}
+Suppose for all $x\in\Var$ and $o\in\VPT^n_o(x)$, we have $type(o)\tflow^* x$, we prove the case for $n+1$.
+We also need an intermediate proof obligation as follows. For all $o'\in\HPT^n_o(o,f)$ and $o\in\VPT^n_o(x)$,
+there exists $y\in\Var$ such that $x\lhflow{f}y$ and $o'\in\VPT^n_o(y)$, which vacuously holds at the basis.
+
+\smallskip
+
+Then we have the following cases for $o\in\VPT^{n+1}_o(x)\setminus\VPT^n_o(x)$.
+\begin{itemize}
+%\item Suppose $o\in\VPT^n_o(x)$, then $o\lhflow{f}^*x$ by definition.
+\item Suppose $o\in\VPT^n_o(y)$ where $x=y$ is a statement. Then $y\less x$ by Def.~\ref{def:base}(2). Since $o\tflow^*y$ by I.H.,
+      we have $o\tflow^*x$ by Def.~\ref{def:extension}(1).
+\item Suppose $o\in\HPT^n_o(o',f)$ and $o'\in\VPT^n_o(y)$ where $x=y.f$ is a statement. Then by I.H., there exists $z\in\Var$
+      with $y\lhflow{f}z$ and $o\in\VPT^n_o(z)$. Therefore $type(o)\tflow^*z$ by I.H.. Then $type(o)\tflow^*x$ by Def.~\ref{def:base}(4).
+\item Suppose $o\in\VPT^n_o(z)$, $o'\in\VPT^n_o(y)$ and $method(type(o'),m)=m(x)\{\dots\}$, where $x'=y.m(z)$ is a statement.
+      First we have $type(o)\tflow^* z$. Then by Def.~\ref{def:extension}(4), we have $z\less^* x$, then $type(o)\tflow^* x$ by Def.~\ref{def:extension}(1).
+\end{itemize}
+
+We also need to shown for all $o'\in\HPT^{n+1}_o(o,f)$ and $o\in\VPT^{n+1}_o(x)\setminus\VPT^{n}_o(x)$, there exists $y\in\Var$ 
+such that $x\lhflow{f}y$ and $o'\in\VPT^{n+1}_o(y)$. The only possiblity is that $o\in\VPT^n_o(x)$ and $o'\in\VPT^n_o(y)$, where $x.f=y$ is a statement.
+By definition, we have $o\in\VPT^{n+1}_o(x)$ and $o'\in\VPT^{n+1}_o(y)$. Moreover, since $x.f=y$ is a statement, 
+by Def.~\ref{def:base}(3), we have $x\lhflow{f}y$, as required.
+
+For the only if ($\Rightarrow$) direction, we let each statement $x=\kwnew\ c$ at line $i$ returns a type $c_i$ which serves as 
+a bridge between the type flow analysis and points-to analysis. To simulate the computation of the three relations
+$\less^*\subseteq\Var\times\Var$, $\tflow^*\subseteq\Class\times\Var$ and $\rightarrow\subseteq\Var\times\Field\times\Var$, we have
+initially $c_i\tflow^* x$ for each statement $x = \kwnew\ c$ at line $i$, then we apply the rules at Def.~\ref{def:base}(2-4) and 
+Def.~\ref{def:extension}(1-4) whenever possible until the computation reaches least fixpoints for the three relations, i.e. when no rule can
+be applied, and prove the following constraints are satisfied for the three fixpoint relations $\less^*$, $\tflow^*$ and 
+$\rightarrow$. \begin{itemize}
+\item $c_i\tflow^* x$ implies $c_i\in\VPT_o(x)$; 
+\item $y\less^* x$ implies $\VPT_o(y)\subseteq\VPT_o(x)$;
+\item $x\lhflow{f}y$ implies for all $c_i\in\VPT_o(x)$ and $c_j\in\VPT_o(y)$, $c_j\in\HPT_o(c_i,f)$.
+\end{itemize}
+We check all rules in Def.~\ref{def:base}(1-4) and Def.~\ref{def:extension}(1-4) as follows.
+\begin{itemize}
+\item For the cases in Def.~\ref{def:base}(1-2) are straightforward. 
+\item For the case in Def.~\ref{def:base}(3) with a statement $x.f = y$ and $x\lhflow{f}y$, by definition of points-to, we have 
+      $\VPT_o(y)\subseteq\bigcap_{c_i\in\VPT_o(x)}\HPT_o(c_i,f)$. Therefore, given $c_j\in\VPT_o(y)$ and $c_i\in\VPT_o(x)$, we must
+      have $c_j\in\HPT_o(c_i,f)$.
+\item \fbox{TBD}
+\end{itemize}
+\qed
+\end{proof}
+This lemma basically says type flow analysis has the same precision regarding type based check, such as callsite resolution and cast failure check,
+when comparing with points-to anlaysis.
+
+Next we need to show (1) regardless of the above, there is structural difference between type flow analysis and points-to analysis;
+(2) the results of Lemma~\ref{lem:tfa} extends to context sensitive analysis.
+%% we may take the object sensitivity of Milanova & Ryder
+However, TFA only needs to build contexts for variables without a need to introduce contexts for objects, which
+yield better scalability ?
+
+\fbox{TBD}
+\begin{itemize}
+\item[$\star$] Need to discuss the difference by examples
+\item[$\star$] Need experiments to test efficiency by comparing the two approaches on real world examples.
+\end{itemize}
+
+%%% Bisimulation minimization on heap abstraction as an alternative
+\subsection*{Minimization on Type Flow Graphs}
+
+\fbox{What are the benefits}
+
+
+
+
+
+
+\end{document}
+
+\begin{itemize}
+\item For each statement $x = \kwnew\ c$ at line $i$, we have $c_i\in\VPT_o(x)$;
+\item For each statement $x = y$ we have $\VPT_o(y)\subseteq\VPT_o(x)$;
+\item For each statement $x.f = y$, we have $\VPT_o(y)\subseteq\bigcap_{c_i\in\VPT_o(x)}\HPT_o(c_i,f)$;
+\item For each statement $x = y.f$, we have $\bigcup\set{\HPT_o(c_i,f)\mid c_i\in\VPT_o(y)}\subseteq\VPT_o(x)$;
+\item For each statement $x'=y.m(z)$ where $c_i\in\VPT_o(y)$ and $method(c_i,m)=m(x)\{\dots\}$, we have $\VPT_o(z)\subseteq\VPT_o(x)$.
+\end{itemize}
+We skip the other interprecedural constraints as they are similar to the parameter case. Obviously the initial constraints 
+$c_i\in\VPT_o(x)$ are always satisfied.
+
+If all rules in Def.~\ref{def:base}(2-4) and Def.~\ref{def:extension}(1-4) respect the above constraints at the
+the least fixpoint, the resulting relations satisfy that for all $c_i\tflow^* x$, $c_i\in\VPT_o(x)$, then equivalently, 
+there exists $o\in\VPT_o(x)$ with $type(o)=c_i$.
+\begin{itemize}
+\item For the cases in Def.~\ref{def:base}(2-4) are straightforward. 
+\item For the case in Def.~\ref{def:extension}(1), $c_i\tflow^* y$ if $c_i\tflow^* x\wedge x\less^* y$, it satisfies $\VPT_o(y)\subseteq\VPT_o(x)$
+      regarding $c_i$. However, by extending $\VPT_o(x)$
+\end{itemize}
+
+
+
+\subsection*{Related Work}
+
+There are three main categories of works, (1) string analysis by abstract interpretation, (2) string analysis by constraint solving, and (3) points-to analysis for Java with a focus on the Java reflection API.
+
+In the first category, we look at various definition of string domains, with String Set domain and Finite Automaton domain. Cristensen et al.~\cite{Christensen03}'s Java string analyzer is probability the first comprehensive work that applies the Finite Automaton domain to compute string values. The relationship between string variables is represented in a Context free-like format, which reflect the potential inter-dependencies between them in the inter-procedural calls and loops. A conservative interpretation by Finite automata is achieved by semantically approximate the context free relationship by means of Mohri-Nederhof transformation~\cite{MN01}. Yu et al.~\cite{Yu11,YSLCWB16,Wang16} studied finite automata as abstract domains for strings, and further applied this technique in the area of web application security. Li et al.~\cite{LLMW015} developed a tool \emph{violist} for string analysis of Java and Android applications. This tool is a framework that provides an intermediate representation for data flow dependencies between string variables in a program, parameterized by string domains to be used as well as degrees of loop unfolding.
+
+Amadini et al.~\cite{Amadini17} have considered a range of string domains for the analysis of JavaScript language, including String Set and Constant String domains ($\mathcal{SS}_k$, $\mathcal{CS}$), Character Inclusion domain (CI), the Prefix-Suffix domain (PS), The String Hash domain (SH) and some other JavaScript specific domains (e.g., unsigned-or-other $\mathcal{UO}$, Number-or-other $\mathcal{NO}$, Number-Special-or-other $\mathcal{NS}$) used by other tools such as SAFE, TAJS and JSAI. They have conducted empirical evaluation by applying these domains in various combinations. Empirically, the hybrid domain $\mathcal{CI}\times\mathcal{NO}\times\mathcal{SS}_k$ seems to achieve the best \emph{Score} (i.e., with good precision and reasonable performance) regarding the tested JavaScript benchmarks.
+%Possibly, it is worthy to make a comparison between this hybrid domain with the Automaton domain ???
+Costantini et al.~\cite{Costantini13} applied combinations of string abstract domains for security vulnerability detection in the Structural Query Language (SQL) made of strings. They have discussed the trade-off between efficiency and accuracy when using such domains to catch various properties of interest.
+
+The second category provides a reach context of constraint solving frameworks and algorithms, including e.g., $Z3$-Str~\cite{z3str3}, $S3P$~\cite{TrinhCJ16}, $CVC4$~\cite{Barrett11}, and Mini-zinc etc. The nature of such algorithms tackles satisfiability of string formulas that are usually generated from symbolic execution of programs, so that the level of unsoundness is hard to estimate. However, these are still useful tools for relatively small code bases, or the purpose of the analysis is for bug or vulnerability detection, in which the tool is able to output a concrete violation. \fbox{to add more discussion here}
+
+The third collection of analyses are specific to Java Reflection API. The earliest works of this class include Livshits~\cite{Livshits06} and DOOP~\cite{Bravenboer09} which traces string constants as value-flow which resolves class, object, field and method names during a whole program points-to analysis with call graph construction, taking advantages of efficient Datalog engines. Some follow-up works~\cite{LTSX14,Smaragdakis11} complements
+the value flow with heuristic techniques such as back propagation of use, self-inferencing and substring matching. More recently, Grech et al proposed a heuristic to merge strings in the way that the power of differentiating class members in reflection operations is not affected~\cite{GrechKS18}.
+
+
+\subsection*{The Java Reflection API}
+
+Reflection is a language feature that enables dynamic access of properties of target classes, fields and methods, without holding an object or reference to the class. A class, field, or method object may be created regardless of the \emph{main} part of the program. However, in this work we focus on part of the API that is related to the creation of \emph{useful} object and function calls, which is related to improvement of analysis precision on points-to calculation and call graph construction.
+
+There are two major entry methods for creation of a class object.
+
+\fbox{Reflection is left in the next paper.}
+
+
+%\bibliographystyle{plain}
+\bibliographystyle{alpha}
+\bibliography{literature}
+
+
+\end{document}
+
+
+\begin{tabular}{p{10em}p{4em}}
+A & Bla\newline bla \\
+\( \mathbf{P} = \left[ \begin{array}{cc} 1 - \alpha & \alpha \\ \beta & 1 - \beta \end{array} \right] \) & D
+\end{tabular}
+
