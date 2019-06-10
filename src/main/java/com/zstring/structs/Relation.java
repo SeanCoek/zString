@@ -46,13 +46,19 @@ public class Relation {
         }
         if(o instanceof Relation) {
             Relation r = (Relation) o;
-            if(r.left.equals(this.left) && r.right.equals(this.right)) {
-                if(r.relationType.equals(TYPE_FIELD) && this.relationType.equals(TYPE_FIELD)) {
-                    return r.field.equals(this.field);
-                } else {
-                    return r.relationType.equals(this.relationType);
+            if(r.relationType.equals(this.relationType)) {
+                if(r.relationType.equals(Relation.TYPE_CLASS2VAR)) {
+                    return r.type.equals(this.type) && r.right.equals(this.right);
+                }
+                if(r.left.equals(this.left) && r.right.equals(this.right)) {
+                    if(r.relationType.equals(TYPE_FIELD)) {
+                        return r.field.equals(this.field);
+                    } else {
+                        return true;
+                    }
                 }
             }
+
         }
         return false;
     }
@@ -60,6 +66,9 @@ public class Relation {
     @Override
     public int hashCode() {
         if(this.relationType != null) {
+            if(this.relationType.equals(Relation.TYPE_CLASS2VAR)) {
+                return this.type.hashCode() + this.right.hashCode();
+            }
             return this.left.hashCode() + this.right.hashCode() + this.relationType.hashCode();
         }
         return this.left.hashCode() + this.right.hashCode();

@@ -2,7 +2,4 @@ digraph g {
 0[label="@this: basic.ObjectB"]
 1[label="r0"]
 0->1[label=""]
-2[label="r0.<basic.ObjectB: basic.ObjectA f3>"]
-3[label="$r1"]
-2->3[label=""]
 }
