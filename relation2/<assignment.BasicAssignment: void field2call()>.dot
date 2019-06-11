@@ -7,10 +7,7 @@ digraph g {
 2->3[label=""]
 4[label="basic.ObjectB"]
 4->0[label="type"]
-5[label="new basic.ObjectB"]
-6[label="$r2"]
-5->6[label=""]
-4->6[label="type"]
+5[label="$r2"]
+4->5[label="type"]
 5->0[label=""]
-6->0[label=""]
 }

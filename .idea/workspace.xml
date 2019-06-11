@@ -21,11 +21,13 @@
       <change beforePath="$PROJECT_DIR$/relation2/&lt;basic.ObjectB: basic.ObjectA getA()&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation2/&lt;basic.ObjectB: basic.ObjectA getA()&gt;.dot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/relation2/&lt;basic.ObjectB: basic.ObjectA[] getArray()&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation2/&lt;basic.ObjectB: basic.ObjectA[] getArray()&gt;.dot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/relation2/&lt;basic.ObjectB: void &lt;init&gt;(java.lang.String,java.lang.String)&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation2/&lt;basic.ObjectB: void &lt;init&gt;(java.lang.String,java.lang.String)&gt;.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation2/&lt;basic.Parent: void m1()&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation2/&lt;basic.Parent: void m1()&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation2/&lt;callgraph.ChainInvoke$InnerA: java.lang.String m1(java.lang.String)&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation2/&lt;callgraph.ChainInvoke$InnerA: java.lang.String m1(java.lang.String)&gt;.dot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/relation2/&lt;callgraph.ChainInvoke$InnerA: void &lt;init&gt;(callgraph.ChainInvoke)&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation2/&lt;callgraph.ChainInvoke$InnerA: void &lt;init&gt;(callgraph.ChainInvoke)&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation2/&lt;callgraph.ChainInvoke$InnerB: java.lang.String m1(java.lang.String)&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation2/&lt;callgraph.ChainInvoke$InnerB: java.lang.String m1(java.lang.String)&gt;.dot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/relation2/&lt;callgraph.ChainInvoke$InnerB: void &lt;init&gt;(callgraph.ChainInvoke)&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation2/&lt;callgraph.ChainInvoke$InnerB: void &lt;init&gt;(callgraph.ChainInvoke)&gt;.dot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/relation2/&lt;callgraph.ChainInvoke: void main(java.lang.String[])&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation2/&lt;callgraph.ChainInvoke: void main(java.lang.String[])&gt;.dot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/relation2/&lt;callgraph.Circle$InnerA: void &lt;init&gt;(callgraph.Circle)&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation2/&lt;callgraph.Circle$InnerA: void &lt;init&gt;(callgraph.Circle)&gt;.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relation2/&lt;callgraph.Circle$InnerA: void m(callgraph.Circle$InnerB)&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation2/&lt;callgraph.Circle$InnerA: void m(callgraph.Circle$InnerB)&gt;.dot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/relation2/&lt;callgraph.Circle$InnerB: void &lt;init&gt;(callgraph.Circle)&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation2/&lt;callgraph.Circle$InnerB: void &lt;init&gt;(callgraph.Circle)&gt;.dot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/relation2/&lt;callgraph.Circle: void main(java.lang.String[])&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation2/&lt;callgraph.Circle: void main(java.lang.String[])&gt;.dot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/relation2/&lt;callgraph.Hierarchy: void assign()&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation2/&lt;callgraph.Hierarchy: void assign()&gt;.dot" afterDir="false" />
@@ -34,11 +36,7 @@
       <change beforePath="$PROJECT_DIR$/relation2/&lt;callgraph.Hierarchy: void main(java.lang.String[])&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation2/&lt;callgraph.Hierarchy: void main(java.lang.String[])&gt;.dot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/relation2/&lt;callgraph.Hierarchy: void store()&gt;.dot" beforeDir="false" afterPath="$PROJECT_DIR$/relation2/&lt;callgraph.Hierarchy: void store()&gt;.dot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zstring/utils/SootUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zstring/utils/SootUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zstring/analyzer/RelationAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zstring/analyzer/RelationAnalyzer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zstring/structs/Relation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zstring/structs/Relation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zstring/utils/SootUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zstring/utils/SootUtils.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -90,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="156" column="111" selection-start-line="156" selection-start-column="111" selection-end-line="156" selection-end-column="111" />
+            <state relative-caret-position="414">
+              <caret line="103" column="77" selection-start-line="103" selection-start-column="77" selection-end-line="103" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1300#1321#0" expanded="true" />
@@ -150,8 +148,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/structs/C2VRelation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/utils/SootUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/env/SootEnvironment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java" />
       </list>
     </option>
   </component>
@@ -171,7 +169,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="865" />
     <option name="y" value="468" />
     <option name="width" value="1400" />
@@ -271,7 +269,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560149230196" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560225922857" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../points2" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -425,7 +423,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="130" y="-8" width="2870" height="2008" extended-state="6" />
+    <frame x="130" y="-8" width="2870" height="2008" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21639109" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -490,27 +489,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java</url>
-          <line>171</line>
+          <line>234</line>
           <properties />
-          <option name="timeStamp" value="106" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java</url>
-          <line>175</line>
-          <properties />
-          <option name="timeStamp" value="116" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java</url>
-          <line>178</line>
-          <properties />
-          <option name="timeStamp" value="117" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java</url>
-          <line>94</line>
-          <properties />
-          <option name="timeStamp" value="123" />
+          <option name="timeStamp" value="130" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -987,8 +968,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="156" column="111" selection-start-line="156" selection-start-column="111" selection-end-line="156" selection-end-column="111" />
+        <state relative-caret-position="414">
+          <caret line="103" column="77" selection-start-line="103" selection-start-column="77" selection-end-line="103" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1300#1321#0" expanded="true" />

@@ -77,12 +77,11 @@ public class RelationAnalyzer {
                     } else if(right instanceof JInstanceFieldRef) {
                       // TODO: x = y.f
                         fieldLoadToResolve.add((JAssignStmt) u);
-                    } else if(left instanceof JimpleLocal) {
-                        relationSet.add(new Relation(right, left));
-                    }
-                    if(right instanceof JNewExpr || right instanceof JNewArrayExpr) {
+                    } else if(right instanceof JNewExpr || right instanceof JNewArrayExpr) {
                         Type t = right.getType();
                         relationSet.add(new Relation(right, left, t));
+                    } else if(left instanceof JimpleLocal) {
+                        relationSet.add(new Relation(right, left));
                     }
                 }
             }
@@ -95,10 +94,15 @@ public class RelationAnalyzer {
             extendTransitive(relationSet);
             invokeStmtMap.put(m.getSignature(), invokeStmtSet);
             allRelations.put(m.getSignature(), relationSet);
-            drawRelation(m.getSignature(), relationSet);
         }
 
         resolveMethodCall(invokeStmtMap);
+
+        Iterator<Map.Entry<String, Set<Relation>>> relationsIter = allRelations.entrySet().iterator();
+        while(relationsIter.hasNext()) {
+            Map.Entry<String, Set<Relation>> relationsEntry = relationsIter.next();
+            drawRelation(relationsEntry.getKey(), relationsEntry.getValue());
+        }
     }
 
     public void resolveFieldLoad(Set relationSet, Set stmts) {
@@ -228,6 +232,7 @@ public class RelationAnalyzer {
                 calleeRelations.add(new Relation(z, p));
                 count++;
             }
+            allRelations.put(callee, calleeRelations);
         }
         System.out.println("added " + count + " relations from invocation");
     }

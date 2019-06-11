@@ -2,8 +2,8 @@ digraph g {
 0[label="@parameter0: callgraph.ChainInvoke"]
 1[label="r1"]
 0->1[label=""]
-2[label="@this: callgraph.ChainInvoke$InnerA"]
-3[label="r0"]
-2->3[label=""]
-3->1[label="field: this$0"]
+2[label="r0"]
+2->1[label="field: this$0"]
+3[label="@this: callgraph.ChainInvoke$InnerA"]
+3->2[label=""]
 }
