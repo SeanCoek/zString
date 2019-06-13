@@ -1,0 +1,150 @@
+\documentclass{llncs}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{comment}
+\usepackage{url}
+\usepackage{listings, tikz}
+\usetikzlibrary{positioning,shapes}
+\usepackage{verbatimbox}
+
+\newtheorem{Definition}{Definition}
+\newtheorem{Theorem}{Theorem}
+\newtheorem{Lemma}{Lemma}
+\newtheorem{Property}{Property}
+\newtheorem{Corollary}{Corollary}
+\newtheorem{Proof}{Proof}
+
+\renewcommand{\ttdefault}{pcr}
+
+\lstset{language=Java,
+	breaklines=true,
+	%basicstyle=\small,
+	basicstyle=\ttfamily\footnotesize,
+	keywordstyle=\bfseries,
+	numbers=left,numberstyle=\scriptsize,
+	columns=fullflexible, keepspaces=true,
+	%numbers=left,numberstyle=\scriptsize
+	%numbers=left,numberstyle=\tiny
+	%frame=single
+}
+
+\newcommand{\mathword}[1]{{\tt \mathit{#1}}}
+\newcommand{\mw}[1]{\mathword{#1}}
+\newcommand{\keyword}[1]{\mathsf{#1}}
+\newcommand{\kw}[1]{\keyword{#1}}
+\newcommand{\ruledef}[3]{ $\frac{\begin{array}[c]{c}{ \rulename{#1}}\\ #2 \end{array}}{\begin{array}[c]{c}#3\end{array}}$}
+\newcommand{\ruledefN}[2]{ $\frac{\begin{array}[c]{c} #1 \end{array}}{\begin{array}[c]{c}#2\end{array}}$}
+\newcommand{\ruledefX}[2]{ $\begin{array}[c]{c} \rulename{#1}\\ #2 \end{array}$}
+\newcommand{\rulename}[1]{{\scriptsize\textsc{[\MakeUppercase{#1}]}}}
+\newcommand{\rn}[1]{\rulename{#1}}
+\newcommand{\textcode}[1]{\lstinline|#1|}
+\newcommand{\tc}[1]{\lstinline|#1|}
+
+\newcommand{\Reducesto}[0]{ \ \Downarrow \ }
+\newcommand{\equalson}[1]{ \ \stackrel{#1}{=} \ }
+\newcommand{\approxon}[1]{ \ \stackrel{#1}{\approx} \ }
+\newcommand{\simon}[1]{ \ \stackrel{#1}{\sim} \ }
+
+\newcommand{\kwnull}[0]{\keyword{null}}
+\newcommand{\kwnew}[0]{\keyword{new}}
+\newcommand{\kwextends}[0]{\keyword{extends}}
+\newcommand{\kwclass}[0]{\keyword{class}}
+\newcommand{\kwthis}[0]{\keyword{this}}
+\newcommand{\kwif}[0]{\keyword{if}}
+\newcommand{\kwthen}[0]{\keyword{then}}
+\newcommand{\kwelse}[0]{\keyword{else}}
+\newcommand{\kwskip}[0]{\keyword{skip}}
+
+\newcommand\Var{\mathtt{VAR}}
+\newcommand\Val{\mathtt{V}}
+\newcommand\Obj{\mathtt{OBJ}}
+
+%%% The key relations
+
+\newcommand{\VPT}{\Omega}
+\newcommand{\HPT}{\Phi}
+\newcommand{\Class}{\mathcal{C}}
+\newcommand{\Field}{\mathcal{F}}
+\newcommand{\bigO}{\mathcal{O}}
+\newcommand{\word}[1]{\langle #1\rangle}
+\newcommand{\Nat}{\mathbb{N}}
+\newcommand{\less}{\sqsubseteq}
+\newcommand{\tflow}{\dashrightarrow}
+\newcommand{\hflow}{\rightarrow}
+\newcommand{\lhflow}[1]{\stackrel{#1}{\hflow}}
+
+\newcommand\Loc{\mathcal{L}}
+\newcommand\Label{\Phi}
+\newcommand\set[1]{\{#1\}}
+\newcommand\power{\mathcal{P}}
+\newcommand\join{\cup}
+\newcommand\subtype{\subseteq}
+
+\title{A Relational Static Semantics for Call Graph Resolution}
+\author{\today}
+\institute{Jinan University}
+
+\begin{document}
+
+\maketitle
+
+\abstract{The problem of resolving virtual method and interface calls in Object-Oriented languages has been a long standing challenge to the program analysis community. In this paper, we propose a new approach called type flow analysis that represent the propagation of type information between program variables by a group of relations without the help of a heap abstraction. We prove that regarding the precision on reachability of class information to variables, our method produces results equivalent to that one can derive from a points-to analysis. Moreover, in practice, our method consumes lower time and space usage, as supported by the experimental results.
+}
+
+\section{Introduction}\label{sec:introduction}
+
+For object-oriented programming languages, virtual methods (or functions) are those declared in a base class but are meant to be overridden in different child classes. Statically determine a set of methods that may be invoked at a call site is important to program optimization, from the result of which a subsequent optimization may reduce the cost of virtual function calls or perform inlining if target method forms a singleton set, and one may also remove methods that are never called by any call sites, or produce a call graph which can be useful in other optimization processes.
+%
+Efficient solutions, such as Class Hierarchy Analysis (CHA)~\cite{Dean1995,Fernandez1995} and Rapid Type Analysis (RTA)~\cite{Bacon1996} and Variable Type Analysis (VTA)~\cite{Sundaresan2000}, conservatively assign each variable a set of class definitions, with relatively low precision. Alternatively, with the help of an abstract heap, one may take advantage of points-to analyses~\cite{andersen94} to compute a set of object abstractions that a variable may refer to, and resolve the receiver classes in order to find associated methods at call sites.
+
+The purpose of the conservative analyses, such as CHA, RTA and VTA, is to provide an efficient way to resolve calling edges, which usually executes linear-time in the size of a program, by focusing on the types that are collected at the receiver. For instance, let $x$ be a receiver with declared class $A$, then at a call site $\textsf{x.m()}$, then CHA will draw a call edge from this call site to method $\textsf{m()}$ of class $A$ and every definition $\textsf{m()}$ of a class that extends $A$. In case class $A$ does not define $\textsf{m()}$, a call edge to the nearest parent class that defines $\textsf{m()}$ will also be included. For $x$ a receiver with declared interface $I$, then CHA will draw a call edge from this call site to all method $\textsf{m()}$ defined in class $X$ that implements $I$.
+We write $CHA(x,m)$ for the set of methods that are connected from call site $\textsf{x.m()}$ as resolved by  Class Hierarchy Analysis (CHA).
+Rapid Type Analysis (RTA) is an improvement from CHA which resolves call site $\textsf{x.m()}$ to $CHA(x,m)\cap inst(P)$, where $inst(P)$ stands for the set of methods of classes that are instantiated in the program.
+
+\begin{figure}[ht]
+\begin{minipage}[t]{0.5\linewidth}
+\centering
+\begin{verbbox}
+class A{
+    A f;
+    void m(){
+        return this.f;
+    }
+}
+
+class B extends A{}
+
+class C extends A{}
+\end{verbbox}
+\theverbbox
+\end{minipage}
+\begin{minipage}[t]{0.5\linewidth}
+%\center
+\centering
+\begin{verbbox}
+A x = new A();
+B b = new B();
+A y = new A();
+C c = new C();
+x.f = b;
+y.f = c;
+z = x.m();
+\end{verbbox}
+\theverbbox
+\end{minipage}
+\caption{An example that compares precision on type flow in a program.}\label{figure:example}
+\end{figure}
+
+Rapid Type Analysis (RTA) is a further improvement. RTA defines a node for each variable, method, method parameter and field. Class names are treated as variables, and propagation of value between variables work in the way of value flow.
+
+
+\section{Type Flow Analysis}\label{sec:type-flow-analysis}
+
+
+\section{Optimization with minimization}\label{sec:minimization}
+
+
+\bibliographystyle{alpha}
+\bibliography{literature}
+\end{document}
