@@ -1,0 +1,17 @@
+digraph g {
+0[label="@this: org.eclipse.core.runtime.internal.adaptor.EclipseAdaptorHook$SaxParsingService"]
+1[label="r0"]
+0->1[label=""]
+2[label="r0"]
+3[label="r1"]
+2->3[label=""]
+4[label="org.eclipse.core.runtime.internal.adaptor.EclipseAdaptorHook$SaxParsingService"]
+4->1[label="type"]
+5[label="@parameter0: org.eclipse.core.runtime.internal.adaptor.EclipseAdaptorHook"]
+5->3[label=""]
+6[label="null"]
+7[label="r2"]
+6->7[label=""]
+8[label="@parameter1: org.eclipse.core.runtime.internal.adaptor.EclipseAdaptorHook$SaxParsingService"]
+8->7[label=""]
+}

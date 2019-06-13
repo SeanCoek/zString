@@ -1,0 +1,17 @@
+digraph g {
+0[label="@parameter1: java.util.HashSet"]
+1[label="r2"]
+0->1[label=""]
+2[label="@parameter0: org.eclipse.osgi.internal.module.ResolverBundle"]
+3[label="r1"]
+2->3[label=""]
+4[label="lengthof r3"]
+5[label="$i0"]
+4->5[label=""]
+6[label="@this: org.eclipse.osgi.internal.module.ResolverImpl"]
+7[label="r0"]
+6->7[label=""]
+8[label="interfaceinvoke $r4.<org.eclipse.osgi.service.resolver.BundleDescription: org.eclipse.osgi.service.resolver.BundleDescription[] getDependents()>()"]
+9[label="r3"]
+8->9[label=""]
+}

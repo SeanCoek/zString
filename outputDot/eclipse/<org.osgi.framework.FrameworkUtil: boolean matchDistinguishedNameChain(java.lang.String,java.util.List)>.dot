@@ -1,0 +1,11 @@
+digraph g {
+0[label="@parameter1: java.util.List"]
+1[label="r1"]
+0->1[label=""]
+2[label="staticinvoke <org.osgi.framework.FrameworkUtil$DNChainMatching: boolean match(java.lang.String,java.util.List)>(r0, r1)"]
+3[label="$z0"]
+2->3[label=""]
+4[label="@parameter0: java.lang.String"]
+5[label="r0"]
+4->5[label=""]
+}

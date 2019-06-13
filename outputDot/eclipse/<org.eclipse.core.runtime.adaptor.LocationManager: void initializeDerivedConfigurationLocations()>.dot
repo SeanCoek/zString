@@ -1,0 +1,8 @@
+digraph g {
+0[label="staticinvoke <org.eclipse.core.runtime.adaptor.LocationManager: java.io.File getConfigurationFile(java.lang.String)>('manifests')"]
+1[label="$r1"]
+0->1[label=""]
+2[label="staticinvoke <org.eclipse.osgi.framework.internal.core.FrameworkProperties: java.lang.String getProperty(java.lang.String)>('osgi.manifest.cache')"]
+3[label="$r0"]
+2->3[label=""]
+}

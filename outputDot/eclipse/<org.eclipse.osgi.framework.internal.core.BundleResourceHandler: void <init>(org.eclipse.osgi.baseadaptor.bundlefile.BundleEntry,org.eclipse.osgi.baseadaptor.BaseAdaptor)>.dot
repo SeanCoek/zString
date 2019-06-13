@@ -1,0 +1,13 @@
+digraph g {
+0[label="r0"]
+1[label="r2"]
+0->1[label="field: adaptor"]
+2[label="@this: org.eclipse.osgi.framework.internal.core.BundleResourceHandler"]
+2->0[label=""]
+3[label="@parameter1: org.eclipse.osgi.baseadaptor.BaseAdaptor"]
+3->1[label=""]
+4[label="r1"]
+0->4[label="field: bundleEntry"]
+5[label="@parameter0: org.eclipse.osgi.baseadaptor.bundlefile.BundleEntry"]
+5->4[label=""]
+}

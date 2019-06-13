@@ -1,0 +1,13 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.baseadaptor.BaseAdaptor$1"]
+1[label="r0"]
+0->1[label=""]
+2[label="@parameter0: org.eclipse.osgi.baseadaptor.BaseAdaptor"]
+3[label="r1"]
+2->3[label=""]
+4[label="r0"]
+4->3[label=""]
+5[label="org.eclipse.osgi.baseadaptor.BaseAdaptor$1"]
+5->1[label="type"]
+1->3[label="field: this$0"]
+}

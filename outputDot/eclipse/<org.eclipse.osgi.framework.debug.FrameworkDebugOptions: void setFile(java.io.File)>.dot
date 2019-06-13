@@ -1,0 +1,12 @@
+digraph g {
+0[label="@parameter0: java.io.File"]
+1[label="$r2"]
+0->1[label=""]
+2[label="r0"]
+3[label="r1"]
+2->3[label="field: outFile"]
+3->1[label=""]
+4[label="@this: org.eclipse.osgi.framework.debug.FrameworkDebugOptions"]
+4->2[label=""]
+0->3[label=""]
+}

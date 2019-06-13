@@ -1,0 +1,13 @@
+digraph g {
+0[label="r0"]
+1[label="r1"]
+0->1[label="field: handlerProxy"]
+2[label="org.eclipse.osgi.framework.internal.protocol.URLStreamHandlerSetter"]
+2->0[label="type"]
+3[label="@parameter0: org.eclipse.osgi.framework.internal.protocol.URLStreamHandlerProxy"]
+3->1[label=""]
+4[label="r0"]
+4->1[label=""]
+5[label="@this: org.eclipse.osgi.framework.internal.protocol.URLStreamHandlerSetter"]
+5->0[label=""]
+}

@@ -1,0 +1,14 @@
+digraph g {
+0[label="@this: org.eclipse.core.runtime.internal.stats.ClassloaderStats"]
+1[label="r0"]
+0->1[label=""]
+2[label="@parameter0: java.lang.String"]
+3[label="r1"]
+2->3[label=""]
+4[label="specialinvoke r0.<org.eclipse.core.runtime.internal.stats.ClassloaderStats: org.eclipse.core.runtime.internal.stats.ClassStats findClass(java.lang.String)>(r1)"]
+5[label="$r3"]
+4->5[label=""]
+6[label="staticinvoke <org.eclipse.core.runtime.internal.stats.ClassloaderStats: java.util.Stack getClassStack()>()"]
+7[label="$r2"]
+6->7[label=""]
+}

@@ -1,0 +1,14 @@
+digraph g {
+0[label="@parameter1: java.lang.String"]
+1[label="r2"]
+0->1[label=""]
+2[label="(org.eclipse.osgi.framework.internal.core.AbstractBundle) r1"]
+3[label="$r3"]
+2->3[label=""]
+4[label="@this: org.eclipse.core.runtime.internal.adaptor.BundleLocalizationImpl"]
+5[label="r0"]
+4->5[label=""]
+6[label="@parameter0: org.osgi.framework.Bundle"]
+7[label="r1"]
+6->7[label=""]
+}

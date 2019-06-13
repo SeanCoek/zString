@@ -1,0 +1,17 @@
+digraph g {
+0[label="java.util.HashMap"]
+1[label="$r2"]
+0->1[label="type"]
+2[label="r0"]
+3[label="r1"]
+2->3[label=""]
+4[label="r0"]
+4->3[label="field: storage"]
+5[label="@this: org.eclipse.osgi.internal.baseadaptor.BasePermissionStorage"]
+5->4[label=""]
+4->1[label="field: locations"]
+6[label="org.eclipse.osgi.internal.baseadaptor.BasePermissionStorage"]
+6->4[label="type"]
+7[label="@parameter0: org.eclipse.osgi.internal.baseadaptor.BaseStorage"]
+7->3[label=""]
+}

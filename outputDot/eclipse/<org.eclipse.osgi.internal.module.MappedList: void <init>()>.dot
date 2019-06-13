@@ -1,0 +1,11 @@
+digraph g {
+0[label="org.eclipse.osgi.internal.module.MappedList"]
+1[label="r0"]
+0->1[label="type"]
+2[label="@this: org.eclipse.osgi.internal.module.MappedList"]
+2->1[label=""]
+3[label="java.util.HashMap"]
+4[label="$r1"]
+3->4[label="type"]
+1->4[label="field: internal"]
+}

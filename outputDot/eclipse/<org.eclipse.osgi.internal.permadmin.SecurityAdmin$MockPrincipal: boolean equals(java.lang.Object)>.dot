@@ -1,0 +1,14 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.internal.permadmin.SecurityAdmin$MockPrincipal"]
+1[label="r0"]
+0->1[label=""]
+2[label="r1 instanceof org.eclipse.osgi.internal.permadmin.SecurityAdmin$MockPrincipal"]
+3[label="$z0"]
+2->3[label=""]
+4[label="(org.eclipse.osgi.internal.permadmin.SecurityAdmin$MockPrincipal) r1"]
+5[label="$r2"]
+4->5[label=""]
+6[label="@parameter0: java.lang.Object"]
+7[label="r1"]
+6->7[label=""]
+}

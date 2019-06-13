@@ -1,0 +1,13 @@
+digraph g {
+0[label="r0"]
+1[label="r1"]
+0->1[label="field: resolver"]
+2[label="r0"]
+2->1[label=""]
+3[label="@this: org.eclipse.osgi.internal.module.VersionHashMap"]
+3->0[label=""]
+4[label="@parameter0: org.eclipse.osgi.internal.module.ResolverImpl"]
+4->1[label=""]
+5[label="org.eclipse.osgi.internal.module.VersionHashMap"]
+5->0[label="type"]
+}

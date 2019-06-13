@@ -1,0 +1,9 @@
+digraph g {
+0[label="@parameter0: org.eclipse.osgi.service.resolver.VersionConstraint"]
+1[label="r1"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.internal.module.ResolverConstraint"]
+3[label="r0"]
+2->3[label=""]
+3->1[label="field: constraint"]
+}

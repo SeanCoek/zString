@@ -1,0 +1,11 @@
+digraph g {
+0[label="java.util.HashMap"]
+1[label="$r1"]
+0->1[label="type"]
+2[label="@this: org.eclipse.osgi.internal.permadmin.SecurityAdmin$MockBundle"]
+3[label="r0"]
+2->3[label=""]
+4[label="@parameter0: int"]
+5[label="i0"]
+4->5[label=""]
+}

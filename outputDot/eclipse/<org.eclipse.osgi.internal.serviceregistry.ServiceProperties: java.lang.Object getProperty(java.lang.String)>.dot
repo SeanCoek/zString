@@ -1,0 +1,17 @@
+digraph g {
+0[label="$r3"]
+1[label="r3"]
+0->1[label=""]
+2[label="staticinvoke <org.eclipse.osgi.internal.serviceregistry.ServiceProperties: java.lang.Object cloneValue(java.lang.Object)>($r2)"]
+2->0[label=""]
+3[label="org.eclipse.osgi.internal.serviceregistry.ServiceProperties"]
+4[label="r0"]
+3->4[label="type"]
+5[label="@this: org.eclipse.osgi.internal.serviceregistry.ServiceProperties"]
+5->4[label=""]
+6[label="'service.ranking'"]
+7[label="r1"]
+6->7[label=""]
+8[label="@parameter0: java.lang.String"]
+8->7[label=""]
+}

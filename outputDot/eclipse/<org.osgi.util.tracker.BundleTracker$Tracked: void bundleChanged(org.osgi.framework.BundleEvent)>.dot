@@ -1,0 +1,14 @@
+digraph g {
+0[label="@this: org.osgi.util.tracker.BundleTracker$Tracked"]
+1[label="r0"]
+0->1[label=""]
+2[label="i0 & $i1"]
+3[label="$i2"]
+2->3[label=""]
+4[label="interfaceinvoke r2.<org.osgi.framework.Bundle: int getState()>()"]
+5[label="i0"]
+4->5[label=""]
+6[label="@parameter0: org.osgi.framework.BundleEvent"]
+7[label="r1"]
+6->7[label=""]
+}

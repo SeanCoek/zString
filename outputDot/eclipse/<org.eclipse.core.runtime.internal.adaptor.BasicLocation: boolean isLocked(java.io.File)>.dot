@@ -1,0 +1,11 @@
+digraph g {
+0[label="@this: org.eclipse.core.runtime.internal.adaptor.BasicLocation"]
+1[label="r0"]
+0->1[label=""]
+2[label="@parameter0: java.io.File"]
+3[label="r1"]
+2->3[label=""]
+4[label="interfaceinvoke $r2.<org.eclipse.core.runtime.internal.adaptor.Locker: boolean isLocked()>()"]
+5[label="$z2"]
+4->5[label=""]
+}

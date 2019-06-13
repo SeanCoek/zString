@@ -1,0 +1,14 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.framework.debug.EclipseDebugTrace"]
+1[label="r0"]
+0->1[label=""]
+2[label="org.eclipse.osgi.framework.debug.FrameworkDebugTraceEntry"]
+3[label="$r3"]
+2->3[label="type"]
+4[label="r2"]
+3->4[label=""]
+2->4[label="type"]
+5[label="@parameter0: java.lang.String"]
+6[label="r1"]
+5->6[label=""]
+}

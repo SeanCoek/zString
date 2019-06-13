@@ -1,0 +1,9 @@
+digraph g {
+0[label="@parameter0: long"]
+1[label="l0"]
+0->1[label=""]
+2[label="@this: org.eclipse.core.runtime.internal.stats.BundleStats"]
+3[label="r0"]
+2->3[label=""]
+3->1[label="field: timestamp"]
+}

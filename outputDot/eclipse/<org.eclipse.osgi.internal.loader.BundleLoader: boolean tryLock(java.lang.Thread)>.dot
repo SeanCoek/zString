@@ -1,0 +1,14 @@
+digraph g {
+0[label="$i0 + 1"]
+1[label="$i1"]
+0->1[label=""]
+2[label="@parameter0: java.lang.Thread"]
+3[label="r0"]
+2->3[label=""]
+4[label="<org.eclipse.osgi.internal.loader.BundleLoader: int lockCount>"]
+5[label="$i0"]
+4->5[label=""]
+6[label="<org.eclipse.osgi.internal.loader.BundleLoader: java.lang.Object lockThread>"]
+7[label="$r1"]
+6->7[label=""]
+}

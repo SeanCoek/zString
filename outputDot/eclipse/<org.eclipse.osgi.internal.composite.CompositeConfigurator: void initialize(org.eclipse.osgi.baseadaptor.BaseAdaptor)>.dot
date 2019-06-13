@@ -1,0 +1,9 @@
+digraph g {
+0[label="r0"]
+1[label="r1"]
+0->1[label="field: adaptor"]
+2[label="@parameter0: org.eclipse.osgi.baseadaptor.BaseAdaptor"]
+2->1[label=""]
+3[label="@this: org.eclipse.osgi.internal.composite.CompositeConfigurator"]
+3->0[label=""]
+}

@@ -1,0 +1,8 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.internal.signedcontent.LegacyVerifierFactory$LegacyChain"]
+1[label="r0"]
+0->1[label=""]
+2[label="interfaceinvoke $r2.<org.eclipse.osgi.signedcontent.SignedContent: java.util.Date getSigningTime(org.eclipse.osgi.signedcontent.SignerInfo)>($r1)"]
+3[label="$r3"]
+2->3[label=""]
+}

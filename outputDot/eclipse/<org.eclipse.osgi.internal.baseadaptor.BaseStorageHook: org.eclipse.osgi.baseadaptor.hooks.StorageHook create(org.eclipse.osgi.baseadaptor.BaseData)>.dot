@@ -1,0 +1,15 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.internal.baseadaptor.BaseStorageHook"]
+1[label="r0"]
+0->1[label=""]
+2[label="r2"]
+3[label="r1"]
+2->3[label="field: bundleData"]
+4[label="org.eclipse.osgi.internal.baseadaptor.BaseStorageHook"]
+4->2[label="type"]
+5[label="@parameter0: org.eclipse.osgi.baseadaptor.BaseData"]
+5->3[label=""]
+6[label="$r3"]
+4->6[label="type"]
+6->2[label=""]
+}

@@ -1,0 +1,9 @@
+digraph g {
+0[label="r0"]
+1[label="r1"]
+0->1[label="field: version"]
+2[label="@parameter0: org.osgi.framework.Version"]
+2->1[label=""]
+3[label="@this: org.eclipse.osgi.internal.resolver.BaseDescriptionImpl"]
+3->0[label=""]
+}

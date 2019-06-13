@@ -1,0 +1,13 @@
+digraph g {
+0[label="r26"]
+1[label="r0"]
+0->1[label=""]
+2[label="$r10"]
+2->1[label=""]
+3[label="$r3"]
+3->1[label=""]
+4[label="$r1"]
+4->1[label=""]
+5[label="@parameter0: org.eclipse.osgi.internal.loader.BundleLoaderProxy"]
+5->1[label=""]
+}

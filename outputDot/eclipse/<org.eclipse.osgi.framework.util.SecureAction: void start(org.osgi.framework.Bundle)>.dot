@@ -1,0 +1,8 @@
+digraph g {
+0[label="@parameter0: org.osgi.framework.Bundle"]
+1[label="r1"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.framework.util.SecureAction"]
+3[label="r0"]
+2->3[label=""]
+}

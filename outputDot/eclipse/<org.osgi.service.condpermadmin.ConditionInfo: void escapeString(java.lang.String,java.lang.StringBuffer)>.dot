@@ -1,0 +1,17 @@
+digraph g {
+0[label="0"]
+1[label="i2"]
+0->1[label=""]
+2[label="$r9"]
+3[label="r0"]
+2->3[label=""]
+4[label="@parameter1: java.lang.StringBuffer"]
+5[label="r1"]
+4->5[label=""]
+6[label="r1"]
+6->5[label=""]
+7[label="@parameter0: java.lang.String"]
+7->3[label=""]
+8[label="i2 + 1"]
+8->1[label=""]
+}

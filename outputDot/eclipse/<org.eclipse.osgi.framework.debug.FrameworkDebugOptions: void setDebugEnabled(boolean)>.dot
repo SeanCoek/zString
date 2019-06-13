@@ -1,0 +1,15 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.framework.debug.FrameworkDebugOptions"]
+1[label="r0"]
+0->1[label=""]
+2[label="java.util.Properties"]
+3[label="$r3"]
+2->3[label="type"]
+4[label="@parameter0: boolean"]
+5[label="z0"]
+4->5[label=""]
+6[label="$r4"]
+1->6[label="field: options"]
+2->6[label="type"]
+6->3[label=""]
+}

@@ -1,0 +1,14 @@
+digraph g {
+0[label="java.util.Date"]
+1[label="$r1"]
+0->1[label="type"]
+2[label="@this: org.eclipse.osgi.framework.debug.EclipseDebugTrace"]
+3[label="r0"]
+2->3[label=""]
+4[label="@parameter0: long"]
+5[label="l0"]
+4->5[label=""]
+6[label="<org.eclipse.osgi.framework.debug.EclipseDebugTrace: java.text.SimpleDateFormat TRACE_FILE_DATE_FORMATTER>"]
+7[label="$r2"]
+6->7[label=""]
+}

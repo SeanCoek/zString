@@ -1,0 +1,8 @@
+digraph g {
+0[label="<org.eclipse.core.runtime.internal.adaptor.EclipseEnvironmentInfo: java.lang.String arch>"]
+1[label="$r1"]
+0->1[label=""]
+2[label="@this: org.eclipse.core.runtime.internal.adaptor.EclipseEnvironmentInfo"]
+3[label="r0"]
+2->3[label=""]
+}

@@ -1,0 +1,8 @@
+digraph g {
+0[label="staticinvoke <org.eclipse.osgi.internal.permadmin.SecurityRow: java.lang.String getEncoded(java.lang.String,org.osgi.service.condpermadmin.ConditionInfo[],org.osgi.service.permissionadmin.PermissionInfo[],boolean)>($r1, $r2, $r3, $z0)"]
+1[label="$r4"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.internal.permadmin.SecurityRow"]
+3[label="r0"]
+2->3[label=""]
+}

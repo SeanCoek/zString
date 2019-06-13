@@ -1,0 +1,17 @@
+digraph g {
+0[label="java.lang.IllegalArgumentException"]
+1[label="$r6"]
+0->1[label="type"]
+2[label="@parameter0: org.osgi.framework.Bundle"]
+3[label="r0"]
+2->3[label=""]
+4[label="$r2"]
+5[label="r1"]
+4->5[label=""]
+6[label="interfaceinvoke r0.<org.osgi.framework.Bundle: long getBundleId()>()"]
+7[label="$l0"]
+6->7[label=""]
+8[label="java.lang.StringBuffer"]
+8->4[label="type"]
+8->5[label="type"]
+}

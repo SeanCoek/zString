@@ -1,0 +1,14 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.framework.internal.protocol.URLStreamHandlerProxy"]
+1[label="r0"]
+0->1[label=""]
+2[label="interfaceinvoke $r3.<org.osgi.service.url.URLStreamHandlerService: boolean sameFile(java.net.URL,java.net.URL)>(r1, r2)"]
+3[label="$z0"]
+2->3[label=""]
+4[label="@parameter0: java.net.URL"]
+5[label="r1"]
+4->5[label=""]
+6[label="@parameter1: java.net.URL"]
+7[label="r2"]
+6->7[label=""]
+}

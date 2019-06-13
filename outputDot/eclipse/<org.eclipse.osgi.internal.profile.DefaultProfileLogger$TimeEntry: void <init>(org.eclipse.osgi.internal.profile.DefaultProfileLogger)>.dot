@@ -1,0 +1,13 @@
+digraph g {
+0[label="org.eclipse.osgi.internal.profile.DefaultProfileLogger$TimeEntry"]
+1[label="r0"]
+0->1[label="type"]
+2[label="r1"]
+1->2[label="field: this$0"]
+3[label="r0"]
+3->2[label=""]
+4[label="@this: org.eclipse.osgi.internal.profile.DefaultProfileLogger$TimeEntry"]
+4->1[label=""]
+5[label="@parameter0: org.eclipse.osgi.internal.profile.DefaultProfileLogger"]
+5->2[label=""]
+}

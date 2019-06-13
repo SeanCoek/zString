@@ -1,0 +1,14 @@
+digraph g {
+0[label="staticinvoke <java.lang.ClassLoader: java.net.URL getSystemResource(java.lang.String)>(r1)"]
+1[label="$r6"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.framework.internal.core.Framework"]
+3[label="r0"]
+2->3[label=""]
+4[label="r5"]
+1->4[label=""]
+5[label="@parameter0: java.lang.String"]
+6[label="r1"]
+5->6[label=""]
+0->4[label=""]
+}

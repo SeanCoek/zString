@@ -1,0 +1,8 @@
+digraph g {
+0[label="<org.eclipse.osgi.internal.signedcontent.SignedBundleHook: org.eclipse.osgi.baseadaptor.BaseAdaptor ADAPTOR>"]
+1[label="$r1"]
+0->1[label=""]
+2[label="<org.eclipse.osgi.internal.signedcontent.SignedBundleHook: org.eclipse.osgi.baseadaptor.BaseAdaptor ADAPTOR>"]
+3[label="$r0"]
+2->3[label=""]
+}

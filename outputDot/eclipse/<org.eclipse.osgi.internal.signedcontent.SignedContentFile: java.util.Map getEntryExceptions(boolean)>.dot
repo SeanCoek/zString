@@ -1,0 +1,18 @@
+digraph g {
+0[label="$r2"]
+1[label="$r1"]
+0->1[label=""]
+2[label="java.util.HashMap"]
+2->0[label="type"]
+3[label="r0"]
+3->0[label="field: entryExceptions"]
+2->1[label="type"]
+4[label="$r3"]
+0->4[label=""]
+2->4[label="type"]
+5[label="@parameter0: boolean"]
+6[label="z0"]
+5->6[label=""]
+7[label="@this: org.eclipse.osgi.internal.signedcontent.SignedContentFile"]
+7->3[label=""]
+}

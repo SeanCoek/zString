@@ -1,0 +1,11 @@
+digraph g {
+0[label="@parameter0: java.lang.String"]
+1[label="r1"]
+0->1[label=""]
+2[label="staticinvoke <org.eclipse.osgi.internal.signedcontent.TrustEngineListener: org.eclipse.osgi.internal.signedcontent.TrustEngineListener getInstance()>()"]
+3[label="r3"]
+2->3[label=""]
+4[label="@this: org.eclipse.osgi.service.security.TrustEngine"]
+5[label="r0"]
+4->5[label=""]
+}

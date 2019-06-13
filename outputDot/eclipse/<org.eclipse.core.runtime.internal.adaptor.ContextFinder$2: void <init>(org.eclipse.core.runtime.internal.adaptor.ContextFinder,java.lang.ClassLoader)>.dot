@@ -1,0 +1,18 @@
+digraph g {
+0[label="null"]
+1[label="$r2"]
+0->1[label=""]
+2[label="r0"]
+3[label="r1"]
+2->3[label="field: this$0"]
+4[label="org.eclipse.core.runtime.internal.adaptor.ContextFinder$2"]
+4->2[label="type"]
+5[label="@parameter1: java.lang.ClassLoader"]
+5->1[label=""]
+6[label="@parameter0: org.eclipse.core.runtime.internal.adaptor.ContextFinder"]
+6->3[label=""]
+7[label="r0"]
+7->3[label=""]
+8[label="@this: org.eclipse.core.runtime.internal.adaptor.ContextFinder$2"]
+8->2[label=""]
+}

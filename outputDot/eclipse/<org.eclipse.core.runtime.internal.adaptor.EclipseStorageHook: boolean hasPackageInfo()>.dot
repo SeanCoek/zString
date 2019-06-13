@@ -1,0 +1,8 @@
+digraph g {
+0[label="$b0 & 2"]
+1[label="$b1"]
+0->1[label=""]
+2[label="@this: org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook"]
+3[label="r0"]
+2->3[label=""]
+}

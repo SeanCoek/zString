@@ -1,0 +1,16 @@
+digraph g {
+0[label="r0"]
+1[label="$r2"]
+0->1[label="field: context"]
+2[label="$i0"]
+1->2[label=""]
+3[label="$r1"]
+1->3[label=""]
+4[label="$r3"]
+1->4[label=""]
+5[label="$i0 & 56"]
+6[label="$i1"]
+5->6[label=""]
+7[label="@this: org.eclipse.osgi.framework.internal.core.BundleHost"]
+7->0[label=""]
+}

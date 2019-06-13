@@ -1,0 +1,11 @@
+digraph g {
+0[label="@parameter0: java.security.Permission"]
+1[label="r1"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.internal.permadmin.SecurityTable"]
+3[label="r0"]
+2->3[label=""]
+4[label="$i0 & 1"]
+5[label="$i1"]
+4->5[label=""]
+}

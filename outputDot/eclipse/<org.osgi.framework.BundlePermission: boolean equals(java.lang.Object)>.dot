@@ -1,0 +1,14 @@
+digraph g {
+0[label="@this: org.osgi.framework.BundlePermission"]
+1[label="r0"]
+0->1[label=""]
+2[label="@parameter0: java.lang.Object"]
+3[label="r1"]
+2->3[label=""]
+4[label="r1 instanceof org.osgi.framework.BundlePermission"]
+5[label="$z0"]
+4->5[label=""]
+6[label="(org.osgi.framework.BundlePermission) r1"]
+7[label="r2"]
+6->7[label=""]
+}

@@ -1,0 +1,8 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.internal.resolver.ReadOnlyState"]
+1[label="r0"]
+0->1[label=""]
+2[label="interfaceinvoke $r1.<org.eclipse.osgi.service.resolver.State: org.eclipse.osgi.service.resolver.ExportPackageDescription[] getExportedPackages()>()"]
+3[label="$r2"]
+2->3[label=""]
+}

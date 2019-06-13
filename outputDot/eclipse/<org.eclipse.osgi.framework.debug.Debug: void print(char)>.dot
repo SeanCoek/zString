@@ -1,0 +1,8 @@
+digraph g {
+0[label="<org.eclipse.osgi.framework.debug.Debug: java.io.PrintStream out>"]
+1[label="$r0"]
+0->1[label=""]
+2[label="@parameter0: char"]
+3[label="c0"]
+2->3[label=""]
+}

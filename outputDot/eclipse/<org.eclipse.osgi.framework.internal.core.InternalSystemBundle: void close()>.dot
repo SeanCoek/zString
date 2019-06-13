@@ -1,0 +1,9 @@
+digraph g {
+0[label="null"]
+1[label="$r1"]
+0->1[label=""]
+2[label="r0"]
+2->0[label="field: context"]
+3[label="@this: org.eclipse.osgi.framework.internal.core.InternalSystemBundle"]
+3->2[label=""]
+}

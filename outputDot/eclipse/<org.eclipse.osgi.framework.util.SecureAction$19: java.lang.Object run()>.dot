@@ -1,0 +1,11 @@
+digraph g {
+0[label="<org.eclipse.osgi.framework.util.SecureAction: java.lang.ClassLoader bootClassLoader>"]
+1[label="$r3"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.framework.util.SecureAction$19"]
+3[label="r0"]
+2->3[label=""]
+4[label="staticinvoke <java.lang.ClassLoader: java.lang.ClassLoader getSystemClassLoader()>()"]
+5[label="r1"]
+4->5[label=""]
+}

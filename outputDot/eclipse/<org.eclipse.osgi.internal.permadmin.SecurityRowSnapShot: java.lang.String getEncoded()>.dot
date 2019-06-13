@@ -1,0 +1,11 @@
+digraph g {
+0[label="'deny'"]
+1[label="$r2"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.internal.permadmin.SecurityRowSnapShot"]
+3[label="r0"]
+2->3[label=""]
+4[label="staticinvoke <org.eclipse.osgi.internal.permadmin.SecurityRow: java.lang.String getEncoded(java.lang.String,org.osgi.service.condpermadmin.ConditionInfo[],org.osgi.service.permissionadmin.PermissionInfo[],boolean)>($r3, $r4, $r5, $z0)"]
+5[label="$r6"]
+4->5[label=""]
+}

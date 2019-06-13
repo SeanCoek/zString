@@ -1,0 +1,8 @@
+digraph g {
+0[label="staticinvoke <java.lang.System: long currentTimeMillis()>()"]
+1[label="$l0"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.internal.profile.DefaultProfileLogger"]
+3[label="r0"]
+2->3[label=""]
+}

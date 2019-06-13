@@ -1,0 +1,5 @@
+digraph g {
+0[label="<org.eclipse.core.runtime.adaptor.EclipseStarter: boolean running>"]
+1[label="$z0"]
+0->1[label=""]
+}

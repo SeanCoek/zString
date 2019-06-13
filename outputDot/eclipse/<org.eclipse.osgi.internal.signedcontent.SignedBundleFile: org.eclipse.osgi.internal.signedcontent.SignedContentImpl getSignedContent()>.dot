@@ -1,0 +1,14 @@
+digraph g {
+0[label="org.eclipse.osgi.internal.signedcontent.SignedBundleFile"]
+1[label="r0"]
+0->1[label="type"]
+2[label="$r1"]
+3[label="r25"]
+2->3[label=""]
+4[label="r22"]
+2->4[label=""]
+5[label="@this: org.eclipse.osgi.internal.signedcontent.SignedBundleFile"]
+5->1[label=""]
+6[label="$r6"]
+2->6[label=""]
+}

@@ -1,0 +1,8 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.internal.signedcontent.SignedStorageHook"]
+1[label="r0"]
+0->1[label=""]
+2[label="@parameter0: int"]
+3[label="i0"]
+2->3[label=""]
+}

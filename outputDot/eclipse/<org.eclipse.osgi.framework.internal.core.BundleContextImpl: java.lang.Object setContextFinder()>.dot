@@ -1,0 +1,17 @@
+digraph g {
+0[label="<org.eclipse.osgi.framework.internal.core.BundleContextImpl: boolean SET_TCCL>"]
+1[label="$z0"]
+0->1[label=""]
+2[label="staticinvoke <java.lang.Thread: java.lang.Thread currentThread()>()"]
+3[label="r1"]
+2->3[label=""]
+4[label="<java.lang.Boolean: java.lang.Boolean FALSE>"]
+5[label="$r5"]
+4->5[label=""]
+6[label="@this: org.eclipse.osgi.framework.internal.core.BundleContextImpl"]
+7[label="r0"]
+6->7[label=""]
+8[label="<java.lang.Boolean: java.lang.Boolean FALSE>"]
+9[label="$r8"]
+8->9[label=""]
+}

@@ -1,0 +1,13 @@
+digraph g {
+0[label="java.lang.NoClassDefFoundError"]
+1[label="$r2"]
+0->1[label="type"]
+2[label="<org.eclipse.osgi.internal.baseadaptor.AdaptorMsg: java.lang.Class class$0>"]
+3[label="$r4"]
+2->3[label=""]
+4[label="staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>('org.eclipse.osgi.internal.baseadaptor.AdaptorMsg')"]
+4->3[label=""]
+5[label="@caughtexception"]
+6[label="$r1"]
+5->6[label=""]
+}

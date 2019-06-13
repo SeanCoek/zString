@@ -1,0 +1,8 @@
+digraph g {
+0[label="@parameter0: java.io.DataInputStream"]
+1[label="r0"]
+0->1[label=""]
+2[label="@parameter1: boolean"]
+3[label="z0"]
+2->3[label=""]
+}

@@ -1,0 +1,17 @@
+digraph g {
+0[label="$r3"]
+1[label="r2"]
+0->1[label=""]
+2[label="@caughtexception"]
+3[label="$r9"]
+2->3[label=""]
+4[label="@this: org.eclipse.osgi.internal.baseadaptor.BasePermissionStorage"]
+5[label="r0"]
+4->5[label=""]
+6[label="(java.lang.String[]) $r6"]
+7[label="$r7"]
+6->7[label=""]
+8[label="@parameter0: java.lang.String"]
+9[label="r1"]
+8->9[label=""]
+}

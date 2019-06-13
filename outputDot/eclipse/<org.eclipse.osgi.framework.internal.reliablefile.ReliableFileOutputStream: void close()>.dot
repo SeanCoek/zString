@@ -1,0 +1,13 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.framework.internal.reliablefile.ReliableFileOutputStream"]
+1[label="r0"]
+0->1[label=""]
+2[label="null"]
+1->2[label="field: reliable"]
+3[label="$r3"]
+2->3[label=""]
+4[label="org.eclipse.osgi.framework.internal.reliablefile.ReliableFileOutputStream"]
+4->1[label="type"]
+5[label="$r2"]
+2->5[label=""]
+}

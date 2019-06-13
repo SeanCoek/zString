@@ -1,0 +1,8 @@
+digraph g {
+0[label="org.eclipse.osgi.service.resolver.VersionRange"]
+1[label="$r1"]
+0->1[label="type"]
+2[label="org.osgi.framework.Version"]
+3[label="$r0"]
+2->3[label="type"]
+}

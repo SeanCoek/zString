@@ -1,0 +1,5 @@
+digraph g {
+0[label="<org.eclipse.osgi.framework.internal.core.FrameworkProperties: java.util.Properties properties>"]
+1[label="$r0"]
+0->1[label=""]
+}

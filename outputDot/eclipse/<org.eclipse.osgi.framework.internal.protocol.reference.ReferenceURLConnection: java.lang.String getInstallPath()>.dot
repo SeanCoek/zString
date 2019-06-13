@@ -1,0 +1,8 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.framework.internal.protocol.reference.ReferenceURLConnection"]
+1[label="r0"]
+0->1[label=""]
+2[label="staticinvoke <org.eclipse.osgi.framework.internal.core.FrameworkProperties: java.lang.String getProperty(java.lang.String)>('osgi.install.area')"]
+3[label="r1"]
+2->3[label=""]
+}

@@ -1,0 +1,8 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.baseadaptor.bundlefile.BundleFile"]
+1[label="r0"]
+0->1[label=""]
+2[label="staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r1)"]
+3[label="$r2"]
+2->3[label=""]
+}

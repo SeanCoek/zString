@@ -1,0 +1,8 @@
+digraph g {
+0[label="interfaceinvoke r1.<org.osgi.framework.Bundle: int getState()>()"]
+1[label="$i0"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.framework.internal.core.EquinoxLauncher"]
+3[label="r0"]
+2->3[label=""]
+}

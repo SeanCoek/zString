@@ -1,0 +1,7 @@
+digraph g {
+0[label="org.eclipse.osgi.internal.baseadaptor.DevClassLoadingHook"]
+1[label="r0"]
+0->1[label="type"]
+2[label="@this: org.eclipse.osgi.internal.baseadaptor.DevClassLoadingHook"]
+2->1[label=""]
+}

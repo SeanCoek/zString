@@ -1,0 +1,8 @@
+digraph g {
+0[label="@parameter0: java.lang.String"]
+1[label="r0"]
+0->1[label=""]
+2[label="staticinvoke <org.eclipse.osgi.util.ManifestElement: java.lang.String[] getArrayFromList(java.lang.String,java.lang.String)>(r0, ',')"]
+3[label="$r1"]
+2->3[label=""]
+}

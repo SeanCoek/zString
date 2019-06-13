@@ -1,0 +1,8 @@
+digraph g {
+0[label="@this: org.osgi.service.url.AbstractURLStreamHandlerService"]
+1[label="r0"]
+0->1[label=""]
+2[label="specialinvoke r0.<java.net.URLStreamHandler: int getDefaultPort()>()"]
+3[label="$i0"]
+2->3[label=""]
+}

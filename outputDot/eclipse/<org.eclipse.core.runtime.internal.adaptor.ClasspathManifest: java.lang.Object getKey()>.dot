@@ -1,0 +1,8 @@
+digraph g {
+0[label="<org.eclipse.core.runtime.internal.adaptor.ClasspathManifest: java.lang.Object KEY>"]
+1[label="$r1"]
+0->1[label=""]
+2[label="@this: org.eclipse.core.runtime.internal.adaptor.ClasspathManifest"]
+3[label="r0"]
+2->3[label=""]
+}

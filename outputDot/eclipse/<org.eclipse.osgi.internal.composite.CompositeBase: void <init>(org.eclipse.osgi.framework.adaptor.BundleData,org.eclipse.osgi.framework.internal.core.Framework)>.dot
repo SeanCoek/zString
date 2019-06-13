@@ -1,0 +1,17 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.internal.composite.CompositeBase"]
+1[label="r0"]
+0->1[label=""]
+2[label="$r3"]
+1->2[label="field: resolving"]
+3[label="java.lang.ThreadLocal"]
+3->2[label="type"]
+4[label="$r4"]
+1->4[label="field: companionFramework"]
+5[label="@parameter1: org.eclipse.osgi.framework.internal.core.Framework"]
+6[label="r2"]
+5->6[label=""]
+7[label="@parameter0: org.eclipse.osgi.framework.adaptor.BundleData"]
+8[label="r1"]
+7->8[label=""]
+}

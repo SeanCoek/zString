@@ -1,0 +1,17 @@
+digraph g {
+0[label="staticinvoke <java.security.AccessController: java.lang.Object doPrivileged(java.security.PrivilegedAction)>($r2)"]
+1[label="$r3"]
+0->1[label=""]
+2[label="staticinvoke <org.eclipse.osgi.framework.internal.core.FrameworkProperties: java.lang.String getProperty(java.lang.String,java.lang.String)>('osgi.compatibility.errorOnFailedStart', 'true')"]
+3[label="$r1"]
+2->3[label=""]
+4[label="(org.eclipse.osgi.framework.util.SecureAction) $r3"]
+5[label="$r4"]
+4->5[label=""]
+6[label="staticinvoke <org.eclipse.osgi.framework.util.SecureAction: java.security.PrivilegedAction createSecureAction()>()"]
+7[label="$r2"]
+6->7[label=""]
+8[label="'true'"]
+9[label="$r0"]
+8->9[label=""]
+}

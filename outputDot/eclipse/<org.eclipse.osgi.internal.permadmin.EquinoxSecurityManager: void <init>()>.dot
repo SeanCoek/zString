@@ -1,0 +1,11 @@
+digraph g {
+0[label="r0"]
+1[label="$r1"]
+0->1[label="field: localCheckContext"]
+2[label="org.eclipse.osgi.internal.permadmin.EquinoxSecurityManager"]
+2->0[label="type"]
+3[label="@this: org.eclipse.osgi.internal.permadmin.EquinoxSecurityManager"]
+3->0[label=""]
+4[label="java.lang.ThreadLocal"]
+4->1[label="type"]
+}

@@ -1,0 +1,8 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.framework.util.SecureAction$18"]
+1[label="r0"]
+0->1[label=""]
+2[label="staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>($r1)"]
+3[label="$r2"]
+2->3[label=""]
+}

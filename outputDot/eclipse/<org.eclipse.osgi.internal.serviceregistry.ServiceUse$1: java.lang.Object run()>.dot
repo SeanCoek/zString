@@ -1,0 +1,8 @@
+digraph g {
+0[label="interfaceinvoke $r4.<org.osgi.framework.ServiceFactory: java.lang.Object getService(org.osgi.framework.Bundle,org.osgi.framework.ServiceRegistration)>($r5, $r7)"]
+1[label="$r8"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.internal.serviceregistry.ServiceUse$1"]
+3[label="r0"]
+2->3[label=""]
+}

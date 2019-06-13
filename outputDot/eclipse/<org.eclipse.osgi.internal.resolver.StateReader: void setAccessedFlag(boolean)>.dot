@@ -1,0 +1,9 @@
+digraph g {
+0[label="@parameter0: boolean"]
+1[label="z0"]
+0->1[label=""]
+2[label="r0"]
+2->1[label="field: accessedFlag"]
+3[label="@this: org.eclipse.osgi.internal.resolver.StateReader"]
+3->2[label=""]
+}

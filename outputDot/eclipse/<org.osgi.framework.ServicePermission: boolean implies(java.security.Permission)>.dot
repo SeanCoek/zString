@@ -1,0 +1,14 @@
+digraph g {
+0[label="@this: org.osgi.framework.ServicePermission"]
+1[label="r0"]
+0->1[label=""]
+2[label="(org.osgi.framework.ServicePermission) r1"]
+3[label="r2"]
+2->3[label=""]
+4[label="@parameter0: java.security.Permission"]
+5[label="r1"]
+4->5[label=""]
+6[label="r1 instanceof org.osgi.framework.ServicePermission"]
+7[label="$z0"]
+6->7[label=""]
+}

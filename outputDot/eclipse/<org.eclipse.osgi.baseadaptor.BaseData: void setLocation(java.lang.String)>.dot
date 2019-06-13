@@ -1,0 +1,13 @@
+digraph g {
+0[label="@parameter0: java.lang.String"]
+1[label="r1"]
+0->1[label=""]
+2[label="r1"]
+2->1[label=""]
+3[label="org.eclipse.osgi.baseadaptor.BaseData"]
+4[label="r0"]
+3->4[label="type"]
+5[label="@this: org.eclipse.osgi.baseadaptor.BaseData"]
+5->4[label=""]
+4->1[label="field: location"]
+}

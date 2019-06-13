@@ -1,0 +1,8 @@
+digraph g {
+0[label="interfaceinvoke $r1.<org.eclipse.osgi.signedcontent.SignerInfo: boolean isTrusted()>()"]
+1[label="$z0"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.internal.signedcontent.LegacyVerifierFactory$LegacyChain"]
+3[label="r0"]
+2->3[label=""]
+}

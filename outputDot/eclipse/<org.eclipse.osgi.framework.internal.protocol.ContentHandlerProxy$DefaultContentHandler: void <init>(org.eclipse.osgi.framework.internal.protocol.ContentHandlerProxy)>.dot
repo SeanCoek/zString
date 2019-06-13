@@ -1,0 +1,13 @@
+digraph g {
+0[label="r0"]
+1[label="r1"]
+0->1[label=""]
+2[label="org.eclipse.osgi.framework.internal.protocol.ContentHandlerProxy$DefaultContentHandler"]
+3[label="r0"]
+2->3[label="type"]
+3->1[label="field: this$0"]
+4[label="@this: org.eclipse.osgi.framework.internal.protocol.ContentHandlerProxy$DefaultContentHandler"]
+4->3[label=""]
+5[label="@parameter0: org.eclipse.osgi.framework.internal.protocol.ContentHandlerProxy"]
+5->1[label=""]
+}

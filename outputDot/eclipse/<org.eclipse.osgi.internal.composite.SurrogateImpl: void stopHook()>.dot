@@ -1,0 +1,8 @@
+digraph g {
+0[label="(org.eclipse.osgi.service.internal.composite.CompositeModule) $r1"]
+1[label="$r2"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.internal.composite.SurrogateImpl"]
+3[label="r0"]
+2->3[label=""]
+}

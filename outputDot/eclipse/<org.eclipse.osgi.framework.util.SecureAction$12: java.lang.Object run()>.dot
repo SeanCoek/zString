@@ -1,0 +1,8 @@
+digraph g {
+0[label="java.lang.Long"]
+1[label="$r1"]
+0->1[label="type"]
+2[label="@this: org.eclipse.osgi.framework.util.SecureAction$12"]
+3[label="r0"]
+2->3[label=""]
+}

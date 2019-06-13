@@ -1,0 +1,14 @@
+digraph g {
+0[label="@this: org.osgi.util.tracker.BundleTracker"]
+1[label="r0"]
+0->1[label=""]
+2[label="r1"]
+3[label="r2"]
+2->3[label=""]
+4[label="specialinvoke r0.<org.osgi.util.tracker.BundleTracker: org.osgi.util.tracker.BundleTracker$Tracked tracked()>()"]
+4->2[label=""]
+4->3[label=""]
+5[label="@caughtexception"]
+6[label="$r4"]
+5->6[label=""]
+}

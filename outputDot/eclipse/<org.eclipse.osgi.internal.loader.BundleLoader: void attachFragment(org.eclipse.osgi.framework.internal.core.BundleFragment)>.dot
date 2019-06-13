@@ -1,0 +1,14 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.internal.loader.BundleLoader"]
+1[label="r0"]
+0->1[label=""]
+2[label="interfaceinvoke $r5.<org.eclipse.osgi.service.resolver.BundleDescription: org.eclipse.osgi.service.resolver.ExportPackageDescription[] getSelectedExports()>()"]
+3[label="r2"]
+2->3[label=""]
+4[label="@parameter0: org.eclipse.osgi.framework.internal.core.BundleFragment"]
+5[label="r1"]
+4->5[label=""]
+6[label="interfaceinvoke $r7.<org.eclipse.osgi.framework.adaptor.BundleData: java.lang.String[] getClassPath()>()"]
+7[label="r3"]
+6->7[label=""]
+}

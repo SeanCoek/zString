@@ -1,0 +1,5 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.framework.internal.core.BundleURLConnection"]
+1[label="r0"]
+0->1[label=""]
+}

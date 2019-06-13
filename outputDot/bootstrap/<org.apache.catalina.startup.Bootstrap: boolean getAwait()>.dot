@@ -1,0 +1,14 @@
+digraph g {
+0[label="(java.lang.Boolean) $r8"]
+1[label="r4"]
+0->1[label=""]
+2[label="java.lang.Object[]"]
+3[label="r2"]
+2->3[label="type"]
+4[label="@this: org.apache.catalina.startup.Bootstrap"]
+5[label="r0"]
+4->5[label=""]
+6[label="java.lang.Class[]"]
+7[label="r1"]
+6->7[label="type"]
+}

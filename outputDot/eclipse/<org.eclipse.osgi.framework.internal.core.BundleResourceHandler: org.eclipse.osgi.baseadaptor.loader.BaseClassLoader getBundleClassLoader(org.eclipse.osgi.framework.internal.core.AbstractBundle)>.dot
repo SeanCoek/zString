@@ -1,0 +1,8 @@
+digraph g {
+0[label="(org.eclipse.osgi.baseadaptor.loader.BaseClassLoader) $r2"]
+1[label="$r3"]
+0->1[label=""]
+2[label="@parameter0: org.eclipse.osgi.framework.internal.core.AbstractBundle"]
+3[label="r0"]
+2->3[label=""]
+}

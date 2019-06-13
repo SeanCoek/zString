@@ -1,0 +1,11 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.internal.permadmin.SecurityAdmin"]
+1[label="r0"]
+0->1[label=""]
+2[label="@parameter0: java.lang.String"]
+3[label="r1"]
+2->3[label=""]
+4[label="staticinvoke <org.eclipse.osgi.internal.permadmin.SecurityRow: org.eclipse.osgi.internal.permadmin.SecurityRowSnapShot createSecurityRowSnapShot(java.lang.String)>(r1)"]
+5[label="$r2"]
+4->5[label=""]
+}

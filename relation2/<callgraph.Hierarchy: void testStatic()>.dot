@@ -1,0 +1,14 @@
+digraph g {
+0[label="basic.Parent"]
+1[label="$r3"]
+0->1[label="type"]
+2[label="@this: callgraph.Hierarchy"]
+3[label="r0"]
+2->3[label=""]
+4[label="callgraph.Hierarchy"]
+5[label="r1"]
+4->5[label="type"]
+6[label="$r2"]
+4->6[label="type"]
+6->5[label=""]
+}

@@ -1,0 +1,17 @@
+digraph g {
+0[label="@parameter0: org.eclipse.core.runtime.internal.adaptor.PluginParser"]
+1[label="r1"]
+0->1[label=""]
+2[label="r0"]
+3[label="0"]
+2->3[label="field: requiresExpanded"]
+2->3[label="field: compatibilityFound"]
+2->3[label="field: hasExtensionExtensionPoints"]
+4[label="@this: org.eclipse.core.runtime.internal.adaptor.PluginParser$PluginInfo"]
+4->2[label=""]
+2->1[label="field: this$0"]
+5[label="r0"]
+5->1[label=""]
+6[label="org.eclipse.core.runtime.internal.adaptor.PluginParser$PluginInfo"]
+6->2[label="type"]
+}

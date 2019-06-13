@@ -1,0 +1,13 @@
+digraph g {
+0[label="@this: org.osgi.util.tracker.ServiceTracker$Tracked"]
+1[label="r0"]
+0->1[label=""]
+2[label="r1"]
+1->2[label="field: this$0"]
+3[label="r0"]
+3->2[label=""]
+4[label="@parameter0: org.osgi.util.tracker.ServiceTracker"]
+4->2[label=""]
+5[label="org.osgi.util.tracker.ServiceTracker$Tracked"]
+5->1[label="type"]
+}

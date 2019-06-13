@@ -1,0 +1,8 @@
+digraph g {
+0[label="interfaceinvoke $r1.<java.util.Collection: java.lang.Object[] toArray()>()"]
+1[label="$r2"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.internal.serviceregistry.ShrinkableCollection"]
+3[label="r0"]
+2->3[label=""]
+}

@@ -1,0 +1,11 @@
+digraph g {
+0[label="@parameter0: java.net.URL"]
+1[label="r1"]
+0->1[label=""]
+2[label="java.lang.IllegalStateException"]
+3[label="$r2"]
+2->3[label="type"]
+4[label="@this: org.eclipse.osgi.framework.internal.protocol.NullURLStreamHandlerService"]
+5[label="r0"]
+4->5[label=""]
+}

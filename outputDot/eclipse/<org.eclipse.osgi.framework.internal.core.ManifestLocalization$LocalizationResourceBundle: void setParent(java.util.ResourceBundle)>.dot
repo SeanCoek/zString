@@ -1,0 +1,13 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.framework.internal.core.ManifestLocalization$LocalizationResourceBundle"]
+1[label="r0"]
+0->1[label=""]
+2[label="@parameter0: java.util.ResourceBundle"]
+3[label="r1"]
+2->3[label=""]
+4[label="$r23"]
+4->3[label=""]
+5[label="org.eclipse.osgi.framework.internal.core.ManifestLocalization$LocalizationResourceBundle"]
+5->1[label="type"]
+3->3[label=""]
+}

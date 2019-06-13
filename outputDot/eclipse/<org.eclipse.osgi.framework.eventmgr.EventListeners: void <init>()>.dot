@@ -1,0 +1,9 @@
+digraph g {
+0[label="r0"]
+1[label="$r1"]
+0->1[label="field: list"]
+2[label="@this: org.eclipse.osgi.framework.eventmgr.EventListeners"]
+2->0[label=""]
+3[label="org.eclipse.osgi.framework.eventmgr.CopyOnWriteIdentityMap"]
+3->1[label="type"]
+}

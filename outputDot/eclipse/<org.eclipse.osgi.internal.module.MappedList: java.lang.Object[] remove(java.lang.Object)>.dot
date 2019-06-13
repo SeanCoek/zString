@@ -1,0 +1,11 @@
+digraph g {
+0[label="@parameter0: java.lang.Object"]
+1[label="r1"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.internal.module.MappedList"]
+3[label="r0"]
+2->3[label=""]
+4[label="specialinvoke r0.<org.eclipse.osgi.internal.module.MappedList: java.lang.Object[] get(java.lang.Object,boolean)>(r1, 1)"]
+5[label="$r2"]
+4->5[label=""]
+}

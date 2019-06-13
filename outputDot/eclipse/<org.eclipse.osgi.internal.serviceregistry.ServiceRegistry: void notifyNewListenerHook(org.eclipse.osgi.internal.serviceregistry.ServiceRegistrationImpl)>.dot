@@ -1,0 +1,14 @@
+digraph g {
+0[label="@parameter0: org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl"]
+1[label="r1"]
+0->1[label=""]
+2[label="staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()"]
+3[label="$r2"]
+2->3[label=""]
+4[label="org.eclipse.osgi.internal.serviceregistry.ServiceRegistry$4"]
+5[label="$r3"]
+4->5[label="type"]
+6[label="@this: org.eclipse.osgi.internal.serviceregistry.ServiceRegistry"]
+7[label="r0"]
+6->7[label=""]
+}

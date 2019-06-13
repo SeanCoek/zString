@@ -22,6 +22,7 @@ public class PointsToAnalyzer {
 //        String cp = "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:" + "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar";
         String cp = "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar";
         String pp = "/home/sean/bench_compile/";
+        pp = "/home/sean/bench_compared/eclipse.jar";
         PointsToAnalyzer.cp = cp;
         PointsToAnalyzer.pp = pp;
         new PointsToAnalyzer().analyze(cp, pp);
@@ -49,9 +50,11 @@ public class PointsToAnalyzer {
         options.put("set-impl", "hybrid");
 //        options.put("double-set-old", "hybrid");
 //        options.put("double-set-new", "hybrid");
+        long t1 = new Date().getTime();
         SparkTransformer.v().transform("", options);
+        long t2 = new Date().getTime();
 
-        System.out.println("spark analysis ending......");
+        System.out.println("spark analysis ended, used " + (t2-t1) + "s");
     }
 
 }

@@ -1,0 +1,14 @@
+digraph g {
+0[label="$r2"]
+1[label="r1"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.internal.resolver.NativeCodeSpecificationImpl"]
+3[label="r0"]
+2->3[label=""]
+4[label="@caughtexception"]
+5[label="$r6"]
+4->5[label=""]
+6[label="<org.eclipse.osgi.internal.resolver.NativeCodeSpecificationImpl: org.eclipse.osgi.service.resolver.NativeCodeDescription[] EMPTY_NATIVECODEDESCRIPTIONS>"]
+7[label="$r5"]
+6->7[label=""]
+}

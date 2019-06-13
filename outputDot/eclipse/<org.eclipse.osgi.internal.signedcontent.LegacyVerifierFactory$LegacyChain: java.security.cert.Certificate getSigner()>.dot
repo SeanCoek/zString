@@ -1,0 +1,13 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.internal.signedcontent.LegacyVerifierFactory$LegacyChain"]
+1[label="r0"]
+0->1[label=""]
+2[label="lengthof r1"]
+3[label="$i0"]
+2->3[label=""]
+4[label="r1[0]"]
+5[label="$r2"]
+4->5[label=""]
+6[label="null"]
+6->5[label=""]
+}

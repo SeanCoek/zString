@@ -1,0 +1,11 @@
+digraph g {
+0[label="@parameter0: java.util.Dictionary"]
+1[label="r1"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.framework.internal.core.FilterImpl"]
+3[label="r0"]
+2->3[label=""]
+4[label="specialinvoke r0.<org.eclipse.osgi.framework.internal.core.FilterImpl: boolean match0(java.util.Dictionary)>(r1)"]
+5[label="$z0"]
+4->5[label=""]
+}

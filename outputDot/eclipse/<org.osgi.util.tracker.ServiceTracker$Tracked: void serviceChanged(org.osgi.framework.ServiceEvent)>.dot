@@ -1,0 +1,11 @@
+digraph g {
+0[label="@parameter0: org.osgi.framework.ServiceEvent"]
+1[label="r1"]
+0->1[label=""]
+2[label="@this: org.osgi.util.tracker.ServiceTracker$Tracked"]
+3[label="r0"]
+2->3[label=""]
+4[label="interfaceinvoke $r6.<org.osgi.framework.Filter: boolean match(org.osgi.framework.ServiceReference)>(r2)"]
+5[label="$z1"]
+4->5[label=""]
+}

@@ -1,0 +1,8 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.framework.adaptor.FilePath"]
+1[label="r0"]
+0->1[label=""]
+2[label="(java.lang.String[]) $r2"]
+3[label="$r3"]
+2->3[label=""]
+}

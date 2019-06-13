@@ -1,0 +1,11 @@
+digraph g {
+0[label="java.util.ArrayList"]
+1[label="$r1"]
+0->1[label="type"]
+2[label="r0"]
+2->1[label="field: registrations"]
+3[label="0"]
+2->3[label="field: noXML"]
+4[label="@this: org.eclipse.core.runtime.internal.adaptor.EclipseAdaptorHook"]
+4->2[label=""]
+}

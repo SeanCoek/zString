@@ -1,0 +1,18 @@
+digraph g {
+0[label="interfaceinvoke r2.<java.util.Enumeration: boolean hasMoreElements()>()"]
+1[label="$z0"]
+0->1[label=""]
+2[label="@parameter0: java.util.Dictionary"]
+3[label="r1"]
+2->3[label=""]
+4[label="@this: org.eclipse.osgi.framework.util.Headers"]
+5[label="r0"]
+4->5[label=""]
+6[label="interfaceinvoke r2.<java.util.Enumeration: java.lang.Object nextElement()>()"]
+7[label="r3"]
+6->7[label=""]
+8[label="org.eclipse.osgi.framework.util.Headers"]
+8->5[label="type"]
+9[label="r2"]
+9->3[label=""]
+}

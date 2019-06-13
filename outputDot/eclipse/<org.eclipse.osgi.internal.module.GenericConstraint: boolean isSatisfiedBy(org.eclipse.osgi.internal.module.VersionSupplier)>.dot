@@ -1,0 +1,11 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.internal.module.GenericConstraint"]
+1[label="r0"]
+0->1[label=""]
+2[label="interfaceinvoke $r3.<org.eclipse.osgi.service.resolver.VersionConstraint: boolean isSatisfiedBy(org.eclipse.osgi.service.resolver.BaseDescription)>($r4)"]
+3[label="$z1"]
+2->3[label=""]
+4[label="@parameter0: org.eclipse.osgi.internal.module.VersionSupplier"]
+5[label="r1"]
+4->5[label=""]
+}

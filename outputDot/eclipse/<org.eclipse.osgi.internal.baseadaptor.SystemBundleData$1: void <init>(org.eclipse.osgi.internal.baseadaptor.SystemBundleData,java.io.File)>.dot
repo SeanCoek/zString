@@ -1,0 +1,18 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.internal.baseadaptor.SystemBundleData$1"]
+1[label="r0"]
+0->1[label=""]
+2[label="r1"]
+1->2[label="field: this$0"]
+3[label="@parameter0: org.eclipse.osgi.internal.baseadaptor.SystemBundleData"]
+3->2[label=""]
+4[label="org.eclipse.osgi.internal.baseadaptor.SystemBundleData$1"]
+4->1[label="type"]
+5[label="r0"]
+5->2[label=""]
+6[label="r1"]
+7[label="$r2"]
+6->7[label=""]
+8[label="@parameter1: java.io.File"]
+8->7[label=""]
+}

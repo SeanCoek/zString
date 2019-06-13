@@ -1,0 +1,8 @@
+digraph g {
+0[label="@parameter0: org.xml.sax.SAXParseException"]
+1[label="r1"]
+0->1[label=""]
+2[label="@this: org.eclipse.core.runtime.internal.adaptor.PluginParser"]
+3[label="r0"]
+2->3[label=""]
+}

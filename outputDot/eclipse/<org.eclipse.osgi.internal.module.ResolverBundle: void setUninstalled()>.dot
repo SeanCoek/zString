@@ -1,0 +1,7 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.internal.module.ResolverBundle"]
+1[label="r0"]
+0->1[label=""]
+2[label="1"]
+1->2[label="field: uninstalled"]
+}

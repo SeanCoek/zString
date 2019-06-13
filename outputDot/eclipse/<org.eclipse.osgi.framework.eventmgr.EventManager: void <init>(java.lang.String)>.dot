@@ -1,0 +1,16 @@
+digraph g {
+0[label="@parameter0: java.lang.String"]
+1[label="r1"]
+0->1[label=""]
+2[label="org.eclipse.osgi.framework.eventmgr.EventManager"]
+3[label="r0"]
+2->3[label="type"]
+4[label="'Framework Event Dispatcher'"]
+4->1[label=""]
+5[label="'Start Level Event Dispatcher'"]
+5->1[label=""]
+6[label="'Bundle File Closer'"]
+6->1[label=""]
+7[label="@this: org.eclipse.osgi.framework.eventmgr.EventManager"]
+7->3[label=""]
+}

@@ -1,0 +1,11 @@
+digraph g {
+0[label="java.lang.StringBuffer"]
+1[label="$r3"]
+0->1[label="type"]
+2[label="@this: org.eclipse.osgi.internal.baseadaptor.BaseStorageHook"]
+3[label="r0"]
+2->3[label=""]
+4[label="<org.eclipse.osgi.framework.debug.Debug: boolean DEBUG_GENERAL>"]
+5[label="$z2"]
+4->5[label=""]
+}

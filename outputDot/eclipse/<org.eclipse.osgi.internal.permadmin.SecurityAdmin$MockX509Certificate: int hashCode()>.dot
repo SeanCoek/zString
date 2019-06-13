@@ -1,0 +1,14 @@
+digraph g {
+0[label="$i0 + $i1"]
+1[label="$i2"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.internal.permadmin.SecurityAdmin$MockX509Certificate"]
+3[label="r0"]
+2->3[label=""]
+4[label="interfaceinvoke $r1.<java.security.Principal: int hashCode()>()"]
+5[label="$i0"]
+4->5[label=""]
+6[label="interfaceinvoke $r2.<java.security.Principal: int hashCode()>()"]
+7[label="$i1"]
+6->7[label=""]
+}

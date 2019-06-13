@@ -1,0 +1,8 @@
+digraph g {
+0[label="@this: org.eclipse.core.runtime.internal.adaptor.EclipseAdaptorHook"]
+1[label="r0"]
+0->1[label=""]
+2[label="@parameter0: java.util.Properties"]
+3[label="r1"]
+2->3[label=""]
+}

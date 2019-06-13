@@ -1,0 +1,7 @@
+digraph g {
+0[label="@this: org.eclipse.core.runtime.internal.adaptor.ContextFinder$Finder"]
+1[label="r0"]
+0->1[label=""]
+2[label="org.eclipse.core.runtime.internal.adaptor.ContextFinder$Finder"]
+2->1[label="type"]
+}

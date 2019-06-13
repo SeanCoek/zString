@@ -1,0 +1,11 @@
+digraph g {
+0[label="lengthof $r2"]
+1[label="$i0"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.internal.module.ResolverConstraint"]
+3[label="r0"]
+2->3[label=""]
+4[label="$r3[$i2]"]
+5[label="$r4"]
+4->5[label=""]
+}

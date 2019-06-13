@@ -1,0 +1,8 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.internal.loader.BundleLoader$ClassContext"]
+1[label="r0"]
+0->1[label=""]
+2[label="specialinvoke r0.<java.lang.SecurityManager: java.lang.Class[] getClassContext()>()"]
+3[label="$r1"]
+2->3[label=""]
+}

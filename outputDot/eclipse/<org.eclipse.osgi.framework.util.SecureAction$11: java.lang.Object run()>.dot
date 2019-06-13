@@ -1,0 +1,10 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.framework.util.SecureAction$11"]
+1[label="r0"]
+0->1[label=""]
+2[label="<java.lang.Boolean: java.lang.Boolean TRUE>"]
+3[label="$r2"]
+2->3[label=""]
+4[label="<java.lang.Boolean: java.lang.Boolean FALSE>"]
+4->3[label=""]
+}

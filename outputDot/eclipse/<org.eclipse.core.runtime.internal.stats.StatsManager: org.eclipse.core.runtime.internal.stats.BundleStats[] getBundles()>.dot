@@ -1,0 +1,14 @@
+digraph g {
+0[label="@this: org.eclipse.core.runtime.internal.stats.StatsManager"]
+1[label="r0"]
+0->1[label=""]
+2[label="org.eclipse.core.runtime.internal.stats.BundleStats[]"]
+3[label="$r4"]
+2->3[label="type"]
+4[label="interfaceinvoke $r2.<java.util.Collection: java.lang.Object[] toArray(java.lang.Object[])>($r4)"]
+5[label="$r5"]
+4->5[label=""]
+6[label="(org.eclipse.core.runtime.internal.stats.BundleStats[]) $r5"]
+7[label="$r6"]
+6->7[label=""]
+}

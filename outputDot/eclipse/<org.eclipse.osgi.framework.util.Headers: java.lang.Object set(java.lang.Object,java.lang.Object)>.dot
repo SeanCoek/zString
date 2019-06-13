@@ -1,0 +1,17 @@
+digraph g {
+0[label="r26"]
+1[label="r2"]
+0->1[label=""]
+2[label="@parameter0: java.lang.Object"]
+3[label="r1"]
+2->3[label=""]
+4[label="@parameter1: java.lang.Object"]
+4->1[label=""]
+5[label="org.eclipse.osgi.framework.util.Headers"]
+6[label="r0"]
+5->6[label="type"]
+7[label="r5"]
+7->3[label=""]
+8[label="@this: org.eclipse.osgi.framework.util.Headers"]
+8->6[label=""]
+}

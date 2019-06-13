@@ -1,0 +1,5 @@
+digraph g {
+0[label="<org.eclipse.osgi.internal.baseadaptor.DevClassPathHelper: boolean inDevelopmentMode>"]
+1[label="$z0"]
+0->1[label=""]
+}

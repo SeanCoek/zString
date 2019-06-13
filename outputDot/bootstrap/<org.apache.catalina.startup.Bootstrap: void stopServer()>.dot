@@ -1,0 +1,11 @@
+digraph g {
+0[label="(java.lang.Object[]) null"]
+1[label="$r5"]
+0->1[label=""]
+2[label="(java.lang.Class[]) null"]
+3[label="$r4"]
+2->3[label=""]
+4[label="@this: org.apache.catalina.startup.Bootstrap"]
+5[label="r0"]
+4->5[label=""]
+}

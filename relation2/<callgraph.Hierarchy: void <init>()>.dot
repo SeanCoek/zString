@@ -2,4 +2,6 @@ digraph g {
 0[label="@this: callgraph.Hierarchy"]
 1[label="r0"]
 0->1[label=""]
+2[label="callgraph.Hierarchy"]
+2->1[label="type"]
 }

@@ -1,0 +1,11 @@
+digraph g {
+0[label="<org.eclipse.osgi.framework.eventmgr.CopyOnWriteIdentityMap: org.eclipse.osgi.framework.eventmgr.CopyOnWriteIdentityMap$Entry[] emptyArray>"]
+1[label="$r1"]
+0->1[label=""]
+2[label="r0"]
+2->1[label="field: entries"]
+3[label="org.eclipse.osgi.framework.eventmgr.CopyOnWriteIdentityMap"]
+3->2[label="type"]
+4[label="@this: org.eclipse.osgi.framework.eventmgr.CopyOnWriteIdentityMap"]
+4->2[label=""]
+}

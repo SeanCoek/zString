@@ -1,0 +1,8 @@
+digraph g {
+0[label="staticinvoke <org.apache.juli.logging.LogFactory: org.apache.juli.logging.Log getLog(java.lang.Class)>(class 'Lorg/apache/catalina/startup/Tool;')"]
+1[label="$r0"]
+0->1[label=""]
+2[label="staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>('catalina.home')"]
+3[label="$r1"]
+2->3[label=""]
+}

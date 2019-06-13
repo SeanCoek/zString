@@ -1,0 +1,15 @@
+digraph g {
+0[label="@this: org.eclipse.core.runtime.internal.adaptor.CachedManifest"]
+1[label="r0"]
+0->1[label=""]
+2[label="org.eclipse.core.runtime.internal.adaptor.CachedManifest"]
+2->1[label="type"]
+3[label="@parameter0: org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook"]
+4[label="r1"]
+3->4[label=""]
+5[label="null"]
+1->5[label="field: manifest"]
+1->4[label="field: storageHook"]
+6[label="r0"]
+6->4[label=""]
+}

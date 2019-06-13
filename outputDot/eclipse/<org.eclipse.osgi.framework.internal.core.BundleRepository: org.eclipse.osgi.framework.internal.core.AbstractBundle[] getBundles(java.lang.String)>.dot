@@ -1,0 +1,16 @@
+digraph g {
+0[label="staticinvoke <org.eclipse.osgi.framework.internal.core.Constants: java.lang.String getInternalSymbolicName()>()"]
+1[label="r5"]
+0->1[label=""]
+2[label="(org.eclipse.osgi.framework.internal.core.AbstractBundle[]) $r3"]
+3[label="$r4"]
+2->3[label=""]
+4[label="@parameter0: java.lang.String"]
+4->1[label=""]
+5[label="@this: org.eclipse.osgi.framework.internal.core.BundleRepository"]
+6[label="r0"]
+5->6[label=""]
+7[label="'system.bundle'"]
+8[label="$r1"]
+7->8[label=""]
+}

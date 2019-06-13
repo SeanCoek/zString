@@ -1,0 +1,15 @@
+digraph g {
+0[label="r0"]
+1[label="$r2"]
+0->1[label="field: zipFile"]
+2[label="$z0"]
+1->2[label=""]
+3[label="0"]
+0->3[label="field: closed"]
+4[label="$r1"]
+1->4[label=""]
+3->4[label=""]
+5[label="@this: org.eclipse.osgi.baseadaptor.bundlefile.ZipBundleFile"]
+5->0[label=""]
+3->2[label=""]
+}

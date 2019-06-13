@@ -1,0 +1,5 @@
+digraph g {
+0[label="@parameter0: char"]
+1[label="c0"]
+0->1[label=""]
+}

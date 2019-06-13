@@ -1,0 +1,5 @@
+digraph g {
+0[label="<org.eclipse.core.runtime.adaptor.LocationManager: org.eclipse.osgi.service.datalocation.Location instanceLocation>"]
+1[label="$r0"]
+0->1[label=""]
+}

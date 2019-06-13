@@ -1,0 +1,5 @@
+digraph g {
+0[label="<org.apache.catalina.startup.Tool: org.apache.juli.logging.Log log>"]
+1[label="$r0"]
+0->1[label=""]
+}

@@ -1,0 +1,11 @@
+digraph g {
+0[label="@this: org.eclipse.core.runtime.internal.stats.StatsManager"]
+1[label="r0"]
+0->1[label=""]
+2[label="<org.eclipse.core.runtime.internal.stats.StatsManager: boolean booting>"]
+3[label="$z0"]
+2->3[label=""]
+4[label="staticinvoke <java.lang.System: long currentTimeMillis()>()"]
+5[label="$l0"]
+4->5[label=""]
+}

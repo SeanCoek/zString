@@ -1,0 +1,17 @@
+digraph g {
+0[label="staticinvoke <java.io.File: java.io.File createTempFile(java.lang.String,java.lang.String,java.io.File)>(r1, '.tmp', $r3)"]
+1[label="r2"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.storagemanager.StorageManager"]
+3[label="r0"]
+2->3[label=""]
+4[label="@parameter0: java.lang.String"]
+5[label="r1"]
+4->5[label=""]
+6[label="<org.eclipse.core.runtime.internal.adaptor.EclipseAdaptorMsg: java.lang.String fileManager_illegalInReadOnlyMode>"]
+7[label="$r5"]
+6->7[label=""]
+8[label="java.io.IOException"]
+9[label="$r4"]
+8->9[label="type"]
+}

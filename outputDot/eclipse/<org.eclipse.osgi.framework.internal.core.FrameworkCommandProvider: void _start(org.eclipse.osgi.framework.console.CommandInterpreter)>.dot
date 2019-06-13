@@ -1,0 +1,16 @@
+digraph g {
+0[label="interfaceinvoke r1.<org.eclipse.osgi.framework.console.CommandInterpreter: java.lang.String nextArgument()>()"]
+1[label="r4"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.framework.internal.core.FrameworkCommandProvider"]
+3[label="r0"]
+2->3[label=""]
+4[label="interfaceinvoke r1.<org.eclipse.osgi.framework.console.CommandInterpreter: java.lang.String nextArgument()>()"]
+4->1[label=""]
+5[label="@parameter0: org.eclipse.osgi.framework.console.CommandInterpreter"]
+6[label="r1"]
+5->6[label=""]
+7[label="<org.eclipse.osgi.framework.internal.core.ConsoleMsg: java.lang.String CONSOLE_NO_BUNDLE_SPECIFIED_ERROR>"]
+8[label="$r3"]
+7->8[label=""]
+}

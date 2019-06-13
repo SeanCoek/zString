@@ -1,0 +1,16 @@
+digraph g {
+0[label="<org.eclipse.osgi.baseadaptor.bundlefile.BundleFile: org.eclipse.osgi.framework.util.SecureAction secureAction>"]
+1[label="$r2"]
+0->1[label=""]
+2[label="staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(r0)"]
+3[label="i0"]
+2->3[label=""]
+4[label="100"]
+4->3[label=""]
+5[label="@caughtexception"]
+6[label="$r3"]
+5->6[label=""]
+7[label="java.lang.ThreadLocal"]
+8[label="$r1"]
+7->8[label="type"]
+}

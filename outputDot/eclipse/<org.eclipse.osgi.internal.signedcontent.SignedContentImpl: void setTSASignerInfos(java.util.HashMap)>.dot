@@ -1,0 +1,13 @@
+digraph g {
+0[label="@parameter0: java.util.HashMap"]
+1[label="r1"]
+0->1[label=""]
+2[label="org.eclipse.osgi.internal.signedcontent.SignedContentImpl"]
+3[label="r0"]
+2->3[label="type"]
+3->1[label="field: tsaSignerInfos"]
+4[label="@this: org.eclipse.osgi.internal.signedcontent.SignedContentImpl"]
+4->3[label=""]
+5[label="$r35"]
+5->1[label=""]
+}

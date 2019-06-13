@@ -1,0 +1,11 @@
+digraph g {
+0[label="<org.eclipse.core.runtime.internal.stats.StatsManager: java.lang.String TRACE_FILENAME>"]
+1[label="$r1"]
+0->1[label=""]
+2[label="staticinvoke <org.eclipse.osgi.framework.debug.FrameworkDebugOptions: org.eclipse.osgi.framework.debug.FrameworkDebugOptions getDefault()>()"]
+3[label="r0"]
+2->3[label=""]
+4[label="<org.eclipse.core.runtime.internal.stats.StatsManager: java.lang.String TRACE_FILTERS>"]
+5[label="$r3"]
+4->5[label=""]
+}

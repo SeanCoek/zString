@@ -1,0 +1,14 @@
+digraph g {
+0[label="@this: org.eclipse.core.runtime.adaptor.EclipseStarter$StartupEventListener"]
+1[label="r0"]
+0->1[label=""]
+2[label="@parameter0: org.osgi.framework.BundleEvent"]
+3[label="r1"]
+2->3[label=""]
+4[label="$l0 cmp 0L"]
+5[label="$b1"]
+4->5[label=""]
+6[label="interfaceinvoke $r2.<org.osgi.framework.Bundle: long getBundleId()>()"]
+7[label="$l0"]
+6->7[label=""]
+}

@@ -1,0 +1,10 @@
+digraph g {
+0[label="'deny'"]
+1[label="$r1"]
+0->1[label=""]
+2[label="'allow'"]
+2->1[label=""]
+3[label="@this: org.eclipse.osgi.internal.permadmin.SecurityRow"]
+4[label="r0"]
+3->4[label=""]
+}

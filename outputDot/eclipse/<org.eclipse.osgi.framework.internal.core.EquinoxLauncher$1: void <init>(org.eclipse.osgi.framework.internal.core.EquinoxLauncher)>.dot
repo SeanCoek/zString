@@ -1,0 +1,13 @@
+digraph g {
+0[label="r0"]
+1[label="r1"]
+0->1[label=""]
+2[label="r0"]
+2->1[label="field: this$0"]
+3[label="@parameter0: org.eclipse.osgi.framework.internal.core.EquinoxLauncher"]
+3->1[label=""]
+4[label="@this: org.eclipse.osgi.framework.internal.core.EquinoxLauncher$1"]
+4->2[label=""]
+5[label="org.eclipse.osgi.framework.internal.core.EquinoxLauncher$1"]
+5->2[label="type"]
+}

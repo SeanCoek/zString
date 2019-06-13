@@ -1,0 +1,14 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.internal.profile.DefaultProfileLogger"]
+1[label="r0"]
+0->1[label=""]
+2[label="staticinvoke <org.eclipse.osgi.framework.internal.core.FrameworkProperties: java.lang.String getProperty(java.lang.String)>('eclipse.startTime')"]
+3[label="r1"]
+2->3[label=""]
+4[label="staticinvoke <java.lang.System: long currentTimeMillis()>()"]
+5[label="$l0"]
+4->5[label=""]
+6[label="staticinvoke <java.lang.Long: long parseLong(java.lang.String)>(r1)"]
+7[label="$l1"]
+6->7[label=""]
+}

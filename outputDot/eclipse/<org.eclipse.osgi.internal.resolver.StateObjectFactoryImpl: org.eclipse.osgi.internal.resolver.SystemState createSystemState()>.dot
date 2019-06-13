@@ -1,0 +1,11 @@
+digraph g {
+0[label="$r2"]
+1[label="r1"]
+0->1[label=""]
+2[label="org.eclipse.osgi.internal.resolver.SystemState"]
+2->0[label="type"]
+3[label="@this: org.eclipse.osgi.internal.resolver.StateObjectFactoryImpl"]
+4[label="r0"]
+3->4[label=""]
+2->1[label="type"]
+}

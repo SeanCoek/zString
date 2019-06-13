@@ -1,5 +1,7 @@
 digraph g {
-0[label="@this: basic.ObjectA"]
+0[label="basic.ObjectA"]
 1[label="r0"]
-0->1[label=""]
+0->1[label="type"]
+2[label="@this: basic.ObjectA"]
+2->1[label=""]
 }

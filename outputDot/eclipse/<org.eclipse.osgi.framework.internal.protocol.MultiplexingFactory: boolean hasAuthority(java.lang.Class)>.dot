@@ -1,0 +1,14 @@
+digraph g {
+0[label="interfaceinvoke r2.<org.osgi.service.packageadmin.PackageAdmin: org.osgi.framework.Bundle getBundle(java.lang.Class)>(r1)"]
+1[label="$r5"]
+0->1[label=""]
+2[label="@parameter0: java.lang.Class"]
+3[label="r1"]
+2->3[label=""]
+4[label="@this: org.eclipse.osgi.framework.internal.protocol.MultiplexingFactory"]
+5[label="r0"]
+4->5[label=""]
+6[label="(org.osgi.service.packageadmin.PackageAdmin) $r4"]
+7[label="r2"]
+6->7[label=""]
+}

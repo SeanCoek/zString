@@ -1,0 +1,8 @@
+digraph g {
+0[label="@parameter0: long"]
+1[label="l0"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.baseadaptor.bundlefile.ZipBundleEntry$ZipBundleEntryInputStream"]
+3[label="r0"]
+2->3[label=""]
+}

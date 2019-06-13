@@ -1,0 +1,9 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.baseadaptor.BaseData"]
+1[label="r0"]
+0->1[label=""]
+2[label="r1"]
+1->2[label="field: classpath"]
+3[label="@parameter0: java.lang.String"]
+3->2[label=""]
+}

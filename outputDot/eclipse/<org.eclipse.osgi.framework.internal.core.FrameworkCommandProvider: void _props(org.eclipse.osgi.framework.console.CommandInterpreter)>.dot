@@ -1,0 +1,14 @@
+digraph g {
+0[label="staticinvoke <org.eclipse.osgi.framework.internal.core.FrameworkProperties: java.util.Properties getProperties()>()"]
+1[label="$r2"]
+0->1[label=""]
+2[label="<org.eclipse.osgi.framework.internal.core.ConsoleMsg: java.lang.String CONSOLE_SYSTEM_PROPERTIES_TITLE>"]
+3[label="$r3"]
+2->3[label=""]
+4[label="@parameter0: org.eclipse.osgi.framework.console.CommandInterpreter"]
+5[label="r1"]
+4->5[label=""]
+6[label="@this: org.eclipse.osgi.framework.internal.core.FrameworkCommandProvider"]
+7[label="r0"]
+6->7[label=""]
+}

@@ -1,0 +1,10 @@
+digraph g {
+0[label="staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()"]
+1[label="$r1"]
+0->1[label=""]
+2[label="$r9"]
+3[label="r0"]
+2->3[label=""]
+4[label="@parameter0: java.lang.ClassLoader"]
+4->3[label=""]
+}

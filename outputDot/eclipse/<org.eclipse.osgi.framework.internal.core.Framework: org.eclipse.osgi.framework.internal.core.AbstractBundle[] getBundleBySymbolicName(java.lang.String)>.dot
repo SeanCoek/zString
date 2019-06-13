@@ -1,0 +1,14 @@
+digraph g {
+0[label="$r3"]
+1[label="r2"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.framework.internal.core.Framework"]
+3[label="r0"]
+2->3[label=""]
+4[label="@caughtexception"]
+5[label="$r6"]
+4->5[label=""]
+6[label="@parameter0: java.lang.String"]
+7[label="r1"]
+6->7[label=""]
+}

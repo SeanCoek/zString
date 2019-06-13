@@ -16,7 +16,11 @@ public class SootUtils {
     public static String getMethodSigByType(Type t, String subSig) {
         if(t instanceof RefType) {
             SootClass c = ((RefType) t).getSootClass();
-            return c.getMethod(subSig).getSignature();
+            try {
+                return c.getMethod(subSig).getSignature();
+            } catch (Exception e) {
+                return null;
+            }
         }
         return null;
     }

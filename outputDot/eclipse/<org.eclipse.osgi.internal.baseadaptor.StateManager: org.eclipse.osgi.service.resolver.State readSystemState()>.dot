@@ -1,0 +1,10 @@
+digraph g {
+0[label="org.eclipse.osgi.internal.baseadaptor.StateManager"]
+1[label="r0"]
+0->1[label="type"]
+2[label="@this: org.eclipse.osgi.internal.baseadaptor.StateManager"]
+2->1[label=""]
+3[label="$r2"]
+4[label="r24"]
+3->4[label=""]
+}

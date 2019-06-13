@@ -1,0 +1,9 @@
+digraph g {
+0[label="@parameter0: long"]
+1[label="l0"]
+0->1[label=""]
+2[label="r0"]
+2->1[label="field: traceEnd"]
+3[label="@this: org.eclipse.core.runtime.internal.stats.BundleStats"]
+3->2[label=""]
+}

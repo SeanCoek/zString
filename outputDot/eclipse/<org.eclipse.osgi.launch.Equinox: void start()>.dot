@@ -1,0 +1,8 @@
+digraph g {
+0[label="specialinvoke r0.<org.eclipse.osgi.launch.Equinox: org.osgi.framework.launch.Framework getImpl()>()"]
+1[label="$r1"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.launch.Equinox"]
+3[label="r0"]
+2->3[label=""]
+}

@@ -1,0 +1,17 @@
+digraph g {
+0[label="@parameter1: org.eclipse.osgi.framework.internal.core.AbstractBundle[]"]
+1[label="r1"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.framework.internal.core.StartLevelManager"]
+3[label="r0"]
+2->3[label=""]
+4[label="@parameter0: int"]
+5[label="i0"]
+4->5[label=""]
+6[label="<org.eclipse.osgi.framework.debug.Debug: boolean DEBUG_STARTLEVEL>"]
+7[label="$z0"]
+6->7[label=""]
+8[label="java.lang.StringBuffer"]
+9[label="$r2"]
+8->9[label="type"]
+}

@@ -1,0 +1,14 @@
+digraph g {
+0[label="staticinvoke <org.eclipse.osgi.util.TextProcessor: java.lang.String process(java.lang.String,java.lang.String)>(r0, $r1)"]
+1[label="$r2"]
+0->1[label=""]
+2[label="<org.eclipse.osgi.util.TextProcessor: boolean IS_PROCESSING_NEEDED>"]
+3[label="$z0"]
+2->3[label=""]
+4[label="@parameter0: java.lang.String"]
+5[label="r0"]
+4->5[label=""]
+6[label="staticinvoke <org.eclipse.osgi.util.TextProcessor: java.lang.String getDefaultDelimiters()>()"]
+7[label="$r1"]
+6->7[label=""]
+}

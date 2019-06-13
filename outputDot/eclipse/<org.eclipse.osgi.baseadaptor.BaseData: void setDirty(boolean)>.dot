@@ -1,0 +1,9 @@
+digraph g {
+0[label="@parameter0: boolean"]
+1[label="z0"]
+0->1[label=""]
+2[label="r0"]
+2->1[label="field: dirty"]
+3[label="@this: org.eclipse.osgi.baseadaptor.BaseData"]
+3->2[label=""]
+}

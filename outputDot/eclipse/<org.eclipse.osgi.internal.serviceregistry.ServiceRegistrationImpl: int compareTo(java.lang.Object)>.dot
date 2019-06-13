@@ -1,0 +1,17 @@
+digraph g {
+0[label="l2 cmp l3"]
+1[label="$b5"]
+0->1[label=""]
+2[label="@parameter0: java.lang.Object"]
+3[label="r1"]
+2->3[label=""]
+4[label="@this: org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl"]
+5[label="r0"]
+4->5[label=""]
+6[label="(org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl) r1"]
+7[label="r2"]
+6->7[label=""]
+8[label="l2 cmp l3"]
+9[label="$b4"]
+8->9[label=""]
+}

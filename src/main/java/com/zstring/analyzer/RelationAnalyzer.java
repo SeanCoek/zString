@@ -2,6 +2,7 @@ package com.zstring.analyzer;
 
 import com.zstring.env.SootEnvironment;
 import com.zstring.structs.Relation;
+import com.zstring.structs.Transition;
 import com.zstring.utils.SootUtils;
 import soot.*;
 import soot.jimple.FieldRef;
@@ -15,20 +16,32 @@ import java.util.*;
 public class RelationAnalyzer {
     public static Map<String, Set<Relation>> allRelations = new HashMap<String, Set<Relation>>();
     public static Map<String, Map<String, List<Value>>> methodInfoMap = new HashMap<String, Map<String, List<Value>>>();
+    public static Map<Value, Integer> globalValueMap;
+    public static Map<Type, Integer> globalTypeMap;
+    public static Set<Transition> globalTransition;
+    public static Set<Relation> globalRelations;
 
     public static void main(String[] args) {
         String cp = "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar";
         String pp = "/home/sean/bench_compile/";
+        pp = "/home/sean/bench_compared/eclipse.jar";
         new RelationAnalyzer().analyze(cp, pp);
     }
 
     public void analyze(String cp, String pp) {
         SootEnvironment.init(cp, pp);
-        generateRelation();
-        System.out.println(Relation.count);
+        String dotPath = "/home/sean/IdeaProjects/zString/outputDot/eclipse/";
+        long t1 = new Date().getTime();
+        generateRelation(dotPath);
+        globalize();
+        calcFixPoint();
+        long t2 = new Date().getTime();
+        System.out.println("generated " + Relation.count + " relations");
+        System.out.println("Total time used: " + (t2-t1) + "s");
+//        drawRelation(globalValueMap, globalTypeMap, globalTransition, dotPath);
     }
 
-    public void generateRelation() {
+    public void generateRelation(String dotPath) {
 
         Map<String, Set<Unit>> invokeStmtMap = new HashMap<String, Set<Unit>>();
 
@@ -75,7 +88,7 @@ public class RelationAnalyzer {
                         left = ((JInstanceFieldRef) left).getBase();
                         relationSet.add(new Relation(left, right, field));
                     } else if(right instanceof JInstanceFieldRef) {
-                      // TODO: x = y.f
+                        // TODO: x = y.f
                         fieldLoadToResolve.add((JAssignStmt) u);
                     } else if(right instanceof JNewExpr || right instanceof JNewArrayExpr) {
                         Type t = right.getType();
@@ -91,18 +104,22 @@ public class RelationAnalyzer {
             if(fieldLoadToResolve.size() > 0) {
                 resolveFieldLoad(relationSet, fieldLoadToResolve);
             }
-            extendTransitive(relationSet);
+//            extendTransitive(relationSet);
             invokeStmtMap.put(m.getSignature(), invokeStmtSet);
             allRelations.put(m.getSignature(), relationSet);
         }
 
         resolveMethodCall(invokeStmtMap);
 
-        Iterator<Map.Entry<String, Set<Relation>>> relationsIter = allRelations.entrySet().iterator();
-        while(relationsIter.hasNext()) {
-            Map.Entry<String, Set<Relation>> relationsEntry = relationsIter.next();
-            drawRelation(relationsEntry.getKey(), relationsEntry.getValue());
-        }
+        // draw the graph
+//        long t1 = new Date().getTime();
+//        Iterator<Map.Entry<String, Set<Relation>>> relationsIter = allRelations.entrySet().iterator();
+//        while(relationsIter.hasNext()) {
+//            Map.Entry<String, Set<Relation>> relationsEntry = relationsIter.next();
+//            drawRelation(relationsEntry.getKey(), relationsEntry.getValue(), dotPath);
+//        }
+//        long t2 = new Date().getTime();
+//        System.out.println("drawing time used: " + (t2-t1) + "s");
     }
 
     public void resolveFieldLoad(Set relationSet, Set stmts) {
@@ -180,27 +197,178 @@ public class RelationAnalyzer {
             Iterator<Unit> invokeStmtIter = invokeSet.getValue().iterator();
             while(invokeStmtIter.hasNext()) {
                 Unit invokeStmt = invokeStmtIter.next();
-                if(invokeStmt instanceof JAssignStmt) {
-                    JAssignStmt stmt = (JAssignStmt) invokeStmt;
-                    dealInvokeInAssign(hostMethod, stmt);
+                dealInvoke(hostMethod, invokeStmt);
+            }
+        }
+    }
 
-                } else if(invokeStmt instanceof JInvokeStmt) {
-                    InvokeExpr invokeExpr = ((JInvokeStmt) invokeStmt).getInvokeExpr();
-                    List<Value> args = invokeExpr.getArgs();
-                    if(invokeExpr instanceof JSpecialInvokeExpr) {
+    public void dealInvoke(String hostMethod, Unit invokeUnit) {
+        Value receiver = null;
+        InvokeExpr invokeExpr = null;
+        if(invokeUnit instanceof JAssignStmt) {
+            receiver = ((JAssignStmt) invokeUnit).getLeftOp();
+            invokeExpr = (InvokeExpr) ((JAssignStmt) invokeUnit).getRightOp();
+        } else if (invokeUnit instanceof JInvokeStmt){
+            invokeExpr = ((JInvokeStmt) invokeUnit).getInvokeExpr();
+        }
+        Value caller = null;
+        String calleeSub = null;
+        if(invokeExpr instanceof JSpecialInvokeExpr) {
+            JSpecialInvokeExpr specInvokeExpr = (JSpecialInvokeExpr) invokeExpr;
+            caller = specInvokeExpr.getBase();
+            calleeSub = specInvokeExpr.getMethod().getSubSignature();
+        } else if(invokeExpr instanceof JVirtualInvokeExpr) {
+            JVirtualInvokeExpr virtualInvokeExpr = (JVirtualInvokeExpr) invokeExpr;
+            caller = virtualInvokeExpr.getBase();
+            calleeSub = virtualInvokeExpr.getMethod().getSubSignature();
+        } else if(invokeExpr instanceof JStaticInvokeExpr) {
+            JStaticInvokeExpr staticInvokeExpr = (JStaticInvokeExpr) invokeExpr;
+            calleeSub = staticInvokeExpr.getMethod().getSubSignature();
+        } else if(invokeExpr instanceof JInterfaceInvokeExpr) {
+            JInterfaceInvokeExpr interfaceInvokeExpr = (JInterfaceInvokeExpr) invokeExpr;
+            caller = interfaceInvokeExpr.getBase();
+            calleeSub = interfaceInvokeExpr.getMethod().getSubSignature();
+        } else if(invokeExpr instanceof JDynamicInvokeExpr) {
+            return;
+        }
+        genRelationFromInvoke(invokeExpr, hostMethod, caller, calleeSub, receiver);
+    }
 
-                    } else if(invokeExpr instanceof JStaticInvokeExpr) {
+    public void genRelationFromInvoke(InvokeExpr invokeExpr, String hostMethod, Value caller, String calleeSub, Value receiver) {
+        int count = 0;
+        Set<Relation> hostRelations = allRelations.get(hostMethod);
+        if(caller == null) {    // Static Invoke
+            String callee = invokeExpr.getMethod().getSignature();
+            if(methodInfoMap.get(callee) == null) {
+                return;
+            }
+            List<Value> params = methodInfoMap.get(callee).get("param");
+            List<Value> returns = methodInfoMap.get(callee).get("return");
+            Set<Relation> calleeRelations = allRelations.get(callee);
+            // x' (- return(c,m)
+            if(receiver != null) {
+                for(Value vReturn: returns) {
+                    calleeRelations.add(new Relation(vReturn, receiver));
+                    count++;
+                }
+            }
 
+            for(int i=0; i < invokeExpr.getArgCount(); i++) {
+                Value z = invokeExpr.getArg(i);
+                Value p = params.get(i);      // static method don't hold the "this" variable, so we start the index from 0
+                calleeRelations.add(new Relation(z, p));
+                count++;
+            }
+            allRelations.put(callee, calleeRelations);
+        } else {
+            List<Type> typesToCaller = new ArrayList<Type>();
+            Iterator<Relation> rIter = hostRelations.iterator();
+            while(rIter.hasNext()) {
+                Relation r = rIter.next();
+                if(r.relationType.equals(Relation.TYPE_CLASS2VAR) && r.right.equals(caller)) {
+                    typesToCaller.add(r.type);
+                }
+            }
+            for(Type t: typesToCaller) {
+                String callee = SootUtils.getMethodSigByType(t, calleeSub);
+                if(callee == null) {
+                    continue;
+                }
+                if(methodInfoMap.get(callee) == null) {
+                    continue;
+                }
+                List<Value> params = methodInfoMap.get(callee).get("param");
+                Value vThis = params.get(0);
+                List<Value> returns = methodInfoMap.get(callee).get("return");
+                Set<Relation> calleeRelations = allRelations.get(callee);
+                // c --> this(c,m)
+                calleeRelations.add(new Relation(null, vThis, t));
+                count++;
+
+                // x' (- return(c,m)
+                if(receiver != null) {
+                    for(Value vReturn: returns) {
+                        calleeRelations.add(new Relation(vReturn, receiver));
+                        count++;
+                    }
+                }
+
+                for(int i=0; i < invokeExpr.getArgCount(); i++) {
+                    Value z = invokeExpr.getArg(i);
+                    Value p = params.get(i+1);      // "this" variable was store in params(0)
+                    calleeRelations.add(new Relation(z, p));
+                    count++;
+                }
+                allRelations.put(callee, calleeRelations);
+            }
+        }
+
+        System.out.println("added " + count + " relations from invocation");
+    }
+
+    public void calcFixPoint() {
+        extendTransitive(globalRelations);
+    }
+
+    public void globalize() {
+        int num = 0;
+        globalValueMap = new HashMap<Value, Integer>();
+        globalTypeMap = new HashMap<Type, Integer>();
+        globalTransition = new HashSet<Transition>();
+        globalRelations = new HashSet<Relation>();
+        Iterator<Map.Entry<String, Set<Relation>>> relationEntryIter = allRelations.entrySet().iterator();
+        while(relationEntryIter.hasNext()) {
+            Map.Entry<String, Set<Relation>> relationEntry = relationEntryIter.next();
+            String methodSig = relationEntry.getKey();
+            Set<Relation> relations = relationEntry.getValue();
+            globalRelations.addAll(relations);
+            Iterator<Relation> rIter = relations.iterator();
+            while(rIter.hasNext()) {
+                Relation r = rIter.next();
+                if(r.relationType.equals(Relation.TYPE_CLASS2VAR)) {
+                    if(!globalTypeMap.containsKey(r.type)) {
+                        globalTypeMap.put(r.type, num++);
+                    }
+                    if(!globalValueMap.containsKey(r.right)) {
+                        globalValueMap.put(r.right, num++);
+                    }
+                    Transition t = new Transition(globalTypeMap.get(r.type), globalValueMap.get(r.right));
+                    t.type = r.type;
+                    if(!globalTransition.contains(t)) {
+                        globalTransition.add(t);
+                    }
+                } else if(r.relationType.equals(Relation.TYPE_VAR2VAR)) {
+                    if(!globalValueMap.containsKey(r.left)) {
+                        globalValueMap.put(r.left, num++);
+                    }
+                    if(!globalValueMap.containsKey(r.right)) {
+                        globalValueMap.put(r.right, num++);
+                    }
+                    Transition t = new Transition(globalValueMap.get(r.left), globalValueMap.get(r.right));
+                    if(!globalTransition.contains(t)) {
+                        globalTransition.add(t);
+                    }
+                } else if(r.relationType.equals(Relation.TYPE_FIELD)) {
+                    if(!globalValueMap.containsKey(r.left)) {
+                        globalValueMap.put(r.left, num++);
+                    }
+                    if(!globalValueMap.containsKey(r.right)) {
+                        globalValueMap.put(r.right, num++);
+                    }
+                    Transition t = new Transition(globalValueMap.get(r.left), globalValueMap.get(r.right));
+                    t.field = r.field;
+                    if(!globalTransition.contains(t)) {
+                        globalTransition.add(t);
                     }
                 }
             }
         }
     }
 
-    public void dealInvokeInAssign(String hostMethod, JAssignStmt invokeStmt) {
+    public void dealInvokeInAssign(String hostMethod, JAssignStmt assignStmt) {
         int count = 0;
-        Value left = invokeStmt.getLeftOp();
-        JVirtualInvokeExpr invokeExpr = (JVirtualInvokeExpr) (invokeStmt.getRightOp());
+        Value left = assignStmt.getLeftOp();
+        JVirtualInvokeExpr invokeExpr = (JVirtualInvokeExpr) (assignStmt.getRightOp());
         Value caller = invokeExpr.getBase();
         String calleeSub = invokeExpr.getMethod().getSubSignature();
         Set<Relation> hostRelations = allRelations.get(hostMethod);
@@ -238,7 +406,7 @@ public class RelationAnalyzer {
     }
 
 
-    public void drawRelation(String methodSig, Set<Relation> relationSet) {
+    public void drawRelation(String methodSig, Set<Relation> relationSet, String dotPath) {
         int nodeNum = 0;
         FileOutputStream outStr = null;
         BufferedOutputStream buff = null;
@@ -247,7 +415,7 @@ public class RelationAnalyzer {
         }
         String dotName = methodSig + ".dot";
         try {
-            outStr = new FileOutputStream(new File("/home/sean/IdeaProjects/zString/relation2/" + dotName));
+            outStr = new FileOutputStream(new File(dotPath + dotName));
             buff = new BufferedOutputStream(outStr);
             buff.write("digraph g {\n".getBytes());
             Map<Value, Integer> nodeMap = new HashMap<Value, Integer>();
@@ -295,6 +463,48 @@ public class RelationAnalyzer {
         }
     }
 
+    public void drawRelation(Map<Value,Integer> globalValueMap, Map<Type, Integer> globalTypeMap, Set<Transition> globalTransition, String dotPath) {
+        FileOutputStream outStr = null;
+        BufferedOutputStream buff = null;
+        String dotName = "global.dot";
+        try {
+            outStr = new FileOutputStream(new File(dotPath + dotName));
+            buff = new BufferedOutputStream(outStr);
+            buff.write("digraph g {\n".getBytes());
 
+            // draw node
+            Iterator<Map.Entry<Value, Integer>> valueEntryIter = globalValueMap.entrySet().iterator();
+            while(valueEntryIter.hasNext()) {
+                Map.Entry<Value, Integer> valueEntry = valueEntryIter.next();
+                buff.write((valueEntry.getValue() + "[label=\"" + valueEntry.getKey().toString().replace("\"", "'") + "\"]\n").getBytes());
+            }
+
+            Iterator<Map.Entry<Type, Integer>> typeEntryIter = globalTypeMap.entrySet().iterator();
+            while(typeEntryIter.hasNext()) {
+                Map.Entry<Type, Integer> typeEntry = typeEntryIter.next();
+                buff.write((typeEntry.getValue() + "[label=\"" + typeEntry.getKey().toString().replace("\"", "'") + "\"]\n").getBytes());
+            }
+
+            // draw edge
+            Iterator<Transition> tranIter = globalTransition.iterator();
+            while(tranIter.hasNext()) {
+                Transition t = tranIter.next();
+                String label = "";
+                if(t.type != null) {
+                    label = t.type.toString();
+                } else if(t.field != null) {
+                    label = t.field.getName();
+                }
+                buff.write((t.left + "->" + t.right + "[label=\"" + label.replace("\"", "'") + "\"]\n").getBytes());
+            }
+            buff.write("}".getBytes());
+            buff.flush();
+            buff.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
 }

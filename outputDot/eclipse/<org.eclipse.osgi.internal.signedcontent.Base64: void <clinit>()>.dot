@@ -1,0 +1,5 @@
+digraph g {
+0[label="char[]"]
+1[label="$r0"]
+0->1[label="type"]
+}

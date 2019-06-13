@@ -1,0 +1,8 @@
+digraph g {
+0[label="specialinvoke r0.<org.eclipse.osgi.internal.module.ResolverConstraint: java.lang.String getName()>()"]
+1[label="$r2"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.internal.module.ResolverImport"]
+3[label="r0"]
+2->3[label=""]
+}

@@ -1,0 +1,18 @@
+digraph g {
+0[label="r0"]
+1[label="null"]
+0->1[label="field: entryExceptions"]
+2[label="$r6"]
+3[label="r1"]
+2->3[label=""]
+4[label="@parameter0: org.eclipse.osgi.internal.signedcontent.SignedContentImpl"]
+4->3[label=""]
+5[label="org.eclipse.osgi.internal.signedcontent.SignedContentFile"]
+5->0[label="type"]
+6[label="@this: org.eclipse.osgi.internal.signedcontent.SignedContentFile"]
+6->0[label=""]
+7[label="@caughtexception"]
+8[label="$r3"]
+7->8[label=""]
+0->3[label="field: signedContent"]
+}

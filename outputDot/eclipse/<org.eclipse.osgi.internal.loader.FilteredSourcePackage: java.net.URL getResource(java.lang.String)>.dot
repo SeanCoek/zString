@@ -1,0 +1,14 @@
+digraph g {
+0[label="specialinvoke r0.<org.eclipse.osgi.internal.loader.SingleSourcePackage: java.net.URL getResource(java.lang.String)>(r1)"]
+1[label="$r3"]
+0->1[label=""]
+2[label="specialinvoke r0.<org.eclipse.osgi.internal.loader.FilteredSourcePackage: boolean isFiltered(java.lang.String,java.lang.String)>(r1, $r2)"]
+3[label="$z0"]
+2->3[label=""]
+4[label="@this: org.eclipse.osgi.internal.loader.FilteredSourcePackage"]
+5[label="r0"]
+4->5[label=""]
+6[label="@parameter0: java.lang.String"]
+7[label="r1"]
+6->7[label=""]
+}

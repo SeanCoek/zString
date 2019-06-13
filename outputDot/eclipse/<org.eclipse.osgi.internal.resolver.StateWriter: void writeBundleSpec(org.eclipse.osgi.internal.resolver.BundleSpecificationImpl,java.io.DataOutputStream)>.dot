@@ -1,0 +1,14 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.internal.resolver.StateWriter"]
+1[label="r0"]
+0->1[label=""]
+2[label="@parameter1: java.io.DataOutputStream"]
+3[label="r2"]
+2->3[label=""]
+4[label="@parameter0: org.eclipse.osgi.internal.resolver.BundleSpecificationImpl"]
+5[label="r1"]
+4->5[label=""]
+6[label="(org.eclipse.osgi.service.resolver.BundleDescription) $r3"]
+7[label="$r4"]
+6->7[label=""]
+}

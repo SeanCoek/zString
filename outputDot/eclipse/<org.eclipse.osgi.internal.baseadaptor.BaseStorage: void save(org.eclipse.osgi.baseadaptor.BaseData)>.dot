@@ -1,0 +1,15 @@
+digraph g {
+0[label="$l1"]
+1[label="$l0"]
+0->1[label=""]
+2[label="$l0 - 1L"]
+2->0[label=""]
+3[label="r0"]
+3->0[label="field: timeStamp"]
+4[label="@parameter0: org.eclipse.osgi.baseadaptor.BaseData"]
+5[label="r1"]
+4->5[label=""]
+2->1[label=""]
+6[label="@this: org.eclipse.osgi.internal.baseadaptor.BaseStorage"]
+6->3[label=""]
+}

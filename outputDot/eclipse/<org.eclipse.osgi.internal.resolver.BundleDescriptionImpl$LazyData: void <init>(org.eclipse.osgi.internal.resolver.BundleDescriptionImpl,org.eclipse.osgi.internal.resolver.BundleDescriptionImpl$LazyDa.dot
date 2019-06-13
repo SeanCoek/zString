@@ -1,0 +1,17 @@
+digraph g {
+0[label="@this: org.eclipse.osgi.internal.resolver.BundleDescriptionImpl$LazyData"]
+1[label="r0"]
+0->1[label=""]
+2[label="null"]
+3[label="r2"]
+2->3[label=""]
+4[label="r0"]
+5[label="r1"]
+4->5[label=""]
+6[label="org.eclipse.osgi.internal.resolver.BundleDescriptionImpl$LazyData"]
+6->1[label="type"]
+7[label="@parameter1: org.eclipse.osgi.internal.resolver.BundleDescriptionImpl$LazyData"]
+7->3[label=""]
+8[label="@parameter0: org.eclipse.osgi.internal.resolver.BundleDescriptionImpl"]
+8->5[label=""]
+}

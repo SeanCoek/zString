@@ -1,0 +1,13 @@
+digraph g {
+0[label="@parameter0: org.eclipse.osgi.service.resolver.BundleDescription"]
+1[label="r1"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.internal.resolver.NativeCodeDescriptionImpl"]
+3[label="r0"]
+2->3[label=""]
+4[label="$r4"]
+4->1[label=""]
+3->1[label="field: supplier"]
+5[label="org.eclipse.osgi.internal.resolver.NativeCodeDescriptionImpl"]
+5->3[label="type"]
+}

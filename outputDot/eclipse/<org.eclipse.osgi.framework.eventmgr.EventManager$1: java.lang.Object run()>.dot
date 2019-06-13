@@ -1,0 +1,11 @@
+digraph g {
+0[label="org.eclipse.osgi.framework.eventmgr.EventManager$EventThread"]
+1[label="$r2"]
+0->1[label="type"]
+2[label="r1"]
+1->2[label=""]
+3[label="@this: org.eclipse.osgi.framework.eventmgr.EventManager$1"]
+4[label="r0"]
+3->4[label=""]
+0->2[label="type"]
+}

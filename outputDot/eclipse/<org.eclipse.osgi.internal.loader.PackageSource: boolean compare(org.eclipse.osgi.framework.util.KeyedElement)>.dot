@@ -1,0 +1,11 @@
+digraph g {
+0[label="@parameter0: org.eclipse.osgi.framework.util.KeyedElement"]
+1[label="r1"]
+0->1[label=""]
+2[label="(org.eclipse.osgi.internal.loader.PackageSource) r1"]
+3[label="$r2"]
+2->3[label=""]
+4[label="@this: org.eclipse.osgi.internal.loader.PackageSource"]
+5[label="r0"]
+4->5[label=""]
+}

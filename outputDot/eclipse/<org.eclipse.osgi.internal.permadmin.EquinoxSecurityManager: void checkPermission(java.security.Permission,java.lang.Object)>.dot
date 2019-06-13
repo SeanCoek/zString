@@ -1,0 +1,14 @@
+digraph g {
+0[label="org.eclipse.osgi.internal.permadmin.EquinoxSecurityManager$CheckPermissionAction"]
+1[label="$r3"]
+0->1[label="type"]
+2[label="@parameter0: java.security.Permission"]
+3[label="r1"]
+2->3[label=""]
+4[label="@parameter1: java.lang.Object"]
+5[label="r2"]
+4->5[label=""]
+6[label="@this: org.eclipse.osgi.internal.permadmin.EquinoxSecurityManager"]
+7[label="r0"]
+6->7[label=""]
+}

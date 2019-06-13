@@ -1,0 +1,8 @@
+digraph g {
+0[label="@this: org.osgi.framework.InvalidSyntaxException"]
+1[label="r0"]
+0->1[label=""]
+2[label="specialinvoke r0.<java.lang.Exception: java.lang.Throwable getCause()>()"]
+3[label="$r1"]
+2->3[label=""]
+}

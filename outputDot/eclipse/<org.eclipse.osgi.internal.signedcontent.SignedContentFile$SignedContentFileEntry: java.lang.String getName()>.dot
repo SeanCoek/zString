@@ -1,0 +1,8 @@
+digraph g {
+0[label="interfaceinvoke $r1.<org.eclipse.osgi.signedcontent.SignedContentEntry: java.lang.String getName()>()"]
+1[label="$r2"]
+0->1[label=""]
+2[label="@this: org.eclipse.osgi.internal.signedcontent.SignedContentFile$SignedContentFileEntry"]
+3[label="r0"]
+2->3[label=""]
+}

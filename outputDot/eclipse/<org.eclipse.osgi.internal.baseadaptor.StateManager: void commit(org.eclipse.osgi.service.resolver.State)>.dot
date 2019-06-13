@@ -1,0 +1,11 @@
+digraph g {
+0[label="@parameter0: org.eclipse.osgi.service.resolver.State"]
+1[label="r1"]
+0->1[label=""]
+2[label="java.lang.IllegalArgumentException"]
+3[label="$r2"]
+2->3[label="type"]
+4[label="@this: org.eclipse.osgi.internal.baseadaptor.StateManager"]
+5[label="r0"]
+4->5[label=""]
+}

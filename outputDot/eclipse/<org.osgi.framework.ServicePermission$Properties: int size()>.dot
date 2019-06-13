@@ -1,0 +1,17 @@
+digraph g {
+0[label="lengthof $r3"]
+1[label="$i1"]
+0->1[label=""]
+2[label="$i0 + $i1"]
+3[label="$i2"]
+2->3[label=""]
+4[label="interfaceinvoke $r1.<java.util.Map: int size()>()"]
+5[label="$i0"]
+4->5[label=""]
+6[label="@this: org.osgi.framework.ServicePermission$Properties"]
+7[label="r0"]
+6->7[label=""]
+8[label="interfaceinvoke $r2.<org.osgi.framework.ServiceReference: java.lang.String[] getPropertyKeys()>()"]
+9[label="$r3"]
+8->9[label=""]
+}

@@ -1,0 +1,14 @@
+digraph g {
+0[label="@parameter0: java.lang.Object[]"]
+1[label="r0"]
+0->1[label=""]
+2[label="lengthof r0"]
+3[label="$i1"]
+2->3[label=""]
+4[label="lengthof r0"]
+5[label="$i0"]
+4->5[label=""]
+6[label="staticinvoke <java.lang.reflect.Array: java.lang.Object newInstance(java.lang.Class,int)>($r3, $i0)"]
+7[label="r1"]
+6->7[label=""]
+}

@@ -1,0 +1,14 @@
+digraph g {
+0[label="org.osgi.framework.AdminPermission"]
+1[label="$r3"]
+0->1[label="type"]
+2[label="@parameter0: org.osgi.framework.Bundle"]
+3[label="r1"]
+2->3[label=""]
+4[label="staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()"]
+5[label="r2"]
+4->5[label=""]
+6[label="@this: org.eclipse.osgi.framework.internal.core.BundleResourceHandler"]
+7[label="r0"]
+6->7[label=""]
+}

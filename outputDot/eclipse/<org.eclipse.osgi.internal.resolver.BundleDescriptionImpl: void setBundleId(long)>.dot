@@ -1,0 +1,17 @@
+digraph g {
+0[label="@parameter0: long"]
+1[label="l0"]
+0->1[label=""]
+2[label="org.eclipse.osgi.internal.resolver.BundleDescriptionImpl"]
+3[label="r0"]
+2->3[label="type"]
+4[label="$l3"]
+4->1[label=""]
+5[label="@this: org.eclipse.osgi.internal.resolver.BundleDescriptionImpl"]
+5->3[label=""]
+6[label="$l0"]
+6->1[label=""]
+3->1[label="field: bundleId"]
+7[label="l0"]
+7->1[label=""]
+}

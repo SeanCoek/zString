@@ -1,0 +1,11 @@
+digraph g {
+0[label="@this: org.osgi.framework.FrameworkUtil$ServiceReferenceDictionary"]
+1[label="r0"]
+0->1[label=""]
+2[label="java.lang.UnsupportedOperationException"]
+3[label="$r2"]
+2->3[label="type"]
+4[label="@parameter0: java.lang.Object"]
+5[label="r1"]
+4->5[label=""]
+}

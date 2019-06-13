@@ -1,0 +1,16 @@
+digraph g {
+0[label="$r3"]
+1[label="r2"]
+0->1[label=""]
+2[label="$r4"]
+3[label="r1"]
+2->3[label="field: dynamicStamps"]
+4[label="@parameter0: java.util.HashMap"]
+4->3[label=""]
+5[label="@caughtexception"]
+6[label="$r5"]
+5->6[label=""]
+7[label="@this: org.eclipse.osgi.internal.resolver.BundleDescriptionImpl"]
+8[label="r0"]
+7->8[label=""]
+}
