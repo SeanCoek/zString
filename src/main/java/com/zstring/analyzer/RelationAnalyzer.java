@@ -61,7 +61,7 @@ public class RelationAnalyzer {
             Iterator<Unit> uIter = jb.getUnits().iterator();
             while(uIter.hasNext()) {
                 Unit u = uIter.next();
-                if(u instanceof JInvokeStmt || (u instanceof JAssignStmt && ((JAssignStmt) u).getRightOp() instanceof JVirtualInvokeExpr)) {
+                if(u instanceof JInvokeStmt || (u instanceof JAssignStmt && ((JAssignStmt) u).getRightOp() instanceof InvokeExpr)) {
                     invokeStmtSet.add(u);
                     // we will resolve invocation after basic relations have been generated.
                     continue;
@@ -88,7 +88,7 @@ public class RelationAnalyzer {
                         left = ((JInstanceFieldRef) left).getBase();
                         relationSet.add(new Relation(left, right, field));
                     } else if(right instanceof JInstanceFieldRef) {
-                        // TODO: x = y.f
+                        // x = y.f
                         fieldLoadToResolve.add((JAssignStmt) u);
                     } else if(right instanceof JNewExpr || right instanceof JNewArrayExpr) {
                         Type t = right.getType();
@@ -104,7 +104,7 @@ public class RelationAnalyzer {
             if(fieldLoadToResolve.size() > 0) {
                 resolveFieldLoad(relationSet, fieldLoadToResolve);
             }
-//            extendTransitive(relationSet);
+            extendTransitive(relationSet);
             invokeStmtMap.put(m.getSignature(), invokeStmtSet);
             allRelations.put(m.getSignature(), relationSet);
         }
@@ -148,6 +148,8 @@ public class RelationAnalyzer {
     public void extendTransitive(Set relationSet) {
 
         while(true) {
+            long t1 = new Date().getTime();
+            int compCount = 0;
             Set<Relation> relationToAdd = new HashSet<Relation>();
             Iterator<Relation> relationIter1 = relationSet.iterator();
             while(relationIter1.hasNext()) {
@@ -161,6 +163,7 @@ public class RelationAnalyzer {
                                 && relation2.left.equals(relation1.right)) {
                             relationToAdd.add(new Relation(null, relation2.right, t));
                         }
+                        compCount++;
                     }
                 } else if(relation1.relationType.equals(Relation.TYPE_VAR2VAR)) {
                     while(relationIter2.hasNext()) {
@@ -169,6 +172,7 @@ public class RelationAnalyzer {
                                 && relation1.right.equals(relation2.left)) {
                             relationToAdd.add(new Relation(relation1.left, relation2.right));
                         }
+                        compCount++;
                     }
                 } else if(relation1.relationType.equals(Relation.TYPE_FIELD)) {
                     while(relationIter2.hasNext()) {
@@ -177,6 +181,7 @@ public class RelationAnalyzer {
                                 && relation1.left.equals(relation2.left)) {
                             relationToAdd.add(new Relation(relation2.right, relation1.right, relation1.field));
                         }
+                        compCount++;
                     }
                 }
             }
@@ -185,7 +190,9 @@ public class RelationAnalyzer {
             if(relationSet.size() == sizeBefore) {
                 break;
             }
+            long t2 = new Date().getTime();
             System.out.println("extend " + (relationSet.size()-sizeBefore) + " relations");
+            System.out.println("used " + (t2-t1) + "ms, compared counts: " + compCount);
         }
     }
 
