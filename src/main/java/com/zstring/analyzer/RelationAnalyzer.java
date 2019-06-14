@@ -13,6 +13,7 @@ import soot.jimple.internal.*;
 
 import java.io.*;
 import java.util.*;
+import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class RelationAnalyzer {
     public static Map<String, Set<Relation>> allRelations = new HashMap<String, Set<Relation>>();
@@ -23,12 +24,13 @@ public class RelationAnalyzer {
     public static Set<Relation> globalRelations;
     public static Map<Type, Set<Relation>> typeRelationHolder = new HashMap<Type, Set<Relation>>();
     public static Map<Value, Set<Relation>> valueRelationHolder = new HashMap<Value, Set<Relation>>();
+    public static ArrayList<Set> splited = new ArrayList<Set>();
     public static int callsiteCount = 0;
 
     public static void main(String[] args) {
         String cp = "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar";
         String pp = "/home/sean/bench_compile/";
-        pp = "/home/sean/bench_compared/compress/";
+        pp = "/home/sean/bench_compared/crypto/";
         new RelationAnalyzer().analyze(cp, pp);
     }
 
@@ -423,8 +425,7 @@ public class RelationAnalyzer {
 
     public void minimalization() {
         Set allValue = valueRelationHolder.keySet();
-        List<Set> splited = new ArrayList<Set>();
-        split(splited, allValue, new HashSet());
+        splitIter(splited, allValue);
     }
 
     public void split(List<Set> splited, Set<Value> obj, Set usedSplitter) {
@@ -504,6 +505,117 @@ public class RelationAnalyzer {
         split(splited, include, usedSplitter);
         split(splited, exclude, usedSplitter);
 
+    }
+
+    public void splitIter(List<Set> splitted, Set<Value> obj) {
+        int round = 0;
+
+        Queue<Set<Value>> currentSplittedGroup = new ConcurrentLinkedQueue<Set<Value>>();
+        currentSplittedGroup.add(obj);
+        Queue<Set<Value>> wokerQueue = new ConcurrentLinkedQueue<Set<Value>>();
+        wokerQueue.add(obj);
+        while(!wokerQueue.isEmpty()) {
+            Set<Value> valueToSplit = wokerQueue.poll();
+            if(valueToSplit.size() == 1) {
+                splitted.add(valueToSplit);
+                continue;
+            }
+            Set usedSplitter = new HashSet();
+
+            // find a splitter
+            Object splitter = null;
+            boolean splitFlag = false;
+            Set<Value> include = null;
+            Set<Value> exclude = null;
+            Iterator<Value> vIter1 = valueToSplit.iterator();
+            while (vIter1.hasNext()) {
+                Value v = vIter1.next();
+                Set<Relation> vRelations = valueRelationHolder.get(v);
+                Iterator<Relation> rIter = vRelations.iterator();
+                while (rIter.hasNext()) {
+                    include = new HashSet<Value>();
+                    exclude = new HashSet<Value>();
+                    Relation r = rIter.next();
+                    if (r.relationType.equals(Relation.TYPE_FIELD)) {
+                        if (!usedSplitter.contains(r.field)) {
+                            splitter = r.field;
+                            if(split(valueToSplit, currentSplittedGroup, splitter, r.right, include, exclude)) {
+                                splitFlag = true;
+                                break;
+                            }
+                            usedSplitter.add(splitter);
+                        }
+                    } else if (r.relationType.equals(Relation.TYPE_VAR2VAR)) {
+                        if (!usedSplitter.contains(r.right)) {
+                            splitter = r.right;
+                            if(split(valueToSplit, currentSplittedGroup, splitter, null, include, exclude)) {
+                                splitFlag = true;
+                                break;
+                            }
+                            usedSplitter.add(splitter);
+                        }
+                    }
+                }
+                if(splitFlag) {
+                    wokerQueue.add(include);
+                    wokerQueue.add(exclude);
+                    currentSplittedGroup.poll();
+                    currentSplittedGroup.add(include);
+                    currentSplittedGroup.add(exclude);
+                    System.out.println("split round: " + (++round));
+                    break;
+                }
+            }
+            if (!splitFlag) {
+                // cannot be split anymore
+                splitted.add(valueToSplit);
+                continue;
+            }
+        }
+        System.out.println("split ended.");
+
+    }
+
+    private boolean split(Set<Value> valueToSplit, Queue<Set<Value>> currentSplitGroup, Object splitter, Object splitAssist, Set<Value> include, Set<Value> exclude) {
+        Iterator<Value> vIter = valueToSplit.iterator();
+        while (vIter.hasNext()) {
+            Value v = vIter.next();
+            Set<Relation> vRelations = valueRelationHolder.get(v);
+            Iterator<Relation> rIter = vRelations.iterator();
+            while (rIter.hasNext()) {
+                Relation r = rIter.next();
+                if (splitter instanceof SootField) {
+                    if (r.relationType.equals(Relation.TYPE_FIELD) && r.field.equals(splitter)) {
+                        Iterator<Set<Value>> curGroupIter = currentSplitGroup.iterator();
+                        while (curGroupIter.hasNext()) {
+                            Set<Value> group = curGroupIter.next();
+                            if(group.contains(r.right) && group.contains(splitAssist)) {
+                                include.add(v);
+                                break;
+                            }
+                        }
+
+                    }
+                } else {
+                    if (!r.relationType.equals(Relation.TYPE_CLASS2VAR)) {
+                        Iterator<Set<Value>> curGroupIter = currentSplitGroup.iterator();
+                        while (curGroupIter.hasNext()) {
+                            Set<Value> group = curGroupIter.next();
+                            if(group.contains(r.right) && group.contains(splitter)) {
+                                include.add(v);
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        if(include.size() == valueToSplit.size() || include.size() == 0) {
+            return false;
+        }
+        exclude.addAll(valueToSplit);
+        exclude.removeAll(include);
+        return true;
     }
 
     public void dealInvokeInAssign(String hostMethod, JAssignStmt assignStmt) {

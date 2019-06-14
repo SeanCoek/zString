@@ -42,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="437" column="9" lean-forward="true" selection-start-line="437" selection-start-column="9" selection-end-line="437" selection-end-column="9" />
+            <state relative-caret-position="234">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#893#914#0" expanded="true" />
@@ -57,9 +57,12 @@
                 <element signature="method#genRelationFromInvoke#0;class#RelationAnalyzer#0" />
                 <element signature="e#12559#12565#0" expanded="true" />
                 <element signature="e#15273#15323#1" />
-                <element signature="e#15501#15502#0" expanded="true" />
+                <element signature="e#15615#15616#0" expanded="true" />
                 <element signature="method#globalize#0;class#RelationAnalyzer#0" />
                 <element signature="method#splitRelation#0;class#RelationAnalyzer#0" />
+                <element signature="method#split#0;class#RelationAnalyzer#0" />
+                <element signature="e#23136#23148#0" expanded="true" />
+                <element signature="e#23209#23221#0" expanded="true" />
                 <element signature="method#dealInvokeInAssign#0;class#RelationAnalyzer#0" />
                 <element signature="method#drawRelation#0;class#RelationAnalyzer#0" />
                 <element signature="method#drawRelation#1;class#RelationAnalyzer#0" />
@@ -77,6 +80,20 @@
                 <element signature="e#852#853#0" expanded="true" />
                 <element signature="e#917#918#0" expanded="true" />
                 <element signature="method#calc#0;class#PointsToAnalyzer#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/structs/Transition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#Transition#0;class#Transition#0" />
+                <element signature="method#equals#0;class#Transition#0" />
               </folding>
             </state>
           </provider>
@@ -222,6 +239,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="zstring" type="462c0819:PsiDirectoryNode" />
+              <item name="structs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zString" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zString" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zstring" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -250,7 +277,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560437018021" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560517534536" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -300,6 +327,7 @@
     <configuration name="RelationAnalyzer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zstring.analyzer.RelationAnalyzer" />
       <module name="zString" />
+      <option name="VM_PARAMETERS" value="-Xss50m" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.zstring.analyzer.*" />
@@ -339,6 +367,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.PointsTo" />
+      <item itemvalue="Application.PointsToAnalyzer" />
+      <item itemvalue="Application.RelationAnalyzer" />
+      <item itemvalue="JUnit.PointerBenchTest" />
+      <item itemvalue="JUnit.PointerBenchTest.testAssignInVarInitial" />
+      <item itemvalue="JUnit.PointerBenchTest.testCG" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.RelationAnalyzer" />
@@ -405,7 +441,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="130" y="-8" width="2870" height="2008" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22286125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -416,8 +451,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32963827" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49964055" visible="true" weight="0.3413069" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5326721" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49964055" weight="0.3413069" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.5326721" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32963827" />
@@ -470,15 +505,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java</url>
-          <line>43</line>
+          <line>45</line>
           <properties />
           <option name="timeStamp" value="143" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java</url>
-          <line>444</line>
+          <line>445</line>
           <properties />
           <option name="timeStamp" value="145" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java</url>
+          <line>542</line>
+          <properties />
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java</url>
+          <line>541</line>
+          <properties />
+          <option name="timeStamp" value="155" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -490,17 +537,11 @@
         <watch expression="SootEnvironment.locals" language="JAVA" />
       </configuration>
       <configuration name="Application">
-        <watch expression="soot.Scene.v()" language="JAVA" />
         <watch expression="SootEnvironment.allClasses" language="JAVA" custom="com.zstring.env.SootEnvironment" />
         <watch expression="RelationAnalyzer.allRelations" language="JAVA" />
         <watch expression="RelationAnalyzer.globalRelations" language="JAVA" />
-        <watch expression="RelationAnalyzer.globalTypeMap" language="JAVA" />
-        <watch expression="((JInstanceFieldRef) left).getBase()" language="JAVA" custom="soot.jimple.internal.JInstanceFieldRef" />
-        <watch expression="((HashSet)((HashMap.Node)((HashMap)RelationAnalyzer.allRelations).entrySet().toArray()[35]).getValue()).toArray()[2]" custom="java.util.HashSet,java.util.HashMap.Node,java.util.HashMap" />
-        <watch expression="((LinkedRValueBox)((JAssignStmt)((soot.UnitPatchingChain)((PatchingIterator)uIter).this$0).toArray()[4]).rightBox).value" custom="soot.UnitPatchingChain,soot.jimple.internal.JAssignStmt.LinkedRValueBox,soot.PatchingChain.PatchingIterator,soot.jimple.internal.JAssignStmt" />
         <watch expression="methodInfoMap" language="JAVA" />
-        <watch expression="RelationAnalyzer.globalValueMap" language="JAVA" />
-        <watch expression="RelationAnalyzer.globalTransition" language="JAVA" />
+        <watch expression="splited" language="JAVA" />
         <watch expression="typeRelationHolder" language="JAVA" />
         <watch expression="valueRelationHolder" language="JAVA" />
       </configuration>
@@ -508,6 +549,11 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>splited</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>valueRelationHolder</expression-string>
         <language-id>JAVA</language-id>
@@ -547,11 +593,6 @@
         <expression-string>((JInstanceFieldRef) left).getBase()</expression-string>
         <language-id>JAVA</language-id>
         <custom-info>soot.jimple.internal.JInstanceFieldRef</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>((JAssignStmt) u).getRightOp()</expression-string>
-        <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
@@ -729,18 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/structs/Transition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Transition#0;class#Transition#0" />
-            <element signature="method#equals#0;class#Transition#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/utils/SootUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="609">
@@ -884,18 +913,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-          <folding>
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#917#918#0" expanded="true" />
-            <element signature="method#calc#0;class#PointsToAnalyzer#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.3.0/soot-3.3.0.jar!/soot/jimple/internal/JInstanceFieldRef.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -959,10 +976,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/structs/Transition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Transition#0;class#Transition#0" />
+            <element signature="method#equals#0;class#Transition#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <folding>
+            <element signature="e#852#853#0" expanded="true" />
+            <element signature="e#917#918#0" expanded="true" />
+            <element signature="method#calc#0;class#PointsToAnalyzer#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="437" column="9" lean-forward="true" selection-start-line="437" selection-start-column="9" selection-end-line="437" selection-end-column="9" />
+        <state relative-caret-position="234">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#893#914#0" expanded="true" />
@@ -976,9 +1017,12 @@
             <element signature="method#genRelationFromInvoke#0;class#RelationAnalyzer#0" />
             <element signature="e#12559#12565#0" expanded="true" />
             <element signature="e#15273#15323#1" />
-            <element signature="e#15501#15502#0" expanded="true" />
+            <element signature="e#15615#15616#0" expanded="true" />
             <element signature="method#globalize#0;class#RelationAnalyzer#0" />
             <element signature="method#splitRelation#0;class#RelationAnalyzer#0" />
+            <element signature="method#split#0;class#RelationAnalyzer#0" />
+            <element signature="e#23136#23148#0" expanded="true" />
+            <element signature="e#23209#23221#0" expanded="true" />
             <element signature="method#dealInvokeInAssign#0;class#RelationAnalyzer#0" />
             <element signature="method#drawRelation#0;class#RelationAnalyzer#0" />
             <element signature="method#drawRelation#1;class#RelationAnalyzer#0" />
