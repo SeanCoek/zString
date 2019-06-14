@@ -1,3 +1,0 @@
-digraph g {
-0[label="void <init>(int,double,java.lang.String,spec.benchmarks.serial.data.Child,java.lang.String[],java.util.HashMap,java.lang.Long,boolean,byte,short,int,java.lang.Integer,long,java.lang.Long,float,double,char,java.util.Date,java.sql.Date)"]
-}

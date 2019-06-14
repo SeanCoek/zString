@@ -1,7 +1,0 @@
-digraph g {
-0[label="@this: org.eclipse.osgi.framework.internal.reliablefile.ReliableFile"]
-1[label="r0"]
-0->1[label=""]
-2[label="null"]
-1->2[label="field: inputFile"]
-}

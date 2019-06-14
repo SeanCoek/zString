@@ -1,8 +1,0 @@
-digraph g {
-0[label="@this: org.eclipse.osgi.internal.loader.BundleLoaderProxy"]
-1[label="r0"]
-0->1[label=""]
-2[label="interfaceinvoke $r1.<org.eclipse.osgi.service.resolver.BundleDescription: boolean isRemovalPending()>()"]
-3[label="$z0"]
-2->3[label=""]
-}

@@ -1,8 +1,0 @@
-digraph g {
-0[label="staticinvoke <org.eclipse.osgi.internal.permadmin.SecurityRow: int getHashCode(java.lang.String,org.osgi.service.condpermadmin.ConditionInfo[],org.osgi.service.permissionadmin.PermissionInfo[],java.lang.String)>($r1, $r2, $r3, $r4)"]
-1[label="$i0"]
-0->1[label=""]
-2[label="@this: org.eclipse.osgi.internal.permadmin.SecurityRow"]
-3[label="r0"]
-2->3[label=""]
-}

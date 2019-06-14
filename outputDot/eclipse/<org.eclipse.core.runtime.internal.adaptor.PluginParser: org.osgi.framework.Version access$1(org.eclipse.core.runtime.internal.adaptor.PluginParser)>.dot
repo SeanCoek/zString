@@ -1,5 +1,0 @@
-digraph g {
-0[label="@parameter0: org.eclipse.core.runtime.internal.adaptor.PluginParser"]
-1[label="r0"]
-0->1[label=""]
-}

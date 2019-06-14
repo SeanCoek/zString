@@ -1,8 +1,0 @@
-digraph g {
-0[label="@caughtexception"]
-1[label="$r5"]
-0->1[label=""]
-2[label="@this: org.eclipse.osgi.baseadaptor.bundlefile.DirZipBundleEntry"]
-3[label="r0"]
-2->3[label=""]
-}

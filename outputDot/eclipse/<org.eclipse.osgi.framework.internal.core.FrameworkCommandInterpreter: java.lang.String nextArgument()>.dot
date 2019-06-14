@@ -1,8 +1,0 @@
-digraph g {
-0[label="specialinvoke r0.<org.eclipse.osgi.framework.internal.core.FrameworkCommandInterpreter: java.lang.String consumeQuotes(java.lang.String)>($r4)"]
-1[label="$r5"]
-0->1[label=""]
-2[label="@this: org.eclipse.osgi.framework.internal.core.FrameworkCommandInterpreter"]
-3[label="r0"]
-2->3[label=""]
-}

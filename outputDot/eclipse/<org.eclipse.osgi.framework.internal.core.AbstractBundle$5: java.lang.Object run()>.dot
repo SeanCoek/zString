@@ -1,8 +1,0 @@
-digraph g {
-0[label="interfaceinvoke $r3.<org.eclipse.osgi.framework.adaptor.BundleData: java.util.Enumeration getEntryPaths(java.lang.String)>($r2)"]
-1[label="$r4"]
-0->1[label=""]
-2[label="@this: org.eclipse.osgi.framework.internal.core.AbstractBundle$5"]
-3[label="r0"]
-2->3[label=""]
-}

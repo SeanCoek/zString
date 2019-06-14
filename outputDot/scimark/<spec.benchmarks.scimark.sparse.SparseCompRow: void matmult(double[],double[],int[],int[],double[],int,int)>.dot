@@ -1,5 +1,0 @@
-digraph g {
-1[label="void checkResults(java.lang.String,java.lang.String,int)"]
-0[label="void matmult(double[],double[],int[],int[],double[],int,int)"]
-0->1[label="staticinvoke <spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>($r7, $r10, $i7)"]
-}

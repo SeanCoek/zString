@@ -1,3 +1,0 @@
-digraph g {
-0[label="spec.benchmarks.serial.data.TestParent getParent()"]
-}

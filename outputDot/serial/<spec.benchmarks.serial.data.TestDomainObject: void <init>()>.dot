@@ -1,6 +1,0 @@
-digraph g {
-0[label="void <init>()"]
-1[label="void <init>(boolean)"]
-0->1[label="specialinvoke r0.<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>(1)"]
-1->1[label="specialinvoke $r14.<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>(0)"]
-}

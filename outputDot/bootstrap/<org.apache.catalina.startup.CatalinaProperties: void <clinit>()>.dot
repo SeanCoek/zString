@@ -1,5 +1,0 @@
-digraph g {
-0[label="staticinvoke <org.apache.juli.logging.LogFactory: org.apache.juli.logging.Log getLog(java.lang.Class)>(class 'Lorg/apache/catalina/startup/CatalinaProperties;')"]
-1[label="$r0"]
-0->1[label=""]
-}

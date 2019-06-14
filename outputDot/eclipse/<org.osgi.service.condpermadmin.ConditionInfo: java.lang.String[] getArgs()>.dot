@@ -1,8 +1,0 @@
-digraph g {
-0[label="(java.lang.String[]) $r2"]
-1[label="$r3"]
-0->1[label=""]
-2[label="@this: org.osgi.service.condpermadmin.ConditionInfo"]
-3[label="r0"]
-2->3[label=""]
-}

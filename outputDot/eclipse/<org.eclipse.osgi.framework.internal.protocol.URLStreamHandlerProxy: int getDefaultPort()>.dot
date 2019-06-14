@@ -1,8 +1,0 @@
-digraph g {
-0[label="interfaceinvoke $r1.<org.osgi.service.url.URLStreamHandlerService: int getDefaultPort()>()"]
-1[label="$i0"]
-0->1[label=""]
-2[label="@this: org.eclipse.osgi.framework.internal.protocol.URLStreamHandlerProxy"]
-3[label="r0"]
-2->3[label=""]
-}

@@ -1,8 +1,0 @@
-digraph g {
-0[label="@this: org.eclipse.osgi.framework.internal.core.Framework"]
-1[label="r0"]
-0->1[label=""]
-2[label="(org.eclipse.osgi.signedcontent.SignedContentFactory) $r3"]
-3[label="$r2"]
-2->3[label=""]
-}

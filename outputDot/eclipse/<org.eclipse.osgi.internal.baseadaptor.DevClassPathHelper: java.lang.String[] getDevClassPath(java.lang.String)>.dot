@@ -1,8 +1,0 @@
-digraph g {
-0[label="@parameter0: java.lang.String"]
-1[label="r0"]
-0->1[label=""]
-2[label="staticinvoke <org.eclipse.osgi.internal.baseadaptor.DevClassPathHelper: java.lang.String[] getDevClassPath(java.lang.String,java.util.Dictionary)>(r0, null)"]
-3[label="$r1"]
-2->3[label=""]
-}

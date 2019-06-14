@@ -1,9 +1,0 @@
-digraph g {
-0[label="@parameter0: int"]
-1[label="i0"]
-0->1[label=""]
-2[label="r0"]
-2->1[label="field: loadOrder"]
-3[label="@this: org.eclipse.core.runtime.internal.stats.ClassStats"]
-3->2[label=""]
-}

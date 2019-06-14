@@ -1,8 +1,0 @@
-digraph g {
-0[label="spec.benchmarks.serial.data.TestPayload createTestInstance()"]
-1[label="void setChild(spec.benchmarks.serial.data.TestPayload)"]
-2[label="void <init>(java.lang.String,int)"]
-0->1[label="virtualinvoke r0.<spec.benchmarks.serial.data.TestPayload: void setChild(spec.benchmarks.serial.data.TestPayload)>(r1)"]
-0->2[label="specialinvoke $r4.<spec.benchmarks.serial.data.TestPayload: void <init>(java.lang.String,int)>('child', $i1)"]
-0->2[label="specialinvoke $r2.<spec.benchmarks.serial.data.TestPayload: void <init>(java.lang.String,int)>('foobar', $i0)"]
-}

@@ -1,9 +1,0 @@
-digraph g {
-0[label="r0"]
-1[label="z0"]
-0->1[label="field: duringStartup"]
-2[label="@this: org.eclipse.core.runtime.internal.stats.BundleStats"]
-2->0[label=""]
-3[label="@parameter0: boolean"]
-3->1[label=""]
-}

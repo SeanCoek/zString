@@ -1,8 +1,0 @@
-digraph g {
-0[label="staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String,java.lang.String)>('catalina.home', $r0)"]
-1[label="$r1"]
-0->1[label=""]
-2[label="staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>('user.dir')"]
-3[label="$r0"]
-2->3[label=""]
-}

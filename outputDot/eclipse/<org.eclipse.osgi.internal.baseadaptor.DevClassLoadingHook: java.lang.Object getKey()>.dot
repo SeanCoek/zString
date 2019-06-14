@@ -1,8 +1,0 @@
-digraph g {
-0[label="@this: org.eclipse.osgi.internal.baseadaptor.DevClassLoadingHook"]
-1[label="r0"]
-0->1[label=""]
-2[label="<org.eclipse.osgi.internal.baseadaptor.DevClassLoadingHook: java.lang.String KEY>"]
-3[label="$r1"]
-2->3[label=""]
-}

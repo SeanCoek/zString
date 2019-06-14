@@ -1,8 +1,0 @@
-digraph g {
-0[label="<org.eclipse.osgi.internal.service.security.DefaultAuthorizationEngine: int enforceFlags>"]
-1[label="$i0"]
-0->1[label=""]
-2[label="@this: org.eclipse.osgi.internal.service.security.DefaultAuthorizationEngine"]
-3[label="r0"]
-2->3[label=""]
-}

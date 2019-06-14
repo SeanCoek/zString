@@ -1,5 +1,0 @@
-digraph g {
-1[label="void <init>()"]
-0[label="void <clinit>()"]
-0->1[label="specialinvoke $r0.<spec.benchmarks.scimark.fft.FFT$1: void <init>()>()"]
-}

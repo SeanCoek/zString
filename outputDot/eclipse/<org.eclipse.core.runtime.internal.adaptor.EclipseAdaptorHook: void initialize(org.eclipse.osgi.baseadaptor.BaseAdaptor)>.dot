@@ -1,9 +1,0 @@
-digraph g {
-0[label="@parameter0: org.eclipse.osgi.baseadaptor.BaseAdaptor"]
-1[label="r1"]
-0->1[label=""]
-2[label="r0"]
-2->1[label="field: adaptor"]
-3[label="@this: org.eclipse.core.runtime.internal.adaptor.EclipseAdaptorHook"]
-3->2[label=""]
-}

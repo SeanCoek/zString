@@ -1,5 +1,0 @@
-digraph g {
-1[label="java.lang.Object getInstance(int)"]
-0[label="java.lang.Object[] createInstances()"]
-0->1[label="staticinvoke <spec.benchmarks.serial.Utils: java.lang.Object getInstance(int)>(i2)"]
-}

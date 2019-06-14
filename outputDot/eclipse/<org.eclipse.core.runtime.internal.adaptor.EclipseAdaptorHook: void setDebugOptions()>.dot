@@ -1,8 +1,0 @@
-digraph g {
-0[label="staticinvoke <org.eclipse.osgi.framework.debug.FrameworkDebugOptions: org.eclipse.osgi.framework.debug.FrameworkDebugOptions getDefault()>()"]
-1[label="r1"]
-0->1[label=""]
-2[label="@this: org.eclipse.core.runtime.internal.adaptor.EclipseAdaptorHook"]
-3[label="r0"]
-2->3[label=""]
-}

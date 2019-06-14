@@ -1,5 +1,0 @@
-digraph g {
-1[label="double[] initialValue()"]
-0[label="java.lang.Object initialValue()"]
-0->1[label="virtualinvoke r0.<spec.benchmarks.scimark.fft.FFT$1: double[] initialValue()>()"]
-}

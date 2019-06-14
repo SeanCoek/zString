@@ -1,8 +1,0 @@
-digraph g {
-0[label="java.lang.UnsupportedOperationException"]
-1[label="$r1"]
-0->1[label="type"]
-2[label="@this: org.eclipse.osgi.framework.util.Headers"]
-3[label="r0"]
-2->3[label=""]
-}

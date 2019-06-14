@@ -1,8 +1,0 @@
-digraph g {
-0[label="@this: org.eclipse.osgi.util.ManifestElement"]
-1[label="r0"]
-0->1[label=""]
-2[label="specialinvoke r0.<org.eclipse.osgi.util.ManifestElement: java.util.Enumeration getTableKeys(java.util.Hashtable)>($r1)"]
-3[label="$r2"]
-2->3[label=""]
-}

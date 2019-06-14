@@ -1,6 +1,0 @@
-digraph g {
-1[label="void <init>(int,java.lang.String)"]
-0[label="void <clinit>()"]
-0->1[label="specialinvoke $r2.<spec.benchmarks.serial.data.TestReadResolve: void <init>(int,java.lang.String)>(0, 'zero')"]
-0->1[label="specialinvoke $r1.<spec.benchmarks.serial.data.TestReadResolve: void <init>(int,java.lang.String)>(0, 'zero')"]
-}

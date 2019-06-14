@@ -1,7 +1,0 @@
-digraph g {
-1[label="basic.ObjectA getA()"]
-0[label="void var2call()"]
-2[label="void <init>()"]
-0->1[label="virtualinvoke r1.<basic.ObjectB: basic.ObjectA getA()>()"]
-0->2[label="specialinvoke $r2.<basic.ObjectB: void <init>()>()"]
-}

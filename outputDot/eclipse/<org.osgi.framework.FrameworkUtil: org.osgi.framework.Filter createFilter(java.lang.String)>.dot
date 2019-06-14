@@ -1,8 +1,0 @@
-digraph g {
-0[label="staticinvoke <org.osgi.framework.FrameworkUtil$FilterImpl: org.osgi.framework.FrameworkUtil$FilterImpl newInstance(java.lang.String)>(r0)"]
-1[label="$r1"]
-0->1[label=""]
-2[label="@parameter0: java.lang.String"]
-3[label="r0"]
-2->3[label=""]
-}
