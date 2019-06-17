@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6195f35d-b71f-4351-b3a3-5904f032416f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zstring/analyzer/RelationAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zstring/analyzer/RelationAnalyzer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zstring/structs/Relation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zstring/structs/Relation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CHATest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CHATest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,24 +20,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+            <state relative-caret-position="604">
+              <caret line="69" column="15" selection-start-line="69" selection-start-column="15" selection-end-line="69" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#368#378#0" expanded="true" />
+                <element signature="e#505#526#0" expanded="true" />
+                <element signature="e#607#629#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/utils/SootUtils.java">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/idea64.vmoptions">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="87">
+              <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -57,36 +54,34 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+            <state relative-caret-position="326">
+              <caret line="182" column="30" lean-forward="true" selection-start-line="182" selection-start-column="30" selection-end-line="182" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#893#914#0" expanded="true" />
-                <element signature="e#995#1017#0" expanded="true" />
                 <element signature="method#generateRelation#0;class#RelationAnalyzer#0" />
                 <element signature="e#1755#1774#0" expanded="true" />
                 <element signature="method#resolveFieldLoad#0;class#RelationAnalyzer#0" />
                 <element signature="e#6224#6234#0" expanded="true" />
-                <element signature="method#extendTransitive#0;class#RelationAnalyzer#0" />
+                <element signature="e#8882#8892#0" expanded="true" />
+                <element signature="e#9676#9686#0" expanded="true" />
+                <element signature="e#10501#10511#0" expanded="true" />
                 <element signature="method#resolveMethodCall#0;class#RelationAnalyzer#0" />
                 <element signature="method#dealInvoke#0;class#RelationAnalyzer#0" />
                 <element signature="method#genRelationFromInvoke#0;class#RelationAnalyzer#0" />
                 <element signature="e#12559#12565#0" expanded="true" />
-                <element signature="e#15273#15323#1" />
-                <element signature="e#18434#18435#0" expanded="true" />
+                <element signature="e#20123#20124#0" expanded="true" />
                 <element signature="method#globalize#0;class#RelationAnalyzer#0" />
-                <element signature="method#splitRelationToTypeAndValue#0;class#RelationAnalyzer#0" />
                 <element signature="method#minimalization#0;class#RelationAnalyzer#0" />
-                <element signature="method#split#0;class#RelationAnalyzer#0" />
                 <element signature="method#splitIter#0;class#RelationAnalyzer#0" />
                 <element signature="e#23136#23148#0" expanded="true" />
                 <element signature="e#23209#23221#0" expanded="true" />
                 <element signature="method#split#1;class#RelationAnalyzer#0" />
                 <element signature="method#calCallSite#0;class#RelationAnalyzer#0" />
-                <element signature="method#dealInvokeInAssign#0;class#RelationAnalyzer#0" />
+                <element signature="method#calcNodes#0;class#RelationAnalyzer#0" />
+                <element signature="method#calcMinNodes#0;class#RelationAnalyzer#0" />
                 <element signature="method#drawRelation#0;class#RelationAnalyzer#0" />
                 <element signature="method#drawRelation#1;class#RelationAnalyzer#0" />
               </folding>
@@ -95,10 +90,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PointerBenchTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/RelationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1378">
-              <caret line="72" column="26" lean-forward="true" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
+            <state relative-caret-position="479">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,10 +102,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/CHATest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/OriginCallsiteTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="60" column="41" lean-forward="true" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
+            <state relative-caret-position="263">
+              <caret line="37" column="25" lean-forward="true" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,8 +116,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="158" column="25" lean-forward="true" selection-start-line="108" selection-start-column="8" selection-end-line="158" selection-end-column="25" />
+            <state relative-caret-position="408">
+              <caret line="148" column="33" lean-forward="true" selection-start-line="148" selection-start-column="33" selection-end-line="148" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#852#853#0" expanded="true" />
@@ -130,6 +125,18 @@
                 <element signature="method#calc#0;class#PointsToAnalyzer#0" />
                 <element signature="method#setSparkPointsToAnalysis#0;class#PointsToAnalyzer#0" />
                 <element signature="method#setCHA#0;class#PointsToAnalyzer#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/CHATest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-870">
+              <caret line="51" column="30" lean-forward="true" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -194,7 +201,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/env/SootEnviroment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/utils/FileUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/utils/FileUtil.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/idea64.vmoptions" />
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/ZStringAnalyzer.java" />
         <option value="$PROJECT_DIR$/src/test/java/PointerBenchTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/structs/CG.java" />
@@ -202,11 +208,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/structs/C2VRelation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/utils/SootUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/structs/Transition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/env/SootEnvironment.java" />
-        <option value="$PROJECT_DIR$/src/test/java/CHATest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oldcode/OldCode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/idea64.vmoptions" />
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RelationTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CHATest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/OriginCallsiteTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java" />
       </list>
     </option>
   </component>
@@ -226,11 +236,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="865" />
-    <option name="y" value="468" />
-    <option name="width" value="1400" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="130" />
+    <option name="y" value="48" />
+    <option name="width" value="1436" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -341,8 +351,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560672496046" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560753127561" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Java-ByteCode-Counter/InsnCounter" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -360,74 +370,71 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RelationAnalyzer">
-    <configuration name="RelationAnalyzer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zstring.analyzer.RelationAnalyzer" />
-      <module name="zString" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zstring.analyzer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CHATest.bootstrap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CHATest.batik">
+    <configuration name="CHATest.antlr" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zString" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CHATest" />
-      <option name="METHOD_NAME" value="bootstrap" />
+      <option name="METHOD_NAME" value="antlr" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CHATest.codec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CHATest.batik" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zString" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CHATest" />
-      <option name="METHOD_NAME" value="codec" />
+      <option name="METHOD_NAME" value="batik" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CHATest.httpclient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CHATest.derby" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zString" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CHATest" />
-      <option name="METHOD_NAME" value="httpclient" />
+      <option name="METHOD_NAME" value="derby" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CHATest.junit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CHATest.jython" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zString" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CHATest" />
-      <option name="METHOD_NAME" value="junit" />
+      <option name="METHOD_NAME" value="jython" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CHATest.xalan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="zString" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CHATest" />
+      <option name="METHOD_NAME" value="xalan" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CHATest.bootstrap" />
-      <item itemvalue="JUnit.CHATest.codec" />
-      <item itemvalue="JUnit.CHATest.junit" />
-      <item itemvalue="JUnit.CHATest.httpclient" />
-      <item itemvalue="Application.RelationAnalyzer" />
+      <item itemvalue="JUnit.CHATest.derby" />
+      <item itemvalue="JUnit.CHATest.xalan" />
+      <item itemvalue="JUnit.CHATest.antlr" />
+      <item itemvalue="JUnit.CHATest.jython" />
+      <item itemvalue="JUnit.CHATest.batik" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RelationAnalyzer" />
-        <item itemvalue="JUnit.CHATest.httpclient" />
-        <item itemvalue="JUnit.CHATest.junit" />
-        <item itemvalue="JUnit.CHATest.codec" />
-        <item itemvalue="JUnit.CHATest.bootstrap" />
+        <item itemvalue="JUnit.CHATest.batik" />
+        <item itemvalue="JUnit.CHATest.jython" />
+        <item itemvalue="JUnit.CHATest.antlr" />
+        <item itemvalue="JUnit.CHATest.xalan" />
+        <item itemvalue="JUnit.CHATest.derby" />
       </list>
     </recent_temporary>
   </component>
@@ -445,35 +452,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CHATest_codec - 2019.06.16 at 15h 00m 58s.xml">
-      <configuration name="CHATest.codec" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CHATest_junit - 2019.06.16 at 15h 01m 33s.xml">
+    <history-entry file="CHATest_junit - 2019.06.17 at 12h 58m 46s.xml">
       <configuration name="CHATest.junit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CHATest_junit - 2019.06.16 at 15h 03m 55s.xml">
-      <configuration name="CHATest.junit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CHATest_junit - 2019.06.16 at 15h 08m 36s.xml">
-      <configuration name="CHATest.junit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CHATest_compress - 2019.06.16 at 15h 09m 32s.xml">
-      <configuration name="CHATest.compress" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CHATest_crypto - 2019.06.16 at 15h 09m 48s.xml">
-      <configuration name="CHATest.crypto" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CHATest_bootstrap - 2019.06.16 at 15h 10m 24s.xml">
-      <configuration name="CHATest.bootstrap" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CHATest_codec - 2019.06.16 at 15h 10m 47s.xml">
-      <configuration name="CHATest.codec" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CHATest_junit - 2019.06.16 at 15h 11m 32s.xml">
-      <configuration name="CHATest.junit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CHATest_httpclient - 2019.06.16 at 15h 11m 56s.xml">
+    <history-entry file="CHATest_httpclient - 2019.06.17 at 12h 59m 36s.xml">
       <configuration name="CHATest.httpclient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CHATest_serializer - 2019.06.17 at 13h 00m 23s.xml">
+      <configuration name="CHATest.serializer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CHATest_xerces - 2019.06.17 at 13h 01m 25s.xml">
+      <configuration name="CHATest.xerces" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CHATest_eclipse - 2019.06.17 at 13h 03m 01s.xml">
+      <configuration name="CHATest.eclipse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CHATest_derby - 2019.06.17 at 13h 04m 48s.xml">
+      <configuration name="CHATest.derby" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CHATest_xalan - 2019.06.17 at 13h 07m 23s.xml">
+      <configuration name="CHATest.xalan" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CHATest_antlr - 2019.06.17 at 13h 09m 03s.xml">
+      <configuration name="CHATest.antlr" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CHATest_jython - 2019.06.17 at 13h 17m 34s.xml">
+      <configuration name="CHATest.jython" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CHATest_batik - 2019.06.17 at 13h 19m 24s.xml">
+      <configuration name="CHATest.batik" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -487,7 +494,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="130" y="-8" width="2870" height="2008" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22286125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -551,22 +557,22 @@
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java</url>
-          <line>504</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java</url>
+          <line>142</line>
           <properties />
-          <option name="timeStamp" value="145" />
+          <option name="timeStamp" value="197" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java</url>
-          <line>134</line>
+          <line>143</line>
           <properties />
-          <option name="timeStamp" value="186" />
+          <option name="timeStamp" value="198" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java</url>
-          <line>139</line>
+          <line>147</line>
           <properties />
-          <option name="timeStamp" value="187" />
+          <option name="timeStamp" value="200" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -587,15 +593,45 @@
         <watch expression="valueRelationHolder" language="JAVA" />
         <watch expression="Relation.globalRelations" language="JAVA" />
         <watch expression="Scene.v().getMainMethod()" language="JAVA" />
+        <watch expression="Relation.typeRelationHolder" language="JAVA" />
+        <watch expression="Relation.valueRelationHolder" language="JAVA" />
         <watch expression="Scene.v().getCallGraph()" language="JAVA" />
         <watch expression="sm" language="JAVA" />
         <watch expression="invokeExpr.getMethod().getSignature()" language="JAVA" />
         <watch expression="c.getMethod(invokeExpr.getMethod().getSignature())" language="JAVA" />
+        <watch expression="relation1.right" language="JAVA" />
+        <watch expression="Relation.valueRelationHolder.get(relation1.right)" language="JAVA" />
+        <watch expression="valueToRelation.addAll(null)" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>valueToRelation.addAll(null)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Relation.valueRelationHolder.get(relation1.right)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>relation1.right</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Relation.valueRelationHolder</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Relation.typeRelationHolder</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>c.getMethod(invokeExpr.getMethod().getSignature())</expression-string>
         <language-id>JAVA</language-id>
@@ -621,31 +657,6 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>Scene.v().getMainClass()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Relation.globalRelations</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>splited</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>valueRelationHolder</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>typeRelationHolder</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
@@ -657,34 +668,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.3.0/soot-3.3.0.jar!/soot/jimple/ReturnStmt.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.3.0/soot-3.3.0.jar!/soot/jimple/internal/JReturnStmt.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="20" column="64" lean-forward="true" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/relation/&lt;callgraph.Hierarchy: void load()&gt;.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.3.0/soot-3.3.0.jar!/soot/jimple/VirtualInvokeExpr.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.3.0/soot-3.3.0.jar!/soot/jimple/InstanceInvokeExpr.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -945,17 +928,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#368#378#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.3.0/soot-3.3.0.jar!/soot/MethodOrMethodContext.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
@@ -1020,27 +992,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CHATest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oldcode/OldCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="60" column="41" lean-forward="true" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
+        <state relative-caret-position="464">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#311#392#0" />
+            <element signature="method#split#0;class#OldCode#0" />
+            <element signature="e#2893#2942#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/idea64.vmoptions">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="158" column="25" lean-forward="true" selection-start-line="108" selection-start-column="8" selection-end-line="158" selection-end-column="25" />
+        <state relative-caret-position="87">
+          <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="69" column="15" selection-start-line="69" selection-start-column="15" selection-end-line="69" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#917#918#0" expanded="true" />
-            <element signature="method#calc#0;class#PointsToAnalyzer#0" />
-            <element signature="method#setSparkPointsToAnalysis#0;class#PointsToAnalyzer#0" />
-            <element signature="method#setCHA#0;class#PointsToAnalyzer#0" />
+            <element signature="e#368#378#0" expanded="true" />
+            <element signature="e#505#526#0" expanded="true" />
+            <element signature="e#607#629#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1058,35 +1038,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+        <state relative-caret-position="326">
+          <caret line="182" column="30" lean-forward="true" selection-start-line="182" selection-start-column="30" selection-end-line="182" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#893#914#0" expanded="true" />
-            <element signature="e#995#1017#0" expanded="true" />
             <element signature="method#generateRelation#0;class#RelationAnalyzer#0" />
             <element signature="e#1755#1774#0" expanded="true" />
             <element signature="method#resolveFieldLoad#0;class#RelationAnalyzer#0" />
             <element signature="e#6224#6234#0" expanded="true" />
-            <element signature="method#extendTransitive#0;class#RelationAnalyzer#0" />
+            <element signature="e#8882#8892#0" expanded="true" />
+            <element signature="e#9676#9686#0" expanded="true" />
+            <element signature="e#10501#10511#0" expanded="true" />
             <element signature="method#resolveMethodCall#0;class#RelationAnalyzer#0" />
             <element signature="method#dealInvoke#0;class#RelationAnalyzer#0" />
             <element signature="method#genRelationFromInvoke#0;class#RelationAnalyzer#0" />
             <element signature="e#12559#12565#0" expanded="true" />
-            <element signature="e#15273#15323#1" />
-            <element signature="e#18434#18435#0" expanded="true" />
+            <element signature="e#20123#20124#0" expanded="true" />
             <element signature="method#globalize#0;class#RelationAnalyzer#0" />
-            <element signature="method#splitRelationToTypeAndValue#0;class#RelationAnalyzer#0" />
             <element signature="method#minimalization#0;class#RelationAnalyzer#0" />
-            <element signature="method#split#0;class#RelationAnalyzer#0" />
             <element signature="method#splitIter#0;class#RelationAnalyzer#0" />
             <element signature="e#23136#23148#0" expanded="true" />
             <element signature="e#23209#23221#0" expanded="true" />
             <element signature="method#split#1;class#RelationAnalyzer#0" />
             <element signature="method#calCallSite#0;class#RelationAnalyzer#0" />
-            <element signature="method#dealInvokeInAssign#0;class#RelationAnalyzer#0" />
+            <element signature="method#calcNodes#0;class#RelationAnalyzer#0" />
+            <element signature="method#calcMinNodes#0;class#RelationAnalyzer#0" />
             <element signature="method#drawRelation#0;class#RelationAnalyzer#0" />
             <element signature="method#drawRelation#1;class#RelationAnalyzer#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RelationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/OriginCallsiteTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="37" column="25" lean-forward="true" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="148" column="33" lean-forward="true" selection-start-line="148" selection-start-column="33" selection-end-line="148" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#852#853#0" expanded="true" />
+            <element signature="e#917#918#0" expanded="true" />
+            <element signature="method#calc#0;class#PointsToAnalyzer#0" />
+            <element signature="method#setSparkPointsToAnalysis#0;class#PointsToAnalyzer#0" />
+            <element signature="method#setCHA#0;class#PointsToAnalyzer#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CHATest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-870">
+          <caret line="51" column="30" lean-forward="true" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

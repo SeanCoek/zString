@@ -38,6 +38,7 @@ public class PointsToAnalyzer {
 
     public void analyze(String cp, String pp) {
         SootEnvironment.init(cp, pp);
+//        calcOriginCallsite();
         setCHA();
         hierarchy = Scene.v().getActiveHierarchy();
         calcCHA();
@@ -95,14 +96,14 @@ public class PointsToAnalyzer {
         SparkTransformer.v().transform("", options);
         long t2 = new Date().getTime();
 
-        System.out.println("spark analysis ended, used " + (t2-t1) + "ms");
+        System.out.println("spark analysis ended, used " + (t2-t1)/100.0 + "s-1");
     }
 
     private static void setCHA() {
         long t1 = new Date().getTime();
         CHATransformer.v().transform();
         long t2 = new Date().getTime();
-        System.out.println("CHA analysis ended, used " + (t2-t1) + "ms");
+        System.out.println("CHA analysis ended, used " + (t2-t1)/100.0 + "s-1");
     }
 
     private int calcCHA() {
@@ -139,17 +140,40 @@ public class PointsToAnalyzer {
                             }
                             for(SootClass sc : chas) {
                                 try {
-                                    SootMethod sm = sc.getMethod(invokeExpr.getMethod().getSignature());
+                                    SootMethod sm = sc.getMethod(invokeExpr.getMethod().getSubSignature());
                                     if(sm.isConcrete()) {
                                         callsites++;
                                     }
                                 } catch (Exception e) {
-
+//                                    System.out.println("b");
                                 }
                             }
                             callsites++;
                         }
                     } else if(invokeExpr instanceof JStaticInvokeExpr) {
+                        callsites++;
+                    }
+                }
+            }
+        }
+        System.out.println("total callsites: " + callsites);
+        return callsites;
+    }
+
+    private int calcOriginCallsite() {
+        int callsites = 0;
+        Iterator<SootMethod> mIter = SootEnvironment.allMethods.iterator();
+        while(mIter.hasNext()) {
+            SootMethod m = mIter.next();
+            if(m.isConcrete()) {
+                JimpleBody jb = (JimpleBody) m.retrieveActiveBody();
+                Iterator<Unit> uIter = jb.getUnits().iterator();
+                while(uIter.hasNext()) {
+                    Unit u = uIter.next();
+                    InvokeExpr invokeExpr = null;
+                    if(u instanceof JInvokeStmt) {
+                        callsites++;
+                    } else if(u instanceof JAssignStmt && ((JAssignStmt) u).getRightOp() instanceof InvokeExpr) {
                         callsites++;
                     }
                 }

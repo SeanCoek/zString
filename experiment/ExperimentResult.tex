@@ -1,0 +1,174 @@
+\documentclass{llncs}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{comment}
+\usepackage{url}
+\usepackage{listings, tikz}
+\usetikzlibrary{positioning,shapes}
+\usepackage{verbatimbox}
+
+\newtheorem{Definition}{Definition}
+\newtheorem{Theorem}{Theorem}
+\newtheorem{Lemma}{Lemma}
+\newtheorem{Property}{Property}
+\newtheorem{Corollary}{Corollary}
+\newtheorem{Proof}{Proof}
+
+\renewcommand{\ttdefault}{pcr}
+
+\lstset{language=Java,
+	breaklines=true,
+	%basicstyle=\small,
+	basicstyle=\ttfamily\footnotesize,
+	keywordstyle=\bfseries,
+	numbers=left,numberstyle=\scriptsize,
+	columns=fullflexible, keepspaces=true,
+	%numbers=left,numberstyle=\scriptsize
+	%numbers=left,numberstyle=\tiny
+	%frame=single
+}
+
+\newcommand{\mathword}[1]{{\tt \mathit{#1}}}
+\newcommand{\mw}[1]{\mathword{#1}}
+\newcommand{\keyword}[1]{\mathsf{#1}}
+\newcommand{\kw}[1]{\keyword{#1}}
+\newcommand{\ruledef}[3]{ $\frac{\begin{array}[c]{c}{ \rulename{#1}}\\ #2 \end{array}}{\begin{array}[c]{c}#3\end{array}}$}
+\newcommand{\ruledefN}[2]{ $\frac{\begin{array}[c]{c} #1 \end{array}}{\begin{array}[c]{c}#2\end{array}}$}
+\newcommand{\ruledefX}[2]{ $\begin{array}[c]{c} \rulename{#1}\\ #2 \end{array}$}
+\newcommand{\rulename}[1]{{\scriptsize\textsc{[\MakeUppercase{#1}]}}}
+\newcommand{\rn}[1]{\rulename{#1}}
+\newcommand{\textcode}[1]{\lstinline|#1|}
+\newcommand{\tc}[1]{\lstinline|#1|}
+
+\newcommand{\Reducesto}[0]{ \ \Downarrow \ }
+\newcommand{\equalson}[1]{ \ \stackrel{#1}{=} \ }
+\newcommand{\approxon}[1]{ \ \stackrel{#1}{\approx} \ }
+\newcommand{\simon}[1]{ \ \stackrel{#1}{\sim} \ }
+
+\newcommand{\kwnull}[0]{\keyword{null}}
+\newcommand{\kwnew}[0]{\keyword{new}}
+\newcommand{\kwextends}[0]{\keyword{extends}}
+\newcommand{\kwclass}[0]{\keyword{class}}
+\newcommand{\kwthis}[0]{\keyword{this}}
+\newcommand{\kwif}[0]{\keyword{if}}
+\newcommand{\kwthen}[0]{\keyword{then}}
+\newcommand{\kwelse}[0]{\keyword{else}}
+\newcommand{\kwskip}[0]{\keyword{skip}}
+
+\newcommand\Var{\mathtt{VAR}}
+\newcommand\Val{\mathtt{V}}
+\newcommand\Obj{\mathtt{OBJ}}
+
+%%% The key relations
+
+\newcommand{\VPT}{\Omega}
+\newcommand{\HPT}{\Phi}
+\newcommand{\Class}{\mathcal{C}}
+\newcommand{\Field}{\mathcal{F}}
+\newcommand{\bigO}{\mathcal{O}}
+\newcommand{\word}[1]{\langle #1\rangle}
+\newcommand{\Nat}{\mathbb{N}}
+\newcommand{\less}{\sqsubseteq}
+\newcommand{\tflow}{\dashrightarrow}
+\newcommand{\hflow}{\rightarrow}
+\newcommand{\lhflow}[1]{\stackrel{#1}{\hflow}}
+
+\newcommand\Loc{\mathcal{L}}
+\newcommand\Label{\Phi}
+\newcommand\set[1]{\{#1\}}
+\newcommand\power{\mathcal{P}}
+\newcommand\join{\cup}
+\newcommand\subtype{\subseteq}
+
+\title{A Relational Static Semantics for Call Graph Resolution}
+\author{\today}
+\institute{Jinan University}
+
+\begin{document}
+
+\maketitle
+
+\abstract{The problem of resolving virtual method and interface calls in Object-Oriented languages has been a long standing challenge to the program analysis community. In this paper, we propose a new approach called type flow analysis that represent the propagation of type information between program variables by a group of relations without the help of a heap abstraction. We prove that regarding the precision on reachability of class information to variables, our method produces results equivalent to that one can derive from a points-to analysis. Moreover, in practice, our method consumes lower time and space usage, as supported by the experimental results.
+}
+
+\section{Experiment}\label{sec:experiment}
+\begin{table}[!htbp]\centering
+\caption{Callsite with different analysis}
+\begin{tabular}{lcccc}
+	\hline
+	\textbf{bench} & \textbf{CS$_{origin}$} & \textbf{CS$_{cha}$} & \textbf{CS$_{pta}$} & \textbf{CS$_{tfa}$} \\
+	\hline
+	compress & 153 & 160 & 18 & 73 \\
+	crypto & 302 & 307 & 62 & 121 \\
+	bootstrap & 657 & 801 & 891 & 328 \\
+	commons-codec & 1162 & 1372 & 270 & 442 \\
+	junit & 3196 & 17532 & 11176 & 1358 \\
+	commons-httpclient & 6817 & 17118 & 567 & 2927 \\
+	serializer & 4782 & 9533 & 1248 & 1756 \\
+	xerces & 24579 & 56252 & 10631 & 8111 \\
+	eclipse & 23607 & 95073 & 70016 & 9379 \\
+	derby & 69537 & 180428 & 85212 & 16381 \\
+	xalan & 57430 & 155866 & / & 18669 \\
+	antlr & 62007 & 147014 & / & 17177 \\
+	jython & 129332 & 466167 & / & /  \\
+	batik & 56877 & 235071 & / & 20901 \\
+	\hline
+\end{tabular}
+\label{experiment:Callsite}
+\end{table}
+
+\begin{table}[!htbp]\centering
+\caption{Time cost with different analysis}
+\begin{tabular}{lcccc}
+	\hline
+	\textbf{bench} & \textbf{T$_{cha}(s^{-1})$} & \textbf{T$_{pta}(s^{-1})$} & \textbf{T$_{tfa}(s^{-1})$} & \textbf{Relations} \\
+	\hline
+	compress & 0.17 & 1.46 & 0.12 & 233\\
+	crypto & 0.12 & 1.18 & 0.52 & 295\\
+	bootstrap & 240.87 & 324.04 & 0.27 & 545\\
+	commons-codec & 0.08 & 0.89 & 0.64 & 2235\\
+	junit & 249.57 & 324.27 & 1.55 & 6501\\
+	commons-httpclient & 0.08 & 1.19 & 2.59 & 10742 \\
+	serializer & 216.58 & 304.19 & 1.62 & 9126\\
+	xerces & 224.87 & 316.98 & 19.9 & 63755\\
+	eclipse & 207.84 & 391.89 & 16.78 & 39984\\
+	derby & 241.29 & 484.73 & 110.77 & 181272\\
+	xalan & 785.04 & / & 27.58 & 102889\\
+	antlr & 474.66 & / & 28.39 & 90829\\
+	jython & 3811.02 & / & /  & / \\
+	batik & 503.98 & / & 37.97 & 140648 \\
+	\hline
+\end{tabular}
+\label{experiment:Time Cost}
+\end{table}
+
+\begin{table}[!htbp]\centering
+\caption{Optimalization result}
+\begin{tabular}{lcccc}
+	\hline
+	\textbf{bench} & \textbf{Node$_{origin}$} & \textbf{Node$_{opt}$} & \textbf{Reduce} & \textbf{Time$(s^{-1})$} \\
+	\hline
+	compress & 154 & 102 & $33.77\%$ & 0.04 \\
+	crypto & 251 & 120 & $52.19\%$ & 0.06 \\
+	bootstrap & 442 & 223 & $49.55\%$ & 0.11 \\
+	commons-codec & 1358 & 639 & $52.95\%$ & 0.87 \\
+	junit & 5566 & 3099 & $44.32\%$ & 19.65 \\
+	commons-httpclient & 9003 & 4722 & $47.55\%$ & 44.76 \\
+	serializer & 6292 & 3478 & $44.72\%$ & 24.40 \\
+	xerces & 37674 & / & / & /\\
+	eclipse & 33101 & / & / & /\\
+	derby & 104315 & / & / & /\\
+	xalan & 74547 & /  & / & /\\
+	antlr & 54213 & / & / & /\\
+	jython & / & / & / & /\\
+	batik & 83834 & / & / & /\\
+	\hline
+\end{tabular}
+\label{experiment:Optimalization}
+\end{table}
+
+
+\bibliographystyle{plain}
+\bibliography{literature}
+\end{document}

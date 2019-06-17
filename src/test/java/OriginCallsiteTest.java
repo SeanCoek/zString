@@ -2,7 +2,7 @@ import com.zstring.analyzer.PointsToAnalyzer;
 import org.junit.Before;
 import org.junit.Test;
 
-public class CHATest {
+public class OriginCallsiteTest {
     public PointsToAnalyzer analyzer;
 
     @Before

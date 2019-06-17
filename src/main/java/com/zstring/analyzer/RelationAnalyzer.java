@@ -19,14 +19,15 @@ public class RelationAnalyzer {
     public static Map<Type, Integer> globalTypeMap;
     public static Set<Transition> globalTransition;
     public static Set<Relation> globalRelations;
-    public static Map<Type, Set<Relation>> typeRelationHolder = new HashMap<Type, Set<Relation>>();
-    public static Map<Value, Set<Relation>> valueRelationHolder = new HashMap<Value, Set<Relation>>();
+//    public static Map<Type, Set<Relation>> typeRelationHolder = new HashMap<Type, Set<Relation>>();
+//    public static Map<Value, Set<Relation>> valueRelationHolder = new HashMap<Value, Set<Relation>>();
     public static ArrayList<Set> splited = new ArrayList<Set>();
+    public static boolean isSplit = false;
 
     public static void main(String[] args) {
         String cp = "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar";
         String pp = "/home/sean/bench_compile/";
-        pp = "/home/sean/bench_compared/serializer.jar";
+        pp = "/home/sean/bench_compared/bootstrap.jar";
         new RelationAnalyzer().analyze(cp, pp);
     }
 
@@ -37,12 +38,21 @@ public class RelationAnalyzer {
         generateRelation(dotPath);
         globalize();
         calcFixPoint();
-        splitRelationToTypeAndValue();
-        minimalization();
         long t2 = new Date().getTime();
-        calCallSite();
         System.out.println("generated " + Relation.count + " relations");
-        System.out.println("Total time used: " + (t2-t1) + "ms");
+        System.out.println("Relation Resolve time used: " + (t2-t1)/1000.0 + "s");
+        calcCallSite();
+        calcOriginalNodes();
+        if(isSplit) {
+            t1 = new Date().getTime();
+            minimalization();
+            t2 = new Date().getTime();
+            System.out.println("minimalization time used: " + (t2-t1)/1000.0 + "s");
+        }
+        calcMinNodes();
+
+
+//        System.out.println("Total time used: " + (t2-t1) + "ms");
 //        drawRelation(globalValueMap, globalTypeMap, globalTransition, dotPath);
     }
 
@@ -169,14 +179,21 @@ public class RelationAnalyzer {
     public void extendRelation(Set relationSet) {
 
         while(true) {
-            long t1 = new Date().getTime();
+//            long t1 = new Date().getTime();
             int compCount = 0;
             Set<Relation> relationToAdd = new HashSet<Relation>();
             Iterator<Relation> relationIter1 = relationSet.iterator();
             while(relationIter1.hasNext()) {
                 Relation relation1 = relationIter1.next();
-                Iterator<Relation> relationIter2 = relationSet.iterator();
+                Iterator<Relation> relationIter2 = null;
                 if(relation1.relationType.equals(Relation.TYPE_CLASS2VAR)) {
+                    Set<Relation> valueToRelation = new HashSet<Relation>();
+                    Set<Relation> relatedRelation = Relation.valueRelationHolder.get(relation1.right);
+                    if(relatedRelation == null) {
+                        continue;
+                    }
+                    valueToRelation.addAll(relatedRelation);
+                    relationIter2 = valueToRelation.iterator();
                     Type t = relation1.type;
                     while(relationIter2.hasNext()) {
                         Relation relation2 = relationIter2.next();
@@ -187,6 +204,13 @@ public class RelationAnalyzer {
                         compCount++;
                     }
                 } else if(relation1.relationType.equals(Relation.TYPE_VAR2VAR)) {
+                    Set<Relation> valueToRelation = new HashSet<Relation>();
+                    Set<Relation> relatedRelation = Relation.valueRelationHolder.get(relation1.right);
+                    if(relatedRelation == null) {
+                        continue;
+                    }
+                    valueToRelation.addAll(relatedRelation);
+                    relationIter2 = valueToRelation.iterator();
                     while(relationIter2.hasNext()) {
                         Relation relation2 = relationIter2.next();
                         if(relation2.relationType.equals(Relation.TYPE_VAR2VAR)
@@ -197,6 +221,13 @@ public class RelationAnalyzer {
                     }
                 } else if(relation1.relationType.equals(Relation.TYPE_FIELD)) {
                     if(relation1.left != null) {
+                        Set<Relation> valueToRelation = new HashSet<Relation>();
+                        Set<Relation> relatedRelation = Relation.valueRelationHolder.get(relation1.left);
+                        if(relatedRelation == null) {
+                            continue;
+                        }
+                        valueToRelation.addAll(relatedRelation);
+                        relationIter2 = valueToRelation.iterator();
                         while (relationIter2.hasNext()) {
                             Relation relation2 = relationIter2.next();
                             if (relation2.relationType.equals(Relation.TYPE_VAR2VAR)
@@ -224,7 +255,7 @@ public class RelationAnalyzer {
             if(relationSet.size() == sizeBefore) {
                 break;
             }
-            long t2 = new Date().getTime();
+//            long t2 = new Date().getTime();
 //            System.out.println("extend " + (relationSet.size()-sizeBefore) + " relations");
 //            System.out.println("used " + (t2-t1) + "ms, compared counts: " + compCount);
         }
@@ -266,9 +297,13 @@ public class RelationAnalyzer {
             JStaticInvokeExpr staticInvokeExpr = (JStaticInvokeExpr) invokeExpr;
             calleeSub = staticInvokeExpr.getMethod().getSubSignature();
         } else if(invokeExpr instanceof JInterfaceInvokeExpr) {
-            JInterfaceInvokeExpr interfaceInvokeExpr = (JInterfaceInvokeExpr) invokeExpr;
-            caller = interfaceInvokeExpr.getBase();
-            calleeSub = interfaceInvokeExpr.getMethod().getSubSignature();
+            try {
+                JInterfaceInvokeExpr interfaceInvokeExpr = (JInterfaceInvokeExpr) invokeExpr;
+                caller = interfaceInvokeExpr.getBase();
+                calleeSub = interfaceInvokeExpr.getMethod().getSubSignature();
+            } catch (Exception e) {
+                return;
+            }
         } else if(invokeExpr instanceof JDynamicInvokeExpr) {
             return;
         }
@@ -436,134 +471,9 @@ public class RelationAnalyzer {
 //        }
     }
 
-    public void splitRelationToTypeAndValue() {
-        Iterator<Relation> rIter = globalRelations.iterator();
-        while(rIter.hasNext()) {
-            Relation r = rIter.next();
-            if(r.relationType.equals(Relation.TYPE_CLASS2VAR)) {
-                if(r.type instanceof RefType) {
-                    Set<Relation> typeRelations = typeRelationHolder.get(r.type);
-                    if (typeRelations == null) {
-                        typeRelations = new HashSet<Relation>();
-                    }
-                    typeRelations.add(r);
-                    typeRelationHolder.put(r.type, typeRelations);
-                    Set<Relation> valueRelations = valueRelationHolder.get(r.right);
-                    if (valueRelations == null) {
-                        valueRelations = new HashSet<Relation>();
-                    }
-                    valueRelations.add(r);
-                    valueRelationHolder.put(r.right, valueRelations);
-                }
-            } else {
-                if(r.left != null && r.left.getType() instanceof RefType && r.right.getType() instanceof RefType) {
-                    Set<Relation> valueRelations = null;
-                    valueRelations = valueRelationHolder.get(r.left);
-                    if (valueRelations == null) {
-                        valueRelations = new HashSet<Relation>();
-                    }
-                    valueRelations.add(r);
-                    valueRelationHolder.put(r.left, valueRelations);
-                    valueRelations = valueRelationHolder.get(r.right);
-                    if (valueRelations == null) {
-                        valueRelations = new HashSet<Relation>();
-                    }
-                    valueRelations.add(r);
-                    valueRelationHolder.put(r.right, valueRelations);
-                } else if(r.left == null && r.right.getType() instanceof RefType) {
-                    Set<Relation> valueRelations = valueRelationHolder.get(r.right);
-                    if (valueRelations == null) {
-                        valueRelations = new HashSet<Relation>();
-                    }
-                    valueRelations.add(r);
-                    valueRelationHolder.put(r.right, valueRelations);
-                }
-            }
-        }
-    }
-
     public void minimalization() {
-        Set allValue = valueRelationHolder.keySet();
+        Set allValue = Relation.valueRelationHolder.keySet();
         splitIter(splited, allValue);
-    }
-
-    public void split(List<Set> splited, Set<Value> obj, Set usedSplitter) {
-
-        Set include = new HashSet();
-        Set exclude = new HashSet();
-        Object splitter = null;
-
-        if(obj.size() == 1) {
-            return;
-        }
-
-        // find a splitter
-        Iterator<Value> vIter1 = obj.iterator();
-        while(vIter1.hasNext()) {
-            Value v = vIter1.next();
-            Set<Relation> vRelations = valueRelationHolder.get(v);
-            Iterator<Relation> rIter = vRelations.iterator();
-            while(rIter.hasNext()) {
-                Relation r = rIter.next();
-                if(r.relationType.equals(Relation.TYPE_FIELD)) {
-                    splitter = r.field;
-                    if(!usedSplitter.contains(splitter)) {
-                        usedSplitter.add(splitter);
-                        break;
-                    }
-                    splitter = r.right;
-                    if(!usedSplitter.contains(splitter)) {
-                        usedSplitter.add(splitter);
-                        break;
-                    }
-                } else if(r.relationType.equals(Relation.TYPE_VAR2VAR)) {
-                    splitter = r.right;
-                    if(!usedSplitter.contains(splitter)) {
-                        usedSplitter.add(splitter);
-                        break;
-                    }
-                }
-            }
-            if(splitter != null) {
-                break;
-            }
-        }
-
-        if(splitter == null) {
-            return;
-        }
-
-        // split
-        vIter1 = obj.iterator();
-        while(vIter1.hasNext()) {
-            Value v = vIter1.next();
-            Set<Relation> vRelations = valueRelationHolder.get(v);
-            Iterator<Relation> rIter = vRelations.iterator();
-            while(rIter.hasNext()) {
-                Relation r = rIter.next();
-                if(splitter instanceof SootField) {
-                    if(r.relationType.equals(Relation.TYPE_FIELD) && r.field.equals(splitter)) {
-                        include.add(v);
-                        break;
-                    }
-                }else {
-                    if(!r.relationType.equals(Relation.TYPE_CLASS2VAR)) {
-                        include.add(v);
-                        break;
-                    }
-                }
-            }
-
-        }
-        Set objCopy = new HashSet();
-        objCopy.addAll(obj);
-        objCopy.removeAll(include);
-        exclude.addAll(obj);
-        splited.add(include);
-        splited.add(exclude);
-        split(splited, include, usedSplitter);
-        split(splited, exclude, usedSplitter);
-
     }
 
     public void splitIter(List<Set> splitted, Set<Value> obj) {
@@ -589,11 +499,11 @@ public class RelationAnalyzer {
             Iterator<Value> vIter1 = valueToSplit.iterator();
             while (vIter1.hasNext()) {
                 Value v = vIter1.next();
-                Set<Relation> vRelations = valueRelationHolder.get(v);
+                Set<Relation> vRelations = Relation.valueRelationHolder.get(v);
                 Iterator<Relation> rIter = vRelations.iterator();
+                include = new HashSet<Value>();
+                exclude = new HashSet<Value>();
                 while (rIter.hasNext()) {
-                    include = new HashSet<Value>();
-                    exclude = new HashSet<Value>();
                     Relation r = rIter.next();
                     if (r.relationType.equals(Relation.TYPE_FIELD)) {
                         if (!usedSplitter.contains(r.field)) {
@@ -627,10 +537,12 @@ public class RelationAnalyzer {
                 if(splitFlag) {
                     wokerQueue.add(include);
                     wokerQueue.add(exclude);
-                    currentSplittedGroup.poll();
+                    Set groupSplited = currentSplittedGroup.poll();
+                    groupSplited = null;
+                    valueToSplit = null;
                     currentSplittedGroup.add(include);
                     currentSplittedGroup.add(exclude);
-                    System.out.println("split round: " + (++round));
+//                    System.out.println("split round: " + (++round));
                     break;
                 }
             }
@@ -648,7 +560,7 @@ public class RelationAnalyzer {
         Iterator<Value> vIter = valueToSplit.iterator();
         while (vIter.hasNext()) {
             Value v = vIter.next();
-            Set<Relation> vRelations = valueRelationHolder.get(v);
+            Set<Relation> vRelations = Relation.valueRelationHolder.get(v);
             Iterator<Relation> rIter = vRelations.iterator();
             while (rIter.hasNext()) {
                 Relation r = rIter.next();
@@ -675,14 +587,6 @@ public class RelationAnalyzer {
                             include.add(v);
                             break;
                         }
-//                        Iterator<Set<Value>> curGroupIter = currentSplitGroup.iterator();
-//                        while (curGroupIter.hasNext()) {
-//                            Set<Value> group = curGroupIter.next();
-//                            if(group.contains(r.right) && group.contains(splitter)) {
-//                                include.add(v);
-//                                break;
-//                            }
-//                        }
                     }
                 }
             }
@@ -695,7 +599,7 @@ public class RelationAnalyzer {
         return true;
     }
 
-    private int calCallSite() {
+    private int calcCallSite() {
         int callsites = 0;
         Iterator<SootMethod> mIter = SootEnvironment.allMethods.iterator();
         while(mIter.hasNext()) {
@@ -713,7 +617,7 @@ public class RelationAnalyzer {
                     }
                     if(invokeExpr instanceof AbstractInstanceInvokeExpr) {
                         Value caller = ((AbstractInstanceInvokeExpr) invokeExpr).getBase();
-                        Set<Relation> callerRelations = valueRelationHolder.get(caller);
+                        Set<Relation> callerRelations = Relation.valueRelationHolder.get(caller);
                         if(callerRelations != null) {
                             Iterator<Relation> rIter = callerRelations.iterator();
                             while(rIter.hasNext()) {
@@ -741,44 +645,18 @@ public class RelationAnalyzer {
         return callsites;
     }
 
-    public void dealInvokeInAssign(String hostMethod, JAssignStmt assignStmt) {
-        int count = 0;
-        Value left = assignStmt.getLeftOp();
-        JVirtualInvokeExpr invokeExpr = (JVirtualInvokeExpr) (assignStmt.getRightOp());
-        Value caller = invokeExpr.getBase();
-        String calleeSub = invokeExpr.getMethod().getSubSignature();
-        Set<Relation> hostRelations = allRelations.get(hostMethod);
-        List<Type> typesToCaller = new ArrayList<Type>();
-        Iterator<Relation> rIter = hostRelations.iterator();
-        while(rIter.hasNext()) {
-            Relation r = rIter.next();
-            if(r.relationType.equals(Relation.TYPE_CLASS2VAR) && r.right.equals(caller)) {
-                typesToCaller.add(r.type);
-            }
-        }
-        for(Type t: typesToCaller) {
-            String callee = SootUtils.getMethodSigByType(t, calleeSub);
-            List<Value> params = methodInfoMap.get(callee).get("param");
-            Value vThis = params.get(0);
-            List<Value> returns = methodInfoMap.get(callee).get("return");
-            Set<Relation> calleeRelations = allRelations.get(callee);
-            // c --> this(c,m)
-            calleeRelations.add(new Relation(null, vThis, t));
-            count++;
-            // x' (- return(c,m)
-            for(Value vReturn: returns) {
-                calleeRelations.add(new Relation(vReturn, left));
-                count++;
-            }
-            for(int i=0; i < invokeExpr.getArgCount(); i++) {
-                Value z = invokeExpr.getArg(i);
-                Value p = params.get(i+1);      // "this" variable was store in params(0)
-                calleeRelations.add(new Relation(z, p));
-                count++;
-            }
-            allRelations.put(callee, calleeRelations);
-        }
-        System.out.println("added " + count + " relations from invocation");
+    private int calcOriginalNodes() {
+        int nodes = 0;
+        nodes = Relation.valueRelationHolder.keySet().size();
+        System.out.println("Nodes original: " + nodes);
+        return nodes;
+    }
+
+    private int calcMinNodes() {
+        int nodes = 0;
+        nodes = splited.size();
+        System.out.println("Nodes after min: " + nodes);
+        return nodes;
     }
 
 
