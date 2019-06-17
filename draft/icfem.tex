@@ -198,7 +198,7 @@ We define a core calculus in Figure~\ref{fig:syntax} consisting of most of the k
 A program is defined as a code base $\overline{C}$ (i.e., a collection of class definitions) with statement $s$ to be evaluated.
 To run a program, one may assume that $s$ is the default (static) entry method with local variable declarations $\overline{D}$,
 similar to e.g., Java and C++,
-which may differ in specific language designs. 
+which may differ in specific language designs.
 %% to consider dynamic semantics later: Let $S$ and $H$ be the runtime stack and heap, where $S:\Var\rightarrow \Val$maps local variables to values and $H:\Val\rightarrow \Obj\cup\set{\kwnull}$ maps values to objects.
 Two auxiliary functions are given. Function $fields$ maps class names to its fields, and $class$ provides types (or class names)
 for objects.
@@ -237,3 +237,4 @@ if $f\in fields(class(o))$, then $o.f$ may refer to an object of type $type(clas
 \bibliographystyle{plain}
 \bibliography{literature}
 \end{document}
+

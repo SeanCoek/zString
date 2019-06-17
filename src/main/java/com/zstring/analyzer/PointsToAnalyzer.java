@@ -1,13 +1,12 @@
 package com.zstring.analyzer;
 
 import com.zstring.env.SootEnvironment;
-import com.zstring.structs.CG;
 import soot.*;
 import soot.jimple.InvokeExpr;
 import soot.jimple.JimpleBody;
 import soot.jimple.internal.*;
 import soot.jimple.spark.SparkTransformer;
-import soot.jimple.toolkits.callgraph.CallGraph;
+import soot.jimple.toolkits.callgraph.CHATransformer;
 
 import java.util.*;
 
@@ -19,6 +18,7 @@ public class PointsToAnalyzer {
 
 
     public PointsToAnalysis pta;
+    public Hierarchy hierarchy;
 
 
     public static void main(String[] args) {
@@ -26,7 +26,7 @@ public class PointsToAnalyzer {
 //        String cp = "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:" + "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar";
         String cp = "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar";
         String pp = "/home/sean/bench_compile/";
-        pp = "/home/sean/bench_compared/jython.jar";
+        pp = "/home/sean/bench_compared/crypto/";
         PointsToAnalyzer.cp = cp;
         PointsToAnalyzer.pp = pp;
         new PointsToAnalyzer().analyze(cp, pp);
@@ -38,13 +38,18 @@ public class PointsToAnalyzer {
 
     public void analyze(String cp, String pp) {
         SootEnvironment.init(cp, pp);
-        setSparkPointsToAnalysis();
-        pta = Scene.v().getPointsToAnalysis();
-        calc();
+//        calcOriginCallsite();
+        setCHA();
+        hierarchy = Scene.v().getActiveHierarchy();
+        calcCHA();
+//        setSparkPointsToAnalysis();
+//        pta = Scene.v().getPointsToAnalysis();
+
+//        calcPTA();
 //        SootEnvironment.cg = new CG(Scene.v().getCallGraph(), SootEnvironment.allMethods);
     }
 
-    private int calc() {
+    private int calcPTA() {
         int callsites = 0;
         Iterator<SootMethod> mIter = SootEnvironment.allMethods.iterator();
         while(mIter.hasNext()) {
@@ -91,7 +96,91 @@ public class PointsToAnalyzer {
         SparkTransformer.v().transform("", options);
         long t2 = new Date().getTime();
 
-        System.out.println("spark analysis ended, used " + (t2-t1) + "ms");
+        System.out.println("spark analysis ended, used " + (t2-t1)/100.0 + "s-1");
+    }
+
+    private static void setCHA() {
+        long t1 = new Date().getTime();
+        CHATransformer.v().transform();
+        long t2 = new Date().getTime();
+        System.out.println("CHA analysis ended, used " + (t2-t1)/100.0 + "s-1");
+    }
+
+    private int calcCHA() {
+        int callsites = 0;
+        Iterator<SootMethod> mIter = SootEnvironment.allMethods.iterator();
+        while(mIter.hasNext()) {
+            SootMethod m = mIter.next();
+            if(m.isConcrete()) {
+                JimpleBody jb = (JimpleBody) m.retrieveActiveBody();
+                Iterator<Unit> uIter = jb.getUnits().iterator();
+                while(uIter.hasNext()) {
+                    Unit u = uIter.next();
+                    InvokeExpr invokeExpr = null;
+                    if(u instanceof JInvokeStmt) {
+                        invokeExpr = ((JInvokeStmt) u).getInvokeExpr();
+                    } else if(u instanceof JAssignStmt && ((JAssignStmt) u).getRightOp() instanceof InvokeExpr) {
+                        invokeExpr = (InvokeExpr) ((JAssignStmt) u).getRightOp();
+                    }
+                    if(invokeExpr instanceof AbstractInstanceInvokeExpr) {
+                        Value caller = ((AbstractInstanceInvokeExpr) invokeExpr).getBase();
+                        if(caller instanceof Local) {
+                            SootClass c = Scene.v().getSootClass(caller.getType().toString());
+                            List<SootClass> chas = null;
+                            if(c.isInterface()) {
+                                chas = hierarchy.getImplementersOf(c);
+                            } else {
+                                try {
+                                    chas = hierarchy.getDirectSubclassesOf(c);
+                                } catch (Exception e) {
+//                                    e.printStackTrace();
+                                    callsites++;
+                                    continue;
+                                }
+                            }
+                            for(SootClass sc : chas) {
+                                try {
+                                    SootMethod sm = sc.getMethod(invokeExpr.getMethod().getSubSignature());
+                                    if(sm.isConcrete()) {
+                                        callsites++;
+                                    }
+                                } catch (Exception e) {
+//                                    System.out.println("b");
+                                }
+                            }
+                            callsites++;
+                        }
+                    } else if(invokeExpr instanceof JStaticInvokeExpr) {
+                        callsites++;
+                    }
+                }
+            }
+        }
+        System.out.println("total callsites: " + callsites);
+        return callsites;
+    }
+
+    private int calcOriginCallsite() {
+        int callsites = 0;
+        Iterator<SootMethod> mIter = SootEnvironment.allMethods.iterator();
+        while(mIter.hasNext()) {
+            SootMethod m = mIter.next();
+            if(m.isConcrete()) {
+                JimpleBody jb = (JimpleBody) m.retrieveActiveBody();
+                Iterator<Unit> uIter = jb.getUnits().iterator();
+                while(uIter.hasNext()) {
+                    Unit u = uIter.next();
+                    InvokeExpr invokeExpr = null;
+                    if(u instanceof JInvokeStmt) {
+                        callsites++;
+                    } else if(u instanceof JAssignStmt && ((JAssignStmt) u).getRightOp() instanceof InvokeExpr) {
+                        callsites++;
+                    }
+                }
+            }
+        }
+        System.out.println("total callsites: " + callsites);
+        return callsites;
     }
 
 }
