@@ -1,6 +1,0 @@
-digraph g {
-0[label="void var2var()"]
-1[label="void <init>()"]
-0->1[label="specialinvoke $r3.<basic.ObjectA: void <init>()>()"]
-0->1[label="specialinvoke $r2.<basic.ObjectA: void <init>()>()"]
-}

@@ -1,5 +1,0 @@
-digraph g {
-0[label="int[] getPivot()"]
-1[label="int[] new_copy(int[])"]
-0->1[label="staticinvoke <spec.benchmarks.scimark.lu.LU: int[] new_copy(int[])>($r1)"]
-}

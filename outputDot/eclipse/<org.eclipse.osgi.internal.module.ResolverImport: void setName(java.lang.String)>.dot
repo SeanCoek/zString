@@ -1,9 +1,0 @@
-digraph g {
-0[label="r0"]
-1[label="r1"]
-0->1[label="field: name"]
-2[label="@this: org.eclipse.osgi.internal.module.ResolverImport"]
-2->0[label=""]
-3[label="@parameter0: java.lang.String"]
-3->1[label=""]
-}

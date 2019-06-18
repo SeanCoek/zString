@@ -1,5 +1,0 @@
-digraph g {
-1[label="void reset()"]
-0[label="void <init>()"]
-0->1[label="virtualinvoke r0.<spec.benchmarks.scimark.utils.Stopwatch: void reset()>()"]
-}

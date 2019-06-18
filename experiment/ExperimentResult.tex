@@ -1,5 +1,7 @@
 \documentclass{llncs}
 
+\usepackage{algorithm}
+\usepackage{algorithmic}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{comment}
@@ -7,6 +9,7 @@
 \usepackage{listings, tikz}
 \usetikzlibrary{positioning,shapes}
 \usepackage{verbatimbox}
+
 
 \newtheorem{Definition}{Definition}
 \newtheorem{Theorem}{Theorem}
@@ -91,6 +94,20 @@
 
 \abstract{The problem of resolving virtual method and interface calls in Object-Oriented languages has been a long standing challenge to the program analysis community. In this paper, we propose a new approach called type flow analysis that represent the propagation of type information between program variables by a group of relations without the help of a heap abstraction. We prove that regarding the precision on reachability of class information to variables, our method produces results equivalent to that one can derive from a points-to analysis. Moreover, in practice, our method consumes lower time and space usage, as supported by the experimental results.
 }
+
+\section{Optimazation}\label{sec:optimazation}
+\begin{algorithm}
+\caption{split}
+\label{alg:split}
+\begin{algorithmic}
+\REQUIRE valueToSplit, include=$()$, exclude=$()$, usedSplitter=$()$
+\STATE isSplit=false
+\WHILE{true}
+	\STATE aaa
+\ENDWHILE
+
+\end{algorithmic}
+\end{algorithm}
 
 \section{Experiment}\label{sec:experiment}
 We evaluated our approach by measuring its performance in terms of generated callsites and runtime on 13 benchmark test cases. \textit{Compress}, \textit{crypto} are from the SPECjvm2008 suite, and the rest of those are from the Dacapo suite. We randomly selected these test cases based on its size increasing.

@@ -1,8 +1,0 @@
-digraph g {
-0[label="$l1 - $l0"]
-1[label="$l2"]
-0->1[label=""]
-2[label="@this: org.eclipse.core.runtime.internal.stats.ClassStats"]
-3[label="r0"]
-2->3[label=""]
-}

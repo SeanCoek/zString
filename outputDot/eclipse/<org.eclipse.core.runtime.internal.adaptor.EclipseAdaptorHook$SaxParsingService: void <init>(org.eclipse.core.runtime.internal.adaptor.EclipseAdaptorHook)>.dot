@@ -1,9 +1,0 @@
-digraph g {
-0[label="r0"]
-1[label="r1"]
-0->1[label="field: this$0"]
-2[label="@this: org.eclipse.core.runtime.internal.adaptor.EclipseAdaptorHook$SaxParsingService"]
-2->0[label=""]
-3[label="@parameter0: org.eclipse.core.runtime.internal.adaptor.EclipseAdaptorHook"]
-3->1[label=""]
-}

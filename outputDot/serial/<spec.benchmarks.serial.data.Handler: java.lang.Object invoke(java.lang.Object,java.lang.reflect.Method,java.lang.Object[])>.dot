@@ -1,3 +1,0 @@
-digraph g {
-0[label="java.lang.Object invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[])"]
-}

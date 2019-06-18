@@ -1,7 +1,0 @@
-digraph g {
-1[label="void solve(double[][],int[],double[])"]
-2[label="double[] new_copy(double[])"]
-0[label="double[] solve(double[])"]
-0->1[label="virtualinvoke r0.<spec.benchmarks.scimark.lu.LU: void solve(double[][],int[],double[])>($r4, $r3, r2)"]
-0->2[label="staticinvoke <spec.benchmarks.scimark.lu.LU: double[] new_copy(double[])>(r1)"]
-}

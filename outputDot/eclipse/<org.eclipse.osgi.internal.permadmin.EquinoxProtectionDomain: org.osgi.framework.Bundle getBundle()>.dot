@@ -1,8 +1,0 @@
-digraph g {
-0[label="@this: org.eclipse.osgi.internal.permadmin.EquinoxProtectionDomain"]
-1[label="r0"]
-0->1[label=""]
-2[label="(org.eclipse.osgi.internal.permadmin.BundlePermissions) $r1"]
-3[label="$r2"]
-2->3[label=""]
-}

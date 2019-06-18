@@ -1,9 +1,0 @@
-digraph g {
-0[label="r0"]
-1[label="@this: basic.ObjectB"]
-0->1[label=""]
-2[label="r1"]
-0->2[label="a_arr"]
-3[label="@parameter0: basic.ObjectA[]"]
-2->3[label=""]
-}

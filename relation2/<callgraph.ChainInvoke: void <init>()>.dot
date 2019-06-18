@@ -1,7 +1,0 @@
-digraph g {
-0[label="callgraph.ChainInvoke"]
-1[label="r0"]
-0->1[label="type"]
-2[label="@this: callgraph.ChainInvoke"]
-2->1[label=""]
-}

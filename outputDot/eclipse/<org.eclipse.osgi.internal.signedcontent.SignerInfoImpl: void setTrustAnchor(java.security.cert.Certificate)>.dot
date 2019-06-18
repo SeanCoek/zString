@@ -1,9 +1,0 @@
-digraph g {
-0[label="@parameter0: java.security.cert.Certificate"]
-1[label="r1"]
-0->1[label=""]
-2[label="r0"]
-2->1[label="field: trustAnchor"]
-3[label="@this: org.eclipse.osgi.internal.signedcontent.SignerInfoImpl"]
-3->2[label=""]
-}

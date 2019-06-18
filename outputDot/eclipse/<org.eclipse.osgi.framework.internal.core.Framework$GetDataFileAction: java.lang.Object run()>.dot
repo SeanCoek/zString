@@ -1,8 +1,0 @@
-digraph g {
-0[label="@this: org.eclipse.osgi.framework.internal.core.Framework$GetDataFileAction"]
-1[label="r0"]
-0->1[label=""]
-2[label="interfaceinvoke $r2.<org.eclipse.osgi.framework.adaptor.BundleData: java.io.File getDataFile(java.lang.String)>($r3)"]
-3[label="$r4"]
-2->3[label=""]
-}

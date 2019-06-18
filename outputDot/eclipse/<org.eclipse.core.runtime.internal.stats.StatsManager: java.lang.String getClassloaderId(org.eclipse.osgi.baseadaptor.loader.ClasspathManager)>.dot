@@ -1,8 +1,0 @@
-digraph g {
-0[label="@parameter0: org.eclipse.osgi.baseadaptor.loader.ClasspathManager"]
-1[label="r1"]
-0->1[label=""]
-2[label="@this: org.eclipse.core.runtime.internal.stats.StatsManager"]
-3[label="r0"]
-2->3[label=""]
-}

@@ -1,9 +1,0 @@
-digraph g {
-0[label="@parameter0: org.eclipse.osgi.internal.module.VersionSupplier[]"]
-1[label="r1"]
-0->1[label=""]
-2[label="r0"]
-2->1[label="field: possibleSuppliers"]
-3[label="@this: org.eclipse.osgi.internal.module.ResolverConstraint"]
-3->2[label=""]
-}

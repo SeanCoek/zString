@@ -1,8 +1,0 @@
-digraph g {
-0[label="@parameter0: java.lang.String"]
-1[label="r1"]
-0->1[label=""]
-2[label="@this: org.eclipse.osgi.framework.internal.core.ManifestLocalization$EmptyResouceBundle"]
-3[label="r0"]
-2->3[label=""]
-}

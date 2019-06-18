@@ -1,8 +1,0 @@
-digraph g {
-0[label="interfaceinvoke $r2.<org.eclipse.osgi.framework.adaptor.BundleData: java.lang.String getLocation()>()"]
-1[label="$r3"]
-0->1[label=""]
-2[label="@this: org.eclipse.osgi.framework.internal.core.AbstractBundle"]
-3[label="r0"]
-2->3[label=""]
-}

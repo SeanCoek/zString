@@ -1,7 +1,0 @@
-digraph g {
-0[label="basic.Parent"]
-1[label="r0"]
-0->1[label="type"]
-2[label="@this: basic.Parent"]
-2->1[label=""]
-}

@@ -1,5 +1,0 @@
-digraph g {
-1[label="void <init>()"]
-0[label="spec.benchmarks.serial.data.TestExceptionReference createTestInstance()"]
-0->1[label="specialinvoke $r0.<spec.benchmarks.serial.data.TestExceptionReference: void <init>()>()"]
-}

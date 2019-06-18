@@ -1,8 +1,0 @@
-digraph g {
-0[label="$i0 & 4"]
-1[label="$i1"]
-0->1[label=""]
-2[label="@this: org.eclipse.osgi.internal.resolver.BundleDescriptionImpl"]
-3[label="r0"]
-2->3[label=""]
-}

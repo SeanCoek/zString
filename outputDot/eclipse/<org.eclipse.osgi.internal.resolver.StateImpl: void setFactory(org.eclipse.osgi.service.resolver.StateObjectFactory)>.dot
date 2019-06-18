@@ -1,9 +1,0 @@
-digraph g {
-0[label="r0"]
-1[label="r1"]
-0->1[label="field: factory"]
-2[label="@parameter0: org.eclipse.osgi.service.resolver.StateObjectFactory"]
-2->1[label=""]
-3[label="@this: org.eclipse.osgi.internal.resolver.StateImpl"]
-3->0[label=""]
-}

@@ -1,7 +1,0 @@
-digraph g {
-0[label="void runSignVerify(byte[],java.lang.String,java.security.PrivateKey,java.security.PublicKey)"]
-1[label="boolean verify(byte[],java.lang.String,byte[],java.security.PublicKey)"]
-2[label="byte[] sign(byte[],java.lang.String,java.security.PrivateKey)"]
-0->1[label="virtualinvoke r0.<spec.benchmarks.crypto.signverify.Main: boolean verify(byte[],java.lang.String,byte[],java.security.PublicKey)>(r1, r2, r5, r4)"]
-0->2[label="virtualinvoke r0.<spec.benchmarks.crypto.signverify.Main: byte[] sign(byte[],java.lang.String,java.security.PrivateKey)>(r1, r2, r3)"]
-}

@@ -1,8 +1,0 @@
-digraph g {
-0[label="staticinvoke <org.eclipse.osgi.framework.internal.core.FrameworkProperties: java.util.Properties getProperties()>()"]
-1[label="$r1"]
-0->1[label=""]
-2[label="@this: org.eclipse.osgi.framework.util.SecureAction$6"]
-3[label="r0"]
-2->3[label=""]
-}

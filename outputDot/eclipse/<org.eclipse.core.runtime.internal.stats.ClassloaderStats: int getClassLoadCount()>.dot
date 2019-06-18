@@ -1,8 +1,0 @@
-digraph g {
-0[label="@this: org.eclipse.core.runtime.internal.stats.ClassloaderStats"]
-1[label="r0"]
-0->1[label=""]
-2[label="interfaceinvoke $r1.<java.util.Map: int size()>()"]
-3[label="$i0"]
-2->3[label=""]
-}

@@ -1,8 +1,0 @@
-digraph g {
-0[label="interfaceinvoke $r1.<org.eclipse.osgi.service.resolver.BundleDescription: java.lang.String getSymbolicName()>()"]
-1[label="$r2"]
-0->1[label=""]
-2[label="@this: org.eclipse.osgi.internal.loader.BundleLoaderProxy"]
-3[label="r0"]
-2->3[label=""]
-}

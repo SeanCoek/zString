@@ -1,8 +1,0 @@
-digraph g {
-0[label="$i3 - $i2"]
-1[label="$i4"]
-0->1[label=""]
-2[label="@this: org.eclipse.osgi.framework.internal.reliablefile.ReliableFileInputStream"]
-3[label="r0"]
-2->3[label=""]
-}

@@ -1,5 +1,0 @@
-digraph g {
-0[label="void <clinit>()"]
-1[label="void <init>()"]
-0->1[label="specialinvoke $r0.<spec.benchmarks.scimark.sor.SOR$1: void <init>()>()"]
-}

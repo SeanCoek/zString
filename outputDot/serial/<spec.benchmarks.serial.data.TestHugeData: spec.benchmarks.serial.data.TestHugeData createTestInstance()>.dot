@@ -1,8 +1,0 @@
-digraph g {
-2[label="void <init>()"]
-1[label="spec.benchmarks.serial.data.TestHugeData createTestInstance(int)"]
-0[label="spec.benchmarks.serial.data.TestHugeData createTestInstance()"]
-0->1[label="staticinvoke <spec.benchmarks.serial.data.TestHugeData: spec.benchmarks.serial.data.TestHugeData createTestInstance(int)>(10)"]
-1->1[label="staticinvoke <spec.benchmarks.serial.data.TestHugeData: spec.benchmarks.serial.data.TestHugeData createTestInstance(int)>($i1)"]
-1->2[label="specialinvoke $r1.<spec.benchmarks.serial.data.TestHugeData: void <init>()>()"]
-}

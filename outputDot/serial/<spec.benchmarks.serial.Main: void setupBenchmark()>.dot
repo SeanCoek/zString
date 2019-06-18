@@ -1,9 +1,0 @@
-digraph g {
-0[label="void setupBenchmark()"]
-1[label="void <init>()"]
-3[label="java.lang.Object getInstance(int)"]
-2[label="java.lang.Object[] createInstances()"]
-0->1[label="specialinvoke r9.<spec.benchmarks.serial.Main$1: void <init>()>()"]
-0->2[label="staticinvoke <spec.benchmarks.serial.Utils: java.lang.Object[] createInstances()>()"]
-2->3[label="staticinvoke <spec.benchmarks.serial.Utils: java.lang.Object getInstance(int)>(i2)"]
-}

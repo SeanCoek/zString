@@ -1,5 +1,0 @@
-digraph g {
-0[label="void setupBenchmark()"]
-1[label="void init()"]
-0->1[label="staticinvoke <spec.benchmarks.scimark.utils.kernel: void init()>()"]
-}

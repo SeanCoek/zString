@@ -1,9 +1,0 @@
-digraph g {
-0[label="org.eclipse.osgi.internal.resolver.NativeCodeDescriptionImpl"]
-1[label="r0"]
-0->1[label="type"]
-2[label="@this: org.eclipse.osgi.internal.resolver.NativeCodeDescriptionImpl"]
-2->1[label=""]
-3[label="0"]
-1->3[label="field: invalidNativePaths"]
-}

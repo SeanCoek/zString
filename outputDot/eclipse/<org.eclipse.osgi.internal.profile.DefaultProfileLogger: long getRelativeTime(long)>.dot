@@ -1,8 +1,0 @@
-digraph g {
-0[label="@this: org.eclipse.osgi.internal.profile.DefaultProfileLogger"]
-1[label="r0"]
-0->1[label=""]
-2[label="@parameter0: long"]
-3[label="l0"]
-2->3[label=""]
-}

@@ -1,8 +1,0 @@
-digraph g {
-0[label="r1"]
-1[label="@parameter0: java.lang.String"]
-0->1[label=""]
-2[label="r0"]
-3[label="@this: callgraph.ChainInvoke$InnerB"]
-2->3[label=""]
-}

@@ -1,9 +1,0 @@
-digraph g {
-0[label="@this: org.eclipse.core.runtime.internal.adaptor.ClasspathManifest"]
-1[label="r0"]
-0->1[label=""]
-2[label="0"]
-1->2[label="field: initialized"]
-3[label="org.eclipse.core.runtime.internal.adaptor.ClasspathManifest"]
-3->1[label="type"]
-}

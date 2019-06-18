@@ -1,5 +1,0 @@
-digraph g {
-0[label="org.eclipse.osgi.framework.util.SecureAction$3"]
-1[label="$r0"]
-0->1[label="type"]
-}
