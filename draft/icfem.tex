@@ -84,7 +84,7 @@
 \newcommand\join{\cup}
 \newcommand\subtype{\subseteq}
 
-\title{A Relational Static Semantics for Call Graph Resolution}
+\title{A Relational Static Semantics for Call Graph Construction}
 \author{\today}
 \institute{Jinan University}
 
@@ -264,9 +264,9 @@ Intuitively, $c\tflow x$ means variable $x$ may have type $c$ (i.e., $c$ flows t
 \end{enumerate}
 \end{definition}
 
-The final relations are the least relations that satisfy constraints of Def.~\ref{def:extension}.
+The final relations are the least relations that satisfy constraints of Definition~\ref{def:extension}.
 Comparing to VTA~\cite{Sundaresan2000}, we do not have field reference $c.f$ for each class $c$ defined in a program. Instead, we define a relation that connects the two variable names and one field name. (to compare in the motivating example)
-Although the three relations are inter-dependent, one may find that without method call (i.e., Def.~\ref{def:extension}.4), one may identify that the two relations $\rightarrow^*$ (field access) and $\less^*$ (variable partial order) can be determined without considering the type flow relation $\tflow^*$.
+Although the three relations are inter-dependent, one may find that without method call (i.e., Definition~\ref{def:extension}.4), one may identify that the two relations $\rightarrow^*$ (field access) and $\less^*$ (variable partial order) can be determined without considering the type flow relation $\tflow^*$.
 
 In order to compare the precision of TFA with points-to analysis, we present a brief list of the classic subset-based points-to rules for our language in Figure~\ref{fig:constraints}, where $param(type(o),m))$, $this(type(o),m))$ and $return(type(o),m)$ refer to the formal parameter, \textsf{this} reference and \textsf{return} variable of the method $m$ of the class for which object $o$ is declared, respectively.
 
@@ -311,7 +311,7 @@ Moreover, we only need to prove the intraprocedural setting which is the result 
 In a context-insensitive intraprocedural analysis where each class $c$ only syntactically appears once in the form of $\kwnew\ c$, for all variables $x$ and classes $c$, $c\tflow^*x$ iff there exists an object abstraction $o$ of type $c$ such that $o\in\VPT(x)$.
 \end{lemma}
 \begin{proof}
-Since the points-to constraints define the smallest model $(\VPT, \HPT)$ with $\VPT:\Var\rightarrow\Obj$ and $\HPT:\Obj\times\Field\rightarrow\power(\Obj)$, and the three relations of type flow analysis also define the smallest model that satisfies Def.~\ref{def:base} and Def.~\ref{def:extension}, we prove that every model of points-to constraints is also a model of TFA, and vice versa. Then the least model of both systems must be the same, as otherwise it would lead to contradiction.
+Since the points-to constraints define the smallest model $(\VPT, \HPT)$ with $\VPT:\Var\rightarrow\Obj$ and $\HPT:\Obj\times\Field\rightarrow\power(\Obj)$, and the three relations of type flow analysis also define the smallest model that satisfies Definition~\ref{def:base} and Definition~\ref{def:extension}, we prove that every model of points-to constraints is also a model of TFA, and vice versa. Then the least model of both systems must be the same, as otherwise it would lead to contradiction.
 
 \medskip
 
@@ -320,7 +320,7 @@ Since the points-to constraints define the smallest model $(\VPT, \HPT)$ with $\
 \item For each statement $x = \kwnew\ c$, we have $\xi(c)\in\xi(Reaches(x))$;
 \item For each statement $x = y$, we have $Reaches(y)\subseteq Reaches(x)$ and $\xi(Reaches(y))\subseteq\xi(Reaches(x))$;
 \item For each statement $x.f = y$, we have $x\lhflow{f}y$, then by definition for all $c\in Reaches(x)$, and $c'\in Reaches(y)$, we have $c'\in Access(c,f)$, therefore $\xi(c')\in\xi(Reaches(y))$ we have $\xi(c')\in \xi(Access(\xi(c),f))$.
-\item For each statement $x = y.f$, let $c\in Reaches(y)$, we need to show $\xi(Access(c,f))\subseteq\xi(Reaches(x))$, or equivalently, $Access(c,f)\subseteq Access(x)$. Let $c'\in Access(c,f)$, then by definition, there exist $z$, $z'$ such that $c\in Reaches(z)$, $c'\in Reaches(z')$ and $z\lhflow{f\ *}z'$. By $c\in Reaches(y)$ and Def.~\ref{def:extension}.4, we have $y\lhflow{f\ *}z'$. Then by Def.~\ref{def:extension}.1, $z'\less^*x$. Therefore $c'\in Reaches(x)$.
+\item For each statement $x = y.f$, let $c\in Reaches(y)$, we need to show $\xi(Access(c,f))\subseteq\xi(Reaches(x))$, or equivalently, $Access(c,f)\subseteq Access(x)$. Let $c'\in Access(c,f)$, then by definition, there exist $z$, $z'$ such that $c\in Reaches(z)$, $c'\in Reaches(z')$ and $z\lhflow{f\ *}z'$. By $c\in Reaches(y)$ and Definition~\ref{def:extension}.4, we have $y\lhflow{f\ *}z'$. Then by Definition~\ref{def:extension}.1, $z'\less^*x$. Therefore $c'\in Reaches(x)$.
 \end{itemize}
 
 \medskip
@@ -337,7 +337,7 @@ We check the following cases.
 \item For each statement $x = y$, we have $\VPT(y)\subseteq\VPT(x)$, therefore $y\less^*x$ by definition.
 \item For each statement $x.f = y$, we have for all $o_1\in\VPT(x)$ and $o_2\in\VPT(y)$, $o_2\in\HPT(o_1,f)$, which derives $x\lhflow{f\ *}y$ by definition.
 \item  For each statement $x = y.f$, given $y\lhflow{f\ *}z$, we need to show $z\less^* x$. Equivalently, by definition we have for all $o_1\in\VPT(y)$ and $o_2\in\VPT(z)$, $o_2\in\HPT(o_1,f)$. Since points-to relation gives $\HPT(o_1,f)\subseteq\VPT(x)$, we have $o_2\in\VPT(x)$, which derives $\VPT(z)\subseteq\VPT(x)$, the definition of $z\less^* x$.
-\item The proof for the properties in the rest of Def.~\ref{def:extension} are about transitivity of the three TFA relations, which are quite straightforward. We leave them for interested readers. \qed
+\item The proof for the properties in the rest of Definition~\ref{def:extension} are about transitivity of the three TFA relations, which are quite straightforward. We leave them for interested readers. \qed
 \end{itemize}
 \end{proof}
 
@@ -347,17 +347,27 @@ We check the following cases.
 
 \section{Implementation and Optimization}\label{sec:minimization}
 
-We implement the analysis in the SOOT framework~\cite{soot}. Besides basic treatment as discussed with the core calculus in the previous section. Since we are only interested in reference types, we do not carry out analysis on basic types such as \textsf{boolean}, \textsf{int} and \textsf{double}. We also do not consider more advanced Java features such as functional interfaces and lambda expressions, as well as more complex usages including Java Native Interface and reflection based method calls.
-Array accesses are treated conservatively---all type information that flows to one member of a reference array flows to all members of that array, so that only one node is generated for each reference array.
+We implement the analysis in the SOOT framework~\cite{soot}. The three base relations $\tflow$, $\less$ and $\rightarrow$ of Definition~\ref{def:base} are extracted from program source code and the extended relations $\tflow^*$, $\less^*$ and $\rightarrow^*$ of Definition~\ref{def:extension} are then computed considering the mutual dependencies between them. Since we are only interested in reference types, we do not carry out analysis on basic types such as \textsf{boolean}, \textsf{int} and \textsf{double}. We also do not consider more advanced Java features such as functional interfaces and lambda expressions, as well as more complex usages including Java Native Interface and reflection based method calls.
+Array accesses are treated conservatively---all type information that flows to one member of a reference array flows to all members of that array, so that only one node is generated for each array.
 %%%Since our implementation is flow insensitive, we do not worry much about the branching structures and loops in a program.
 
-Since call graph information may be saved and be used for subsequent analyses, we propose the follow two ways to reduce storage for the result.
+Since call graph information may be saved and be used for subsequent analyses, we propose the follow two ways to reduce storage of computed result. If two variables are similar regarding type information in a graph representation, they may be merged and then referred to by the merged node.
+
 \begin{enumerate}
   \item If $x\less^*y$ and $y\less^*x$, we say $x$ and $y$ form an \emph{alias pair}, written $x\sim y$. Intuitively, $\Var/\sim$ is a partition of $\Var$ such that each $c\in\Var/\sim$ is a strongly connected component (SCC) in the variable graph, which can be quickly collected by e.g., Tarjan's algorithm~\cite{Tarjan72}.
-  \item A more aggressive compression can be achieved in a way similar to bisimulation minimization of finite automaton~\cite{Kanellakis90,Paige87}. Define $\approx\ \subset\Var\times\Var$ such that $x\approx y$ is symmetric and if (1) for all class $c$, $c\tflow^* x$ iff $c\tflow^*y$ and (2) for all $x\lhflow{f\ *}x'$ there exists $y\lhflow{f\ *}y'$ and $x'\approx y'$.
+  \item A more aggressive compression can be achieved in a way similar to bisimulation minimization of finite state systems~\cite{Kanellakis90,Paige87}. Define $\approx\ \subset\Var\times\Var$ such that $x\approx y$ is symmetric and if
+      \begin{itemize} 
+      \item for all class $c$, $c\tflow^* x$ iff $c\tflow^*y$, and 
+      \item for all $x\lhflow{f\ *}x'$ there exists $y\lhflow{f\ *}y'$ and $x'\approx y'$.
+      \end{itemize}
 \end{enumerate}
 
-\fbox{need to explain the optimization process}
+It is straightforward to see that $\approx$ is a more aggressive merging scheme. 
+\begin{lemma}\label{lem:bisimilar}
+For all $x,y\in\Var$, $x\sim y$ implies $x\approx y$.
+\end{lemma}
+
+\fbox{do we need to explain more about the optimization process?}
 
 
 \begin{algorithm}
@@ -392,9 +402,19 @@ Since call graph information may be saved and be used for subsequent analyses, w
 We evaluated our approach by measuring its performance in terms of generated callsites and runtime on 13 benchmark test cases. \textit{Compress}, \textit{crypto} are from the SPECjvm2008 suite, and the rest of those are from the Dacapo suite. We randomly selected these test cases based on its size increasing.
 All of our experiments were conducted on an Intel i5-8250U processor at 1.60 GHz and 8 GB memory running Ubuntu 16.04LTS, with the Openjdk 1.8.0.
 
-We compared our approach against CHA and PTA implemented by Soot, the most popular static analysis framework for Java. We run context-insensitive PTA because our approach is context-insensitive, thus results will be more comparable.
+We compared our approach against CHA and PTA implemented by Soot, the most popular static analysis framework for Java. We run context-insensitive PTA because our approach is context-insensitive, thus results will be more comparable. Our evaluation addressed the following three research questions:\\
+\\
+$RQ 1:$ How efficient is our approach compared with the traditional class hierarchy analysis and points-to analysis?
+\\
+$RQ 2:$ Is our approach more accurate than CHA or PTA?
+\\
+$RQ 3:$ How significantly does our optimazation algorithm achieve to reduce space consumption?
+\\
+\subsection{Implementation}\label{subsec:implementation}
+The implemention of our approach is written in Java. We use Soot as our basic framework to extract SSA based representation of the benchmark code. Also, we compared against CHA and PTA implemented by Soot. Our approach optional provides visualization of relations we generated for friendly analysis.
 
-\textbf{Efficiency:}As shown in Table~\ref{experiment:Time Cost}, our approach is more efficient than PTA, and generally more efficient than CHA, especially when the program callsite increasing. Time cost in our approach is basically depending on the size of generated relations. More specifically, most of the time is consumed to calculate the fixpoint. For example, CHA, PTA analyze the benchmark \textit{bootstrap} about 23.74 and 34.13 seconds, respectively. TFA only excutes about 0.03 second. The reason is mostly because the relations only reach to 661 in total. There are 3 benchmarks, \textit{xalan, antlr, batik}, can not be analyzed by PTA because it raise the jvm GC overhead limit error, so we put the label "N/A" in Table~\ref{experiment:Time Cost}
+\subsection{RQ1:Efficiency}\label{subsec:efficiency}
+In the first research question, we executed 10 times on each benchmark test case with CHA, PTA and TFA. We calculated runtime consumption on average and each different kind of relation our approach generated. As shown in Table~\ref{experiment:Time Cost}, our approach is more efficient than PTA, and generally more efficient than CHA, especially when the program callsite increasing. Time cost in our approach is basically depending on the size of generated relations. More specifically, most of the time is consumed to calculate the fixpoint. For example, CHA, PTA analyze the benchmark \textit{bootstrap} about 23.74 and 34.13 seconds, respectively. TFA only excutes about 0.03 second. The reason is mostly because the relations only reach to 661 in total. There are 3 benchmarks, \textit{xalan, antlr, batik}, can not be analyzed by PTA because it raise the jvm GC overhead limit error. From what we can know, this error is thrown because the jvm garbage collector is taking an excessive amount of time (by default 98$\%$ of all CPU time of the process) and recovers very little memory in each run (by default 2$\%$ of the heap). We put the label "N/A" in Table~\ref{experiment:Time Cost}
 
 \begin{table}[!htbp]\centering
 \caption{Time cost with different analysis}
@@ -421,7 +441,8 @@ We compared our approach against CHA and PTA implemented by Soot, the most popul
 \label{experiment:Time Cost}
 \end{table}
 
-\textbf{Accurancy:}We consider generated callsite as the aspect of accurancy. Table~\ref{experiment:Callsite} shows the callsite generated by different analysis. We calculate the origin callsite, the callsite directly written in source code, as the baseline. Our approach reduces a satisfying number of callsite, yielding corresponding accurancy. The result is comparable to what can be achieved by the points-to analysis.
+\subsection{RQ2:Accurancy}\label{subsec:accurancy}
+We answer the second question with considering generated callsite as the aspect of accurancy. In type flow analysis, a method call will be resolve depending on the type which the caller can access through the relation we generated and that type must have the privage to access the method. Table~\ref{experiment:Callsite} shows the callsite generated by different analysis. We calculate the origin callsite, the callsite directly written in source code, as the baseline. Our approach reduces a satisfying number of callsite, yielding corresponding accurancy. The result is comparable to what can be achieved by the class hierarchy analysis and the points-to analysis.
 
 \begin{table}[!htbp]\centering
 \caption{Optimalization result}
@@ -448,7 +469,8 @@ We compared our approach against CHA and PTA implemented by Soot, the most popul
 \label{experiment:Optimalization}
 \end{table}
 
-\textbf{Optimazation:}We use a split algorithm to merge the node that have the same behavior. Thus we can reduce the space. The results are showed in Tabel~\ref{experiment:Optimalization}. We evaluated our optimazation algorithm on all benchmarks and sucessfully exceute our approach on 7 benchmarks. It shows that we can reduce the space by about 45$\%$ on average, with a reasonable time consuming. Another 6 benchmarks can not be execute because the same reason metioned above with PTA. We put the label "N/A" on Table~\ref{experiment:Optimalization}.
+\subsection{RQ3:Optimazation}\label{subsec:optimazation}
+We use a split algorithm to merge the node that have the same behavior. Thus we can reduce the space consumption. In the third reseach question, we calculated the number of relation nodes before and after optimazation. Besides, time consumption is another factor that we consider. The results are showed in Tabel~\ref{experiment:Optimalization}. We evaluated our optimazation algorithm on all benchmarks 10 times and sucessfully exceuted our approach on 7 benchmarks. It shows that we can reduce the space by about 45$\%$ on average, with a reasonable time consuming. Another 6 benchmarks can not be execute because the same reason metioned above with PTA. We put the label "N/A" on Table~\ref{experiment:Optimalization}.
 
 \begin{table}[!htbp]\centering
 \caption{Callsite generated with different analysis}
