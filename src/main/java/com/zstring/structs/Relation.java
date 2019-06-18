@@ -1,11 +1,6 @@
 package com.zstring.structs;
 
-import soot.RefType;
-import soot.SootField;
-import soot.Type;
-import soot.Value;
-
-import java.sql.Ref;
+import soot.*;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -19,6 +14,9 @@ public class Relation {
     public static Map<Type, Set<Relation>> typeRelationHolder = new HashMap<Type, Set<Relation>>();
     public static Map<Value, Set<Relation>> valueRelationHolder = new HashMap<Value, Set<Relation>>();
     public static int count = 0;
+    public static int type_count = 0;
+    public static int field_count = 0;
+    public static int less_count = 0;
 
     public Type type;
     public Value left;
@@ -31,7 +29,8 @@ public class Relation {
         this.right = right;
         this.relationType = TYPE_VAR2VAR;
         if(globalRelations.add(this)) {
-            if(left.getType() instanceof RefType && right.getType() instanceof RefType) {
+            if((left.getType() instanceof RefType || left.getType() instanceof ArrayType)
+                    && (right.getType() instanceof RefType || right.getType() instanceof ArrayType)) {
                 Set<Relation> valueRelations = null;
                 valueRelations = valueRelationHolder.get(left);
                 if (valueRelations == null) {
@@ -47,6 +46,7 @@ public class Relation {
                 valueRelationHolder.put(right, valueRelations);
             }
             count++;
+            less_count++;
         }
     }
 
@@ -58,7 +58,7 @@ public class Relation {
         if(globalRelations.add(this)) {
             Set<Relation> valueRelations = null;
             if(!field.isStatic()) {
-                if(left.getType() instanceof RefType) {
+                if(left.getType() instanceof RefType || left.getType() instanceof ArrayType) {
                     valueRelations = valueRelationHolder.get(left);
                     if (valueRelations == null) {
                         valueRelations = new HashSet<Relation>();
@@ -67,7 +67,7 @@ public class Relation {
                     valueRelationHolder.put(left, valueRelations);
                 }
             }
-            if(right.getType() instanceof RefType) {
+            if(right.getType() instanceof RefType || right.getType() instanceof ArrayType) {
                 valueRelations = valueRelationHolder.get(right);
                 if (valueRelations == null) {
                     valueRelations = new HashSet<Relation>();
@@ -76,6 +76,7 @@ public class Relation {
                 valueRelationHolder.put(right, valueRelations);
             }
             count++;
+            field_count++;
         }
     }
 
@@ -85,7 +86,7 @@ public class Relation {
         this.relationType = TYPE_CLASS2VAR;
         this.type = type;
         if(globalRelations.add(this)) {
-            if(type instanceof RefType) {
+            if(type instanceof RefType || type instanceof ArrayType) {
                 Set<Relation> typeRelations = typeRelationHolder.get(type);
                 if (typeRelations == null) {
                     typeRelations = new HashSet<Relation>();
@@ -100,6 +101,7 @@ public class Relation {
                 valueRelationHolder.put(right, valueRelations);
             }
             count++;
+            type_count++;
         }
     }
 

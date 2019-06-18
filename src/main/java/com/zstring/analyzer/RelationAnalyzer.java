@@ -3,6 +3,7 @@ package com.zstring.analyzer;
 import com.zstring.env.SootEnvironment;
 import com.zstring.structs.Relation;
 import com.zstring.structs.Transition;
+import com.zstring.utils.FileUtil;
 import com.zstring.utils.SootUtils;
 import soot.*;
 import soot.jimple.*;
@@ -23,15 +24,32 @@ public class RelationAnalyzer {
 //    public static Map<Value, Set<Relation>> valueRelationHolder = new HashMap<Value, Set<Relation>>();
     public static ArrayList<Set> splited = new ArrayList<Set>();
     public static boolean isSplit = false;
+    public static String outputTxt;
 
     public static void main(String[] args) {
         String cp = "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar";
-        String pp = "/home/sean/bench_compile/";
-        pp = "/home/sean/bench_compared/bootstrap.jar";
+        String pp = null;
+        for(int i=0; i < args.length; i++) {
+            switch (args[i]) {
+                case "-pp": pp = args[i+1]; break;
+                case "-split": isSplit = true; break;
+                case "-d" : outputTxt = args[i+1]; break;
+                default:
+            }
+        }
+        if(pp == null) {
+//            pp = "/home/sean/bench_compile/";
+            pp = "/home/sean/bench_compared/crypto/";
+        }
+        if(outputTxt == null) {
+            outputTxt = "default.txt";
+        }
         new RelationAnalyzer().analyze(cp, pp);
     }
 
     public void analyze(String cp, String pp) {
+        // R(type)[0], R(less)[1], R(field)[2], T(r)[3], T(m)[4], N(o)[5], N(m)[6]
+        String[] dataOutput = new String[7];
         SootEnvironment.init(cp, pp);
         String dotPath = "/home/sean/IdeaProjects/zString/outputDot/eclipse/";
         long t1 = new Date().getTime();
@@ -41,16 +59,22 @@ public class RelationAnalyzer {
         long t2 = new Date().getTime();
         System.out.println("generated " + Relation.count + " relations");
         System.out.println("Relation Resolve time used: " + (t2-t1)/1000.0 + "s");
+        dataOutput[3] = String.valueOf((t2-t1)/1000.0);
         calcCallSite();
-        calcOriginalNodes();
+        dataOutput[5] = String.valueOf(calcOriginalNodes());
         if(isSplit) {
             t1 = new Date().getTime();
             minimalization();
             t2 = new Date().getTime();
             System.out.println("minimalization time used: " + (t2-t1)/1000.0 + "s");
+            dataOutput[4] = String.valueOf((t2-t1)/1000.0);
         }
-        calcMinNodes();
+        dataOutput[6] = String.valueOf(calcMinNodes());
+        dataOutput[0] = String.valueOf(Relation.type_count);
+        dataOutput[1] = String.valueOf(Relation.less_count);
+        dataOutput[2] = String.valueOf(Relation.field_count);
 
+        FileUtil.writeResult(dataOutput, outputTxt);
 
 //        System.out.println("Total time used: " + (t2-t1) + "ms");
 //        drawRelation(globalValueMap, globalTypeMap, globalTransition, dotPath);
@@ -83,36 +107,57 @@ public class RelationAnalyzer {
                 }
                 if(u instanceof JReturnStmt) {
                     Value returnValue = ((JReturnStmt) u).getOp();
+                    if(returnValue instanceof JArrayRef) {
+                        returnValue = ((JArrayRef) returnValue).getBase();
+                    }
                     returns.add(returnValue);
                 }
                 if(u instanceof JIdentityStmt) {
                     // Parameters & @this
                     Value left = ((JIdentityStmt) u).getLeftOp();
                     Value right = ((JIdentityStmt) u).getRightOp();
+                    if(left instanceof JArrayRef) {
+                        left = ((JArrayRef) left).getBase();
+                    }
+                    if(right instanceof JArrayRef) {
+                        right = ((JArrayRef) right).getBase();
+                    }
                     relationSet.add(new Relation(right, left));
                     params.add(left);
                 } else if(u instanceof JAssignStmt) {
                     Value left = ((JAssignStmt) u).getLeftOp();
                     Value right = ((JAssignStmt) u).getRightOp();
-                    if(left.getType() instanceof RefType && right.getType() instanceof RefType) {
-                        if (left instanceof FieldRef) {
-                            SootField field = ((FieldRef) left).getField();
-                            if (field.isStatic()) {
-                                // TODO: static field
-                                relationSet.add(new Relation(null, right, field));
-                                relationSet.add(new Relation(null, right, field.getType()));
-                            } else {
-                                left = ((JInstanceFieldRef) left).getBase();
-                                relationSet.add(new Relation(left, right, field));
+                    if(left instanceof JArrayRef) {
+                        left = ((JArrayRef) left).getBase();
+                    }
+                    if(right instanceof JArrayRef) {
+                        right = ((JArrayRef) right).getBase();
+                    }
+                    if(right instanceof JNewArrayExpr) {
+                        Type t = right.getType();
+                        relationSet.add(new Relation(right, left, t));
+                    } else {
+                        if ((left.getType() instanceof RefType || left.getType() instanceof ArrayType)
+                                && (right.getType() instanceof RefType || right.getType() instanceof ArrayType)) {
+                            if (left instanceof FieldRef) {
+                                SootField field = ((FieldRef) left).getField();
+                                if (field.isStatic()) {
+                                    // TODO: static field
+                                    relationSet.add(new Relation(null, right, field));
+                                    relationSet.add(new Relation(null, right, field.getType()));
+                                } else {
+                                    left = ((JInstanceFieldRef) left).getBase();
+                                    relationSet.add(new Relation(left, right, field));
+                                }
+                            } else if (right instanceof FieldRef) {
+                                // x = y.f
+                                fieldLoadToResolve.add((JAssignStmt) u);
+                            } else if (right instanceof JNewExpr) {
+                                Type t = right.getType();
+                                relationSet.add(new Relation(right, left, t));
+                            } else if (left instanceof JimpleLocal) {
+                                relationSet.add(new Relation(right, left));
                             }
-                        } else if (right instanceof FieldRef) {
-                            // x = y.f
-                            fieldLoadToResolve.add((JAssignStmt) u);
-                        } else if (right instanceof JNewExpr || right instanceof JNewArrayExpr) {
-                            Type t = right.getType();
-                            relationSet.add(new Relation(right, left, t));
-                        } else if (left instanceof JimpleLocal) {
-                            relationSet.add(new Relation(right, left));
                         }
                     }
                 }
@@ -146,10 +191,10 @@ public class RelationAnalyzer {
         while(stmtIter.hasNext()) {
             JAssignStmt stmt = stmtIter.next();
             Value left = stmt.getLeftOp();
+            if(left instanceof JArrayRef) {
+                left = ((JArrayRef) left).getBase();
+            }
             FieldRef right = (FieldRef) stmt.getRightOp();
-//            Value base = right.getBase();
-//            Type t = right.getType();
-//            SootField f = right.getField();
 
             Iterator<Relation> relationIter = relationSet.iterator();
             Set<Relation> relationToAdd = new HashSet<Relation>();
@@ -163,6 +208,9 @@ public class RelationAnalyzer {
                 }
             } else {
                 Value base = ((JInstanceFieldRef)right).getBase();
+                if(base instanceof JArrayRef) {
+                    base = ((JArrayRef) base).getBase();
+                }
                 while (relationIter.hasNext()) {
                     Relation relation = relationIter.next();
                     if (relation.relationType.equals(Relation.TYPE_FIELD)
@@ -237,17 +285,6 @@ public class RelationAnalyzer {
                             compCount++;
                         }
                     }
-//                    } else {
-//                        while(relationIter2.hasNext()) {
-//                            Relation relation2 = relationIter2.next();
-//                            if(relation2.relationType.equals(Relation.TYPE_VAR2VAR)
-//                                    && relation1.left.equals(relation2.left)) {
-//                                relationToAdd.add(new Relation(relation2.right, relation1.right, relation1.field));
-//                            }
-//                            compCount++;
-//                        }
-//                    }
-
                 }
             }
             int sizeBefore = relationSet.size();
@@ -329,12 +366,21 @@ public class RelationAnalyzer {
                         Unit u = uIter.next();
                         if (u instanceof JReturnStmt) {
                             Value returnValue = ((JReturnStmt) u).getOp();
+                            if(returnValue instanceof JArrayRef) {
+                                returnValue = ((JArrayRef) returnValue).getBase();
+                            }
                             returns.add(returnValue);
                         }
                         if (u instanceof JIdentityStmt) {
                             // Parameters & @this
                             Value left = ((JIdentityStmt) u).getLeftOp();
                             Value right = ((JIdentityStmt) u).getRightOp();
+                            if(left instanceof JArrayRef) {
+                                left = ((JArrayRef) left).getBase();
+                            }
+                            if(right instanceof JArrayRef) {
+                                right = ((JArrayRef) right).getBase();
+                            }
                             relationSet.add(new Relation(right, left));
                             params.add(left);
                         }
@@ -352,6 +398,9 @@ public class RelationAnalyzer {
             Set<Relation> calleeRelations = allRelations.get(callee);
             // x' (- return(c,m)
             if(receiver != null) {
+                if(receiver instanceof JArrayRef) {
+                    receiver = ((JArrayRef) receiver).getBase();
+                }
                 for(Value vReturn: returns) {
                     calleeRelations.add(new Relation(vReturn, receiver));
                     newRelationCount++;
@@ -361,6 +410,12 @@ public class RelationAnalyzer {
             for(int i=0; i < invokeExpr.getArgCount(); i++) {
                 Value z = invokeExpr.getArg(i);
                 Value p = params.get(i);      // static method don't hold the "this" variable, so we start the index from 0
+                if(z instanceof JArrayRef) {
+                    z = ((JArrayRef) z).getBase();
+                }
+                if(p instanceof JArrayRef) {
+                    p = ((JArrayRef) p).getBase();
+                }
                 calleeRelations.add(new Relation(z, p));
                 newRelationCount++;
             }
@@ -392,6 +447,9 @@ public class RelationAnalyzer {
 
                 // x' (- return(c,m)
                 if(receiver != null) {
+                    if(receiver instanceof JArrayRef) {
+                        receiver = ((JArrayRef) receiver).getBase();
+                    }
                     for(Value vReturn: returns) {
                         calleeRelations.add(new Relation(vReturn, receiver));
                         newRelationCount++;
@@ -401,6 +459,12 @@ public class RelationAnalyzer {
                 for(int i=0; i < invokeExpr.getArgCount(); i++) {
                     Value z = invokeExpr.getArg(i);
                     Value p = params.get(i+1);      // "this" variable was store in params(0)
+                    if(z instanceof JArrayRef) {
+                        z = ((JArrayRef) z).getBase();
+                    }
+                    if(p instanceof JArrayRef) {
+                        p = ((JArrayRef) p).getBase();
+                    }
                     calleeRelations.add(new Relation(z, p));
                     newRelationCount++;
                 }

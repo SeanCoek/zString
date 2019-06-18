@@ -1,1 +1,14 @@
-/home/sean/IdeaProjects/zString/src/main/java/com/zstring/PointsTo.java
+/home/sean/IdeaProjects/zString/src/main/java/com/zstring/structs/Relation.java
+/home/sean/IdeaProjects/zString/src/main/java/com/zstring/structs/CG.java
+/home/sean/IdeaProjects/zString/src/main/java/com/zstring/utils/SootUtils.java
+/home/sean/IdeaProjects/zString/src/main/java/com/zstring/env/SootEnvironment.java
+/home/sean/IdeaProjects/zString/src/main/java/com/zstring/utils/FileUtil.java
+/home/sean/IdeaProjects/zString/src/main/java/com/fromsoot/PointsTo.java
+/home/sean/IdeaProjects/zString/src/main/java/com/oldcode/OldCode.java
+/home/sean/IdeaProjects/zString/src/main/java/com/zstring/analyzer/ChaAnalyzer.java
+/home/sean/IdeaProjects/zString/src/main/java/com/zstring/structs/Transition.java
+/home/sean/IdeaProjects/zString/src/main/java/com/zstring/analyzer/RelationAnalyzer.java
+/home/sean/IdeaProjects/zString/src/main/java/com/zstring/analyzer/ZStringAnalyzer.java
+/home/sean/IdeaProjects/zString/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java
+/home/sean/IdeaProjects/zString/src/main/java/com/zstring/structs/C2VRelation.java
+/home/sean/IdeaProjects/zString/src/main/java/com/zstring/structs/Node.java

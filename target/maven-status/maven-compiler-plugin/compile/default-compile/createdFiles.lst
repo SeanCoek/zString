@@ -1,0 +1,14 @@
+com/zstring/analyzer/RelationAnalyzer.class
+com/zstring/structs/Transition.class
+com/zstring/analyzer/ChaAnalyzer.class
+com/zstring/utils/FileUtil.class
+com/zstring/analyzer/PointsToAnalyzer.class
+com/zstring/structs/Relation.class
+com/zstring/structs/CG.class
+com/zstring/env/SootEnvironment.class
+com/zstring/utils/SootUtils.class
+com/zstring/structs/C2VRelation.class
+com/fromsoot/PointsTo.class
+com/zstring/structs/Node.class
+com/oldcode/OldCode.class
+com/zstring/analyzer/ZStringAnalyzer.class

@@ -1,6 +1,7 @@
 package com.zstring.analyzer;
 
 import com.zstring.env.SootEnvironment;
+import com.zstring.utils.FileUtil;
 import soot.*;
 import soot.jimple.InvokeExpr;
 import soot.jimple.JimpleBody;
@@ -14,19 +15,28 @@ public class PointsToAnalyzer {
 
     public static String cp = null;
     public static String pp = null;
-
-
-
+    public static String outputTxt = null;
     public PointsToAnalysis pta;
-    public Hierarchy hierarchy;
 
 
     public static void main(String[] args) {
         // we can pass classpath(cp) and process path(pp) through parameter "args"
 //        String cp = "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:" + "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar";
         String cp = "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar";
-        String pp = "/home/sean/bench_compile/";
-        pp = "/home/sean/bench_compared/crypto/";
+        String pp = null;
+        for(int i=0; i<args.length; i++) {
+            switch (args[i]) {
+                case "-pp": pp = args[i+1]; break;
+                case "-d" : outputTxt = args[i+1]; break;
+                default:
+            }
+        }
+        if(pp == null) {
+            pp = "/home/sean/bench_compile/";
+        }
+        if(outputTxt == null) {
+            outputTxt = "default.txt";
+        }
         PointsToAnalyzer.cp = cp;
         PointsToAnalyzer.pp = pp;
         new PointsToAnalyzer().analyze(cp, pp);
@@ -37,15 +47,18 @@ public class PointsToAnalyzer {
     }
 
     public void analyze(String cp, String pp) {
+        // Time [0]
+        String[] dataOutput = new String[1];
         SootEnvironment.init(cp, pp);
 //        calcOriginCallsite();
-        setCHA();
-        hierarchy = Scene.v().getActiveHierarchy();
-        calcCHA();
-//        setSparkPointsToAnalysis();
-//        pta = Scene.v().getPointsToAnalysis();
-
-//        calcPTA();
+        long t1 = new Date().getTime();
+        setSparkPointsToAnalysis();
+        long t2 = new Date().getTime();
+        System.out.println("spark analysis ended, used " + (t2-t1)/1000.0 + "s");
+        dataOutput[0] = String.valueOf((t2-t1)/1000.0);
+        pta = Scene.v().getPointsToAnalysis();
+        calcPTA();
+        FileUtil.writeResult(dataOutput, outputTxt);
 //        SootEnvironment.cg = new CG(Scene.v().getCallGraph(), SootEnvironment.allMethods);
     }
 
@@ -92,72 +105,9 @@ public class PointsToAnalyzer {
 //        options.put("set-impl", "hybrid");
         options.put("double-set-old", "hybrid");
         options.put("double-set-new", "hybrid");
-        long t1 = new Date().getTime();
+
         SparkTransformer.v().transform("", options);
-        long t2 = new Date().getTime();
 
-        System.out.println("spark analysis ended, used " + (t2-t1)/100.0 + "s-1");
-    }
-
-    private static void setCHA() {
-        long t1 = new Date().getTime();
-        CHATransformer.v().transform();
-        long t2 = new Date().getTime();
-        System.out.println("CHA analysis ended, used " + (t2-t1)/100.0 + "s-1");
-    }
-
-    private int calcCHA() {
-        int callsites = 0;
-        Iterator<SootMethod> mIter = SootEnvironment.allMethods.iterator();
-        while(mIter.hasNext()) {
-            SootMethod m = mIter.next();
-            if(m.isConcrete()) {
-                JimpleBody jb = (JimpleBody) m.retrieveActiveBody();
-                Iterator<Unit> uIter = jb.getUnits().iterator();
-                while(uIter.hasNext()) {
-                    Unit u = uIter.next();
-                    InvokeExpr invokeExpr = null;
-                    if(u instanceof JInvokeStmt) {
-                        invokeExpr = ((JInvokeStmt) u).getInvokeExpr();
-                    } else if(u instanceof JAssignStmt && ((JAssignStmt) u).getRightOp() instanceof InvokeExpr) {
-                        invokeExpr = (InvokeExpr) ((JAssignStmt) u).getRightOp();
-                    }
-                    if(invokeExpr instanceof AbstractInstanceInvokeExpr) {
-                        Value caller = ((AbstractInstanceInvokeExpr) invokeExpr).getBase();
-                        if(caller instanceof Local) {
-                            SootClass c = Scene.v().getSootClass(caller.getType().toString());
-                            List<SootClass> chas = null;
-                            if(c.isInterface()) {
-                                chas = hierarchy.getImplementersOf(c);
-                            } else {
-                                try {
-                                    chas = hierarchy.getDirectSubclassesOf(c);
-                                } catch (Exception e) {
-//                                    e.printStackTrace();
-                                    callsites++;
-                                    continue;
-                                }
-                            }
-                            for(SootClass sc : chas) {
-                                try {
-                                    SootMethod sm = sc.getMethod(invokeExpr.getMethod().getSubSignature());
-                                    if(sm.isConcrete()) {
-                                        callsites++;
-                                    }
-                                } catch (Exception e) {
-//                                    System.out.println("b");
-                                }
-                            }
-                            callsites++;
-                        }
-                    } else if(invokeExpr instanceof JStaticInvokeExpr) {
-                        callsites++;
-                    }
-                }
-            }
-        }
-        System.out.println("total callsites: " + callsites);
-        return callsites;
     }
 
     private int calcOriginCallsite() {
