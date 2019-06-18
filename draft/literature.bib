@@ -46,7 +46,21 @@
 	year = 	"1994",
 	month =	may
 }
-
+%% calling context:
+@phdthesis{Shivers91,
+  author = {Shivers, Olin Grigsby},
+  title = {Control-flow Analysis of Higher-order Languages or Taming Lambda},
+  year = {1991},
+  publisher = {Carnegie Mellon University}
+}
+@inproceedings{Kastrinis2013,
+  author = {Kastrinis, George and Smaragdakis, Yannis},
+  title = {Hybrid Context-sensitivity for Points-to Analysis},
+  booktitle = {Proceedings of the 34th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+  series = {PLDI '13},
+  year = {2013},
+  pages = {423--434},
+}
 @inproceedings{Smaragdakis11,
 	author = {Smaragdakis, Yannis and Bravenboer, Martin and Lhot\'{a}k, Ondrej},
 	title = {Pick your contexts well: understanding object-sensitivity},
@@ -55,6 +69,7 @@
 	year = {2011},
 	pages = {17--30},
 }
+%%% object context:
 @article{Milanova2005,
  author = {Milanova, Ana and Rountev, Atanas and Ryder, Barbara G.},
  title = {Parameterized Object Sensitivity for Points-to Analysis for Java},
@@ -72,6 +87,7 @@
 	booktitle = {International Static Analysis Symposium, {SAS'16}},
 	year      = {2016},
 }
+
 
 @article{Li2018,
  author = {Li, Yue and Tan, Tian and M{\o}ller, Anders and Smaragdakis, Yannis},
@@ -92,6 +108,36 @@
   title = {SOOT},
   howpublished = {\url{https://sable.github.io/soot/}},
   note = {Accessed: 2019-06-10}
+}
+
+%%% others
+
+@article{Tarjan72,
+	author    = {R.~E.~Tarjan},
+	title     = {Depth-first search and linear graph algorithms},
+	journal   = {SIAM Journal on Computing},
+	volume    = {1},
+    issue     = {2},
+	pages     = {146–-160},
+	year      = {1972},
+}
+@article{Kanellakis90,
+	author    = {P.~C.~Kanellakis and S.~A.~Smolka},
+	title     = {CCS expressions, nite state processes, and three problems of equivalence},
+	journal   = {Information and Computation},
+	volume    = {86},
+    issue     = {1},
+	pages     = {43–-68},
+	year      = {1990},
+}
+@article{Paige87,
+	author    = {R.~Paige and R.~E.~Tarjan},
+	title     = {Three partition refinement algorithms},
+	journal   = {SIAM Journal on Computing},
+	volume    = {16},
+    issue     = {6},
+	pages     = {973–-989},
+	year      = {1987},
 }
 
 %% String analysis by Abstract Interpretation
@@ -239,15 +285,6 @@
   year         = 2006,
 }
 
-
-@inproceedings{Smaragdakis11,
-	author = {Smaragdakis, Yannis and Bravenboer, Martin and Lhot\'{a}k, Ondrej},
-	title = {Pick your contexts well: understanding object-sensitivity},
-	booktitle = {Proceedings of the 38th annual ACM SIGPLAN-SIGACT symposium on	Principles of programming languages},
-	series = {POPL '11},
-	year = {2011},
-	pages = {17--30},
-}
 
 @inproceedings{Landman17,
    author = {Landman, Davy and Serebrenik, Alexander and Vinju, Jurgen J.},

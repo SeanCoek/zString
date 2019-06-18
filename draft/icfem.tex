@@ -1,5 +1,7 @@
 \documentclass{llncs}
 
+\usepackage{algorithm}
+\usepackage{algorithmic}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{comment}
@@ -71,8 +73,9 @@
 \newcommand{\Nat}{\mathbb{N}}
 \newcommand{\less}{\sqsubseteq}
 \newcommand{\tflow}{\dashrightarrow}
-\newcommand{\hflow}{\rightarrow}
+\newcommand{\hflow}{\longrightarrow}
 \newcommand{\lhflow}[1]{\stackrel{#1}{\hflow}}
+\newcommand{\lhflowstar}[1]{\stackrel{#1}{\longrightarrow^*}}
 
 \newcommand\Loc{\mathcal{L}}
 \newcommand\Label{\Phi}
@@ -89,16 +92,16 @@
 
 \maketitle
 
-\abstract{The problem of resolving virtual method and interface calls in Object-Oriented languages has been a long standing challenge to the program analysis community. In this paper, we propose a new approach called type flow analysis that represent the propagation of type information between program variables by a group of relations without the help of a heap abstraction. We prove that regarding the precision on reachability of class information to variables, our method produces results equivalent to that one can derive from a points-to analysis. Moreover, in practice, our method consumes lower time and space usage, as supported by the experimental results.
+\abstract{The problem of resolving virtual method and interface calls in object-oriented languages has been a long standing challenge to the program analysis community. The complexities are brought by various reasons, such as increased levels of class inheritance and polymorphism. In this paper, we propose a new approach called type flow analysis that represent the propagation of type information between program variables by a group of relations without the help of a heap abstraction. We prove that regarding the precision on reachability of class information to a variable, our method produces results equivalent to that one can derive from a points-to analysis. Moreover, in practice, our method consumes lower time and space usage, as supported by the experimental results.
 }
 
 \section{Introduction}\label{sec:introduction}
 
-For object-oriented programming languages, virtual methods (or functions) are those declared in a base class but are meant to be overridden in different child classes. Statically determine a set of methods that may be invoked at a call site is important to program optimization, from the result of which a subsequent optimization may reduce the cost of virtual function calls or perform inlining if target method forms a singleton set, and one may also remove methods that are never called by any call sites, or produce a call graph which can be useful in other optimization processes.
-%
+For object-oriented programming languages, virtual methods (or functions) are those declared in a base class but are meant to be overridden in different child classes. Statically determine a set of methods that may be invoked at a call site is important to program optimization, from result of which a subsequent optimization may reduce the cost of virtual function calls or perform method inlining if target method forms a singleton set, and one may also remove methods that are never called by any call sites, or produce a call graph which can be useful in other optimization~processes.
+
 Efficient solutions, such as Class Hierarchy Analysis (CHA)~\cite{Dean1995,Fernandez1995} and Rapid Type Analysis (RTA)~\cite{Bacon1996} and Variable Type Analysis (VTA)~\cite{Sundaresan2000}, conservatively assign each variable a set of class definitions, with relatively low precision. Alternatively, with the help of an abstract heap, one may take advantage of points-to analyses~\cite{andersen94} to compute a set of object abstractions that a variable may refer to, and resolve the receiver classes in order to find associated methods at call sites.
 
-The purpose of the conservative analyses, such as CHA, RTA and VTA, is to provide an efficient way to resolve calling edges, which usually executes linear-time in the size of a program, by focusing on the types that are collected at the receiver. For instance, let $x$ be a receiver with declared class $A$, then at a call site $x.m()$, then CHA will draw a call edge from this call site to method $m()$ of class $A$ and every definition $m()$ of a class that extends $A$. In case class $A$ does not define $m()$, a call edge to the nearest parent class that defines $m()$ will also be included. For $x$ a receiver with declared interface $I$, then CHA will draw a call edge from this call site to every method of name $m()$ defined in class $X$ that implements $I$.
+The algorithms used by CHA, RTA and VTA are conservative, which aim to provide an efficient way to resolve calling edges, and which usually runs linear-time in the size of a program, by focusing on the types that are collected at the receiver of a call site. For instance, let $x$ be a variable of declared class $A$, then at a call site $x.m()$, CHA will draw a call edge from this call site to method $m()$ of class $A$ and every definition $m()$ of a class that extends $A$. In case class $A$ does not define $m()$, a call edge to an ancestor class that defines $m()$ will also be included. For a variable $x$ of declared interface $I$, CHA will draw a call edge from this call site to every method of name $m()$ defined in class $X$ that implements $I$.
 We write $CHA(x,m)$ for the set of methods that are connected from call site $x.m()$ as resolved by  Class Hierarchy Analysis (CHA).
 Rapid Type Analysis (RTA) is an improvement from CHA which resolves call site $x.m()$ to $CHA(x,m)\cap inst(P)$, where $inst(P)$ stands for the set of methods of classes that are instantiated in the program.
 
@@ -136,15 +139,16 @@ class C extends A{}
 \caption{An example that compares precision on type flow in a program.}\label{figure:example}
 \end{figure}
 
-Variable Type Analysis (VTA) is a further improvement from RTA. VTA defines a node for each variable, method, method parameter and field. Class names are treated in a similar way as to variables, and propagation of value between variables work in the way of value flow.
+Variable Type Analysis (VTA) is a further improvement. VTA defines a node for each variable, method, method parameter and field. Class names are treated as values and propagation of such values between variables work in the way of value flow.
 As shown in Figure~\ref{figure:vta}, the statements on line $1-4$ initialize type information for variables $x$, $y$, $b$ and $c$,
-and statements on line $5-7$ establish value flow relations. Since both $x$ and $y$ are assigned type $A$, $x.f$ and $y.f$ are both represented by node $A.f$, thus the set of types reaching $A.f$ is now $\set{B,C}$. (Note this is a more precise result than CHA and RTA which give $\set{A,B,C}$ as the set of types reaching $A.f$.)
-Since $A.m.this$ refers to $x$, $this.f$ inside method $A.m()$ now refers to $A.f$. Therefore, through $A.m.return$, $z$ receives  $\set{B,C}$ as its final set of reaching types.
+and statements on line $5-7$ establish value flow relations. Since both $x$ and $y$ are assigned type $A$, $x.f$ and $y.f$ are both represented by node $A.f$, thus the set of types reaching $A.f$ is now $\set{B,C}$. (Note this is a more precise result than CHA and RTA which assigns $A.f$ with the set $\set{A,B,C}$.)
+Since $A.m.this$ refers to $x$, $this.f$ inside method $A.m()$ now refers to $A.f$. Therefore, through $A.m.return$, $z$ receives  $\set{B,C}$ as its final set of types reaching it.
 
 \begin{figure}[t!]%%[ht]
 \begin{tabular}{cc}
 
 \begin{minipage}[h]{0.5\linewidth}
+\centering
 \begin{tabular}{|c|c|}
   \hline
   \textbf{Statement} & \textbf{VTA fact} \\
@@ -173,37 +177,39 @@ Since $A.m.this$ refers to $x$, $this.f$ inside method $A.m()$ now refers to $A.
 \end{tabular}
 \end{figure}
 
-The result of a context-insensitive subset based points-to analysis~\cite{andersen94} creates a heap abstraction of four objects (shown on line $1-4$ of Figure~\ref{figure:example} as well as in the ellipses in Figure~\ref{figure:points-to}). These abstract objects are then inter-connected via field store access defined on line $5-6$. The derived field access from $O_1.m.this$ to $O_2$ is shown in dashed arrow. By return of the method call $z=x.m()$, variable $z$ receives $O_2$ of type $B$ from $O_1.m.this.f$, which gives the most precise type for variable $z$.
+The result of a context-insensitive subset based points-to analysis~\cite{andersen94} creates a heap abstraction of four objects (shown on line $1-4$ of Figure~\ref{figure:example} as well as in the ellipses in Figure~\ref{figure:points-to}). These abstract objects are then inter-connected via field store access defined on line $5-6$. The derived field access from $A.m.this$ to $O_2$ is shown in dashed arrow. By return of the method call $z=x.m()$, variable $z$ receives $O_2$ of type $B$ from $A.m.this.f$, which gives a more precise set of reaching type for variable $z$.
 
-From this example, one may conclude that the imprecision of VTA in comparison with points-to analysis is due to the over abstraction of object types, such that $O_1$ and $O_3$, both of type $A$ are treated under the same type. However, points-to analysis often requires to construct a heap abstraction, which brings in extra information especially in the case when we are only interested in the type of a variable.
+From this example, one may conclude that the imprecision of VTA in comparison with points-to analysis is due to the over abstraction of object types, such that $O_1$ and $O_3$, both of type $A$, are treated under the same type. Nevertheless, points-to analysis requires to construct a heap abstraction, which brings in extra information, especially when we are only interested in the set of reaching types of a variable.
 
 \begin{figure}[t!]
-\[\dfrac{\dfrac{\dfrac{z=x.m(), \mbox{\textsf{[call]}}}{A.m.this.f\less A.m.return}\quad
-  \dfrac{\dfrac{z=x.m(), \mbox{\textsf{[call]}}}{x\less A.m.this}\quad\dfrac{x.f=b, \mbox{\textsf{[store]}}}{x\lhflow{f}b}}
-  {A.m.this\lhflow{f}b}\mbox{, \textsf{[load]}}}{b\less A.m.return}\quad
-  \dfrac{z=x.m(), \mbox{\textsf{[call]}}}{A.m.return\less z}}{b\less z}\]
+%\[\dfrac{\dfrac{\dfrac{z=x.m(), \mbox{\textsf{[call]}}}{A.m.this.f\less A.m.return}\quad
+%  \dfrac{\dfrac{z=x.m(), \mbox{\textsf{[call]}}}{x\less A.m.this}\quad\dfrac{x.f=b, \mbox{\textsf{[store]}}}{x\lhflow{f}b}}
+%  {A.m.this\lhflow{f}b}\mbox{, \textsf{[load]}}}{b\less A.m.return}\quad
+%  \dfrac{z=x.m(), \mbox{\textsf{[call]}}}{A.m.return\less z}}{b\less z}\]
+%\caption{Type Flow Analysis for variable $z$ in the example}\label{fig:tfa}
+\centering
+\includegraphics[width=8cm]{tfa.pdf}
 \caption{Type Flow Analysis for variable $z$ in the example}\label{fig:tfa}
 \end{figure}
 
-In this paper we introduce a relational static semantics called Type Flow Analysis (TFA) on program variables and field accesses. Different from VTA, besides a binary value flow relation $\less$ on the variable domain $\Var$, where $x\less y$ denotes all types that flow to $x$ also flow to $y$, we also build a ternary field store relation $\rightarrow\ \subseteq\Var\times\Field\times\Var$ to trace the \emph{load} and \emph{store} relationship between variables via filed accesses. This provides us more ways to enlarge the relations $\less$ and $\rightarrow$. For example given $x\lhflow{f}y$ and $x\less z$, we can derive $z\lhflow{f}y$.
-
-Taking the example from Figure~\ref{figure:example}, we are able to collect the store relation $x\lhflow{f}b$ from line $5$. Since $x\less C.m.this$, we derive $C.m.this\lhflow{f}b$, which together with $C.m.this.f\less z$, further derives $b\less z$. Therefore, we assign type $B$ to variable $z$. The complete reasoning pattern is depicted in Figure~\ref{fig:tfa}. Nevertheless, one cannot derive $c\less z$ in the similar way.
+In this paper we introduce a relational static semantics called Type Flow Analysis (TFA) on program variables and field accesses. Different from VTA, besides a binary value flow relation $\less$ on the variable domain $\Var$, where $x\less y$ denotes all types that flow to $x$ also flow to $y$, we also build a ternary field store relation $\rightarrow\ \subseteq\Var\times\Field\times\Var$ to trace the \emph{load} and \emph{store} relationship between variables via field accesses. This provides us additional ways to enlarge the relations $\less$ as well as $\rightarrow$. %%For example given $x\lhflow{f}y$ and $x\less z$, we can derive $z\lhflow{f}y$.
+%%
+Taking the example from Figure~\ref{figure:example}, we are able to collect the store relation $x\lhflow{f}b$ from line $5$. Since $x\less \textsf{A.m.this}$, together with the implicit assignment which loads $f$ of $\textsf{A.m.return}$, we further derives $b\less\textsf{A.m.return}$ and $b\less z$ (dashed thick arrows in Figure~\ref{fig:tfa}). Therefore, we assign type $B$ to variable $z$. The complete reasoning pattern is depicted in Figure~\ref{fig:tfa}. Nevertheless, one cannot derive $c\less z$ in the same way.
 
 %%% contributions with %%% discussion on context-sensitivity
-We have proved that in the context insensitive inter-procedural analysis, the TFA is as precise as subset based points-to analysis regarding type related information. Since points-to analysis can be enhanced with context-sensitivity on both variables and objects (e.g.,~\cite{Milanova2005,Smaragdakis11,Tan16}), our type flow analysis only requires to consider context on variables, which is left for future work. The context-insensitive type flow analysis has been implemented in SOOT~\cite{soot}, and has been tested on a collection of benchmark programs from specjvm2008 and DaCapo. (Need more citations here, and brief the experimental results.)
+We have proved that in the context insensitive inter-procedural analysis setting, TFA is as precise as subset based points-to analysis regarding type related information. Since points-to analysis can be enhanced with various types of context-sensitivity on variables and objects (e.g., call-site-sensitivity~\cite{Shivers91,Kastrinis2013}, object-sensitivity~\cite{Milanova2005,Smaragdakis11,Tan16} and type-sensitivity~\cite{Smaragdakis11}), our type flow analysis will only require to consider contexts on variables, which is left for future work. The context-insensitive type flow analysis has been implemented in the SOOT framework~\cite{soot}, and has been tested on a collection of benchmark programs from specjvm2008 and DaCapo. (Need more citations here, and brief the experimental results.)
 
 \section{Type Flow Analysis}\label{sec:type-flow-analysis}
 
-We define a core calculus in Figure~\ref{fig:syntax} consisting of most of the key Object-Oriented language features.
+We define a core calculus consisting of most of the key object-oriented language features, as shown in Figure~\ref{fig:syntax}.
 A program is defined as a code base $\overline{C}$ (i.e., a collection of class definitions) with statement $s$ to be evaluated.
 To run a program, one may assume that $s$ is the default (static) entry method with local variable declarations $\overline{D}$,
 similar to e.g., Java and C++,
-which may differ in specific language designs. 
+which may differ in specific language designs.
 %% to consider dynamic semantics later: Let $S$ and $H$ be the runtime stack and heap, where $S:\Var\rightarrow \Val$maps local variables to values and $H:\Val\rightarrow \Obj\cup\set{\kwnull}$ maps values to objects.
-Two auxiliary functions are given. Function $fields$ maps class names to its fields, and $class$ provides types (or class names)
-for objects.
-Given class $c$, if $f\in fields(c)$, then $type(c,f)$ is the defined class type of field $f$ in $c$. Similarly, give an object $o$,
-if $f\in fields(class(o))$, then $o.f$ may refer to an object of type $type(class(o),f)$, or an object of any of its subclass at runtime.
+We define a few auxiliary functions. $fields$ maps class names to its fields, $methods$ maps class names to its defined or inherited methods, and $type$ provides types (or class names) for objects. Given class $c$, if $f\in fields(c)$, then $ftype(c,f)$ is the defined class type of field $f$ in $c$. Similarly, give an object $o$, if $f\in fields(type(o))$, then $o.f$ may refer to an object of type $ftype(type(o),f)$,
+or an object of any of its subclass at runtime. Write $\Class$ for the set of classes, $\Obj$ for the set of objects, $\Field$ for the set of fields and $\Var$ for the set of variables that appear in a program.
+
 %Sometimes we mix-use the terms \emph{type} and \emph{class} in this paper when it is clear from the context.
 
 \begin{figure}[!htbp]\centering
@@ -213,22 +219,261 @@ if $f\in fields(class(o))$, then $o.f$ may refer to an object of type $type(clas
 		$C$&$::=$&$\kwclass\ c\ [\kwextends\ c] \ \{\overline{F};\ \overline{M}\}$\\
         $F$&$::=$&$c \ f$\\
         $D$&$::=$&$c \ z$\\
-		$M$&$::=$&$m(x) \ \{\overline{D}; s\}$\\
-		$s$&$::=$&$e\mid x{=}\kwnew \ c\mid  x {=} e \mid x.f{=}y $\\
-		&&$ \mid \kwif \ x \ \kwthen \ s \ \kwelse \ s \ |\ s;s$\\
+		$M$&$::=$&$m(x) \ \{\overline{D}; s; \kw{return}\ x'\}$\\
+		$s$&$::=$&$e\mid x{=}\kwnew \ c\mid  x {=} e \mid x.f{=}y \mid s;s$\\
+		%%&&$ \mid \kwif \ x \ \kwthen \ s \ \kwelse \ s \ |\ s;s$\\
 		$e$&$::=$&$ \kwnull\mid x \mid x.f \mid x.m(y) $\\
         $prog$&$::=$&$\overline{C};\overline{D}; s$\\
 	\end{tabular}
 	\caption{Abstract syntax for the core language. \label{fig:syntax}}
 \end{figure}
 
+In this simple language we do not model common types (e.g., $\kw{int}$ and $\kw{float}$) that are irrelevant to our analysis, and we focus on the reference types which form a class hierarchical structure. Similar to Variable Type Analysis (VTA), we assume a context insensitive setting, such that every variable can be uniquely determined by its name together with its enclosing class and methods.
+For example, if a local variable $x$ is defined in method $m$ of class $c$, then $c.m.x$ is the unique representation of that variable.
+%We assume class names, field names, method names and variable names are all unique when it is clear from the context.
+Therefore, it is safe to drop the enclosing the class and method name if it is clear from the context.
+In general, we have the following types of variables in our analysis: (1) local variables, (2) method parameters, (3) this reference of each method, all of which are syntactically bounded by their enclosing methods and classes.
 
-\section{Optimization}\label{sec:minimization}
+We enrich the variable type analysis with the new type flow analysis by using three relations,
+a partial order on variables $\less\ \subseteq\Var\times\Var$, a type flow relation
+$\tflow\subseteq\Class\times\Var$, as well as a field access relation $\hflow\subseteq\Var\times\Field\times\Var$,
+which are initially given as follows.
+\begin{definition}\label{def:base} (Base Relations)
+We have the following base facts for the three relations.
+\begin{enumerate}
+  \item $c\tflow x$ if there is a statement $x = \kwnew\ c$;
+  \item $y\less x$ if there is a statement $x = y $;
+  \item $x\lhflow{f}y$ if there is a statement $x.f = y$.  %%% this treatment is of vital difference from VTA: check the motivation example??
+\end{enumerate}
+\end{definition}
+Intuitively, $c\tflow x$ means variable $x$ may have type $c$ (i.e., $c$ flows to $x$), $y\less x$ means all types flow to $y$ also flow to $x$, and $x\lhflow{f}y$ means from variable $x$ and field $f$ one may access variable $y$.\footnote{Note that VTA treats statement $x.f = y$ as follows. For each class $c$ that flows to $x$ which defines field $f$, VTA assigns all types that flow to $y$ also to $c.f$.} These three relations are then extended by the following rules.
+\begin{definition}\label{def:extension} (Extended Relations)
+\begin{enumerate}
+  \item For all statements $x = y.f $, if $y\lhflow{f\ *}z$, then $z\less^* x$.
+  \item $c\tflow^* y$ if $c\tflow y$, or $\exists x\in\Var:c\tflow^* x\wedge x\less^* y$;
+  \item $y\less^* x$ if $x=y$ or $y\less x$ or $\exists z\in\Var:y\less^* z\wedge z\less^* x$;
+  \item $y\lhflow{f\ *}z$ if $\exists x\in\Var: x\lhflow{f}z\wedge (\exists z'\in\Var: z'\less^* y \wedge z'\less^*x)$;
+  \item The type information is used to resolve each method call $x = y.m(z)$.
+  \begin{equation*}
+  \left.\begin{array}{l}\forall c\tflow^* y:\\ m(z')\{\dots \kw{return}\ x'\}\in methods(c):\end{array}\right.\left\{\begin{array}{l}
+        z\less^* c.m.z'\\
+        c\tflow^* c.m.this\\
+        c,m.x'\less^* x \\
+        \end{array}\right.
+  \end{equation*}
+\end{enumerate}
+\end{definition}
 
+The final relations are the least relations that satisfy constraints of Def.~\ref{def:extension}.
+Comparing to VTA~\cite{Sundaresan2000}, we do not have field reference $c.f$ for each class $c$ defined in a program. Instead, we define a relation that connects the two variable names and one field name. (to compare in the motivating example)
+Although the three relations are inter-dependent, one may find that without method call (i.e., Def.~\ref{def:extension}.4), one may identify that the two relations $\rightarrow^*$ (field access) and $\less^*$ (variable partial order) can be determined without considering the type flow relation $\tflow^*$.
+
+In order to compare the precision of TFA with points-to analysis, we present a brief list of the classic subset-based points-to rules for our language in Figure~\ref{fig:constraints}, where $param(type(o),m))$, $this(type(o),m))$ and $return(type(o),m)$ refer to the formal parameter, \textsf{this} reference and \textsf{return} variable of the method $m$ of the class for which object $o$ is declared, respectively.
+
+\begin{figure*}%[!htbp]
+	\centering %
+    \begin{tabular}{|l|c|}
+        \hline
+    \textbf{statement} & \textbf{Points-to constraints} \\
+    \hline
+    $x = \kwnew\ c$ & $o_i\in\VPT(x)$\\
+    \hline
+    $x = y $ & $\VPT(y)\subseteq\VPT(x)$\\
+    \hline
+    $x = y.f $ & $\forall o\in\VPT(y):\HPT(o,f)\subseteq\VPT(x)$\\
+    \hline
+    $x.f = y $ & $\forall o\in\VPT(x):\VPT(y)\subseteq\HPT(o,f)$\\
+    \hline
+    $x=y.m(z)$ &
+        \(\forall o\in\VPT(y):\left\{\begin{array}{l}
+        \VPT(z)\subseteq\VPT(param(type(o),m))\\
+        \VPT(this(type(o),m))=\set{o}\\
+        \forall x'\in return(type(o),m):\\ \hspace{35pt} \VPT(x')\subseteq\VPT(x) \end{array}\right.\)
+        \\
+    \hline
+	\end{tabular}
+\caption{Constraints for points-to analysis. \label{fig:constraints}}
+\end{figure*}
+
+To this end we present the first result of the paper, which basically says type flow analysis has the same precision regarding type based check, such as call site resolution and cast failure check, when comparing with the points-to analysis.
+\begin{Theorem}~\label{thm:tfa}
+  In a context-insensitive analysis, for all variables $x$ and classes $c$, $c\tflow^*x$ iff there exists an object abstraction $o$ of $c$ such that $o\in\VPT(x)$.
+\end{Theorem}
+\begin{proof} (sketch)
+For a proof sketch, first we assume every object creation site $x = \kwnew\ c_i$ at line $i$ defines a mini-type $c_i$, and if the theorem is satisfied in this setting, a subsequent merging of mini-types into classes will preserve the result.
+
+Moreover, we only need to prove the intraprocedural setting which is the result of Lemma~\ref{lem:tfa-intra}. Because if in the intraprocedural setting the two systems have the same smallest model for all methods, then at each call site $x=y.m(a)$ both analyses will assign $y$ the same set of classes and thus resolve the call site to the same set of method definitions, and as a consequence, each method body will be given the same set of extra conditions, thus all methods will have the same initial condition for the next round iteration. Therefore, both inter-procedural systems will eventually stabilize at the same model. \qed
+\end{proof}
+
+%We define the following auxiliary relations to connect the static semantics of TFA and points-to analysis. Given variable $x$, we define $Reaches(x)=\set{c\mid c\tflow^* x}$. Given type $c\in\Class$ and $f\in\Field$, define a function $Access:\Class\times\Field\rightarrow\power(\Class)$, such that $Access(c,f)=\set{c'\mid x\lhflow{f}y\wedge c\in Reaches(x)\wedge c'\in Reaches(y)}$.
+
+\begin{lemma}\label{lem:tfa-intra}
+In a context-insensitive intraprocedural analysis where each class $c$ only syntactically appears once in the form of $\kwnew\ c$, for all variables $x$ and classes $c$, $c\tflow^*x$ iff there exists an object abstraction $o$ of type $c$ such that $o\in\VPT(x)$.
+\end{lemma}
+\begin{proof}
+Since the points-to constraints define the smallest model $(\VPT, \HPT)$ with $\VPT:\Var\rightarrow\Obj$ and $\HPT:\Obj\times\Field\rightarrow\power(\Obj)$, and the three relations of type flow analysis also define the smallest model that satisfies Def.~\ref{def:base} and Def.~\ref{def:extension}, we prove that every model of points-to constraints is also a model of TFA, and vice versa. Then the least model of both systems must be the same, as otherwise it would lead to contradiction.
+
+\medskip
+
+($\star$) For the `only if' part ($\Rightarrow$), we define $Reaches(x)=\set{c\mid c\tflow^* x}$, and assume a bijection $\xi:\Class\rightarrow\Obj$ that maps each class $c$ to the unique object $o$ that is defined (and $type(o)=c$). Then we construct a function $Access:\Class\times\Field\rightarrow\power(\Class)$ and show that $(\xi(Reaches),\xi(Access))$ satisfies the points-to constraints. Define $Access(c,f)=\set{c'\mid x\lhflow{f\ *}y\wedge c\in Reaches(x)\wedge c'\in Reaches(y)}$. We prove the following cases according to the top four points-to constraints in Figure~\ref{fig:constraints}.
+\begin{itemize}
+\item For each statement $x = \kwnew\ c$, we have $\xi(c)\in\xi(Reaches(x))$;
+\item For each statement $x = y$, we have $Reaches(y)\subseteq Reaches(x)$ and $\xi(Reaches(y))\subseteq\xi(Reaches(x))$;
+\item For each statement $x.f = y$, we have $x\lhflow{f}y$, then by definition for all $c\in Reaches(x)$, and $c'\in Reaches(y)$, we have $c'\in Access(c,f)$, therefore $\xi(c')\in\xi(Reaches(y))$ we have $\xi(c')\in \xi(Access(\xi(c),f))$.
+\item For each statement $x = y.f$, let $c\in Reaches(y)$, we need to show $\xi(Access(c,f))\subseteq\xi(Reaches(x))$, or equivalently, $Access(c,f)\subseteq Access(x)$. Let $c'\in Access(c,f)$, then by definition, there exist $z$, $z'$ such that $c\in Reaches(z)$, $c'\in Reaches(z')$ and $z\lhflow{f\ *}z'$. By $c\in Reaches(y)$ and Def.~\ref{def:extension}.4, we have $y\lhflow{f\ *}z'$. Then by Def.~\ref{def:extension}.1, $z'\less^*x$. Therefore $c'\in Reaches(x)$.
+\end{itemize}
+
+\medskip
+
+($\star$) For the `if' part ($\Leftarrow$), let ($\VPT$, $\HPT$) be a model that satisfies all the top four constraints defined in Figure~\ref{fig:constraints}, and a bijection $\xi:\Class\rightarrow\Obj$, we show the following constructed relations satisfy value points-to.
+\begin{itemize}
+  \item For all types $c$ and variables $x$, $c\tflow^* x$ if $\xi(c)\in\VPT(x)$;
+  \item For all variables $x$ and $y$, $x\less^*y$ if $\VPT(x)\subseteq\VPT(y)$;
+  \item For all variables $x$ and $y$, and for all fields $f$, $x\lhflow{f\ *}y$ if for all $o_1,o_2\in\Obj$ such that $o_1\in\VPT(x)$ and $o_2\in\VPT(y)$ then $o_2\in\HPT(o_1,f)$.
+\end{itemize}
+We check the following cases.
+\begin{itemize}
+\item For each statement $x = \kwnew\ c$, we have $\xi(c)\in\VPT(x)$, so $c\tflow^* x$ by definition.
+\item For each statement $x = y$, we have $\VPT(y)\subseteq\VPT(x)$, therefore $y\less^*x$ by definition.
+\item For each statement $x.f = y$, we have for all $o_1\in\VPT(x)$ and $o_2\in\VPT(y)$, $o_2\in\HPT(o_1,f)$, which derives $x\lhflow{f\ *}y$ by definition.
+\item  For each statement $x = y.f$, given $y\lhflow{f\ *}z$, we need to show $z\less^* x$. Equivalently, by definition we have for all $o_1\in\VPT(y)$ and $o_2\in\VPT(z)$, $o_2\in\HPT(o_1,f)$. Since points-to relation gives $\HPT(o_1,f)\subseteq\VPT(x)$, we have $o_2\in\VPT(x)$, which derives $\VPT(z)\subseteq\VPT(x)$, the definition of $z\less^* x$.
+\item The proof for the properties in the rest of Def.~\ref{def:extension} are about transitivity of the three TFA relations, which are quite straightforward. We leave them for interested readers. \qed
+\end{itemize}
+\end{proof}
+
+%% later to discuss (after the proof): conservative treatment on array elements
+%% does not consider reflective method call and java native interface
+
+
+\section{Implementation and Optimization}\label{sec:minimization}
+
+We implement the analysis in the SOOT framework~\cite{soot}. Besides basic treatment as discussed with the core calculus in the previous section. Since we are only interested in reference types, we do not carry out analysis on basic types such as \textsf{boolean}, \textsf{int} and \textsf{double}. We also do not consider more advanced Java features such as functional interfaces and lambda expressions, as well as more complex usages including Java Native Interface and reflection based method calls.
+Array accesses are treated conservatively---all type information that flows to one member of a reference array flows to all members of that array, so that only one node is generated for each reference array.
+%%%Since our implementation is flow insensitive, we do not worry much about the branching structures and loops in a program.
+
+Since call graph information may be saved and be used for subsequent analyses, we propose the follow two ways to reduce storage for the result.
+\begin{enumerate}
+  \item If $x\less^*y$ and $y\less^*x$, we say $x$ and $y$ form an \emph{alias pair}, written $x\sim y$. Intuitively, $\Var/\sim$ is a partition of $\Var$ such that each $c\in\Var/\sim$ is a strongly connected component (SCC) in the variable graph, which can be quickly collected by e.g., Tarjan's algorithm~\cite{Tarjan72}.
+  \item A more aggressive compression can be achieved in a way similar to bisimulation minimization of finite automaton~\cite{Kanellakis90,Paige87}. Define $\approx\ \subset\Var\times\Var$ such that $x\approx y$ is symmetric and if (1) for all class $c$, $c\tflow^* x$ iff $c\tflow^*y$ and (2) for all $x\lhflow{f\ *}x'$ there exists $y\lhflow{f\ *}y'$ and $x'\approx y'$.
+\end{enumerate}
+
+\fbox{need to explain the optimization process}
+
+
+\begin{algorithm}
+\caption{split}
+\label{alg:split}
+\begin{algorithmic}
+\REQUIRE \textbf{valueToSplit:}$set$, \textbf{splitter}:$Value \times Value \times Type \times Field$
+\ENSURE \textbf{isSplit:}$boolean$, \textbf{include:}$set$, \textbf{exclude:}$set$
+\STATE isSplit=false;
+\STATE include=$set()$;
+\STATE exclude=$set()$;
+\FOR{each v in valueToSplit}
+\STATE relations = getRelations(v);		
+\FOR{each r in relations}
+\IF{r match splitter}
+\STATE include.add(v);
+\STATE isSplit=true;
+\STATE break;
+\ENDIF
+\ENDFOR
+\ENDFOR
+\IF{isSplit}
+	\STATE exclude=valueToSplit-include;
+\ENDIF
+
+\end{algorithmic}
+\end{algorithm}
 
 
 \section{Experiment}\label{sec:experiment}
 
+We evaluated our approach by measuring its performance in terms of generated callsites and runtime on 13 benchmark test cases. \textit{Compress}, \textit{crypto} are from the SPECjvm2008 suite, and the rest of those are from the Dacapo suite. We randomly selected these test cases based on its size increasing.
+All of our experiments were conducted on an Intel i5-8250U processor at 1.60 GHz and 8 GB memory running Ubuntu 16.04LTS, with the Openjdk 1.8.0.
+
+We compared our approach against CHA and PTA implemented by Soot, the most popular static analysis framework for Java. We run context-insensitive PTA because our approach is context-insensitive, thus results will be more comparable.
+
+\textbf{Efficiency:}As shown in Table~\ref{experiment:Time Cost}, our approach is more efficient than PTA, and generally more efficient than CHA, especially when the program callsite increasing. Time cost in our approach is basically depending on the size of generated relations. More specifically, most of the time is consumed to calculate the fixpoint. For example, CHA, PTA analyze the benchmark \textit{bootstrap} about 23.74 and 34.13 seconds, respectively. TFA only excutes about 0.03 second. The reason is mostly because the relations only reach to 661 in total. There are 3 benchmarks, \textit{xalan, antlr, batik}, can not be analyzed by PTA because it raise the jvm GC overhead limit error, so we put the label "N/A" in Table~\ref{experiment:Time Cost}
+
+\begin{table}[!htbp]\centering
+\caption{Time cost with different analysis}
+\begin{tabular}{lcccccc}
+	\hline
+	\textbf{bench} & \textbf{T$_{cha}(s)$} & \textbf{T$_{pta}(s)$} & \textbf{T$_{tfa}(s)$} & \textbf{R$_{type}$} & \textbf{R$_{\less}$} & \textbf{R$_{\lhflow{f}}$} \\
+	\hline
+	compress & 0.02 & 0.12 & 0.02 & 87 & 202 & 24\\
+	crypto & 0.01 & 0.12 & 0.03 & 94 & 226 & 18\\
+	bootstrap & 23.74 & 34.13 & 0.03 & 191 & 453 & 17\\
+	commons-codec & 0.009 & 0.12 & 0.13 & 306 & 3324 & 49\\
+	junit & 24.45 & 34.24 & 0.18 & 1075 & 5772 & 241\\
+	commons-httpclient & 0.009 & 0.12 & 0.36 & 2423 & 8511 & 521 \\
+	serializer & 22.60 & 32.68 & 1.71 & 3006 & 17726 & 331\\
+	xerces & 21.69 & 34.83 & 3.74 & 12590 & 72503 & 2779\\
+	eclipse & 21.95 & 42.64 & 1.68 & 7933 & 37435 & 1620\\
+	derby & 22.77 & 48.82 & 18.09 & 20698 & 191854 & 5386\\
+	xalan & 78.40 & N/A & 42.11 & 32971 & 162249 & 3696\\
+	antlr & 44.20 & N/A & 3.96 & 16117 & 76741 & 3879\\
+%	jython & 3811.02 & / & /  & / \\
+	batik & 45.84 & N/A & 6.38 & 29409 & 122534 & 6039 \\
+	\hline
+\end{tabular}
+\label{experiment:Time Cost}
+\end{table}
+
+\textbf{Accurancy:}We consider generated callsite as the aspect of accurancy. Table~\ref{experiment:Callsite} shows the callsite generated by different analysis. We calculate the origin callsite, the callsite directly written in source code, as the baseline. Our approach reduces a satisfying number of callsite, yielding corresponding accurancy. The result is comparable to what can be achieved by the points-to analysis.
+
+\begin{table}[!htbp]\centering
+\caption{Optimalization result}
+\begin{tabular}{lcccc}
+	\hline
+	\textbf{bench} & \textbf{Node$_{origin}$} & \textbf{Node$_{opt}$} & \textbf{Reduce} & \textbf{Time$(s^{-1})$} \\
+	\hline
+	compress & 205 & 130 & $36.59\%$ & 0.008 \\
+	crypto & 312 & 158 & $49.36\%$ & 0.010 \\
+	bootstrap & 514 & 279 & $45.72\%$ & 0.019 \\
+	commons-codec & 1742 & 886 & $49.14\%$ & 0.202 \\
+	junit & 5859 & 3243 & $44.65\%$ & 2.269 \\
+	commons-httpclient & 9708 & 5164 & $46.81\%$ & 4.651 \\
+	serializer & 9600 & 6668 & $30.54\%$ & 3.198 \\
+	xerces & 41634 & N/A & N/A & N/A\\
+	eclipse & 34631 & N/A & N/A & N/A\\
+	derby & 112265 & N/A & N/A & N/A\\
+	xalan & 103697 & N/A & N/A & N/A\\
+	antlr & 56589 & N/A & N/A & N/A\\
+%	jython & / & / & / & /\\
+	batik & 89336 & N/A & N/A & N/A\\
+	\hline
+\end{tabular}
+\label{experiment:Optimalization}
+\end{table}
+
+\textbf{Optimazation:}We use a split algorithm to merge the node that have the same behavior. Thus we can reduce the space. The results are showed in Tabel~\ref{experiment:Optimalization}. We evaluated our optimazation algorithm on all benchmarks and sucessfully exceute our approach on 7 benchmarks. It shows that we can reduce the space by about 45$\%$ on average, with a reasonable time consuming. Another 6 benchmarks can not be execute because the same reason metioned above with PTA. We put the label "N/A" on Table~\ref{experiment:Optimalization}.
+
+\begin{table}[!htbp]\centering
+\caption{Callsite generated with different analysis}
+\begin{tabular}{lcccc}
+	\hline
+	\textbf{bench} & \textbf{CS$_{origin}$} & \textbf{CS$_{cha}$} & \textbf{CS$_{pta}$} & \textbf{CS$_{tfa}$} \\
+	\hline
+	compress & 153 & 160 & 18 & 73 \\
+	crypto & 302 & 307 & 62 & 121 \\
+	bootstrap & 657 & 801 & 891 & 328 \\
+	commons-codec & 1162 & 1372 & 270 & 554 \\
+	junit & 3196 & 17532 & 11176 & 1197 \\
+	commons-httpclient & 6817 & 17118 & 567 & 2928 \\
+	serializer & 4782 & 9533 & 1248 & 1756 \\
+	xerces & 24579 & 56252 & 10631 & 8120 \\
+	eclipse & 23607 & 95073 & 70016 & 9379 \\
+	derby & 69537 & 180428 & 85212 & 16381 \\
+	xalan & 57430 & 155866 & N/A & 18669 \\
+	antlr & 62007 & 147014 & N/A & 17177 \\
+%	jython & 129332 & 466167 & / & /  \\
+	batik & 56877 & 235071 & N/A & 20901 \\
+	\hline
+\end{tabular}
+\label{experiment:Callsite}
+\end{table}
 
 \section{Related Work}\label{sec:related-work}
 
