@@ -39,7 +39,7 @@ public class RelationAnalyzer {
         }
         if(pp == null) {
 //            pp = "/home/sean/bench_compile/";
-            pp = "/home/sean/bench_compared/crypto/";
+            pp = "/home/sean/bench_compared/xerces.jar";
         }
         if(outputTxt == null) {
             outputTxt = "default.txt";
@@ -270,7 +270,7 @@ public class RelationAnalyzer {
                 } else if(relation1.relationType.equals(Relation.TYPE_FIELD)) {
                     if(relation1.left != null) {
                         Set<Relation> valueToRelation = new HashSet<Relation>();
-                        Set<Relation> relatedRelation = Relation.valueRelationHolder.get(relation1.left);
+                        Set<Relation> relatedRelation = Relation.partialRelationHolder.get(relation1.left);
                         if(relatedRelation == null) {
                             continue;
                         }
@@ -278,12 +278,33 @@ public class RelationAnalyzer {
                         relationIter2 = valueToRelation.iterator();
                         while (relationIter2.hasNext()) {
                             Relation relation2 = relationIter2.next();
-                            if (relation2.relationType.equals(Relation.TYPE_VAR2VAR)
-                                    && relation1.left.equals(relation2.left)) {
-                                relationToAdd.add(new Relation(relation2.right, relation1.right, relation1.field));
+                            if (relation2.right.equals(relation1.left)) {
+                                Set<Relation> zRelation = new HashSet<>();
+                                Set<Relation> zHolderRelation = Relation.partialRelationHolder.get(relation2.left);
+                                if(zHolderRelation == null) {
+                                    continue;
+                                }
+                                zRelation.addAll(zHolderRelation);
+                                Iterator<Relation> zIter = zRelation.iterator();
+                                Set<Value> allRight = new HashSet<>();
+                                while(zIter.hasNext()) {
+                                    Relation z = zIter.next();
+                                    if(z.left.equals(relation2.left)) {
+                                        allRight.add(z.right);
+                                    }
+                                }
+                                allRight.remove(relation2.right);
+                                if(allRight.size() != 0) {
+                                    Iterator<Value> rightIter = allRight.iterator();
+                                    while(rightIter.hasNext()) {
+                                        relationToAdd.add(new Relation(rightIter.next(), relation1.right, relation1.field));
+                                    }
+                                }
+
                             }
                             compCount++;
                         }
+
                     }
                 }
             }

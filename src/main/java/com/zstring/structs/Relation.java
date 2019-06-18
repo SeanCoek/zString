@@ -13,6 +13,8 @@ public class Relation {
     public static Set<Relation> globalRelations = new HashSet<Relation>();
     public static Map<Type, Set<Relation>> typeRelationHolder = new HashMap<Type, Set<Relation>>();
     public static Map<Value, Set<Relation>> valueRelationHolder = new HashMap<Value, Set<Relation>>();
+    public static Map<Value, Set<Relation>> fieldRelationHolder = new HashMap<>();
+    public static Map<Value, Set<Relation>> partialRelationHolder = new HashMap<>();
     public static int count = 0;
     public static int type_count = 0;
     public static int field_count = 0;
@@ -38,12 +40,27 @@ public class Relation {
                 }
                 valueRelations.add(this);
                 valueRelationHolder.put(left, valueRelations);
+
+                valueRelations = partialRelationHolder.get(left);
+                if (valueRelations == null) {
+                    valueRelations = new HashSet<Relation>();
+                }
+                valueRelations.add(this);
+                partialRelationHolder.put(left, valueRelations);
+
                 valueRelations = valueRelationHolder.get(right);
                 if (valueRelations == null) {
                     valueRelations = new HashSet<Relation>();
                 }
                 valueRelations.add(this);
                 valueRelationHolder.put(right, valueRelations);
+
+                valueRelations = partialRelationHolder.get(right);
+                if (valueRelations == null) {
+                    valueRelations = new HashSet<Relation>();
+                }
+                valueRelations.add(this);
+                partialRelationHolder.put(left, valueRelations);
             }
             count++;
             less_count++;
@@ -65,6 +82,13 @@ public class Relation {
                     }
                     valueRelations.add(this);
                     valueRelationHolder.put(left, valueRelations);
+
+//                    valueRelations = fieldRelationHolder.get(left);
+//                    if (valueRelations == null) {
+//                        valueRelations = new HashSet<Relation>();
+//                    }
+//                    valueRelations.add(this);
+//                    fieldRelationHolder.put(left, valueRelations);
                 }
             }
             if(right.getType() instanceof RefType || right.getType() instanceof ArrayType) {
@@ -74,6 +98,13 @@ public class Relation {
                 }
                 valueRelations.add(this);
                 valueRelationHolder.put(right, valueRelations);
+
+                valueRelations = fieldRelationHolder.get(right);
+                if (valueRelations == null) {
+                    valueRelations = new HashSet<Relation>();
+                }
+                valueRelations.add(this);
+                fieldRelationHolder.put(left, valueRelations);
             }
             count++;
             field_count++;

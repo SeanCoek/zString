@@ -7,37 +7,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6195f35d-b71f-4351-b3a3-5904f032416f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/target/zstring.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/draft/icfem.tex" beforeDir="false" afterPath="$PROJECT_DIR$/draft/icfem.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/default.txt" beforeDir="false" afterPath="$PROJECT_DIR$/default.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/experiment/ExperimentResult.aux" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/ExperimentResult.aux" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/experiment/ExperimentResult.log" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/ExperimentResult.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/experiment/ExperimentResult.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/ExperimentResult.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/experiment/ExperimentResult.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/ExperimentResult.synctex.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/experiment/ExperimentResult.tex" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/ExperimentResult.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA/antlr.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA/antlr.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA/batik.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA/batik.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA/bootstrap.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA/bootstrap.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA/calc.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA/codec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA/codec.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA/compress.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA/compress.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA/crypto.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA/crypto.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA/derby.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA/derby.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA/eclipse.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA/eclipse.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA/httpclient.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA/httpclient.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA/junit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA/junit.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA/serializer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA/serializer.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA/xalan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA/xalan.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA/xerces.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA/xerces.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA/zstring.jar" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA/zstring.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zstring/utils/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zstring/utils/FileUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fromsoot/PointsTo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fromsoot/PointsTo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/oldcode/OldCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/oldcode/OldCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zstring/analyzer/PointsToAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zstring/analyzer/PointsToAnalyzer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/zString.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zstring/analyzer/RelationAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zstring/analyzer/RelationAnalyzer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zstring/analyzer/ZStringAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zstring/analyzer/ZStringAnalyzer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zstring/env/SootEnvironment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zstring/env/SootEnvironment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zstring/structs/C2VRelation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zstring/structs/C2VRelation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zstring/structs/CG.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zstring/structs/CG.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zstring/structs/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zstring/structs/Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zstring/structs/Relation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zstring/structs/Relation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zstring/structs/Transition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zstring/structs/Transition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zstring/utils/FileUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zstring/utils/FileUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zstring/utils/SootUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zstring/utils/SootUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CHATest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CHATest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/OriginCallsiteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/OriginCallsiteTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PointerBenchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PointerBenchTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/RelationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RelationTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="812">
-              <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
+            <state relative-caret-position="209">
+              <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,8 +75,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="841">
-              <caret line="56" column="20" lean-forward="true" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+            <state relative-caret-position="856">
+              <caret line="307" selection-start-line="307" selection-end-line="307" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#generateRelation#0;class#RelationAnalyzer#0" />
@@ -93,7 +91,7 @@
                 <element signature="method#genRelationFromInvoke#0;class#RelationAnalyzer#0" />
                 <element signature="e#15463#18135#1" />
                 <element signature="e#22720#22768#1" />
-                <element signature="e#23053#23054#0" expanded="true" />
+                <element signature="e#24204#24205#0" expanded="true" />
                 <element signature="method#globalize#0;class#RelationAnalyzer#0" />
                 <element signature="method#minimalization#0;class#RelationAnalyzer#0" />
                 <element signature="method#splitIter#0;class#RelationAnalyzer#0" />
@@ -109,75 +107,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/utils/FileUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="769">
-              <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="716">
-              <caret line="26" column="88" selection-start-line="26" selection-start-column="88" selection-end-line="26" selection-end-column="88" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PointerBenchTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="972">
-              <caret line="72" column="26" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RelationTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="57" column="55" selection-start-line="57" selection-start-column="55" selection-end-line="57" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1479#1480#0" expanded="true" />
-                <element signature="method#calcPTA#0;class#PointsToAnalyzer#0" />
-                <element signature="method#setSparkPointsToAnalysis#0;class#PointsToAnalyzer#0" />
-                <element signature="method#calcOriginCallsite#0;class#PointsToAnalyzer#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/ChaAnalyzer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="59" column="55" selection-start-line="59" selection-start-column="55" selection-end-line="59" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1503#1504#0" expanded="true" />
-                <element signature="e#2000#2001#0" expanded="true" />
-                <element signature="e#2046#2047#0" expanded="true" />
-                <element signature="method#calcCHA#0;class#PointsToAnalyzer#0" />
-              </folding>
+            <state relative-caret-position="542">
+              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -227,11 +160,11 @@
         <option value="$PROJECT_DIR$/src/test/java/OriginCallsiteTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/utils/FileUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/ChaAnalyzer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java" />
         <option value="$PROJECT_DIR$/default.txt" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/utils/Calc.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java" />
       </list>
     </option>
@@ -275,7 +208,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="865" />
     <option name="y" value="468" />
     <option name="width" value="1400" />
@@ -377,7 +310,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560845994781" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560867831747" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../points2" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -440,7 +373,6 @@
     <configuration name="RelationAnalyzer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zstring.analyzer.RelationAnalyzer" />
       <module name="zString" />
-      <option name="PROGRAM_PARAMETERS" value="-split" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.zstring.analyzer.*" />
@@ -465,8 +397,8 @@
       <item itemvalue="Application.PointsToAnalyzer" />
       <item itemvalue="Application.RelationAnalyzer" />
       <item itemvalue="Application.ChaAnalyzer" />
-      <item itemvalue="JUnit.OriginCallsiteTest.antlr" />
       <item itemvalue="Application.Calc" />
+      <item itemvalue="JUnit.OriginCallsiteTest.antlr" />
     </list>
     <recent_temporary>
       <list>
@@ -533,10 +465,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="130" y="-8" width="2870" height="2008" extended-state="7" />
+    <frame x="130" y="-8" width="2870" height="2008" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22609633" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22609633" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -545,7 +477,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32963827" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49964055" visible="true" weight="0.3413069" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49964055" visible="true" weight="0.3413069" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5326721" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -626,6 +558,12 @@
           <line>175</line>
           <properties />
           <option name="timeStamp" value="215" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java</url>
+          <line>89</line>
+          <properties />
+          <option name="timeStamp" value="218" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1019,17 +957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/env/SootEnvironment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getLineNum#0;class#SootEnvironment#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/io/FileWriter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
@@ -1064,27 +991,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/default.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="716">
-          <caret line="26" column="88" selection-start-line="26" selection-start-column="88" selection-end-line="26" selection-end-column="88" />
         </state>
       </provider>
     </entry>
@@ -1123,10 +1033,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/env/SootEnvironment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getLineNum#0;class#SootEnvironment#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="841">
-          <caret line="56" column="20" lean-forward="true" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+        <state relative-caret-position="856">
+          <caret line="307" selection-start-line="307" selection-end-line="307" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#generateRelation#0;class#RelationAnalyzer#0" />
@@ -1141,7 +1079,7 @@
             <element signature="method#genRelationFromInvoke#0;class#RelationAnalyzer#0" />
             <element signature="e#15463#18135#1" />
             <element signature="e#22720#22768#1" />
-            <element signature="e#23053#23054#0" expanded="true" />
+            <element signature="e#24204#24205#0" expanded="true" />
             <element signature="method#globalize#0;class#RelationAnalyzer#0" />
             <element signature="method#minimalization#0;class#RelationAnalyzer#0" />
             <element signature="method#splitIter#0;class#RelationAnalyzer#0" />
