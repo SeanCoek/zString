@@ -2,854 +2,779 @@ generated 313 relations
 Relation Resolve time used: 0.014s
 total callsites: 73
 Nodes original: 205
-split ended.
-minimalization time used: 0.006s
-Nodes after min: 130
+minimalization time used: 0.008s
+Nodes after min: 105
 generated 313 relations
-Relation Resolve time used: 0.013s
+Relation Resolve time used: 0.011s
 total callsites: 73
 Nodes original: 205
-split ended.
-minimalization time used: 0.007s
-Nodes after min: 130
-generated 313 relations
-Relation Resolve time used: 0.013s
-total callsites: 73
-Nodes original: 205
-split ended.
-minimalization time used: 0.006s
-Nodes after min: 130
-generated 313 relations
-Relation Resolve time used: 0.016s
-total callsites: 73
-Nodes original: 205
-split ended.
-minimalization time used: 0.007s
-Nodes after min: 130
+minimalization time used: 0.005s
+Nodes after min: 105
 generated 313 relations
 Relation Resolve time used: 0.012s
 total callsites: 73
 Nodes original: 205
-split ended.
+minimalization time used: 0.005s
+Nodes after min: 105
+generated 313 relations
+Relation Resolve time used: 0.012s
+total callsites: 73
+Nodes original: 205
 minimalization time used: 0.007s
-Nodes after min: 130
+Nodes after min: 105
 generated 313 relations
-Relation Resolve time used: 0.014s
+Relation Resolve time used: 0.012s
 total callsites: 73
 Nodes original: 205
-split ended.
 minimalization time used: 0.008s
-Nodes after min: 130
+Nodes after min: 105
 generated 313 relations
 Relation Resolve time used: 0.013s
 total callsites: 73
 Nodes original: 205
-split ended.
-minimalization time used: 0.009s
-Nodes after min: 130
+minimalization time used: 0.006s
+Nodes after min: 105
 generated 313 relations
-Relation Resolve time used: 0.016s
+Relation Resolve time used: 0.012s
 total callsites: 73
 Nodes original: 205
-split ended.
-minimalization time used: 0.011s
-Nodes after min: 130
+minimalization time used: 0.005s
+Nodes after min: 105
 generated 313 relations
-Relation Resolve time used: 0.014s
+Relation Resolve time used: 0.012s
 total callsites: 73
 Nodes original: 205
-split ended.
-minimalization time used: 0.009s
-Nodes after min: 130
+minimalization time used: 0.006s
+Nodes after min: 105
 generated 313 relations
-Relation Resolve time used: 0.013s
+Relation Resolve time used: 0.011s
 total callsites: 73
 Nodes original: 205
-split ended.
-minimalization time used: 0.008s
-Nodes after min: 130
+minimalization time used: 0.006s
+Nodes after min: 105
+generated 313 relations
+Relation Resolve time used: 0.011s
+total callsites: 73
+Nodes original: 205
+minimalization time used: 0.005s
+Nodes after min: 105
 generated 338 relations
-Relation Resolve time used: 0.029s
+Relation Resolve time used: 0.021s
 total callsites: 121
 Nodes original: 312
-split ended.
-minimalization time used: 0.009s
-Nodes after min: 158
+minimalization time used: 0.006s
+Nodes after min: 129
 generated 338 relations
-Relation Resolve time used: 0.027s
+Relation Resolve time used: 0.032s
 total callsites: 121
 Nodes original: 312
-split ended.
-minimalization time used: 0.008s
-Nodes after min: 158
+minimalization time used: 0.007s
+Nodes after min: 129
+generated 338 relations
+Relation Resolve time used: 0.022s
+total callsites: 121
+Nodes original: 312
+minimalization time used: 0.009s
+Nodes after min: 129
 generated 338 relations
 Relation Resolve time used: 0.034s
 total callsites: 121
 Nodes original: 312
-split ended.
-minimalization time used: 0.012s
-Nodes after min: 158
-generated 338 relations
-Relation Resolve time used: 0.031s
-total callsites: 121
-Nodes original: 312
-split ended.
-minimalization time used: 0.009s
-Nodes after min: 158
-generated 338 relations
-Relation Resolve time used: 0.028s
-total callsites: 121
-Nodes original: 312
-split ended.
 minimalization time used: 0.008s
-Nodes after min: 158
+Nodes after min: 129
 generated 338 relations
-Relation Resolve time used: 0.046s
+Relation Resolve time used: 0.021s
 total callsites: 121
 Nodes original: 312
-split ended.
-minimalization time used: 0.014s
-Nodes after min: 158
+minimalization time used: 0.006s
+Nodes after min: 129
 generated 338 relations
-Relation Resolve time used: 0.049s
+Relation Resolve time used: 0.025s
 total callsites: 121
 Nodes original: 312
-split ended.
-minimalization time used: 0.015s
-Nodes after min: 158
+minimalization time used: 0.005s
+Nodes after min: 129
 generated 338 relations
-Relation Resolve time used: 0.039s
+Relation Resolve time used: 0.021s
 total callsites: 121
 Nodes original: 312
-split ended.
+minimalization time used: 0.006s
+Nodes after min: 129
+generated 338 relations
+Relation Resolve time used: 0.033s
+total callsites: 121
+Nodes original: 312
 minimalization time used: 0.011s
-Nodes after min: 158
+Nodes after min: 129
 generated 338 relations
-Relation Resolve time used: 0.036s
+Relation Resolve time used: 0.044s
 total callsites: 121
 Nodes original: 312
-split ended.
-minimalization time used: 0.011s
-Nodes after min: 158
+minimalization time used: 0.009s
+Nodes after min: 129
 generated 338 relations
-Relation Resolve time used: 0.035s
+Relation Resolve time used: 0.047s
 total callsites: 121
 Nodes original: 312
-split ended.
-minimalization time used: 0.011s
-Nodes after min: 158
+minimalization time used: 0.018s
+Nodes after min: 129
 generated 661 relations
-Relation Resolve time used: 0.072s
+Relation Resolve time used: 0.047s
 total callsites: 328
 Nodes original: 514
-split ended.
-minimalization time used: 0.052s
-Nodes after min: 279
+minimalization time used: 0.024s
+Nodes after min: 190
 generated 661 relations
-Relation Resolve time used: 0.081s
+Relation Resolve time used: 0.032s
 total callsites: 328
 Nodes original: 514
-split ended.
-minimalization time used: 0.05s
-Nodes after min: 279
+minimalization time used: 0.026s
+Nodes after min: 190
 generated 661 relations
-Relation Resolve time used: 0.036s
+Relation Resolve time used: 0.041s
 total callsites: 328
 Nodes original: 514
-split ended.
-minimalization time used: 0.028s
-Nodes after min: 279
-generated 661 relations
-Relation Resolve time used: 0.042s
-total callsites: 328
-Nodes original: 514
-split ended.
-minimalization time used: 0.045s
-Nodes after min: 279
-generated 661 relations
-Relation Resolve time used: 0.075s
-total callsites: 328
-Nodes original: 514
-split ended.
-minimalization time used: 0.063s
-Nodes after min: 279
-generated 661 relations
-Relation Resolve time used: 0.043s
-total callsites: 328
-Nodes original: 514
-split ended.
-minimalization time used: 0.031s
-Nodes after min: 279
-generated 661 relations
-Relation Resolve time used: 0.042s
-total callsites: 328
-Nodes original: 514
-split ended.
-minimalization time used: 0.028s
-Nodes after min: 279
-generated 661 relations
-Relation Resolve time used: 0.052s
-total callsites: 328
-Nodes original: 514
-split ended.
-minimalization time used: 0.036s
-Nodes after min: 279
-generated 661 relations
-Relation Resolve time used: 0.035s
-total callsites: 328
-Nodes original: 514
-split ended.
-minimalization time used: 0.022s
-Nodes after min: 279
-generated 661 relations
-Relation Resolve time used: 0.031s
-total callsites: 328
-Nodes original: 514
-split ended.
 minimalization time used: 0.025s
-Nodes after min: 279
-generated 3679 relations
-Relation Resolve time used: 0.165s
-total callsites: 554
-Nodes original: 1742
-split ended.
-minimalization time used: 0.183s
-Nodes after min: 886
-generated 3679 relations
-Relation Resolve time used: 0.118s
-total callsites: 554
-Nodes original: 1742
-split ended.
-minimalization time used: 0.182s
-Nodes after min: 886
-generated 3679 relations
-Relation Resolve time used: 0.136s
-total callsites: 554
-Nodes original: 1742
-split ended.
-minimalization time used: 0.182s
-Nodes after min: 886
+Nodes after min: 190
+generated 661 relations
+Relation Resolve time used: 0.033s
+total callsites: 328
+Nodes original: 514
+minimalization time used: 0.025s
+Nodes after min: 190
+generated 661 relations
+Relation Resolve time used: 0.03s
+total callsites: 328
+Nodes original: 514
+minimalization time used: 0.029s
+Nodes after min: 190
+generated 661 relations
+Relation Resolve time used: 0.035s
+total callsites: 328
+Nodes original: 514
+minimalization time used: 0.026s
+Nodes after min: 190
+generated 661 relations
+Relation Resolve time used: 0.034s
+total callsites: 328
+Nodes original: 514
+minimalization time used: 0.034s
+Nodes after min: 190
+generated 661 relations
+Relation Resolve time used: 0.045s
+total callsites: 328
+Nodes original: 514
+minimalization time used: 0.024s
+Nodes after min: 190
+generated 661 relations
+Relation Resolve time used: 0.034s
+total callsites: 328
+Nodes original: 514
+minimalization time used: 0.028s
+Nodes after min: 190
+generated 661 relations
+Relation Resolve time used: 0.036s
+total callsites: 328
+Nodes original: 514
+minimalization time used: 0.024s
+Nodes after min: 190
 generated 3679 relations
 Relation Resolve time used: 0.173s
 total callsites: 554
 Nodes original: 1742
-split ended.
-minimalization time used: 0.197s
-Nodes after min: 886
+minimalization time used: 0.276s
+Nodes after min: 669
 generated 3679 relations
-Relation Resolve time used: 0.168s
+Relation Resolve time used: 0.161s
 total callsites: 554
 Nodes original: 1742
-split ended.
-minimalization time used: 0.18s
-Nodes after min: 886
+minimalization time used: 0.229s
+Nodes after min: 669
 generated 3679 relations
-Relation Resolve time used: 0.118s
+Relation Resolve time used: 0.16s
 total callsites: 554
 Nodes original: 1742
-split ended.
-minimalization time used: 0.18s
-Nodes after min: 886
+minimalization time used: 0.251s
+Nodes after min: 669
 generated 3679 relations
-Relation Resolve time used: 0.152s
+Relation Resolve time used: 0.176s
 total callsites: 554
 Nodes original: 1742
-split ended.
-minimalization time used: 0.2s
-Nodes after min: 886
+minimalization time used: 0.251s
+Nodes after min: 669
 generated 3679 relations
-Relation Resolve time used: 0.131s
+Relation Resolve time used: 0.134s
 total callsites: 554
 Nodes original: 1742
-split ended.
-minimalization time used: 0.21s
-Nodes after min: 886
+minimalization time used: 0.259s
+Nodes after min: 669
 generated 3679 relations
-Relation Resolve time used: 0.13s
+Relation Resolve time used: 0.169s
 total callsites: 554
 Nodes original: 1742
-split ended.
-minimalization time used: 0.181s
-Nodes after min: 886
+minimalization time used: 0.259s
+Nodes after min: 669
 generated 3679 relations
-Relation Resolve time used: 0.132s
+Relation Resolve time used: 0.141s
 total callsites: 554
 Nodes original: 1742
-split ended.
-minimalization time used: 0.189s
-Nodes after min: 886
+minimalization time used: 0.249s
+Nodes after min: 669
+generated 3679 relations
+Relation Resolve time used: 0.169s
+total callsites: 554
+Nodes original: 1742
+minimalization time used: 0.24s
+Nodes after min: 669
+generated 3679 relations
+Relation Resolve time used: 0.126s
+total callsites: 554
+Nodes original: 1742
+minimalization time used: 0.24s
+Nodes after min: 669
+generated 3679 relations
+Relation Resolve time used: 0.156s
+total callsites: 554
+Nodes original: 1742
+minimalization time used: 0.248s
+Nodes after min: 669
 generated 7088 relations
-Relation Resolve time used: 0.15s
+Relation Resolve time used: 0.158s
 total callsites: 1197
 Nodes original: 5859
-split ended.
-minimalization time used: 2.415s
-Nodes after min: 3243
+minimalization time used: 1.539s
+Nodes after min: 2755
 generated 7088 relations
-Relation Resolve time used: 0.184s
+Relation Resolve time used: 0.141s
 total callsites: 1197
 Nodes original: 5859
-split ended.
-minimalization time used: 2.546s
-Nodes after min: 3243
+minimalization time used: 1.514s
+Nodes after min: 2755
 generated 7088 relations
-Relation Resolve time used: 0.175s
+Relation Resolve time used: 0.157s
 total callsites: 1197
 Nodes original: 5859
-split ended.
-minimalization time used: 2.659s
-Nodes after min: 3243
+minimalization time used: 1.496s
+Nodes after min: 2755
 generated 7088 relations
-Relation Resolve time used: 0.289s
+Relation Resolve time used: 0.17s
 total callsites: 1197
 Nodes original: 5859
-split ended.
-minimalization time used: 3.711s
-Nodes after min: 3243
+minimalization time used: 1.542s
+Nodes after min: 2755
 generated 7088 relations
 Relation Resolve time used: 0.162s
 total callsites: 1197
 Nodes original: 5859
-split ended.
-minimalization time used: 3.387s
-Nodes after min: 3243
+minimalization time used: 1.49s
+Nodes after min: 2755
 generated 7088 relations
-Relation Resolve time used: 0.202s
+Relation Resolve time used: 0.17s
 total callsites: 1197
 Nodes original: 5859
-split ended.
-minimalization time used: 2.971s
-Nodes after min: 3243
+minimalization time used: 1.475s
+Nodes after min: 2755
 generated 7088 relations
-Relation Resolve time used: 0.18s
+Relation Resolve time used: 0.139s
 total callsites: 1197
 Nodes original: 5859
-split ended.
-minimalization time used: 2.626s
-Nodes after min: 3243
+minimalization time used: 1.505s
+Nodes after min: 2755
 generated 7088 relations
-Relation Resolve time used: 0.187s
+Relation Resolve time used: 0.155s
 total callsites: 1197
 Nodes original: 5859
-split ended.
-minimalization time used: 2.191s
-Nodes after min: 3243
+minimalization time used: 1.482s
+Nodes after min: 2755
 generated 7088 relations
-Relation Resolve time used: 0.167s
+Relation Resolve time used: 0.173s
 total callsites: 1197
 Nodes original: 5859
-split ended.
-minimalization time used: 2.742s
-Nodes after min: 3243
+minimalization time used: 1.534s
+Nodes after min: 2755
 generated 7088 relations
-Relation Resolve time used: 0.154s
+Relation Resolve time used: 0.149s
 total callsites: 1197
 Nodes original: 5859
-split ended.
-minimalization time used: 2.509s
-Nodes after min: 3243
+minimalization time used: 1.51s
+Nodes after min: 2755
 generated 11455 relations
-Relation Resolve time used: 0.402s
+Relation Resolve time used: 0.295s
 total callsites: 2928
 Nodes original: 9708
-split ended.
-minimalization time used: 5.852s
-Nodes after min: 5164
+minimalization time used: 3.232s
+Nodes after min: 3922
 generated 11455 relations
-Relation Resolve time used: 0.358s
+Relation Resolve time used: 0.349s
 total callsites: 2928
 Nodes original: 9708
-split ended.
-minimalization time used: 4.865s
-Nodes after min: 5164
+minimalization time used: 3.101s
+Nodes after min: 3922
 generated 11455 relations
-Relation Resolve time used: 0.388s
+Relation Resolve time used: 0.295s
 total callsites: 2928
 Nodes original: 9708
-split ended.
-minimalization time used: 4.493s
-Nodes after min: 5164
+minimalization time used: 3.008s
+Nodes after min: 3922
 generated 11455 relations
-Relation Resolve time used: 0.346s
+Relation Resolve time used: 0.312s
 total callsites: 2928
 Nodes original: 9708
-split ended.
-minimalization time used: 4.007s
-Nodes after min: 5164
+minimalization time used: 3.11s
+Nodes after min: 3922
 generated 11455 relations
-Relation Resolve time used: 0.359s
+Relation Resolve time used: 0.336s
 total callsites: 2928
 Nodes original: 9708
-split ended.
-minimalization time used: 4.675s
-Nodes after min: 5164
+minimalization time used: 3.101s
+Nodes after min: 3922
 generated 11455 relations
-Relation Resolve time used: 0.519s
+Relation Resolve time used: 0.303s
 total callsites: 2928
 Nodes original: 9708
-split ended.
-minimalization time used: 5.277s
-Nodes after min: 5164
+minimalization time used: 3.165s
+Nodes after min: 3922
 generated 11455 relations
-Relation Resolve time used: 0.35s
+Relation Resolve time used: 0.366s
 total callsites: 2928
 Nodes original: 9708
-split ended.
-minimalization time used: 4.055s
-Nodes after min: 5164
+minimalization time used: 3.214s
+Nodes after min: 3922
 generated 11455 relations
-Relation Resolve time used: 0.354s
+Relation Resolve time used: 0.315s
 total callsites: 2928
 Nodes original: 9708
-split ended.
-minimalization time used: 4.451s
-Nodes after min: 5164
+minimalization time used: 3.043s
+Nodes after min: 3922
 generated 11455 relations
-Relation Resolve time used: 0.348s
+Relation Resolve time used: 0.301s
 total callsites: 2928
 Nodes original: 9708
-split ended.
-minimalization time used: 4.004s
-Nodes after min: 5164
+minimalization time used: 3.644s
+Nodes after min: 3922
 generated 11455 relations
-Relation Resolve time used: 0.343s
+Relation Resolve time used: 0.306s
 total callsites: 2928
 Nodes original: 9708
-split ended.
-minimalization time used: 4.0s
-Nodes after min: 5164
+minimalization time used: 3.318s
+Nodes after min: 3922
 generated 21063 relations
-Relation Resolve time used: 1.81s
+Relation Resolve time used: 1.658s
 total callsites: 1756
 Nodes original: 9600
-split ended.
-minimalization time used: 3.445s
-Nodes after min: 6670
+minimalization time used: 4.242s
+Nodes after min: 3989
 generated 21063 relations
-Relation Resolve time used: 1.568s
+Relation Resolve time used: 1.795s
 total callsites: 1756
 Nodes original: 9600
-split ended.
-minimalization time used: 3.345s
-Nodes after min: 6668
+minimalization time used: 4.019s
+Nodes after min: 3989
 generated 21063 relations
-Relation Resolve time used: 1.322s
+Relation Resolve time used: 2.028s
 total callsites: 1756
 Nodes original: 9600
-split ended.
-minimalization time used: 2.981s
-Nodes after min: 6664
+minimalization time used: 4.174s
+Nodes after min: 3989
 generated 21063 relations
-Relation Resolve time used: 1.785s
+Relation Resolve time used: 1.765s
 total callsites: 1756
 Nodes original: 9600
-split ended.
-minimalization time used: 3.6s
-Nodes after min: 6668
+minimalization time used: 4.232s
+Nodes after min: 3989
 generated 21063 relations
-Relation Resolve time used: 1.388s
+Relation Resolve time used: 1.694s
 total callsites: 1756
 Nodes original: 9600
-split ended.
-minimalization time used: 3.557s
-Nodes after min: 6668
+minimalization time used: 4.24s
+Nodes after min: 3989
 generated 21063 relations
-Relation Resolve time used: 1.835s
+Relation Resolve time used: 1.857s
 total callsites: 1756
 Nodes original: 9600
-split ended.
-minimalization time used: 3.595s
-Nodes after min: 6668
+minimalization time used: 4.342s
+Nodes after min: 3989
 generated 21063 relations
-Relation Resolve time used: 1.739s
+Relation Resolve time used: 1.713s
 total callsites: 1756
 Nodes original: 9600
-split ended.
-minimalization time used: 3.277s
-Nodes after min: 6668
+minimalization time used: 4.151s
+Nodes after min: 3989
 generated 21063 relations
-Relation Resolve time used: 1.856s
+Relation Resolve time used: 1.703s
 total callsites: 1756
 Nodes original: 9600
-split ended.
-minimalization time used: 3.369s
-Nodes after min: 6668
+minimalization time used: 4.265s
+Nodes after min: 3989
 generated 21063 relations
-Relation Resolve time used: 1.609s
+Relation Resolve time used: 1.638s
 total callsites: 1756
 Nodes original: 9600
-split ended.
-minimalization time used: 3.53s
-Nodes after min: 6668
+minimalization time used: 4.362s
+Nodes after min: 3989
 generated 21063 relations
-Relation Resolve time used: 1.445s
+Relation Resolve time used: 1.642s
 total callsites: 1756
 Nodes original: 9600
-split ended.
-minimalization time used: 3.529s
-Nodes after min: 6668
+minimalization time used: 4.247s
+Nodes after min: 3989
 generated 87872 relations
-Relation Resolve time used: 2.883s
+Relation Resolve time used: 3.569s
 total callsites: 8120
 Nodes original: 41634
-split ended.
-minimalization time used: 928.538s
-Nodes after min: 25351
+minimalization time used: 128.784s
+Nodes after min: 17081
 generated 87872 relations
-Relation Resolve time used: 2.444s
+Relation Resolve time used: 3.058s
 total callsites: 8120
 Nodes original: 41634
-split ended.
-minimalization time used: 922.814s
-Nodes after min: 25351
+minimalization time used: 141.797s
+Nodes after min: 17051
 generated 87872 relations
-Relation Resolve time used: 2.167s
+Relation Resolve time used: 3.178s
 total callsites: 8120
 Nodes original: 41634
-split ended.
-minimalization time used: 961.547s
-Nodes after min: 25376
+minimalization time used: 128.876s
+Nodes after min: 17081
 generated 87872 relations
-Relation Resolve time used: 2.714s
+Relation Resolve time used: 3.302s
 total callsites: 8120
 Nodes original: 41634
-split ended.
-minimalization time used: 971.865s
-Nodes after min: 25370
+minimalization time used: 133.086s
+Nodes after min: 17069
 generated 87872 relations
-Relation Resolve time used: 2.79s
+Relation Resolve time used: 2.953s
 total callsites: 8120
 Nodes original: 41634
-split ended.
-minimalization time used: 493.657s
-Nodes after min: 25394
+minimalization time used: 129.671s
+Nodes after min: 17081
 generated 87872 relations
-Relation Resolve time used: 3.212s
+Relation Resolve time used: 3.244s
 total callsites: 8120
 Nodes original: 41634
-split ended.
-minimalization time used: 993.915s
-Nodes after min: 25332
+minimalization time used: 137.04s
+Nodes after min: 17068
 generated 87872 relations
-Relation Resolve time used: 2.191s
+Relation Resolve time used: 2.879s
 total callsites: 8120
 Nodes original: 41634
-split ended.
-minimalization time used: 1044.014s
-Nodes after min: 25338
+minimalization time used: 131.817s
+Nodes after min: 17081
 generated 87872 relations
-Relation Resolve time used: 2.531s
+Relation Resolve time used: 2.956s
 total callsites: 8120
 Nodes original: 41634
-split ended.
-minimalization time used: 962.384s
-Nodes after min: 25368
+minimalization time used: 129.062s
+Nodes after min: 17081
 generated 87872 relations
-Relation Resolve time used: 3.243s
+Relation Resolve time used: 2.847s
 total callsites: 8120
 Nodes original: 41634
-split ended.
-minimalization time used: 958.753s
-Nodes after min: 25370
+minimalization time used: 137.443s
+Nodes after min: 17073
 generated 87872 relations
-Relation Resolve time used: 2.93s
+Relation Resolve time used: 3.285s
 total callsites: 8120
 Nodes original: 41634
-split ended.
-minimalization time used: 890.532s
-Nodes after min: 25324
-generated 46990 relations
-Relation Resolve time used: 1.396s
+minimalization time used: 136.481s
+Nodes after min: 17065
+generated 46986 relations
+Relation Resolve time used: 1.12s
 total callsites: 9409
 Nodes original: 34631
-Nodes after min: 0
-generated 46990 relations
-Relation Resolve time used: 1.263s
+minimalization time used: 63.636s
+Nodes after min: 14776
+generated 46986 relations
+Relation Resolve time used: 1.316s
 total callsites: 9409
 Nodes original: 34631
-Nodes after min: 0
-generated 46990 relations
-Relation Resolve time used: 1.619s
+minimalization time used: 61.34s
+Nodes after min: 14776
+generated 46986 relations
+Relation Resolve time used: 1.272s
 total callsites: 9409
 Nodes original: 34631
-Nodes after min: 0
-generated 46990 relations
-Relation Resolve time used: 2.024s
+minimalization time used: 62.759s
+Nodes after min: 14741
+generated 46986 relations
+Relation Resolve time used: 1.262s
 total callsites: 9409
 Nodes original: 34631
-Nodes after min: 0
-generated 46990 relations
-Relation Resolve time used: 1.78s
+minimalization time used: 62.823s
+Nodes after min: 14776
+generated 46986 relations
+Relation Resolve time used: 1.305s
 total callsites: 9409
 Nodes original: 34631
-Nodes after min: 0
-generated 46990 relations
-Relation Resolve time used: 1.868s
+minimalization time used: 60.932s
+Nodes after min: 14776
+generated 46986 relations
+Relation Resolve time used: 1.317s
 total callsites: 9409
 Nodes original: 34631
-Nodes after min: 0
-generated 46990 relations
-Relation Resolve time used: 1.529s
+minimalization time used: 60.277s
+Nodes after min: 14776
+generated 46986 relations
+Relation Resolve time used: 1.178s
 total callsites: 9409
 Nodes original: 34631
-Nodes after min: 0
-generated 46988 relations
-Relation Resolve time used: 1.617s
+minimalization time used: 63.425s
+Nodes after min: 14776
+generated 46986 relations
+Relation Resolve time used: 1.541s
 total callsites: 9409
 Nodes original: 34631
-Nodes after min: 0
-generated 46988 relations
-Relation Resolve time used: 1.931s
+minimalization time used: 59.645s
+Nodes after min: 14742
+generated 46986 relations
+Relation Resolve time used: 1.257s
 total callsites: 9409
 Nodes original: 34631
-Nodes after min: 0
-generated 46988 relations
-Relation Resolve time used: 1.733s
+minimalization time used: 60.629s
+Nodes after min: 14776
+generated 46986 relations
+Relation Resolve time used: 1.188s
 total callsites: 9409
 Nodes original: 34631
-Nodes after min: 0
-generated 217938 relations
-Relation Resolve time used: 16.825s
+minimalization time used: 59.428s
+Nodes after min: 14733
+generated 217922 relations
+Relation Resolve time used: 21.578s
 total callsites: 16432
 Nodes original: 112265
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 1398276096 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/sean/IdeaProjects/zString/experiment/rawData/TFA_new/hs_err_pid17182.log
-generated 217938 relations
-Relation Resolve time used: 17.052s
+minimalization time used: 1166.782s
+Nodes after min: 48221
+generated 217922 relations
+Relation Resolve time used: 21.116s
 total callsites: 16432
 Nodes original: 112265
-generated 217938 relations
-Relation Resolve time used: 17.197s
+minimalization time used: 1129.929s
+Nodes after min: 48230
+generated 217922 relations
+Relation Resolve time used: 21.917s
 total callsites: 16432
 Nodes original: 112265
-generated 217938 relations
-Relation Resolve time used: 17.709s
+minimalization time used: 1088.208s
+Nodes after min: 48281
+generated 217922 relations
+Relation Resolve time used: 20.898s
 total callsites: 16432
 Nodes original: 112265
-generated 217938 relations
-Relation Resolve time used: 17.814s
+minimalization time used: 1108.264s
+Nodes after min: 48253
+generated 217922 relations
+Relation Resolve time used: 21.519s
 total callsites: 16432
 Nodes original: 112265
-generated 217938 relations
-Relation Resolve time used: 17.001s
+minimalization time used: 1125.526s
+Nodes after min: 48215
+generated 217922 relations
+Relation Resolve time used: 21.081s
 total callsites: 16432
 Nodes original: 112265
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 1506803712 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/sean/IdeaProjects/zString/experiment/rawData/TFA_new/hs_err_pid17835.log
-generated 217938 relations
-Relation Resolve time used: 18.026s
+minimalization time used: 1139.334s
+Nodes after min: 48189
+generated 217922 relations
+Relation Resolve time used: 21.846s
 total callsites: 16432
 Nodes original: 112265
-generated 217938 relations
-Relation Resolve time used: 17.182s
+minimalization time used: 1142.393s
+Nodes after min: 48243
+generated 217922 relations
+Relation Resolve time used: 21.796s
 total callsites: 16432
 Nodes original: 112265
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 866123776 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/sean/IdeaProjects/zString/experiment/rawData/TFA_new/hs_err_pid18076.log
-generated 217938 relations
-Relation Resolve time used: 16.32s
+minimalization time used: 1155.16s
+Nodes after min: 48239
+generated 217922 relations
+Relation Resolve time used: 21.595s
 total callsites: 16432
 Nodes original: 112265
-generated 217938 relations
-Relation Resolve time used: 17.55s
+minimalization time used: 1112.349s
+Nodes after min: 48269
+generated 217922 relations
+Relation Resolve time used: 21.082s
 total callsites: 16432
 Nodes original: 112265
-generated 198915 relations
-Relation Resolve time used: 37.972s
+minimalization time used: 1150.178s
+Nodes after min: 48195
+generated 198910 relations
+Relation Resolve time used: 24.914s
 total callsites: 18682
 Nodes original: 103697
-generated 198914 relations
-Relation Resolve time used: 36.735s
+minimalization time used: 1080.921s
+Nodes after min: 45055
+generated 198910 relations
+Relation Resolve time used: 25.876s
 total callsites: 18682
 Nodes original: 103697
-generated 198918 relations
-Relation Resolve time used: 38.623s
+minimalization time used: 1072.274s
+Nodes after min: 45086
+generated 198910 relations
+Relation Resolve time used: 29.781s
 total callsites: 18682
 Nodes original: 103697
-generated 198921 relations
-Relation Resolve time used: 37.798s
+minimalization time used: 1078.307s
+Nodes after min: 45045
+generated 198910 relations
+Relation Resolve time used: 29.507s
 total callsites: 18682
 Nodes original: 103697
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 1227358208 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/sean/IdeaProjects/zString/experiment/rawData/TFA_new/hs_err_pid18723.log
-generated 198914 relations
-Relation Resolve time used: 40.443s
+minimalization time used: 1054.576s
+Nodes after min: 45119
+generated 198910 relations
+Relation Resolve time used: 26.278s
 total callsites: 18682
 Nodes original: 103697
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 1186463744 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/sean/IdeaProjects/zString/experiment/rawData/TFA_new/hs_err_pid18845.log
-generated 198914 relations
-Relation Resolve time used: 37.115s
+minimalization time used: 1090.069s
+Nodes after min: 45119
+generated 198910 relations
+Relation Resolve time used: 24.489s
 total callsites: 18682
 Nodes original: 103697
-generated 198921 relations
-Relation Resolve time used: 37.922s
+minimalization time used: 1095.981s
+Nodes after min: 45055
+generated 198910 relations
+Relation Resolve time used: 28.61s
 total callsites: 18682
 Nodes original: 103697
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 1290797056 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/sean/IdeaProjects/zString/experiment/rawData/TFA_new/hs_err_pid19076.log
-generated 198914 relations
-Relation Resolve time used: 37.692s
+minimalization time used: 1077.911s
+Nodes after min: 45087
+generated 198910 relations
+Relation Resolve time used: 28.411s
 total callsites: 18682
 Nodes original: 103697
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 1110966272 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/sean/IdeaProjects/zString/experiment/rawData/TFA_new/hs_err_pid19172.log
-generated 198918 relations
-Relation Resolve time used: 38.624s
+minimalization time used: 1093.282s
+Nodes after min: 45119
+generated 198910 relations
+Relation Resolve time used: 27.334s
 total callsites: 18682
 Nodes original: 103697
-generated 198917 relations
-Relation Resolve time used: 29.962s
+minimalization time used: 1049.18s
+Nodes after min: 45075
+generated 198910 relations
+Relation Resolve time used: 27.146s
 total callsites: 18682
 Nodes original: 103697
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 1063780352 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/sean/IdeaProjects/zString/experiment/rawData/TFA_new/hs_err_pid19385.log
-generated 96737 relations
-Relation Resolve time used: 4.167s
+minimalization time used: 1066.557s
+Nodes after min: 45089
+generated 96733 relations
+Relation Resolve time used: 3.603s
 total callsites: 17183
 Nodes original: 56589
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 651165696 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/sean/IdeaProjects/zString/experiment/rawData/TFA_new/hs_err_pid19490.log
-generated 96737 relations
-Relation Resolve time used: 4.224s
+minimalization time used: 223.706s
+Nodes after min: 21740
+generated 96739 relations
+Relation Resolve time used: 3.612s
+total callsites: 17187
+Nodes original: 56592
+minimalization time used: 223.812s
+Nodes after min: 21759
+generated 96739 relations
+Relation Resolve time used: 3.291s
+total callsites: 17187
+Nodes original: 56592
+minimalization time used: 230.709s
+Nodes after min: 21761
+generated 96739 relations
+Relation Resolve time used: 3.352s
+total callsites: 17187
+Nodes original: 56592
+minimalization time used: 221.777s
+Nodes after min: 21760
+generated 96733 relations
+Relation Resolve time used: 3.532s
 total callsites: 17183
 Nodes original: 56589
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 552075264 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/sean/IdeaProjects/zString/experiment/rawData/TFA_new/hs_err_pid19579.log
-generated 96737 relations
-Relation Resolve time used: 4.313s
+minimalization time used: 222.55s
+Nodes after min: 21736
+generated 96739 relations
+Relation Resolve time used: 3.221s
+total callsites: 17187
+Nodes original: 56592
+minimalization time used: 225.831s
+Nodes after min: 21732
+generated 96733 relations
+Relation Resolve time used: 3.371s
 total callsites: 17183
 Nodes original: 56589
-generated 96737 relations
-Relation Resolve time used: 4.18s
+minimalization time used: 213.199s
+Nodes after min: 21681
+generated 96733 relations
+Relation Resolve time used: 3.347s
 total callsites: 17183
 Nodes original: 56589
-generated 96737 relations
-Relation Resolve time used: 3.731s
-total callsites: 17183
-Nodes original: 56589
-generated 96737 relations
-Relation Resolve time used: 4.208s
-total callsites: 17183
-Nodes original: 56589
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 579862528 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/sean/IdeaProjects/zString/experiment/rawData/TFA_new/hs_err_pid19960.log
-generated 96737 relations
-Relation Resolve time used: 4.007s
-total callsites: 17183
-Nodes original: 56589
-generated 96737 relations
-Relation Resolve time used: 3.535s
-total callsites: 17183
-Nodes original: 56589
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 687865856 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/sean/IdeaProjects/zString/experiment/rawData/TFA_new/hs_err_pid20148.log
-generated 96737 relations
-Relation Resolve time used: 4.263s
-total callsites: 17183
-Nodes original: 56589
-generated 96737 relations
-Relation Resolve time used: 4.232s
-total callsites: 17183
-Nodes original: 56589
-generated 157979 relations
-Relation Resolve time used: 8.709s
+minimalization time used: 209.932s
+Nodes after min: 21748
+generated 96739 relations
+Relation Resolve time used: 3.266s
+total callsites: 17187
+Nodes original: 56592
+minimalization time used: 229.086s
+Nodes after min: 21761
+generated 96739 relations
+Relation Resolve time used: 3.305s
+total callsites: 17187
+Nodes original: 56592
+minimalization time used: 230.708s
+Nodes after min: 21761
+generated 157978 relations
+Relation Resolve time used: 5.496s
 total callsites: 20990
 Nodes original: 89336
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 1335885824 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/sean/IdeaProjects/zString/experiment/rawData/TFA_new/hs_err_pid20399.log
-generated 157983 relations
-Relation Resolve time used: 8.132s
+minimalization time used: 646.256s
+Nodes after min: 39089
+generated 157978 relations
+Relation Resolve time used: 5.257s
 total callsites: 20990
 Nodes original: 89336
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 1171783680 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/sean/IdeaProjects/zString/experiment/rawData/TFA_new/hs_err_pid20491.log
-generated 157983 relations
-Relation Resolve time used: 8.469s
+minimalization time used: 633.269s
+Nodes after min: 39129
+generated 157978 relations
+Relation Resolve time used: 5.551s
 total callsites: 20990
 Nodes original: 89336
-generated 157983 relations
-Relation Resolve time used: 8.817s
+minimalization time used: 611.889s
+Nodes after min: 39111
+generated 157978 relations
+Relation Resolve time used: 5.177s
 total callsites: 20990
 Nodes original: 89336
-generated 157984 relations
-Relation Resolve time used: 8.316s
+minimalization time used: 652.098s
+Nodes after min: 39118
+generated 157978 relations
+Relation Resolve time used: 5.162s
 total callsites: 20990
 Nodes original: 89336
-generated 157983 relations
-Relation Resolve time used: 7.37s
+minimalization time used: 653.256s
+Nodes after min: 39162
+generated 157978 relations
+Relation Resolve time used: 5.378s
 total callsites: 20990
 Nodes original: 89336
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 1522008064 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/sean/IdeaProjects/zString/experiment/rawData/TFA_new/hs_err_pid20926.log
-generated 157980 relations
-Relation Resolve time used: 8.83s
+minimalization time used: 665.303s
+Nodes after min: 39152
+generated 157978 relations
+Relation Resolve time used: 5.119s
 total callsites: 20990
 Nodes original: 89336
-generated 157983 relations
-Relation Resolve time used: 8.667s
+minimalization time used: 658.249s
+Nodes after min: 39112
+generated 157978 relations
+Relation Resolve time used: 4.974s
 total callsites: 20990
 Nodes original: 89336
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 1275068416 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/sean/IdeaProjects/zString/experiment/rawData/TFA_new/hs_err_pid21131.log
-generated 157985 relations
-Relation Resolve time used: 6.743s
+minimalization time used: 659.629s
+Nodes after min: 39118
+generated 157978 relations
+Relation Resolve time used: 5.056s
 total callsites: 20990
 Nodes original: 89336
-generated 157983 relations
-Relation Resolve time used: 8.482s
+minimalization time used: 664.566s
+Nodes after min: 39104
+generated 157978 relations
+Relation Resolve time used: 5.421s
 total callsites: 20990
 Nodes original: 89336
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 1323827200 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/sean/IdeaProjects/zString/experiment/rawData/TFA_new/hs_err_pid21325.log
+minimalization time used: 644.467s
+Nodes after min: 39112

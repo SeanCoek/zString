@@ -1,10 +1,6 @@
-package com.zstring.souffle;
+package com.zstring.datalog;
 
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Writer;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class PartialOrder extends Fact {

@@ -32,7 +32,8 @@ public class PointsToAnalyzer {
             }
         }
         if(pp == null) {
-            pp = "/home/sean/bench_compile/";
+//            pp = "/home/sean/bench_compile/";
+            pp = "/home/sean/bench_compared/bootstrap.jar";
         }
         if(outputTxt == null) {
             outputTxt = "default.txt";
@@ -82,7 +83,17 @@ public class PointsToAnalyzer {
                         Value caller = ((AbstractInstanceInvokeExpr) invokeExpr).getBase();
                         if(caller instanceof Local) {
                             PointsToSet pts = pta.reachingObjects((Local) caller);
-                            callsites += pts.possibleTypes().size();
+                            for(Type t : pts.possibleTypes()) {
+                                SootClass c = Scene.v().getSootClass(t.toString());
+                                try {
+                                    SootMethod sm = c.getMethod(invokeExpr.getMethod().getSubSignature());
+                                    if (sm.isConcrete()) {
+                                        callsites++;
+                                    }
+                                } catch (Exception e) {
+
+                                }
+                            }
                         }
                     } else if(invokeExpr instanceof JStaticInvokeExpr) {
                         callsites++;

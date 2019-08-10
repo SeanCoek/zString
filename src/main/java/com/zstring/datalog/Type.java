@@ -1,4 +1,4 @@
-package com.zstring.souffle;
+package com.zstring.datalog;
 
 public class Type {
     public String name;

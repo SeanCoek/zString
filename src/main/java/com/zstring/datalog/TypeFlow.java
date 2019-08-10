@@ -1,4 +1,4 @@
-package com.zstring.souffle;
+package com.zstring.datalog;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,0 +1,73 @@
+// define types
+.type var
+.type field
+.type type
+.type method
+
+// declared IDB relations
+.decl PartialOrder(x:var, y:var)
+.decl TypeFlow(c:type, x:var)
+.decl FieldAccess(x:var, f:field, y:var)
+
+
+// declared EDB relations
+// to = from;
+.decl Assign(from:var, to:var)
+// to = new class();
+.decl NewInstance(class:type, to:var)
+// owner.f = from;
+.decl FieldStore(owner:var, f:field, from:var)
+// to = owner.f;
+.decl FieldLoad(owner:var, f:field, to:var)
+// method that a class can access
+.decl MethodAccess(class:type, m:method)
+// parameter and corresponding index of a method
+.decl Parameter(class:type, m:method, p:var, idx:number)
+// argument and corresponding index of a method
+.decl Argument(receiver:var, m:method, a:var, idx:number)
+// "this" variable of a method
+.decl This(class:type, m:method, this:var)
+// "return" variable of a method
+.decl Return(class:type, m:method, r:var)
+// assignTo = receiver.m();
+.decl MethodInvoke(receiver:var, m:method, assignTo:var)
+
+
+
+// declared rules
+// for PartialOrder
+PartialOrder(x, y) :- Assign(x, y).
+PartialOrder(x, y) :- PartialOrder(x, z), PartialOrder(z, y).
+PartialOrder(x, y) :- FieldLoad(z, f, y), FieldAccess(z, f, x).
+PartialOrder(x, x) :- PartialOrder(x, _); PartialOrder(_, x).
+// method invocation: x = rec.m(a);
+// argument PartialOrder to parameter
+PartialOrder(a, p) :- 
+  MethodInvoke(rec, m, _), TypeFlow(t, rec), MethodAccess(t, m),
+  Parameter(t, m, p, idx), Argument(rec, m, a, idx).
+// "return" variable PartialOrder to "x"
+PartialOrder(ret, x) :-
+  MethodInvoke(rec, m, x), TypeFlow(t, rec), MethodAccess(t, m),
+  Return(t, m, ret), x != "".
+
+// for TypeFlow
+TypeFlow(c, x) :- NewInstance(c, x).
+TypeFlow(c, x) :- TypeFlow(c, y), PartialOrder(y, x).
+// method invocation: x = rec.m(a);
+TypeFlow(c, this) :- MethodInvoke(rec, m, _), TypeFlow(c, rec), This(c, m, this).
+
+// for FieldAccess
+FieldAccess(x, f, y) :- FieldStore(x, f, y).
+FieldAccess(x, f, z) :- FieldAccess(y, f, z), PartialOrder(z_, x), PartialOrder(z_, y).
+
+
+// input
+.input Assign
+.input NewInstance
+.input FieldStore
+.input FieldLoad
+
+// output
+.output PartialOrder
+.output TypeFlow
+.output FieldAccess

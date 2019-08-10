@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.5.6)  1 AUG 2019 21:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.5.6)  10 AUG 2019 10:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1016,7 +1016,7 @@ onts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/courier/ucrr8a.pfb>
-Output written on icfem-latest-experiment.pdf (12 pages, 315514 bytes).
+Output written on icfem-latest-experiment.pdf (12 pages, 315991 bytes).
 PDF statistics:
  181 PDF objects out of 1000 (max. 8388607)
  139 compressed objects within 2 object streams

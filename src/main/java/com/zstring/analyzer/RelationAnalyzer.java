@@ -1,7 +1,9 @@
 package com.zstring.analyzer;
 
 import com.zstring.env.SootEnvironment;
+import com.zstring.opti.Optimization;
 import com.zstring.structs.Relation;
+import com.zstring.structs.Splitter;
 import com.zstring.structs.Transition;
 import com.zstring.utils.FileUtil;
 import com.zstring.utils.SootUtils;
@@ -16,13 +18,9 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 public class RelationAnalyzer {
     public static Map<String, Set<Relation>> allRelations = new HashMap<String, Set<Relation>>();
     public static Map<String, Map<String, List<Value>>> methodInfoMap = new HashMap<String, Map<String, List<Value>>>();
-    public static Map<Value, Integer> globalValueMap;
-    public static Map<Type, Integer> globalTypeMap;
-    public static Set<Transition> globalTransition;
     public static Set<Relation> globalRelations;
-//    public static Map<Type, Set<Relation>> typeRelationHolder = new HashMap<Type, Set<Relation>>();
-//    public static Map<Value, Set<Relation>> valueRelationHolder = new HashMap<Value, Set<Relation>>();
-    public static ArrayList<Set> splited = new ArrayList<Set>();
+    public static List<Set<Value>> splited = new ArrayList<>();
+    public static Map<Value, Set<Unit>> invocationIfCallerTypeChange = new HashMap<>();
     public static boolean isSplit = false;
     public static String outputTxt;
 
@@ -39,7 +37,7 @@ public class RelationAnalyzer {
         }
         if(pp == null) {
 //            pp = "/home/sean/bench_compile/";
-            pp = "/home/sean/bench_compared/xerces.jar";
+            pp = "/home/sean/bench_compared/bootstrap.jar";
         }
         if(outputTxt == null) {
             outputTxt = "default.txt";
@@ -59,6 +57,8 @@ public class RelationAnalyzer {
         long t2 = new Date().getTime();
         System.out.println("generated " + Relation.count + " relations");
         System.out.println("Relation Resolve time used: " + (t2-t1)/1000.0 + "s");
+
+
         dataOutput[3] = String.valueOf((t2-t1)/1000.0);
         calcCallSite();
         dataOutput[5] = String.valueOf(calcOriginalNodes());
@@ -168,7 +168,7 @@ public class RelationAnalyzer {
             if(fieldLoadToResolve.size() > 0) {
                 resolveFieldLoad(relationSet, fieldLoadToResolve);
             }
-            extendRelation(relationSet);
+//            extendRelation(relationSet);
             invokeStmtMap.put(m.getSignature(), invokeStmtSet);
             allRelations.put(m.getSignature(), relationSet);
         }
@@ -227,7 +227,6 @@ public class RelationAnalyzer {
     public void extendRelation(Set relationSet) {
 
         while(true) {
-//            long t1 = new Date().getTime();
             int compCount = 0;
             Set<Relation> relationToAdd = new HashSet<Relation>();
             Iterator<Relation> relationIter1 = relationSet.iterator();
@@ -247,7 +246,16 @@ public class RelationAnalyzer {
                         Relation relation2 = relationIter2.next();
                         if(relation2.relationType.equals(Relation.TYPE_VAR2VAR)
                                 && relation2.left.equals(relation1.right)) {
-                            relationToAdd.add(new Relation(null, relation2.right, t));
+                            Set<Type> typeToR2Right = Relation.typeReachByValue.get(relation2.right);
+                            if(typeToR2Right == null || !typeToR2Right.contains(t)) {
+                                relationToAdd.add(new Relation(null, relation2.right, t));
+                                // type of right change
+                                Set<Unit> invokeUnitByRight = invocationIfCallerTypeChange.get(relation2.right);
+                                if(invocationIfCallerTypeChange.get(relation2.right) != null) {
+                                    extendRelationWhenCallerTypeChange(relationToAdd, t, relation2.right, invokeUnitByRight);
+                                }
+                            }
+
                         }
                         compCount++;
                     }
@@ -313,9 +321,6 @@ public class RelationAnalyzer {
             if(relationSet.size() == sizeBefore) {
                 break;
             }
-//            long t2 = new Date().getTime();
-//            System.out.println("extend " + (relationSet.size()-sizeBefore) + " relations");
-//            System.out.println("used " + (t2-t1) + "ms, compared counts: " + compCount);
         }
     }
 
@@ -366,6 +371,16 @@ public class RelationAnalyzer {
             return;
         }
         genRelationFromInvoke(invokeExpr, hostMethod, caller, calleeSub, receiver);
+
+        // keep "x.m()" so we could extend relation when the type of "x" changing.
+        if(caller != null) {
+            Set<Unit> invokeSet = invocationIfCallerTypeChange.get(caller);
+            if(invokeSet == null) {
+                invokeSet = new HashSet<>();
+            }
+            invokeSet.add(invokeUnit);
+            invocationIfCallerTypeChange.put(caller, invokeSet);
+        }
     }
 
     public void genRelationFromInvoke(InvokeExpr invokeExpr, String hostMethod, Value caller, String calleeSub, Value receiver) {
@@ -501,181 +516,303 @@ public class RelationAnalyzer {
     }
 
     public void globalize() {
-        int num = 0;
-//        globalValueMap = new HashMap<Value, Integer>();
-//        globalTypeMap = new HashMap<Type, Integer>();
-//        globalTransition = new HashSet<Transition>();
         globalRelations = new HashSet<Relation>();
         globalRelations.addAll(Relation.globalRelations);
-//        Iterator<Map.Entry<String, Set<Relation>>> relationEntryIter = allRelations.entrySet().iterator();
-//        while(relationEntryIter.hasNext()) {
-//            Map.Entry<String, Set<Relation>> relationEntry = relationEntryIter.next();
-////            String methodSig = relationEntry.getKey();
-//            Set<Relation> relations = relationEntry.getValue();
-//            globalRelations.addAll(relations);
-//            Iterator<Relation> rIter = relations.iterator();
-//            while(rIter.hasNext()) {
-//                Relation r = rIter.next();
-//                if(r.relationType.equals(Relation.TYPE_CLASS2VAR)) {
-//                    if(!globalTypeMap.containsKey(r.type)) {
-//                        globalTypeMap.put(r.type, num++);
-//                    }
-//                    if(!globalValueMap.containsKey(r.right)) {
-//                        globalValueMap.put(r.right, num++);
-//                    }
-//                    Transition t = new Transition(globalTypeMap.get(r.type), globalValueMap.get(r.right));
-//                    t.type = r.type;
-//                    if(!globalTransition.contains(t)) {
-//                        globalTransition.add(t);
-//                    }
-//                } else if(r.relationType.equals(Relation.TYPE_VAR2VAR)) {
-//                    if(!globalValueMap.containsKey(r.left)) {
-//                        globalValueMap.put(r.left, num++);
-//                    }
-//                    if(!globalValueMap.containsKey(r.right)) {
-//                        globalValueMap.put(r.right, num++);
-//                    }
-//                    Transition t = new Transition(globalValueMap.get(r.left), globalValueMap.get(r.right));
-//                    if(!globalTransition.contains(t)) {
-//                        globalTransition.add(t);
-//                    }
-//                } else if(r.relationType.equals(Relation.TYPE_FIELD)) {
-//                    if(!globalValueMap.containsKey(r.left)) {
-//                        globalValueMap.put(r.left, num++);
-//                    }
-//                    if(!globalValueMap.containsKey(r.right)) {
-//                        globalValueMap.put(r.right, num++);
-//                    }
-//                    Transition t = new Transition(globalValueMap.get(r.left), globalValueMap.get(r.right));
-//                    t.field = r.field;
-//                    if(!globalTransition.contains(t)) {
-//                        globalTransition.add(t);
-//                    }
-//                }
-//            }
-//        }
     }
 
     public void minimalization() {
-        Set allValue = Relation.valueRelationHolder.keySet();
-        splitIter(splited, allValue);
+        // merge by SCC
+        Set<Value> groupUnMergeBySCC = new HashSet<>();
+        List<Set<Value>> mergeGroupBySCC = Optimization.mergeSCC(Relation.globalValues, groupUnMergeBySCC);
+
+        // merge by Type
+        List<Set<Value>> groupMergeByType = new LinkedList<>();
+        List<Set<Value>> groupsUnMergeByType = new LinkedList<>();
+        Set<Value> groupUnMergeByType = null;
+        // deal with the groups merged by SCC
+        for (int i = 0; i < mergeGroupBySCC.size(); i++) {
+            Set<Value> singleGroup = mergeGroupBySCC.get(i);
+            groupUnMergeByType = new HashSet<>();
+            groupMergeByType.addAll(Optimization.mergeByType(singleGroup, groupUnMergeByType, true));
+            if(!groupUnMergeByType.isEmpty()) {
+                groupsUnMergeByType.add(groupUnMergeByType);
+            }
+        }
+        // deal with the group which can not be merged by SCC
+        groupUnMergeByType = new HashSet<>();
+        groupMergeByType.addAll(Optimization.mergeByType(groupUnMergeBySCC, groupUnMergeByType, false));
+        if(!groupUnMergeByType.isEmpty()) {
+            groupsUnMergeByType.add(groupUnMergeByType);
+        }
+        mergeGroupBySCC = null;
+
+        // merge by field
+        Set<Value> groupUnMergeByField = null;
+        // deal with the groups merged by type
+        for (int i = 0; i < groupMergeByType.size(); i++) {
+            Set<Value> singleGroup = groupMergeByType.get(i);
+            groupUnMergeByField = new HashSet<>();
+            splited.addAll(Optimization.mergeByField(singleGroup, groupUnMergeByField, true));
+            for(Value finalUnMerge : groupUnMergeByField) {
+                Set<Value> valueHolder = new HashSet<>();
+                valueHolder.add(finalUnMerge);
+                splited.add(valueHolder);
+            }
+        }
+        // deal with the groups which can not be merged by type
+        for (int i = 0; i < groupsUnMergeByType.size(); i++) {
+            Set<Value> singleGroup = groupsUnMergeByType.get(i);
+            groupUnMergeByField = new HashSet<>();
+            splited.addAll(Optimization.mergeByField(singleGroup, groupUnMergeByField, false));
+            for(Value finalUnMerge : groupUnMergeByField) {
+                Set<Value> valueHolder = new HashSet<>();
+                valueHolder.add(finalUnMerge);
+                splited.add(valueHolder);
+            }
+        }
+//        System.out.println("here");
+
+//        splited.addAll(mergeGroupByField);
+//        for(int i = 0; i < mergeGroupByType.size(); i++) {
+//            group = mergeGroupByType.remove(i);
+//            mergeGroupByField.addAll(Optimization.mergeByField(group));
+//        }
+
+//        splitIter(splited, Relation.globalValues);
     }
 
-    public void splitIter(List<Set> splitted, Set<Value> obj) {
-        int round = 0;
-
-        Queue<Set<Value>> currentSplittedGroup = new ConcurrentLinkedQueue<Set<Value>>();
-        currentSplittedGroup.add(obj);
-        Queue<Set<Value>> wokerQueue = new ConcurrentLinkedQueue<Set<Value>>();
-        wokerQueue.add(obj);
-        while(!wokerQueue.isEmpty()) {
-            Set<Value> valueToSplit = wokerQueue.poll();
-            if(valueToSplit.size() == 1) {
-                splitted.add(valueToSplit);
+    public void extendRelationWhenCallerTypeChange(Set<Relation> extendSet, Type t, Value caller, Set<Unit> invocations) {
+        for (Unit invokeUnit: invocations) {
+            Value receiver = null;
+            InvokeExpr invokeExpr = null;
+            if (invokeUnit instanceof JAssignStmt) {
+                receiver = ((JAssignStmt) invokeUnit).getLeftOp();
+                invokeExpr = (InvokeExpr) ((JAssignStmt) invokeUnit).getRightOp();
+            } else if (invokeUnit instanceof JInvokeStmt) {
+                invokeExpr = ((JInvokeStmt) invokeUnit).getInvokeExpr();
+            }
+            String calleeSub = null;
+            if (invokeExpr instanceof JSpecialInvokeExpr) {
+                JSpecialInvokeExpr specInvokeExpr = (JSpecialInvokeExpr) invokeExpr;
+                calleeSub = specInvokeExpr.getMethod().getSubSignature();
+            } else if (invokeExpr instanceof JVirtualInvokeExpr) {
+                JVirtualInvokeExpr virtualInvokeExpr = (JVirtualInvokeExpr) invokeExpr;
+                calleeSub = virtualInvokeExpr.getMethod().getSubSignature();
+            } else if (invokeExpr instanceof JStaticInvokeExpr) {
+                JStaticInvokeExpr staticInvokeExpr = (JStaticInvokeExpr) invokeExpr;
+                calleeSub = staticInvokeExpr.getMethod().getSubSignature();
+            } else if (invokeExpr instanceof JInterfaceInvokeExpr) {
+                try {
+                    JInterfaceInvokeExpr interfaceInvokeExpr = (JInterfaceInvokeExpr) invokeExpr;
+                    calleeSub = interfaceInvokeExpr.getMethod().getSubSignature();
+                } catch (Exception e) {
+                    continue;
+                }
+            } else if (invokeExpr instanceof JDynamicInvokeExpr) {
                 continue;
             }
-            Set usedSplitter = new HashSet();
+
+
+            String callee = SootUtils.getMethodSigByType(t, calleeSub);
+            if(callee == null) {
+                continue;
+            }
+            if(methodInfoMap.get(callee) == null) {
+                continue;
+            }
+            List<Value> params = methodInfoMap.get(callee).get("param");
+            Value vThis = params.get(0);
+            List<Value> returns = methodInfoMap.get(callee).get("return");
+//            Set<Relation> calleeRelations = allRelations.get(callee);
+            // c --> this(c,m)
+            Set<Type> typeTovThis = Relation.typeReachByValue.get(vThis);
+            if(typeTovThis == null || !typeTovThis.contains(t)) {
+                extendSet.add(new Relation(null, vThis, t));
+                Set<Unit> invokeByVThis = invocationIfCallerTypeChange.get(vThis);
+                if(invokeByVThis != null) {
+                    extendRelationWhenCallerTypeChange(extendSet, t, vThis, invokeByVThis);
+                }
+            }
+
+            // x' (- return(c,m)
+            if(receiver != null) {
+                if(receiver instanceof JArrayRef) {
+                    receiver = ((JArrayRef) receiver).getBase();
+                }
+                for(Value vReturn: returns) {
+                    extendSet.add(new Relation(vReturn, receiver));
+                }
+            }
+
+            for(int i=0; i < invokeExpr.getArgCount(); i++) {
+                Value z = invokeExpr.getArg(i);
+                Value p = params.get(i+1);      // "this" variable was store in params(0)
+                if(z instanceof JArrayRef) {
+                    z = ((JArrayRef) z).getBase();
+                }
+                if(p instanceof JArrayRef) {
+                    p = ((JArrayRef) p).getBase();
+                }
+                extendSet.add(new Relation(z, p));
+            }
+        }
+    }
+
+    public void splitIter(List splitted, Set<Value> obj) {
+//        int round = 0;
+
+        Queue<Set<Value>> wokerQueue = new ConcurrentLinkedQueue<>();
+        Queue<Set<Splitter>> usedSpliiterQueue = new ConcurrentLinkedQueue<>();
+        wokerQueue.add(obj);
+        usedSpliiterQueue.add(new HashSet<>());
+        obj = null;
+        List<Set<Value>> currentSplittedGroup = null;
+        while(!wokerQueue.isEmpty()) {
+//            round++;
+            Set<Value> valueToSplit = wokerQueue.poll();
+            Set<Splitter> curRoundUsedSplitter = usedSpliiterQueue.poll();
+            if(valueToSplit.size() == 1) {
+                splitted.add(valueToSplit);
+                valueToSplit = null;
+                continue;
+            }
 
             // find a splitter
-            Object splitter = null;
+            Splitter splitter = null;
             boolean splitFlag = false;
             Set<Value> include = null;
             Set<Value> exclude = null;
             Iterator<Value> vIter1 = valueToSplit.iterator();
             while (vIter1.hasNext()) {
                 Value v = vIter1.next();
+                include = new HashSet<>();
+                exclude = new HashSet<>();
+
                 Set<Relation> vRelations = Relation.valueRelationHolder.get(v);
-                Iterator<Relation> rIter = vRelations.iterator();
-                include = new HashSet<Value>();
-                exclude = new HashSet<Value>();
-                while (rIter.hasNext()) {
-                    Relation r = rIter.next();
-                    if (r.relationType.equals(Relation.TYPE_FIELD)) {
-                        if (!usedSplitter.contains(r.field)) {
-                            splitter = r.field;
-                            usedSplitter.add(splitter);
-                            if(split(valueToSplit, currentSplittedGroup, splitter, r.right, include, exclude)) {
+                if(vRelations == null) {
+                    // this means value v has no one relation out.
+                    include = null;
+                    exclude = null;
+                    continue;
+                } else {
+                    Iterator<Relation> rIter = vRelations.iterator();
+                    while (rIter.hasNext()) {
+                        Relation r = rIter.next();
+                        if (r.relationType.equals(Relation.TYPE_FIELD)) {
+                            splitter = new Splitter(Splitter.SplitterType.TYPE_FIELD, null, r.field, r.left, r.right);
+                        } else if (r.relationType.equals(Relation.TYPE_VAR2VAR)) {
+                            splitter = new Splitter(Splitter.SplitterType.TYPE_PARTIAL, null, null, r.left, r.right);
+                        } else {
+                            splitter = new Splitter(Splitter.SplitterType.TYPE_CLASS, r.type, null, null, r.right);
+                        }
+                        if (!curRoundUsedSplitter.contains(splitter)) {
+                            curRoundUsedSplitter.add(splitter);
+                            if (split(valueToSplit, splitter, include, exclude, curRoundUsedSplitter)) {
                                 splitFlag = true;
                                 break;
                             }
                         }
-                    } else if (r.relationType.equals(Relation.TYPE_VAR2VAR)) {
-                        if (!usedSplitter.contains(r.right)) {
-                            splitter = r.right;
-                            usedSplitter.add(splitter);
-                            if(split(valueToSplit, currentSplittedGroup, splitter, null, include, exclude)) {
-                                splitFlag = true;
-                                break;
-                            }
-                        }
-                    } else {
-                        if(!usedSplitter.contains(r.type)) {
-                            splitter = r.type;
-                            usedSplitter.add(splitter);
-                            if(split(valueToSplit, currentSplittedGroup, splitter, null, include, exclude)) {
-                                splitFlag = true;
-                                break;
-                            }
-                        }
+//
                     }
                 }
                 if(splitFlag) {
-                    wokerQueue.add(include);
-                    wokerQueue.add(exclude);
-                    Set groupSplited = currentSplittedGroup.poll();
-                    groupSplited = null;
+//                    if(round > 1000) {
+//                        System.out.println(round);
+//                    }
+                    if(include.size() == 1) {
+                        splitted.add(include);
+                        wokerQueue.add(exclude);
+                        usedSpliiterQueue.add(curRoundUsedSplitter);
+                    } else if(exclude.size() == 1) {
+                        splitted.add(exclude);
+                        wokerQueue.add(include);
+                        usedSpliiterQueue.add(curRoundUsedSplitter);
+                    } else {
+                        Set curRoundUsedSpliiterCopy = new HashSet();
+                        curRoundUsedSpliiterCopy.addAll(curRoundUsedSplitter);
+                        wokerQueue.add(include);
+                        wokerQueue.add(exclude);
+                        usedSpliiterQueue.add(curRoundUsedSplitter);
+                        usedSpliiterQueue.add(curRoundUsedSpliiterCopy);
+                        curRoundUsedSpliiterCopy = null;
+                    }
                     valueToSplit = null;
-                    currentSplittedGroup.add(include);
-                    currentSplittedGroup.add(exclude);
-//                    System.out.println("split round: " + (++round));
+                    curRoundUsedSplitter = null;
+                    currentSplittedGroup = null;
                     break;
                 }
             }
             if (!splitFlag) {
                 // cannot be split anymore
                 splitted.add(valueToSplit);
+                valueToSplit = null;
                 continue;
             }
         }
-        System.out.println("split ended.");
+//        System.out.println("split ended. process " + round + " rounds");
 
     }
 
-    private boolean split(Set<Value> valueToSplit, Queue<Set<Value>> currentSplitGroup, Object splitter, Object splitAssist, Set<Value> include, Set<Value> exclude) {
+    private boolean split(Set<Value> valueToSplit, List<Set<Value>> currentSplitGroup, Object splitter, Object splitAssist, Set<Value> include, Set<Value> exclude) {
         Iterator<Value> vIter = valueToSplit.iterator();
+        int round = 0;
         while (vIter.hasNext()) {
+            round++;
             Value v = vIter.next();
-            Set<Relation> vRelations = Relation.valueRelationHolder.get(v);
+            Set<Relation> vRelations = null;
+            if(splitter instanceof SootField) {
+                vRelations = Relation.fieldRelationHolder.get(v);
+            } else if(splitter instanceof Type) {
+                vRelations = Relation.typeRelationHolder.get(v);
+            } else {
+                vRelations = Relation.partialRelationHolder.get(v);
+            }
+            if(vRelations == null) {
+                continue;
+            }
+//            Set<Relation> vRelations = Relation.valueRelationHolder.get(v);
             Iterator<Relation> rIter = vRelations.iterator();
             while (rIter.hasNext()) {
                 Relation r = rIter.next();
-                if (splitter instanceof SootField) {
-                    if (r.relationType.equals(Relation.TYPE_FIELD) && r.field.equals(splitter)) {
-                        Iterator<Set<Value>> curGroupIter = currentSplitGroup.iterator();
-                        while (curGroupIter.hasNext()) {
-                            Set<Value> group = curGroupIter.next();
-                            if(group.contains(r.right) && group.contains(splitAssist)) {
-                                include.add(v);
-                                break;
-                            }
-                        }
-
-                    }
-                } else if(splitter instanceof Type) {
-                    if(r.relationType.equals(Relation.TYPE_CLASS2VAR) && r.type.equals(splitter)) {
+                if (splitter instanceof SootField
+                        && r.relationType.equals(Relation.TYPE_FIELD)
+                        && r.field.equals(splitter)) {
+//                        Iterator<Set<Value>> curGroupIter = currentSplitGroup.iterator();
+//                        while (curGroupIter.hasNext()) {
+//                            Set<Value> group = curGroupIter.next();
+//                            // check if the right-hand-side of these two relation in the same group
+//                            if(group.contains(r.right) && group.contains(splitAssist)) {
+//                                include.add(v);
+//                                break;
+//                            }
+//                        }
+                    if(r.right.equals(splitAssist)) {
                         include.add(v);
                         break;
                     }
+                } else if(splitter instanceof Type
+                            && r.relationType.equals(Relation.TYPE_CLASS2VAR)
+                            && r.type.equals(splitter)) {
+                        include.add(v);
+                        break;
                 } else {
-                    if (r.relationType.equals(Relation.TYPE_VAR2VAR)) {
-                        if(r.right.equals(splitter)) {
-                            include.add(v);
-                            break;
-                        }
+                    if (r.relationType.equals(Relation.TYPE_VAR2VAR) && r.right.equals(splitter)) {
+//                        Iterator<Set<Value>> curGroupIter = currentSplitGroup.iterator();
+//                        while (curGroupIter.hasNext()) {
+//                            Set<Value> group = curGroupIter.next();
+//                            // check if the right-hand-side of these two relation in the same group
+//                            if(group.contains(r.right) && group.contains(splitter)) {
+//                                include.add(v);
+//                                break;
+//                            }
+//                        }
+                        include.add(v);
+                        break;
                     }
                 }
             }
         }
+        System.out.println(valueToSplit.size() + " ?= " + round);
         if(include.size() == valueToSplit.size() || include.size() == 0) {
             return false;
         }
@@ -683,6 +820,102 @@ public class RelationAnalyzer {
         exclude.removeAll(include);
         return true;
     }
+
+    private boolean split(Set<Value> valueToSplit, Splitter splitter, Set<Value> include, Set<Value> exclude, Set<Splitter> curUsedSplitter) {
+//        int round = 1;
+        int increSplitterNum = 0;
+        if(splitter.splitType == Splitter.SplitterType.TYPE_FIELD) {
+            if(splitter.field.isStatic()) {
+                Set<Value> staticReach = Relation.staticFieldReachValues.get(splitter.field);
+                assert(staticReach != null);
+                staticReach.retainAll(valueToSplit);
+                assert(staticReach.contains(splitter.right));
+                include.addAll(staticReach);
+
+                // update used splitter
+                if(staticReach.size() != 1) {
+                    Iterator<Value> vIter = staticReach.iterator();
+                    while (vIter.hasNext()) {
+                        Value reach = vIter.next();
+                        Splitter asscSplitter = new Splitter(Splitter.SplitterType.TYPE_FIELD, null, splitter.field, null, reach);
+                        curUsedSplitter.add(asscSplitter);
+//                        increSplitterNum++;
+                    }
+                }
+            } else {
+                Set<Value> valueReachLeft = Relation.valueLeftReachByField.get(splitter.field);
+                assert (valueReachLeft != null);
+                valueReachLeft.retainAll(valueToSplit);
+                assert (valueReachLeft.contains(splitter.left));
+                if (valueReachLeft.size() == 1) {
+                    include.addAll(valueReachLeft);
+                } else {
+                    Iterator<Value> vIter = valueReachLeft.iterator();
+                    while (vIter.hasNext()) {
+                        Value left = vIter.next();
+//                    round++;
+                        Set<Relation> vRelations = Relation.fieldRelationHolder.get(left);
+                        if (vRelations != null) {
+                            Iterator<Relation> rIter = vRelations.iterator();
+                            while (rIter.hasNext()) {
+                                Relation r = rIter.next();
+                                if (r.field.equals(splitter.field) && r.right.equals(splitter.right)) {
+                                    include.add(left);
+                                    Splitter asscSplitter = new Splitter(Splitter.SplitterType.TYPE_FIELD, null, splitter.field, r.left, r.right);
+                                    curUsedSplitter.add(asscSplitter);
+//                                    increSplitterNum++;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        } else if(splitter.splitType == Splitter.SplitterType.TYPE_CLASS) {
+            Set<Value> reachValues = Relation.valueReachByType.get(splitter.type);
+            if (reachValues != null) {
+                reachValues.retainAll(valueToSplit);
+                include.addAll(reachValues);
+                if(reachValues.size() != 1) {
+                    Iterator<Value> vIter = reachValues.iterator();
+                    while (vIter.hasNext()) {
+                        Value reach = vIter.next();
+                        Splitter asscSplitter = new Splitter(Splitter.SplitterType.TYPE_CLASS, splitter.type, null, null, reach);
+                        curUsedSplitter.add(asscSplitter);
+//                        increSplitterNum++;
+                    }
+                }
+            }
+        } else {
+            // in this case the splitter would be the right-hand-side of a partial order relations
+            Set<Value> reachValues = Relation.partialReachByRight.get(splitter.right);
+            if(reachValues != null) {
+                reachValues.retainAll(valueToSplit);
+                include.addAll(reachValues);
+                if(reachValues.size() != 1) {
+                    Iterator<Value> vIter = reachValues.iterator();
+                    while (vIter.hasNext()) {
+                        Value reach = vIter.next();
+                        Splitter asscSplitter = new Splitter(Splitter.SplitterType.TYPE_PARTIAL, null, null, reach, splitter.right);
+                        curUsedSplitter.add(asscSplitter);
+//                        increSplitterNum++;
+                    }
+                }
+            }
+        }
+//        System.out.println("increSplitterNum = " + increSplitterNum);
+//        System.out.println(valueToSplit.size() + " ?= " + round);
+        assert(include.size() != 0);
+        if(include.size() == valueToSplit.size()) {
+            return false;
+        }
+        exclude.addAll(valueToSplit);
+        exclude.removeAll(include);
+        return true;
+    }
+
+
 
     private int calcCallSite() {
         int callsites = 0;
@@ -732,7 +965,7 @@ public class RelationAnalyzer {
 
     private int calcOriginalNodes() {
         int nodes = 0;
-        nodes = Relation.valueRelationHolder.keySet().size();
+        nodes = Relation.globalValues.size();
         System.out.println("Nodes original: " + nodes);
         return nodes;
     }

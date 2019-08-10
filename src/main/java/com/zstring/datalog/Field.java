@@ -1,4 +1,4 @@
-package com.zstring.souffle;
+package com.zstring.datalog;
 
 import soot.SootField;
 
