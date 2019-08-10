@@ -1,4 +1,4 @@
-package com.zstring.structs;
+package com.zstring.souffle;
 
 import soot.Value;
 
@@ -33,5 +33,10 @@ public class Variable {
     @Override
     public int hashCode() {
         return this.sootVar.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return this.name;
     }
 }
