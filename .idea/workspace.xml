@@ -7,68 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6195f35d-b71f-4351-b3a3-5904f032416f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zstring/datalog/Field.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zstring/datalog/PartialOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zstring/datalog/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zstring/datalog/TypeFlow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zstring/opti/Optimization.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/default.txt" beforeDir="false" afterPath="$PROJECT_DIR$/default.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/draft/icfem-latest-experiment.log" beforeDir="false" afterPath="$PROJECT_DIR$/draft/icfem-latest-experiment.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/draft/icfem-latest-experiment.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/draft/icfem-latest-experiment.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/draft/icfem-latest-experiment.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/draft/icfem-latest-experiment.synctex.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/draft/icfem-latest-experiment.tex" beforeDir="false" afterPath="$PROJECT_DIR$/draft/icfem-latest-experiment.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/PTA_new/antlr.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/PTA_new/batik.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/PTA_new/bootstrap.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/PTA_new/codec.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/PTA_new/compress.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/PTA_new/crypto.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/PTA_new/derby.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/PTA_new/eclipse.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/PTA_new/httpclient.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/PTA_new/junit.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/PTA_new/ptaAnalyzer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/PTA_new/ptaAnalyzer.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/PTA_new/serializer.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/PTA_new/xalan.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/PTA_new/xerces.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA_new/antlr.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA_new/antlr.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA_new/batik.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA_new/batik.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA_new/bootstrap.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA_new/bootstrap.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA_new/codec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA_new/codec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA_new/compress.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA_new/compress.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA_new/crypto.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA_new/crypto.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA_new/derby.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA_new/derby.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA_new/eclipse.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA_new/eclipse.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA_new/httpclient.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA_new/httpclient.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA_new/junit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA_new/junit.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA_new/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA_new/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA_new/runTFA.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA_new/runTFA.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA_new/serializer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA_new/serializer.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA_new/xalan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA_new/xalan.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA_new/xerces.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/rawData/TFA_new/xerces.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/rawData/TFA_new/zstring.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zstring/souffle/Field.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zstring/souffle/PartialOrder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zstring/souffle/Type.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zstring/souffle/TypeFlow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zstring/souffle/Variable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zstring/datalog/Variable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/souffle/TypeFlowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/souffle/TypeFlowTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/oldcode/OldCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zstring/analyzer/PointsToAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zstring/analyzer/PointsToAnalyzer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zstring/analyzer/RelationAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zstring/analyzer/RelationAnalyzer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zstring/structs/Relation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zstring/structs/Relation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CHATest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/OriginCallsiteTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PointerBenchTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/RelationTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/zstring.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/zString-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/zString-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -92,29 +39,28 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="59" />
+            <state relative-caret-position="553">
+              <caret line="71" column="38" lean-forward="true" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#555#578#0" expanded="true" />
-                <element signature="method#analyze#0;class#RelationAnalyzer#0" />
                 <element signature="method#generateRelation#0;class#RelationAnalyzer#0" />
                 <element signature="method#resolveFieldLoad#0;class#RelationAnalyzer#0" />
+                <element signature="method#extendRelation#0;class#RelationAnalyzer#0" />
                 <element signature="method#resolveMethodCall#0;class#RelationAnalyzer#0" />
                 <element signature="method#dealInvoke#0;class#RelationAnalyzer#0" />
                 <element signature="method#genRelationFromInvoke#0;class#RelationAnalyzer#0" />
                 <element signature="e#24295#24343#1" />
-                <element signature="e#24777#24778#0" expanded="true" />
+                <element signature="e#25228#25229#0" expanded="true" />
                 <element signature="method#globalize#0;class#RelationAnalyzer#0" />
-                <element signature="method#minimalization#0;class#RelationAnalyzer#0" />
                 <element signature="method#extendRelationWhenCallerTypeChange#0;class#RelationAnalyzer#0" />
                 <element signature="method#splitIter#0;class#RelationAnalyzer#0" />
                 <element signature="method#split#0;class#RelationAnalyzer#0" />
                 <element signature="method#split#1;class#RelationAnalyzer#0" />
-                <element signature="method#calcOriginalNodes#0;class#RelationAnalyzer#0" />
+                <element signature="method#calcCallSite#0;class#RelationAnalyzer#0" />
                 <element signature="method#calcMinNodes#0;class#RelationAnalyzer#0" />
                 <element signature="method#drawRelation#0;class#RelationAnalyzer#0" />
                 <element signature="method#drawRelation#1;class#RelationAnalyzer#0" />
@@ -126,7 +72,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
+            <state relative-caret-position="-2410">
               <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -157,17 +103,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            <state relative-caret-position="754">
+              <caret line="26" column="76" selection-start-line="26" selection-start-column="76" selection-end-line="26" selection-end-column="76" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/ChaAnalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="100" column="29" lean-forward="true" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="29" />
+            <state relative-caret-position="548">
+              <caret line="115" column="21" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1448#1449#0" expanded="true" />
@@ -284,8 +230,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/structs/Splitter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/structs/Relation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/opti/Optimization.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
@@ -320,8 +266,8 @@
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="880" />
     <option name="y" value="57" />
-    <option name="width" value="1823" />
-    <option name="height" value="1721" />
+    <option name="width" value="1821" />
+    <option name="height" value="1685" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -414,7 +360,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565323062005" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565525253811" />
     <property name="last_opened_file_path" value="$USER_HOME$/bench_compared" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -581,7 +527,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="129" y="13" width="2872" height="1988" extended-state="7" />
+    <frame x="130" y="-8" width="2870" height="2008" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22609633" />
@@ -681,46 +627,46 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java</url>
-          <line>76</line>
+          <line>86</line>
           <properties />
           <option name="timeStamp" value="204" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java</url>
-          <line>71</line>
+          <line>81</line>
           <properties />
           <option name="timeStamp" value="238" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java</url>
-          <line>751</line>
+          <line>761</line>
           <properties />
           <option name="timeStamp" value="239" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <condition expression="include.size() == 0" language="JAVA" />
           <url>file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java</url>
-          <line>907</line>
+          <line>917</line>
           <properties />
           <option name="timeStamp" value="240" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="curRoundUsedSplitter == null" language="JAVA" />
           <url>file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java</url>
-          <line>680</line>
+          <line>690</line>
           <properties />
           <option name="timeStamp" value="252" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="increSplitterNum &gt; 0" language="JAVA" />
           <url>file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java</url>
-          <line>906</line>
+          <line>916</line>
           <properties />
           <option name="timeStamp" value="257" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java</url>
-          <line>722</line>
+          <line>732</line>
           <properties />
           <option name="timeStamp" value="259" />
         </line-breakpoint>
@@ -732,7 +678,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java</url>
-          <line>572</line>
+          <line>582</line>
           <properties />
           <option name="timeStamp" value="292" />
         </line-breakpoint>
@@ -1253,38 +1199,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/ChaAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="59" />
+        <state relative-caret-position="548">
+          <caret line="115" column="21" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#555#578#0" expanded="true" />
-            <element signature="method#analyze#0;class#RelationAnalyzer#0" />
-            <element signature="method#generateRelation#0;class#RelationAnalyzer#0" />
-            <element signature="method#resolveFieldLoad#0;class#RelationAnalyzer#0" />
-            <element signature="method#resolveMethodCall#0;class#RelationAnalyzer#0" />
-            <element signature="method#dealInvoke#0;class#RelationAnalyzer#0" />
-            <element signature="method#genRelationFromInvoke#0;class#RelationAnalyzer#0" />
-            <element signature="e#24295#24343#1" />
-            <element signature="e#24777#24778#0" expanded="true" />
-            <element signature="method#globalize#0;class#RelationAnalyzer#0" />
-            <element signature="method#minimalization#0;class#RelationAnalyzer#0" />
-            <element signature="method#extendRelationWhenCallerTypeChange#0;class#RelationAnalyzer#0" />
-            <element signature="method#splitIter#0;class#RelationAnalyzer#0" />
-            <element signature="method#split#0;class#RelationAnalyzer#0" />
-            <element signature="method#split#1;class#RelationAnalyzer#0" />
-            <element signature="method#calcOriginalNodes#0;class#RelationAnalyzer#0" />
-            <element signature="method#calcMinNodes#0;class#RelationAnalyzer#0" />
-            <element signature="method#drawRelation#0;class#RelationAnalyzer#0" />
-            <element signature="method#drawRelation#1;class#RelationAnalyzer#0" />
+            <element signature="e#1448#1449#0" expanded="true" />
+            <element signature="e#1503#1504#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/PointsToAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
+        <state relative-caret-position="-2410">
           <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1296,19 +1225,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        <state relative-caret-position="754">
+          <caret line="26" column="76" selection-start-line="26" selection-start-column="76" selection-end-line="26" selection-end-column="76" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/ChaAnalyzer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zstring/analyzer/RelationAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="100" column="29" lean-forward="true" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="29" />
+        <state relative-caret-position="553">
+          <caret line="71" column="38" lean-forward="true" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1448#1449#0" expanded="true" />
-            <element signature="e#1503#1504#0" expanded="true" />
+            <element signature="e#555#578#0" expanded="true" />
+            <element signature="method#generateRelation#0;class#RelationAnalyzer#0" />
+            <element signature="method#resolveFieldLoad#0;class#RelationAnalyzer#0" />
+            <element signature="method#extendRelation#0;class#RelationAnalyzer#0" />
+            <element signature="method#resolveMethodCall#0;class#RelationAnalyzer#0" />
+            <element signature="method#dealInvoke#0;class#RelationAnalyzer#0" />
+            <element signature="method#genRelationFromInvoke#0;class#RelationAnalyzer#0" />
+            <element signature="e#24295#24343#1" />
+            <element signature="e#25228#25229#0" expanded="true" />
+            <element signature="method#globalize#0;class#RelationAnalyzer#0" />
+            <element signature="method#extendRelationWhenCallerTypeChange#0;class#RelationAnalyzer#0" />
+            <element signature="method#splitIter#0;class#RelationAnalyzer#0" />
+            <element signature="method#split#0;class#RelationAnalyzer#0" />
+            <element signature="method#split#1;class#RelationAnalyzer#0" />
+            <element signature="method#calcCallSite#0;class#RelationAnalyzer#0" />
+            <element signature="method#calcMinNodes#0;class#RelationAnalyzer#0" />
+            <element signature="method#drawRelation#0;class#RelationAnalyzer#0" />
+            <element signature="method#drawRelation#1;class#RelationAnalyzer#0" />
           </folding>
         </state>
       </provider>

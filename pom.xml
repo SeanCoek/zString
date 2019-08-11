@@ -24,7 +24,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.zstring.analyzer.PointsToAnalyzer</mainClass>
+                            <mainClass>com.zstring.analyzer.RelationAnalyzer</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

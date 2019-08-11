@@ -503,24 +503,24 @@ Comparing to other two analyses, the number of call edges resolved by TFA are of
 \begin{figure}[t!]
   \centering
 %%\begin{table}[!htbp]\centering
-\begin{tabular}{lccccc}
+\begin{tabular}{lccccccc}
 	\hline
-	\textbf{bench} & \textbf{Node$_{\textsf{origin}}$} & \textbf{Node$_{\textsf{opt}}$} & \textbf{Node$_{\textsf{reduce}}$} & \textbf{Rate$_{\textsf{reduce}}$} & \hspace{2pt}\textbf{Time$(\textsf{s})$} \\
+	\textbf{bench} & \textbf{Node$_{\textsf{origin}}$} & \textbf{Node$_{\textsf{opt}}$} & \textbf{Rate$_{\textsf{reduce}}$} & \hspace{2pt}\textbf{Time$(\textsf{s})$} & \textbf{Node$_{\textsf{SCC}}$} & \textbf{Rate$_{\textsf{SCC}}$} & \hspace{2pt}\textbf{Time$(\textsf{s})_{\textsf{SCC}}$} \\
 	\hline
-	compress & 205 & 163 & 42 & $20.49\%$ & 0.007 \\
-	crypto & 312 & 229 & 83 & $26.60\%$ & 0.02 \\
-	bootstrap & 517 & 328 & 189 & $36.56\%$ & 0.05 \\
-	commons-codec & 1,742 & 1,452 & 290 & $16.65\%$ & 0.40 \\
-	junit & 5,890 & 5,135 & 755 & $12.82\%$ & 1.93 \\
-	commons-httpclient & 9,748 & 7,611 & 2,137 & $21.92\%$ & 4.06 \\
-	serializer & 9,782 & 6,987 & 2795 & $28.57\%$ & 7.42 \\
-	xerces & 42,085 & 33,375 & 8,710 & $20.70\%$ & 186.11\\
-	eclipse & 34,899 & 28,347 & 6,552 & $18.77\%$ & 76.92\\
-	derby & 112,496 & 96,962 & 15,534 & $13.81\%$ & 1765.74\\
-	xalan & 103,941 & 75,699 & 28,242 & $27.17\%$ & 1827.75\\
-	antlr & 57,518 & 42,475 & 15,043 & $26.15\%$ & 358.28\\
+	compress & 205 & 163 & $20.49\%$ & 0.01 & 205 & $0.0\%$ & 0.01 \\
+	crypto & 312 & 229 & $26.60\%$ & 0.02 & 312 & $0.0\%$ & 0.02\\
+	bootstrap & 517 & 328 & $36.56\%$ & 0.05 & 512 & $0.01\%$ & 0.04\\
+	commons-codec & 1,742 & 1,452 & $16.65\%$ & 0.40 & 1742 & $0.0\%$ & 0.25\\
+	junit & 5,890 & 5,135 & $12.82\%$ & 1.93 & 5890 & $0.0\%$ & 2.77\\
+	commons-httpclient & 9,748 & 7,611 & $21.92\%$ & 4.06 & 9748 & $0.0\%$ & 3.90\\
+	serializer & 9,782 & 6,987 & $28.57\%$ & 7.42 & 9782 & $0.0\%$ & 4.86\\
+	xerces & 42,085 & 33,375 & $20.70\%$ & 186.11 & 41992 & $0.0\%$ & 174.62\\
+	eclipse & 34,899 & 28,347 & $18.77\%$ & 86.92 & 34820 & $0.002\%$ & 79.65\\
+	derby & 112,496 & 96,962 & $13.81\%$ & 1765.74 & 112385 & $0.001\%$ & 1710.66\\
+	xalan & 103,941 & 75,699 & $27.17\%$ & 1827.75 & 103881 & $0.001\%$ & 1829.39\\
+	antlr & 57,518 & 42,475 & $26.15\%$ & 358.28 & 57226 & $0.005\%$ & 363.88\\
 %	jython & / & / & / & /\\
-	batik & 90,014 & 71,476 & 18,538 & $20.59\%$ & 1090.97\\
+	batik & 90,014 & 71,476 & $20.59\%$ & 1090.97 & 89850 & $0.002\%$ & 1059.86\\
 	\hline
 \end{tabular}
 \caption{Optimization result}

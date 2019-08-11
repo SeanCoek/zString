@@ -64,10 +64,20 @@ public class RelationAnalyzer {
         dataOutput[5] = String.valueOf(calcOriginalNodes());
         if(isSplit) {
             t1 = new Date().getTime();
-            minimalization();
+//            minimalization();
+            // SCC minimalization
+            Set<Value> groupUnMergeBySCC = new HashSet<>();
+            List<Set<Value>> mergeGroupBySCC = Optimization.mergeSCC(Relation.globalValues, groupUnMergeBySCC);
+
             t2 = new Date().getTime();
             System.out.println("minimalization time used: " + (t2-t1)/1000.0 + "s");
             dataOutput[4] = String.valueOf((t2-t1)/1000.0);
+            splited.addAll(mergeGroupBySCC);
+            for(Value v : groupUnMergeBySCC) {
+                Set<Value> unMergeNode = new HashSet<>();
+                unMergeNode.add(v);
+                splited.add(unMergeNode);
+            }
         }
         dataOutput[6] = String.valueOf(calcMinNodes());
         dataOutput[0] = String.valueOf(Relation.type_count);

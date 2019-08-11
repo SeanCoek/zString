@@ -1,0 +1,780 @@
+generated 320 relations
+Relation Resolve time used: 0.01s
+total callsites: 73
+Nodes original: 205
+minimalization time used: 0.005s
+Nodes after min: 205
+generated 320 relations
+Relation Resolve time used: 0.01s
+total callsites: 73
+Nodes original: 205
+minimalization time used: 0.005s
+Nodes after min: 205
+generated 320 relations
+Relation Resolve time used: 0.01s
+total callsites: 73
+Nodes original: 205
+minimalization time used: 0.005s
+Nodes after min: 205
+generated 320 relations
+Relation Resolve time used: 0.017s
+total callsites: 73
+Nodes original: 205
+minimalization time used: 0.006s
+Nodes after min: 205
+generated 320 relations
+Relation Resolve time used: 0.013s
+total callsites: 73
+Nodes original: 205
+minimalization time used: 0.008s
+Nodes after min: 205
+generated 320 relations
+Relation Resolve time used: 0.011s
+total callsites: 73
+Nodes original: 205
+minimalization time used: 0.006s
+Nodes after min: 205
+generated 320 relations
+Relation Resolve time used: 0.013s
+total callsites: 73
+Nodes original: 205
+minimalization time used: 0.006s
+Nodes after min: 205
+generated 320 relations
+Relation Resolve time used: 0.016s
+total callsites: 73
+Nodes original: 205
+minimalization time used: 0.011s
+Nodes after min: 205
+generated 320 relations
+Relation Resolve time used: 0.013s
+total callsites: 73
+Nodes original: 205
+minimalization time used: 0.006s
+Nodes after min: 205
+generated 320 relations
+Relation Resolve time used: 0.014s
+total callsites: 73
+Nodes original: 205
+minimalization time used: 0.008s
+Nodes after min: 205
+generated 338 relations
+Relation Resolve time used: 0.034s
+total callsites: 121
+Nodes original: 312
+minimalization time used: 0.017s
+Nodes after min: 312
+generated 338 relations
+Relation Resolve time used: 0.029s
+total callsites: 121
+Nodes original: 312
+minimalization time used: 0.014s
+Nodes after min: 312
+generated 338 relations
+Relation Resolve time used: 0.039s
+total callsites: 121
+Nodes original: 312
+minimalization time used: 0.013s
+Nodes after min: 312
+generated 338 relations
+Relation Resolve time used: 0.034s
+total callsites: 121
+Nodes original: 312
+minimalization time used: 0.016s
+Nodes after min: 312
+generated 338 relations
+Relation Resolve time used: 0.032s
+total callsites: 121
+Nodes original: 312
+minimalization time used: 0.016s
+Nodes after min: 312
+generated 338 relations
+Relation Resolve time used: 0.03s
+total callsites: 121
+Nodes original: 312
+minimalization time used: 0.016s
+Nodes after min: 312
+generated 338 relations
+Relation Resolve time used: 0.033s
+total callsites: 121
+Nodes original: 312
+minimalization time used: 0.017s
+Nodes after min: 312
+generated 338 relations
+Relation Resolve time used: 0.043s
+total callsites: 121
+Nodes original: 312
+minimalization time used: 0.012s
+Nodes after min: 312
+generated 338 relations
+Relation Resolve time used: 0.047s
+total callsites: 121
+Nodes original: 312
+minimalization time used: 0.028s
+Nodes after min: 312
+generated 338 relations
+Relation Resolve time used: 0.034s
+total callsites: 121
+Nodes original: 312
+minimalization time used: 0.017s
+Nodes after min: 312
+generated 773 relations
+Relation Resolve time used: 0.049s
+total callsites: 328
+Nodes original: 517
+minimalization time used: 0.046s
+Nodes after min: 512
+generated 773 relations
+Relation Resolve time used: 0.054s
+total callsites: 328
+Nodes original: 517
+minimalization time used: 0.036s
+Nodes after min: 512
+generated 773 relations
+Relation Resolve time used: 0.033s
+total callsites: 328
+Nodes original: 517
+minimalization time used: 0.037s
+Nodes after min: 512
+generated 773 relations
+Relation Resolve time used: 0.044s
+total callsites: 328
+Nodes original: 517
+minimalization time used: 0.039s
+Nodes after min: 512
+generated 773 relations
+Relation Resolve time used: 0.035s
+total callsites: 328
+Nodes original: 517
+minimalization time used: 0.026s
+Nodes after min: 512
+generated 773 relations
+Relation Resolve time used: 0.04s
+total callsites: 328
+Nodes original: 517
+minimalization time used: 0.035s
+Nodes after min: 512
+generated 773 relations
+Relation Resolve time used: 0.038s
+total callsites: 328
+Nodes original: 517
+minimalization time used: 0.034s
+Nodes after min: 512
+generated 773 relations
+Relation Resolve time used: 0.032s
+total callsites: 328
+Nodes original: 517
+minimalization time used: 0.037s
+Nodes after min: 512
+generated 773 relations
+Relation Resolve time used: 0.031s
+total callsites: 328
+Nodes original: 517
+minimalization time used: 0.028s
+Nodes after min: 512
+generated 773 relations
+Relation Resolve time used: 0.049s
+total callsites: 328
+Nodes original: 517
+minimalization time used: 0.038s
+Nodes after min: 512
+generated 3725 relations
+Relation Resolve time used: 0.073s
+total callsites: 557
+Nodes original: 1742
+minimalization time used: 0.239s
+Nodes after min: 1742
+generated 3725 relations
+Relation Resolve time used: 0.09s
+total callsites: 557
+Nodes original: 1742
+minimalization time used: 0.244s
+Nodes after min: 1742
+generated 3725 relations
+Relation Resolve time used: 0.127s
+total callsites: 557
+Nodes original: 1742
+minimalization time used: 0.246s
+Nodes after min: 1742
+generated 3725 relations
+Relation Resolve time used: 0.102s
+total callsites: 557
+Nodes original: 1742
+minimalization time used: 0.222s
+Nodes after min: 1742
+generated 3725 relations
+Relation Resolve time used: 0.077s
+total callsites: 557
+Nodes original: 1742
+minimalization time used: 0.297s
+Nodes after min: 1742
+generated 3725 relations
+Relation Resolve time used: 0.089s
+total callsites: 557
+Nodes original: 1742
+minimalization time used: 0.239s
+Nodes after min: 1742
+generated 3725 relations
+Relation Resolve time used: 0.095s
+total callsites: 557
+Nodes original: 1742
+minimalization time used: 0.302s
+Nodes after min: 1742
+generated 3725 relations
+Relation Resolve time used: 0.073s
+total callsites: 557
+Nodes original: 1742
+minimalization time used: 0.214s
+Nodes after min: 1742
+generated 3725 relations
+Relation Resolve time used: 0.106s
+total callsites: 557
+Nodes original: 1742
+minimalization time used: 0.233s
+Nodes after min: 1742
+generated 3725 relations
+Relation Resolve time used: 0.092s
+total callsites: 557
+Nodes original: 1742
+minimalization time used: 0.306s
+Nodes after min: 1742
+generated 7353 relations
+Relation Resolve time used: 0.179s
+total callsites: 1218
+Nodes original: 5890
+minimalization time used: 1.57s
+Nodes after min: 5890
+generated 7353 relations
+Relation Resolve time used: 0.232s
+total callsites: 1218
+Nodes original: 5890
+minimalization time used: 5.985s
+Nodes after min: 5890
+generated 7353 relations
+Relation Resolve time used: 0.349s
+total callsites: 1218
+Nodes original: 5890
+minimalization time used: 4.14s
+Nodes after min: 5890
+generated 7353 relations
+Relation Resolve time used: 0.244s
+total callsites: 1218
+Nodes original: 5890
+minimalization time used: 3.175s
+Nodes after min: 5890
+generated 7353 relations
+Relation Resolve time used: 0.341s
+total callsites: 1218
+Nodes original: 5890
+minimalization time used: 3.569s
+Nodes after min: 5890
+generated 7353 relations
+Relation Resolve time used: 0.265s
+total callsites: 1218
+Nodes original: 5890
+minimalization time used: 1.867s
+Nodes after min: 5890
+generated 7353 relations
+Relation Resolve time used: 0.196s
+total callsites: 1218
+Nodes original: 5890
+minimalization time used: 2.038s
+Nodes after min: 5890
+generated 7353 relations
+Relation Resolve time used: 0.276s
+total callsites: 1218
+Nodes original: 5890
+minimalization time used: 1.621s
+Nodes after min: 5890
+generated 7353 relations
+Relation Resolve time used: 0.173s
+total callsites: 1218
+Nodes original: 5890
+minimalization time used: 1.966s
+Nodes after min: 5890
+generated 7353 relations
+Relation Resolve time used: 0.188s
+total callsites: 1218
+Nodes original: 5890
+minimalization time used: 1.793s
+Nodes after min: 5890
+generated 11860 relations
+Relation Resolve time used: 0.347s
+total callsites: 2976
+Nodes original: 9748
+minimalization time used: 4.693s
+Nodes after min: 9748
+generated 11860 relations
+Relation Resolve time used: 0.299s
+total callsites: 2976
+Nodes original: 9748
+minimalization time used: 4.297s
+Nodes after min: 9748
+generated 11860 relations
+Relation Resolve time used: 0.275s
+total callsites: 2976
+Nodes original: 9748
+minimalization time used: 3.989s
+Nodes after min: 9748
+generated 11860 relations
+Relation Resolve time used: 0.369s
+total callsites: 2976
+Nodes original: 9748
+minimalization time used: 3.809s
+Nodes after min: 9748
+generated 11860 relations
+Relation Resolve time used: 0.265s
+total callsites: 2976
+Nodes original: 9748
+minimalization time used: 3.752s
+Nodes after min: 9748
+generated 11860 relations
+Relation Resolve time used: 0.276s
+total callsites: 2976
+Nodes original: 9748
+minimalization time used: 3.535s
+Nodes after min: 9748
+generated 11860 relations
+Relation Resolve time used: 0.294s
+total callsites: 2976
+Nodes original: 9748
+minimalization time used: 3.896s
+Nodes after min: 9748
+generated 11860 relations
+Relation Resolve time used: 0.263s
+total callsites: 2976
+Nodes original: 9748
+minimalization time used: 3.596s
+Nodes after min: 9748
+generated 11860 relations
+Relation Resolve time used: 0.304s
+total callsites: 2976
+Nodes original: 9748
+minimalization time used: 3.529s
+Nodes after min: 9748
+generated 11860 relations
+Relation Resolve time used: 0.272s
+total callsites: 2976
+Nodes original: 9748
+minimalization time used: 3.872s
+Nodes after min: 9748
+generated 22292 relations
+Relation Resolve time used: 0.341s
+total callsites: 1792
+Nodes original: 9782
+minimalization time used: 4.83s
+Nodes after min: 9782
+generated 22292 relations
+Relation Resolve time used: 0.354s
+total callsites: 1792
+Nodes original: 9782
+minimalization time used: 4.805s
+Nodes after min: 9782
+generated 22292 relations
+Relation Resolve time used: 0.312s
+total callsites: 1792
+Nodes original: 9782
+minimalization time used: 4.787s
+Nodes after min: 9782
+generated 22292 relations
+Relation Resolve time used: 0.324s
+total callsites: 1792
+Nodes original: 9782
+minimalization time used: 4.785s
+Nodes after min: 9782
+generated 22292 relations
+Relation Resolve time used: 0.336s
+total callsites: 1792
+Nodes original: 9782
+minimalization time used: 4.644s
+Nodes after min: 9782
+generated 22292 relations
+Relation Resolve time used: 0.298s
+total callsites: 1792
+Nodes original: 9782
+minimalization time used: 4.881s
+Nodes after min: 9782
+generated 22292 relations
+Relation Resolve time used: 0.392s
+total callsites: 1792
+Nodes original: 9782
+minimalization time used: 5.032s
+Nodes after min: 9782
+generated 22292 relations
+Relation Resolve time used: 0.361s
+total callsites: 1792
+Nodes original: 9782
+minimalization time used: 5.239s
+Nodes after min: 9782
+generated 22292 relations
+Relation Resolve time used: 0.322s
+total callsites: 1792
+Nodes original: 9782
+minimalization time used: 5.055s
+Nodes after min: 9782
+generated 22292 relations
+Relation Resolve time used: 0.346s
+total callsites: 1792
+Nodes original: 9782
+minimalization time used: 4.565s
+Nodes after min: 9782
+generated 100045 relations
+Relation Resolve time used: 1.819s
+total callsites: 8522
+Nodes original: 42085
+minimalization time used: 175.621s
+Nodes after min: 41992
+generated 100045 relations
+Relation Resolve time used: 1.734s
+total callsites: 8522
+Nodes original: 42085
+minimalization time used: 181.242s
+Nodes after min: 41992
+generated 100045 relations
+Relation Resolve time used: 1.551s
+total callsites: 8522
+Nodes original: 42085
+minimalization time used: 171.407s
+Nodes after min: 41992
+generated 100045 relations
+Relation Resolve time used: 1.534s
+total callsites: 8522
+Nodes original: 42085
+minimalization time used: 178.279s
+Nodes after min: 41992
+generated 100045 relations
+Relation Resolve time used: 2.108s
+total callsites: 8522
+Nodes original: 42085
+minimalization time used: 175.593s
+Nodes after min: 41992
+generated 100045 relations
+Relation Resolve time used: 1.571s
+total callsites: 8522
+Nodes original: 42085
+minimalization time used: 174.595s
+Nodes after min: 41992
+generated 100045 relations
+Relation Resolve time used: 1.541s
+total callsites: 8522
+Nodes original: 42085
+minimalization time used: 179.534s
+Nodes after min: 41992
+generated 100045 relations
+Relation Resolve time used: 1.594s
+total callsites: 8522
+Nodes original: 42085
+minimalization time used: 169.07s
+Nodes after min: 41992
+generated 100045 relations
+Relation Resolve time used: 1.695s
+total callsites: 8522
+Nodes original: 42085
+minimalization time used: 170.768s
+Nodes after min: 41992
+generated 100045 relations
+Relation Resolve time used: 1.609s
+total callsites: 8522
+Nodes original: 42085
+minimalization time used: 170.084s
+Nodes after min: 41992
+generated 50984 relations
+Relation Resolve time used: 1.231s
+total callsites: 9925
+Nodes original: 34899
+minimalization time used: 52.927s
+Nodes after min: 34820
+generated 50984 relations
+Relation Resolve time used: 1.419s
+total callsites: 9925
+Nodes original: 34899
+minimalization time used: 112.94s
+Nodes after min: 34820
+generated 50984 relations
+Relation Resolve time used: 1.277s
+total callsites: 9925
+Nodes original: 34899
+minimalization time used: 71.99s
+Nodes after min: 34820
+generated 50984 relations
+Relation Resolve time used: 1.198s
+total callsites: 9925
+Nodes original: 34899
+minimalization time used: 97.017s
+Nodes after min: 34820
+generated 50984 relations
+Relation Resolve time used: 1.331s
+total callsites: 9925
+Nodes original: 34899
+minimalization time used: 52.304s
+Nodes after min: 34820
+generated 50984 relations
+Relation Resolve time used: 1.349s
+total callsites: 9925
+Nodes original: 34899
+minimalization time used: 59.805s
+Nodes after min: 34820
+generated 50984 relations
+Relation Resolve time used: 1.023s
+total callsites: 9925
+Nodes original: 34899
+minimalization time used: 124.957s
+Nodes after min: 34820
+generated 50984 relations
+Relation Resolve time used: 0.994s
+total callsites: 9925
+Nodes original: 34899
+minimalization time used: 122.208s
+Nodes after min: 34820
+generated 50984 relations
+Relation Resolve time used: 1.027s
+total callsites: 9925
+Nodes original: 34899
+minimalization time used: 124.037s
+Nodes after min: 34820
+generated 50984 relations
+Relation Resolve time used: 1.216s
+total callsites: 9925
+Nodes original: 34899
+minimalization time used: 123.755s
+Nodes after min: 34820
+generated 244185 relations
+Relation Resolve time used: 5.168s
+total callsites: 17519
+Nodes original: 112496
+minimalization time used: 1665.58s
+Nodes after min: 112385
+generated 244185 relations
+Relation Resolve time used: 5.254s
+total callsites: 17519
+Nodes original: 112496
+minimalization time used: 1677.425s
+Nodes after min: 112385
+generated 244185 relations
+Relation Resolve time used: 5.039s
+total callsites: 17519
+Nodes original: 112496
+minimalization time used: 1666.442s
+Nodes after min: 112385
+generated 244185 relations
+Relation Resolve time used: 5.109s
+total callsites: 17519
+Nodes original: 112496
+minimalization time used: 1710.144s
+Nodes after min: 112385
+generated 244185 relations
+Relation Resolve time used: 5.082s
+total callsites: 17519
+Nodes original: 112496
+minimalization time used: 1672.829s
+Nodes after min: 112385
+generated 244185 relations
+Relation Resolve time used: 5.008s
+total callsites: 17519
+Nodes original: 112496
+minimalization time used: 1727.852s
+Nodes after min: 112385
+generated 244185 relations
+Relation Resolve time used: 5.168s
+total callsites: 17519
+Nodes original: 112496
+minimalization time used: 1742.256s
+Nodes after min: 112385
+generated 244185 relations
+Relation Resolve time used: 5.2s
+total callsites: 17519
+Nodes original: 112496
+minimalization time used: 1748.478s
+Nodes after min: 112385
+generated 244185 relations
+Relation Resolve time used: 5.156s
+total callsites: 17519
+Nodes original: 112496
+minimalization time used: 1748.338s
+Nodes after min: 112385
+generated 244185 relations
+Relation Resolve time used: 5.165s
+total callsites: 17519
+Nodes original: 112496
+minimalization time used: 1747.226s
+Nodes after min: 112385
+generated 203332 relations
+Relation Resolve time used: 2.479s
+total callsites: 19071
+Nodes original: 103941
+minimalization time used: 1857.638s
+Nodes after min: 103881
+generated 203332 relations
+Relation Resolve time used: 2.365s
+total callsites: 19071
+Nodes original: 103941
+minimalization time used: 1831.828s
+Nodes after min: 103881
+generated 203332 relations
+Relation Resolve time used: 2.241s
+total callsites: 19071
+Nodes original: 103941
+minimalization time used: 1824.756s
+Nodes after min: 103881
+generated 203332 relations
+Relation Resolve time used: 2.58s
+total callsites: 19071
+Nodes original: 103941
+minimalization time used: 1843.546s
+Nodes after min: 103881
+generated 203332 relations
+Relation Resolve time used: 2.339s
+total callsites: 19071
+Nodes original: 103941
+minimalization time used: 1796.274s
+Nodes after min: 103881
+generated 203332 relations
+Relation Resolve time used: 2.364s
+total callsites: 19071
+Nodes original: 103941
+minimalization time used: 1858.512s
+Nodes after min: 103881
+generated 203332 relations
+Relation Resolve time used: 2.391s
+total callsites: 19071
+Nodes original: 103941
+minimalization time used: 1832.316s
+Nodes after min: 103881
+generated 203332 relations
+Relation Resolve time used: 2.425s
+total callsites: 19071
+Nodes original: 103941
+minimalization time used: 1833.941s
+Nodes after min: 103881
+generated 203332 relations
+Relation Resolve time used: 2.465s
+total callsites: 19071
+Nodes original: 103941
+minimalization time used: 1833.944s
+Nodes after min: 103881
+generated 203332 relations
+Relation Resolve time used: 2.386s
+total callsites: 19071
+Nodes original: 103941
+minimalization time used: 1781.109s
+Nodes after min: 103881
+generated 133684 relations
+Relation Resolve time used: 6.635s
+total callsites: 18734
+Nodes original: 57518
+minimalization time used: 368.539s
+Nodes after min: 57226
+generated 133684 relations
+Relation Resolve time used: 6.66s
+total callsites: 18734
+Nodes original: 57518
+minimalization time used: 364.783s
+Nodes after min: 57226
+generated 133684 relations
+Relation Resolve time used: 6.19s
+total callsites: 18734
+Nodes original: 57518
+minimalization time used: 367.131s
+Nodes after min: 57226
+generated 133684 relations
+Relation Resolve time used: 6.233s
+total callsites: 18734
+Nodes original: 57518
+minimalization time used: 363.015s
+Nodes after min: 57226
+generated 133684 relations
+Relation Resolve time used: 6.268s
+total callsites: 18734
+Nodes original: 57518
+minimalization time used: 366.659s
+Nodes after min: 57226
+generated 133684 relations
+Relation Resolve time used: 6.692s
+total callsites: 18734
+Nodes original: 57518
+minimalization time used: 357.722s
+Nodes after min: 57226
+generated 133684 relations
+Relation Resolve time used: 6.12s
+total callsites: 18734
+Nodes original: 57518
+minimalization time used: 364.818s
+Nodes after min: 57226
+generated 133684 relations
+Relation Resolve time used: 6.735s
+total callsites: 18734
+Nodes original: 57518
+minimalization time used: 365.537s
+Nodes after min: 57226
+generated 133684 relations
+Relation Resolve time used: 6.228s
+total callsites: 18734
+Nodes original: 57518
+minimalization time used: 362.511s
+Nodes after min: 57226
+generated 133684 relations
+Relation Resolve time used: 6.001s
+total callsites: 18734
+Nodes original: 57518
+minimalization time used: 358.077s
+Nodes after min: 57226
+generated 163956 relations
+Relation Resolve time used: 2.808s
+total callsites: 21791
+Nodes original: 90014
+minimalization time used: 1044.668s
+Nodes after min: 89850
+generated 163956 relations
+Relation Resolve time used: 2.603s
+total callsites: 21791
+Nodes original: 90014
+minimalization time used: 1058.862s
+Nodes after min: 89850
+generated 163956 relations
+Relation Resolve time used: 2.508s
+total callsites: 21791
+Nodes original: 90014
+minimalization time used: 1061.424s
+Nodes after min: 89850
+generated 163956 relations
+Relation Resolve time used: 2.867s
+total callsites: 21791
+Nodes original: 90014
+minimalization time used: 1067.649s
+Nodes after min: 89850
+generated 163956 relations
+Relation Resolve time used: 2.614s
+total callsites: 21791
+Nodes original: 90014
+minimalization time used: 1052.487s
+Nodes after min: 89850
+generated 163956 relations
+Relation Resolve time used: 2.756s
+total callsites: 21791
+Nodes original: 90014
+minimalization time used: 1052.816s
+Nodes after min: 89850
+generated 163956 relations
+Relation Resolve time used: 2.724s
+total callsites: 21791
+Nodes original: 90014
+minimalization time used: 1067.922s
+Nodes after min: 89850
+generated 163956 relations
+Relation Resolve time used: 2.886s
+total callsites: 21791
+Nodes original: 90014
+minimalization time used: 1064.841s
+Nodes after min: 89850
+generated 163956 relations
+Relation Resolve time used: 2.681s
+total callsites: 21791
+Nodes original: 90014
+minimalization time used: 1075.453s
+Nodes after min: 89850
+generated 163956 relations
+Relation Resolve time used: 2.7s
+total callsites: 21791
+Nodes original: 90014
+minimalization time used: 1052.488s
+Nodes after min: 89850
