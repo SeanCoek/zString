@@ -1,0 +1,16 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Type Flow Analysis}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{x \040y}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{x --3muf y}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Implementation}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Static Analysis Tool}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Dynamic Profiler}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Evaluation}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Efficiency}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Precision}{section.4}% 10
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Reflection Call}{subsection.4.2}% 11
+\BOOKMARK [3][-]{subsubsection.4.2.2}{JNI Call}{subsection.4.2}% 12
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Library}{subsection.4.2}% 13
+\BOOKMARK [3][-]{subsubsection.4.2.4}{Array Approximation}{subsection.4.2}% 14
+\BOOKMARK [1][-]{section.5}{Related Work}{}% 15
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 16

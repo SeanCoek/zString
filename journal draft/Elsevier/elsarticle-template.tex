@@ -1,0 +1,110 @@
+\documentclass[review]{elsarticle}
+
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+
+\journal{Science of Computer Programming}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Numbered
+%\bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard
+%\bibliographystyle{model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+%\usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+%\bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+%\usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+%% `Elsevier LaTeX' style
+\bibliographystyle{elsarticle-num}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\less}{\sqsubseteq}
+\newcommand{\tflow}{\dashrightarrow}
+\newcommand{\hflow}{\longrightarrow}
+\newcommand{\lhflow}[1]{\stackrel{#1}{\hflow}}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{A Relational Static Semantics for\\ Call Graph Construction}
+\tnotetext[conf-rec]{descirbe that this paper had been published on ICFEM}
+
+%% Group authors per affiliation:
+\author{Xilong Zhuo}
+
+%% or include affiliations in footnotes:
+
+\author{Chenyi Zhang}
+\cortext[mycorrespondingauthor]{Corresponding author}
+\ead{chenyi\_zhang@jnu.edu.cn}
+
+\begin{abstract}
+The problem of resolving virtual method and interface calls in object-oriented languages has been a long standing challenge to the program analysis community. The complexities are due to various reasons, such as increased levels of class inheritance and polymorphism in large programs. In this paper, we propose a new approach called type flow analysis that represent propagation of type information between program variables by a group of relations without the help of a heap abstraction. We prove that regarding the precision on reachability of class information to a variable, our method produces results equivalent to that one can derive from a points-to analysis. Moreover, in practice, our method consumes lower time and space usage, as supported by the experimental results.
+\end{abstract}
+
+\begin{keyword}
+type analysis\sep static analysis\sep method resolving
+\end{keyword}
+
+\end{frontmatter}
+
+\linenumbers
+
+\section{Introduction}\label{sec:introduction}
+
+For object-oriented programming languages, virtual methods (or functions) are those declared in a base class but are meant to be overridden in different child classes. Statically determine a set of methods that may be invoked at a call site is important to program optimization...
+
+\section{Type Flow Analysis}\label{sec:type-flow-analysis}
+We define a core calculus consisting of most of the key object-oriented language features...
+%\subsection{c$\tflow$ y}
+\subsection{x $\less$ y}
+\subsection{x $\lhflow{f}$ y}
+
+\section{Implementation}\label{sec:implementation}
+The analysis algorithm is written in Java, and is implemented in the Soot framework...
+
+\subsection{Static Analysis Tool}\label{subsec:static-analysis-tool}
+
+\subsection{Dynamic Profiler}\label{subsec:dynamic-profiler}
+
+\section{Evaluation}\label{sec:evaluation}
+We evaluate our approach by measuring its performance on $13$ benchmark programs...
+\subsection{Efficiency}\label{subsec:efficiency}
+We executed each benchmark program $10$ times with the CHA, PTA and TFA algorithms. We calculated the average time consumption...
+\subsection{Precision}\label{subsec:precision}
+\subsubsection{Reflection Call}\label{subsubsec:reflection-call}
+\subsubsection{JNI Call}\label{subsubsec:jni-call}
+\subsubsection{Library}\label{subsubsec:library}
+\subsubsection{Array Approximation}\label{subsubsec:array-approximation}
+
+\section{Related Work}\label{sec:related-work}
+There are not many works focusing on general purpose call graph construction algorithms, and we give a brief review of these works first.
+
+\section{Conclusion}\label{sec:conclusion}
+In this paper we have proposed Type Flow Analysis (TFA), an algorithm that constructs call graph edges for Object-Oriented programming languages.
+
+\section*{References}
+
+\bibliography{mybibfile}
+
+\end{document}
