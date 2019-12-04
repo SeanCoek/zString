@@ -3,10 +3,8 @@
 
 README                 - This file.
 
-IEEEtran.cls           - The IEEEtran LaTeX class file.
+IEEE                   - IEEE style paper.
 
-IEEEtran_HOWTO.pdf     - The IEEEtran LaTeX class user manual.
-
-ieee-trans-tfa.tex     - Our paper tex file.
+Elsevier               - Elsevier style paper.
 
 ***************************************************************************
