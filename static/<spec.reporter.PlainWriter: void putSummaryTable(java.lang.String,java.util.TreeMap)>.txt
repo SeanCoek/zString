@@ -1,7 +1,0 @@
-IN METHOD::<spec.reporter.PlainWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::INVOKE::java.io.PrintStream::$r5::void println()::79
-IN METHOD::<spec.reporter.PlainWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::INVOKE::java.io.PrintStream::$r6::void println(java.lang.String)::80
-IN METHOD::<spec.reporter.PlainWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::STATICINVOKE::<spec.reporter.Utils: java.lang.String formatScore(double)>::85
-IN METHOD::<spec.reporter.PlainWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::INVOKE::java.io.PrintStream::$r8::void println(java.lang.String)::88
-IN METHOD::<spec.reporter.PlainWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::INVOKE::java.io.PrintStream::$r9::void println(java.lang.String)::89
-IN METHOD::<spec.reporter.PlainWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::INVOKE::java.io.PrintStream::$r10::void println()::90
-IN METHOD::<spec.reporter.PlainWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::INVOKE::java.io.PrintStream::$r11::void println()::91

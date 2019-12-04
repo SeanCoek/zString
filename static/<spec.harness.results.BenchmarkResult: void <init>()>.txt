@@ -1,2 +1,0 @@
-IN METHOD::<spec.harness.results.BenchmarkResult: void <init>()>::INVOKE::spec.harness.results.BenchmarkResult::r0::void <init>()::17
-IN METHOD::<spec.harness.results.BenchmarkResult: void <init>()>::INVOKE::java.util.LinkedList::$r1::void <init>()::39

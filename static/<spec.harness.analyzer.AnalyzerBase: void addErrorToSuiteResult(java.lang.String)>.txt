@@ -1,2 +1,0 @@
-IN METHOD::<spec.harness.analyzer.AnalyzerBase: void addErrorToSuiteResult(java.lang.String)>::STATICINVOKE::<spec.harness.Context: spec.harness.results.SuiteResult getSuiteResult()>::110
-IN METHOD::<spec.harness.analyzer.AnalyzerBase: void addErrorToSuiteResult(java.lang.String)>::INVOKE::spec.harness.results.SuiteResult::$r1::void addError(java.lang.String)::110

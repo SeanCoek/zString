@@ -1,1 +1,0 @@
-IN METHOD::<spec.harness.analyzer.TempAnalyzer$TemperatureResult: void <init>(double,java.lang.String,java.lang.String)>::INVOKE::spec.harness.analyzer.TempAnalyzer$TemperatureResult::r0::void <init>(double)::159

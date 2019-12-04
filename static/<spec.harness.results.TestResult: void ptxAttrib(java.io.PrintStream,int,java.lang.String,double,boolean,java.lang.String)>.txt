@@ -1,1 +1,0 @@
-IN METHOD::<spec.harness.results.TestResult: void ptxAttrib(java.io.PrintStream,int,java.lang.String,double,boolean,java.lang.String)>::STATICINVOKE::<java.lang.Double: java.lang.String toString(double)>::84

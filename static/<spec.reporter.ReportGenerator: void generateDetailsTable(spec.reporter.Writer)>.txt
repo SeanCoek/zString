@@ -1,4 +1,0 @@
-IN METHOD::<spec.reporter.ReportGenerator: void generateDetailsTable(spec.reporter.Writer)>::INVOKE::spec.reporter.BenchmarkGroupRecords::$r4::java.lang.Class getClass()::292
-IN METHOD::<spec.reporter.ReportGenerator: void generateDetailsTable(spec.reporter.Writer)>::INVOKE::spec.reporter.BenchmarkGroupRecords$BenchmarkResultsIterator::$r3::void <init>(spec.reporter.BenchmarkGroupRecords)::292
-IN METHOD::<spec.reporter.ReportGenerator: void generateDetailsTable(spec.reporter.Writer)>::INVOKE::spec.reporter.BenchmarkGroupRecords$BenchmarkResultsIterator::r2::spec.reporter.BenchmarkRecord next()::294
-IN METHOD::<spec.reporter.ReportGenerator: void generateDetailsTable(spec.reporter.Writer)>::INVOKE::spec.reporter.BenchmarkGroupRecords$BenchmarkResultsIterator::r2::spec.reporter.BenchmarkRecord getCurrentRecord()::295

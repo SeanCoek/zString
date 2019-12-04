@@ -1,2 +1,0 @@
-IN METHOD::<spec.harness.Util: long getTimeProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::40
-IN METHOD::<spec.harness.Util: long getTimeProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::41

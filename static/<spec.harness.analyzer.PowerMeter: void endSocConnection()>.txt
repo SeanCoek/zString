@@ -1,3 +1,0 @@
-IN METHOD::<spec.harness.analyzer.PowerMeter: void endSocConnection()>::INVOKE::java.io.PrintWriter::$r2::void close()::126
-IN METHOD::<spec.harness.analyzer.PowerMeter: void endSocConnection()>::INVOKE::java.net.Socket::$r3::void close()::127
-IN METHOD::<spec.harness.analyzer.PowerMeter: void endSocConnection()>::INVOKE::spec.harness.StopBenchmarkException::$r5::void <init>(java.lang.String,java.lang.Throwable)::129

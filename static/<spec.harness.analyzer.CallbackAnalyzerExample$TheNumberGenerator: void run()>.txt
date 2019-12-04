@@ -1,3 +1,0 @@
-IN METHOD::<spec.harness.analyzer.CallbackAnalyzerExample$TheNumberGenerator: void run()>::INVOKE::java.util.Random::$r4::int nextInt(int)::141
-IN METHOD::<spec.harness.analyzer.CallbackAnalyzerExample$TheNumberGenerator: void run()>::INVOKE::java.util.Random::$r5::int nextInt(int)::144
-IN METHOD::<spec.harness.analyzer.CallbackAnalyzerExample$TheNumberGenerator: void run()>::STATICINVOKE::<java.lang.Thread: void sleep(long)>::158

@@ -1,1 +1,0 @@
-IN METHOD::<spec.harness.Context: void closeXmlResultFile()>::INVOKE::java.io.PrintStream::$r0::void close()::182

@@ -1,5 +1,0 @@
-IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.String readMeter()>::INVOKE::java.io.BufferedReader::$r2::java.lang.String readLine()::107
-IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.String readMeter()>::INVOKE::spec.harness.StopBenchmarkException::$r9::void <init>(java.lang.String,java.lang.Throwable)::109
-IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.String readMeter()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::113
-IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.String readMeter()>::INVOKE::java.lang.StringBuilder::$r4::void <init>()::113
-IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.String readMeter()>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::113

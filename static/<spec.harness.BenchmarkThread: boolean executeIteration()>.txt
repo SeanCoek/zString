@@ -1,2 +1,0 @@
-IN METHOD::<spec.harness.BenchmarkThread: boolean executeIteration()>::STATICINVOKE::<spec.harness.ProgramRunner: int getNoBmHarnessThreads(spec.harness.results.BenchmarkResult)>::74
-IN METHOD::<spec.harness.BenchmarkThread: boolean executeIteration()>::STATICINVOKE::<spec.harness.ProgramRunner: void interruptProgramRunner()>::94

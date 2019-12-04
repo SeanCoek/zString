@@ -1,2 +1,0 @@
-IN METHOD::<spec.harness.analyzer.HeapMemoryTotalAnalyzer: void execute(long)>::STATICINVOKE::<java.lang.Runtime: java.lang.Runtime getRuntime()>::17
-IN METHOD::<spec.harness.analyzer.HeapMemoryTotalAnalyzer: void execute(long)>::INVOKE::spec.harness.analyzer.HeapMemoryTotalAnalyzer$HeapMemoryTotal::$r1::void <init>(long,long)::17

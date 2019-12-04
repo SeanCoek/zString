@@ -1,1 +1,0 @@
-IN METHOD::<spec.harness.analyzer.HeapMemoryFreeAnalyzer$HeapMemoryFree: java.lang.String getUnit()>::STATICINVOKE::<spec.harness.analyzer.HeapMemoryFreeAnalyzer: java.lang.String access$100()>::31

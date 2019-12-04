@@ -1,1 +1,0 @@
-IN METHOD::<spec.harness.analyzer.HeapMemoryTotalAnalyzer$HeapMemoryTotal: java.lang.String getName()>::STATICINVOKE::<spec.harness.analyzer.HeapMemoryTotalAnalyzer: java.lang.String access$000()>::27

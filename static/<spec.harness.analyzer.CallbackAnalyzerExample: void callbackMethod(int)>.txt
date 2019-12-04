@@ -1,2 +1,0 @@
-IN METHOD::<spec.harness.analyzer.CallbackAnalyzerExample: void callbackMethod(int)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::64
-IN METHOD::<spec.harness.analyzer.CallbackAnalyzerExample: void callbackMethod(int)>::INVOKE::spec.harness.analyzer.CallbackAnalyzerExample$NumberInfo::$r1::void <init>(long,long)::67

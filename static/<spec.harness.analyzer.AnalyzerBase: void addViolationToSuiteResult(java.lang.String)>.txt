@@ -1,2 +1,0 @@
-IN METHOD::<spec.harness.analyzer.AnalyzerBase: void addViolationToSuiteResult(java.lang.String)>::STATICINVOKE::<spec.harness.Context: spec.harness.results.SuiteResult getSuiteResult()>::113
-IN METHOD::<spec.harness.analyzer.AnalyzerBase: void addViolationToSuiteResult(java.lang.String)>::INVOKE::spec.harness.results.SuiteResult::$r1::void addViolation(java.lang.String)::113

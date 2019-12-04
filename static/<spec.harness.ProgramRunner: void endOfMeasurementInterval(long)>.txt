@@ -1,1 +1,0 @@
-IN METHOD::<spec.harness.ProgramRunner: void endOfMeasurementInterval(long)>::STATICINVOKE::<spec.harness.analyzer.AnalyzersRunner: void invokeEndMeasurementIntervalForAnalyzers()>::597

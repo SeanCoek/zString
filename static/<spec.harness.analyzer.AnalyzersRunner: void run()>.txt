@@ -1,3 +1,0 @@
-IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void run()>::INVOKE::java.lang.Object::$r2::void notify()::41
-IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void run()>::STATICINVOKE::<java.lang.Thread: void sleep(long)>::48
-IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void run()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::52

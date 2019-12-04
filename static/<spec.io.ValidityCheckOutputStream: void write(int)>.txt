@@ -1,1 +1,0 @@
-IN METHOD::<spec.io.ValidityCheckOutputStream: void write(int)>::INVOKE::java.io.ByteArrayOutputStream::$r1::void write(int)::64

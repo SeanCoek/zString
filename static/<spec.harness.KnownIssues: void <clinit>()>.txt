@@ -1,1 +1,0 @@
-IN METHOD::<spec.harness.KnownIssues: void <clinit>()>::STATICINVOKE::<java.lang.System: java.lang.String getProperty(java.lang.String)>::10

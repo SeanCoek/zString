@@ -1,1 +1,0 @@
-IN METHOD::<spec.reporter.Utils: java.lang.String formatScore(double,java.lang.String)>::STATICINVOKE::<spec.reporter.Utils: java.lang.String formatScore(double,java.lang.String,java.lang.String)>::333

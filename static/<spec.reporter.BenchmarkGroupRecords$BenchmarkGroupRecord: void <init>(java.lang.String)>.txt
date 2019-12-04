@@ -1,2 +1,0 @@
-IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord: void <init>(java.lang.String)>::INVOKE::spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord::r0::void <init>()::24
-IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord: void <init>(java.lang.String)>::INVOKE::java.util.ArrayList::$r2::void <init>()::14

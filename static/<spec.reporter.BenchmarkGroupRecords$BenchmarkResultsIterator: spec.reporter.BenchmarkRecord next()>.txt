@@ -1,7 +1,0 @@
-IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkResultsIterator: spec.reporter.BenchmarkRecord next()>::INVOKE::java.util.ArrayList::$r18::int size()::81
-IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkResultsIterator: spec.reporter.BenchmarkRecord next()>::INVOKE::java.util.ArrayList::$r20::java.lang.Object get(int)::66
-IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkResultsIterator: spec.reporter.BenchmarkRecord next()>::INVOKE::java.util.TreeMap::$r6::java.lang.Object get(java.lang.Object)::73
-IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkResultsIterator: spec.reporter.BenchmarkRecord next()>::INVOKE::java.util.ArrayList::$r10::int size()::74
-IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkResultsIterator: spec.reporter.BenchmarkRecord next()>::INVOKE::java.util.ArrayList::$r12::java.lang.Object get(int)::76
-IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkResultsIterator: spec.reporter.BenchmarkRecord next()>::STATICINVOKE::<spec.reporter.Utils: boolean isScimarkMonteCarlo(spec.reporter.BenchmarkRecord)>::81
-IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkResultsIterator: spec.reporter.BenchmarkRecord next()>::INVOKE::spec.reporter.BenchmarkGroupRecords$BenchmarkResultsIterator::r0::spec.reporter.BenchmarkRecord next()::85

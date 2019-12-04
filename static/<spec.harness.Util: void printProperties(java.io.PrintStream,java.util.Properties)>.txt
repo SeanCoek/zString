@@ -1,4 +1,0 @@
-IN METHOD::<spec.harness.Util: void printProperties(java.io.PrintStream,java.util.Properties)>::INVOKE::java.util.Properties::r1::java.util.Enumeration keys()::219
-IN METHOD::<spec.harness.Util: void printProperties(java.io.PrintStream,java.util.Properties)>::INVOKE::java.util.Properties::r1::java.lang.String getProperty(java.lang.String)::222
-IN METHOD::<spec.harness.Util: void printProperties(java.io.PrintStream,java.util.Properties)>::INVOKE::java.lang.StringBuilder::$r6::void <init>()::223
-IN METHOD::<spec.harness.Util: void printProperties(java.io.PrintStream,java.util.Properties)>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::223

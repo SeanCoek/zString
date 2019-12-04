@@ -1,3 +1,0 @@
-IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarksResults(org.w3c.dom.Node)>::INVOKE::spec.reporter.ReportGenerator::r0::boolean isNotTextNode(org.w3c.dom.Node)::104
-IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarksResults(org.w3c.dom.Node)>::INVOKE::spec.reporter.ReportGenerator::r0::void handleBenchmarkResult(org.w3c.dom.Node)::105
-IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarksResults(org.w3c.dom.Node)>::INVOKE::spec.reporter.BenchmarkGroupRecords::$r3::double computeCompositeScore()::108

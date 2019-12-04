@@ -1,2 +1,0 @@
-IN METHOD::<spec.harness.results.TestResult: java.lang.String millisAsSec(long)>::INVOKE::java.lang.StringBuilder::$r0::void <init>()::136
-IN METHOD::<spec.harness.results.TestResult: java.lang.String millisAsSec(long)>::INVOKE::java.lang.StringBuilder::$r0::java.lang.StringBuilder append(long)::136

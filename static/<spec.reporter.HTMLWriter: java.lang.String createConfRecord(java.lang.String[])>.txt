@@ -1,7 +1,0 @@
-IN METHOD::<spec.reporter.HTMLWriter: java.lang.String createConfRecord(java.lang.String[])>::INVOKE::java.lang.StringBuilder::$r3::void <init>()::303
-IN METHOD::<spec.reporter.HTMLWriter: java.lang.String createConfRecord(java.lang.String[])>::INVOKE::java.lang.StringBuilder::$r6::void <init>()::306
-IN METHOD::<spec.reporter.HTMLWriter: java.lang.String createConfRecord(java.lang.String[])>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::306
-IN METHOD::<spec.reporter.HTMLWriter: java.lang.String createConfRecord(java.lang.String[])>::INVOKE::java.lang.StringBuilder::r2::java.lang.StringBuilder append(java.lang.String)::306
-IN METHOD::<spec.reporter.HTMLWriter: java.lang.String createConfRecord(java.lang.String[])>::INVOKE::java.lang.StringBuilder::r2::java.lang.StringBuilder append(java.lang.String)::307
-IN METHOD::<spec.reporter.HTMLWriter: java.lang.String createConfRecord(java.lang.String[])>::INVOKE::java.lang.StringBuilder::r2::java.lang.StringBuilder append(java.lang.String)::309
-IN METHOD::<spec.reporter.HTMLWriter: java.lang.String createConfRecord(java.lang.String[])>::INVOKE::java.lang.StringBuilder::r2::java.lang.String toString()::313

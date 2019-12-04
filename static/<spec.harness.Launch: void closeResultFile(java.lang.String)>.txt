@@ -1,6 +1,0 @@
-IN METHOD::<spec.harness.Launch: void closeResultFile(java.lang.String)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::293
-IN METHOD::<spec.harness.Launch: void closeResultFile(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r3::void <init>()::293
-IN METHOD::<spec.harness.Launch: void closeResultFile(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::293
-IN METHOD::<spec.harness.Launch: void closeResultFile(java.lang.String)>::INVOKE::java.io.File::$r5::void <init>(java.lang.String)::293
-IN METHOD::<spec.harness.Launch: void closeResultFile(java.lang.String)>::INVOKE::java.io.File::$r5::java.lang.String getCanonicalPath()::293
-IN METHOD::<spec.harness.Launch: void closeResultFile(java.lang.String)>::STATICINVOKE::<spec.harness.Context: void closeXmlResultFile()>::295

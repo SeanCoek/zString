@@ -1,1 +1,0 @@
-IN METHOD::<spec.harness.results.LoopResult: void <init>()>::INVOKE::spec.harness.results.LoopResult::r0::void <init>()::16

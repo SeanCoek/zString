@@ -1,4 +1,0 @@
-IN METHOD::<spec.io.FileCache: byte[] getByteArray(java.lang.String)>::INVOKE::java.util.HashMap::$r3::java.lang.Object get(java.lang.Object)::65
-IN METHOD::<spec.io.FileCache: byte[] getByteArray(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::void <init>()::67
-IN METHOD::<spec.io.FileCache: byte[] getByteArray(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::67
-IN METHOD::<spec.io.FileCache: byte[] getByteArray(java.lang.String)>::INVOKE::spec.harness.StopBenchmarkException::$r6::void <init>(java.lang.String)::67

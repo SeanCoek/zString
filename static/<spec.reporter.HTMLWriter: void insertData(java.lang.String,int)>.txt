@@ -1,2 +1,0 @@
-IN METHOD::<spec.reporter.HTMLWriter: void insertData(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r2::void <init>()::91
-IN METHOD::<spec.reporter.HTMLWriter: void insertData(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::91

@@ -1,2 +1,0 @@
-IN METHOD::<spec.harness.Util: void printReqs(java.util.HashMap)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::229
-IN METHOD::<spec.harness.Util: void printReqs(java.util.HashMap)>::STATICINVOKE::<spec.harness.Util: void printProperties(java.io.PrintStream,java.util.HashMap)>::229

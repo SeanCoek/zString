@@ -1,4 +1,0 @@
-IN METHOD::<spec.reporter.ReportGenerator: void <clinit>()>::STATICINVOKE::<java.lang.System: java.lang.String getProperty(java.lang.String)>::44
-IN METHOD::<spec.reporter.ReportGenerator: void <clinit>()>::STATICINVOKE::<java.lang.System: java.lang.String getProperty(java.lang.String)>::45
-IN METHOD::<spec.reporter.ReportGenerator: void <clinit>()>::STATICINVOKE::<java.lang.System: java.lang.String getProperty(java.lang.String)>::46
-IN METHOD::<spec.reporter.ReportGenerator: void <clinit>()>::STATICINVOKE::<java.lang.System: java.lang.String getProperty(java.lang.String)>::47

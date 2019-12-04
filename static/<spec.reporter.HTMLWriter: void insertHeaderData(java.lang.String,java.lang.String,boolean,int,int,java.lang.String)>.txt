@@ -1,6 +1,0 @@
-IN METHOD::<spec.reporter.HTMLWriter: void insertHeaderData(java.lang.String,java.lang.String,boolean,int,int,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r4::void <init>()::102
-IN METHOD::<spec.reporter.HTMLWriter: void insertHeaderData(java.lang.String,java.lang.String,boolean,int,int,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::102
-IN METHOD::<spec.reporter.HTMLWriter: void insertHeaderData(java.lang.String,java.lang.String,boolean,int,int,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r21::void <init>()::103
-IN METHOD::<spec.reporter.HTMLWriter: void insertHeaderData(java.lang.String,java.lang.String,boolean,int,int,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r21::java.lang.StringBuilder append(java.lang.String)::103
-IN METHOD::<spec.reporter.HTMLWriter: void insertHeaderData(java.lang.String,java.lang.String,boolean,int,int,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r17::void <init>()::103
-IN METHOD::<spec.reporter.HTMLWriter: void insertHeaderData(java.lang.String,java.lang.String,boolean,int,int,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r17::java.lang.StringBuilder append(java.lang.String)::103

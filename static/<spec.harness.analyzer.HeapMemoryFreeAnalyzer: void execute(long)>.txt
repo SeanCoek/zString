@@ -1,2 +1,0 @@
-IN METHOD::<spec.harness.analyzer.HeapMemoryFreeAnalyzer: void execute(long)>::STATICINVOKE::<java.lang.Runtime: java.lang.Runtime getRuntime()>::17
-IN METHOD::<spec.harness.analyzer.HeapMemoryFreeAnalyzer: void execute(long)>::INVOKE::spec.harness.analyzer.HeapMemoryFreeAnalyzer$HeapMemoryFree::$r1::void <init>(long,long)::17

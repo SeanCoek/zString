@@ -1,1 +1,0 @@
-IN METHOD::<spec.harness.results.IterationResult: void addLoopResults(spec.harness.results.LoopResult)>::INVOKE::java.util.LinkedList::$r2::boolean add(java.lang.Object)::111

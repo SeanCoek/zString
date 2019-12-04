@@ -1,2 +1,0 @@
-IN METHOD::<spec.harness.analyzer.PowerMeter: java.lang.String meterPtdVersion()>::INVOKE::java.lang.String::$r2::java.lang.String substring(int,int)::211
-IN METHOD::<spec.harness.analyzer.PowerMeter: java.lang.String meterPtdVersion()>::INVOKE::java.lang.String::$r5::java.lang.String substring(int)::213

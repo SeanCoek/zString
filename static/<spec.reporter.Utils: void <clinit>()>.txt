@@ -1,3 +1,0 @@
-IN METHOD::<spec.reporter.Utils: void <clinit>()>::STATICINVOKE::<java.lang.Double: java.lang.Double valueOf(double)>::34
-IN METHOD::<spec.reporter.Utils: void <clinit>()>::INVOKE::java.text.DecimalFormat::$r4::void <init>(java.lang.String)::139
-IN METHOD::<spec.reporter.Utils: void <clinit>()>::STATICINVOKE::<spec.reporter.Utils: java.util.HashMap initColorMap()>::221

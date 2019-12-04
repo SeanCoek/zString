@@ -1,1 +1,0 @@
-IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord: void addBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.util.ArrayList::$r2::boolean add(java.lang.Object)::29

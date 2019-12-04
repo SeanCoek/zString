@@ -1,4 +1,0 @@
-IN METHOD::<spec.reporter.HTMLWriter: void handleIterRecord(java.util.ArrayList,int)>::INVOKE::java.util.ArrayList::r1::java.lang.Object get(int)::289
-IN METHOD::<spec.reporter.HTMLWriter: void handleIterRecord(java.util.ArrayList,int)>::STATICINVOKE::<java.lang.Long: java.lang.String toString(long)>::293
-IN METHOD::<spec.reporter.HTMLWriter: void handleIterRecord(java.util.ArrayList,int)>::INVOKE::java.text.DecimalFormat::$r9::java.lang.String format(double)::295
-IN METHOD::<spec.reporter.HTMLWriter: void handleIterRecord(java.util.ArrayList,int)>::INVOKE::java.text.DecimalFormat::$r11::java.lang.String format(double)::296

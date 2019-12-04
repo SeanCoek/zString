@@ -1,1 +1,0 @@
-IN METHOD::<spec.reporter.Writer: void closeStream()>::INVOKE::java.io.PrintStream::$r1::void close()::30

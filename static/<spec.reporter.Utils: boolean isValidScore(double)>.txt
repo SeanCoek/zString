@@ -1,1 +1,0 @@
-IN METHOD::<spec.reporter.Utils: boolean isValidScore(double)>::STATICINVOKE::<java.lang.Double: java.lang.Double valueOf(double)>::351

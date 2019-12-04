@@ -1,7 +1,0 @@
-IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r4::void <init>()::551
-IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::551
-IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r3::void <init>(java.lang.String)::551
-IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r14::void <init>()::554
-IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r14::java.lang.StringBuilder append(java.lang.String)::554
-IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::r1::java.lang.StringBuilder append(java.lang.String)::554
-IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::r1::java.lang.String toString()::556

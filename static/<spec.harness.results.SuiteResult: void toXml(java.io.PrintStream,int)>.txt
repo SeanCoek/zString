@@ -1,1 +1,0 @@
-IN METHOD::<spec.harness.results.SuiteResult: void toXml(java.io.PrintStream,int)>::INVOKE::java.util.LinkedList::$r3::java.util.Iterator iterator()::246

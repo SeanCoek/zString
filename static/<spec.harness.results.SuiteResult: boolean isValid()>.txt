@@ -1,1 +1,0 @@
-IN METHOD::<spec.harness.results.SuiteResult: boolean isValid()>::INVOKE::java.util.LinkedList::$r3::java.util.Iterator iterator()::167

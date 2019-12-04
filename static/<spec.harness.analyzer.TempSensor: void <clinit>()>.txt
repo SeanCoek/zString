@@ -1,1 +1,0 @@
-IN METHOD::<spec.harness.analyzer.TempSensor: void <clinit>()>::STATICINVOKE::<spec.harness.Util: boolean getBoolProperty(java.lang.String,java.lang.String)>::32

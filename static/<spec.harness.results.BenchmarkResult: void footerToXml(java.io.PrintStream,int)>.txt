@@ -1,3 +1,0 @@
-IN METHOD::<spec.harness.results.BenchmarkResult: void footerToXml(java.io.PrintStream,int)>::INVOKE::spec.harness.results.BenchmarkResult::r0::void ptxElementClose(java.io.PrintStream,int,java.lang.String)::300
-IN METHOD::<spec.harness.results.BenchmarkResult: void footerToXml(java.io.PrintStream,int)>::INVOKE::spec.harness.results.BenchmarkResult::r0::void printErrorsToXml(java.io.PrintStream,int)::301
-IN METHOD::<spec.harness.results.BenchmarkResult: void footerToXml(java.io.PrintStream,int)>::INVOKE::spec.harness.results.BenchmarkResult::r0::void ptxElementClose(java.io.PrintStream,int,java.lang.String)::302

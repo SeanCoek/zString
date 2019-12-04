@@ -1,4 +1,0 @@
-IN METHOD::<spec.reporter.PlainWriter: void insertRecords(java.util.ArrayList)>::INVOKE::java.io.PrintStream::$r3::void println()::102
-IN METHOD::<spec.reporter.PlainWriter: void insertRecords(java.util.ArrayList)>::STATICINVOKE::<spec.harness.results.TestResult: java.lang.String correctContent(java.lang.String,boolean)>::104
-IN METHOD::<spec.reporter.PlainWriter: void insertRecords(java.util.ArrayList)>::INVOKE::java.io.PrintStream::$r4::void println(java.lang.String)::104
-IN METHOD::<spec.reporter.PlainWriter: void insertRecords(java.util.ArrayList)>::INVOKE::java.io.PrintStream::$r2::void print(java.lang.String)::107

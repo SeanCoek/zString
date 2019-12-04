@@ -1,8 +1,0 @@
-IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord: double computeScore()>::INVOKE::java.util.ArrayList::$r8::java.lang.Object get(int)::34
-IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord: double computeScore()>::INVOKE::java.util.ArrayList::$r2::int size()::39
-IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord: double computeScore()>::INVOKE::java.util.ArrayList::$r6::java.lang.Object get(int)::40
-IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord: double computeScore()>::INVOKE::java.lang.StringBuilder::$r12::void <init>()::42
-IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord: double computeScore()>::INVOKE::java.lang.StringBuilder::$r12::java.lang.StringBuilder append(java.lang.String)::42
-IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord: double computeScore()>::STATICINVOKE::<spec.reporter.Utils: void dbgPrint(java.lang.String)>::42
-IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord: double computeScore()>::INVOKE::java.util.ArrayList::$r3::int size()::45
-IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord: double computeScore()>::STATICINVOKE::<java.lang.Math: double pow(double,double)>::45

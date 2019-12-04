@@ -1,2 +1,0 @@
-IN METHOD::<spec.io.FileCache: void <init>()>::INVOKE::spec.io.FileCache::r0::void <init>()::35
-IN METHOD::<spec.io.FileCache: void <init>()>::INVOKE::java.util.HashMap::$r1::void <init>()::38

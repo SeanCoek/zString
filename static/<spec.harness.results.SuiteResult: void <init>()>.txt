@@ -1,6 +1,0 @@
-IN METHOD::<spec.harness.results.SuiteResult: void <init>()>::INVOKE::spec.harness.results.SuiteResult::r0::void <init>()::22
-IN METHOD::<spec.harness.results.SuiteResult: void <init>()>::INVOKE::java.util.HashMap::$r1::void <init>()::29
-IN METHOD::<spec.harness.results.SuiteResult: void <init>()>::INVOKE::java.util.HashMap::$r2::void <init>()::31
-IN METHOD::<spec.harness.results.SuiteResult: void <init>()>::INVOKE::java.util.HashMap::$r3::void <init>()::33
-IN METHOD::<spec.harness.results.SuiteResult: void <init>()>::INVOKE::java.util.HashMap::$r4::void <init>()::35
-IN METHOD::<spec.harness.results.SuiteResult: void <init>()>::INVOKE::java.util.LinkedList::$r5::void <init>()::38

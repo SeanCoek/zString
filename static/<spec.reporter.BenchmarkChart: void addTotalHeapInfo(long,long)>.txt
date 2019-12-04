@@ -1,2 +1,0 @@
-IN METHOD::<spec.reporter.BenchmarkChart: void addTotalHeapInfo(long,long)>::INVOKE::org.jfree.data.xy.XYSeries::$r3::void <init>(java.lang.Comparable)::67
-IN METHOD::<spec.reporter.BenchmarkChart: void addTotalHeapInfo(long,long)>::INVOKE::org.jfree.data.xy.XYSeries::$r2::void add(double,double)::69

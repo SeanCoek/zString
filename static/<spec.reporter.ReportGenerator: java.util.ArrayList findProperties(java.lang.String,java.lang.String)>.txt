@@ -1,2 +1,0 @@
-IN METHOD::<spec.reporter.ReportGenerator: java.util.ArrayList findProperties(java.lang.String,java.lang.String)>::INVOKE::java.util.ArrayList::$r9::void <init>()::272
-IN METHOD::<spec.reporter.ReportGenerator: java.util.ArrayList findProperties(java.lang.String,java.lang.String)>::INVOKE::java.util.ArrayList::r6::boolean add(java.lang.Object)::276

@@ -1,2 +1,0 @@
-IN METHOD::<spec.harness.analyzer.AnalyzerBase: long getNoOps()>::INVOKE::spec.harness.results.IterationResult::$r1::java.util.List getLoopResults()::102
-IN METHOD::<spec.harness.analyzer.AnalyzerBase: long getNoOps()>::INVOKE::java.util.LinkedList::$r2::int size()::102

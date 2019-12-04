@@ -1,2 +1,0 @@
-IN METHOD::<spec.harness.analyzer.TempAnalyzer: void endMeasurementInterval()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::107
-IN METHOD::<spec.harness.analyzer.TempAnalyzer: void endMeasurementInterval()>::INVOKE::spec.harness.analyzer.TempSensor::$r1::java.util.HashMap reportRun(java.lang.String)::112

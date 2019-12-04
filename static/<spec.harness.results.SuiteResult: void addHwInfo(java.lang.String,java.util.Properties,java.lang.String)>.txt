@@ -1,5 +1,0 @@
-IN METHOD::<spec.harness.results.SuiteResult: void addHwInfo(java.lang.String,java.util.Properties,java.lang.String)>::INVOKE::java.util.Properties::r2::java.lang.String getProperty(java.lang.String,java.lang.String)::116
-IN METHOD::<spec.harness.results.SuiteResult: void addHwInfo(java.lang.String,java.util.Properties,java.lang.String)>::INVOKE::java.util.HashMap::$r4::java.lang.Object put(java.lang.Object,java.lang.Object)::118
-IN METHOD::<spec.harness.results.SuiteResult: void addHwInfo(java.lang.String,java.util.Properties,java.lang.String)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::121
-IN METHOD::<spec.harness.results.SuiteResult: void addHwInfo(java.lang.String,java.util.Properties,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::void <init>()::121
-IN METHOD::<spec.harness.results.SuiteResult: void addHwInfo(java.lang.String,java.util.Properties,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::121

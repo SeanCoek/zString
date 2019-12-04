@@ -1,1 +1,0 @@
-IN METHOD::<spec.harness.results.SuiteResult: java.lang.String getCommandLineOptions()>::INVOKE::java.util.HashMap::$r1::java.lang.Object get(java.lang.Object)::258

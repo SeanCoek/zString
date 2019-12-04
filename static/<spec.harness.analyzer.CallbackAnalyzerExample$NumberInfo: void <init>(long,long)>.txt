@@ -1,1 +1,0 @@
-IN METHOD::<spec.harness.analyzer.CallbackAnalyzerExample$NumberInfo: void <init>(long,long)>::INVOKE::spec.harness.analyzer.CallbackAnalyzerExample$NumberInfo::r0::void <init>(long,long)::74

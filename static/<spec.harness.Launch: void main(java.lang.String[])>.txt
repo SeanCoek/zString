@@ -1,3 +1,0 @@
-IN METHOD::<spec.harness.Launch: void main(java.lang.String[])>::INVOKE::java.util.Properties::$r2::void <init>()::447
-IN METHOD::<spec.harness.Launch: void main(java.lang.String[])>::STATICINVOKE::<spec.harness.CommandLineParser: boolean parseArgs(java.lang.String[],java.util.Properties)>::448
-IN METHOD::<spec.harness.Launch: void main(java.lang.String[])>::STATICINVOKE::<spec.harness.Launch: void runBenchmarkSuite(java.util.Properties)>::452

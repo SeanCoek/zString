@@ -1,3 +1,0 @@
-IN METHOD::<spec.harness.results.TestResult: void <clinit>()>::INVOKE::java.text.DecimalFormat::$r0::void <init>(java.lang.String)::25
-IN METHOD::<spec.harness.results.TestResult: void <clinit>()>::INVOKE::java.text.DecimalFormat::$r1::void setDecimalSeparatorAlwaysShown(boolean)::31
-IN METHOD::<spec.harness.results.TestResult: void <clinit>()>::INVOKE::java.text.DecimalFormat::$r2::void setMinimumFractionDigits(int)::32

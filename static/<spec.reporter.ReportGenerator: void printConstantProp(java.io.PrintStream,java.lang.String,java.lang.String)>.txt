@@ -1,3 +1,0 @@
-IN METHOD::<spec.reporter.ReportGenerator: void printConstantProp(java.io.PrintStream,java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r4::void <init>()::579
-IN METHOD::<spec.reporter.ReportGenerator: void printConstantProp(java.io.PrintStream,java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::579
-IN METHOD::<spec.reporter.ReportGenerator: void printConstantProp(java.io.PrintStream,java.lang.String,java.lang.String)>::INVOKE::java.io.PrintStream::r1::void println(java.lang.String)::579

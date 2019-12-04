@@ -1,1 +1,0 @@
-IN METHOD::<spec.harness.ProgramRunner: void invokeBmTearDownBenchmark()>::INVOKE::spec.harness.StopBenchmarkException::$r6::void <init>(java.lang.String,java.lang.Throwable)::209

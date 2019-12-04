@@ -1,1 +1,0 @@
-IN METHOD::<spec.harness.analyzer.PollingAnalyzerExample$NumberOfOperations: java.lang.String getUnit()>::STATICINVOKE::<spec.harness.analyzer.PollingAnalyzerExample: java.lang.String access$100()>::47

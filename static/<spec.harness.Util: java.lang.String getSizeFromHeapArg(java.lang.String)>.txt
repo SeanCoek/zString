@@ -1,1 +1,0 @@
-IN METHOD::<spec.harness.Util: java.lang.String getSizeFromHeapArg(java.lang.String)>::STATICINVOKE::<java.lang.Character: boolean isDigit(char)>::374
