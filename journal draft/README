@@ -3,8 +3,10 @@
 
 README                 - This file.
 
-IEEE                   - IEEE style paper.
+IEEE                   - IEEE style paper for Transaction on Reliability.
 
-Elsevier               - Elsevier style paper.
+Elsevier               - Elsevier style paper for SCP.
+
+Springer               - Springer style paper for FAC.
 
 ***************************************************************************
