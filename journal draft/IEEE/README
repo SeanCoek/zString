@@ -4,27 +4,6 @@ README                 - This file.
 
 IEEEtran.cls           - The IEEEtran LaTeX class file.
 
-changelog.txt          - The revision history.
+ieee-trans-tfa.tex     - Our journal paper tex file.
 
-IEEEtran_HOWTO.pdf     - The IEEEtran LaTeX class user manual.
-
-bare_conf.tex          - A bare bones starter file for IEEE conference papers.
-
-bare_conf_compsoc.tex  - A bare bones starter file for IEEE Computer Society
-                         conference papers.
-
-bare_jrnl.tex          - A bare bones starter file for IEEE journal papers.
-
-bare_jrnl_comsoc.tex   - A bare bones starter file for IEEE Communications
-                         Society journal papers.
-
-bare_jrnl_compsoc.tex  - A bare bones starter file for IEEE Computer Society
-                         journal papers.
-
-bare_jrnl_transmag.tex - A bare bones starter file for IEEE Transactions
-                         on Magnetics journal papers.
-
-bare_adv.tex           - A bare bones starter file showing advanced
-                         techniques such as conditional compilation,
-                         hyperlinks, PDF thumbnails, etc. The illustrated
-                         format is for an IEEE Computer Society journal paper.
+ieee-trans-tfa.pdf     - Our journal paper pdf file.
