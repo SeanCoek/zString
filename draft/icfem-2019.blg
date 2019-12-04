@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: icfem-2019.aux
+The style file: splncs04.bst
+Database file #1: icfem-literature.bib
+Warning--to sort, need author or key in soot
+Warning--to sort, need author or key in specjvm
+Warning--missing school in Shivers91
+You've used 26 entries,
+            2850 wiz_defined-function locations,
+            776 strings with 9694 characters,
+and the built_in function-call counts, 15939 in all, are:
+= -- 1421
+> -- 460
+< -- 26
++ -- 192
+- -- 164
+* -- 944
+:= -- 1982
+add.period$ -- 58
+call.type$ -- 26
+change.case$ -- 194
+chr.to.int$ -- 0
+cite$ -- 29
+duplicate$ -- 1369
+empty$ -- 1426
+format.name$ -- 183
+if$ -- 3583
+int.to.chr$ -- 0
+int.to.str$ -- 26
+missing$ -- 260
+newline$ -- 84
+num.names$ -- 48
+pop$ -- 519
+preamble$ -- 1
+purify$ -- 134
+quote$ -- 0
+skip$ -- 514
+stack$ -- 0
+substring$ -- 986
+swap$ -- 742
+text.length$ -- 26
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 104
+warning$ -- 3
+while$ -- 132
+width$ -- 28
+write$ -- 275
+(There were 3 warnings)

@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.StopBenchmarkException: void <init>(java.lang.String)>::INVOKE::spec.harness.StopBenchmarkException::r0::void <init>(java.lang.String)::17

@@ -1,0 +1,5 @@
+IN METHOD::<spec.reporter.BenchmarkChart: void <init>(java.lang.String)>::INVOKE::spec.reporter.BenchmarkChart::r0::void <init>()::45
+IN METHOD::<spec.reporter.BenchmarkChart: void <init>(java.lang.String)>::INVOKE::java.util.Hashtable::$r2::void <init>()::37
+IN METHOD::<spec.reporter.BenchmarkChart: void <init>(java.lang.String)>::INVOKE::org.jfree.data.xy.XYSeriesCollection::$r3::void <init>()::38
+IN METHOD::<spec.reporter.BenchmarkChart: void <init>(java.lang.String)>::INVOKE::java.util.HashMap::$r4::void <init>()::40
+IN METHOD::<spec.reporter.BenchmarkChart: void <init>(java.lang.String)>::STATICINVOKE::<org.jfree.chart.ChartFactory: org.jfree.chart.JFreeChart createXYLineChart(java.lang.String,java.lang.String,java.lang.String,org.jfree.data.xy.XYDataset,org.jfree.chart.plot.PlotOrientation,boolean,boolean,boolean)>::47

@@ -61,12 +61,12 @@ public class Relation {
                 valueRelations.add(this);
                 partialRelationHolder.put(left, valueRelations);
 
-//                valueRelations = valueRelationHolder.get(right);
-//                if (valueRelations == null) {
-//                    valueRelations = new HashSet<Relation>();
-//                }
-//                valueRelations.add(this);
-//                valueRelationHolder.put(right, valueRelations);
+                valueRelations = partialRelationHolder.get(right);
+                if (valueRelations == null) {
+                    valueRelations = new HashSet<Relation>();
+                }
+                valueRelations.add(this);
+                partialRelationHolder.put(right, valueRelations);
 
                 // update partialReachByLeft mapping
                 Set<Value> values = partialReachByLeft.get(left);
@@ -84,12 +84,6 @@ public class Relation {
                 values.add(left);
                 partialReachByRight.put(right, values);
 
-//                valueRelations = partialRelationHolder.get(right);
-//                if (valueRelations == null) {
-//                    valueRelations = new HashSet<Relation>();
-//                }
-//                valueRelations.add(this);
-//                partialRelationHolder.put(left, valueRelations);
                 globalValues.add(left);
                 globalValues.add(right);
             }

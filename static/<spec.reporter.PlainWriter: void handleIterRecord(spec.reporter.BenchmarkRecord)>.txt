@@ -1,0 +1,10 @@
+IN METHOD::<spec.reporter.PlainWriter: void handleIterRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.util.Formatter::$r4::void <init>(java.io.PrintStream)::26
+IN METHOD::<spec.reporter.PlainWriter: void handleIterRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.util.ArrayList::$r6::int size()::27
+IN METHOD::<spec.reporter.PlainWriter: void handleIterRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.util.ArrayList::$r8::java.lang.Object get(int)::28
+IN METHOD::<spec.reporter.PlainWriter: void handleIterRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.io.PrintStream::$r10::void println()::29
+IN METHOD::<spec.reporter.PlainWriter: void handleIterRecord(spec.reporter.BenchmarkRecord)>::STATICINVOKE::<java.lang.Long: java.lang.Long valueOf(long)>::30
+IN METHOD::<spec.reporter.PlainWriter: void handleIterRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.util.Formatter::r3::java.util.Formatter format(java.lang.String,java.lang.Object[])::30
+IN METHOD::<spec.reporter.PlainWriter: void handleIterRecord(spec.reporter.BenchmarkRecord)>::STATICINVOKE::<java.lang.Double: java.lang.Double valueOf(double)>::32
+IN METHOD::<spec.reporter.PlainWriter: void handleIterRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.util.Formatter::r3::java.util.Formatter format(java.lang.String,java.lang.Object[])::32
+IN METHOD::<spec.reporter.PlainWriter: void handleIterRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.io.PrintStream::$r18::void print(java.lang.Object)::34
+IN METHOD::<spec.reporter.PlainWriter: void handleIterRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.io.PrintStream::$r7::void println()::37

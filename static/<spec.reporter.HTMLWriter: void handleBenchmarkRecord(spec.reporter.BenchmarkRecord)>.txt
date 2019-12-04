@@ -1,0 +1,14 @@
+IN METHOD::<spec.reporter.HTMLWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.util.ArrayList::$r3::int size()::318
+IN METHOD::<spec.reporter.HTMLWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.lang.StringBuilder::$r25::void <init>()::325
+IN METHOD::<spec.reporter.HTMLWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.lang.StringBuilder::$r25::java.lang.StringBuilder append(java.lang.String)::325
+IN METHOD::<spec.reporter.HTMLWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.lang.StringBuilder::$r27::void <init>()::325
+IN METHOD::<spec.reporter.HTMLWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.lang.StringBuilder::$r27::java.lang.StringBuilder append(java.lang.String)::325
+IN METHOD::<spec.reporter.HTMLWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::STATICINVOKE::<spec.reporter.Utils: java.lang.String getImageName(java.lang.String)>::325
+IN METHOD::<spec.reporter.HTMLWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.util.ArrayList::$r40::int size()::331
+IN METHOD::<spec.reporter.HTMLWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.lang.StringBuilder::$r19::void <init>()::357
+IN METHOD::<spec.reporter.HTMLWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.lang.StringBuilder::$r19::java.lang.StringBuilder append(java.lang.String)::357
+IN METHOD::<spec.reporter.HTMLWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.text.DecimalFormat::$r21::java.lang.String format(double)::357
+IN METHOD::<spec.reporter.HTMLWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.util.ArrayList::$r8::int size()::357
+IN METHOD::<spec.reporter.HTMLWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.util.ArrayList::$r9::java.lang.Object get(int)::348
+IN METHOD::<spec.reporter.HTMLWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.lang.StringBuilder::$r11::void <init>()::350
+IN METHOD::<spec.reporter.HTMLWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.lang.StringBuilder::$r11::java.lang.StringBuilder append(java.lang.String)::350

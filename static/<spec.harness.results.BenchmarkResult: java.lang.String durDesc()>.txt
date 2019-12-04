@@ -1,0 +1,12 @@
+IN METHOD::<spec.harness.results.BenchmarkResult: java.lang.String durDesc()>::INVOKE::spec.harness.results.BenchmarkResult::r0::long getIterationTime()::191
+IN METHOD::<spec.harness.results.BenchmarkResult: java.lang.String durDesc()>::STATICINVOKE::<spec.harness.results.TestResult: java.lang.String millisAsSec(long)>::191
+IN METHOD::<spec.harness.results.BenchmarkResult: java.lang.String durDesc()>::INVOKE::spec.harness.results.BenchmarkResult::r0::int getNumberOfLoops()::193
+IN METHOD::<spec.harness.results.BenchmarkResult: java.lang.String durDesc()>::INVOKE::java.lang.StringBuilder::$r10::void <init>()::194
+IN METHOD::<spec.harness.results.BenchmarkResult: java.lang.String durDesc()>::INVOKE::spec.harness.results.BenchmarkResult::r0::int getNumberOfLoops()::194
+IN METHOD::<spec.harness.results.BenchmarkResult: java.lang.String durDesc()>::INVOKE::java.lang.StringBuilder::$r10::java.lang.StringBuilder append(int)::194
+IN METHOD::<spec.harness.results.BenchmarkResult: java.lang.String durDesc()>::INVOKE::java.lang.StringBuilder::$r6::void <init>()::196
+IN METHOD::<spec.harness.results.BenchmarkResult: java.lang.String durDesc()>::INVOKE::spec.harness.results.BenchmarkResult::r0::int getNumberOfLoops()::196
+IN METHOD::<spec.harness.results.BenchmarkResult: java.lang.String durDesc()>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(int)::196
+IN METHOD::<spec.harness.results.BenchmarkResult: java.lang.String durDesc()>::INVOKE::java.lang.StringBuilder::$r2::void <init>()::199
+IN METHOD::<spec.harness.results.BenchmarkResult: java.lang.String durDesc()>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::199
+IN METHOD::<spec.harness.results.BenchmarkResult: java.lang.String durDesc()>::INVOKE::spec.harness.StopBenchmarkException::$r1::void <init>(java.lang.String)::199

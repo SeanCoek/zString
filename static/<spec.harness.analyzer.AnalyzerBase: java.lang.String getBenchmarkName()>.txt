@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.analyzer.AnalyzerBase: java.lang.String getBenchmarkName()>::INVOKE::spec.harness.results.IterationResult::$r1::spec.harness.results.BenchmarkResult getBenchmarkResult()::98
+IN METHOD::<spec.harness.analyzer.AnalyzerBase: java.lang.String getBenchmarkName()>::INVOKE::spec.harness.results.BenchmarkResult::$r2::java.lang.String getLogicalName()::98

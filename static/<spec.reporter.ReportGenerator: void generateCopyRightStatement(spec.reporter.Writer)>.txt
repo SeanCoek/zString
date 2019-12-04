@@ -1,0 +1,13 @@
+IN METHOD::<spec.reporter.ReportGenerator: void generateCopyRightStatement(spec.reporter.Writer)>::INVOKE::java.util.GregorianCalendar::$r4::void <init>()::302
+IN METHOD::<spec.reporter.ReportGenerator: void generateCopyRightStatement(spec.reporter.Writer)>::INVOKE::java.util.GregorianCalendar::r2::int get(int)::303
+IN METHOD::<spec.reporter.ReportGenerator: void generateCopyRightStatement(spec.reporter.Writer)>::INVOKE::java.util.ArrayList::$r5::void <init>()::304
+IN METHOD::<spec.reporter.ReportGenerator: void generateCopyRightStatement(spec.reporter.Writer)>::INVOKE::java.lang.StringBuilder::$r6::void <init>()::305
+IN METHOD::<spec.reporter.ReportGenerator: void generateCopyRightStatement(spec.reporter.Writer)>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::305
+IN METHOD::<spec.reporter.ReportGenerator: void generateCopyRightStatement(spec.reporter.Writer)>::INVOKE::spec.reporter.ReportGenerator::r0::java.lang.String getProperty(java.lang.String)::305
+IN METHOD::<spec.reporter.ReportGenerator: void generateCopyRightStatement(spec.reporter.Writer)>::INVOKE::java.util.ArrayList::r3::boolean add(java.lang.Object)::305
+IN METHOD::<spec.reporter.ReportGenerator: void generateCopyRightStatement(spec.reporter.Writer)>::INVOKE::java.lang.StringBuilder::$r18::void <init>()::307
+IN METHOD::<spec.reporter.ReportGenerator: void generateCopyRightStatement(spec.reporter.Writer)>::INVOKE::java.lang.StringBuilder::$r18::java.lang.StringBuilder append(java.lang.String)::307
+IN METHOD::<spec.reporter.ReportGenerator: void generateCopyRightStatement(spec.reporter.Writer)>::INVOKE::java.util.ArrayList::r3::boolean add(java.lang.Object)::307
+IN METHOD::<spec.reporter.ReportGenerator: void generateCopyRightStatement(spec.reporter.Writer)>::INVOKE::java.lang.StringBuilder::$r12::void <init>()::309
+IN METHOD::<spec.reporter.ReportGenerator: void generateCopyRightStatement(spec.reporter.Writer)>::INVOKE::java.lang.StringBuilder::$r12::java.lang.StringBuilder append(java.lang.String)::309
+IN METHOD::<spec.reporter.ReportGenerator: void generateCopyRightStatement(spec.reporter.Writer)>::INVOKE::java.util.ArrayList::r3::boolean add(java.lang.Object)::309

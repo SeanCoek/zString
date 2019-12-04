@@ -371,6 +371,9 @@
 \newcommand{\hflow}{\longrightarrow}
 \newcommand{\lhflow}[1]{\stackrel{#1}{\hflow}}
 
+\usepackage{listings}
+\usepackage{amsfonts}
+
 \begin{document}
 %
 % paper title
@@ -652,7 +655,7 @@ Type Analysis, Static Analysis, Method Resolving.
 
 \section{Type Flow Analysis}\label{sec:type-flow-analysis}
 We define a core calculus consisting of most of the key object-oriented language features...
-%\subsection{c$\tflow$ y}
+\subsection{c$\tflow$ y}
 \subsection{x$\less$ y}
 \subsection{x$\lhflow{f}$ y}
 
@@ -662,6 +665,69 @@ The analysis algorithm is written in Java, and is implemented in the Soot framew
 \subsection{Static Analysis Tool}\label{subsec:static-analysis-tool}
 
 \subsection{Dynamic Profiler}\label{subsec:dynamic-profiler}
+Since the benchmarks do not provide the run-time type of method receiver, we implement a dynamic profiling tool to record  types which a receiver can access at run-time. To achieve this, we instrument statements into the target benchmark. After this instrumentation, the run-time type will be extracted during the benchmark execution. We consider this output as groundtruth and compare it with our static result in section ~\ref{subsec:precision}. There are four manners to instrument the source code to record the run-time type of a method receiver.
+\subsubsection{Insert First}\label{subsubsec:insert-first}
+In this manner, the type-recorded statements will be insert before the first statement of a method block and the type of ``this'' reference in that method will be recorded. The reason we only have to record ``this'' reference is that a receiver is always passed into ``this'' reference in a method, except for static methods. 
+\subsubsection{Insert Before}\label{subsubsec:insert-before}
+Statements will be inserted before invocations and the type of receiver will be recorded in this manner. It is more straightforward than the method we discuss about recording ``this'' reference.
+\subsubsection{Insert Last}\label{subsubsec:insert-last}
+This manner is similar with ``Insert First'', except that statements are inserted after the last statement of a method block. We also record ``this'' reference in this way.
+\subsubsection{Insert After}\label{subsubsec:insert-after}
+Statments will be inserted right after invocations and the type of receiver will be recorded. It is similar with ``Insert Before'', except that statements are inserted at different position. We use this manner in our implementation and the reason will be discuss in section ~\ref{subsubsec:instrument}
+\subsubsection{Instrumentation}\label{subsubsec:instrument}
+We use ``Insert After'' as our instrumentation manner. The reason is mainly due to the Java specification of constructor that the first statement in constructor should be either another constructor of its own or its super class. Therefore, we will get JVM voilation error if we instrument a statement before the first statement in construtor. We illustrate this example on ~\ref{fig:spec-constructor}. So both ``Insert First'' and ``Insert Before'' manners can not be applied under this circumstance. We choose ``Insert After'' over ``Insert Last'' for reason that it's more straightforward. The code before and after instrumentation are shown in \ref{fig:before-instru} and \ref{fig:after-instru}, respectively.
+
+\begin{figure*}[t!]
+\begin{lstlisting}[language={java},frame={single}]
+class A {
+  public A() {
+    //insert statements here will violate JVM specification
+    super();	//invoke super class constructor
+  }
+  public A(int i) {
+    //insert statements here will violate JVM specification
+    this();    //inovke another constructor of its own
+  }
+}
+\end{lstlisting}
+\caption{Java specification on constructor}
+\label{fig:spec-constructor}
+\end{figure*}
+
+\begin{figure*}[t!]
+\begin{lstlisting}[language={java},frame={single}]
+class A {
+  public void m1() {
+    B b = new B();
+    b.m2();    //invocation here
+  }
+}
+class B {
+  public void m2() {
+    ...
+  }
+}
+\end{lstlisting}
+\caption{Example code before instrumentation}
+\label{fig:before-instru}
+\end{figure*}
+
+\begin{figure*}[t!]
+\begin{lstlisting}[language={java},frame={single}]
+class A {
+  public void m1() {
+    ...
+    b.m2();    //invocation here
+    String record = RecordUtils.id(invokeExpression, b);
+    RecordUtils.record(record);
+  }
+}
+\end{lstlisting}
+\caption{Example code after instrumentation}
+\label{fig:after-instru}
+\end{figure*}
+
+
 
 \section{Evaluation}\label{sec:evaluation}
 We evaluate our approach by measuring its performance on $13$ benchmark programs...

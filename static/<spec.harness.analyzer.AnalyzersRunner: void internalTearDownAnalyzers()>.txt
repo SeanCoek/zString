@@ -1,0 +1,7 @@
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void internalTearDownAnalyzers()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::222
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void internalTearDownAnalyzers()>::INVOKE::spec.harness.analyzer.AnalyzerBase::$r3::void tearDown()::227
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void internalTearDownAnalyzers()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::229
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void internalTearDownAnalyzers()>::INVOKE::java.lang.StringBuilder::$r7::void <init>()::229
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void internalTearDownAnalyzers()>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::229
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void internalTearDownAnalyzers()>::INVOKE::java.lang.Class::$r10::java.lang.String getName()::229
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void internalTearDownAnalyzers()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::232

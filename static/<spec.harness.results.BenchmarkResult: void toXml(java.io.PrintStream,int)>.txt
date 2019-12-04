@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.results.BenchmarkResult: void toXml(java.io.PrintStream,int)>::INVOKE::spec.harness.results.IterationResult::$r7::void toXml(java.io.PrintStream,int)::285
+IN METHOD::<spec.harness.results.BenchmarkResult: void toXml(java.io.PrintStream,int)>::INVOKE::java.util.LinkedList::$r4::java.util.Iterator iterator()::288

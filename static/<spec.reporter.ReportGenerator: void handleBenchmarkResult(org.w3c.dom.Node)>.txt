@@ -1,0 +1,19 @@
+IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarkResult(org.w3c.dom.Node)>::INVOKE::spec.reporter.ReportGenerator::r0::java.lang.String getValue(org.w3c.dom.NamedNodeMap,java.lang.String)::134
+IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarkResult(org.w3c.dom.Node)>::INVOKE::spec.reporter.ReportGenerator::r0::java.lang.String getValue(org.w3c.dom.NamedNodeMap,java.lang.String)::135
+IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarkResult(org.w3c.dom.Node)>::STATICINVOKE::<java.lang.Integer: int parseInt(java.lang.String)>::137
+IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarkResult(org.w3c.dom.Node)>::INVOKE::spec.reporter.BenchmarkRecord::$r11::void <init>(java.lang.String,int)::137
+IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarkResult(org.w3c.dom.Node)>::INVOKE::spec.reporter.ReportGenerator::r0::void collectBmConfiguration(spec.reporter.BenchmarkRecord,org.w3c.dom.NamedNodeMap)::140
+IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarkResult(org.w3c.dom.Node)>::INVOKE::spec.reporter.BenchmarkChart::$r12::void <init>(java.lang.String)::141
+IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarkResult(org.w3c.dom.Node)>::INVOKE::java.lang.StringBuilder::$r13::void <init>()::142
+IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarkResult(org.w3c.dom.Node)>::INVOKE::java.lang.StringBuilder::$r13::java.lang.StringBuilder append(java.lang.String)::142
+IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarkResult(org.w3c.dom.Node)>::STATICINVOKE::<spec.reporter.Utils: void dbgPrint(java.lang.String)>::142
+IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarkResult(org.w3c.dom.Node)>::INVOKE::spec.reporter.ReportGenerator::r0::boolean isNotTextNode(org.w3c.dom.Node)::146
+IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarkResult(org.w3c.dom.Node)>::INVOKE::java.lang.StringBuilder::$r18::void <init>()::147
+IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarkResult(org.w3c.dom.Node)>::INVOKE::java.lang.StringBuilder::$r18::java.lang.StringBuilder append(java.lang.String)::147
+IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarkResult(org.w3c.dom.Node)>::STATICINVOKE::<spec.reporter.Utils: void dbgPrint(java.lang.String)>::147
+IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarkResult(org.w3c.dom.Node)>::INVOKE::spec.reporter.BenchmarkRecord::r5::void startHandling(java.lang.String)::148
+IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarkResult(org.w3c.dom.Node)>::INVOKE::spec.reporter.ReportGenerator::r0::boolean isNotTextNode(org.w3c.dom.Node)::152
+IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarkResult(org.w3c.dom.Node)>::INVOKE::spec.reporter.ReportGenerator::r0::void handleIterationResult(spec.reporter.BenchmarkRecord,spec.reporter.BenchmarkChart,org.w3c.dom.Node)::153
+IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarkResult(org.w3c.dom.Node)>::INVOKE::spec.reporter.BenchmarkGroupRecords::$r17::void addNewBenchmarkRecord(spec.reporter.BenchmarkRecord)::159
+IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarkResult(org.w3c.dom.Node)>::STATICINVOKE::<spec.reporter.Utils: void createBmResultGraph(spec.reporter.BenchmarkRecord)>::160
+IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarkResult(org.w3c.dom.Node)>::INVOKE::spec.reporter.BenchmarkChart::r6::void buildJPEG()::161

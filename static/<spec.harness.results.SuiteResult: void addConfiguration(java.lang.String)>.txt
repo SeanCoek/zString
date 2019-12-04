@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.results.SuiteResult: void addConfiguration(java.lang.String)>::INVOKE::java.util.LinkedList::$r4::void <init>()::154
+IN METHOD::<spec.harness.results.SuiteResult: void addConfiguration(java.lang.String)>::INVOKE::java.util.LinkedList::$r3::boolean add(java.lang.Object)::156

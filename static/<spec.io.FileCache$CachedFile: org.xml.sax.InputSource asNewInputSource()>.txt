@@ -1,0 +1,1 @@
+IN METHOD::<spec.io.FileCache$CachedFile: org.xml.sax.InputSource asNewInputSource()>::INVOKE::org.xml.sax.InputSource::$r1::void <init>(java.io.InputStream)::133

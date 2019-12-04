@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.5.6)  27 NOV 2019 19:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.5.6)  4 DEC 2019 11:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -121,105 +121,144 @@ LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-No file ieee-trans-tfa.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+\lst@mode=\count94
+\lst@gtempboxa=\box28
+\lst@token=\toks16
+\lst@length=\count95
+\lst@currlwidth=\dimen126
+\lst@column=\count96
+\lst@pos=\count97
+\lst@lostspace=\dimen127
+\lst@width=\dimen128
+\lst@newlines=\count98
+\lst@lineno=\count99
+\lst@maxwidth=\dimen129
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count100
+\lst@skipnumbers=\count101
+\lst@framebox=\box29
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks17
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(./ieee-trans-tfa.aux)
 \openout1 = `ieee-trans-tfa.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 374.
-LaTeX Font Info:    ... okay on input line 374.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 374.
-LaTeX Font Info:    ... okay on input line 374.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 374.
-LaTeX Font Info:    ... okay on input line 374.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 374.
-LaTeX Font Info:    ... okay on input line 374.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 374.
-LaTeX Font Info:    ... okay on input line 374.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 374.
-LaTeX Font Info:    ... okay on input line 374.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 377.
+LaTeX Font Info:    ... okay on input line 377.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 377.
+LaTeX Font Info:    ... okay on input line 377.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 377.
+LaTeX Font Info:    ... okay on input line 377.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 377.
+LaTeX Font Info:    ... okay on input line 377.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 377.
+LaTeX Font Info:    ... okay on input line 377.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 377.
+LaTeX Font Info:    ... okay on input line 377.
+
 -- Lines per column: 61 (exact).
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 491.
+\c@lstlisting=\count102
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 494.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8.03> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 491.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 494.
 LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 49
-1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <11.04124> on input line 491.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.72884> on input line 491.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.52061> on input line 491.
-LaTeX Font Info:    Try loading font information for U+pzd on input line 491.
+4.
+LaTeX Font Info:    Try loading font information for U+msa on input line 494.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 494.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+pzd on input line 494.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 491.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8.03> on input line 491.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.62097> on input line 491.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.015> on input line 491.
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 494.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <11.04124> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 519.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 522.
 LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <11.04124> not available
 
-(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 519.
+(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 522.
 
-Underfull \hbox (badness 1484) in paragraph at lines 546--547
+Underfull \hbox (badness 1484) in paragraph at lines 549--550
 []\OT1/ppl/m/sc/9.53561 or \OT1/ppl/m/n/9.53561 object-oriented pro-gram-ming l
 an-guages, vir-tual
  []
 
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9.53561> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 656.
-LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 656
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 658.
+LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 658
 .
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9.53561> on input line 656.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6.6749> on input line 656.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.7678> on input line 656.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9.53561> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 671.
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 669.
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 682.
 
 
-] [2
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
+File: omsppl.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <9.53561> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 682.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-]
-(./ieee-trans-tfa.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+] [2] [3
 
- ) 
+] (./ieee-trans-tfa.aux) ) 
 Here is how much of TeX's memory you used:
- 1286 strings out of 493029
- 22918 string characters out of 6136235
- 78706 words of memory out of 5000000
- 4868 multiletter control sequences out of 15000+600000
- 44217 words of font info for 92 fonts, out of 8000000 for 9000
+ 2736 strings out of 493029
+ 44121 string characters out of 6136235
+ 150828 words of memory out of 5000000
+ 6273 multiletter control sequences out of 15000+600000
+ 51245 words of font info for 121 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 29i,8n,31p,802b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/u
-hvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on ieee-trans-tfa.pdf (2 pages, 92581 bytes).
+ 29i,8n,42p,802b,1307s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8
+r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/u
+plb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on ieee-trans-tfa.pdf (3 pages, 120929 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
+ 63 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

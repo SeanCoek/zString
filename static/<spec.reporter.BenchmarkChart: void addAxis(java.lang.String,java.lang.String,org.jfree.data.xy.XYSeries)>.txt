@@ -1,0 +1,4 @@
+IN METHOD::<spec.reporter.BenchmarkChart: void addAxis(java.lang.String,java.lang.String,org.jfree.data.xy.XYSeries)>::INVOKE::org.jfree.chart.axis.NumberAxis::$r7::void <init>(java.lang.String)::91
+IN METHOD::<spec.reporter.BenchmarkChart: void addAxis(java.lang.String,java.lang.String,org.jfree.data.xy.XYSeries)>::INVOKE::org.jfree.data.xy.XYSeriesCollection::$r11::void <init>()::95
+IN METHOD::<spec.reporter.BenchmarkChart: void addAxis(java.lang.String,java.lang.String,org.jfree.data.xy.XYSeries)>::INVOKE::org.jfree.data.xy.XYSeriesCollection::r5::void addSeries(org.jfree.data.xy.XYSeries)::96
+IN METHOD::<spec.reporter.BenchmarkChart: void addAxis(java.lang.String,java.lang.String,org.jfree.data.xy.XYSeries)>::INVOKE::org.jfree.chart.renderer.xy.XYLineAndShapeRenderer::$r14::void <init>()::99

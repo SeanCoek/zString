@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.results.IterationResult: java.util.Iterator getAnalyzerSummaries()>::INVOKE::java.util.LinkedList::$r1::java.util.Iterator iterator()::146

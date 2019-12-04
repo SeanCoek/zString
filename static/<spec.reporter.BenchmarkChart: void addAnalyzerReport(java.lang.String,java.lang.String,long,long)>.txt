@@ -1,0 +1,7 @@
+IN METHOD::<spec.reporter.BenchmarkChart: void addAnalyzerReport(java.lang.String,java.lang.String,long,long)>::INVOKE::java.util.HashMap::$r4::boolean containsKey(java.lang.Object)::81
+IN METHOD::<spec.reporter.BenchmarkChart: void addAnalyzerReport(java.lang.String,java.lang.String,long,long)>::INVOKE::java.lang.StringBuilder::$r9::void <init>()::82
+IN METHOD::<spec.reporter.BenchmarkChart: void addAnalyzerReport(java.lang.String,java.lang.String,long,long)>::INVOKE::java.lang.StringBuilder::$r9::java.lang.StringBuilder append(java.lang.String)::82
+IN METHOD::<spec.reporter.BenchmarkChart: void addAnalyzerReport(java.lang.String,java.lang.String,long,long)>::INVOKE::org.jfree.data.xy.XYSeries::$r8::void <init>(java.lang.Comparable)::82
+IN METHOD::<spec.reporter.BenchmarkChart: void addAnalyzerReport(java.lang.String,java.lang.String,long,long)>::INVOKE::java.util.HashMap::$r15::java.lang.Object put(java.lang.Object,java.lang.Object)::83
+IN METHOD::<spec.reporter.BenchmarkChart: void addAnalyzerReport(java.lang.String,java.lang.String,long,long)>::INVOKE::spec.reporter.BenchmarkChart::r0::void addAxis(java.lang.String,java.lang.String,org.jfree.data.xy.XYSeries)::84
+IN METHOD::<spec.reporter.BenchmarkChart: void addAnalyzerReport(java.lang.String,java.lang.String,long,long)>::INVOKE::java.util.HashMap::$r5::java.lang.Object get(java.lang.Object)::87

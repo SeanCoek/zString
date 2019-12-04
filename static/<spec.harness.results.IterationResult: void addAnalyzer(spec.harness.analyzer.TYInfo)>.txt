@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.results.IterationResult: void addAnalyzer(spec.harness.analyzer.TYInfo)>::INVOKE::java.util.LinkedList::$r2::boolean add(java.lang.Object)::138

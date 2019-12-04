@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.analyzer.PowerMeter: int writeMeter(java.lang.String)>::INVOKE::java.io.PrintWriter::$r2::void println(java.lang.String)::105

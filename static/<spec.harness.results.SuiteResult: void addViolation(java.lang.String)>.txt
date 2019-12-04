@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.results.SuiteResult: void addViolation(java.lang.String)>::INVOKE::java.util.LinkedList::$r4::void <init>()::147
+IN METHOD::<spec.harness.results.SuiteResult: void addViolation(java.lang.String)>::INVOKE::java.util.LinkedList::$r3::boolean add(java.lang.Object)::149

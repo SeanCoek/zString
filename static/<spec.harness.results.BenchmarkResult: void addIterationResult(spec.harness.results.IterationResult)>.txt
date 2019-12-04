@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.results.BenchmarkResult: void addIterationResult(spec.harness.results.IterationResult)>::INVOKE::java.util.LinkedList::$r2::boolean add(java.lang.Object)::174

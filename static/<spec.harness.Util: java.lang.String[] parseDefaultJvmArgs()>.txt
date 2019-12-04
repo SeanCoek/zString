@@ -1,0 +1,11 @@
+IN METHOD::<spec.harness.Util: java.lang.String[] parseDefaultJvmArgs()>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::331
+IN METHOD::<spec.harness.Util: java.lang.String[] parseDefaultJvmArgs()>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::332
+IN METHOD::<spec.harness.Util: java.lang.String[] parseDefaultJvmArgs()>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::333
+IN METHOD::<spec.harness.Util: java.lang.String[] parseDefaultJvmArgs()>::STATICINVOKE::<java.lang.management.ManagementFactory: java.lang.management.RuntimeMXBean getRuntimeMXBean()>::336
+IN METHOD::<spec.harness.Util: java.lang.String[] parseDefaultJvmArgs()>::INVOKE::java.lang.StringBuilder::$r4::void <init>()::338
+IN METHOD::<spec.harness.Util: java.lang.String[] parseDefaultJvmArgs()>::INVOKE::java.lang.StringBuilder::r1::int length()::348
+IN METHOD::<spec.harness.Util: java.lang.String[] parseDefaultJvmArgs()>::INVOKE::java.lang.StringBuilder::r1::java.lang.StringBuilder append(java.lang.String)::349
+IN METHOD::<spec.harness.Util: java.lang.String[] parseDefaultJvmArgs()>::INVOKE::java.lang.StringBuilder::r1::java.lang.StringBuilder append(java.lang.String)::351
+IN METHOD::<spec.harness.Util: java.lang.String[] parseDefaultJvmArgs()>::STATICINVOKE::<spec.harness.Util: java.lang.String getSizeFromHeapArg(java.lang.String)>::353
+IN METHOD::<spec.harness.Util: java.lang.String[] parseDefaultJvmArgs()>::STATICINVOKE::<spec.harness.Util: java.lang.String getSizeFromHeapArg(java.lang.String)>::356
+IN METHOD::<spec.harness.Util: java.lang.String[] parseDefaultJvmArgs()>::INVOKE::java.lang.StringBuilder::r1::java.lang.String toString()::359

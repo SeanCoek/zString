@@ -1,0 +1,8 @@
+IN METHOD::<spec.harness.CommandLineParser: void version(java.io.PrintStream)>::INVOKE::java.lang.StringBuilder::$r3::void <init>()::69
+IN METHOD::<spec.harness.CommandLineParser: void version(java.io.PrintStream)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::69
+IN METHOD::<spec.harness.CommandLineParser: void version(java.io.PrintStream)>::INVOKE::java.io.File::$r2::void <init>(java.lang.String)::69
+IN METHOD::<spec.harness.CommandLineParser: void version(java.io.PrintStream)>::INVOKE::java.io.File::r1::boolean exists()::70
+IN METHOD::<spec.harness.CommandLineParser: void version(java.io.PrintStream)>::INVOKE::java.io.FileReader::$r9::void <init>(java.io.File)::72
+IN METHOD::<spec.harness.CommandLineParser: void version(java.io.PrintStream)>::INVOKE::java.io.BufferedReader::$r8::void <init>(java.io.Reader)::72
+IN METHOD::<spec.harness.CommandLineParser: void version(java.io.PrintStream)>::INVOKE::java.io.BufferedReader::r12::java.lang.String readLine()::73
+IN METHOD::<spec.harness.CommandLineParser: void version(java.io.PrintStream)>::INVOKE::java.io.BufferedReader::r12::void close()::76

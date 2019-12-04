@@ -1,0 +1,5 @@
+IN METHOD::<spec.reporter.Writer: spec.reporter.Writer getInstance(java.lang.String,java.lang.String)>::INVOKE::spec.reporter.HTMLWriter::$r11::void <init>(java.lang.String)::74
+IN METHOD::<spec.reporter.Writer: spec.reporter.Writer getInstance(java.lang.String,java.lang.String)>::INVOKE::spec.reporter.PlainWriter::$r10::void <init>(java.lang.String)::76
+IN METHOD::<spec.reporter.Writer: spec.reporter.Writer getInstance(java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r5::void <init>()::78
+IN METHOD::<spec.reporter.Writer: spec.reporter.Writer getInstance(java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.StringBuilder append(java.lang.String)::78
+IN METHOD::<spec.reporter.Writer: spec.reporter.Writer getInstance(java.lang.String,java.lang.String)>::INVOKE::java.lang.RuntimeException::$r4::void <init>(java.lang.String)::78

@@ -1,0 +1,8 @@
+IN METHOD::<spec.harness.results.SuiteResult: java.util.List getAllErrors(java.lang.String)>::INVOKE::java.util.LinkedList::$r4::void <init>()::177
+IN METHOD::<spec.harness.results.SuiteResult: java.util.List getAllErrors(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r16::void <init>()::180
+IN METHOD::<spec.harness.results.SuiteResult: java.util.List getAllErrors(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r16::java.lang.StringBuilder append(java.lang.String)::180
+IN METHOD::<spec.harness.results.SuiteResult: java.util.List getAllErrors(java.lang.String)>::INVOKE::java.util.LinkedList::r2::boolean add(java.lang.Object)::180
+IN METHOD::<spec.harness.results.SuiteResult: java.util.List getAllErrors(java.lang.String)>::INVOKE::java.util.LinkedList::$r6::java.util.Iterator iterator()::183
+IN METHOD::<spec.harness.results.SuiteResult: java.util.List getAllErrors(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r8::void <init>()::185
+IN METHOD::<spec.harness.results.SuiteResult: java.util.List getAllErrors(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::185
+IN METHOD::<spec.harness.results.SuiteResult: java.util.List getAllErrors(java.lang.String)>::INVOKE::java.util.LinkedList::r2::boolean addAll(java.util.Collection)::185

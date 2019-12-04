@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.analyzer.PollingAnalyzerExample: void execute(long)>::INVOKE::spec.harness.analyzer.PollingAnalyzerExample$NumberOfOperations::$r1::void <init>(long,long)::33

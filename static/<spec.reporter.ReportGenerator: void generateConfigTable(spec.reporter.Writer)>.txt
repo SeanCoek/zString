@@ -1,0 +1,10 @@
+IN METHOD::<spec.reporter.ReportGenerator: void generateConfigTable(spec.reporter.Writer)>::INVOKE::spec.reporter.ReportGenerator::r0::org.w3c.dom.Node getChildByName(java.lang.String)::248
+IN METHOD::<spec.reporter.ReportGenerator: void generateConfigTable(spec.reporter.Writer)>::INVOKE::spec.reporter.ReportGenerator::r0::void generateInfoTable(org.w3c.dom.Node,spec.reporter.Writer,java.lang.String[])::248
+IN METHOD::<spec.reporter.ReportGenerator: void generateConfigTable(spec.reporter.Writer)>::INVOKE::spec.reporter.ReportGenerator::r0::org.w3c.dom.Node getChildByName(java.lang.String)::250
+IN METHOD::<spec.reporter.ReportGenerator: void generateConfigTable(spec.reporter.Writer)>::INVOKE::spec.reporter.ReportGenerator::r0::void generateInfoTable(org.w3c.dom.Node,spec.reporter.Writer,java.lang.String[])::250
+IN METHOD::<spec.reporter.ReportGenerator: void generateConfigTable(spec.reporter.Writer)>::INVOKE::spec.reporter.ReportGenerator::r0::org.w3c.dom.Node getChildByName(java.lang.String)::252
+IN METHOD::<spec.reporter.ReportGenerator: void generateConfigTable(spec.reporter.Writer)>::INVOKE::spec.reporter.ReportGenerator::r0::void generateInfoTable(org.w3c.dom.Node,spec.reporter.Writer,java.lang.String[])::252
+IN METHOD::<spec.reporter.ReportGenerator: void generateConfigTable(spec.reporter.Writer)>::INVOKE::spec.reporter.ReportGenerator::r0::org.w3c.dom.Node getChildByName(java.lang.String)::254
+IN METHOD::<spec.reporter.ReportGenerator: void generateConfigTable(spec.reporter.Writer)>::INVOKE::spec.reporter.ReportGenerator::r0::void generateInfoTable(org.w3c.dom.Node,spec.reporter.Writer,java.lang.String[])::254
+IN METHOD::<spec.reporter.ReportGenerator: void generateConfigTable(spec.reporter.Writer)>::INVOKE::spec.reporter.ReportGenerator::r0::void generateViolationsTable(spec.reporter.Writer)::256
+IN METHOD::<spec.reporter.ReportGenerator: void generateConfigTable(spec.reporter.Writer)>::INVOKE::spec.reporter.ReportGenerator::r0::void insertSuiteConfiguration(spec.reporter.Writer)::257

@@ -1,0 +1,4 @@
+IN METHOD::<spec.harness.Util: void printProperties(java.io.PrintStream,java.util.HashMap)>::INVOKE::java.util.HashMap::r1::java.util.Set keySet()::234
+IN METHOD::<spec.harness.Util: void printProperties(java.io.PrintStream,java.util.HashMap)>::INVOKE::java.util.HashMap::r1::java.lang.Object get(java.lang.Object)::237
+IN METHOD::<spec.harness.Util: void printProperties(java.io.PrintStream,java.util.HashMap)>::INVOKE::java.lang.StringBuilder::$r8::void <init>()::238
+IN METHOD::<spec.harness.Util: void printProperties(java.io.PrintStream,java.util.HashMap)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::238

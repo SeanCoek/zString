@@ -1,0 +1,3 @@
+IN METHOD::<spec.reporter.BenchmarkGroupRecords: void <init>()>::INVOKE::spec.reporter.BenchmarkGroupRecords::r0::void <init>()::10
+IN METHOD::<spec.reporter.BenchmarkGroupRecords: void <init>()>::INVOKE::java.util.TreeMap::$r1::void <init>()::96
+IN METHOD::<spec.reporter.BenchmarkGroupRecords: void <init>()>::INVOKE::java.util.TreeMap::$r2::void <init>()::99

@@ -1,0 +1,4 @@
+IN METHOD::<spec.harness.results.IterationResult: void <init>()>::INVOKE::spec.harness.results.IterationResult::r0::void <init>()::36
+IN METHOD::<spec.harness.results.IterationResult: void <init>()>::INVOKE::java.util.LinkedList::$r1::void <init>()::32
+IN METHOD::<spec.harness.results.IterationResult: void <init>()>::INVOKE::java.util.LinkedList::$r2::void <init>()::33
+IN METHOD::<spec.harness.results.IterationResult: void <init>()>::INVOKE::java.util.LinkedList::$r3::void <init>()::34

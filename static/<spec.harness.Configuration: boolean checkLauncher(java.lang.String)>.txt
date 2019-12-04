@@ -1,0 +1,7 @@
+IN METHOD::<spec.harness.Configuration: boolean checkLauncher(java.lang.String)>::STATICINVOKE::<java.lang.Runtime: java.lang.Runtime getRuntime()>::400
+IN METHOD::<spec.harness.Configuration: boolean checkLauncher(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r3::void <init>()::403
+IN METHOD::<spec.harness.Configuration: boolean checkLauncher(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::403
+IN METHOD::<spec.harness.Configuration: boolean checkLauncher(java.lang.String)>::STATICINVOKE::<java.lang.System: java.lang.String getProperty(java.lang.String)>::403
+IN METHOD::<spec.harness.Configuration: boolean checkLauncher(java.lang.String)>::INVOKE::spec.benchmarks.startup.StartupBenchmarkOutput::$r10::void <init>(java.io.InputStream,boolean)::406
+IN METHOD::<spec.harness.Configuration: boolean checkLauncher(java.lang.String)>::INVOKE::spec.benchmarks.startup.StartupBenchmarkOutput::r2::void start()::408
+IN METHOD::<spec.harness.Configuration: boolean checkLauncher(java.lang.String)>::STATICINVOKE::<spec.harness.VMVersionTest: java.lang.String getVersionInfo()>::416

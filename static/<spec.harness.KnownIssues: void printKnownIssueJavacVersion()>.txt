@@ -1,0 +1,7 @@
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueJavacVersion()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::45
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueJavacVersion()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::46
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueJavacVersion()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::47
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueJavacVersion()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::48
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueJavacVersion()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::49
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueJavacVersion()>::INVOKE::java.lang.StringBuilder::$r5::void <init>()::49
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueJavacVersion()>::INVOKE::java.lang.StringBuilder::$r5::java.lang.StringBuilder append(java.lang.String)::49

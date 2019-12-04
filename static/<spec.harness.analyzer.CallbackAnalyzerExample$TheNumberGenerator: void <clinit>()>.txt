@@ -1,0 +1,3 @@
+IN METHOD::<spec.harness.analyzer.CallbackAnalyzerExample$TheNumberGenerator: void <clinit>()>::INVOKE::spec.harness.analyzer.CallbackAnalyzerExample$TheNumberGenerator::$r0::void <init>()::119
+IN METHOD::<spec.harness.analyzer.CallbackAnalyzerExample$TheNumberGenerator: void <clinit>()>::INVOKE::spec.harness.analyzer.CallbackAnalyzerExample$TheNumberGenerator::$r1::void setDaemon(boolean)::120
+IN METHOD::<spec.harness.analyzer.CallbackAnalyzerExample$TheNumberGenerator: void <clinit>()>::INVOKE::spec.harness.analyzer.CallbackAnalyzerExample$TheNumberGenerator::$r2::void start()::121

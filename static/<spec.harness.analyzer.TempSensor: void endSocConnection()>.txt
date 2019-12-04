@@ -1,0 +1,3 @@
+IN METHOD::<spec.harness.analyzer.TempSensor: void endSocConnection()>::INVOKE::java.io.PrintWriter::$r2::void close()::121
+IN METHOD::<spec.harness.analyzer.TempSensor: void endSocConnection()>::INVOKE::java.net.Socket::$r3::void close()::122
+IN METHOD::<spec.harness.analyzer.TempSensor: void endSocConnection()>::INVOKE::spec.harness.StopBenchmarkException::$r5::void <init>(java.lang.String,java.lang.Throwable)::124

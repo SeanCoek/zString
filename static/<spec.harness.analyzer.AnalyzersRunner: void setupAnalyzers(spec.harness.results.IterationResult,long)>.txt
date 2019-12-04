@@ -1,0 +1,5 @@
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzers(spec.harness.results.IterationResult,long)>::STATICINVOKE::<spec.harness.analyzer.AnalyzersRunner: int getNoAnalyzer()>::239
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzers(spec.harness.results.IterationResult,long)>::INVOKE::spec.harness.analyzer.AnalyzersRunner::$r5::void <init>(spec.harness.results.IterationResult,long)::242
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzers(spec.harness.results.IterationResult,long)>::INVOKE::spec.harness.analyzer.AnalyzersRunner::$r6::void start()::243
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzers(spec.harness.results.IterationResult,long)>::INVOKE::java.lang.Object::$r7::void wait()::245
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzers(spec.harness.results.IterationResult,long)>::INVOKE::spec.harness.StopBenchmarkException::$r10::void <init>(java.lang.String,java.lang.Throwable)::247

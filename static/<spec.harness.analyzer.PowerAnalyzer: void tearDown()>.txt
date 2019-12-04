@@ -1,0 +1,103 @@
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::121
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r230::void <init>()::124
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r230::java.lang.StringBuilder append(java.lang.String)::124
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult::$r229::void <init>(double,java.lang.String,java.lang.String)::124
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r236::void <init>()::125
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r236::java.lang.StringBuilder append(java.lang.String)::125
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult::$r235::void <init>(double,java.lang.String,java.lang.String)::125
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::130
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r9::void <init>()::130
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r9::java.lang.StringBuilder append(java.lang.String)::130
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult::$r5::void <init>(double,java.lang.String,java.lang.String)::130
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::131
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r18::void <init>()::131
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r18::java.lang.StringBuilder append(java.lang.String)::131
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult::$r14::void <init>(double,java.lang.String,java.lang.String)::131
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::132
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r27::void <init>()::132
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r27::java.lang.StringBuilder append(java.lang.String)::132
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult::$r23::void <init>(double,java.lang.String,java.lang.String)::132
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::133
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r36::void <init>()::133
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r36::java.lang.StringBuilder append(java.lang.String)::133
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult::$r32::void <init>(double,java.lang.String,java.lang.String)::133
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::134
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r45::void <init>()::134
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r45::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult::$r41::void <init>(double,java.lang.String,java.lang.String)::134
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::136
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r54::void <init>()::136
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r54::java.lang.StringBuilder append(java.lang.String)::136
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult::$r50::void <init>(double,java.lang.String,java.lang.String)::136
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::137
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r63::void <init>()::137
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r63::java.lang.StringBuilder append(java.lang.String)::137
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult::$r59::void <init>(double,java.lang.String,java.lang.String)::137
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::138
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r72::void <init>()::138
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r72::java.lang.StringBuilder append(java.lang.String)::138
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult::$r68::void <init>(double,java.lang.String,java.lang.String)::138
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::139
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r81::void <init>()::139
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r81::java.lang.StringBuilder append(java.lang.String)::139
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult::$r77::void <init>(double,java.lang.String,java.lang.String)::139
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::140
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r90::void <init>()::140
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r90::java.lang.StringBuilder append(java.lang.String)::140
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult::$r86::void <init>(double,java.lang.String,java.lang.String)::140
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::142
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r99::void <init>()::142
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r99::java.lang.StringBuilder append(java.lang.String)::142
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult::$r95::void <init>(double,java.lang.String,java.lang.String)::142
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::143
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r108::void <init>()::143
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r108::java.lang.StringBuilder append(java.lang.String)::143
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult::$r104::void <init>(double,java.lang.String,java.lang.String)::143
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::144
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r117::void <init>()::144
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r117::java.lang.StringBuilder append(java.lang.String)::144
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult::$r113::void <init>(double,java.lang.String,java.lang.String)::144
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::145
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r126::void <init>()::145
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r126::java.lang.StringBuilder append(java.lang.String)::145
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult::$r122::void <init>(double,java.lang.String,java.lang.String)::145
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::146
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r135::void <init>()::146
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r135::java.lang.StringBuilder append(java.lang.String)::146
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult::$r131::void <init>(double,java.lang.String,java.lang.String)::146
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::148
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r144::void <init>()::148
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r144::java.lang.StringBuilder append(java.lang.String)::148
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult::$r140::void <init>(double,java.lang.String,java.lang.String)::148
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::149
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r153::void <init>()::149
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r153::java.lang.StringBuilder append(java.lang.String)::149
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult::$r149::void <init>(double,java.lang.String,java.lang.String)::149
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::150
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r162::void <init>()::150
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r162::java.lang.StringBuilder append(java.lang.String)::150
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult::$r158::void <init>(double,java.lang.String,java.lang.String)::150
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::151
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r171::void <init>()::151
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r171::java.lang.StringBuilder append(java.lang.String)::151
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult::$r167::void <init>(double,java.lang.String,java.lang.String)::151
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::152
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r180::void <init>()::152
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r180::java.lang.StringBuilder append(java.lang.String)::152
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult::$r176::void <init>(double,java.lang.String,java.lang.String)::152
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::155
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: java.lang.Double valueOf(double)>::155
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r224::void <init>()::157
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r224::java.lang.StringBuilder append(java.lang.String)::157
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::159
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: java.lang.Double valueOf(double)>::159
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r219::void <init>()::161
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r219::java.lang.StringBuilder append(java.lang.String)::161
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::163
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: java.lang.Double valueOf(double)>::163
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r214::void <init>()::165
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r214::java.lang.StringBuilder append(java.lang.String)::165
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::167
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: java.lang.Double valueOf(double)>::167
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r209::void <init>()::169
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r209::java.lang.StringBuilder append(java.lang.String)::169

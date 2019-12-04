@@ -1,10 +1,10 @@
 package com.zstring.utils;
 
-import soot.RefType;
-import soot.SootClass;
-import soot.SootMethod;
-import soot.Type;
+import soot.*;
 import soot.jimple.InvokeExpr;
+import soot.util.Chain;
+
+import java.util.Iterator;
 
 public class SootUtils {
 
@@ -20,6 +20,17 @@ public class SootUtils {
                 return c.getMethod(subSig).getSignature();
             } catch (Exception e) {
                 return null;
+            }
+        }
+        return null;
+    }
+
+    public static Local getLocalByValue(Body body, Value value) {
+        Iterator<Local> locals = body.getLocals().snapshotIterator();
+        while(locals.hasNext()) {
+            Local local = locals.next();
+            if(local.equals(value)) {
+                return local;
             }
         }
         return null;

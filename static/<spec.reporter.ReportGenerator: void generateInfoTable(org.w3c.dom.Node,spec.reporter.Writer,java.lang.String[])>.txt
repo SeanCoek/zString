@@ -1,0 +1,12 @@
+IN METHOD::<spec.reporter.ReportGenerator: void generateInfoTable(org.w3c.dom.Node,spec.reporter.Writer,java.lang.String[])>::INVOKE::java.util.LinkedList::$r6::void <init>()::412
+IN METHOD::<spec.reporter.ReportGenerator: void generateInfoTable(org.w3c.dom.Node,spec.reporter.Writer,java.lang.String[])>::INVOKE::spec.reporter.ReportGenerator$Pair::$r22::void <init>(spec.reporter.ReportGenerator,java.lang.Object,java.lang.Object)::416
+IN METHOD::<spec.reporter.ReportGenerator: void generateInfoTable(org.w3c.dom.Node,spec.reporter.Writer,java.lang.String[])>::INVOKE::spec.reporter.ReportGenerator::r0::boolean isNotTextNode(org.w3c.dom.Node)::417
+IN METHOD::<spec.reporter.ReportGenerator: void generateInfoTable(org.w3c.dom.Node,spec.reporter.Writer,java.lang.String[])>::INVOKE::java.util.LinkedList::r4::boolean add(java.lang.Object)::418
+IN METHOD::<spec.reporter.ReportGenerator: void generateInfoTable(org.w3c.dom.Node,spec.reporter.Writer,java.lang.String[])>::INVOKE::java.util.LinkedList::$r7::void <init>()::423
+IN METHOD::<spec.reporter.ReportGenerator: void generateInfoTable(org.w3c.dom.Node,spec.reporter.Writer,java.lang.String[])>::INVOKE::java.util.LinkedList::r4::java.util.Iterator iterator()::425
+IN METHOD::<spec.reporter.ReportGenerator: void generateInfoTable(org.w3c.dom.Node,spec.reporter.Writer,java.lang.String[])>::INVOKE::java.util.LinkedList::r27::boolean add(java.lang.Object)::428
+IN METHOD::<spec.reporter.ReportGenerator: void generateInfoTable(org.w3c.dom.Node,spec.reporter.Writer,java.lang.String[])>::INVOKE::java.util.LinkedList::r27::boolean addAll(java.util.Collection)::436
+IN METHOD::<spec.reporter.ReportGenerator: void generateInfoTable(org.w3c.dom.Node,spec.reporter.Writer,java.lang.String[])>::INVOKE::java.util.LinkedList::r27::java.util.Iterator iterator()::440
+IN METHOD::<spec.reporter.ReportGenerator: void generateInfoTable(org.w3c.dom.Node,spec.reporter.Writer,java.lang.String[])>::STATICINVOKE::<spec.reporter.Utils: java.lang.String getDescription(java.lang.String)>::442
+IN METHOD::<spec.reporter.ReportGenerator: void generateInfoTable(org.w3c.dom.Node,spec.reporter.Writer,java.lang.String[])>::STATICINVOKE::<spec.harness.results.TestResult: java.lang.String correctContent(java.lang.String,boolean)>::442
+IN METHOD::<spec.reporter.ReportGenerator: void generateInfoTable(org.w3c.dom.Node,spec.reporter.Writer,java.lang.String[])>::INVOKE::spec.reporter.ReportGenerator::r0::java.lang.String insertBRTag(java.lang.String,spec.reporter.Writer)::442

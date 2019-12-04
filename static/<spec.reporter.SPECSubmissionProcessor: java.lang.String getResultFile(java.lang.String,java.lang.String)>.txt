@@ -1,0 +1,17 @@
+IN METHOD::<spec.reporter.SPECSubmissionProcessor: java.lang.String getResultFile(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::160
+IN METHOD::<spec.reporter.SPECSubmissionProcessor: java.lang.String getResultFile(java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r22::void <init>()::148
+IN METHOD::<spec.reporter.SPECSubmissionProcessor: java.lang.String getResultFile(java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r22::java.lang.StringBuilder append(java.lang.String)::148
+IN METHOD::<spec.reporter.SPECSubmissionProcessor: java.lang.String getResultFile(java.lang.String,java.lang.String)>::INVOKE::java.io.File::$r30::void <init>(java.lang.String)::149
+IN METHOD::<spec.reporter.SPECSubmissionProcessor: java.lang.String getResultFile(java.lang.String,java.lang.String)>::INVOKE::java.io.File::$r30::boolean mkdir()::149
+IN METHOD::<spec.reporter.SPECSubmissionProcessor: java.lang.String getResultFile(java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r32::void <init>()::150
+IN METHOD::<spec.reporter.SPECSubmissionProcessor: java.lang.String getResultFile(java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r32::java.lang.StringBuilder append(java.lang.String)::150
+IN METHOD::<spec.reporter.SPECSubmissionProcessor: java.lang.String getResultFile(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::158
+IN METHOD::<spec.reporter.SPECSubmissionProcessor: java.lang.String getResultFile(java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::void <init>()::153
+IN METHOD::<spec.reporter.SPECSubmissionProcessor: java.lang.String getResultFile(java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::153
+IN METHOD::<spec.reporter.SPECSubmissionProcessor: java.lang.String getResultFile(java.lang.String,java.lang.String)>::INVOKE::java.io.File::$r15::void <init>(java.lang.String)::154
+IN METHOD::<spec.reporter.SPECSubmissionProcessor: java.lang.String getResultFile(java.lang.String,java.lang.String)>::INVOKE::java.io.File::$r15::boolean mkdir()::154
+IN METHOD::<spec.reporter.SPECSubmissionProcessor: java.lang.String getResultFile(java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r17::void <init>()::155
+IN METHOD::<spec.reporter.SPECSubmissionProcessor: java.lang.String getResultFile(java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r17::java.lang.StringBuilder append(java.lang.String)::155
+IN METHOD::<spec.reporter.SPECSubmissionProcessor: java.lang.String getResultFile(java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r3::void <init>()::158
+IN METHOD::<spec.reporter.SPECSubmissionProcessor: java.lang.String getResultFile(java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::158
+IN METHOD::<spec.reporter.SPECSubmissionProcessor: java.lang.String getResultFile(java.lang.String,java.lang.String)>::INVOKE::java.lang.UnsupportedOperationException::$r2::void <init>(java.lang.String)::158

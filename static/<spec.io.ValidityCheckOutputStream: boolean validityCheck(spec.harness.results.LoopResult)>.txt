@@ -1,0 +1,4 @@
+IN METHOD::<spec.io.ValidityCheckOutputStream: boolean validityCheck(spec.harness.results.LoopResult)>::INVOKE::spec.io.ValidityCheckOutputStream::r0::void validityCheck2(spec.harness.results.LoopResult)::77
+IN METHOD::<spec.io.ValidityCheckOutputStream: boolean validityCheck(spec.harness.results.LoopResult)>::INVOKE::java.lang.StringBuilder::$r5::void <init>()::79
+IN METHOD::<spec.io.ValidityCheckOutputStream: boolean validityCheck(spec.harness.results.LoopResult)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.StringBuilder append(java.lang.String)::79
+IN METHOD::<spec.io.ValidityCheckOutputStream: boolean validityCheck(spec.harness.results.LoopResult)>::INVOKE::spec.harness.results.LoopResult::r1::void addError(java.lang.String)::80

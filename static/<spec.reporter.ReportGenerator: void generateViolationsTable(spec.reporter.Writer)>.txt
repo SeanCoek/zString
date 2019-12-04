@@ -1,0 +1,1 @@
+IN METHOD::<spec.reporter.ReportGenerator: void generateViolationsTable(spec.reporter.Writer)>::INVOKE::java.util.ArrayList::$r3::int size()::288

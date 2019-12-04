@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.BenchmarkRecord$IterationRecord: void addError(java.lang.String)>::INVOKE::java.util.ArrayList::$r4::void <init>()::38
+IN METHOD::<spec.reporter.BenchmarkRecord$IterationRecord: void addError(java.lang.String)>::INVOKE::java.util.ArrayList::$r3::boolean add(java.lang.Object)::40

@@ -1,0 +1,3 @@
+IN METHOD::<spec.reporter.HTMLWriter: void <init>(java.lang.String)>::INVOKE::spec.reporter.HTMLWriter::r0::void <init>(java.lang.String)::33
+IN METHOD::<spec.reporter.HTMLWriter: void <init>(java.lang.String)>::STATICINVOKE::<spec.reporter.HTMLWriter: java.lang.String[] initIndents()>::19
+IN METHOD::<spec.reporter.HTMLWriter: void <init>(java.lang.String)>::INVOKE::spec.reporter.HTMLWriter::r0::void setType(java.lang.String)::34

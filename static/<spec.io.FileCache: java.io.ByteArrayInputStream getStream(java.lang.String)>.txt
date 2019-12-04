@@ -1,0 +1,4 @@
+IN METHOD::<spec.io.FileCache: java.io.ByteArrayInputStream getStream(java.lang.String)>::INVOKE::spec.io.FileCache::r0::boolean hasFile(java.lang.String)::41
+IN METHOD::<spec.io.FileCache: java.io.ByteArrayInputStream getStream(java.lang.String)>::INVOKE::spec.io.FileCache::r0::void loadFile(java.lang.String)::42
+IN METHOD::<spec.io.FileCache: java.io.ByteArrayInputStream getStream(java.lang.String)>::INVOKE::spec.io.FileCache::r0::byte[] getByteArray(java.lang.String)::44
+IN METHOD::<spec.io.FileCache: java.io.ByteArrayInputStream getStream(java.lang.String)>::INVOKE::java.io.ByteArrayInputStream::$r3::void <init>(byte[])::45

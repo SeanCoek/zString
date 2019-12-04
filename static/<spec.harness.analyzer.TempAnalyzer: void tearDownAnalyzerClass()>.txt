@@ -1,0 +1,3 @@
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDownAnalyzerClass()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::68
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDownAnalyzerClass()>::INVOKE::spec.harness.analyzer.TempSensor::$r0::void stop()::73
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDownAnalyzerClass()>::INVOKE::spec.harness.analyzer.TempSensor::$r1::void endSocConnection()::74

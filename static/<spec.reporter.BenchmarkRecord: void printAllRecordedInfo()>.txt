@@ -1,0 +1,4 @@
+IN METHOD::<spec.reporter.BenchmarkRecord: void printAllRecordedInfo()>::INVOKE::java.util.ArrayList::$r2::int size()::79
+IN METHOD::<spec.reporter.BenchmarkRecord: void printAllRecordedInfo()>::INVOKE::java.util.ArrayList::$r3::java.lang.Object get(int)::80
+IN METHOD::<spec.reporter.BenchmarkRecord: void printAllRecordedInfo()>::INVOKE::java.lang.StringBuilder::$r5::void <init>()::81
+IN METHOD::<spec.reporter.BenchmarkRecord: void printAllRecordedInfo()>::INVOKE::java.lang.StringBuilder::$r5::java.lang.StringBuilder append(java.lang.String)::81

@@ -1,0 +1,3 @@
+IN METHOD::<spec.harness.analyzer.AnalyzerResult: void <init>(double)>::INVOKE::spec.harness.analyzer.TempAnalyzer$TemperatureResult::r0::void <init>()::16
+IN METHOD::<spec.harness.analyzer.AnalyzerResult: void <init>(double)>::INVOKE::spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult::r0::void <init>()::16
+IN METHOD::<spec.harness.analyzer.AnalyzerResult: void <init>(double)>::INVOKE::spec.harness.analyzer.CallbackAnalyzerExample$NumberResult::r0::void <init>()::16

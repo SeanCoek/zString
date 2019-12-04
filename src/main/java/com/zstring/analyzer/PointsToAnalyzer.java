@@ -33,7 +33,7 @@ public class PointsToAnalyzer {
         }
         if(pp == null) {
 //            pp = "/home/sean/bench_compile/";
-            pp = "/home/sean/bench_compared/bootstrap.jar";
+            pp = "/home/sean/bench_compared/crypto";
         }
         if(outputTxt == null) {
             outputTxt = "default.txt";

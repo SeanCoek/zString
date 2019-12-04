@@ -1,0 +1,3 @@
+IN METHOD::<spec.harness.ProgramRunner: void run()>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::94
+IN METHOD::<spec.harness.ProgramRunner: void run()>::STATICINVOKE::<spec.harness.Context: void setVerify(boolean)>::96
+IN METHOD::<spec.harness.ProgramRunner: void run()>::STATICINVOKE::<spec.harness.Context: void setVerify(boolean)>::100

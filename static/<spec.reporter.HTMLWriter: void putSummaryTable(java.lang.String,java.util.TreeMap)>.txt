@@ -1,0 +1,1 @@
+IN METHOD::<spec.reporter.HTMLWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::STATICINVOKE::<spec.reporter.Utils: java.lang.String formatScore(double)>::157

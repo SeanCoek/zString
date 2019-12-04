@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.BenchmarkRecord: boolean isValidRun()>::INVOKE::java.util.ArrayList::$r1::int size()::87
+IN METHOD::<spec.reporter.BenchmarkRecord: boolean isValidRun()>::INVOKE::java.util.ArrayList::$r2::java.lang.Object get(int)::88

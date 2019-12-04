@@ -1,0 +1,6 @@
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(java.lang.String,long,long)>::INVOKE::java.util.Hashtable::$r3::boolean containsKey(java.lang.Object)::108
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(java.lang.String,long,long)>::INVOKE::java.util.Hashtable::$r8::java.lang.Object get(java.lang.Object)::109
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(java.lang.String,long,long)>::INVOKE::org.jfree.data.xy.XYSeries::$r4::void <init>(java.lang.Comparable)::111
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(java.lang.String,long,long)>::INVOKE::org.jfree.data.xy.XYSeries::r2::void add(double,double)::112
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(java.lang.String,long,long)>::INVOKE::java.util.Hashtable::$r5::java.lang.Object put(java.lang.Object,java.lang.Object)::113
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(java.lang.String,long,long)>::INVOKE::org.jfree.data.xy.XYSeriesCollection::$r7::void addSeries(org.jfree.data.xy.XYSeries)::114

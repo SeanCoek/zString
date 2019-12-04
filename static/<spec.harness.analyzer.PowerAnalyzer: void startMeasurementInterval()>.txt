@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void startMeasurementInterval()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::94
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void startMeasurementInterval()>::INVOKE::spec.harness.analyzer.PowerMeter::$r1::void go()::99

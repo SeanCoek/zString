@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.analyzer.AnalyzerBase: long getBenchmarkDuration()>::INVOKE::spec.harness.results.IterationResult::$r1::long getDuration()::94

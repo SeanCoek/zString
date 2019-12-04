@@ -1,0 +1,42 @@
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::165
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::spec.harness.StopBenchmarkException::$r56::void <init>(java.lang.String)::167
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::STATICINVOKE::<spec.harness.Util: java.lang.String[] parseDefaultJvmArgs()>::172
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::173
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::java.lang.String::$r53::boolean equals(java.lang.Object)::206
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::java.lang.String::$r54::boolean equals(java.lang.Object)::206
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::java.lang.String::$r55::boolean equals(java.lang.Object)::206
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::STATICINVOKE::<spec.harness.Util: java.lang.String getUserProperty(java.lang.String,java.lang.String)>::174
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::STATICINVOKE::<spec.harness.Util: java.lang.String getUserProperty(java.lang.String,java.lang.String)>::206
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::STATICINVOKE::<spec.harness.Util: java.lang.String getDefaultProperty(java.lang.String,java.lang.String)>::206
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::STATICINVOKE::<spec.harness.Util: java.lang.String getUserProperty(java.lang.String,java.lang.String)>::196
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::STATICINVOKE::<spec.harness.Util: java.lang.String getDefaultProperty(java.lang.String,java.lang.String)>::196
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::java.util.Properties::$r73::java.util.Enumeration keys()::206
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::208
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::STATICINVOKE::<spec.harness.Util: java.lang.String getDefaultProperty(java.lang.String,java.lang.String)>::208
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::java.util.HashMap::$r24::java.lang.Object get(java.lang.Object)::208
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::STATICINVOKE::<spec.harness.Configuration: void validateProperty(spec.harness.results.SuiteResult,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>::208
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::java.util.StringTokenizer::$r27::void <init>(java.lang.String)::210
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::java.util.StringTokenizer::r76::boolean hasMoreElements()::210
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::java.util.StringTokenizer::r76::java.lang.String nextToken()::211
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::java.lang.StringBuilder::$r29::void <init>()::212
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::java.lang.StringBuilder::$r29::java.lang.StringBuilder append(java.lang.String)::212
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::212
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::STATICINVOKE::<spec.harness.Util: java.lang.String getDefaultProperty(java.lang.String,java.lang.String)>::212
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::java.util.HashMap::$r36::java.lang.Object get(java.lang.Object)::212
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::STATICINVOKE::<spec.harness.Configuration: void validateProperty(spec.harness.results.SuiteResult,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>::212
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::java.util.Properties::$r5::java.util.Enumeration keys()::218
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::java.util.Properties::$r8::boolean containsKey(java.lang.Object)::224
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::java.util.StringTokenizer::$r9::void <init>(java.lang.String)::225
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::java.util.StringTokenizer::r80::boolean hasMoreElements()::239
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::java.util.StringTokenizer::r80::java.lang.String nextToken()::227
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::java.lang.StringBuilder::$r16::void <init>()::228
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::java.lang.StringBuilder::$r16::java.lang.StringBuilder append(java.lang.String)::228
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::java.util.Properties::$r20::boolean containsKey(java.lang.Object)::230
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::java.lang.StringBuilder::$r10::void <init>()::237
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::java.lang.StringBuilder::$r10::java.lang.StringBuilder append(java.lang.String)::237
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::STATICINVOKE::<spec.harness.Configuration: void addViolation(spec.harness.results.SuiteResult,java.lang.String,java.lang.String)>::237
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::243
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::STATICINVOKE::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::243
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::java.lang.StringBuilder::$r59::void <init>()::245
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::java.lang.StringBuilder::$r59::java.lang.StringBuilder append(java.lang.String)::245
+IN METHOD::<spec.harness.Configuration: void checkSetup(spec.harness.results.SuiteResult)>::INVOKE::spec.harness.StopBenchmarkException::$r58::void <init>(java.lang.String,java.lang.Throwable)::245

@@ -1,0 +1,29 @@
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::124
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r62::void <init>()::127
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r62::java.lang.StringBuilder append(java.lang.String)::127
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.TempAnalyzer$TemperatureResult::$r61::void <init>(double,java.lang.String,java.lang.String)::127
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::131
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r6::void <init>()::131
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::131
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.TempAnalyzer$TemperatureResult::$r2::void <init>(double,java.lang.String,java.lang.String)::131
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::132
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r15::void <init>()::132
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r15::java.lang.StringBuilder append(java.lang.String)::132
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.TempAnalyzer$TemperatureResult::$r11::void <init>(double,java.lang.String,java.lang.String)::132
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::133
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r24::void <init>()::133
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r24::java.lang.StringBuilder append(java.lang.String)::133
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.TempAnalyzer$TemperatureResult::$r20::void <init>(double,java.lang.String,java.lang.String)::133
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::134
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r33::void <init>()::134
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r33::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.TempAnalyzer$TemperatureResult::$r29::void <init>(double,java.lang.String,java.lang.String)::134
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::135
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r42::void <init>()::135
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r42::java.lang.StringBuilder append(java.lang.String)::135
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::INVOKE::spec.harness.analyzer.TempAnalyzer$TemperatureResult::$r38::void <init>(double,java.lang.String,java.lang.String)::135
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::138
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: java.lang.Double valueOf(double)>::138
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r56::void <init>()::141
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::INVOKE::java.lang.StringBuilder::$r56::java.lang.StringBuilder append(java.lang.String)::141
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void tearDown()>::STATICINVOKE::<java.lang.Double: double parseDouble(java.lang.String)>::144

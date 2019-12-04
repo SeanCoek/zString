@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.analyzer.AnalyzerBase: boolean isTimedRun()>::INVOKE::spec.harness.results.IterationResult::$r1::spec.harness.results.BenchmarkResult getBenchmarkResult()::90
+IN METHOD::<spec.harness.analyzer.AnalyzerBase: boolean isTimedRun()>::INVOKE::spec.harness.results.BenchmarkResult::$r2::int getRunMode()::90

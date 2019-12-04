@@ -1,0 +1,4 @@
+IN METHOD::<spec.harness.results.TestResult: void <init>()>::INVOKE::spec.harness.results.LoopResult::r0::void <init>()::17
+IN METHOD::<spec.harness.results.TestResult: void <init>()>::INVOKE::spec.harness.results.SuiteResult::r0::void <init>()::17
+IN METHOD::<spec.harness.results.TestResult: void <init>()>::INVOKE::spec.harness.results.BenchmarkResult::r0::void <init>()::17
+IN METHOD::<spec.harness.results.TestResult: void <init>()>::INVOKE::spec.harness.results.IterationResult::r0::void <init>()::17

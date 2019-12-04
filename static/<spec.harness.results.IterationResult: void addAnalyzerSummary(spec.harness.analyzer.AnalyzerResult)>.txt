@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.results.IterationResult: void addAnalyzerSummary(spec.harness.analyzer.AnalyzerResult)>::INVOKE::java.util.LinkedList::$r2::boolean add(java.lang.Object)::142

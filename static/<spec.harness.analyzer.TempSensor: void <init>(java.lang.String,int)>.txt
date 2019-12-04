@@ -1,0 +1,39 @@
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::spec.harness.analyzer.TempSensor::r0::void <init>()::38
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::41
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::java.net.Socket::$r3::void <init>(java.lang.String,int)::45
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::spec.harness.StopBenchmarkException::$r62::void <init>(java.lang.String,java.lang.Throwable)::47
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::spec.harness.StopBenchmarkException::$r64::void <init>(java.lang.String,java.lang.Throwable)::49
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::53
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::java.net.Socket::$r5::java.io.OutputStream getOutputStream()::57
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::java.io.PrintWriter::$r4::void <init>(java.io.OutputStream,boolean)::57
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::java.net.Socket::$r9::java.io.InputStream getInputStream()::58
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::java.io.InputStreamReader::$r8::void <init>(java.io.InputStream)::58
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::java.io.BufferedReader::$r7::void <init>(java.io.Reader)::58
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::spec.harness.StopBenchmarkException::$r66::void <init>(java.lang.String,java.lang.Throwable)::60
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::64
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::java.io.PrintWriter::$r11::void println(java.lang.String)::67
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::java.io.BufferedReader::$r12::java.lang.String readLine()::69
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::72
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r51::void <init>()::72
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r51::java.lang.StringBuilder append(java.lang.String)::72
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::79
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r21::void <init>()::79
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r21::java.lang.StringBuilder append(java.lang.String)::79
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::80
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r27::void <init>()::80
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r27::java.lang.StringBuilder append(java.lang.String)::80
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::81
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r33::void <init>()::81
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r33::java.lang.StringBuilder append(java.lang.String)::81
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::82
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r39::void <init>()::82
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r39::java.lang.StringBuilder append(java.lang.String)::82
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::83
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r45::void <init>()::83
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r45::java.lang.StringBuilder append(java.lang.String)::83
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::86
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r14::void <init>()::86
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r14::java.lang.StringBuilder append(java.lang.String)::86
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::87
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::INVOKE::spec.harness.StopBenchmarkException::$r59::void <init>(java.lang.String,java.lang.Throwable)::91
+IN METHOD::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::95

@@ -1,0 +1,8 @@
+IN METHOD::<spec.reporter.PlainWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.io.PrintStream::$r9::void println(java.lang.String)::45
+IN METHOD::<spec.reporter.PlainWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.util.ArrayList::$r7::int size()::57
+IN METHOD::<spec.reporter.PlainWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.io.PrintStream::$r8::void println(java.lang.String)::48
+IN METHOD::<spec.reporter.PlainWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.io.PrintStream::$r10::void println()::51
+IN METHOD::<spec.reporter.PlainWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.util.Formatter::$r11::void <init>(java.io.PrintStream)::52
+IN METHOD::<spec.reporter.PlainWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.util.Formatter::r2::java.util.Formatter format(java.lang.String,java.lang.Object[])::53
+IN METHOD::<spec.reporter.PlainWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.io.PrintStream::$r14::void println()::54
+IN METHOD::<spec.reporter.PlainWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.io.PrintStream::$r15::void println(java.lang.String)::55

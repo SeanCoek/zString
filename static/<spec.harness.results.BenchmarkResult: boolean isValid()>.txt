@@ -1,0 +1,3 @@
+IN METHOD::<spec.harness.results.BenchmarkResult: boolean isValid()>::INVOKE::spec.harness.results.BenchmarkResult::r0::boolean hasErrors()::226
+IN METHOD::<spec.harness.results.BenchmarkResult: boolean isValid()>::INVOKE::spec.harness.results.IterationResult::$r6::boolean isValid()::235
+IN METHOD::<spec.harness.results.BenchmarkResult: boolean isValid()>::INVOKE::java.util.LinkedList::$r4::java.util.Iterator iterator()::232

@@ -1,0 +1,1 @@
+IN METHOD::<spec.io.FileCache: void clearCache()>::INVOKE::java.util.HashMap::$r1::void clear()::57

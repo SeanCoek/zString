@@ -1,0 +1,3 @@
+IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord: void <init>(spec.reporter.BenchmarkRecord)>::INVOKE::spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord::r0::void <init>()::18
+IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord: void <init>(spec.reporter.BenchmarkRecord)>::INVOKE::java.util.ArrayList::$r2::void <init>()::14
+IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord: void <init>(spec.reporter.BenchmarkRecord)>::INVOKE::java.util.ArrayList::$r3::boolean add(java.lang.Object)::20

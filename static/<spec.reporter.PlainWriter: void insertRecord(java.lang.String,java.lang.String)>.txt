@@ -1,0 +1,3 @@
+IN METHOD::<spec.reporter.PlainWriter: void insertRecord(java.lang.String,java.lang.String)>::INVOKE::java.util.Formatter::$r4::void <init>(java.io.PrintStream)::60
+IN METHOD::<spec.reporter.PlainWriter: void insertRecord(java.lang.String,java.lang.String)>::INVOKE::java.util.Formatter::r3::java.util.Formatter format(java.lang.String,java.lang.Object[])::61
+IN METHOD::<spec.reporter.PlainWriter: void insertRecord(java.lang.String,java.lang.String)>::INVOKE::java.io.PrintStream::$r8::void println()::62

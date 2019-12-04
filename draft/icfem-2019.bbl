@@ -1,0 +1,140 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{soot}
+Soot. \url{https://sable.github.io/soot/}, accessed: 2019-06-10
+
+\bibitem{specjvm}
+Specjvm2008. \url{https://www.spec.org/jvm2008/}, accessed: 2019-06-18
+
+\bibitem{andersen94}
+Andersen, L.O.: Program analysis and specialization for the {C} programming
+  language. Ph.D. thesis, DIKU, University of Copenhagen (May 1994)
+
+\bibitem{Bacon1996}
+Bacon, D.F., Sweeney, P.F.: Fast static analysis of c++ virtual function calls.
+  In: Proceedings of the 11th ACM SIGPLAN Conference on Object-oriented
+  Programming, Systems, Languages, and Applications. pp. 324--341. OOPSLA '96
+  (1996)
+
+\bibitem{Blackburn2006}
+Blackburn, S.M., Garner, R., Hoffmann, C., Khang, A.M., McKinley, K.S.,
+  Bentzur, R., Diwan, A., Feinberg, D., Frampton, D., Guyer, S.Z., Hirzel, M.,
+  Hosking, A., Jump, M., Lee, H., Moss, J.E.B., Phansalkar, A., Stefanovi\'{c},
+  D., VanDrunen, T., von Dincklage, D., Wiedermann, B.: The {DaCapo
+  Benchmarks}: Java benchmarking development and analysis. In: Proceedings of
+  the 21st Annual ACM SIGPLAN Conference on Object-oriented Programming
+  Systems, Languages, and Applications. pp. 169--190. OOPSLA '06 (2006)
+
+\bibitem{Boyapati2003}
+Boyapati, C., Salcianu, A., W.~Beebee, J., Rinard, M.: Ownership types for safe
+  region-based memory management in real-time java. In: Proceedings of the ACM
+  SIGPLAN 2003 Conference on Programming Language Design and Implementation.
+  pp. 324--337. PLDI '03 (2003)
+
+\bibitem{Chin2004}
+Chin, W., Craciun, F., Qin, S., Rinard, M.: Region inference for an
+  object-oriented language. In: Proceedings of the ACM SIGPLAN 2004 Conference
+  on Programming Language Design and Implementation. pp. 243--254. PLDI '04
+  (2004)
+
+\bibitem{Dean1995}
+Dean, J., Grove, D., Chambers, C.: Optimization of object-oriented programs
+  using static class hierarchy analysis. In: Proceedings of the 9th European
+  Conference on Object-Oriented Programming. pp. 77--101. ECOOP '95 (1995)
+
+\bibitem{Fernandez1995}
+Fern\'{a}ndez, M.F.: Simple and effective link-time optimization of modula-3
+  programs. In: Proceedings of the ACM SIGPLAN 1995 Conference on Programming
+  Language Design and Implementation. pp. 103--115. PLDI '95 (1995)
+
+\bibitem{Grove1997}
+Grove, D., DeFouw, G., Dean, J., Chambers, C.: Call graph construction in
+  object-oriented languages. In: Proceedings of the 12th ACM SIGPLAN Conference
+  on Object-oriented Programming, Systems, Languages, and Applications. pp.
+  108--124. OOPSLA '97 (1997)
+
+\bibitem{Igarashi2001}
+Igarashi, A., Pierce, B.C., Wadler, P.: Featherweight java: A minimal core
+  calculus for java and gj. ACM Transations on Programming Languages and
+  Systems  \textbf{23}(3),  396--450 (2001)
+
+\bibitem{Kanellakis90}
+Kanellakis, P.C., Smolka, S.A.: {CCS} expressions, finite state processes, and
+  three problems of equivalence. Information and Computation  \textbf{86},
+  43–--68 (1990)
+
+\bibitem{Kastrinis2013}
+Kastrinis, G., Smaragdakis, Y.: Hybrid context-sensitivity for points-to
+  analysis. In: Proceedings of the 34th ACM SIGPLAN Conference on Programming
+  Language Design and Implementation. pp. 423--434. PLDI '13 (2013)
+
+\bibitem{Lhotak2003}
+Lhot\'{a}k, O., Hendren, L.: Scaling java points-to analysis using spark. In:
+  Proceedings of the 12th International Conference on Compiler Construction.
+  pp. 153--169. CC'03 (2003)
+
+\bibitem{Lu2013}
+Lu, Y., Shang, L., Xie, X., Xue, J.: An incremental points-to analysis with
+  cfl-reachability. In: Proceedings of the 22Nd International Conference on
+  Compiler Construction. pp. 61--81. CC'13 (2013)
+
+\bibitem{Milanova2005}
+Milanova, A., Rountev, A., Ryder, B.G.: Parameterized object sensitivity for
+  points-to analysis for java. ACM Transations on Software Engineering and
+  Methodology  \textbf{14}(1),  1--41 (2005)
+
+\bibitem{Paige87}
+Paige, R., Tarjan, R.E.: Three partition refinement algorithms. SIAM Journal on
+  Computing  \textbf{16},  973–--989 (1987)
+
+\bibitem{Reif2016}
+Reif, M., Eichberg, M., Hermann, B., Lerch, J., Mezini, M.: Call graph
+  construction for java libraries. In: Proceedings of the 2016 24th ACM SIGSOFT
+  International Symposium on Foundations of Software Engineering. pp. 474--486.
+  FSE 2016 (2016)
+
+\bibitem{Reps1997}
+Reps, T.: Program analysis via graph reachability. In: Proceedings of the 1997
+  International Symposium on Logic Programming. pp. 5--19. ILPS '97 (1997)
+
+\bibitem{Shivers91}
+Shivers, O.G.: Control-flow Analysis of Higher-order Languages or Taming
+  Lambda. Ph.D. thesis (1991)
+
+\bibitem{Smaragdakis11}
+Smaragdakis, Y., Bravenboer, M., Lhot\'{a}k, O.: Pick your contexts well:
+  understanding object-sensitivity. In: Proceedings of the 38th annual ACM
+  SIGPLAN-SIGACT symposium on Principles of programming languages. pp. 17--30.
+  POPL '11 (2011)
+
+\bibitem{Sridharan2006}
+Sridharan, M., Bod\'{\i}k, R.: Refinement-based context-sensitive points-to
+  analysis for java. In: Proceedings of the 27th ACM SIGPLAN Conference on
+  Programming Language Design and Implementation. pp. 387--400. PLDI '06 (2006)
+
+\bibitem{Sundaresan2000}
+Sundaresan, V., Hendren, L., Razafimahefa, C., Vall{\'e}e-Rai, R., Lam, P.,
+  Gagnon, E., Godin, C.: Practical virtual method call resolution for java. In:
+  Proceedings of the 15th ACM SIGPLAN Conference on Object-oriented
+  Programming, Systems, Languages, and Applications. pp. 264--280. OOPSLA '00
+  (2000)
+
+\bibitem{Tarjan72}
+Tarjan, R.E.: Depth-first search and linear graph algorithms. SIAM Journal on
+  Computing  \textbf{1},  146–--160 (1972)
+
+\bibitem{Tan16}
+Tian, T., Yue, L., Xue, J.: Making k-object-sensitive pointer analysis more
+  precise with still k-limiting. In: International Static Analysis Symposium,
+  {SAS'16} (2016)
+
+\bibitem{Tip2000}
+Tip, F., Palsberg, J.: Scalable propagation-based call graph construction
+  algorithms. In: Proceedings of the 15th ACM SIGPLAN Conference on
+  Object-oriented Programming, Systems, Languages, and Applications. pp.
+  281--293. OOPSLA '00 (2000)
+
+\end{thebibliography}

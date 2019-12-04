@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.Context: java.lang.String staticToString()>::INVOKE::java.lang.StringBuilder::$r0::void <init>()::170
+IN METHOD::<spec.harness.Context: java.lang.String staticToString()>::INVOKE::java.lang.StringBuilder::$r0::java.lang.StringBuilder append(java.lang.String)::170

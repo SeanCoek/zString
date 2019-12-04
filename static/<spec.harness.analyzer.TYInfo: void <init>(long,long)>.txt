@@ -1,0 +1,4 @@
+IN METHOD::<spec.harness.analyzer.TYInfo: void <init>(long,long)>::INVOKE::spec.harness.analyzer.CallbackAnalyzerExample$NumberInfo::r0::void <init>()::17
+IN METHOD::<spec.harness.analyzer.TYInfo: void <init>(long,long)>::INVOKE::spec.harness.analyzer.PollingAnalyzerExample$NumberOfOperations::r0::void <init>()::17
+IN METHOD::<spec.harness.analyzer.TYInfo: void <init>(long,long)>::INVOKE::spec.harness.analyzer.HeapMemoryFreeAnalyzer$HeapMemoryFree::r0::void <init>()::17
+IN METHOD::<spec.harness.analyzer.TYInfo: void <init>(long,long)>::INVOKE::spec.harness.analyzer.HeapMemoryTotalAnalyzer$HeapMemoryTotal::r0::void <init>()::17

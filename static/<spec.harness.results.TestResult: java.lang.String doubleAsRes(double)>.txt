@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.results.TestResult: java.lang.String doubleAsRes(double)>::INVOKE::java.text.DecimalFormat::$r0::java.lang.String format(double)::132

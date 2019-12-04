@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkResultsIterator: void <init>(spec.reporter.BenchmarkGroupRecords)>::INVOKE::spec.reporter.BenchmarkGroupRecords$BenchmarkResultsIterator::r0::void <init>()::59
+IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkResultsIterator: void <init>(spec.reporter.BenchmarkGroupRecords)>::INVOKE::java.util.TreeMap::$r2::java.util.Set keySet()::60

@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.crypto.Util: void createRandomTestData(java.lang.String,int)>::INVOKE::java.security.SecureRandom::$r4::void <init>()::69
+IN METHOD::<spec.benchmarks.crypto.Util: void createRandomTestData(java.lang.String,int)>::INVOKE::java.security.SecureRandom::r1::void nextBytes(byte[])::71
+IN METHOD::<spec.benchmarks.crypto.Util: void createRandomTestData(java.lang.String,int)>::INVOKE::java.io.File::$r6::void <init>(java.lang.String)::73
+IN METHOD::<spec.benchmarks.crypto.Util: void createRandomTestData(java.lang.String,int)>::INVOKE::java.io.FileOutputStream::$r5::void <init>(java.io.File)::73
+IN METHOD::<spec.benchmarks.crypto.Util: void createRandomTestData(java.lang.String,int)>::INVOKE::java.io.FileOutputStream::r3::void write(byte[])::74
+IN METHOD::<spec.benchmarks.crypto.Util: void createRandomTestData(java.lang.String,int)>::INVOKE::java.io.FileOutputStream::r3::void close()::75

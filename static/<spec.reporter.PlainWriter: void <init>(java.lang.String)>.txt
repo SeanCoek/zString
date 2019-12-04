@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.PlainWriter: void <init>(java.lang.String)>::INVOKE::spec.reporter.PlainWriter::r0::void <init>(java.lang.String)::20
+IN METHOD::<spec.reporter.PlainWriter: void <init>(java.lang.String)>::INVOKE::spec.reporter.PlainWriter::r0::void setType(java.lang.String)::21

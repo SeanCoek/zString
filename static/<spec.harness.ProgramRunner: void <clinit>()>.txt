@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.ProgramRunner: void <clinit>()>::INVOKE::java.lang.Object::$r0::void <init>()::580

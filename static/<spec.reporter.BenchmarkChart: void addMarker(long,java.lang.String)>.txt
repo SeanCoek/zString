@@ -1,0 +1,7 @@
+IN METHOD::<spec.reporter.BenchmarkChart: void addMarker(long,java.lang.String)>::INVOKE::org.jfree.chart.plot.ValueMarker::$r3::void <init>(double)::133
+IN METHOD::<spec.reporter.BenchmarkChart: void addMarker(long,java.lang.String)>::INVOKE::org.jfree.chart.plot.ValueMarker::r2::void setPaint(java.awt.Paint)::134
+IN METHOD::<spec.reporter.BenchmarkChart: void addMarker(long,java.lang.String)>::INVOKE::org.jfree.chart.plot.ValueMarker::r2::void setLabel(java.lang.String)::135
+IN METHOD::<spec.reporter.BenchmarkChart: void addMarker(long,java.lang.String)>::INVOKE::org.jfree.chart.plot.ValueMarker::r2::java.awt.Font getLabelFont()::136
+IN METHOD::<spec.reporter.BenchmarkChart: void addMarker(long,java.lang.String)>::INVOKE::org.jfree.chart.plot.ValueMarker::r2::void setLabelFont(java.awt.Font)::136
+IN METHOD::<spec.reporter.BenchmarkChart: void addMarker(long,java.lang.String)>::INVOKE::org.jfree.chart.plot.ValueMarker::r2::void setLabelAnchor(org.jfree.ui.RectangleAnchor)::137
+IN METHOD::<spec.reporter.BenchmarkChart: void addMarker(long,java.lang.String)>::INVOKE::org.jfree.chart.plot.ValueMarker::r2::void setLabelTextAnchor(org.jfree.ui.TextAnchor)::138

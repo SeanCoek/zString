@@ -1,0 +1,6 @@
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void tearDownAnalyzerClasses()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::131
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void tearDownAnalyzerClasses()>::INVOKE::java.lang.Class::$r2::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::136
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void tearDownAnalyzerClasses()>::INVOKE::java.lang.StringBuilder::$r8::void <init>()::139
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void tearDownAnalyzerClasses()>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::139
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void tearDownAnalyzerClasses()>::INVOKE::java.lang.Class::$r11::java.lang.String getName()::139
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void tearDownAnalyzerClasses()>::INVOKE::spec.harness.StopBenchmarkException::$r7::void <init>(java.lang.String)::139
