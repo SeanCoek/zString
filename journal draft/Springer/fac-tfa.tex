@@ -65,6 +65,8 @@
 
 \usepackage{listings}
 \lstset{
+  language=java,
+  frame=single,
   numbers=left,
   stepnumber=1,    
   firstnumber=1,
@@ -116,7 +118,7 @@ Statments will be inserted right after invocations and the type of receiver will
 We use ``Insert After'' as our instrumentation manner. The reason is mainly due to the Java specification of constructor that the first statement in constructor should be either another constructor of its own or its super class. Therefore, we will get JVM voilation error if we instrument a statement before the first statement in construtor. We illustrate this example on ~\ref{fig:spec-constructor}. So both ``Insert First'' and ``Insert Before'' manners can not be applied under this circumstance. We choose ``Insert After'' over ``Insert Last'' for reason that it's more straightforward. The code before and after instrumentation are shown in \ref{fig:before-instru} and \ref{fig:after-instru}, respectively.
 
 \begin{figure}
-\begin{lstlisting}[language={java},frame={single}]
+\begin{lstlisting}
 class A {
   public A() {
     //insert statements here will violate JVM specification
@@ -134,7 +136,7 @@ class A {
 
 \begin{figure}
 \centering
-\begin{lstlisting}[language={java},frame={single}]
+\begin{lstlisting}
 class A {
   public void m1() {
     B b = new B();
@@ -152,7 +154,7 @@ class B {
 \end{figure}
 
 \begin{figure}
-\begin{lstlisting}[language={java},frame={single}]
+\begin{lstlisting}
 class A {
   public void m1() {
     ...
@@ -185,7 +187,7 @@ The way to change a field using reflection is similar to processing method invoc
 \end{itemize}
 
 \begin{figure}
-\begin{lstlisting}[language={java},frame={single}]
+\begin{lstlisting}
 public static void runSimple(Class benchmarkClass, String [] args) {
   ...
   ...
@@ -218,7 +220,23 @@ public static void runSimple(Class benchmarkClass, String [] args) {
 \end{figure}
 
 \subsubsection{Java Native Interface Call}\label{subsubsec:jni-call}
-\textbf{J}ava \textbf{N}ative \textbf{I}nterface (JNI) is a standard Java programming interface which provide ability for Java code to interoperate with application or library written in other programming languages, such as C, C++ or assembly.
+Java Native Interface (JNI) is a standard Java programming interface which provide ability for Java code to interoperate with application or library written in other programming languages, such as C, C++ or assembly. We show the usage of JNI in \ref{fig:jni}. Method ``$m()$'' is defined as a native method and should not be implemented in Java. This program will load a native library named ``$lib$'', in which the method ``$m()$'' is actually implemented in different program languages. We do not consider JNI calls in our algorithm since the code is not written in Java. Analyzing that code and the communication between Java and other languages are out of our research scope. As a consequence, the effect of that invocation ``$a.m()$'' at line 8 will be discarded.
+\begin{figure}
+\begin{lstlisting}
+public class A {
+  public native void m();
+  static {
+    System.loadLibrary("lib");
+  }
+  public static void main(String[] args) {
+    A a = new A();
+    a.m();
+  }
+}
+\end{lstlisting}
+\caption{Example code of JNI}
+\label{fig:jni}
+\end{figure}
 \subsubsection{Library}\label{subsubsec:library}
 \subsubsection{Array Approximation}\label{subsubsec:array-approximation}
 
