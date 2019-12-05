@@ -45,7 +45,7 @@
 \newtheorem{theorem}{Theorem}[section]
 
 \title{A Relational Static Semantics for\\
-		Call Graph Construction}
+		\ Call Graph Construction}
 
 \author[Xilong Zhuo and Chenyi Zhang]
     {Xilong Zhuo$^1$ and Chenyi Zhang$^2$\\
@@ -64,6 +64,13 @@
 \newcommand{\lhflow}[1]{\stackrel{#1}{\hflow}}
 
 \usepackage{listings}
+\lstset{
+  numbers=left,
+  stepnumber=1,    
+  firstnumber=1,
+  numberfirstline=true
+}
+
 \usepackage{amsfonts}
 
 \begin{document}
@@ -167,6 +174,48 @@ We evaluate our approach by measuring its performance on $13$ benchmark programs
 We executed each benchmark program $10$ times with the CHA, PTA and TFA algorithms. We calculated the average time consumption...
 \subsection{Precision}\label{subsec:precision}
 \subsubsection{Reflection Call}\label{subsubsec:reflection-call}
+Reflection in Java programming language is a advanced feature which provides ability to inspect and manipulate a Java class at runtime. It brings in extra complexity on programs and the behaviour is hard to predict statically. In \ref{fig:reflection} we pick some codes using reflection in the benchmark programs to discuss how reflection works and what is our treatment on that. Note that we reorganize and simplify the real code a little to concentrate on the main point of reflection usage. We discuss in three cases:
+\begin{itemize}
+\item Object Creation \\
+Related code ranges from line 6 to 10. A new obejct of type ``SPECJVMBenchmarkBase'' will be created by invoking the method ``$newInstance()$'' on variable $c$ at line 10. $c$ is an object of ``Constructor'' type and it refers to a specific constructor of class ``SPECJVMBenchmarkBase''. Our method discard the type information of new object in these case because it's difficult to statically identify which constructor will be invoked. \eg At line 6, If statement $Class.forName()$ receive argument from outside liked user input or loading file with content of class name, then we could not find out the real type of $benchmarkClass$. As a result, the run time type of $c$ and $benchmark$ could not be identified neither.
+\item Method Invocation\\
+Related code ranges from line 11 to 21.
+\item Field Modification\\
+\end{itemize}
+
+\begin{figure}
+\begin{lstlisting}[language={java},frame={single}]
+public static void runSimple(Class benchmarkClass, String [] args) {
+  ...
+  ...
+  Class[] cArgs = { BenchmarkResult.class, int.class };
+  Object[] inArgs = { bmResult, Integer.valueOf(1)};
+  Class benchmarkClass = Class.forName("spec.harness.SpecJVMBenchmarkBase");
+  Constructor c = benchmarkClass.getConstructor(cArgs);
+
+  // Object creation using reflection
+  SpecJVMBenchmarkBase benchmark = (SpecJVMBenchmarkBase)c.newInstance(inArgs);
+  // normal method invocation
+  benchmark.harnessMain();
+  
+  // method invocation
+  Method harnessMain = benchmarkClass.getMethod("harnessMain", new Class[]{});
+  // just like line 11 but in reflection manner
+  harnessMain.invoke(benchmark, new Object[]{}); 
+  
+  Method setup = benchmarkClass.getMethod( "setupBenchmark", new Class[]{});
+  // static invocation
+  setup.invoke(null, new Object[]{});
+  
+  // field modification
+  Field iterTimes = benchmarkClass.getField("iterTimes");
+  iterTimes.setInt(benchmark, 2);
+}
+\end{lstlisting}
+\caption{Example code of reflection}
+\label{fig:reflection}
+\end{figure}
+
 \subsubsection{JNI Call}\label{subsubsec:jni-call}
 \subsubsection{Library}\label{subsubsec:library}
 \subsubsection{Array Approximation}\label{subsubsec:array-approximation}
