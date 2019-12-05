@@ -179,8 +179,9 @@ Reflection in Java programming language is a advanced feature which provides abi
 \item Object Creation \\
 Related code ranges from line 6 to 10. A new obejct of type ``SPECJVMBenchmarkBase'' will be created by invoking the method ``$newInstance()$'' on variable $c$ at line 10. $c$ is an object of ``Constructor'' type and it refers to a specific constructor of class ``SPECJVMBenchmarkBase''. Our method discard the type information of new object in these case because it's difficult to statically identify which constructor will be invoked. \eg At line 6, If statement $Class.forName()$ receive argument from outside liked user input or loading file with content of class name, then we could not find out the real type of $benchmarkClass$. As a result, the run time type of $c$ and $benchmark$ could not be identified neither.
 \item Method Invocation\\
-Related code ranges from line 11 to 21.
+After a new object is instantiated, we can get an object of ``Method'' type, referring to a specific method of a class, and call the method named ``invoke()'' of that object. This effect is just like a normal invocation at line 12. The invocation receiver is passed to the first argument of method ``invoke()''. If this invocation is static, a \textbf{null} reference will be passed to the first argument. We do not consider these effects of method invocation in reflection manner for the same reason we discuss about object creation.
 \item Field Modification\\
+The way to change a field using reflection is similar to processing method invocation. The last two line illustrate changing value of a field named ``f'' on object ``benchmark'' into a new object. We discard this effect as well because of the difficulty analyzing on which class holds the target field.
 \end{itemize}
 
 \begin{figure}
@@ -208,15 +209,16 @@ public static void runSimple(Class benchmarkClass, String [] args) {
   setup.invoke(null, new Object[]{});
   
   // field modification
-  Field iterTimes = benchmarkClass.getField("iterTimes");
-  iterTimes.setInt(benchmark, 2);
+  Field f = benchmarkClass.getField("f");
+  f.set(benchmark, new Object());
 }
 \end{lstlisting}
 \caption{Example code of reflection}
 \label{fig:reflection}
 \end{figure}
 
-\subsubsection{JNI Call}\label{subsubsec:jni-call}
+\subsubsection{Java Native Interface Call}\label{subsubsec:jni-call}
+\textbf{J}ava \textbf{N}ative \textbf{I}nterface (JNI) is a standard Java programming interface which provide ability for Java code to interoperate with application or library written in other programming languages, such as C, C++ or assembly.
 \subsubsection{Library}\label{subsubsec:library}
 \subsubsection{Array Approximation}\label{subsubsec:array-approximation}
 
