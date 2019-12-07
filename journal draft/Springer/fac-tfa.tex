@@ -134,7 +134,7 @@ Statments will be inserted right after invocations and the type of receiver will
 %\subsubsection{Insert After}\label{subsubsec:insert-after}
 %Statments will be inserted right after invocations and the type of receiver will be recorded. It is similar with ``Insert Before'', except that statements are inserted at different position. We take this manner in our implementation and the reason will be discuss in section ~\ref{subsubsec:instrument}
 \subsubsection{Our Instrumentation Manner}\label{subsubsec:instrument}
-We take ``Insert After'' as our instrumentation manner. The reason is mainly due to the Java specification of constructor that the first statement in constructor should be either another constructor of its own or its super class. Therefore, we will get JVM voilation error if we instrument a statement before the first statement in construtor. We illustrate this example on ~\ref{fig:spec-constructor}. So both ``Insert First'' and ``Insert Before'' manners can not be applied under this circumstance. We choose ``Insert After'' over ``Insert Last'' for reason that it's more straightforward. The code before and after instrumentation are shown in \ref{fig:before-instru} and \ref{fig:after-instru}, respectively.
+We take ``Insert After'' as our instrumentation manner. The reason is mainly due to the Java specification of constructor that the first statement in constructor should be either another constructor of its own or its super class. Therefore, we will get JVM voilation error if we instrument a statement before the first statement in construtor. We illustrate this example on ~\ref{fig:spec-constructor}. So both ``Insert First'' and ``Insert Before'' manners can not be applied under this circumstance. We choose ``Insert After'' over ``Insert Last'' for reason that it's more straightforward. The code before and after instrumentation are shown in \ref{fig:before-instru} and \ref{fig:after-instru}, respectively. For \ref{fig:after-instru}, at line 5, the funtion $RecordUtils.id()$ takes an invocation expression ($invokeExprssion$) and a method receiver ($b$) as parameters and return an unique representation string for this invocation. For this example, the unique representation is ``A:m1:b:B:m2:4''. This means $b$ will call method $m2$ of class $B$, at line 4 in method $m1$ of class $A$. It also shows that $b$ is of type $B$ at this position.
 
 \begin{figure}
 \begin{lstlisting}
@@ -162,11 +162,6 @@ class A {
     b.m2();    //invocation here
   }
 }
-class B {
-  public void m2() {
-    ...
-  }
-}
 \end{lstlisting}
 \caption{Example code before instrumentation}
 \label{fig:before-instru}
@@ -176,7 +171,7 @@ class B {
 \begin{lstlisting}
 class A {
   public void m1() {
-    ...
+    B b = new B();
     b.m2();    //invocation here
     String record = RecordUtils.id(invokeExpression, b);
     RecordUtils.record(record);
@@ -257,7 +252,7 @@ public class A {
 \label{fig:jni}
 \end{figure}
 \subsubsection{Library}\label{subsubsec:library}
-Library are those codes included in the application and used to accomplish specific function(\eg, JDK library, three-party library). \ref{fig:jdk} shows a common case of JDK invocation. We do not analyze the detail logic inside library code which are written at line 10-11. Instead, we perform an over approximation on library invocation, based on the method difinition which appears at line 9. We assume that library invocation will return the difinition type and any subtype of this difinition type as the result type. For \ref{fig:jdk}, $sb2$ will recieve $\{StringBuilder,\ any\_subtype\_of\_StringBuilder\}$ as the set of reaching types under this over approximation strategy.
+Library are those codes included in the application and used to accomplish specific function(\eg, JDK library, three-party library). \ref{fig:jdk} shows a common case of JDK invocation. We do not analyze the detail logic inside library code which are written at line 10-11. Instead, we perform an over approximation on library invocation, based on the method difinition which appears at line 9. We assume that library invocation will return the difinition type and any subtype of this difinition type as the result type. For \ref{fig:jdk}, $sb2$ will receive $\{StringBuilder,\ any\_subtype\_of\_StringBuilder\}$ as the set of reaching types under this over approximation strategy.
 
 \begin{figure}
 \begin{lstlisting}
@@ -279,7 +274,7 @@ public void m() {
 \end{figure}
 
 \subsubsection{Array Approximation}\label{subsubsec:array-approximation}
-We perform a conservative treatment on array accesses that all type information that flows to one member of an array flows to all members of that array. Codes in \ref{fig:array} are used to explain how this approximation works. Type information of $A$ and $B$ are flow to the first member and the second member of array $arr$, respectively. We approximate that these two type information flow to array $arr$. Loadding an element of array will recieve all types that array can access(\eg, $b$ will recieve $\{A, B\}$ as the set of reaching types, which is the same set of types that array $arr$ can access).
+We perform a conservative treatment on array accesses that all type information that flows to one member of an array flows to all members of that array. Codes in \ref{fig:array} are used to explain how this approximation works. Type information of $A$ and $B$ are flow to the first member and the second member of array $arr$, respectively. We approximate that these two type information flow to array $arr$. Loadding an element of array will receive all types that array can access(\eg, $b$ will receive $\{A, B\}$ as the set of reaching types, which is the same set of types that array $arr$ can access).
 
 \begin{figure}
 \begin{lstlisting}
