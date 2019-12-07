@@ -100,22 +100,41 @@ We define a core calculus consisting of most of the key object-oriented language
 \subsection{x$\lhflow{f}$ y}
 
 \section{Implementation}\label{sec:implementation}
-The analysis algorithm is written in Java, and is implemented in the Soot framework...
+The analysis algorithm is written in Java, and is implemented in the Soot framework, the most popular static analysis framework for Java. We use jimple as our intermediate representation. The implementation can be splited into three step as follow.
+\begin{itemize}
+\item Basic relation generation\\
+Target code is loaded by Soot and translated to IR of jimple format. We iterate all statements to generate those basic relations based on the basic relation difinition. 
+\item Fixpoint calculation\\
+After basic relations are generated, we use the extended relation rule to perform fixpoint calculation.
+\item Result extraction\\
+When the fixpoint is achieved, all set of reaching types of all variable are immutable. We extract those set of reaching types as our final result.
+\end{itemize}
+We do not take common types (\eg, int and float) under our consideration. That are irrelevant to our analysis. We keep method invocation from Java advanced features liked reflection or JNI as unresolvable. More detail will be discussed in \ref{subsubsec:reflection-call} and \ref{subsubsec:jni-call}. Conservative approximation is performed on invocation of methods from libraries (\eg, JDK) and array accesses. We will describe these strategy in \ref{subsubsec:library} and \ref{subsubsec:array-approximation}.
 
 \subsection{Static Analysis Tool}\label{subsec:static-analysis-tool}
 
 \subsection{Dynamic Profiler}\label{subsec:dynamic-profiler}
-Since the benchmarks do not provide the run-time type of method receiver, we implement a dynamic profiling tool to record  types which a receiver can access at run-time. To achieve this, we instrument statements into the target benchmark. After this instrumentation, the run-time type will be extracted during the benchmark execution. We consider this output as groundtruth and compare it with our static result in section ~\ref{subsec:precision}. There are four manners to instrument the source code to record the run-time type of a method receiver.
-\subsubsection{Insert First}\label{subsubsec:insert-first}
+Since the benchmarks do not provide the grountruth of run-time type of method receiver, we implement a dynamic profiling tool to record  types which a receiver can access at run-time. To achieve this, we instrument statements into the target benchmark. After this instrumentation, the run-time type will be extracted during the benchmark execution. We consider this output as groundtruth and compare it with our static result in section ~\ref{subsec:precision}. There are four manners to instrument the source code to record the run-time type of a method receiver.
+\begin{itemize}
+\item Insert First\\
 In this manner, the type-recorded statements will be insert before the first statement of a method block and the type of ``this'' reference in that method will be recorded. The reason we only have to record ``this'' reference is that a receiver is always passed into ``this'' reference in a method, except for static methods. 
-\subsubsection{Insert Before}\label{subsubsec:insert-before}
+\item Insert Before\\
 Statements will be inserted before invocations and the type of receiver will be recorded in this manner. It is more straightforward than the method we discuss about recording ``this'' reference.
-\subsubsection{Insert Last}\label{subsubsec:insert-last}
+\item Insert Last\\
 This manner is similar with ``Insert First'', except that statements are inserted after the last statement of a method block. We also record ``this'' reference in this way.
-\subsubsection{Insert After}\label{subsubsec:insert-after}
-Statments will be inserted right after invocations and the type of receiver will be recorded. It is similar with ``Insert Before'', except that statements are inserted at different position. We use this manner in our implementation and the reason will be discuss in section ~\ref{subsubsec:instrument}
+\item Insert After\\
+Statments will be inserted right after invocations and the type of receiver will be recorded. It is similar with ``Insert Before'', except that statements are inserted at different position. We take this manner in our implementation and the reason will be discuss in section ~\ref{subsubsec:instrument}
+\end{itemize}
+%\subsubsection{Insert First}\label{subsubsec:insert-first}
+%In this manner, the type-recorded statements will be insert before the first statement of a method block and the type of ``this'' reference in that method will be recorded. The reason we only have to record ``this'' reference is that a receiver is always passed into ``this'' reference in a method, except for static methods. 
+%\subsubsection{Insert Before}\label{subsubsec:insert-before}
+%Statements will be inserted before invocations and the type of receiver will be recorded in this manner. It is more straightforward than the method we discuss about recording ``this'' reference.
+%\subsubsection{Insert Last}\label{subsubsec:insert-last}
+%This manner is similar with ``Insert First'', except that statements are inserted after the last statement of a method block. We also record ``this'' reference in this way.
+%\subsubsection{Insert After}\label{subsubsec:insert-after}
+%Statments will be inserted right after invocations and the type of receiver will be recorded. It is similar with ``Insert Before'', except that statements are inserted at different position. We take this manner in our implementation and the reason will be discuss in section ~\ref{subsubsec:instrument}
 \subsubsection{Our Instrumentation Manner}\label{subsubsec:instrument}
-We use ``Insert After'' as our instrumentation manner. The reason is mainly due to the Java specification of constructor that the first statement in constructor should be either another constructor of its own or its super class. Therefore, we will get JVM voilation error if we instrument a statement before the first statement in construtor. We illustrate this example on ~\ref{fig:spec-constructor}. So both ``Insert First'' and ``Insert Before'' manners can not be applied under this circumstance. We choose ``Insert After'' over ``Insert Last'' for reason that it's more straightforward. The code before and after instrumentation are shown in \ref{fig:before-instru} and \ref{fig:after-instru}, respectively.
+We take ``Insert After'' as our instrumentation manner. The reason is mainly due to the Java specification of constructor that the first statement in constructor should be either another constructor of its own or its super class. Therefore, we will get JVM voilation error if we instrument a statement before the first statement in construtor. We illustrate this example on ~\ref{fig:spec-constructor}. So both ``Insert First'' and ``Insert Before'' manners can not be applied under this circumstance. We choose ``Insert After'' over ``Insert Last'' for reason that it's more straightforward. The code before and after instrumentation are shown in \ref{fig:before-instru} and \ref{fig:after-instru}, respectively.
 
 \begin{figure}
 \begin{lstlisting}
@@ -179,11 +198,11 @@ We executed each benchmark program $10$ times with the CHA, PTA and TFA algorith
 Reflection in Java programming language is a advanced feature which provides ability to inspect and manipulate a Java class at runtime. It brings in extra complexity on programs and the behaviour is hard to predict statically. In \ref{fig:reflection} we pick some codes using reflection in the benchmark programs to discuss how reflection works and what is our treatment on that. Note that we reorganize and simplify the real code a little to concentrate on the main point of reflection usage. We discuss in three cases:
 \begin{itemize}
 \item Object Creation \\
-Related code ranges from line 6 to 10. A new obejct of type ``SPECJVMBenchmarkBase'' will be created by invoking the method ``$newInstance()$'' on variable $c$ at line 10. $c$ is an object of ``Constructor'' type and it refers to a specific constructor of class ``SPECJVMBenchmarkBase''. Our method discard the type information of new object in these case because it's difficult to statically identify which constructor will be invoked. \eg At line 6, If statement $Class.forName()$ receive argument from outside liked user input or loading file with content of class name, then we could not find out the real type of $benchmarkClass$. As a result, the run time type of $c$ and $benchmark$ could not be identified neither.
+Related codes range from line 6 to 10. A new obejct of type ``SPECJVMBenchmarkBase'' will be created by invoking the method ``$newInstance()$'' on variable $c$ at line 10. $c$ is an object of ``Constructor'' type and it refers to a specific constructor of class ``SPECJVMBenchmarkBase''. Our method discard the type information of new object in these case because it's difficult to statically identify which constructor will be invoked. \eg, At line 6, If statement $Class.forName()$ receive argument from outside liked user input or loading file with content of class name, then we could not find out the real type of $benchmarkClass$. As a result, the run time type of $c$ and $benchmark$ could not be identified neither.
 \item Method Invocation\\
 After a new object is instantiated, we can get an object of ``Method'' type, referring to a specific method of a class, and call the method named ``invoke()'' of that object. This effect is just like a normal invocation at line 12. The invocation receiver is passed to the first argument of method ``invoke()''. If this invocation is static, a \textbf{null} reference will be passed to the first argument. We do not consider these effects of method invocation in reflection manner for the same reason we discuss about object creation.
 \item Field Modification\\
-The way to change a field using reflection is similar to processing method invocation. The last two line illustrate changing value of a field named ``f'' on object ``benchmark'' into a new object. We discard this effect as well because of the difficulty analyzing on which class holds the target field.
+The way to change a field using reflection is similar to processing method invocation. The last two line illustrate changing value of a field named ``f'' on object ``benchmark'' into a new object. We discard this effect as well because of the difficulty on analyzing which class holds the target field.
 \end{itemize}
 
 \begin{figure}
@@ -230,7 +249,7 @@ public class A {
   }
   public static void main(String[] args) {
     A a = new A();
-    a.m();
+    a.m(); <---
   }
 }
 \end{lstlisting}
@@ -238,7 +257,42 @@ public class A {
 \label{fig:jni}
 \end{figure}
 \subsubsection{Library}\label{subsubsec:library}
+Library are those codes included in the application and used to accomplish specific function(\eg, JDK library, three-party library). \ref{fig:jdk} shows a common case of JDK invocation. We do not analyze the detail logic inside library code which are written at line 10-11. Instead, we perform an over approximation on library invocation, based on the method difinition which appears at line 9. We assume that library invocation will return the difinition type and any subtype of this difinition type as the result type. For \ref{fig:jdk}, $sb2$ will recieve $\{StringBuilder,\ any\_subtype\_of\_StringBuilder\}$ as the set of reaching types under this over approximation strategy.
+
+\begin{figure}
+\begin{lstlisting}
+import java.lang.StringBuilder;
+
+public void m() {
+  StringBuilder sb = new StringBuilder();
+  StringBuilder sb2 = sb.append("abc"); <---
+}
+
+//  @Override
+//  public StringBuilder append(String str) {
+//    ...
+//    ...
+//  }
+\end{lstlisting}
+\caption{Example of JDK library call}
+\label{fig:jdk}
+\end{figure}
+
 \subsubsection{Array Approximation}\label{subsubsec:array-approximation}
+We perform a conservative treatment on array accesses that all type information that flows to one member of an array flows to all members of that array. Codes in \ref{fig:array} are used to explain how this approximation works. Type information of $A$ and $B$ are flow to the first member and the second member of array $arr$, respectively. We approximate that these two type information flow to array $arr$. Loadding an element of array will recieve all types that array can access(\eg, $b$ will recieve $\{A, B\}$ as the set of reaching types, which is the same set of types that array $arr$ can access).
+
+\begin{figure}
+\begin{lstlisting}
+public void m() {
+  Object[] arr = new Object[2]{};
+  arr[1] = new A();
+  arr[2] = new B();
+  Object b = arr[1];  <---
+}
+\end{lstlisting}
+\caption{Example of array access}
+\label{fig:array}
+\end{figure}
 
 \section{Related Work}\label{sec:related-work}
 There are not many works focusing on general purpose call graph construction algorithms, and we give a brief review of these works first.
