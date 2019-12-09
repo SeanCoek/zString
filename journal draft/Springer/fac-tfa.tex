@@ -63,14 +63,23 @@
 \newcommand{\hflow}{\longrightarrow}
 \newcommand{\lhflow}[1]{\stackrel{#1}{\hflow}}
 
+\usepackage{graphicx}
+\usepackage{color}
+\definecolor{lbcolor}{rgb}{1,1,1}
+
 \usepackage{listings}
 \lstset{
+  backgroundcolor=\color{lbcolor},
   language=java,
   frame=single,
   numbers=left,
   stepnumber=1,    
   firstnumber=1,
-  numberfirstline=true
+  numberfirstline=true,
+  captionpos=b,
+  keywordstyle=\color[rgb]{0,0,1},
+  commentstyle=\color[rgb]{0.133,0.545,0.133},
+  stringstyle=\color[rgb]{0.627,0.126,0.941}
 }
 
 \usepackage{amsfonts}
@@ -90,7 +99,7 @@ The problem of resolving virtual method and interface calls in object-oriented l
 Type Analysis; Static Analysis; Method Resolving; Call Graph
 \end{keywords}
 
-\section{Introduction}
+\section{Introduction}\label{sec:introduction}
 
 For object-oriented programming languages, virtual methods (or functions) are those declared in a base class but are meant to be overridden in different child classes. Statically determine a set of methods that may be invoked at a call site is important to program optimization...
 \section{Type Flow Analysis}\label{sec:type-flow-analysis}
@@ -100,18 +109,31 @@ We define a core calculus consisting of most of the key object-oriented language
 \subsection{x$\lhflow{f}$ y}
 
 \section{Implementation}\label{sec:implementation}
-The analysis algorithm is written in Java, and is implemented in the Soot framework, the most popular static analysis framework for Java. We use jimple as our intermediate representation. The implementation can be splited into three step as follow.
+The analysis algorithm is written in Java, and is implemented in the Soot framework, the most popular static analysis framework for Java. We use jimple as our intermediate representation. 
+We do not take common types (\eg, int and float) under our consideration. That are irrelevant to our analysis. We keep method invocation from Java advanced features liked reflection or JNI as unresolvable. More detail will be discussed in \ref{subsubsec:reflection-call} and \ref{subsubsec:jni-call}. Conservative approximation is performed on invocation of methods from libraries (\eg, JDK) and array accesses. We will describe these strategies in \ref{subsubsec:library} and \ref{subsubsec:array-approximation}.
+
+A Static analysis tool is implemented to process our algorithm and extract static result of type solution. In addition, we implement a dynamic profiler to record the run time type of variable, which can be used to compare with the static result. Detail of static analysis tool and dynamic profiler will be discuss in ~\ref{subsec:static-analysis-tool} and ~\ref{subsec:dynamic-profiler}, respectively.
+
+\subsection{Static Analysis Tool}\label{subsec:static-analysis-tool}
+Our static analysis tool is implemented in Java and aims to analyze Java programs. It takes Java bytecode files as input. Any other format of Java code will be accepted if it can be translated to jimple representation by Soot(\eg, jar files). The implementation of our static analysis tool can be splited into four step as follow.
 \begin{itemize}
+\item Code translation\\
+Target code is loaded by Soot and translated to IR of jimple format.
 \item Basic relation generation\\
-Target code is loaded by Soot and translated to IR of jimple format. We iterate all statements to generate those basic relations based on the basic relation difinition. 
+We iterate all statements on jimple IR to generate those basic relations based on the basic relation difinition. 
 \item Fixpoint calculation\\
 After basic relations are generated, we use the extended relation rule to perform fixpoint calculation.
 \item Result extraction\\
 When the fixpoint is achieved, all set of reaching types of all variable are immutable. We extract those set of reaching types as our final result.
 \end{itemize}
-We do not take common types (\eg, int and float) under our consideration. That are irrelevant to our analysis. We keep method invocation from Java advanced features liked reflection or JNI as unresolvable. More detail will be discussed in \ref{subsubsec:reflection-call} and \ref{subsubsec:jni-call}. Conservative approximation is performed on invocation of methods from libraries (\eg, JDK) and array accesses. We will describe these strategy in \ref{subsubsec:library} and \ref{subsubsec:array-approximation}.
+Fig~\ref{fig:static-process} shows the whole process of our static analysis tool. Data input and generated are represented in dash arrow. The final result is generated in the ``Result Extraction'' phase and represented in green background.
 
-\subsection{Static Analysis Tool}\label{subsec:static-analysis-tool}
+\begin{figure}
+\centering
+\includegraphics[width=16cm,height=6cm]{static-process.pdf}
+\caption{Process of static analysis tool}
+\label{fig:static-process}
+\end{figure}
 
 \subsection{Dynamic Profiler}\label{subsec:dynamic-profiler}
 Since the benchmarks do not provide the grountruth of run-time type of method receiver, we implement a dynamic profiling tool to record  types which a receiver can access at run-time. To achieve this, we instrument statements into the target benchmark. After this instrumentation, the run-time type will be extracted during the benchmark execution. We consider this output as groundtruth and compare it with our static result in section ~\ref{subsec:precision}. There are four manners to instrument the source code to record the run-time type of a method receiver.
@@ -134,10 +156,9 @@ Statments will be inserted right after invocations and the type of receiver will
 %\subsubsection{Insert After}\label{subsubsec:insert-after}
 %Statments will be inserted right after invocations and the type of receiver will be recorded. It is similar with ``Insert Before'', except that statements are inserted at different position. We take this manner in our implementation and the reason will be discuss in section ~\ref{subsubsec:instrument}
 \subsubsection{Our Instrumentation Manner}\label{subsubsec:instrument}
-We take ``Insert After'' as our instrumentation manner. The reason is mainly due to the Java specification of constructor that the first statement in constructor should be either another constructor of its own or its super class. Therefore, we will get JVM voilation error if we instrument a statement before the first statement in construtor. We illustrate this example on ~\ref{fig:spec-constructor}. So both ``Insert First'' and ``Insert Before'' manners can not be applied under this circumstance. We choose ``Insert After'' over ``Insert Last'' for reason that it's more straightforward. The code before and after instrumentation are shown in \ref{fig:before-instru} and \ref{fig:after-instru}, respectively. For \ref{fig:after-instru}, at line 5, the funtion $RecordUtils.id()$ takes an invocation expression ($invokeExprssion$) and a method receiver ($b$) as parameters and return an unique representation string for this invocation. For this example, the unique representation is ``A:m1:b:B:m2:4''. This means $b$ will call method $m2$ of class $B$, at line 4 in method $m1$ of class $A$. It also shows that $b$ is of type $B$ at this position.
+We take ``Insert After'' as our instrumentation manner. The reason is mainly due to the Java specification of constructor that the first statement in constructor should be either another constructor of its own or its super class. Therefore, we will get JVM voilation error if we instrument a statement before the first statement in construtor. We illustrate this example on Listing~\ref{lst:spec-constructor}. So both ``Insert First'' and ``Insert Before'' manners can not be applied under this circumstance. We choose ``Insert After'' over ``Insert Last'' for reason that it's more straightforward. The code before and after instrumentation are shown in Listing~\ref{lst:before-instru} and Listing~\ref{lst:after-instru}, respectively. For Listing~\ref{lst:after-instru}, at line 5, the funtion $RecordUtils.id()$ takes an invocation expression ($invokeExprssion$) and a method receiver ($b$) as parameters and return an unique representation string for this invocation. For this example, the unique representation is ``A:m1:b:B:m2:4''. This means $b$ will call method $m2$ of class $B$, at line 4 in method $m1$ of class $A$. It also shows that $b$ is of type $B$ at this position.
 
-\begin{figure}
-\begin{lstlisting}
+\begin{lstlisting}[caption={Java specification on constructor},label={lst:spec-constructor}]
 class A {
   public A() {
     //insert statements here will violate JVM specification
@@ -149,13 +170,8 @@ class A {
   }
 }
 \end{lstlisting}
-\caption{Java specification on constructor}
-\label{fig:spec-constructor}
-\end{figure}
 
-\begin{figure}
-\centering
-\begin{lstlisting}
+\begin{lstlisting}[caption={Example code before instrumentation},label={lst:before-instru}]
 class A {
   public void m1() {
     B b = new B();
@@ -163,12 +179,8 @@ class A {
   }
 }
 \end{lstlisting}
-\caption{Example code before instrumentation}
-\label{fig:before-instru}
-\end{figure}
 
-\begin{figure}
-\begin{lstlisting}
+\begin{lstlisting}[caption={Example code after instrumentation},label={lst:after-instru}]
 class A {
   public void m1() {
     B b = new B();
@@ -178,19 +190,22 @@ class A {
   }
 }
 \end{lstlisting}
-\caption{Example code after instrumentation}
-\label{fig:after-instru}
-\end{figure}
-
-
 
 \section{Evaluation}\label{sec:evaluation}
-We evaluate our approach by measuring its performance on $13$ benchmark programs...
+We evaluate our approach by measuring its performance on SPECjvm2008, which contains $12$ benchmark programs in total. We conduct all of our experiments on a laptop equipped with an Intel i5-8250U CPU at 1.60 GHz and 8 GB memory, running Ubuntu 16.04LTS with OpenJDK 1.8.0.
+
+We compare our approach against the default implementation of Class Hierarchy Analysis (CHA) and context-insensitive points-to analysis that are implemented by Soot team. The reason we do not compare against Variable Type Analysis (VTA) due to its unavaliable implementation. The only implementation for Java we can find is also implemented by Soot team, but it is embeded as a subprocess to optimize points-to analysis. Under this circumstance, we compare our approach against VTA in precision with manual analysis in section~\ref{sec:introduction}. Implementation of VTA will be left for our future work. During the evaluation the following tow research questions are addressed.
+\begin{itemize}
+\item \textbf{RQ1} How efficient is our approach compared with the traditional class hierarchy analysis and points-to analysis?
+\item \textbf{RQ2} How accurate is our type resolution when comparing with the other analysis?
+\end{itemize}
+We answer RQ1 and RQ2 in section~\ref{subsec:efficiency} and section~\ref{subsec:precision}, respetively.
+
 \subsection{Efficiency}\label{subsec:efficiency}
 We executed each benchmark program $10$ times with the CHA, PTA and TFA algorithms. We calculated the average time consumption...
 \subsection{Precision}\label{subsec:precision}
 \subsubsection{Reflection Call}\label{subsubsec:reflection-call}
-Reflection in Java programming language is a advanced feature which provides ability to inspect and manipulate a Java class at runtime. It brings in extra complexity on programs and the behaviour is hard to predict statically. In \ref{fig:reflection} we pick some codes using reflection in the benchmark programs to discuss how reflection works and what is our treatment on that. Note that we reorganize and simplify the real code a little to concentrate on the main point of reflection usage. We discuss in three cases:
+Reflection in Java programming language is a advanced feature which provides ability to inspect and manipulate a Java class at runtime. It brings in extra complexity on programs and the behaviour is hard to predict statically. In Listing~\ref{lst:reflection} we pick some codes using reflection in the benchmark programs to discuss how reflection works and what is our treatment on that. Note that we reorganize and simplify the real code a little to concentrate on the main point of reflection usage. We discuss in three cases:
 \begin{itemize}
 \item Object Creation \\
 Related codes range from line 6 to 10. A new obejct of type ``SPECJVMBenchmarkBase'' will be created by invoking the method ``$newInstance()$'' on variable $c$ at line 10. $c$ is an object of ``Constructor'' type and it refers to a specific constructor of class ``SPECJVMBenchmarkBase''. Our method discard the type information of new object in these case because it's difficult to statically identify which constructor will be invoked. \eg, At line 6, If statement $Class.forName()$ receive argument from outside liked user input or loading file with content of class name, then we could not find out the real type of $benchmarkClass$. As a result, the run time type of $c$ and $benchmark$ could not be identified neither.
@@ -200,8 +215,7 @@ After a new object is instantiated, we can get an object of ``Method'' type, ref
 The way to change a field using reflection is similar to processing method invocation. The last two line illustrate changing value of a field named ``f'' on object ``benchmark'' into a new object. We discard this effect as well because of the difficulty on analyzing which class holds the target field.
 \end{itemize}
 
-\begin{figure}
-\begin{lstlisting}
+\begin{lstlisting}[caption={Example code of reflection},label={lst:reflection}]
 public static void runSimple(Class benchmarkClass, String [] args) {
   ...
   ...
@@ -229,14 +243,11 @@ public static void runSimple(Class benchmarkClass, String [] args) {
   f.set(benchmark, new Object());
 }
 \end{lstlisting}
-\caption{Example code of reflection}
-\label{fig:reflection}
-\end{figure}
 
 \subsubsection{Java Native Interface Call}\label{subsubsec:jni-call}
-Java Native Interface (JNI) is a standard Java programming interface which provide ability for Java code to interoperate with application or library written in other programming languages, such as C, C++ or assembly. We show the usage of JNI in \ref{fig:jni}. Method ``$m()$'' is defined as a native method and should not be implemented in Java. This program will load a native library named ``$lib$'', in which the method ``$m()$'' is actually implemented in different program languages. We do not consider JNI calls in our algorithm since the code is not written in Java. Analyzing that code and the communication between Java and other languages are out of our research scope. As a consequence, the effect of that invocation ``$a.m()$'' at line 8 will be discarded.
-\begin{figure}
-\begin{lstlisting}
+Java Native Interface (JNI) is a standard Java programming interface which provide ability for Java code to interoperate with application or library written in other programming languages, such as C, C++ or assembly. We show the usage of JNI in Listing~\ref{lst:jni}. Method ``$m()$'' is defined as a native method and should not be implemented in Java. This program will load a native library named ``$lib$'', in which the method ``$m()$'' is actually implemented in different program languages. We do not consider JNI calls in our algorithm since the code is not written in Java. Analyzing that code and the communication between Java and other languages are out of our research scope. As a consequence, the effect of that invocation ``$a.m()$'' at line 8 will be discarded.
+
+\begin{lstlisting}[caption={Example code of JNI},label={lst:jni}]
 public class A {
   public native void m();
   static {
@@ -248,14 +259,11 @@ public class A {
   }
 }
 \end{lstlisting}
-\caption{Example code of JNI}
-\label{fig:jni}
-\end{figure}
-\subsubsection{Library}\label{subsubsec:library}
-Library are those codes included in the application and used to accomplish specific function(\eg, JDK library, three-party library). \ref{fig:jdk} shows a common case of JDK invocation. We do not analyze the detail logic inside library code which are written at line 10-11. Instead, we perform an over approximation on library invocation, based on the method difinition which appears at line 9. We assume that library invocation will return the difinition type and any subtype of this difinition type as the result type. For \ref{fig:jdk}, $sb2$ will receive $\{StringBuilder,\ any\_subtype\_of\_StringBuilder\}$ as the set of reaching types under this over approximation strategy.
 
-\begin{figure}
-\begin{lstlisting}
+\subsubsection{Library}\label{subsubsec:library}
+Library are those codes included in the application and used to accomplish specific function(\eg, JDK library, three-party library). Listing~\ref{lst:jdk} shows a common case of JDK invocation. We do not analyze the detail logic inside library code which are written at line 10-11. Instead, we perform an over approximation on library invocation, based on the method difinition which appears at line 9. We assume that library invocation will return the difinition type and any subtype of this difinition type as the result type. For Listing~\ref{lst:jdk}, $sb2$ will receive $\{StringBuilder,\ any\_subtype\_of\_StringBuilder\}$ as the set of reaching types under this over approximation strategy.
+
+\begin{lstlisting}[caption={Example of JDK library call},label={lst:jdk}]
 import java.lang.StringBuilder;
 
 public void m() {
@@ -269,15 +277,11 @@ public void m() {
 //    ...
 //  }
 \end{lstlisting}
-\caption{Example of JDK library call}
-\label{fig:jdk}
-\end{figure}
 
 \subsubsection{Array Approximation}\label{subsubsec:array-approximation}
-We perform a conservative treatment on array accesses that all type information that flows to one member of an array flows to all members of that array. Codes in \ref{fig:array} are used to explain how this approximation works. Type information of $A$ and $B$ are flow to the first member and the second member of array $arr$, respectively. We approximate that these two type information flow to array $arr$. Loadding an element of array will receive all types that array can access(\eg, $b$ will receive $\{A, B\}$ as the set of reaching types, which is the same set of types that array $arr$ can access).
+We perform a conservative treatment on array accesses that all type information that flows to one member of an array flows to all members of that array. Codes in Listing~\ref{lst:array} are used to explain how this approximation works. Type information of $A$ and $B$ are flow to the first member and the second member of array $arr$, respectively. We approximate that these two type information flow to array $arr$. Loadding an element of array will receive all types that array can access(\eg, $b$ will receive $\{A, B\}$ as the set of reaching types, which is the same set of types that array $arr$ can access).
 
-\begin{figure}
-\begin{lstlisting}
+\begin{lstlisting}[caption={Example of array access},label={lst:array}]
 public void m() {
   Object[] arr = new Object[2]{};
   arr[1] = new A();
@@ -285,9 +289,6 @@ public void m() {
   Object b = arr[1];  <---
 }
 \end{lstlisting}
-\caption{Example of array access}
-\label{fig:array}
-\end{figure}
 
 \section{Related Work}\label{sec:related-work}
 There are not many works focusing on general purpose call graph construction algorithms, and we give a brief review of these works first.
