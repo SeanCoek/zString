@@ -175,7 +175,7 @@ public class Relation {
         this.relationType = TYPE_CLASS2VAR;
         this.type = type;
         if(globalRelations.add(this)) {
-            if((type instanceof RefType || type instanceof ArrayType)
+            if((type instanceof RefType || type instanceof ArrayType || type instanceof AnySubType)
                     && (right.getType() instanceof RefType || right.getType() instanceof ArrayType)) {
                 Set<Relation> typeRelations = typeRelationHolder.get(right);
                 if (typeRelations == null) {

@@ -4,6 +4,7 @@ import com.zstring.utils.FileUtil;
 import soot.*;
 import soot.jimple.JimpleBody;
 import soot.jimple.Stmt;
+import soot.jimple.internal.JAssignStmt;
 import soot.options.Options;
 import soot.tagkit.LineNumberTag;
 
@@ -15,6 +16,7 @@ public class SootEnvironment {
     public static String mainSig = "void main(java.lang.String[])";
 
     public static Set<SootClass> allClasses;
+    public static Set<SootClass> extraClasses;
     public static Map<String, Map<String, Map<Integer, Value>>> locals;
     public static Map<String, Map<String, Map<Integer, Unit>>> units;
     public static Set<SootField> allFields;
@@ -29,11 +31,11 @@ public class SootEnvironment {
         Options.v().set_whole_program(true);
         Options.v().set_allow_phantom_refs(true);
         Options.v().set_keep_offset(false);
+//        Options.v().setPhaseOption("cg.spark", "vta:true");
         Scene.v().setSootClassPath(cp + File.pathSeparator + pp);
         List<String> processDir = new ArrayList<String>();
         processDir.add(pp);
         Options.v().set_process_dir(processDir);
-
 //        load(appclass);
 //        loadClasses(pp, "class");
         Scene.v().loadNecessaryClasses();
@@ -60,10 +62,10 @@ public class SootEnvironment {
         Scene.v().loadNecessaryClasses();
     }
 
-    public static void load(String appclass) {
+    public static void load(String classlistFile) {
         allClasses = new HashSet<SootClass>();
         try {
-            BufferedReader br = new BufferedReader(new FileReader(appclass));
+            BufferedReader br = new BufferedReader(new FileReader(classlistFile));
             String line;
             while((line = br.readLine()) != null) {
                 SootClass c = Scene.v().loadClassAndSupport(line);
@@ -77,6 +79,15 @@ public class SootEnvironment {
         }
 
         Scene.v().loadNecessaryClasses();
+    }
+
+    public static SootClass loadExtraClass(String className) {
+        SootClass c = Scene.v().loadClassAndSupport(className);
+        if(extraClasses == null) {
+            extraClasses = new HashSet<>();
+        }
+        extraClasses.add(c);
+        return c;
     }
 
     private static void initialStruct() {
@@ -141,5 +152,15 @@ public class SootEnvironment {
         return -1;
     }
 
-
+    public static void travelStruct() {
+        for(SootMethod m: allMethods) {
+            if(m.isConcrete()) {
+                for (Unit u : m.retrieveActiveBody().getUnits()) {
+                    if (u instanceof JAssignStmt) {
+                        //
+                    }
+                }
+            }
+        }
+    }
 }

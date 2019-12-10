@@ -11,7 +11,6 @@ import soot.jimple.internal.*;
 import soot.util.Chain;
 
 import java.util.*;
-import java.util.logging.Logger;
 
 public class RelationAnalyzer {
     public static Map<String, Set<Relation>> allRelations = new HashMap<String, Set<Relation>>();
@@ -41,7 +40,8 @@ public class RelationAnalyzer {
         if(pp == null) {
 //            pp = "/home/sean/bench_compile/";
 //            pp = "/home/sean/bench_compared/compress";
-            pp = "/home/sean/bench_compared/crypto";
+//            pp = "/home/sean/bench_compared/crypto";
+            pp = "/home/sean/bench_compared/serial";
 //            pp = "/home/sean/instruTest";
         }
         if(outputTxt == null) {
@@ -53,9 +53,26 @@ public class RelationAnalyzer {
     public void analyze(String cp, String pp) {
         SootEnvironment.init(cp, pp);
         String dotPath = "/home/sean/IdeaProjects/zString/outputDot/eclipse/";
+        String[] log = new String[7];
+        long gen_basic_time = 0;
+        long fixpoint_time = 0;
+        long t1 = new Date().getTime();
         genRelationIntra(dotPath);
+        long t2 = new Date().getTime();
+        gen_basic_time = t2-t1;
         globalize();
+        t1 = new Date().getTime();
         calcFixPoint();
+        t2 = new Date().getTime();
+        fixpoint_time = t2-t1;
+        log[0] = "basic:" + (gen_basic_time/1000.0);
+        log[1] = "fixpoint:" + (fixpoint_time/1000.0);
+        log[2] = "total_t:" + ((gen_basic_time+fixpoint_time) / 1000.0);
+        log[3] = "tflow:" + Relation.type_count;
+        log[4] = "partial:" + Relation.less_count;
+        log[5] = "field:" + Relation.field_count;
+        log[6] = "total_r:" + Relation.count;
+        FileUtil.writeLog(log, "tfa-log", outputTxt);
         generateResult();
     }
 
@@ -117,6 +134,7 @@ public class RelationAnalyzer {
                         right = ((JArrayRef) right).getBase();
                     }
                     if(right instanceof JNewArrayExpr) {
+                        relationSet.add(new Relation(right, left, right.getType()));
                         Type t = ((JNewArrayExpr) right).getBaseType();
                         if(t instanceof RefType) {
                             relationSet.add(new Relation(right, left, t));
@@ -137,18 +155,34 @@ public class RelationAnalyzer {
                             } else if (right instanceof FieldRef) {
                                 // x = y.f
                                 fieldLoadToResolve.add((JAssignStmt) u);
-                                Set<JAssignStmt> fieldLoadStmt = globalfieldLoadStmts.get(((FieldRef) right).getField());
+                                SootField field = ((FieldRef) right).getField();
+                                Set<JAssignStmt> fieldLoadStmt = globalfieldLoadStmts.get(field);
                                 if(fieldLoadStmt == null) {
                                     fieldLoadStmt = new HashSet<>();
                                 }
                                 fieldLoadStmt.add((JAssignStmt) u);
-                                globalfieldLoadStmts.put(((FieldRef) right).getField(), fieldLoadStmt);
+                                globalfieldLoadStmts.put(field, fieldLoadStmt);
+                                // library treatment
+                                if(!field.getDeclaringClass().isApplicationClass()) {
+                                    if(left instanceof JArrayRef) {
+                                        left = ((JArrayRef) left).getBase();
+                                    }
+                                    Type t = field.getType();
+                                    if(t instanceof RefType) {
+                                        relationSet.add(new Relation(null, left, AnySubType.v((RefType)t)));
+                                    } else if(t instanceof ArrayType) {
+                                        relationSet.add(new Relation(null, left, t));
+                                    }
+                                }
 //                                globalFiledLoadStmts.add((JAssignStmt) u);
 
                             } else if (right instanceof JNewExpr) {
                                 Type t = right.getType();
                                 relationSet.add(new Relation(right, left, t));
                             } else if (left instanceof JimpleLocal) {
+                                if(right instanceof JCastExpr) {
+                                    right = ((JCastExpr) right).getOp();
+                                }
                                 relationSet.add(new Relation(right, left));
                             }
                         }
@@ -253,6 +287,23 @@ public class RelationAnalyzer {
                 genRelationFromVirtualInvoke(invokeExpr, caller, calleeSub, receiver);
             }
 
+//            String declaredClassName = invokeExpr.getMethodRef().getDeclaringClass().getName();
+//            if(receiver != null) {
+//                if(declaredClassName.startsWith("java")
+//                        || declaredClassName.startsWith("sun")
+//                        || declaredClassName.startsWith("com.oracle")
+//                        || declaredClassName.startsWith("com.sun")
+//                        || declaredClassName.startsWith("jdk")) {
+//
+//                    Type t = invokeExpr.getMethodRef().getReturnType();
+//                    if(t instanceof RefType) {
+//                        globalRelations.add(new Relation(null, receiver, AnySubType.v((RefType)t)));
+//                    } else if(t instanceof ArrayType) {
+//                        globalRelations.add(new Relation(null, receiver, t));
+//                    }
+//                }
+//            }
+
             // keep "x.m()" so we could extend relation when the type of "x" changing.
             if(caller != null) {
                 Set<Unit> invokeSet = invocationIfCallerTypeChange.get(caller);
@@ -267,14 +318,31 @@ public class RelationAnalyzer {
     }
 
     private void genRelationFromVirtualInvoke(InvokeExpr invokeExpr, Value caller, String calleeSub, Value receiver) {
+        String callee = invokeExpr.getMethod().getSignature();
+        if(methodInfoMap.get(callee) == null) {
+            //Logger.getLogger(callee).info("can't generated relation for " + invokeExpr.toString());
+            if(receiver != null) {
+                Type t = invokeExpr.getMethodRef().getReturnType();
+                if(t instanceof RefType) {
+                    globalRelations.add(new Relation(null, receiver, AnySubType.v((RefType)t)));
+                } else if(t instanceof ArrayType) {
+                    globalRelations.add(new Relation(null, receiver, t));
+                }
+            }
+            //return;
+        }
+
         Set<Type> typeReachByCaller = Relation.typeReachByValue.get(caller);
         if(typeReachByCaller == null) {
             return;
         }
         for(Type t : typeReachByCaller) {
-            String callee = SootUtils.getMethodSigByType(t, calleeSub);
+            callee = SootUtils.getMethodSigByType(t, calleeSub);
+            if(callee == null) {
+                continue;
+            }
             if(methodInfoMap.get(callee) == null) {
-                Logger.getLogger(callee).info("can't generated relation for " + invokeExpr.toString());
+                //Logger.getLogger(callee).info("can't generated relation for " + invokeExpr.toString());
                 continue;
             }
             List<Value> params = methodInfoMap.get(callee).get("param");
@@ -317,7 +385,15 @@ public class RelationAnalyzer {
     private void genRelationFromSpecInvoke(InvokeExpr invokeExpr, Value receiver, Value caller) {
         String callee = invokeExpr.getMethod().getSignature();
         if(methodInfoMap.get(callee) == null) {
-            Logger.getLogger(callee).info("can't generated relation for " + invokeExpr.toString());
+            //Logger.getLogger(callee).info("can't generated relation for " + invokeExpr.toString());
+            if(receiver != null) {
+                Type t = invokeExpr.getMethodRef().getReturnType();
+                if(t instanceof RefType) {
+                    globalRelations.add(new Relation(null, receiver, AnySubType.v((RefType)t)));
+                } else if(t instanceof ArrayType) {
+                    globalRelations.add(new Relation(null, receiver, t));
+                }
+            }
             return;
         }
 
@@ -362,7 +438,15 @@ public class RelationAnalyzer {
     private void genRelationFromStaticInvoke(InvokeExpr invokeExpr, Value receiver) {
         String callee = invokeExpr.getMethod().getSignature();
         if(methodInfoMap.get(callee) == null) {
-            Logger.getLogger(callee).info("can't generated relation for " + invokeExpr.toString());
+            //Logger.getLogger(callee).info("can't generated relation for " + invokeExpr.toString());
+            if(receiver != null) {
+                Type t = invokeExpr.getMethodRef().getReturnType();
+                if(t instanceof RefType) {
+                    globalRelations.add(new Relation(null, receiver, AnySubType.v((RefType)t)));
+                } else if(t instanceof ArrayType) {
+                    globalRelations.add(new Relation(null, receiver, t));
+                }
+            }
             return;
         }
         List<Value> params = methodInfoMap.get(callee).get("param");
@@ -963,6 +1047,8 @@ public class RelationAnalyzer {
     }
 
     private void generateResult() {
+        Map<Integer, String> filenameMap = new HashMap<>(100);
+        int fileIdx = 0;
         Chain<SootClass> clsIter = Scene.v().getApplicationClasses();
         for(SootClass cls: clsIter) {
             List<SootMethod> methods = cls.getMethods();
@@ -1005,14 +1091,23 @@ public class RelationAnalyzer {
                                 SootClass c = ((RefType) t).getSootClass();
                                 writeLine = recordVirtualCallPrefix + SPLITTER + c.getName() + SPLITTER +receiver + SPLITTER + invokeExpr.getMethod().getSubSignature() + SPLITTER + lineNum;
                                 data2Write.add(writeLine);
+                            } else if (t instanceof AnySubType) {
+                                SootClass c = ((AnySubType) t).getBase().getSootClass();
+                                writeLine = recordVirtualCallPrefix + SPLITTER + c.getName() + SPLITTER +receiver + SPLITTER + invokeExpr.getMethod().getSubSignature() + SPLITTER + lineNum;
+                                data2Write.add(writeLine);
+                                writeLine = recordVirtualCallPrefix + SPLITTER + "any_subtype_of" + SPLITTER + c.getName() + SPLITTER +receiver + SPLITTER + invokeExpr.getMethod().getSubSignature() + SPLITTER + lineNum;
+                                data2Write.add(writeLine);
                             }
                         }
                     }
                 }
                 if(!data2Write.isEmpty()) {
-                    FileUtil.writeStaticResult(data2Write, m.getSignature() + FILE_SUFFIX);
+                    filenameMap.put(fileIdx, m.getSignature());
+                    FileUtil.writeStaticResult(data2Write,  "tfa-result", fileIdx + FILE_SUFFIX);
+                    fileIdx++;
                 }
             }
+            FileUtil.writeMap(filenameMap, "tfa-result", "map.txt");
         }
     }
 

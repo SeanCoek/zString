@@ -203,6 +203,32 @@ We answer RQ1 and RQ2 in section~\ref{subsec:efficiency} and section~\ref{subsec
 
 \subsection{Efficiency}\label{subsec:efficiency}
 We executed each benchmark program $10$ times with the CHA, PTA and TFA algorithms. We calculated the average time consumption...
+
+\begin{figure}\centering
+%\begin{table}[!htbp]\centering
+\begin{tabular}{lcccccc}
+	\hline
+	\textbf{Benchmark} & \hspace{5pt}\textbf{T$_{\textsf{TFA}}(s)$} & \hspace{5pt}\textbf{R${\tflow}$}\hspace{5pt} & \hspace{5pt}\textbf{R$_{\less}$}\hspace{5pt} & \hspace{5pt}\textbf{R${\rightarrow}$} &\hspace{5pt}\textbf{R$_{total}$}\hspace{2pt}\\
+	\hline
+check & 10.46 & 6847 & 15599 & 10089 & 32535\\
+compiler & 11.48 & 6665 & 14898 & 10433 & 31996\\
+compress & 12.19 & 6410 & 14344 & 10322 & 31076\\
+crypto & 9.21 & 6459 & 14424 & 10152 & 31035\\
+derby & 11.65 & 6887 & 14853 & 10603 & 32343\\
+helloworld & 13.10 & 6149 & 13652 & 10071 & 29872\\
+mpegaudio & 10.65 & 6197 & 13737 & 10084 & 30018\\
+scimark & 11.24 & 6366 & 14678 & 10214 & 31258\\
+serial & 10.98 & 6627 & 14309 & 10341 & 31277\\
+startup & 10.73 & 6239 & 13723 & 10094 & 30056\\
+sunflow & 11.12 & 6167 & 13675 & 10077 & 29919\\
+xml & 13.84 & 6866 & 16039 & 11060 & 33965\\
+	\hline
+\end{tabular}
+\caption{Runtime cost with different analysis}
+\label{experiment:TimeCost}
+%\end{table}
+\end{figure}
+
 \subsection{Precision}\label{subsec:precision}
 \subsubsection{Reflection Call}\label{subsubsec:reflection-call}
 Reflection in Java programming language is a advanced feature which provides ability to inspect and manipulate a Java class at runtime. It brings in extra complexity on programs and the behaviour is hard to predict statically. In Listing~\ref{lst:reflection} we pick some codes using reflection in the benchmark programs to discuss how reflection works and what is our treatment on that. Note that we reorganize and simplify the real code a little to concentrate on the main point of reflection usage. We discuss in three cases:

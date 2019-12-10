@@ -40,15 +40,11 @@ public class InvokeInstrumenter extends BodyTransformer {
 
     public static void main(String[] args) {
 //        PackManager.v().getPack("jop").add(new Transform("jop.instrumenter", InvokeInstrumenter.v()));
-        PackManager.v().getPack("wjtp").add(new Transform("wjtp.intru", new TestTransformer()));
+        PackManager.v().getPack("wjtp").add(new Transform("wjtp.intru", TestTransformer.v()));
 
         Scene.v().addBasicClass(CLASS_PRINT_STREAM, SootClass.SIGNATURES);
         Scene.v().addBasicClass(CLASS_SYSTEM, SootClass.SIGNATURES);
         Scene.v().addBasicClass(CLASS_FILEUTIL, SootClass.SIGNATURES);
-        //Scene.v().loadClassAndSupport(CLASS_FILEUTIL);
-        //Scene.v().setSootClassPath("/home/sean/sootlib/rt.jar:/home/sean/sootlib/fileutils.jar:/home/sean/sootlib/commons-io.jar:.");
-        //PackManager.v().runPacks();
-        //PackManager.v().writeOutput();
         soot.Main.main(args);
 
     }

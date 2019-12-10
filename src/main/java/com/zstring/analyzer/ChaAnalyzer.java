@@ -60,7 +60,7 @@ public class ChaAnalyzer {
         dataOutput[0] = String.valueOf((t2-t1)/1000.0);
         hierarchy = Scene.v().getActiveHierarchy();
         calcCHA();
-        FileUtil.writeResult(dataOutput, outputTxt);
+        FileUtil.writeResult(dataOutput, "cha", outputTxt);
     }
 
     private static void setCHA() {

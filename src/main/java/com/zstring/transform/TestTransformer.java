@@ -1,5 +1,6 @@
 package com.zstring.transform;
 
+import com.zstring.utils.FileUtil;
 import com.zstring.utils.SootUtils;
 import soot.*;
 import soot.jimple.InstanceInvokeExpr;
@@ -32,6 +33,9 @@ public class TestTransformer extends SceneTransformer {
     public static String METHOD_INIT = "void <init>()";
     public static String SPLITTER = "::";
     public static String FILE_SUFFIX = ".txt";
+    public static Map<Integer, String> filenameMap = new HashMap<>(100);
+    public static Map<String, Integer> filenameMapReverse = new HashMap<>(100);
+    public static int fileIdx = 0;
 
     private static TestTransformer instance = new TestTransformer();
     public static TestTransformer v() {
@@ -45,8 +49,14 @@ public class TestTransformer extends SceneTransformer {
         Set<SootClass> allClasses = new HashSet<>();
         allClasses.addAll(Scene.v().getApplicationClasses());
         for(SootClass c: allClasses) {
+//            if(!c.getName().startsWith("spec.benchmarks.")) {
+//                continue;
+//            }
             List<SootMethod> methods = c.getMethods();
             for(SootMethod m: methods) {
+                if(!m.isConcrete()) {
+                    continue;
+                }
                 Body body = m.retrieveActiveBody();
                 Chain units = body.getUnits();
                 Iterator<Unit> iter = units.snapshotIterator();
@@ -128,15 +138,25 @@ public class TestTransformer extends SceneTransformer {
                 body.validate();
             }
         }
+
+        FileUtil.writeMap(filenameMap, "dynamic", "map.txt");
     }
 
 
-    private void insertAfterStaticInvoke(Chain units, Unit unit, Local recordBuilder, Local record, Local instruReceiver,
+    private synchronized void insertAfterStaticInvoke(Chain units, Unit unit, Local recordBuilder, Local record, Local instruReceiver,
                                          SootMethod appendMethod, SootMethod toStringMethod, SootMethod instrument, SootMethod writeMethod,
                                          String thisMethodSig, String recordStaticPrefix, InvokeExpr invokeExpr) {
         int lineNum = unit.getJavaSourceStartLineNumber();
+        String filename = null;
+        if(filenameMapReverse.get(thisMethodSig) == null) {
+            filenameMap.put(fileIdx, thisMethodSig);
+            filenameMapReverse.put(thisMethodSig, fileIdx);
+            fileIdx++;
+        }
+
+        filename = filenameMapReverse.get(thisMethodSig) + FILE_SUFFIX;
         units.insertAfter(Jimple.v().newInvokeStmt(
-                Jimple.v().newStaticInvokeExpr(writeMethod.makeRef(), record, StringConstant.v(thisMethodSig + FILE_SUFFIX))), unit);
+                Jimple.v().newStaticInvokeExpr(writeMethod.makeRef(), record, StringConstant.v(filename))), unit);
 //        units.insertAfter(Jimple.v().newInvokeStmt(
 //                Jimple.v().newVirtualInvokeExpr(
 //                        instruReceiver, instrument.makeRef(), record)), unit);
@@ -159,7 +179,7 @@ public class TestTransformer extends SceneTransformer {
                 recordBuilder,Jimple.v().newNewExpr(RefType.v(CLASS_STRINGBUILDER))), unit);
     }
 
-    private void insertAfterVirtualInvoke(Chain units, Unit unit, Local recordBuilder, Local record, Local instruReceiver,
+    private synchronized void insertAfterVirtualInvoke(Chain units, Unit unit, Local recordBuilder, Local record, Local instruReceiver,
                                           Local recType, Local recLocal, Local recTypeName,
                                           SootMethod getClassMethod, SootMethod getNameMethod,
                                           SootMethod appendMethod, SootMethod toStringMethod, SootMethod instrument, SootMethod writeMethod,
@@ -174,9 +194,17 @@ public class TestTransformer extends SceneTransformer {
         7. instrument ===>> System.out.println(record);
         */
         int lineNum = unit.getJavaSourceStartLineNumber();
+        String filename = null;
+        if(filenameMapReverse.get(thisMethodSig) == null) {
+            filenameMap.put(fileIdx, thisMethodSig);
+            filenameMapReverse.put(thisMethodSig, fileIdx);
+            fileIdx++;
+        }
+
+        filename = filenameMapReverse.get(thisMethodSig) + FILE_SUFFIX;
         String recName = recLocal.getName();
         units.insertAfter(Jimple.v().newInvokeStmt(
-                Jimple.v().newStaticInvokeExpr(writeMethod.makeRef(), record ,StringConstant.v(thisMethodSig + FILE_SUFFIX))), unit);
+                Jimple.v().newStaticInvokeExpr(writeMethod.makeRef(), record ,StringConstant.v(filename))), unit);
 //        units.insertAfter(Jimple.v().newInvokeStmt(
 //                Jimple.v().newVirtualInvokeExpr(
 //                        instruReceiver, instrument.makeRef(), record)), unit);

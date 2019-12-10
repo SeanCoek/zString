@@ -22,6 +22,31 @@ public class FileUtil {
         return filelist;
     }
 
+    public static void writeLog(String[] log, String folder, String filename) {
+        filename = folder + File.separator + filename;
+        File folderF = new File(folder);
+        File file = new File(filename);
+        FileWriter fw = null;
+        try {
+            if(!folderF.exists()) {
+                folderF.mkdir();
+            }
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+            fw = new FileWriter(file, true);
+            for (String s : log) {
+                if(isWritable(s)) {
+                    fw.write(s);
+                    fw.write("\r\n");
+                }
+            }
+            fw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void writeResult(String dataOutput, String filename) {
         if(!isWritable(dataOutput)) {
             return;
@@ -37,7 +62,7 @@ public class FileUtil {
             if (!file.exists()) {
                 file.createNewFile();
             }
-            fw = new FileWriter(file, true);
+            fw = new FileWriter(file, false);
 
 //            if(dataOutput == null) {
 //                dataOutput = "";
@@ -50,9 +75,9 @@ public class FileUtil {
         }
     }
 
-    public static void writeResult(String[] dataOutput, String filename) {
-        filename = "dynamic" + File.separator + filename;
-        File folderF = new File("dynamic");
+    public static void writeResult(String[] dataOutput, String folder, String filename) {
+        filename = folder + File.separator + filename;
+        File folderF = new File(folder);
         File file = new File(filename);
         FileWriter fw = null;
         try {
@@ -62,7 +87,7 @@ public class FileUtil {
             if (!file.exists()) {
                 file.createNewFile();
             }
-            fw = new FileWriter(file, true);
+            fw = new FileWriter(file, false);
             for (String s : dataOutput) {
                 if(isWritable(s)) {
                     fw.write(s);
@@ -100,9 +125,9 @@ public class FileUtil {
         }
     }
 
-    public static void writeStaticResult(List<String> dataOutput, String filename) {
-        filename = "static" + File.separator + filename;
-        File folderF = new File("static");
+    public static void writeStaticResult(List<String> dataOutput, String folder, String filename) {
+        filename = folder + File.separator + filename;
+        File folderF = new File(folder);
         File file = new File(filename);
         FileWriter fw = null;
         try {
@@ -112,12 +137,35 @@ public class FileUtil {
             if (!file.exists()) {
                 file.createNewFile();
             }
-            fw = new FileWriter(file, true);
+            fw = new FileWriter(file, false);
             for (String s : dataOutput) {
                 if(isWritable(s)) {
                     fw.write(s);
                     fw.write("\r\n");
                 }
+            }
+            fw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void writeMap(Map<Integer, String> map, String folder, String filename) {
+        filename = folder + File.separator + filename;
+        File folderF = new File(folder);
+        File file = new File(filename);
+        FileWriter fw = null;
+        try {
+            if(!folderF.exists()) {
+                folderF.mkdir();
+            }
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+            fw = new FileWriter(file, false);
+            for(Integer key: map.keySet()) {
+                fw.write(key + "::" + map.get(key));
+                fw.write("\r\n");
             }
             fw.close();
         } catch (IOException e) {
