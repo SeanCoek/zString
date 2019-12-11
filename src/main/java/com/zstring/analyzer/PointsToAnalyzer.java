@@ -38,7 +38,7 @@ public class PointsToAnalyzer {
         }
         if(pp == null) {
 //            pp = "/home/sean/bench_compile/";
-            pp = "/home/sean/bench_compared/crypto";
+            pp = "/home/sean/bench_compared/serial";
 //            pp = "/home/sean/instruTest";
         }
         if(outputTxt == null) {

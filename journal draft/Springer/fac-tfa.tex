@@ -36,6 +36,7 @@
 
 %% Macros for the guide only %%
 \newcommand\eg{\textit{e.g.\ }}
+\newcommand\ie{\textit{i.e.\ }}
 \newcommand\etc{\textit{etc}}
 \newcommand\hatp{\skew3\hat{p}}
 \newcommand\lra{\ensuremath{\quad\longrightarrow\quad}}
@@ -76,6 +77,7 @@
   stepnumber=1,    
   firstnumber=1,
   numberfirstline=true,
+  tabsize=4,
   captionpos=b,
   keywordstyle=\color[rgb]{0,0,1},
   commentstyle=\color[rgb]{0.133,0.545,0.133},
@@ -83,6 +85,8 @@
 }
 
 \usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{threeparttable}
 
 \begin{document}
 \label{firstpage}
@@ -136,7 +140,7 @@ Fig~\ref{fig:static-process} shows the whole process of our static analysis tool
 \end{figure}
 
 \subsection{Dynamic Profiler}\label{subsec:dynamic-profiler}
-Since the benchmarks do not provide the grountruth of run-time type of method receiver, we implement a dynamic profiling tool to record  types which a receiver can access at run-time. To achieve this, we instrument statements into the target benchmark. After this instrumentation, the run-time type will be extracted during the benchmark execution. We consider this output as groundtruth and compare it with our static result in section ~\ref{subsec:precision}. There are four manners to instrument the source code to record the run-time type of a method receiver.
+Since the benchmarks do not provide the grountruth of run-time type of method receiver, we implement a dynamic profiling tool to record  types which a receiver can access at run-time. To achieve this, we instrument statements into the target benchmark. After this instrumentation, the run-time type will be extracted during the benchmark execution. We consider this output as groundtruth and compare it with our static result in section ~\ref{subsec:accuracy}. There are four manners to instrument the source code to record the run-time type of a method receiver.
 \begin{itemize}
 \item Insert First\\
 In this manner, the type-recorded statements will be insert before the first statement of a method block and the type of ``this'' reference in that method will be recorded. The reason we only have to record ``this'' reference is that a receiver is always passed into ``this'' reference in a method, except for static methods. 
@@ -197,39 +201,86 @@ We evaluate our approach by measuring its performance on SPECjvm2008, which cont
 We compare our approach against the default implementation of Class Hierarchy Analysis (CHA) and context-insensitive points-to analysis that are implemented by Soot team. The reason we do not compare against Variable Type Analysis (VTA) due to its unavaliable implementation. The only implementation for Java we can find is also implemented by Soot team, but it is embeded as a subprocess to optimize points-to analysis. Under this circumstance, we compare our approach against VTA in precision with manual analysis in section~\ref{sec:introduction}. Implementation of VTA will be left for our future work. During the evaluation the following tow research questions are addressed.
 \begin{itemize}
 \item \textbf{RQ1} How efficient is our approach compared with the traditional class hierarchy analysis and points-to analysis?
-\item \textbf{RQ2} How accurate is our type resolution when comparing with the other analysis?
+\item \textbf{RQ2} How accurate is our algorithm when comparing with the other analysis?
+\item \textbf{RQ3} Does our approach spend less storage comparing with PTA since we do not have to maintain an abstract heap?
 \end{itemize}
-We answer RQ1 and RQ2 in section~\ref{subsec:efficiency} and section~\ref{subsec:precision}, respetively.
+We answer these three questions in section~\ref{subsec:efficiency}, section~\ref{subsec:accuracy} and section~\ref{subsec:space}, respetively.
 
 \subsection{Efficiency}\label{subsec:efficiency}
 We executed each benchmark program $10$ times with the CHA, PTA and TFA algorithms. We calculated the average time consumption...
 
 \begin{figure}\centering
+\begin{threeparttable}[b]
 %\begin{table}[!htbp]\centering
 \begin{tabular}{lccccccc}
 	\hline
 	\textbf{Benchmark} & \hspace{5pt}\textbf{T$_{\textsf{CHA}}(s)$}& \hspace{5pt}\textbf{T$_{\textsf{PTA}}(s)$} & \hspace{5pt}\textbf{T$_{\textsf{TFA}}(s)$} & \hspace{5pt}\textbf{R${\tflow}$}\hspace{5pt} & \hspace{5pt}\textbf{R$_{\less}$}\hspace{5pt} & \hspace{5pt}\textbf{R${\rightarrow}$} &\hspace{5pt}\textbf{R$_{total}$}\hspace{2pt}\\
 	\hline
-check & 3.99 & 71.98 & 10.46 & 6847 & 15599 & 10089 & 32535\\
-compiler & 4.43 & 72.01 & 11.48 & 6665 & 14898 & 10433 & 31996\\
-compress & 4.40 & 71.06 & 12.19 & 6410 & 14344 & 10322 & 31076\\
-crypto & 4.36 & 69.25 & 9.21 & 6459 & 14424 & 10152 & 31035\\
-derby & 4.46 & 70.57 & 11.65 & 6887 & 14853 & 10603 & 32343\\
-helloworld & 4.31 & 70.72 & 13.10 & 6149 & 13652 & 10071 & 29872\\
-mpegaudio & 4.31 & 70.45 & 10.65 & 6197 & 13737 & 10084 & 30018\\
-scimark & 4.48 & 71.37 & 11.24 & 6366 & 14678 & 10214 & 31258\\
-serial & 4.36 & 70.41 & 10.98 & 6627 & 14309 & 10341 & 31277\\
-startup & 4.35 & 69.09 & 10.73 & 6239 & 13723 & 10094 & 30056\\
-sunflow & 4.33 & 72.93 & 11.12 & 6167 & 13675 & 10077 & 29919\\
-xml & 4.91 & 139.08 & 13.84 & 6866 & 16039 & 11060 & 33965\\
+check & 5.33 & 71.98 & 10.46 & 6847 & 15599 & 10089 & 32535\\
+compiler & 5.76 & 72.01 & 11.48 & 6665 & 14898 & 10433 & 31996\\
+compress & 5.72 & 71.06 & 12.19 & 6410 & 14344 & 10322 & 31076\\
+crypto & 5.60 & 69.25 & 9.21 & 6459 & 14424 & 10152 & 31035\\
+derby & 5.83 & 70.57 & 11.65 & 6887 & 14853 & 10603 & 32343\\
+helloworld & 6.26 & 70.72 & 13.10 & 6149 & 13652 & 10071 & 29872\\
+mpegaudio & 6.29 & 70.45 & 10.65 & 6197 & 13737 & 10084 & 30018\\
+scimark & 6.77 & 71.37 & 11.24 & 6366 & 14678 & 10214 & 31258\\
+serial & 7.06 & 70.41 & 10.98 & 6627 & 14309 & 10341 & 31277\\
+startup & 5.62 & 69.09 & 10.73 & 6239 & 13723 & 10094 & 30056\\
+sunflow & 5.58 & 72.93 & 11.12 & 6167 & 13675 & 10077 & 29919\\
+xml & 6.55 & 139.08 & 13.84 & 6866 & 16039 & 11060 & 33965\\
 	\hline
 \end{tabular}
 \caption{Runtime cost with different analysis}
 \label{experiment:TimeCost}
+\begin{tablenotes}
+  \item[1] The last four columns represents the number of 3 kinds of relation and the number in total we generate. 
+\end{tablenotes}
+%\end{table}
+\end{threeparttable}
+\end{figure}
+
+\subsection{Accuracy}\label{subsec:accuracy}
+We answer the seconde question about accuracy in two indexes: precision and recall. Their difinitions are given in equation 1 and 2, respectively.
+\begin{equation}
+precision = M / S
+\end{equation}
+\begin{equation}
+recall = M / D
+\end{equation}
+``D'' stands for the number of dynamic record, ``S'' refers to the numer of static record, and ``M'' represents the number of matching record. 
+
+A sound algorithm should catch all type information in run time (\ie, the recall should be $100\%$). Precision indicates how accurate the generated set of types is. In general, a more acurrate algorithm often generate a smaller set of types for each calling variable. 
+
+\begin{figure}\centering
+%\begin{table}[!htbp]\centering
+\begin{threeparttable}[b]
+\begin{tabular}{lcccccccccc}
+	\hline
+	\textbf{Benchmark} & \textbf{Dynamic} & \textbf{C$_{CHA}$} & \textbf{C$_{PTA}$} & \textbf{C$_{TFA}$} & \textbf{R$_{CHA}$} & \textbf{R$_{PTA}$} & \textbf{R$_{TFA}$} & \textbf{P$_{CHA}$} & \textbf{P$_{PTA}$} & \textbf{P$_{TFA}$} \hspace{2pt}\\
+	\hline
+check & 150 & 150 & 145 & 145 & 1.00 & 0.97 & 0.97 & 0.07 & 0.19 & 0.18\\
+compiler & 515 & 515 & 463 & 506 & 1.00 & 0.90 & 0.98 & 0.28 & 0.81 & 0.70\\
+compress & 353 & 353 & 330 & 345 & 1.00 & 0.93 & 0.98 & 0.19 & 0.49 & 0.46\\
+crypto & 454 & 454 & 393 & 407 & 1.00 & 0.87 & 0.90 & 0.25 & 0.70 & 0.65\\
+derby & 639 & 639 & 603 & 632 & 1.00 & 0.94 & 0.99 & 0.35 & 0.97 & 0.88\\
+helloworld & 21 & 21 & 21 & 21 & 1.00 & 1.00 & 1.00 & 0.01 & 0.03 & 0.03\\
+mpegaudio & 255 & 255 & 241 & 248 & 1.00 & 0.95 & 0.97 & 0.15 & 0.40 & 0.37\\
+scimark & 386 & 386 & 357 & 362 & 1.00 & 0.92 & 0.94 & 0.20 & 0.54 & 0.50\\
+serial & 458 & 458 & 354 & 410 & 1.00 & 0.77 & 0.90 & 0.18 & 0.67 & 0.62\\
+startup & 1429 & 1426 & 1358 & 1360 & 1.00 & 0.95 & 0.95 & 0.82 & 2.23 & 2.07\\
+sunflow & 226 & 226 & 208 & 217 & 1.00 & 0.92 & 0.96 & 0.13 & 0.36 & 0.33\\
+xml & 521 & 521 & 436 & 504 & 1.00 & 0.84 & 0.97 & 0.27 & 0.81 & 0.65\\
+	\hline
+\end{tabular}
+\caption{Accuracy with different analysis}
+\label{experiment:accuracy}
+\begin{tablenotes}
+  \item[1] \textbf{C$_{algorithm}$} denotes catching record.
+\end{tablenotes}
+\end{threeparttable}
 %\end{table}
 \end{figure}
 
-\subsection{Precision}\label{subsec:precision}
 \subsubsection{Reflection Call}\label{subsubsec:reflection-call}
 Reflection in Java programming language is a advanced feature which provides ability to inspect and manipulate a Java class at runtime. It brings in extra complexity on programs and the behaviour is hard to predict statically. In Listing~\ref{lst:reflection} we pick some codes using reflection in the benchmark programs to discuss how reflection works and what is our treatment on that. Note that we reorganize and simplify the real code a little to concentrate on the main point of reflection usage. We discuss in three cases:
 \begin{itemize}
@@ -309,12 +360,34 @@ We perform a conservative treatment on array accesses that all type information 
 
 \begin{lstlisting}[caption={Example of array access},label={lst:array}]
 public void m() {
-  Object[] arr = new Object[2]{};
-  arr[1] = new A();
-  arr[2] = new B();
-  Object b = arr[1];  <---
+	Object[] arr = new Object[2]{};
+	arr[1] = new A();
+	arr[2] = new B();
+	Object b = arr[1];  <---
 }
 \end{lstlisting}
+
+\subsubsection{Callback}\label{subsubsec:callback}
+A callback function is known as a ``call-after'' function. It is widely used in programs. By passing a argument to one invocation as the receiver which is expected to trigger a callback invocation. In functional language a callback funtion can be passed as argument directly. Listing~\ref{lst:callback}
+ shows the callback mechanism. The function $callback()$ will be invoked after the invocation of $trigger()$. Since we do not analyze the effect of reflection call, JNI call, and library call, we are unable to catch the type flow information inside $a.trigger(b)$ if it happens to be one of these calls (\eg, $trigger()$ is a method of a library class). Note that we only conservatively approximate on the return type of a library invocation, but not analyze the detail logic inside a library method.
+\begin{lstlisting}[caption={Callback mechanism},label={lst:callback}]
+class A {
+	public void trigger(B b) {
+		b.callback();  // here the callback function actually executes
+	}
+}
+
+class B {
+	public void callback() {...}
+	public void static main() {
+		A a = new A();
+		B b = new B();
+		a.trigger(b);
+ 	}
+}
+\end{lstlisting}
+
+\subsection{Space}\label{subsec:space}
 
 \section{Related Work}\label{sec:related-work}
 There are not many works focusing on general purpose call graph construction algorithms, and we give a brief review of these works first.

@@ -32,7 +32,7 @@ public class SootEnvironment {
         Options.v().set_allow_phantom_refs(true);
         Options.v().set_keep_offset(false);
 //        Options.v().setPhaseOption("cg.spark", "vta:true");
-        Options.v().setPhaseOption("cg", "library:anysubtype");
+//        Options.v().setPhaseOption("cg", "library:anysubtype");
         Scene.v().setSootClassPath(cp + File.pathSeparator + pp);
         List<String> processDir = new ArrayList<String>();
         processDir.add(pp);

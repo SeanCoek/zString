@@ -38,7 +38,7 @@ public class ChaAnalyzer {
             }
         }
         if(pp == null) {
-            pp = "/home/sean/bench_compared/crypto";
+            pp = "/home/sean/bench_compared/check";
         }
         if(outputTxt == null) {
             outputTxt = "default.txt";
@@ -178,33 +178,61 @@ public class ChaAnalyzer {
                     } else if(invokeExpr instanceof InstanceInvokeExpr){
                         Value receiver = ((InstanceInvokeExpr) invokeExpr).getBase();
                         SootClass c = Scene.v().getSootClass(receiver.getType().toString());
-                        if(!c.isApplicationClass()) {
-                            writeLine = recordVirtualCallPrefix + SPLITTER + "any_subtype_of" + SPLITTER + c.getName() + SPLITTER +receiver + SPLITTER + invokeExpr.getMethod().getSubSignature() + SPLITTER + lineNum;
-                            data2Write.add(writeLine);
+
+                        List<SootClass> posibleTypes = new ArrayList<>(10);
+                        if(c.isInterface()) {
+                            posibleTypes.addAll(hierarchy.getImplementersOf(c));
                         } else {
-                            List<SootClass> chas = null;
-                            if(c.isInterface()) {
-                                chas = hierarchy.getImplementersOf(c);
-                            } else {
-                                try {
-                                    chas = hierarchy.getSubclassesOfIncluding(c);
-                                } catch (Exception e) {
-                                    e.printStackTrace();
-                                    continue;
+                            posibleTypes.addAll(hierarchy.getSuperclassesOf(c));
+                        }
+                        List<SootClass> chas = new ArrayList<>(10);
+
+                        for(SootClass sc : posibleTypes) {
+                            try {
+                                SootMethod sm = sc.getMethod(invokeExpr.getMethod().getSubSignature());
+                                if(sm.isConcrete()) {
+                                    chas.add(sc);
                                 }
-                            }
-                            for(SootClass sc : chas) {
-                                try {
-                                    SootMethod sm = sc.getMethod(invokeExpr.getMethod().getSubSignature());
-                                    if(sm.isConcrete()) {
-                                        writeLine = recordVirtualCallPrefix + SPLITTER + sc.getName() + SPLITTER + receiver + SPLITTER + invokeExpr.getMethod().getSubSignature() + SPLITTER + lineNum;
-                                        data2Write.add(writeLine);
-                                    }
-                                } catch (Exception e) {
-                                    e.printStackTrace();
-                                }
+                            } catch (Exception e) {
+                                e.printStackTrace();
                             }
                         }
+
+//                        try {
+//                            SootMethod sm = c.getMethod(invokeExpr.getMethod().getSubSignature());
+//                            List<SootClass> subclass = hierarchy.getSubclassesOf(c);
+                            // means this method can be access by all subclass
+//                            if(!sm.isPrivate()) {
+//                                chas.addAll(subclass);
+//                            } else {
+//                                for(SootClass sc : subclass) {
+//                                    try {
+//                                        sm = c.getMethod(invokeExpr.getMethod().getSubSignature());
+//                                        if(sm.isConcrete()) {
+//                                            chas.add(sc);
+//                                        }
+//                                    } catch (Exception e) {
+//                                        e.printStackTrace();
+//                                    }
+//                                }
+//                            }
+//                        } catch (Exception e) {
+//                            e.printStackTrace();
+//                        }
+                        if(!c.isInterface()) {
+                            try {
+                                List<SootClass> subclass = hierarchy.getSubclassesOf(c);
+                                chas.addAll(subclass);
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
+                            chas.add(c);
+                        }
+                        for(SootClass sc : chas) {
+                            writeLine = recordVirtualCallPrefix + SPLITTER + sc.getName() + SPLITTER + receiver + SPLITTER + invokeExpr.getMethod().getSubSignature() + SPLITTER + lineNum;
+                            data2Write.add(writeLine);
+                        }
+
                     }
                 }
                 if(!data2Write.isEmpty()) {
