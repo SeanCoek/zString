@@ -32,6 +32,7 @@ public class SootEnvironment {
         Options.v().set_allow_phantom_refs(true);
         Options.v().set_keep_offset(false);
 //        Options.v().setPhaseOption("cg.spark", "vta:true");
+        Options.v().setPhaseOption("cg", "library:anysubtype");
         Scene.v().setSootClassPath(cp + File.pathSeparator + pp);
         List<String> processDir = new ArrayList<String>();
         processDir.add(pp);
@@ -39,6 +40,9 @@ public class SootEnvironment {
 //        load(appclass);
 //        loadClasses(pp, "class");
         Scene.v().loadNecessaryClasses();
+        List<String> pkgList = new ArrayList<>();
+//        pkgList.add("cg.cha");
+//        Scene.v().setPkgList(pkgList);
         allClasses = new HashSet<SootClass>();
         allClasses.addAll(Scene.v().getApplicationClasses());
         initialStruct();

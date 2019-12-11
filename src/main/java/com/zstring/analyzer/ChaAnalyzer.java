@@ -2,12 +2,16 @@ package com.zstring.analyzer;
 
 import com.zstring.env.SootEnvironment;
 import com.zstring.utils.FileUtil;
+import com.zstring.utils.SootUtils;
 import soot.*;
+import soot.jimple.InstanceInvokeExpr;
 import soot.jimple.InvokeExpr;
 import soot.jimple.JimpleBody;
 import soot.jimple.internal.*;
 import soot.jimple.spark.SparkTransformer;
 import soot.jimple.toolkits.callgraph.CHATransformer;
+import soot.jimple.toolkits.callgraph.CallGraph;
+import soot.util.Chain;
 
 import java.util.*;
 
@@ -17,7 +21,8 @@ public class ChaAnalyzer {
     public static String pp = null;
     public static String outputTxt = null;
     public Hierarchy hierarchy;
-
+    public static String SPLITTER = "::";
+    public static String FILE_SUFFIX = ".txt";
 
 
     public static void main(String[] args) {
@@ -33,7 +38,7 @@ public class ChaAnalyzer {
             }
         }
         if(pp == null) {
-            pp = "/home/sean/bench_compile/";
+            pp = "/home/sean/bench_compared/crypto";
         }
         if(outputTxt == null) {
             outputTxt = "default.txt";
@@ -51,19 +56,34 @@ public class ChaAnalyzer {
     public void analyze(String cp, String pp) {
         // Time [0]
         String[] dataOutput = new String[1];
+        long t1 = new Date().getTime();
         SootEnvironment.init(cp, pp);
 //        calcOriginCallsite();
-        long t1 = new Date().getTime();
-        setCHA();
+//        setCHA();
+
+        hierarchy = Scene.v().getActiveHierarchy();
+//        calcCHA();
+        generateResult();
         long t2 = new Date().getTime();
         System.out.println("CHA analysis ended, used " + (t2-t1)/1000.0 + "s");
         dataOutput[0] = String.valueOf((t2-t1)/1000.0);
-        hierarchy = Scene.v().getActiveHierarchy();
-        calcCHA();
-        FileUtil.writeResult(dataOutput, "cha", outputTxt);
+        FileUtil.writeLog(dataOutput, "cha-log", outputTxt);
     }
 
     private static void setCHA() {
+        Map<String, String> options = new HashMap<String, String>();
+        System.out.println("cha analysis starting......");
+
+        options.put("enabled", "true");
+        options.put("verbose", "true");
+//        options.put("set-impl", "double");
+//        options.put("set-impl", "double");
+//        options.put("set-impl", "hybrid");
+//        options.put("vta", "true");
+        options.put("apponly", "true");
+//        options.put("double-set-old", "hybrid");
+//        options.put("double-set-new", "hash");
+
         CHATransformer.v().transform();
     }
 
@@ -119,6 +139,82 @@ public class ChaAnalyzer {
         }
         System.out.println("total callsites: " + callsites);
         return callsites;
+    }
+
+    private void generateResult() {
+        Map<Integer, String> filenameMap = new HashMap<>(100);
+        int fileIdx = 0;
+        Chain<SootClass> clsIter = Scene.v().getApplicationClasses();
+        for(SootClass cls: clsIter) {
+            List<SootMethod> methods = cls.getMethods();
+            for(SootMethod m: methods) {
+                if(!m.isConcrete()) {
+                    continue;
+                }
+                String thisMethodSig = m.getSignature();
+                String recordStaticPrefix = "IN METHOD" + SPLITTER + thisMethodSig + SPLITTER + "STATICINVOKE";
+                String recordVirtualCallPrefix = "IN METHOD"+ SPLITTER + thisMethodSig + SPLITTER + "INVOKE";
+                Chain<Unit> units = m.retrieveActiveBody().getUnits();
+                List<String> data2Write = new ArrayList<>();
+                for(Unit unit: units) {
+                    int lineNum = unit.getJavaSourceStartLineNumber();
+                    InvokeExpr invokeExpr = null;
+                    if(unit instanceof JInvokeStmt) {
+                        invokeExpr = ((JInvokeStmt) unit).getInvokeExpr();
+                    } else if(unit instanceof JAssignStmt) {
+                        if(((JAssignStmt) unit).getRightOp() instanceof InvokeExpr) {
+                            invokeExpr = (InvokeExpr) ((JAssignStmt) unit).getRightOp();
+                        }
+                    }
+                    if(invokeExpr == null) {
+                        continue;
+                    }
+                    String writeLine = null;
+                    if(invokeExpr instanceof JStaticInvokeExpr) {
+                        writeLine = recordStaticPrefix + SPLITTER + invokeExpr.getMethod().getSignature() + SPLITTER + lineNum;
+                        data2Write.add(writeLine);
+                    } else if(invokeExpr instanceof JDynamicInvokeExpr) {
+                        //TODO: dynamic invoke is a new feature and we haven't handle this.
+                    } else if(invokeExpr instanceof InstanceInvokeExpr){
+                        Value receiver = ((InstanceInvokeExpr) invokeExpr).getBase();
+                        SootClass c = Scene.v().getSootClass(receiver.getType().toString());
+                        if(!c.isApplicationClass()) {
+                            writeLine = recordVirtualCallPrefix + SPLITTER + "any_subtype_of" + SPLITTER + c.getName() + SPLITTER +receiver + SPLITTER + invokeExpr.getMethod().getSubSignature() + SPLITTER + lineNum;
+                            data2Write.add(writeLine);
+                        } else {
+                            List<SootClass> chas = null;
+                            if(c.isInterface()) {
+                                chas = hierarchy.getImplementersOf(c);
+                            } else {
+                                try {
+                                    chas = hierarchy.getSubclassesOfIncluding(c);
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                    continue;
+                                }
+                            }
+                            for(SootClass sc : chas) {
+                                try {
+                                    SootMethod sm = sc.getMethod(invokeExpr.getMethod().getSubSignature());
+                                    if(sm.isConcrete()) {
+                                        writeLine = recordVirtualCallPrefix + SPLITTER + sc.getName() + SPLITTER + receiver + SPLITTER + invokeExpr.getMethod().getSubSignature() + SPLITTER + lineNum;
+                                        data2Write.add(writeLine);
+                                    }
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }
+                    }
+                }
+                if(!data2Write.isEmpty()) {
+                    filenameMap.put(fileIdx, m.getSignature());
+                    FileUtil.writeStaticResult(data2Write,  "cha-result", fileIdx + FILE_SUFFIX);
+                    fileIdx++;
+                }
+            }
+            FileUtil.writeMap(filenameMap, "cha-result", "map.txt");
+        }
     }
 
 }

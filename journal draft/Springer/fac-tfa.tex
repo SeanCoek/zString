@@ -206,22 +206,22 @@ We executed each benchmark program $10$ times with the CHA, PTA and TFA algorith
 
 \begin{figure}\centering
 %\begin{table}[!htbp]\centering
-\begin{tabular}{lcccccc}
+\begin{tabular}{lccccccc}
 	\hline
-	\textbf{Benchmark} & \hspace{5pt}\textbf{T$_{\textsf{TFA}}(s)$} & \hspace{5pt}\textbf{R${\tflow}$}\hspace{5pt} & \hspace{5pt}\textbf{R$_{\less}$}\hspace{5pt} & \hspace{5pt}\textbf{R${\rightarrow}$} &\hspace{5pt}\textbf{R$_{total}$}\hspace{2pt}\\
+	\textbf{Benchmark} & \hspace{5pt}\textbf{T$_{\textsf{CHA}}(s)$}& \hspace{5pt}\textbf{T$_{\textsf{PTA}}(s)$} & \hspace{5pt}\textbf{T$_{\textsf{TFA}}(s)$} & \hspace{5pt}\textbf{R${\tflow}$}\hspace{5pt} & \hspace{5pt}\textbf{R$_{\less}$}\hspace{5pt} & \hspace{5pt}\textbf{R${\rightarrow}$} &\hspace{5pt}\textbf{R$_{total}$}\hspace{2pt}\\
 	\hline
-check & 10.46 & 6847 & 15599 & 10089 & 32535\\
-compiler & 11.48 & 6665 & 14898 & 10433 & 31996\\
-compress & 12.19 & 6410 & 14344 & 10322 & 31076\\
-crypto & 9.21 & 6459 & 14424 & 10152 & 31035\\
-derby & 11.65 & 6887 & 14853 & 10603 & 32343\\
-helloworld & 13.10 & 6149 & 13652 & 10071 & 29872\\
-mpegaudio & 10.65 & 6197 & 13737 & 10084 & 30018\\
-scimark & 11.24 & 6366 & 14678 & 10214 & 31258\\
-serial & 10.98 & 6627 & 14309 & 10341 & 31277\\
-startup & 10.73 & 6239 & 13723 & 10094 & 30056\\
-sunflow & 11.12 & 6167 & 13675 & 10077 & 29919\\
-xml & 13.84 & 6866 & 16039 & 11060 & 33965\\
+check & 3.99 & 71.98 & 10.46 & 6847 & 15599 & 10089 & 32535\\
+compiler & 4.43 & 72.01 & 11.48 & 6665 & 14898 & 10433 & 31996\\
+compress & 4.40 & 71.06 & 12.19 & 6410 & 14344 & 10322 & 31076\\
+crypto & 4.36 & 69.25 & 9.21 & 6459 & 14424 & 10152 & 31035\\
+derby & 4.46 & 70.57 & 11.65 & 6887 & 14853 & 10603 & 32343\\
+helloworld & 4.31 & 70.72 & 13.10 & 6149 & 13652 & 10071 & 29872\\
+mpegaudio & 4.31 & 70.45 & 10.65 & 6197 & 13737 & 10084 & 30018\\
+scimark & 4.48 & 71.37 & 11.24 & 6366 & 14678 & 10214 & 31258\\
+serial & 4.36 & 70.41 & 10.98 & 6627 & 14309 & 10341 & 31277\\
+startup & 4.35 & 69.09 & 10.73 & 6239 & 13723 & 10094 & 30056\\
+sunflow & 4.33 & 72.93 & 11.12 & 6167 & 13675 & 10077 & 29919\\
+xml & 4.91 & 139.08 & 13.84 & 6866 & 16039 & 11060 & 33965\\
 	\hline
 \end{tabular}
 \caption{Runtime cost with different analysis}
