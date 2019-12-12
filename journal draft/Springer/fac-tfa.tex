@@ -198,7 +198,7 @@ class A {
 \section{Evaluation}\label{sec:evaluation}
 We evaluate our approach by measuring its performance on SPECjvm2008, which contains $12$ benchmark programs in total. We conduct all of our experiments on a laptop equipped with an Intel i5-8250U CPU at 1.60 GHz and 8 GB memory, running Ubuntu 16.04LTS with OpenJDK 1.8.0.
 
-We compare our approach against the default implementation of Class Hierarchy Analysis (CHA) and context-insensitive points-to analysis that are implemented by Soot team. The reason we do not compare against Variable Type Analysis (VTA) due to its unavaliable implementation. The only implementation for Java we can find is also implemented by Soot team, but it is embeded as a subprocess to optimize points-to analysis. Under this circumstance, we compare our approach against VTA in precision with manual analysis in section~\ref{sec:introduction}. Implementation of VTA will be left for our future work. During the evaluation the following tow research questions are addressed.
+We compare our approach against the default implementation of Class Hierarchy Analysis (CHA) and context-insensitive points-to analysis that are implemented by Soot team. The reason we do not compare against Variable Type Analysis (VTA) due to its unavaliable implementation. The only avaliable implementation for Java is also implemented by Soot team, but it is embeded as a subprocess to optimize points-to analysis. Under this circumstance, we compare our approach against VTA in precision with manual analysis in section~\ref{sec:introduction}. Implementation of VTA will be left for our future work. The choice of the context-insensitive points-to analysis is due to our approach also being context-insensitive, thus the results will be comparable. We use iteration algorithm for points-to analysis to calculate a fixpoint for the same reason. In the following tables we use CHA, PTA and TFA to refer to the results related to class hierarchy analysis, points-to analysis and type flow analysis, respectively. During the evaluation the following tow research questions are addressed.
 \begin{itemize}
 \item \textbf{RQ1} How efficient is our approach compared with the traditional class hierarchy analysis and points-to analysis?
 \item \textbf{RQ2} How accurate is our algorithm when comparing with the other analysis?
@@ -207,7 +207,7 @@ We compare our approach against the default implementation of Class Hierarchy An
 We answer these three questions in section~\ref{subsec:efficiency}, section~\ref{subsec:accuracy} and section~\ref{subsec:space}, respetively.
 
 \subsection{Efficiency}\label{subsec:efficiency}
-We executed each benchmark program $10$ times with the CHA, PTA and TFA algorithms. We calculated the average time consumption...
+We executed each benchmark program $10$ times with the CHA, PTA and TFA algorithms. We calculated the average time consumption (in seconds) as displayed at column \textbf{T$_{CHA}$}(s), \textbf{T$_{PTA}$}(s) and \textbf{T$_{TFA}$}(s) of the Table in Fig.~\ref{fig:TimeCost}. We counted the sizes of each generated realtion (\ie, the type flow realtion `$\tflow$', variable partial order `$\less$' and the field access relation `$\hflow$'). It provides an estimation of size for the problem we are treating. The result shows that our approach consums more time than CHA, for the reason that CHA do not have to analyze detail logic inside the program but only analyze the class and interface hierarchical structure. TFA is in general more efficient than points-to analysis. The runtime cost in TFA basically depends on the size of generated relations, as well as the relational complexity as most of the time is consumed to calculate a fixpoint. For PTA it also require extra time for maintaining and updating a heap abstraction.
 
 \begin{figure}\centering
 \begin{threeparttable}[b]
@@ -231,9 +231,9 @@ xml & 6.55 & 139.08 & 13.84 & 6866 & 16039 & 11060 & 33965\\
 	\hline
 \end{tabular}
 \caption{Runtime cost with different analysis}
-\label{experiment:TimeCost}
+\label{fig:TimeCost}
 \begin{tablenotes}
-  \item[1] The last four columns represents the number of 3 kinds of relation and the number in total we generate. 
+  \item[1] \textbf{R}$_{relation}$ denotes different type of relation we generated.
 \end{tablenotes}
 %\end{table}
 \end{threeparttable}
@@ -249,14 +249,17 @@ recall = M / D
 \end{equation}
 ``D'' stands for the number of dynamic record, ``S'' refers to the numer of static record, and ``M'' represents the number of matching record. 
 
-A sound algorithm should catch all type information in run time (\ie, the recall should be $100\%$). Precision indicates how accurate the generated set of types is. In general, a more acurrate algorithm often generate a smaller set of types for each calling variable. 
+A sound algorithm should catch all type information in run time, \ie, the recall should be $100\%$. Precision indicates how accurate the generated set of types is. In general, a more acurrate algorithm often generate a smaller set of types for each calling variable. We calculate recall and precision of different approach, as displayed in Fig.~\ref{fig:accuracy}
 
+The result shows that in general our approach can achieve higher precision than CHA and closer precision than PTA. The imprecision is mainly due to our approximation on library invocation and array, which we will discuss in section~\ref{subsubsec:library} and section~\ref{subsubsec:array-approximation}. Besides, the code coverage will issue imprecision since SPECjvm provides common codes for all benchmarks and some of them would not be excuted when a specific benchmark is excuting, \ie, these codes will be analyzed statically but not generate any record in run time.
+
+For soundness, the recall of both TFA and PTA can not achieve to $1.00$ in most benchmarks except $helloworld$. We analyzed those missed records and find out the reason is due to some Java advance features, liked reflection call and JNI call, which we will describe in section~\ref{subsubsec:reflection-call} and section~\ref{subsubsec:jni-call}. In addition,  callback mechanism will raise unsoundness under our treatment on reflection, JNI and library call. We will discuss it in section~\ref{subsubsec:callback}. The result shows that PTA produces lower recall than TFA in general. This difference is due to the reachability analysis used on PTA implemented by Soot team. Method invoked by reflection, or invoked as a callback function inside reflection, JNI and library, will be denoted as unreachable under this analysis. As a consequence, some methods would not be analyzed by PTA. Note that even the  unreachable method would not be analyzed, a variable receiving its type from JDK would be assigned to possible types based on the preprocessing from Soot.
 \begin{figure}\centering
 %\begin{table}[!htbp]\centering
 \begin{threeparttable}[b]
 \begin{tabular}{lcccccccccc}
 	\hline
-	\textbf{Benchmark} & \textbf{Dynamic} & \textbf{C$_{CHA}$} & \textbf{C$_{PTA}$} & \textbf{C$_{TFA}$} & \textbf{R$_{CHA}$} & \textbf{R$_{PTA}$} & \textbf{R$_{TFA}$} & \textbf{P$_{CHA}$} & \textbf{P$_{PTA}$} & \textbf{P$_{TFA}$} \hspace{2pt}\\
+	\textbf{Benchmark} & \textbf{D} & \textbf{M$_{CHA}$} & \textbf{M$_{PTA}$} & \textbf{M$_{TFA}$} & \textbf{R$_{CHA}$} & \textbf{R$_{PTA}$} & \textbf{R$_{TFA}$} & \textbf{P$_{CHA}$} & \textbf{P$_{PTA}$} & \textbf{P$_{TFA}$} \hspace{2pt}\\
 	\hline
 check & 150 & 150 & 145 & 145 & 1.00 & 0.97 & 0.97 & 0.07 & 0.19 & 0.18\\
 compiler & 515 & 515 & 463 & 506 & 1.00 & 0.90 & 0.98 & 0.28 & 0.81 & 0.70\\
@@ -267,15 +270,16 @@ helloworld & 21 & 21 & 21 & 21 & 1.00 & 1.00 & 1.00 & 0.01 & 0.03 & 0.03\\
 mpegaudio & 255 & 255 & 241 & 248 & 1.00 & 0.95 & 0.97 & 0.15 & 0.40 & 0.37\\
 scimark & 386 & 386 & 357 & 362 & 1.00 & 0.92 & 0.94 & 0.20 & 0.54 & 0.50\\
 serial & 458 & 458 & 354 & 410 & 1.00 & 0.77 & 0.90 & 0.18 & 0.67 & 0.62\\
-startup & 1429 & 1426 & 1358 & 1360 & 1.00 & 0.95 & 0.95 & 0.82 & 2.23 & 2.07\\
+startup & 1429 & 1429 & 1358 & 1360 & 1.00 & 0.95 & 0.95 & 0.82 & 2.23 & 2.07\\
 sunflow & 226 & 226 & 208 & 217 & 1.00 & 0.92 & 0.96 & 0.13 & 0.36 & 0.33\\
 xml & 521 & 521 & 436 & 504 & 1.00 & 0.84 & 0.97 & 0.27 & 0.81 & 0.65\\
 	\hline
 \end{tabular}
 \caption{Accuracy with different analysis}
-\label{experiment:accuracy}
+\label{fig:accuracy}
 \begin{tablenotes}
-  \item[1] \textbf{C$_{algorithm}$} denotes catching record.
+  \item[1] \textbf{D} denotes dynamic records.
+  \item[2] \textbf{M$_{algorithm}$}, \textbf{R$_{algorithm}$}, \textbf{P$_{algorithm}$} denote matching count, recall and precision of different algorithms, respectively.
 \end{tablenotes}
 \end{threeparttable}
 %\end{table}
@@ -388,6 +392,7 @@ class B {
 \end{lstlisting}
 
 \subsection{Space}\label{subsec:space}
+
 
 \section{Related Work}\label{sec:related-work}
 There are not many works focusing on general purpose call graph construction algorithms, and we give a brief review of these works first.
