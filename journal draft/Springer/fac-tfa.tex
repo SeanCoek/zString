@@ -242,10 +242,10 @@ xml & 6.55 & 139.08 & 13.84 & 6866 & 16039 & 11060 & 33965\\
 \subsection{Accuracy}\label{subsec:accuracy}
 We answer the seconde question about accuracy in two indexes: precision and recall. Their difinitions are given in equation 1 and 2, respectively.
 \begin{equation}
-precision = M / S
+precision =  \dfrac{M}{S} 
 \end{equation}
 \begin{equation}
-recall = M / D
+recall = \dfrac{M}{D} 
 \end{equation}
 ``D'' stands for the number of dynamic record, ``S'' refers to the numer of static record, and ``M'' represents the number of matching record. 
 
@@ -253,7 +253,7 @@ A sound algorithm should catch all type information in run time, \ie, the recall
 
 The result shows that in general our approach can achieve higher precision than CHA and closer precision than PTA. The imprecision is mainly due to our approximation on library invocation and array, which we will discuss in section~\ref{subsubsec:library} and section~\ref{subsubsec:array-approximation}. Besides, the code coverage will issue imprecision since SPECjvm provides common codes for all benchmarks and some of them would not be excuted when a specific benchmark is excuting, \ie, these codes will be analyzed statically but not generate any record in run time.
 
-For soundness, the recall of both TFA and PTA can not achieve to $1.00$ in most benchmarks except $helloworld$. We analyzed those missed records and find out the reason is due to some Java advance features, liked reflection call and JNI call, which we will describe in section~\ref{subsubsec:reflection-call} and section~\ref{subsubsec:jni-call}. In addition,  callback mechanism will raise unsoundness under our treatment on reflection, JNI and library call. We will discuss it in section~\ref{subsubsec:callback}. The result shows that PTA produces lower recall than TFA in general. This difference is due to the reachability analysis used on PTA implemented by Soot team. Method invoked by reflection, or invoked as a callback function inside reflection, JNI and library, will be denoted as unreachable under this analysis. As a consequence, some methods would not be analyzed by PTA. Note that even the  unreachable method would not be analyzed, a variable receiving its type from JDK would be assigned to possible types based on the preprocessing from Soot.
+For soundness, the recall of both TFA and PTA can not achieve to $1.00$ in most benchmarks except $helloworld$. We analyzed those missed records and find out the reason is due to some Java advance features, liked reflection call and JNI call, which we will describe in section~\ref{subsubsec:reflection-call} and section~\ref{subsubsec:jni-call}. In addition,  callback mechanism will raise unsoundness under our treatment on reflection, JNI and library call. We will discuss it in section~\ref{subsubsec:callback}. The result shows that PTA produces lower recall than TFA in general. This difference is due to the on-the-fly reachability analysis used on PTA implemented by Soot team. Method invoked by reflection, or invoked as a callback function inside reflection, JNI and library, will be denoted as unreachable under this analysis. As a consequence, some methods would not be analyzed by PTA. Note that even the  unreachable method would not be analyzed, a variable receiving its type from JDK would be assigned to possible types based on the preprocessing from Soot.
 \begin{figure}\centering
 %\begin{table}[!htbp]\centering
 \begin{threeparttable}[b]
@@ -295,7 +295,6 @@ After a new object is instantiated, we can get an object of ``Method'' type, ref
 \item Field Modification\\
 The way to change a field using reflection is similar to processing method invocation. The last two line illustrate changing value of a field named ``f'' on object ``benchmark'' into a new object. We discard this effect as well because of the difficulty on analyzing which class holds the target field.
 \end{itemize}
-
 \begin{lstlisting}[caption={Example code of reflection},label={lst:reflection}]
 public static void runSimple(Class benchmarkClass, String [] args) {
   ...
