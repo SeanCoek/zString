@@ -45,8 +45,8 @@
 
 \newtheorem{theorem}{Theorem}[section]
 
-\title{A Relational Static Semantics for\\
-		\ Call Graph Construction}
+\title{TFA: An Efficient and Precise Resolution for
+		Virtual Method Call}
 
 \author[Xilong Zhuo and Chenyi Zhang]
     {Xilong Zhuo$^1$ and Chenyi Zhang$^2$\\
@@ -140,7 +140,7 @@
 
 \begin{abstract}
 The problem of resolving virtual method and interface calls in object-oriented languages has been a long standing challenge to the program analysis community. The complexities are due to various reasons, such as increased levels of class inheritance and polymorphism in large programs. In this paper, we propose a new approach called type flow analysis that represent propagation of type information between program variables by a group of relations without the help of a heap abstraction. We prove that regarding the precision on reachability of class information to a variable, our method produces results equivalent to that one can derive from a points-to analysis.
-Moreover, we implement a static type analysis tool for our approach. To evaluate our method, we use instrumentation tenichque to implement a dynamic profiling type recorder. The experimental results show that our approach is more practical in both efficency and accuracy.
+Moreover, we implement a static type analysis tool for our approach. To evaluate our method, we use instrumentation tenichque to implement a dynamic profiling type recorder. The experimental results show that our approach is more practical in both efficiency and accuracy.
 \end{abstract}
 
 \begin{keywords}
@@ -246,7 +246,7 @@ Taking the example from Figure~\ref{figure:example}, we are able to collect the 
 %%% contributions with %%% discussion on context-sensitivity
 We have proved that in the context-insensitive inter-procedural setting, TFA is as precise as the subset based points-to analysis regarding type related information. Since points-to analysis can be enhanced with various types of context-sensitivity on variables and objects (\eg, call-site-sensitivity~\cite{Shivers91,Kastrinis2013}, object-sensitivity~\cite{Milanova2005,Smaragdakis11,Tan16} and type-sensitivity~\cite{Smaragdakis11}), extending type flow analysis with context-sensitivity will only require to consider contexts on variables, which is left for future work.
 
-We have implemented a static type analysis tool for context-insensitive type flow analysis, which is written in Java and aims to analyze Java programs. We run our algorithm on the Jimple, a typed, 3-address, statemente based intermediate representation provided by Soot. The implementation has been tested on a collection of benchmark programs from SPECjvm2008~\cite{specjvm}. We conducted several experiments to compare the efficency and accuracy with CHA and PTA implemented by Soot. In order to comparing accuracy, we used the instrument technique to implement a dynamic profiling tool, to extract the types of method receiver in runtime. We compared different static results with dynamic record. The experimental result has shown that our approach is more precise than CHA and as precise as PTA. Moreover, TFA reduce significant time cost than PTA. In addition, we found that both PTA and TFA do not provide soundness on all benchmarks. We detail looked into all the unmatch record to find out the reason for unsoundness, which involves some Java advanced features liked reflection, JNI, etc. We will discuss it in the experiment section of this paper. %(Need more citations here, and brief the experimental results.)
+We have implemented a static type analysis tool for context-insensitive type flow analysis, which is written in Java and aims to analyze Java programs. We run our algorithm on the Jimple, a typed, 3-address, statemente based intermediate representation provided by Soot. The implementation has been tested on a collection of benchmark programs from SPECjvm2008~\cite{specjvm}. We conducted several experiments to compare the efficiency and accuracy with CHA and PTA implemented by Soot. In order to comparing accuracy, we used the instrument technique to implement a dynamic profiling tool, to extract the types of method receiver in runtime. We compared different static results with dynamic record. The experimental result has shown that our approach is more precise than CHA and as precise as PTA. Moreover, TFA reduce significant time cost than PTA. In addition, we found that both PTA and TFA do not provide soundness on all benchmarks. We detail looked into all the unmatch record to find out the reason for unsoundness, which involves some Java advanced features liked reflection, JNI, etc. We will discuss it in the experiment section of this paper. %(Need more citations here, and brief the experimental results.)
 
 \section{Type Flow Analysis}\label{sec:type-flow-analysis}
 We define a core calculus consisting of most of the key object-oriented language features, shown in Figure~\ref{fig:syntax}, which is designed in the same spirit as Featherweight Java~\cite{Igarashi2001}.
@@ -757,6 +757,8 @@ In this paper we have proposed Type Flow Analysis (TFA), an algorithm that stati
 To evaluate our method in practice, we implement a static type analysis tool in Soot framework, which runs our algorithm. Moreover, a dynamic type profiler is used to extract run-time types of variables, which are then used to compare with static results. We implement it using instrumentation technique, abiding by specification of Java VM. We have compared our method with built-in CHA and points-to algorithms in Soot by experimental evaluation. The result have shown that our method achieved promising result. It is generally more practical in type resultion problem.
 
 There are still some works we can do to enhance our algorithm. On theoretical aspect, we can develop our algorithm to context-sensitive, in a way similar to points-to analysis~\cite{Ana2005,Yannis2011}. On practical aspect, we can combine static result and dynamic result to make our algorithm more adaptive, inspire by the approach proposed in~\cite{Codrut2014}.
+
+\paragraph{Acknowlegements}
 \label{lastpage}
 
 
