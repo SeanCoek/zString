@@ -140,7 +140,7 @@
 
 \begin{abstract}
 The problem of resolving virtual method and interface calls in object-oriented languages has been a long standing challenge to the program analysis community. The complexities are due to various reasons, such as increased levels of class inheritance and polymorphism in large programs. In this paper, we propose a new approach called type flow analysis that represent propagation of type information between program variables by a group of relations without the help of a heap abstraction. We prove that regarding the precision on reachability of class information to a variable, our method produces results equivalent to that one can derive from a points-to analysis.
-Moreover, we implement a static type analysis tool for our approach. To evaluate our method, we use instrumentation tenichque to implement a dynamic profilling type recorder. The experimental results show that our approach is more practical in both efficency and accuracy.
+Moreover, we implement a static type analysis tool for our approach. To evaluate our method, we use instrumentation tenichque to implement a dynamic profiling type recorder. The experimental results show that our approach is more practical in both efficency and accuracy.
 \end{abstract}
 
 \begin{keywords}
@@ -246,7 +246,7 @@ Taking the example from Figure~\ref{figure:example}, we are able to collect the 
 %%% contributions with %%% discussion on context-sensitivity
 We have proved that in the context-insensitive inter-procedural setting, TFA is as precise as the subset based points-to analysis regarding type related information. Since points-to analysis can be enhanced with various types of context-sensitivity on variables and objects (\eg, call-site-sensitivity~\cite{Shivers91,Kastrinis2013}, object-sensitivity~\cite{Milanova2005,Smaragdakis11,Tan16} and type-sensitivity~\cite{Smaragdakis11}), extending type flow analysis with context-sensitivity will only require to consider contexts on variables, which is left for future work.
 
-We have implemented a static type analysis tool for context-insensitive type flow analysis, which is written in Java and aims to analyze Java programs. The implementation has been tested on a collection of benchmark programs from SPECjvm2008~\cite{specjvm}. We conducted several experiments to compare the efficency and accuracy with CHA and PTA implemented by Soot. In order to comparing accuracy, we used the instrument technique to implement a dynamic profilling tool, to extract the types of method receiver in runtime. We compared different static results with dynamic record. The experimental result has shown that our approach is more precise than CHA and as precise as PTA. Moreover, TFA reduce significant time cost than PTA. In addition, we found that both PTA and TFA do not provide soundness on all benchmarks. We detail looked into all the unmatch record to find out the reason for unsoundness, which involves some Java advanced features liked reflection, JNI, etc. We will discuss it in the experiment section of this paper. %(Need more citations here, and brief the experimental results.)
+We have implemented a static type analysis tool for context-insensitive type flow analysis, which is written in Java and aims to analyze Java programs. We run our algorithm on the Jimple, a typed, 3-address, statemente based intermediate representation provided by Soot. The implementation has been tested on a collection of benchmark programs from SPECjvm2008~\cite{specjvm}. We conducted several experiments to compare the efficency and accuracy with CHA and PTA implemented by Soot. In order to comparing accuracy, we used the instrument technique to implement a dynamic profiling tool, to extract the types of method receiver in runtime. We compared different static results with dynamic record. The experimental result has shown that our approach is more precise than CHA and as precise as PTA. Moreover, TFA reduce significant time cost than PTA. In addition, we found that both PTA and TFA do not provide soundness on all benchmarks. We detail looked into all the unmatch record to find out the reason for unsoundness, which involves some Java advanced features liked reflection, JNI, etc. We will discuss it in the experiment section of this paper. %(Need more citations here, and brief the experimental results.)
 
 \section{Type Flow Analysis}\label{sec:type-flow-analysis}
 We define a core calculus consisting of most of the key object-oriented language features, shown in Figure~\ref{fig:syntax}, which is designed in the same spirit as Featherweight Java~\cite{Igarashi2001}.
@@ -289,6 +289,8 @@ These three basic relations represent program facts. They can be generated direc
 \end{enumerate}
 Intuitively, $c\tflow x$ means variable $x$ may have type $c$ (i.e., $c$ flows to $x$), $y\less x$ means all types flow to $y$ also flow to $x$, and $x\lhflow{f}y$ means that one may access variable $y$ from field $f$ together with variable $x$.\footnote{Note that VTA treats statement $x.f = y$ as follows. For each class $c$ that flows to $x$ which defines field $f$, VTA assigns all types that flow to $y$ also to $c.f$.}
 We give a snippet code, as shown in Listing~\ref{lst:relation}, to illustrate the generation of relations. For statement ``$A\ a1\ =\ new A()$'' and ``$B\ b1\ =\ new B()$'', we generates two type flow relations, ''$A \tflow a1$'' and ``$B \tflow b1$'', respectively. Tow partial order relations, ``$a1 \less a2$'' and ``$a2 \less a3$'', are generated for the statements ``$a2\ =\ a1$'' and $a3\ =\ a2$. For the field store statement on line 6. We generate a field access relation ``$a1 \lhflow{f} b1$''. The final result is shown is Figure.~\ref{fig:basic-relation}, on which a dash circle refers to type and other nodes in gray background refer to variables. Type relation, partial order relation and field access relation are represented in dash arrow, arrow with label ``$\less$'' and arrow with label ``$f$'', respectively. 
+\begin{minipage}{\linewidth}
+\vspace{10pt}
 \begin{lstlisting}[caption={Example for generation of relations},label={lst:relation}]
 public void m() {
 	A a1 = new A();
@@ -304,6 +306,8 @@ class B {
 	public A m2(p1) {... return r;}
 }
 \end{lstlisting}
+\end{minipage}
+
 \begin{figure}
 \centering
 \subfigure[Basic relation for Listing~\ref{lst:relation}] {\includegraphics[scale=0.5]{basic-relation.pdf} \label{fig:basic-relation}}
@@ -480,6 +484,8 @@ Statments will be inserted right after invocations and the type of receiver will
 \subsubsection{Our Instrumentation Manner}\label{subsubsec:instrument}
 We take ``Insert After'' as our instrumentation manner. The reason is mainly due to the Java specification of constructor that the first statement in constructor should be either another constructor of its own or its super class. Therefore, we will get JVM voilation error if we instrument a statement before the first statement in construtor. We illustrate this example on Listing~\ref{lst:spec-constructor}. So both ``Insert First'' and ``Insert Before'' manners can not be applied under this circumstance. We choose ``Insert After'' over ``Insert Last'' for reason that it's more straightforward. The code before and after instrumentation are shown in Listing~\ref{lst:before-instru} and Listing~\ref{lst:after-instru}, respectively. For Listing~\ref{lst:after-instru}, at line 5, the funtion $RecordUtils.id()$ takes an invocation expression ($invokeExprssion$) and a method receiver ($b$) as parameters and return an unique representation string for this invocation. For this example, the unique representation is ``A:m1:b:B:m2:4''. This means $b$ will call method $m2$ of class $B$, at line 4 in method $m1$ of class $A$. It also shows that $b$ is of type $B$ at this position.
 
+\begin{minipage}{\linewidth}
+\vspace{10pt}
 \begin{lstlisting}[caption={Java specification on constructor},label={lst:spec-constructor}]
 class A {
   public A() {
@@ -492,7 +498,10 @@ class A {
   }
 }
 \end{lstlisting}
+\end{minipage}
 
+\begin{minipage}{\linewidth}
+\vspace{10pt}
 \begin{lstlisting}[caption={Example code before instrumentation},label={lst:before-instru}]
 class A {
   public void m1() {
@@ -501,7 +510,10 @@ class A {
   }
 }
 \end{lstlisting}
+\end{minipage}
 
+\begin{minipage}{\linewidth}
+\vspace{10pt}
 \begin{lstlisting}[caption={Example code after instrumentation},label={lst:after-instru}]
 class A {
   public void m1() {
@@ -512,6 +524,7 @@ class A {
   }
 }
 \end{lstlisting}
+\end{minipage}
 
 \section{Evaluation}\label{sec:evaluation}
 We evaluate our approach by measuring its performance on SPECjvm2008, which contains $12$ benchmark programs in total. We conduct all of our experiments on a laptop equipped with an Intel i5-8250U CPU at 1.60 GHz and 8 GB memory, running Ubuntu 16.04LTS with OpenJDK 1.8.0.
@@ -531,7 +544,7 @@ We executed each benchmark program $10$ times with the CHA, PTA and TFA algorith
 %\begin{table}[!htbp]\centering
 \begin{tabular}{lccccccc}
 	\fullhline
-	\textbf{Benchmark} & \hspace{5pt}\textbf{T$_{\textsf{CHA}}(s)$}& \hspace{5pt}\textbf{T$_{\textsf{PTA}}(s)$} & \hspace{5pt}\textbf{T$_{\textsf{TFA}}(s)$} & \hspace{5pt}\textbf{R${\tflow}$}\hspace{5pt} & \hspace{5pt}\textbf{R$_{\less}$}\hspace{5pt} & \hspace{5pt}\textbf{R${\rightarrow}$} &\hspace{5pt}\textbf{R$_{total}$}\hspace{2pt}\\
+	\textbf{Benchmark} & \hspace{5pt}\textbf{T$_{\textsf{CHA}}(s)$}& \hspace{5pt}\textbf{T$_{\textsf{PTA}}(s)$} & \hspace{5pt}\textbf{T$_{\textsf{TFA}}(s)$} & \hspace{10pt}\textbf{R${\tflow}$}\hspace{10pt} & \hspace{10pt}\textbf{R$_{\less}$}\hspace{10pt} & \hspace{10pt}\textbf{R${\rightarrow}$}\hspace{10pt} &\hspace{10pt}\textbf{R$_{total}$}\hspace{10pt}\\
 	\fullhline
 check & 5.33 & 71.98 & 10.46 & 6847 & 15599 & 10089 & 32535\\
 compiler & 5.76 & 72.01 & 11.48 & 6665 & 14898 & 10433 & 31996\\
@@ -612,6 +625,9 @@ After a new object is instantiated, we can get an object of ``Method'' type, ref
 \item Field Modification\\
 The way to change a field using reflection is similar to processing method invocation. The last two line illustrate changing value of a field named ``f'' on object ``benchmark'' into a new object. We discard this effect as well because of the difficulty on analyzing which class holds the target field.
 \end{itemize}
+
+\begin{minipage}{\linewidth}
+\vspace{10pt}
 \begin{lstlisting}[caption={Example code of reflection},label={lst:reflection}]
 public static void runSimple(Class benchmarkClass, String [] args) {
   ...
@@ -640,10 +656,13 @@ public static void runSimple(Class benchmarkClass, String [] args) {
   f.set(benchmark, new Object());
 }
 \end{lstlisting}
+\end{minipage}
 
 \subsubsection{Java Native Interface Call}\label{subsubsec:jni-call}
 Java Native Interface (JNI) is a standard Java programming interface which provide ability for Java code to interoperate with application or library written in other programming languages, such as C, C++ or assembly. We show the usage of JNI in Listing~\ref{lst:jni}. Method ``$m()$'' is defined as a native method and should not be implemented in Java. This program will load a native library named ``$lib$'', in which the method ``$m()$'' is actually implemented in different program languages. We do not consider JNI calls in our algorithm since the code is not written in Java. Analyzing that code and the communication between Java and other languages are out of our research scope. As a consequence, the effect of that invocation ``$a.m()$'' at line 8 will be discarded.
 
+\begin{minipage}{\linewidth}
+\vspace{10pt}
 \begin{lstlisting}[caption={Example code of JNI},label={lst:jni}]
 public class A {
   public native void m();
@@ -656,10 +675,13 @@ public class A {
   }
 }
 \end{lstlisting}
+\end{minipage}
 
 \subsubsection{Library}\label{subsubsec:library}
 Library are those codes included in the application and used to accomplish specific function(\eg, JDK library, three-party library). Listing~\ref{lst:jdk} shows a common case of JDK invocation. We do not analyze the detail logic inside library code which are written at line 10-11. Instead, we perform an over approximation on library invocation, based on the method difinition which appears at line 9. We assume that library invocation will return the difinition type and any subtype of this difinition type as the result type. For Listing~\ref{lst:jdk}, $sb2$ will receive $\{StringBuilder,\ any\_subtype\_of\_StringBuilder\}$ as the set of reaching types under this over approximation strategy.
 
+\begin{minipage}{\linewidth}
+\vspace{10pt}
 \begin{lstlisting}[caption={Example of JDK library call},label={lst:jdk}]
 import java.lang.StringBuilder;
 
@@ -674,10 +696,13 @@ public void m() {
 //    ...
 //  }
 \end{lstlisting}
+\end{minipage}
 
 \subsubsection{Array Approximation}\label{subsubsec:array-approximation}
 We perform a conservative treatment on array accesses that all type information that flows to one member of an array flows to all members of that array. Codes in Listing~\ref{lst:array} are used to explain how this approximation works. Type information of $A$ and $B$ are flow to the first member and the second member of array $arr$, respectively. We approximate that these two type information flow to array $arr$. Loadding an element of array will receive all types that array can access(\eg, $b$ will receive $\{A, B\}$ as the set of reaching types, which is the same set of types that array $arr$ can access).
 
+\begin{minipage}{\linewidth}
+\vspace{10pt}
 \begin{lstlisting}[caption={Example of array access},label={lst:array}]
 public void m() {
 	Object[] arr = new Object[2]{};
@@ -686,10 +711,14 @@ public void m() {
 	Object b = arr[1];  <---
 }
 \end{lstlisting}
+\end{minipage}
 
 \subsubsection{Callback}\label{subsubsec:callback}
 A callback function is known as a ``call-after'' function. It is widely used in programs. By passing a argument to one invocation as the receiver which is expected to trigger a callback invocation. In functional language a callback funtion can be passed as argument directly. Listing~\ref{lst:callback}
  shows the callback mechanism. The function $callback()$ will be invoked after the invocation of $trigger()$. Since we do not analyze the effect of reflection call, JNI call, and library call, we are unable to catch the type flow information inside $a.trigger(b)$ if it happens to be one of these calls (\eg, $trigger()$ is a method of a library class). Note that we only conservatively approximate on the return type of a library invocation, but not analyze the detail logic inside a library method.
+ 
+\begin{minipage}{\linewidth}
+\vspace{10pt}
 \begin{lstlisting}[caption={Callback mechanism},label={lst:callback}]
 class A {
 	public void trigger(B b) {
@@ -706,6 +735,7 @@ class B {
  	}
 }
 \end{lstlisting}
+\end{minipage}
 
 \section{Related Work}\label{sec:related-work}
 There are not many works focusing on general purpose call graph construction algorithms, and we give a brief review of these works first.
@@ -719,9 +749,14 @@ Call graphs may serve as a basis for points-to analysis, but often a points-to a
 
 Regarding the treatment of flow analysis in our algorithm, downcast analysis has been studied in region inference which is a special memory management scheme for preventing dangling pointers or improving precision in garbage collection in object-oriented programming languages~\cite{Boyapati2003,Chin2004}.  These works are type-based analysis, while our methodology belongs to traditional static program analysis. Similar ideas regarding value flow can also be found in the graph-reachability based formulation (e.g.~\cite{Reps1997,Lu2013}) to which all distributed data flow analyses can be adopted.
 
-\section{Conclusion}\label{sec:conclusion}
-In this paper we have proposed Type Flow Analysis (TFA), an algorithm that constructs call graph edges for Object-Oriented programming languages.
+Runtime profiling data can be recorded and used to compare with static analysis result. Furthermore, these runtime data can help static algorithms to increase precision and achieve adaptive ability. In general there are two ways to record runtime profiling data for Java programs, collecting from Java VM~\cite{Codrut2014}, or using program instrumentation technique to extract these data in runtime~\cite{Vijay2000}. Inspire by~\cite{Vijay2000}, and partialy due to Java VM can only internally provide the data we want, our dynamic type recorder is implemented using instumented technique.
 
+\section{Conclusion and future work}\label{sec:conclusion}
+In this paper we have proposed Type Flow Analysis (TFA), an algorithm that statically determines reaching types of variable and constructs call graph edges for Object-Oriented programming languages. We have proved that our method is as precise as subset-based points-to analysis, regarding type related information. The computation of TFA is pure relational since it do not require a heap abstraction, which is needed by points-to analysis. 
+
+To evaluate our method in practice, we implement a static type analysis tool in Soot framework, which runs our algorithm. Moreover, a dynamic type profiler is used to extract run-time types of variables, which are then used to compare with static results. We implement it using instrumentation technique, abiding by specification of Java VM. We have compared our method with built-in CHA and points-to algorithms in Soot by experimental evaluation. The result have shown that our method achieved promising result. It is generally more practical in type resultion problem.
+
+There are still some works we can do to enhance our algorithm. On theoretical aspect, we can develop our algorithm to context-sensitive, in a way similar to points-to analysis~\cite{Ana2005,Yannis2011}. On practical aspect, we can combine static result and dynamic result to make our algorithm more adaptive, inspire by the approach proposed in~\cite{Codrut2014}.
 \label{lastpage}
 
 
