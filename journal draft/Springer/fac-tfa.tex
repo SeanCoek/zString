@@ -140,7 +140,7 @@
 
 \begin{abstract}
 The problem of resolving virtual method and interface calls in object-oriented languages has been a long standing challenge to the program analysis community. The complexities are due to various reasons, such as increased levels of class inheritance and polymorphism in large programs. In this paper, we propose a new approach called type flow analysis that represent propagation of type information between program variables by a group of relations without the help of a heap abstraction. We prove that regarding the precision on reachability of class information to a variable, our method produces results equivalent to that one can derive from a points-to analysis.
-Moreover, we implement a static analysis tool and a dynamic profilling type recorder. Our method is more practical in both efficency and accuracy, as supported by the experimental results.
+Moreover, we implement a static type analysis tool for our approach. To evaluate our method, we use instrumentation tenichque to implement a dynamic profilling type recorder. The experimental results show that our approach is more practical in both efficency and accuracy.
 \end{abstract}
 
 \begin{keywords}
@@ -246,7 +246,7 @@ Taking the example from Figure~\ref{figure:example}, we are able to collect the 
 %%% contributions with %%% discussion on context-sensitivity
 We have proved that in the context-insensitive inter-procedural setting, TFA is as precise as the subset based points-to analysis regarding type related information. Since points-to analysis can be enhanced with various types of context-sensitivity on variables and objects (\eg, call-site-sensitivity~\cite{Shivers91,Kastrinis2013}, object-sensitivity~\cite{Milanova2005,Smaragdakis11,Tan16} and type-sensitivity~\cite{Smaragdakis11}), extending type flow analysis with context-sensitivity will only require to consider contexts on variables, which is left for future work.
 
-We have implemented a static analysis tool for context-insensitive type flow analysis, which is written in Java and aims to analyze Java programs. The implementation has been tested on a collection of benchmark programs from SPECjvm2008~\cite{specjvm}. We conducted several experiments to compare the efficency and accuracy with CHA and PTA implemented by Soot. In order to comparing accuracy, we used the instrument technique to implement a dynamic profilling tool, to extract the run-time types of method receiver. We compared different static results with dynamic record. The experimental result has shown that our approach is more precise than CHA and as precise as PTA. Moreover, TFA reduce significant time cost than PTA. In addition, we found that both PTA and TFA do not provide soundness on all benchmarks. We detail looked into all the unmatch record to find out the reason for unsoundness, which involves some Java advanced features liked reflection, JNI, etc. We will discuss it in the experiment section of this paper. %(Need more citations here, and brief the experimental results.)
+We have implemented a static type analysis tool for context-insensitive type flow analysis, which is written in Java and aims to analyze Java programs. The implementation has been tested on a collection of benchmark programs from SPECjvm2008~\cite{specjvm}. We conducted several experiments to compare the efficency and accuracy with CHA and PTA implemented by Soot. In order to comparing accuracy, we used the instrument technique to implement a dynamic profilling tool, to extract the types of method receiver in runtime. We compared different static results with dynamic record. The experimental result has shown that our approach is more precise than CHA and as precise as PTA. Moreover, TFA reduce significant time cost than PTA. In addition, we found that both PTA and TFA do not provide soundness on all benchmarks. We detail looked into all the unmatch record to find out the reason for unsoundness, which involves some Java advanced features liked reflection, JNI, etc. We will discuss it in the experiment section of this paper. %(Need more citations here, and brief the experimental results.)
 
 \section{Type Flow Analysis}\label{sec:type-flow-analysis}
 We define a core calculus consisting of most of the key object-oriented language features, shown in Figure~\ref{fig:syntax}, which is designed in the same spirit as Featherweight Java~\cite{Igarashi2001}.
@@ -386,19 +386,49 @@ $param(type(o),m))$, $this(type(o),m))$ and $return(type(o),m)$ refer to the for
 To this end we present the first result of the paper, which says type flow analysis has the same precision regarding type based check, such as call site resolution and cast failure check, when comparing with the points-to analysis.
 
 \begin{Theorem}~\label{thm:tfa}
-  In a context-insensitive setting, for all variables $x$ and classes $c$, $c\tflow^*x$ in TFA iff there exists an object abstraction $o$ of $c$ such that $o\in\VPT(x)$ in PTA.
+  In a context-insensitive setting, for all variables $x$ and classes $c$, $c\tflow^*x$ in TFA iff there exists an object abstraction $o$ of $c$ such that $o\in\VPT(x)$ in points-to analysis.
 \end{Theorem}
 
 \begin{proof} (sketch)
-For a proof sketch, first we assume every object creation site $x = \kwnew\ c_i$ at line $i$ defines a mini-type $c_i$, and if the theorem is satisfied in this setting, a subsequent merging of mini-types into classes will preserve the result.
+For a proof sketch, first we assume every object creation site $x = \kwnew\ c_i$ at line $i$ defines a mini-type $c_i$, and if the theorem is satisfied in this setting, a subsequent merging of mini-types into classes $c$ will preserve the result.
 
 Moreover, we only need to prove the intraprocedural setting which is the result of Lemma 1. Because if in the intraprocedural setting the two systems have the same smallest model for all methods, then at each call site $x=y.m(a)$ both analyses will assign $y$ the same set of classes and thus resolve the call site to the same set of method definitions, and as a consequence, each method body will be given the same set of extra conditions, thus all methods will have the same initial condition for the next round iteration. Therefore, both inter-procedural systems will eventually stabilize at the same model.
 \end{proof}
 
-The following lemma focuses on the key part of the proof for Theorem~\ref{thm:tfa}, which shows that TFA and points-to are equivalent regarding call site resolution locally within a function.
+The following lemma focuses on the key part of the proof for Theorem~\ref{thm:tfa}, which shows that TFA and points-to analysis are equivalent regarding call site resolution locally within a function.
 
 \paragraph{Lemma 1.}\label{lem:tfa-intra}
 In a context-insensitive intraprocedural analysis where each class $c$ only syntactically appears once in the form of $\kwnew\ c$, for all variables $x$ and classes $c$, $c\tflow^*x$ iff there exists an object abstraction $o$ of type $c$ such that $o\in\VPT(x)$.
+\begin{proof}
+Since those constrains of the points-to analysis establish the smallest model $(\VPT, \HPT)$ with $\VPT:\Var\rightarrow\Obj$ and $\HPT:\Obj\times\Field\rightarrow\power(\Obj)$, and the three relations of type flow analysis also define the smallest model that satisfies Definition 1 and Definition~\ref{def:extension}, we prove that every model established by points-to analysis constraints is also a model of TFA, and vice versa. Then the least model of both systems must be the same, as otherwise it would lead to contradiction.
+
+\medskip
+
+($\star$) For the `only if' part ($\Rightarrow$), we define a function $Reaches(x)=\set{c\mid c\tflow^* x}$ which maps a variable to its reaching types in TFA, and assume a bijection $\xi:\Class\rightarrow\Obj$ that maps each class $c$ to the unique (abstract) object $o$ that is defined (and $type(o)=c$). Then we construct a function $Access:\Class\times\Field\rightarrow\power(\Class)$ and show that $(\xi(Reaches),\xi(Access))$ satisfies the points-to constraints. Define $Access(c,f)=\set{c'\mid x\lhflow{f\ *}y\wedge c\in Reaches(x)\wedge c'\in Reaches(y)}$. We prove the following cases according to the top four points-to constraints in Figure~\ref{fig:constraints}.
+\begin{itemize}
+\item For each statement $x = \kwnew\ c$, we have $\xi(c)\in\xi(Reaches(x))$;
+\item For each statement $x = y$, we have $Reaches(y)\subseteq Reaches(x)$ and $\xi(Reaches(y))\subseteq\xi(Reaches(x))$;
+\item For each statement $x.f = y$, we have $x\lhflow{f}y$, then by definition for all $c\in Reaches(x)$, and $c'\in Reaches(y)$, we have $c'\in Access(c,f)$, therefore $\xi(c')\in\xi(Reaches(y))$ we have $\xi(c')\in \xi(Access(\xi(c),f))$.
+\item For each statement $x = y.f$, let $c\in Reaches(y)$, we need to show $\xi(Access(c,f))\subseteq\xi(Reaches(x))$, or equivalently, $Access(c,f)\subseteq Access(x)$. Let $c'\in Access(c,f)$, then by definition, there exist $z$, $z'$ such that $c\in Reaches(z)$, $c'\in Reaches(z')$ and $z\lhflow{f\ *}z'$. By $c\in Reaches(y)$ and Definition~\ref{def:extension}.4, we have $y\lhflow{f\ *}z'$. Then by Definition~\ref{def:extension}.1, $z'\less^*x$. Therefore $c'\in Reaches(x)$.
+\end{itemize}
+
+\medskip
+
+($\star$) For the `if' part ($\Leftarrow$), let ($\VPT$, $\HPT$) be a model that satisfies all the top four constraints defined in Figure~\ref{fig:constraints}, and a bijection $\xi:\Class\rightarrow\Obj$, we show the following constructed relations satisfy value points-to.
+\begin{itemize}
+  \item For all types $c$ and variables $x$, $c\tflow^* x$ if $\xi(c)\in\VPT(x)$;
+  \item For all variables $x$ and $y$, $x\less^*y$ if $\VPT(x)\subseteq\VPT(y)$;
+  \item For all variables $x$ and $y$, and for all fields $f$, $x\lhflow{f\ *}y$ if for all $o_1,o_2\in\Obj$ such that $o_1\in\VPT(x)$ and $o_2\in\VPT(y)$ then $o_2\in\HPT(o_1,f)$.
+\end{itemize}
+We check the following cases for the three relations $\tflow^*$, $\less^*$ and $\lhflow{*}$ that are just defined from the above.
+\begin{itemize}
+\item For each statement $x = \kwnew\ c$, we have $\xi(c)\in\VPT(x)$, so $c\tflow^* x$ by definition.
+\item For each statement $x = y$, we have $\VPT(y)\subseteq\VPT(x)$, therefore $y\less^*x$ by definition.
+\item For each statement $x.f = y$, we have for all $o_1\in\VPT(x)$ and $o_2\in\VPT(y)$, $o_2\in\HPT(o_1,f)$, which derives $x\lhflow{f\ *}y$ by definition.
+\item  For each statement $x = y.f$, given $y\lhflow{f\ *}z$, we need to show $z\less^* x$. Equivalently, by definition we have for all $o_1\in\VPT(y)$ and $o_2\in\VPT(z)$, $o_2\in\HPT(o_1,f)$. Since points-to relation gives $\HPT(o_1,f)\subseteq\VPT(x)$, we have $o_2\in\VPT(x)$, which derives $\VPT(z)\subseteq\VPT(x)$, the definition of $z\less^* x$.
+\item The proof for the properties in the rest of Definition~\ref{def:extension} are related to transitivity of the three TFA relations, which are straightforward. We leave them for interested readers. 
+\end{itemize}
+\end{proof}
 
 \section{Implementation}\label{sec:implementation}
 The analysis algorithm is written in Java, and is implemented in the Soot framework, the most popular static analysis framework for Java. We use jimple as our intermediate representation. 
@@ -540,7 +570,7 @@ A sound algorithm should catch all type information in run time, \ie, the recall
 
 The result shows that in general our approach can achieve higher precision than CHA and closer precision than PTA. The imprecision is mainly due to our approximation on library invocation and array, which we will discuss in section~\ref{subsubsec:library} and section~\ref{subsubsec:array-approximation}. Besides, the code coverage will issue imprecision since SPECjvm provides common codes for all benchmarks and some of them would not be excuted when a specific benchmark is excuting, \ie, these codes will be analyzed statically but not generate any record in run time.
 
-For soundness, the recall of both TFA and PTA can not achieve to $1.00$ in most benchmarks except $helloworld$. We analyzed those missed records and find out the reason is due to some Java advance features, liked reflection call and JNI call, which we will describe in section~\ref{subsubsec:reflection-call} and section~\ref{subsubsec:jni-call}. In addition,  callback mechanism will raise unsoundness under our treatment on reflection, JNI and library call. We will discuss it in section~\ref{subsubsec:callback}. The result shows that PTA produces lower recall than TFA in general. This difference is due to the on-the-fly reachability analysis used on PTA implemented by Soot team. Method invoked by reflection, or invoked as a callback function inside reflection, JNI and library, will be denoted as unreachable under this analysis. As a consequence, some methods would not be analyzed by PTA. Note that even the  unreachable method would not be analyzed, a variable receiving its type from JDK would be assigned to possible types based on the preprocessing from Soot.
+For soundness, the recall of both TFA and PTA can not achieve to $1.00$ in most benchmarks except $helloworld$. We analyzed those missed records and find out the reason is due to some Java advance features, liked reflection call and JNI call, which we will describe in section~\ref{subsubsec:reflection-call} and section~\ref{subsubsec:jni-call}. In addition,  callback mechanism will raise unsoundness under our treatment on reflection, JNI and library call. We will discuss it in section~\ref{subsubsec:callback}. The result shows that PTA produces lower recall than TFA in general. We study the reason for this gap from read the source code of Soot and find out it is due to the on-the-fly reachability analysis used on PTA implemented by Soot team. Method invoked by reflection, or invoked as a callback function inside reflection, JNI and library, will be denoted as unreachable under this analysis. As a consequence, some methods would not be analyzed by PTA. Note that even the unreachable method would not be analyzed, a variable receiving its type from JDK would be assigned to possible types based on the preprocessing from Soot. Such that the set of possible reaching types for these variables would not be empty.
 \begin{figure}\centering
 %\begin{table}[!htbp]\centering
 \begin{threeparttable}[b]
