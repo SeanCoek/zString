@@ -288,7 +288,7 @@ These three basic relations represent program facts. They can be generated direc
   \item $x\lhflow{f}y$ if there is a statement $x.f = y$.
 \end{enumerate}
 Intuitively, $c\tflow x$ means variable $x$ may have type $c$ (i.e., $c$ flows to $x$), $y\less x$ means all types flow to $y$ also flow to $x$, and $x\lhflow{f}y$ means that one may access variable $y$ from field $f$ together with variable $x$.\footnote{Note that VTA treats statement $x.f = y$ as follows. For each class $c$ that flows to $x$ which defines field $f$, VTA assigns all types that flow to $y$ also to $c.f$.}
-We give a snippet code, as shown in Listing~\ref{lst:relation}, to illustrate the generation of relations. For statement ``$A\ a1\ =\ new A()$'' and ``$B\ b1\ =\ new B()$'', we generates two type flow relations, ''$A \tflow a1$'' and ``$B \tflow b1$'', respectively. Tow partial order relations, ``$a1 \less a2$'' and ``$a2 \less a3$'', are generated for the statements ``$a2\ =\ a1$'' and $a3\ =\ a2$. For the field store statement on line 6. We generate a field access relation ``$a1 \lhflow{f} b1$''. The final result is shown is Figure.~\ref{fig:basic-relation}, on which a dash circle refers to type and other nodes in gray background refer to variables. Type relation, partial order relation and field access relation are represented in dash arrow, arrow with label ``$\less$'' and arrow with label ``$f$'', respectively. 
+We give a snippet code, as shown in Listing~\ref{lst:relation}, to illustrate the generation of relations. For statement ``$A\ a1=new \ A()$'' and ``$B\ b1=new\ B()$'', we generates two type flow relations, ``$A \tflow a1$'' and ``$B \tflow b1$'', respectively. Tow partial order relations, ``$a1 \less a2$'' and ``$a2 \less a3$'', are generated for the statements ``$a2=a1$'' and ``$a3=a2$''. For the field store statement on line 6. We generate a field access relation ``$a1 \lhflow{f} b1$''. The final result is shown is Figure.~\ref{fig:basic-relation}, on which a dash circle refers to type and other nodes in gray background refer to variables. Type relation, partial order relation and field access relation are represented in dash arrow, arrow with label ``$\less$'' and arrow with label ``$f$'', respectively. 
 \begin{minipage}{\linewidth}
 \vspace{10pt}
 \begin{lstlisting}[caption={Example for generation of relations},label={lst:relation}]
@@ -325,7 +325,7 @@ class B {
 \label{fig:relations}
 \end{figure}
 
-We use five rules to extend the basic relations for  calculating a program fixpoint, which are given in the following definition 2. These rules intuitively represent propagation of type information. We put a ``$^*$'' label behind relation symbol to destinguish from basic relations.
+We use five rules to extend the basic relations for  calculating a program fixpoint, which are given in the following definition 2. These rules intuitively represent propagation of type information. We put a `$^*$' label behind relation symbol to destinguish from basic relations.
 \paragraph{Definition 2.}\label{def:extension} (Extended Relations)
 \begin{enumerate}
   \item $y\less^* x$ if $x=y$ or $y\less x$ or $\exists z\in\Var:y\less^* z\wedge z\less^* x$;
@@ -334,15 +334,15 @@ We use five rules to extend the basic relations for  calculating a program fixpo
   
   \item $y\lhflow{f\ *}z$ if $\exists x\in\Var: x\lhflow{f}z\wedge (\exists z'\in\Var: z'\less^* y \wedge z'\less^*x)$;
   
-  This rule is designed to extending field access relation. Based on the relations we generated in~\ref{fig:extend-partial}, we can generated three ``$\lhflow{f\ *}$'' relations, ``$a1 \lhflow{f\ *} b1$'', ``$a2 \lhflow{f\ *} b1$'' and ``$a3 \lhflow{f\ *} b1$'', as displayed in~\ref{fig:extend-field-access}.
+  This rule is designed to extending field access relation. Based on the relations we generated in~\ref{fig:extend-partial}, we can generated three $\lhflow{f\ *}$ relations, ``$a1 \lhflow{f\ *} b1$'', ``$a2 \lhflow{f\ *} b1$'' and ``$a3 \lhflow{f\ *} b1$'', as displayed in~\ref{fig:extend-field-access}.
   
   \item For all statements $x = y.f $, if $y\lhflow{f\ *}z$, then $z\less^* x$.
 
-  For field load statements, only we have generated a relavant field access relation, can we extend $\less^*$ relation for target variables. \eg, From the result of~\ref{fig:extend-field-access}, we have a field access relation ``$a1\lhflow{f\ *} b1$''. So we can generate a relation ``$b1\less^* b2$'' for the field load statement ``$b2\ =\ a1.f$'' on line 7 of Listing~\ref{lst:relation}. We put the result on Fig.~\ref{fig:extend-field-load}.
+  For field load statements, only we have generated a relavant field access relation, can we extend $\less^*$ relation for target variables. \eg, From the result of~\ref{fig:extend-field-access}, we have a field access relation ``$a1\lhflow{f\ *} b1$''. So we can generate a relation ``$b1\less^* b2$'' for the field load statement ``$b2=a1.f$'' on line 7 of Listing~\ref{lst:relation}. We put the result on Fig.~\ref{fig:extend-field-load}.
   
   \item $c\tflow^* y$ if $c\tflow y$, or $\exists x\in\Var:c\tflow^* x\wedge x\less^* y$;
   
-  Intuitively, this rule describe how the type information being propagated over the ``$\less^*$'' relation. We use this rule to extend the relations from~\ref{fig:extend-field-load}. The generated relations are represented in dash arrow with a label of ``$^*$'', as displayed in~\ref{fig:extend-type-flow}.
+  Intuitively, this rule describe how the type information being propagated over the $\less^*$ relation. We use this rule to extend the relations from~\ref{fig:extend-field-load}. The generated relations are represented in dash arrow with a label of `$^*$', as displayed in~\ref{fig:extend-type-flow}.
   
   \item The type information is used to resolve each method call $x = y.m(z)$.  
   \begin{equation*}
@@ -355,7 +355,7 @@ We use five rules to extend the basic relations for  calculating a program fixpo
 \end{enumerate}
 
 These three kinds of generated relation reprensent the type flow on parameter variables, ``$this$'' reference variable and return variables, respectively.
-The reaching type of variable $b2$ is $\{B\}$, \ie, we have ``$B \tflow^* b2$'', which we can extract from the result of ~\ref{fig:extend-type-flow}. That means statement ``$a4\ =\ b2.m2(a3)$'' will trigger the invocation of method $m2()$ in class $B$. In this case, we generated three relations, ``$a3 \less^* B.m2.p1$'', ``$B \tflow^* B.m2.this$'' and ``$B.m2.r \less^* a4$''. The result is shown is ~\ref{fig:extend-invocation}, where variables in method $B.m2()$ is represented as circle in green background.
+The reaching type of variable $b2$ is $\{B\}$, \ie, we have ``$B \tflow^* b2$'', which we can extract from the result of ~\ref{fig:extend-type-flow}. That means statement ``$a4=b2.m2(a3)$'' will trigger the invocation of method $m2()$ in class $B$. In this case, we generated three relations, ``$a3 \less^* B.m2.p1$'', ``$B \tflow^* B.m2.this$'' and ``$B.m2.r \less^* a4$''. The result is shown is ~\ref{fig:extend-invocation}, where variables in method $B.m2()$ is represented as circle in green background.
 
 We show the detail process of relation generation in one round, as displayed in~\ref{fig:relations}. In general we need more round to calculte a program fixpoint. The final relations are the least relations that satisfy constraints of Definition 2. Although the three relations are inter-dependent, one may find that without method call (i.e., Definition~\ref{def:extension}.5), a smallest model satisfying the two relations $\rightarrow^*$ (field access) and $\less^*$ (variable partial order) can be uniquely determined without considering the type flow relation $\tflow^*$.
 
@@ -446,7 +446,7 @@ Our static analysis tool is implemented in Java and aims to analyze Java program
 \item Code translation\\
 Target code is loaded by Soot and translated to IR of jimple format.
 \item Basic relation generation\\
-We iterate all statements on jimple IR to generate those basic relations based on the basic relation difinition. 
+We iterate all statements on jimple IR to generate those basic relations based on the basic relation definitions. 
 \item Fixpoint calculation\\
 After basic relations are generated, we use the extended relation rule to perform fixpoint calculation.
 \item Result extraction\\
@@ -570,7 +570,7 @@ xml & 6.55 & 139.08 & 13.84 & 6866 & 16039 & 11060 & 33965\\
 \end{figure}
 
 \subsection{Accuracy}\label{subsec:accuracy}
-We answer the seconde question about accuracy in two indexes: precision and recall. Their difinitions are given in equation 1 and 2, respectively.
+We answer the seconde question about accuracy in two indexes: precision and recall. Their definitions are given in equation 1 and 2, respectively.
 \begin{equation}
 precision =  \dfrac{M}{S} 
 \end{equation}
@@ -678,7 +678,7 @@ public class A {
 \end{minipage}
 
 \subsubsection{Library}\label{subsubsec:library}
-Library are those codes included in the application and used to accomplish specific function(\eg, JDK library, three-party library). Listing~\ref{lst:jdk} shows a common case of JDK invocation. We do not analyze the detail logic inside library code which are written at line 10-11. Instead, we perform an over approximation on library invocation, based on the method difinition which appears at line 9. We assume that library invocation will return the difinition type and any subtype of this difinition type as the result type. For Listing~\ref{lst:jdk}, $sb2$ will receive $\{StringBuilder,\ any\_subtype\_of\_StringBuilder\}$ as the set of reaching types under this over approximation strategy.
+Library are those codes included in the application and used to accomplish specific function(\eg, JDK library, three-party library). Listing~\ref{lst:jdk} shows a common case of JDK invocation. We do not analyze the detail logic inside library code which are written at line 10-11. Instead, we perform an over approximation on library invocation, based on the method definition which appears at line 9. We assume that library invocation will return the definition type and any subtype of this definition type as the result type. For Listing~\ref{lst:jdk}, $sb2$ will receive $\{StringBuilder,\ any\_subtype\_of\_StringBuilder\}$ as the set of reaching types under this over approximation strategy.
 
 \begin{minipage}{\linewidth}
 \vspace{10pt}
