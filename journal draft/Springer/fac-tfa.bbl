@@ -1,6 +1,151 @@
-\begin{thebibliography}{}
-\providecommand{\url}[1]{\texttt{#1}}
-\providecommand{\urlprefix}{URL }
-\providecommand{\doi}[1]{https://doi.org/#1}
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{BSWBR03}
+
+\bibitem[And94]{andersen94}
+L.~O. Andersen.
+\newblock {\em Program analysis and specialization for the {C} programming
+  language}.
+\newblock PhD thesis, DIKU, University of Copenhagen, May 1994.
+
+\bibitem[BS96]{Bacon1996}
+D.~F. Bacon and P.~F. Sweeney.
+\newblock Fast static analysis of c++ virtual function calls.
+\newblock In {\em Proceedings of the 11th ACM SIGPLAN Conference on
+  Object-oriented Programming, Systems, Languages, and Applications}, OOPSLA
+  '96, pages 324--341, 1996.
+
+\bibitem[BSWBR03]{Boyapati2003}
+C.~Boyapati, A.~Salcianu, Jr. W.~Beebee, and M.~Rinard.
+\newblock Ownership types for safe region-based memory management in real-time
+  java.
+\newblock In {\em Proceedings of the ACM SIGPLAN 2003 Conference on Programming
+  Language Design and Implementation}, PLDI '03, pages 324--337, 2003.
+
+\bibitem[CCQR04]{Chin2004}
+W.~Chin, F.~Craciun, S.~Qin, and M.~Rinard.
+\newblock Region inference for an object-oriented language.
+\newblock In {\em Proceedings of the ACM SIGPLAN 2004 Conference on Programming
+  Language Design and Implementation}, PLDI '04, pages 243--254, 2004.
+
+\bibitem[DGC95]{Dean1995}
+J.~Dean, D.~Grove, and C.~Chambers.
+\newblock Optimization of object-oriented programs using static class hierarchy
+  analysis.
+\newblock In {\em Proceedings of the 9th European Conference on Object-Oriented
+  Programming}, ECOOP '95, pages 77--101, 1995.
+
+\bibitem[Fer95]{Fernandez1995}
+M.~F. Fern\'{a}ndez.
+\newblock Simple and effective link-time optimization of modula-3 programs.
+\newblock In {\em Proceedings of the ACM SIGPLAN 1995 Conference on Programming
+  Language Design and Implementation}, PLDI '95, pages 103--115, 1995.
+
+\bibitem[GDDC97]{Grove1997}
+D.~Grove, G.~DeFouw, J.~Dean, and C.~Chambers.
+\newblock Call graph construction in object-oriented languages.
+\newblock In {\em Proceedings of the 12th ACM SIGPLAN Conference on
+  Object-oriented Programming, Systems, Languages, and Applications}, OOPSLA
+  '97, pages 108--124, 1997.
+
+\bibitem[IPW01]{Igarashi2001}
+A.~Igarashi, B.~C. Pierce, and P.~Wadler.
+\newblock Featherweight java: A minimal core calculus for java and gj.
+\newblock {\em ACM Transations on Programming Languages and Systems},
+  23(3):396--450, 2001.
+
+\bibitem[KS13]{Kastrinis2013}
+G.~Kastrinis and Y.~Smaragdakis.
+\newblock Hybrid context-sensitivity for points-to analysis.
+\newblock In {\em Proceedings of the 34th ACM SIGPLAN Conference on Programming
+  Language Design and Implementation}, PLDI '13, pages 423--434, 2013.
+
+\bibitem[LH03]{Lhotak2003}
+O.~Lhot\'{a}k and L.~Hendren.
+\newblock Scaling java points-to analysis using spark.
+\newblock In {\em Proceedings of the 12th International Conference on Compiler
+  Construction}, CC'03, pages 153--169, 2003.
+
+\bibitem[LSXX13]{Lu2013}
+Y.~Lu, L.~Shang, X.~Xie, and J.~Xue.
+\newblock An incremental points-to analysis with cfl-reachability.
+\newblock In {\em Proceedings of the 22Nd International Conference on Compiler
+  Construction}, CC'13, pages 61--81, 2013.
+
+\bibitem[MRR05]{Milanova2005}
+A.~Milanova, A.~Rountev, and B.~G. Ryder.
+\newblock Parameterized object sensitivity for points-to analysis for java.
+\newblock {\em ACM Transations on Software Engineering and Methodology},
+  14(1):1--41, 2005.
+
+\bibitem[REH{\etalchar{+}}16]{Reif2016}
+M.~Reif, M.~Eichberg, B.~Hermann, J.~Lerch, and M.~Mezini.
+\newblock Call graph construction for java libraries.
+\newblock In {\em Proceedings of the 2016 24th ACM SIGSOFT International
+  Symposium on Foundations of Software Engineering}, FSE 2016, pages 474--486,
+  2016.
+
+\bibitem[Rep97]{Reps1997}
+T.~Reps.
+\newblock Program analysis via graph reachability.
+\newblock In {\em Proceedings of the 1997 International Symposium on Logic
+  Programming}, ILPS '97, pages 5--19, 1997.
+
+\bibitem[SB06]{Sridharan2006}
+M.~Sridharan and R.~Bod\'{\i}k.
+\newblock Refinement-based context-sensitive points-to analysis for java.
+\newblock In {\em Proceedings of the 27th ACM SIGPLAN Conference on Programming
+  Language Design and Implementation}, PLDI '06, pages 387--400, 2006.
+
+\bibitem[SBL11]{Smaragdakis11}
+Y.~Smaragdakis, M.~Bravenboer, and O.~Lhot\'{a}k.
+\newblock Pick your contexts well: understanding object-sensitivity.
+\newblock In {\em Proceedings of the 38th annual ACM SIGPLAN-SIGACT symposium
+  on Principles of programming languages}, POPL '11, pages 17--30, 2011.
+
+\bibitem[Shi91]{Shivers91}
+O.~G. Shivers.
+\newblock {\em Control-flow Analysis of Higher-order Languages or Taming
+  Lambda}.
+\newblock PhD thesis, 1991.
+
+\bibitem[SHR{\etalchar{+}}00]{Sundaresan2000}
+V.~Sundaresan, L.~Hendren, C.~Razafimahefa, R.~Vall{\'e}e-Rai, P.~Lam,
+  E.~Gagnon, and C.~Godin.
+\newblock Practical virtual method call resolution for java.
+\newblock In {\em Proceedings of the 15th ACM SIGPLAN Conference on
+  Object-oriented Programming, Systems, Languages, and Applications}, OOPSLA
+  '00, pages 264--280, 2000.
+
+\bibitem[soo]{soot}
+Soot.
+\newblock \url{https://sable.github.io/soot/}.
+\newblock Accessed: 2019-06-10.
+
+\bibitem[spe]{specjvm}
+Specjvm2008.
+\newblock \url{https://www.spec.org/jvm2008/}.
+\newblock Accessed: 2019-06-18.
+
+\bibitem[SWB{\etalchar{+}}14]{Codrut2014}
+Codru{\c{t}} Stancu, Christian Wimmer, Stefan Brunthaler, Per Larsen, and
+  Michael Franz.
+\newblock Comparing points-to static analysis with runtime recorded profiling
+  data.
+\newblock In {\em Proceedings of the 2014 International Conference on
+  Principles and Practices of Programming on the Java platform: Virtual
+  machines, Languages, and Tools}, pages 157--168. ACM, 2014.
+
+\bibitem[TP00]{Tip2000}
+F.~Tip and J.~Palsberg.
+\newblock Scalable propagation-based call graph construction algorithms.
+\newblock In {\em Proceedings of the 15th ACM SIGPLAN Conference on
+  Object-oriented Programming, Systems, Languages, and Applications}, OOPSLA
+  '00, pages 281--293, 2000.
+
+\bibitem[TYX16]{Tan16}
+T.~Tian, L.~Yue, and J.~Xue.
+\newblock Making k-object-sensitive pointer analysis more precise with still
+  k-limiting.
+\newblock In {\em International Static Analysis Symposium, {SAS'16}}, 2016.
 
 \end{thebibliography}
