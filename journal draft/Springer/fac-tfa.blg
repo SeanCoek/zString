@@ -1,50 +1,7 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: fac-tfa.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: fac-tfa.aux
 The style file: alpha.bst
 Database file #1: fac-reference.bib
 Warning--to sort, need author or key in soot
 Warning--to sort, need author or key in specjvm
 Warning--empty school in Shivers91
-You've used 23 entries,
-            2543 wiz_defined-function locations,
-            719 strings with 9068 characters,
-and the built_in function-call counts, 11318 in all, are:
-= -- 1158
-> -- 493
-< -- 20
-+ -- 175
-- -- 174
-* -- 756
-:= -- 1692
-add.period$ -- 70
-call.type$ -- 23
-change.case$ -- 152
-chr.to.int$ -- 23
-cite$ -- 28
-duplicate$ -- 499
-empty$ -- 868
-format.name$ -- 196
-if$ -- 2458
-int.to.chr$ -- 1
-int.to.str$ -- 0
-missing$ -- 19
-newline$ -- 119
-num.names$ -- 63
-pop$ -- 170
-preamble$ -- 1
-purify$ -- 177
-quote$ -- 0
-skip$ -- 466
-stack$ -- 0
-substring$ -- 683
-swap$ -- 174
-text.length$ -- 20
-text.prefix$ -- 4
-top$ -- 0
-type$ -- 184
-warning$ -- 3
-while$ -- 111
-width$ -- 26
-write$ -- 312
 (There were 3 warnings)

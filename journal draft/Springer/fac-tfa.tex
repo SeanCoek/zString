@@ -112,6 +112,7 @@
 \usepackage{verbatimbox}
 \usepackage{url}
 \usepackage{subfigure}
+\usepackage{multirow}
 
 \definecolor{lbcolor}{rgb}{1,1,1}
 
@@ -546,18 +547,18 @@ We executed each benchmark program $10$ times with the CHA, PTA and TFA algorith
 	\fullhline
 	\textbf{Benchmark} & \hspace{5pt}\textbf{T$_{\textsf{CHA}}(s)$}& \hspace{5pt}\textbf{T$_{\textsf{PTA}}(s)$} & \hspace{5pt}\textbf{T$_{\textsf{TFA}}(s)$} & \hspace{10pt}\textbf{R${\tflow}$}\hspace{10pt} & \hspace{10pt}\textbf{R$_{\less}$}\hspace{10pt} & \hspace{10pt}\textbf{R${\rightarrow}$}\hspace{10pt} &\hspace{10pt}\textbf{R$_{total}$}\hspace{10pt}\\
 	\fullhline
-check & 5.33 & 71.98 & 10.46 & 6847 & 15599 & 10089 & 32535\\
-compiler & 5.76 & 72.01 & 11.48 & 6665 & 14898 & 10433 & 31996\\
-compress & 5.72 & 71.06 & 12.19 & 6410 & 14344 & 10322 & 31076\\
-crypto & 5.60 & 69.25 & 9.21 & 6459 & 14424 & 10152 & 31035\\
-derby & 5.83 & 70.57 & 11.65 & 6887 & 14853 & 10603 & 32343\\
-helloworld & 6.26 & 70.72 & 13.10 & 6149 & 13652 & 10071 & 29872\\
-mpegaudio & 6.29 & 70.45 & 10.65 & 6197 & 13737 & 10084 & 30018\\
-scimark & 6.77 & 71.37 & 11.24 & 6366 & 14678 & 10214 & 31258\\
-serial & 7.06 & 70.41 & 10.98 & 6627 & 14309 & 10341 & 31277\\
-startup & 5.62 & 69.09 & 10.73 & 6239 & 13723 & 10094 & 30056\\
-sunflow & 5.58 & 72.93 & 11.12 & 6167 & 13675 & 10077 & 29919\\
-xml & 6.55 & 139.08 & 13.84 & 6866 & 16039 & 11060 & 33965\\
+check & 4.34 & 69.32 & 12.16 & 8718 & 15599 & 10089 & 34406\\
+compiler & 5.39 & 70.34 & 12.49 & 8307 & 14898 & 10433 & 33638\\
+compress & 5.00 & 71.73 & 12.70 & 7992 & 14344 & 10322 & 32658\\
+crypto & 4.43 & 69.22 & 10.09 & 8061 & 14424 & 10152 & 32637\\
+derby & 4.81 & 70.79 & 12.66 & 8549 & 14853 & 10603 & 34005\\
+helloworld & 4.33 & 70.44 & 13.96 & 7715 & 13652 & 10071 & 31438\\
+mpegaudio & 4.35 & 69.13 & 11.88 & 7766 & 13737 & 10084 & 31587\\
+scimark & 4.51 & 71.01 & 12.43 & 7957 & 14678 & 10214 & 32849\\
+serial & 4.53 & 69.20 & 12.22 & 8260 & 14309 & 10341 & 32910\\
+startup & 6.13 & 134.09 & 19.75 & 12591 & 24427 & 13460 & 50478\\
+sunflow & 4.35 & 71.26 & 12.28 & 7734 & 13675 & 10077 & 31486\\
+xml & 5.14 & 140.72 & 15.67 & 8516 & 16039 & 11060 & 35615\\
 	\fullhline
 \end{tabular}
 \caption{Runtime cost with different analysis}
@@ -569,51 +570,65 @@ xml & 6.55 & 139.08 & 13.84 & 6866 & 16039 & 11060 & 33965\\
 \end{threeparttable}
 \end{figure}
 
-\subsection{Accuracy}\label{subsec:accuracy}
-We answer the seconde question about accuracy in two indexes: precision and recall. Their definitions are given in equation 1 and 2, respectively.
-\begin{equation}
-precision =  \dfrac{M}{S}
-\end{equation}
-\begin{equation}
-recall = \dfrac{M}{D}
-\end{equation}
-``D'' stands for the number of dynamic record, ``S'' refers to the numer of static record, and ``M'' represents the number of matching record.
 
-A sound algorithm should catch all type information in run time, \ie, the recall should be $100\%$. Precision indicates how accurate the generated set of types is. In general, a more acurrate algorithm often generate a smaller set of types for each calling variable. We calculate recall and precision of different approach, as displayed in Fig.~\ref{fig:accuracy}
+\subsection{Accuracy}\label{subsec:accuracy}
+We answer the seconde question about accuracy in two indexes: recall and precision. Their definitions are given in equation 1 and 2, respectively.
+\begin{equation}
+recall = \dfrac{TP}{TP+FN}
+\end{equation}
+\begin{equation}
+precision =  \dfrac{TP}{TP+FP}
+\end{equation}
+``TP'' stands for true positive, which refers to the number of matched records. ``FN'' represents the number of missed records. ``FP'' refers to the numer of extra records generated for those macthed record.
+
+A sound algorithm should catch all type information in run time, \ie, the recall should be $100\%$. Precision indicates how accurate the generated set of types is. In general, a more precise algorithm often generate a smaller set of types for each calling variable. Therefore, the ``FP'' will be reduced. We calculate recall and precision of different approach, as displayed in Fig.~\ref{fig:recall} and Fig.~\ref{fig:precision}, respectively.
+
+For soundness, the recall of VTA, TFA and PTA can not achieve to $1.00$ in most benchmarks except $helloworld$ for TFA. We analyzed those missed records and find out the reason is due to some Java advance features, liked reflection call and JNI call, which we will describe in section~\ref{subsubsec:reflection-call} and section~\ref{subsubsec:jni-call}. In addition, callback mechanism will raise unsoundness under our treatment on reflection, JNI and library call. We will discuss it in section~\ref{subsubsec:callback}. The result shows that PTA produces lower recall than TFA in general. We study the reason for this gap from read the source code of Soot and find out it is due to the on-the-fly reachability analysis used on PTA implemented by Soot team. Method invoked by reflection, or invoked as a callback function inside reflection, JNI and library, will be denoted as unreachable under this analysis. As a consequence, some methods would not be analyzed by PTA. Note that even the unreachable method would not be analyzed, a variable receiving its type from JDK would be assigned to possible types based on the preprocessing from Soot. Such that the set of possible reaching types for these variables would not be empty. To comapre with VTA, our approach also produces higher recall. This benefit by the conservatively treatment on library which we will discuss it in section~\ref{subsubsec:library}.
 
 The result shows that in general our approach can achieve higher precision than CHA and closer precision than PTA. The imprecision is mainly due to our approximation on library invocation and array, which we will discuss in section~\ref{subsubsec:library} and section~\ref{subsubsec:array-approximation}. Besides, the code coverage will issue imprecision since SPECjvm provides common codes for all benchmarks and some of them would not be excuted when a specific benchmark is excuting, \ie, these codes will be analyzed statically but not generate any record in run time.
 
-For soundness, the recall of both TFA and PTA can not achieve to $1.00$ in most benchmarks except $helloworld$. We analyzed those missed records and find out the reason is due to some Java advance features, liked reflection call and JNI call, which we will describe in section~\ref{subsubsec:reflection-call} and section~\ref{subsubsec:jni-call}. In addition,  callback mechanism will raise unsoundness under our treatment on reflection, JNI and library call. We will discuss it in section~\ref{subsubsec:callback}. The result shows that PTA produces lower recall than TFA in general. We study the reason for this gap from read the source code of Soot and find out it is due to the on-the-fly reachability analysis used on PTA implemented by Soot team. Method invoked by reflection, or invoked as a callback function inside reflection, JNI and library, will be denoted as unreachable under this analysis. As a consequence, some methods would not be analyzed by PTA. Note that even the unreachable method would not be analyzed, a variable receiving its type from JDK would be assigned to possible types based on the preprocessing from Soot. Such that the set of possible reaching types for these variables would not be empty.
 \begin{figure}\centering
-%\begin{table}[!htbp]\centering
-\begin{threeparttable}[b]
-\begin{tabular}{lcccccccccc}
-	\fullhline
-	\textbf{Benchmark} & \textbf{D} & \textbf{M$_{CHA}$} & \textbf{M$_{PTA}$} & \textbf{M$_{TFA}$} & \textbf{R$_{CHA}$} & \textbf{R$_{PTA}$} & \textbf{R$_{TFA}$} & \textbf{P$_{CHA}$} & \textbf{P$_{PTA}$} & \textbf{P$_{TFA}$} \hspace{2pt}\\
-	\fullhline
-check & 150 & 150 & 145 & 145 & 1.00 & 0.97 & 0.97 & 0.07 & 0.19 & 0.18\\
-compiler & 515 & 515 & 463 & 506 & 1.00 & 0.90 & 0.98 & 0.28 & 0.81 & 0.70\\
-compress & 353 & 353 & 330 & 345 & 1.00 & 0.93 & 0.98 & 0.19 & 0.49 & 0.46\\
-crypto & 454 & 454 & 393 & 407 & 1.00 & 0.87 & 0.90 & 0.25 & 0.70 & 0.65\\
-derby & 639 & 639 & 603 & 632 & 1.00 & 0.94 & 0.99 & 0.35 & 0.97 & 0.88\\
-helloworld & 21 & 21 & 21 & 21 & 1.00 & 1.00 & 1.00 & 0.01 & 0.03 & 0.03\\
-mpegaudio & 255 & 255 & 241 & 248 & 1.00 & 0.95 & 0.97 & 0.15 & 0.40 & 0.37\\
-scimark & 386 & 386 & 357 & 362 & 1.00 & 0.92 & 0.94 & 0.20 & 0.54 & 0.50\\
-serial & 458 & 458 & 354 & 410 & 1.00 & 0.77 & 0.90 & 0.18 & 0.67 & 0.62\\
-startup & 1429 & 1429 & 1358 & 1360 & 1.00 & 0.95 & 0.95 & 0.82 & 2.23 & 2.07\\
-sunflow & 226 & 226 & 208 & 217 & 1.00 & 0.92 & 0.96 & 0.13 & 0.36 & 0.33\\
-xml & 521 & 521 & 436 & 504 & 1.00 & 0.84 & 0.97 & 0.27 & 0.81 & 0.65\\
-	\fullhline
-\end{tabular}
-\caption{Accuracy with different analysis}
-\label{fig:accuracy}
-\begin{tablenotes}
-  \item[1] \textbf{D} denotes dynamic records.
-  \item[2] \textbf{M$_{algorithm}$}, \textbf{R$_{algorithm}$}, \textbf{P$_{algorithm}$} denote matching count, recall and precision of different algorithms, respectively.
-\end{tablenotes}
-\end{threeparttable}
-%\end{table}
+\includegraphics[scale=0.9]{recall.pdf}
+\caption{Recall on different analysis}
+\label{fig:recall}
 \end{figure}
+
+\begin{figure}\centering
+\includegraphics[scale=0.9]{precision.pdf}
+\caption{Precision of different analysis}
+\label{fig:precision}
+\end{figure}
+
+%\begin{figure}\centering
+%%\begin{table}[!htbp]\centering
+%\begin{threeparttable}[b]
+%\begin{tabular}{lcccccccccc}
+%	\fullhline
+%	\textbf{Benchmark} & \textbf{D} & \textbf{M$_{CHA}$} & \textbf{M$_{PTA}$} & \textbf{M$_{TFA}$} & \textbf{R$_{CHA}$} & \textbf{R$_{PTA}$} & \textbf{R$_{TFA}$} & \textbf{P$_{CHA}$} & \textbf{P$_{PTA}$} & \textbf{P$_{TFA}$} \hspace{2pt}\\
+%	\fullhline
+%check & 149 & 149 & 146 & 146 & 1.00 & 0.98 & 0.98 & 0.360 & 1.000 & 1.000\\
+%compiler & 487 & 487 & 467 & 480 & 1.00 & 0.96 & 0.99 & 0.538 & 1.000 & 1.000\\
+%compress & 351 & 351 & 339 & 347 & 1.00 & 0.97 & 0.99 & 0.793 & 1.000 & 1.000\\
+%crypto & 449 & 449 & 402 & 413 & 1.00 & 0.90 & 0.92 & 0.732 & 1.000 & 1.000\\
+%derby & 583 & 583 & 565 & 580 & 1.00 & 0.97 & 0.99 & 0.284 & 1.000 & 0.900\\
+%helloworld & 21 & 21 & 21 & 21 & 1.00 & 1.00 & 1.00 & 0.167 & 1.000 & 1.000\\
+%mpegaudio & 254 & 254 & 247 & 251 & 1.00 & 0.97 & 0.99 & 0.500 & 1.000 & 1.000\\
+%scimark & 377 & 377 & 366 & 368 & 1.00 & 0.97 & 0.98 & 0.523 & 1.000 & 1.000\\
+%serial & 451 & 451 & 399 & 407 & 1.00 & 0.88 & 0.90 & 0.000 & 1.000 & 1.000\\
+%startup & 1344 & 1343 & 1289 & 1289 & 1.00 & 0.96 & 0.96 & 0.131 & 0.167 & 1.000\\
+%sunflow & 225 & 225 & 215 & 219 & 1.00 & 0.96 & 0.97 & 0.440 & 1.000 & 1.000\\
+%xml & 513 & 513 & 466 & 505 & 1.00 & 0.91 & 0.98 & 0.609 & 1.000 & 0.738\\
+%	\fullhline
+%\end{tabular}
+%\caption{Accuracy with different analysis}
+%\label{fig:accuracy}
+%\begin{tablenotes}
+%  \item[1] \textbf{D} denotes dynamic records.
+%  \item[2] \textbf{M$_{algorithm}$}, \textbf{R$_{algorithm}$}, \textbf{P$_{algorithm}$} denote matching count, recall and precision of different algorithms, respectively.
+%\end{tablenotes}
+%\end{threeparttable}
+%%\end{table}
+%\end{figure}
 
 \subsubsection{Reflection Call}\label{subsubsec:reflection-call}
 Reflection in Java programming language is a advanced feature which provides ability to inspect and manipulate a Java class at runtime. It brings in extra complexity on programs and the behaviour is hard to predict statically. In Listing~\ref{lst:reflection} we pick some codes using reflection in the benchmark programs to discuss how reflection works and what is our treatment on that. Note that we reorganize and simplify the real code a little to concentrate on the main point of reflection usage. We discuss in three cases:
