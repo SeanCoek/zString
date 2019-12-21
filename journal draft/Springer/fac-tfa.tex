@@ -530,7 +530,7 @@ class A {
 \section{Evaluation}\label{sec:evaluation}
 We evaluate our approach by measuring its performance on SPECjvm2008, which contains $12$ benchmark programs in total. We conduct all of our experiments on a laptop equipped with an Intel i5-8250U CPU at 1.60 GHz and 8 GB memory, running Ubuntu 16.04LTS with OpenJDK 1.8.0.
 
-We compare our approach against the default implementation of Class Hierarchy Analysis (CHA) and context-insensitive points-to analysis that are implemented by Soot team. The reason we do not compare against Variable Type Analysis (VTA) due to its unavaliable implementation. The only avaliable implementation for Java is also implemented by Soot team, but it is embeded as a subprocess to optimize points-to analysis. Under this circumstance, we compare our approach against VTA in precision with manual analysis in section~\ref{sec:introduction}. Implementation of VTA will be left for our future work. The choice of the context-insensitive points-to analysis is due to our approach also being context-insensitive, thus the results will be comparable. We use iteration algorithm for points-to analysis to calculate a fixpoint for the same reason. In the following tables we use CHA, PTA and TFA to refer to the results related to class hierarchy analysis, points-to analysis and type flow analysis, respectively. During the evaluation the following tow research questions are addressed.
+We compare our approach against Class Hierarchy Analysis (CHA) , Variable Type Analysis and context-insensitive points-to analysis. Among these compared approach, we use the hierarchy structure provided in Soot framework, to implemente CHA. VTA and points-to analysis are implemented by Soot team. The reason we do not compare the efficiency against Variable Type Analysis (VTA) is due to its indivisible implementation. The implementation in Soot framework is embeded as a optional subprocess to generated callgraph for points-to analysis. The generated callgraph is accessible by developer. Under this circumstance, we compare our approach against VTA in precision but not efficiency. Total implementation of VTA will be left for our future work. The choice of the context-insensitive points-to analysis is due to our approach also being context-insensitive, thus the results will be comparable. We use iteration algorithm for points-to analysis to calculate a fixpoint for the same reason. A more space-efficient data structure for iteration set is adopted on points-to analysis, which is provided by Soot team. For the reason that points-to analysis will raise $OutOfMemory$ error and crash when we use the same data structure (\ie, $HashSet$) as in our implementation of TFA. In the following tables we use CHA, VTA, PTA and TFA to refer to the results related to class hierarchy analysis, variable type analysis, points-to analysis and type flow analysis, respectively. During the evaluation the following tow research questions are addressed.
 \begin{itemize}
 \item \textbf{RQ1} How efficient is our approach compared with the traditional class hierarchy analysis and points-to analysis?
 \item \textbf{RQ2} How accurate is our algorithm when comparing with the other analysis?
@@ -538,7 +538,7 @@ We compare our approach against the default implementation of Class Hierarchy An
 We answer these two questions in section~\ref{subsec:efficiency} and section~\ref{subsec:accuracy}, respetively.
 
 \subsection{Efficiency}\label{subsec:efficiency}
-We executed each benchmark program $10$ times with the CHA, PTA and TFA algorithms. We calculated the average time consumption (in seconds) as displayed at column \textbf{T$_{CHA}$}(s), \textbf{T$_{PTA}$}(s) and \textbf{T$_{TFA}$}(s) of the Table in Fig.~\ref{fig:TimeCost}. We counted the sizes of each generated realtion (\ie, the type flow realtion `$\tflow$', variable partial order `$\less$' and the field access relation `$\hflow$'). It provides an estimation of size for the problem we are treating. The result shows that our approach consums more time than CHA, for the reason that CHA do not have to analyze detail logic inside the program but only analyze the class and interface hierarchical structure. TFA is in general more efficient than points-to analysis. The runtime cost in TFA basically depends on the size of generated relations, as well as the relational complexity as most of the time is consumed to calculate a fixpoint. For PTA it also require extra time for maintaining and updating a heap abstraction.
+We executed each benchmark program $10$ times with the CHA, PTA and TFA algorithms. We calculated the average time consumption (in seconds) as displayed at column \textbf{T$_{CHA}$}(s), \textbf{T$_{PTA}$}(s) and \textbf{T$_{TFA}$}(s) of the Table in Fig.~\ref{fig:TimeCost}. We counted the sizes of each generated realtion (\ie, the type flow realtion `$\tflow$', variable partial order `$\less$' and the field access relation `$\hflow$'). It provides an estimation of size for the problem we are treating. The result shows that our approach consums more time than CHA, for the reason that CHA do not have to analyze detail logic inside the program but only analyze the class and interface hierarchical structure. TFA is in general more efficient than points-to analysis. The runtime cost in TFA basically depends on the size of generated relations, as well as the relational complexity as most of the time is consumed to calculate a fixpoint (\eg, on benchmark $startup$ the number of generated relations reach to 50478, hence TFA cost the most time(19.75s) among these benchmarks). For PTA it also require extra time for maintaining and updating a heap abstraction.
 
 \begin{figure}\centering
 \begin{threeparttable}[b]
@@ -583,9 +583,16 @@ precision =  \dfrac{TP}{TP+FP}
 
 A sound algorithm should catch all type information in run time, \ie, the recall should be $100\%$. Precision indicates how accurate the generated set of types is. In general, a more precise algorithm often generate a smaller set of types for each calling variable. Therefore, the ``FP'' will be reduced. We calculate recall and precision of different approach, as displayed in Fig.~\ref{fig:recall} and Fig.~\ref{fig:precision}, respectively.
 
-For soundness, the recall of VTA, TFA and PTA can not achieve to $1.00$ in most benchmarks except $helloworld$ for TFA. We analyzed those missed records and find out the reason is due to some Java advance features, liked reflection call and JNI call, which we will describe in section~\ref{subsubsec:reflection-call} and section~\ref{subsubsec:jni-call}. In addition, callback mechanism will raise unsoundness under our treatment on reflection, JNI and library call. We will discuss it in section~\ref{subsubsec:callback}. The result shows that PTA produces lower recall than TFA in general. We study the reason for this gap from read the source code of Soot and find out it is due to the on-the-fly reachability analysis used on PTA implemented by Soot team. Method invoked by reflection, or invoked as a callback function inside reflection, JNI and library, will be denoted as unreachable under this analysis. As a consequence, some methods would not be analyzed by PTA. Note that even the unreachable method would not be analyzed, a variable receiving its type from JDK would be assigned to possible types based on the preprocessing from Soot. Such that the set of possible reaching types for these variables would not be empty. To comapre with VTA, our approach also produces higher recall. This benefit by the conservatively treatment on library which we will discuss it in section~\ref{subsubsec:library}.
+For soundness, the recall of VTA, TFA and PTA can not achieve to $1.00$ in most benchmarks except $helloworld$ for TFA. We analyzed those missed records and find out the reason is due to some Java advance features, liked reflection call and JNI call, which we will describe in section~\ref{subsubsec:reflection-call} and section~\ref{subsubsec:jni-call}. In addition, callback mechanism will raise unsoundness under our treatment on reflection, JNI and library call. We will discuss it in section~\ref{subsubsec:callback}. The result shows that VTA and PTA produces lower recall than TFA in general. We study the reason for this gap from reading the source code of Soot and find out there are some different treatments that produce this result. The first one is the on-the-fly reachability analysis used on PTA implemented by Soot team. Method invoked by reflection, or invoked as a callback function inside reflection, JNI and library, will be denoted as unreachable under this analysis. As a consequence, some methods would not be analyzed by PTA. Note that even the unreachable method would not be analyzed, a variable receiving its type from JDK would be assigned to possible types based on the preprocessing from Soot. Such that the set of possible reaching types for these variables would not be empty. The second one is that our approach performs conservatively treatment on library. We will discuss it in section~\ref{subsubsec:library}. Moreover, we find out that VTA make inappropriate treatment on anonymous class which reduce its recall. We consider it as a bug produced by Soot team. More details will be illustrated in section~\ref{subsubsec:anonymous}. Note that CHA also misses $10$ records on $compiler, crypto, startup$ in total. The $3$ missed records on $compiler$ and $crypto$ are caused by the incomplete hierarchy structure which is defaultly provided in Soot framework. \eg, we put on a hierarchy structure of $java.security.KeyPairGenerator$ in JDK, as shown in Fig.~\ref{fig:cha-hierarchy}. On benchmark $crypto$, variable $x$ is declared as ``$java.security.KeyPairGenerator$''. The hierarchy structure provided by Soot framework do not include ``$DSAKeyPairGenerator$,``$DSAKeyPairGenerator\$Current$'' and ``$DSAKeyPairGenerator\$Legacy$'' as subclassses of ``$KeyPairGenerator$''. Hence, these $3$ types will be missed for variable $x$. The rest $7$ missed records in CHA are produced by Soot framework mistakenly changing the name of variable (\eg, variable $\$68$ is changed to $\$58$). We confirm the reason by reading the Jimple representation and find out those mistaken variable do not appear in it.
+\begin{figure}
+\centering
+\includegraphics[scale=0.6]{cha-hierarchy.pdf}
+\caption{A simple hierarchy in JDK}
+\label{fig:cha-hierarchy}
+\end{figure}
 
-The result shows that in general our approach can achieve higher precision than CHA and closer precision than PTA. The imprecision is mainly due to our approximation on library invocation and array, which we will discuss in section~\ref{subsubsec:library} and section~\ref{subsubsec:array-approximation}. Besides, the code coverage will issue imprecision since SPECjvm provides common codes for all benchmarks and some of them would not be excuted when a specific benchmark is excuting, \ie, these codes will be analyzed statically but not generate any record in run time.
+The result shows that in general our approach can achieve higher precision than CHA since CHA includes all the subclass of a declared class to the result. At the same time, it produce lower precision than VTA and PTA because of the trade-off between recall and precision. The imprecision is mainly due to our approximation on library invocation and array, which we will discuss in section~\ref{subsubsec:library} and section~\ref{subsubsec:array-approximation}. These conservative treatment would raise up our recall, but lower our precision in the meantime. \eg, on benchmark $compiler$, the recall of our method can achieve $0.955$, which is much higher than VTA($0.595$) and PTA($0.616$). For the reason that we catch more records than VTA($175$) and PTA($165$). As a result, we generated extra more records than VTA($89$) and PTA($96$), which reduces our precision to $0.829$.
+Focus on the benchmark $serial$ and $startup$ in Fig.~\ref{fig:precision}. We notice that PTA would generate lots of false positive, which lower its precision to $0.014$ and $0.386$. This is caused by Soot's conservative treatment on Java $Exception$ and preprocess on some specific library calls. We discuss it in section~\ref{subsubsec:exception} and section~\ref{subsubsec:pta-preprocess}.
 
 \begin{figure}\centering
 \includegraphics[scale=0.9]{recall.pdf}
@@ -749,6 +756,67 @@ class B {
 		a.trigger(b);
  	}
 }
+\end{lstlisting}
+\end{minipage}
+
+\subsubsection{Anonymous Class}
+\label{subsubsec:anonymous}
+Anonymous class in Java enables developer to define and instantiate a class at the same time. It is like local class except that it do not have a name. Listing~\ref{lst:anonymous} shows the typical usage of anonymous class. At line 3 a anonymous class is declared and instantiated. Its class name is actually reprensented as ``$A\$1$'' in Java bytecode.
+Hence, variable $x$ is assined to a instance of ``$A\$1$''. We find out that VTA in Soot inappropriately resolves types of $x$ to ``$ThreadLocal$'', instead of ``$A\$1$''. Our implementation of TFA will resovle to ``$A\$1$'' correctly.
+
+\begin{minipage}{\linewidth}
+\vspace{10pt}
+\begin{lstlisting}[caption={Anonymous Class},label={lst:anonymous}]
+class A {
+	void m() {
+		ThreadLocal x = new ThreadLocal() {...};
+	}
+}
+
+\end{lstlisting}
+\end{minipage}
+
+\subsubsection{Java Exception}
+\label{subsubsec:exception}
+PTA implemented by Soot conservatively add all the subclass of $Throwable$ to the possible types of variable $t$ if method $m()$ is reachable. Since $Throwable$ is the superclass of all errors and exceptions in Java. These result set could be pretty large. In general it would reach to more than $200$. That means if we only have a single dynamic record for this invocation statement, the precision will reduce significantly.
+
+\begin{minipage}{\linewidth}
+\vspace{10pt}
+\begin{lstlisting}[caption={Java Exception},label={lst:exception}]
+class A {
+	void m() {
+		try {
+			...
+		} catch (Throwable t) {
+			t.printStackTrace();
+		}
+	}
+}
+\end{lstlisting}
+\end{minipage}
+
+\subsubsection{Preprocess of PTA}
+\label{subsubsec:pta-preprocess}
+Soot team performs preprocess on some specific library call, for providing a sounder implementation of PTA. We pick up some codes on benchmark $serial$ as shown in Listing~\ref{lst:pta-preprocess}, to describe why the precision of PTA is much lower. At line 5, we invoke a library call ``$method.invoke()$'', which is preprocessed by Soot framework. We put on the difinition of this method in commented lines. The result of this preprocess is that $obj$ will receive its possible types as all the classes this method can return. We check out the number is generally reached to more than $1000$. Since there are almost 20 dynamic records for this case on benchmark $serial$, PTA generated more than $20000$ false positive cases and lower its precision to just $0.014$.
+
+\begin{minipage}{\linewidth}
+\vspace{10pt}
+\begin{lstlisting}[caption={Preprocess of PTA},label={lst:pta-preprocess}]
+class A {
+	void m() {
+		...
+		Method method = getMethod();
+		Object obj = method.invoke(null, new Object[]{});
+		obj.getClass();
+	}
+}
+
+//public Object invoke(Object obj, Object... args)
+//        throws IllegalAccessException,IllegalArgumentException,
+//				InvocationTargetException
+//    {
+//        ...
+//    }
 \end{lstlisting}
 \end{minipage}
 
