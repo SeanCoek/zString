@@ -547,18 +547,18 @@ We executed each benchmark program $10$ times with the CHA, PTA and TFA algorith
 	\fullhline
 	\textbf{Benchmark} & \hspace{5pt}\textbf{T$_{\textsf{CHA}}(s)$}& \hspace{5pt}\textbf{T$_{\textsf{PTA}}(s)$} & \hspace{5pt}\textbf{T$_{\textsf{TFA}}(s)$} & \hspace{10pt}\textbf{R${\tflow}$}\hspace{10pt} & \hspace{10pt}\textbf{R$_{\less}$}\hspace{10pt} & \hspace{10pt}\textbf{R${\rightarrow}$}\hspace{10pt} &\hspace{10pt}\textbf{R$_{total}$}\hspace{10pt}\\
 	\fullhline
-check & 4.34 & 69.32 & 12.16 & 8718 & 15599 & 10089 & 34406\\
-compiler & 5.39 & 70.34 & 12.49 & 8307 & 14898 & 10433 & 33638\\
-compress & 5.00 & 71.73 & 12.70 & 7992 & 14344 & 10322 & 32658\\
-crypto & 4.43 & 69.22 & 10.09 & 8061 & 14424 & 10152 & 32637\\
-derby & 4.81 & 70.79 & 12.66 & 8549 & 14853 & 10603 & 34005\\
-helloworld & 4.33 & 70.44 & 13.96 & 7715 & 13652 & 10071 & 31438\\
-mpegaudio & 4.35 & 69.13 & 11.88 & 7766 & 13737 & 10084 & 31587\\
-scimark & 4.51 & 71.01 & 12.43 & 7957 & 14678 & 10214 & 32849\\
-serial & 4.53 & 69.20 & 12.22 & 8260 & 14309 & 10341 & 32910\\
-startup & 6.13 & 134.09 & 19.75 & 12591 & 24427 & 13460 & 50478\\
-sunflow & 4.35 & 71.26 & 12.28 & 7734 & 13675 & 10077 & 31486\\
-xml & 5.14 & 140.72 & 15.67 & 8516 & 16039 & 11060 & 35615\\
+check & 4.34 & 69.32 & 3.52 & 8718 & 15599 & 10089 & 34406\\
+compiler & 5.39 & 70.34 & 1.14 & 7781 & 11277 & 1990 & 21048\\
+compress & 5.00 & 71.73 & 1.09 & 7428 & 10947 & 1876 & 20251\\
+crypto & 4.43 & 69.22 & 1.13 & 7575 & 11220 & 1846 & 20641\\
+derby & 4.81 & 70.79 & 1.38 & 7979 & 11450 & 2034 & 21463\\
+helloworld & 4.33 & 70.44 & 1.25 & 7230 & 10543 & 1828 & 19601\\
+mpegaudio & 4.35 & 69.13 & 1.04 & 7279 & 10612 & 1830 & 19721\\
+scimark & 4.51 & 71.01 & 1.15 & 7451 & 11344 & 1845 & 20640\\
+serial & 4.53 & 69.20 & 1.07 & 7683 & 10977 & 1886 & 20546\\
+startup & 6.13 & 134.09 & 1.46 & 11597 & 17870 & 2651 & 32118\\
+sunflow & 4.35 & 71.26 & 1.07 & 7245 & 10560 & 1830 & 19635\\
+xml & 5.14 & 140.72 & 1.24 & 7837 & 11673 & 2016 & 21526\\
 	\fullhline
 \end{tabular}
 \caption{Runtime cost with different analysis}
@@ -583,10 +583,11 @@ precision =  \dfrac{TP}{TP+FP}
 
 A sound algorithm should catch all type information in run time, \ie, the recall should be $100\%$. Precision indicates how accurate the generated set of types is. In general, a more precise algorithm often generate a smaller set of types for each calling variable. Therefore, the ``FP'' will be reduced. We calculate recall and precision of different approach, as displayed in Fig.~\ref{fig:recall} and Fig.~\ref{fig:precision}, respectively.
 
-For soundness, the recall of VTA, TFA and PTA can not achieve to $1.00$ in most benchmarks except $helloworld$ for TFA. We analyzed those missed records and find out the reason is due to some Java advance features, liked reflection call and JNI call, which we will describe in section~\ref{subsubsec:reflection-call} and section~\ref{subsubsec:jni-call}. In addition, callback mechanism will raise unsoundness under our treatment on reflection, JNI and library call. We will discuss it in section~\ref{subsubsec:callback}. The result shows that VTA and PTA produces lower recall than TFA in general. We study the reason for this gap from reading the source code of Soot and find out there are some different treatments that produce this result. The first one is the on-the-fly reachability analysis used on PTA implemented by Soot team. Method invoked by reflection, or invoked as a callback function inside reflection, JNI and library, will be denoted as unreachable under this analysis. As a consequence, some methods would not be analyzed by PTA. Note that even the unreachable method would not be analyzed, a variable receiving its type from JDK would be assigned to possible types based on the preprocessing from Soot. Such that the set of possible reaching types for these variables would not be empty. The second one is that our approach performs conservatively treatment on library. We will discuss it in section~\ref{subsubsec:library}. Moreover, we find out that VTA make inappropriate treatment on anonymous class which reduce its recall. We consider it as a bug produced by Soot team. More details will be illustrated in section~\ref{subsubsec:anonymous}. Note that CHA also misses $10$ records on $compiler, crypto, startup$ in total. The $3$ missed records on $compiler$ and $crypto$ are caused by the incomplete hierarchy structure which is defaultly provided in Soot framework. \eg, we put on a hierarchy structure of $java.security.KeyPairGenerator$ in JDK, as shown in Fig.~\ref{fig:cha-hierarchy}. On benchmark $crypto$, variable $x$ is declared as ``$java.security.KeyPairGenerator$''. The hierarchy structure provided by Soot framework do not include ``$DSAKeyPairGenerator$,``$DSAKeyPairGenerator\$Current$'' and ``$DSAKeyPairGenerator\$Legacy$'' as subclassses of ``$KeyPairGenerator$''. Hence, these $3$ types will be missed for variable $x$. The rest $7$ missed records in CHA are produced by Soot framework mistakenly changing the name of variable (\eg, variable $\$68$ is changed to $\$58$). We confirm the reason by reading the Jimple representation and find out those mistaken variable do not appear in it.
+For soundness, the recall of VTA, TFA and PTA can not achieve to $1.00$ in most benchmarks except $helloworld$ for TFA. We analyzed those missed records and find out the reason is due to some Java advance features, liked reflection call and JNI call, which we will describe in section~\ref{subsubsec:reflection-call} and section~\ref{subsubsec:jni-call}. In addition, callback mechanism will raise unsoundness under our treatment on reflection, JNI and library call. We will discuss it in section~\ref{subsubsec:callback}. The result shows that VTA and PTA produces lower recall than TFA in general. We study the reason for this gap from reading the source code of Soot and find out there are some different treatments that produce this result. The first one is the on-the-fly reachability analysis used on PTA implemented by Soot team. Method invoked by reflection, or invoked as a callback function inside reflection, JNI and library, will be denoted as unreachable under this analysis. As a consequence, some methods would not be analyzed by PTA. Note that even the unreachable method would not be analyzed, a variable receiving its type from JDK would be assigned to possible types based on the preprocessing from Soot. Such that the set of possible reaching types for these variables would not be empty. The second one is that our approach performs conservatively treatment on library. We will discuss it in section~\ref{subsubsec:library}. %Moreover, we find out that VTA make inappropriate treatment on anonymous class which reduce its recall. We consider it as a bug produced by Soot team. More details will be illustrated in section~\ref{subsubsec:anonymous}.
+Note that CHA also misses $8$ records on $compiler$ and $startup$ in total. $1$ missed records on $compiler$ and is caused by the incomplete hierarchy structure which is defaultly provided in Soot framework. \eg, we put on a hierarchy structure of $javax.tools.JavaFileManager\$Location$ in JDK, as shown in Fig.~\ref{fig:cha-hierarchy}. On benchmark $compiler$, variable $x$ is declared as ``$javax.tools.JavaFileManager\$Location$''. The hierarchy structure provided by Soot framework do not include ``$javax.tools.DocumentationTool\$Location$ and ``$javax.tools.StandardLocation$''as subclassses of ``$javax.tools.JavaFileManager\$Location$''. Hence, these $2$ types will be missed for variable $x$. The rest $7$ missed records in CHA are produced by Soot framework mistakenly changing the name of variable (\eg, variable $\$68$ is changed to $\$58$). We confirm the reason by reading the Jimple representation and find out those mistaken variable do not appear in it.
 \begin{figure}
 \centering
-\includegraphics[scale=0.6]{cha-hierarchy.pdf}
+\includegraphics[scale=1]{cha-hierarchy.pdf}
 \caption{A simple hierarchy in JDK}
 \label{fig:cha-hierarchy}
 \end{figure}
@@ -595,15 +596,27 @@ The result shows that in general our approach can achieve higher precision than 
 Focus on the benchmark $serial$ and $startup$ in Fig.~\ref{fig:precision}. We notice that PTA would generate lots of false positive, which lower its precision to $0.014$ and $0.386$. This is caused by Soot's conservative treatment on Java $Exception$ and preprocess on some specific library calls. We discuss it in section~\ref{subsubsec:exception} and section~\ref{subsubsec:pta-preprocess}.
 
 \begin{figure}\centering
-\includegraphics[scale=0.9]{recall.pdf}
+\includegraphics[scale=0.9]{recall-lib.pdf}
 \caption{Recall on different analysis}
 \label{fig:recall}
 \end{figure}
 
 \begin{figure}\centering
-\includegraphics[scale=0.9]{precision.pdf}
+\includegraphics[scale=0.9]{precision-lib.pdf}
 \caption{Precision of different analysis}
 \label{fig:precision}
+\end{figure}
+
+\begin{figure}\centering
+\includegraphics[scale=0.9]{recall-no-lib.pdf}
+\caption{Recall without library approximation}
+\label{fig:recall}
+\end{figure}
+
+\begin{figure}\centering
+\includegraphics[scale=0.9]{precision-no-lib.pdf}
+\caption{Precision without library approximation}
+\label{fig:recall}
 \end{figure}
 
 %\begin{figure}\centering
@@ -759,22 +772,22 @@ class B {
 \end{lstlisting}
 \end{minipage}
 
-\subsubsection{Anonymous Class}
-\label{subsubsec:anonymous}
-Anonymous class in Java enables developer to define and instantiate a class at the same time. It is like local class except that it do not have a name. Listing~\ref{lst:anonymous} shows the typical usage of anonymous class. At line 3 a anonymous class is declared and instantiated. Its class name is actually reprensented as ``$A\$1$'' in Java bytecode.
-Hence, variable $x$ is assined to a instance of ``$A\$1$''. We find out that VTA in Soot inappropriately resolves types of $x$ to ``$ThreadLocal$'', instead of ``$A\$1$''. Our implementation of TFA will resovle to ``$A\$1$'' correctly.
-
-\begin{minipage}{\linewidth}
-\vspace{10pt}
-\begin{lstlisting}[caption={Anonymous Class},label={lst:anonymous}]
-class A {
-	void m() {
-		ThreadLocal x = new ThreadLocal() {...};
-	}
-}
-
-\end{lstlisting}
-\end{minipage}
+%\subsubsection{Anonymous Class}
+%\label{subsubsec:anonymous}
+%Anonymous class in Java enables developer to define and instantiate a class at the same time. It is like local class except that it do not have a name. Listing~\ref{lst:anonymous} shows the typical usage of anonymous class. At line 3 a anonymous class is declared and instantiated. Its class name is actually reprensented as ``$A\$1$'' in Java bytecode.
+%Hence, variable $x$ is assined to a instance of ``$A\$1$''. We find out that VTA in Soot inappropriately resolves types of $x$ to ``$ThreadLocal$'', instead of ``$A\$1$''. Our implementation of TFA will resovle to ``$A\$1$'' correctly.
+%
+%\begin{minipage}{\linewidth}
+%\vspace{10pt}
+%\begin{lstlisting}[caption={Anonymous Class},label={lst:anonymous}]
+%class A {
+%	void m() {
+%		ThreadLocal x = new ThreadLocal() {...};
+%	}
+%}
+%
+%\end{lstlisting}
+%\end{minipage}
 
 \subsubsection{Java Exception}
 \label{subsubsec:exception}
