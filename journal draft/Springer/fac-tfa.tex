@@ -583,7 +583,7 @@ precision =  \dfrac{TP}{TP+FP}
 
 A sound algorithm should catch all type information in run time, \ie, the recall should be $100\%$. Precision indicates how accurate the generated set of types is. In general, a more precise algorithm often generate a smaller set of types for each calling variable. Therefore, the ``FP'' will be reduced. We calculate recall and precision of different approach, as displayed in Fig.~\ref{fig:recall} and Fig.~\ref{fig:precision}, respectively.
 
-For soundness, the recall of VTA, TFA and PTA can not achieve to $1.00$ in most benchmarks except $helloworld$ for TFA. We analyzed those missed records and find out the reason is due to some Java advance features, liked reflection call and JNI call, which we will describe in section~\ref{subsubsec:reflection-call} and section~\ref{subsubsec:jni-call}. In addition, callback mechanism will raise unsoundness under our treatment on reflection, JNI and library call. We will discuss it in section~\ref{subsubsec:callback}. The result shows that VTA and PTA produces lower recall than TFA in general. We study the reason for this gap from reading the source code of Soot and find out there are some different treatments that produce this result. The first one is the on-the-fly reachability analysis used on PTA implemented by Soot team. Method invoked by reflection, or invoked as a callback function inside reflection, JNI and library, will be denoted as unreachable under this analysis. As a consequence, some methods would not be analyzed by PTA. Note that even the unreachable method would not be analyzed, a variable receiving its type from JDK would be assigned to possible types based on the preprocessing from Soot. Such that the set of possible reaching types for these variables would not be empty. The second one is that our approach performs conservatively treatment on library. We will discuss it in section~\ref{subsubsec:library}. %Moreover, we find out that VTA make inappropriate treatment on anonymous class which reduce its recall. We consider it as a bug produced by Soot team. More details will be illustrated in section~\ref{subsubsec:anonymous}.
+For soundness, the recall of VTA, TFA and PTA can not achieve to $1.00$ in most benchmarks except $helloworld$ for TFA. We analyzed those missed records and find out the reason is due to some Java advance features, liked reflection call and JNI call, which we will describe in section~\ref{subsubsec:reflection-call} and section~\ref{subsubsec:jni-call}. In addition, callback mechanism will raise unsoundness under our treatment on reflection, JNI and library call. We will discuss it in section~\ref{subsubsec:callback}. The result shows that VTA and PTA produces lower recall than TFA in general. We study the reason for this gap from reading the source code of Soot and find out there are some different treatments that produce this result. The first one is the reachability analysis used on VTA implemented by Soot team, as well as PTA. Method invoked by reflection, or invoked as a callback function inside reflection, JNI and library, will be denoted as unreachable under this analysis. As a consequence, some methods would not be analyzed by VTA and PTA. Note that even the unreachable method would not be analyzed, a variable receiving its type from JDK would be assigned to possible types based on the preprocessing from Soot. Such that the set of possible reaching types for these variables would not be empty. The second one is that our approach performs conservatively treatment on library. We will discuss it in section~\ref{subsubsec:library}. Moreover, we find out that Soot make some unique treatment on some JDK invocation, which reduce its recall (\eg, for ``$StringBuilder.append()$'', Soot will assume its returning type as $StringBuilder$, instead of leaving it unresolved).
 Note that CHA also misses $8$ records on $compiler$ and $startup$ in total. $1$ missed records on $compiler$ and is caused by the incomplete hierarchy structure which is defaultly provided in Soot framework. \eg, we put on a hierarchy structure of $javax.tools.JavaFileManager\$Location$ in JDK, as shown in Fig.~\ref{fig:cha-hierarchy}. On benchmark $compiler$, variable $x$ is declared as ``$javax.tools.JavaFileManager\$Location$''. The hierarchy structure provided by Soot framework do not include ``$javax.tools.DocumentationTool\$Location$ and ``$javax.tools.StandardLocation$''as subclassses of ``$javax.tools.JavaFileManager\$Location$''. Hence, these $2$ types will be missed for variable $x$. The rest $7$ missed records in CHA are produced by Soot framework mistakenly changing the name of variable (\eg, variable $\$68$ is changed to $\$58$). We confirm the reason by reading the Jimple representation and find out those mistaken variable do not appear in it.
 \begin{figure}
 \centering
@@ -618,37 +618,6 @@ Focus on the benchmark $serial$ and $startup$ in Fig.~\ref{fig:precision}. We no
 \caption{Precision without library approximation}
 \label{fig:recall}
 \end{figure}
-
-%\begin{figure}\centering
-%%\begin{table}[!htbp]\centering
-%\begin{threeparttable}[b]
-%\begin{tabular}{lcccccccccc}
-%	\fullhline
-%	\textbf{Benchmark} & \textbf{D} & \textbf{M$_{CHA}$} & \textbf{M$_{PTA}$} & \textbf{M$_{TFA}$} & \textbf{R$_{CHA}$} & \textbf{R$_{PTA}$} & \textbf{R$_{TFA}$} & \textbf{P$_{CHA}$} & \textbf{P$_{PTA}$} & \textbf{P$_{TFA}$} \hspace{2pt}\\
-%	\fullhline
-%check & 149 & 149 & 146 & 146 & 1.00 & 0.98 & 0.98 & 0.360 & 1.000 & 1.000\\
-%compiler & 487 & 487 & 467 & 480 & 1.00 & 0.96 & 0.99 & 0.538 & 1.000 & 1.000\\
-%compress & 351 & 351 & 339 & 347 & 1.00 & 0.97 & 0.99 & 0.793 & 1.000 & 1.000\\
-%crypto & 449 & 449 & 402 & 413 & 1.00 & 0.90 & 0.92 & 0.732 & 1.000 & 1.000\\
-%derby & 583 & 583 & 565 & 580 & 1.00 & 0.97 & 0.99 & 0.284 & 1.000 & 0.900\\
-%helloworld & 21 & 21 & 21 & 21 & 1.00 & 1.00 & 1.00 & 0.167 & 1.000 & 1.000\\
-%mpegaudio & 254 & 254 & 247 & 251 & 1.00 & 0.97 & 0.99 & 0.500 & 1.000 & 1.000\\
-%scimark & 377 & 377 & 366 & 368 & 1.00 & 0.97 & 0.98 & 0.523 & 1.000 & 1.000\\
-%serial & 451 & 451 & 399 & 407 & 1.00 & 0.88 & 0.90 & 0.000 & 1.000 & 1.000\\
-%startup & 1344 & 1343 & 1289 & 1289 & 1.00 & 0.96 & 0.96 & 0.131 & 0.167 & 1.000\\
-%sunflow & 225 & 225 & 215 & 219 & 1.00 & 0.96 & 0.97 & 0.440 & 1.000 & 1.000\\
-%xml & 513 & 513 & 466 & 505 & 1.00 & 0.91 & 0.98 & 0.609 & 1.000 & 0.738\\
-%	\fullhline
-%\end{tabular}
-%\caption{Accuracy with different analysis}
-%\label{fig:accuracy}
-%\begin{tablenotes}
-%  \item[1] \textbf{D} denotes dynamic records.
-%  \item[2] \textbf{M$_{algorithm}$}, \textbf{R$_{algorithm}$}, \textbf{P$_{algorithm}$} denote matching count, recall and precision of different algorithms, respectively.
-%\end{tablenotes}
-%\end{threeparttable}
-%%\end{table}
-%\end{figure}
 
 \subsubsection{Reflection Call}\label{subsubsec:reflection-call}
 Reflection in Java programming language is a advanced feature which provides ability to inspect and manipulate a Java class at runtime. It brings in extra complexity on programs and the behaviour is hard to predict statically. In Listing~\ref{lst:reflection} we pick some codes using reflection in the benchmark programs to discuss how reflection works and what is our treatment on that. Note that we reorganize and simplify the real code a little to concentrate on the main point of reflection usage. We discuss in three cases:
@@ -734,7 +703,7 @@ public void m() {
 \end{minipage}
 
 \subsubsection{Array Approximation}\label{subsubsec:array-approximation}
-We perform a conservative treatment on array accesses that all type information that flows to one member of an array flows to all members of that array. Codes in Listing~\ref{lst:array} are used to explain how this approximation works. Type information of $A$ and $B$ are flow to the first member and the second member of array $arr$, respectively. We approximate that these two type information flow to array $arr$. Loadding an element of array will receive all types that array can access(\eg, $b$ will receive $\{A, B\}$ as the set of reaching types, which is the same set of types that array $arr$ can access).
+We perform a conservative treatment on array accesses that all type information that flows to one member of an array flows to all members of that array. Codes in Listing~\ref{lst:array} are used to explain how this approximation works. Type information of $A$ and $B$ are flow to the first member and the second member of array $arr$, respectively. We approximate that these two type information flow to array $arr$. Loadding an element of array will receive all types that array can access(\eg, $b$ will receive $\{A, B\}$ as the set of reaching types, which is the same set of types that array $arr$ can access). Soot has implemented array analysis precisely, which will raise its precision.
 
 \begin{minipage}{\linewidth}
 \vspace{10pt}
