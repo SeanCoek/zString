@@ -45,11 +45,11 @@
 
 \newtheorem{theorem}{Theorem}[section]
 
-\title{TFA: An Efficient and Precise Virtual Method Call Resolution for Java}
+\title{TFA: An Efficient and Precise Virtual Method Call Resolution for Java\thanks{A preliminary version appears in the proceedings of the $21$st International Conference on Formal Engineering Methods (ICFEM 2019) held in Shenzhen, China, November 5th-9th, 2019.}}
 
 \author[Xilong Zhuo and Chenyi Zhang]
-    {Xilong Zhuo$^1$ and Chenyi Zhang$^1$\\
-     $^1$College of Information Science and Technology, Jinan University, Guangzhou, China}
+    {Xilong Zhuo$^\star$ and Chenyi Zhang$^\star$\\
+     $^\star$College of Information Science and Technology, Jinan University, Guangzhou, China}
 
 \correspond{Chenyi Zhang.
             e-mail: chenyi\_zhang@jnu.edu.cn}
@@ -154,7 +154,7 @@ Type Analysis; Static Analysis; Virtual Method Resolution; Call Graph Constructi
 \section{Introduction}\label{sec:introduction}
 For object-oriented programming languages, virtual methods (or functions) are those declared in a base class but are meant to be overridden in different child classes. Statically determine a set of methods that may be invoked at a call site is important to program optimization, from results of which a subsequent optimization may reduce the cost of virtual function calls or perform method inlining if target method forms a singleton set, and one may also remove methods that are never called by any call sites, or produce a call graph which can be useful in other optimization~processes.
 
-Efficient solutions, such as Class Hierarchy Analysis (CHA)~\cite{Dean1995,Fernandez1995}, Rapid Type Analysis (RTA)~\cite{Bacon1996} and Variable Type Analysis (VTA)~\cite{Sundaresan2000}, conservatively assign each variable a set of class definitions, with relatively low precision. Alternatively, with the help of an abstract heap, one may take advantage of points-to analysis~\cite{andersen94} to compute a set of object abstractions that a variable may refer to, and resolve the receiver classes in order to find associated methods at call sites.
+Efficient solutions, such as Class Hierarchy Analysis (CHA)~\cite{Dean1995,Fernandez1995}, Rapid Type Analysis (RTA)~\cite{Bacon1996} and Variable Type Analysis (VTA)~\cite{Sundaresan2000}, conservatively assign each variable a set of class definitions, with relatively low precision. Alternatively, with the help of a heap abstraction, one may take advantage of points-to analysis~\cite{andersen94} to compute a set of objects that a variable may refer to, and resolve the receiver classes by referring to the types of the objects, before determining associated methods at call sites.
 
 The algorithms used by CHA, RTA and VTA are conservative, which aim to provide an efficient way to resolve calling edges, and which usually take linear-time in the size of a program, by focusing on the types that are collected at the receiver of a call site. For instance, let $x$ be a variable of declared class $A$, then at a call site $x.m()$, CHA will draw a call edge from this call site to method $m()$ of class $A$ and every definition $m()$ of a class that extends $A$. In case class $A$ does not define $m()$, a call edge to an ancestor class that defines $m()$ will also be included. For a variable $x$ of declared interface $I$, CHA will draw a call edge from this call site to every method of name $m()$ defined in class $X$ that implements $I$.
 We write $CHA(x,m)$ for the set of methods that are connected from call site $x.m()$ as resolved by  Class Hierarchy Analysis (CHA).
