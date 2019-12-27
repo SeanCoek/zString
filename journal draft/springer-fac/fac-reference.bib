@@ -1,0 +1,466 @@
+%%% CHA, VTA, detc.
+
+%%% VTA
+@inproceedings{Sundaresan2000,
+ author = {V. Sundaresan and L. Hendren and C. Razafimahefa and R. Vall{\'e}e-Rai and P. Lam and E. Gagnon and C. Godin},
+ title = {Practical Virtual Method Call Resolution for Java},
+ booktitle = {Proceedings of the 15th ACM SIGPLAN Conference on Object-oriented Programming, Systems, Languages, and Applications},
+ series = {OOPSLA '00},
+ year = {2000},
+ pages = {264--280}
+}
+%%% CHA
+@inproceedings{Dean1995,
+ author = {J. Dean and D. Grove and C. Chambers},
+ title = {Optimization of Object-Oriented Programs Using Static Class Hierarchy Analysis},
+ booktitle = {Proceedings of the 9th European Conference on Object-Oriented Programming},
+ series = {ECOOP '95},
+ year = {1995},
+ pages = {77--101},
+}
+@inproceedings{Bacon1996,
+ author = {D.~F. Bacon and P.~F. Sweeney},
+ title = {Fast Static Analysis of C++ Virtual Function Calls},
+ booktitle = {Proceedings of the 11th ACM SIGPLAN Conference on Object-oriented Programming, Systems, Languages, and Applications},
+ series = {OOPSLA '96},
+ year = {1996},
+ pages = {324--341}
+}
+%%% RTA
+@inproceedings{Fernandez1995,
+ author = {M.~F. Fern\'{a}ndez},
+ title = {Simple and Effective Link-time Optimization of Modula-3 Programs},
+ booktitle = {Proceedings of the ACM SIGPLAN 1995 Conference on Programming Language Design and Implementation},
+ series = {PLDI '95},
+ year = {1995},
+ pages = {103--115}
+}
+
+%%% call graph constructions
+
+@inproceedings{Grove1997,
+ author = {D. Grove and G. DeFouw and J. Dean and C. Chambers},
+ title = {Call Graph Construction in Object-oriented Languages},
+ booktitle = {Proceedings of the 12th ACM SIGPLAN Conference on Object-oriented Programming, Systems, Languages, and Applications},
+ series = {OOPSLA '97},
+ year = {1997},
+ pages = {108--124}
+}
+@inproceedings{Tip2000,
+ author = {F. Tip and J. Palsberg},
+ title = {Scalable Propagation-based Call Graph Construction Algorithms},
+ booktitle = {Proceedings of the 15th ACM SIGPLAN Conference on Object-oriented Programming, Systems, Languages, and Applications},
+ series = {OOPSLA '00},
+ year = {2000},
+ pages = {281--293},
+}
+@inproceedings{Reif2016,
+ author = {M. Reif and M. Eichberg and B. Hermann and J. Lerch and M. Mezini},
+ title = {Call Graph Construction for Java Libraries},
+ booktitle = {Proceedings of the 2016 24th ACM SIGSOFT International Symposium on Foundations of Software Engineering},
+ series = {FSE 2016},
+ year = {2016},
+ pages = {474--486},
+}
+
+
+%%% points-to analysis
+
+@PhdThesis{andersen94,
+	semno =	"D-203",
+	author =	"L. O. Andersen",
+	title =	"Program analysis and specialization for the {C} programming language",
+	school =	"DIKU, University of Copenhagen",
+	year = 	"1994",
+	month =	may
+}
+%% calling context:
+@phdthesis{Shivers91,
+  author = {O.~G. Shivers},
+  title = {Control-flow Analysis of Higher-order Languages or Taming Lambda},
+  year = {1991},
+  publisher = {Carnegie Mellon University}
+}
+@inproceedings{Kastrinis2013,
+  author = {G. Kastrinis and Y. Smaragdakis},
+  title = {Hybrid Context-sensitivity for Points-to Analysis},
+  booktitle = {Proceedings of the 34th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+  series = {PLDI '13},
+  year = {2013},
+  pages = {423--434},
+}
+@inproceedings{Smaragdakis11,
+	author = {Y. Smaragdakis and M. Bravenboer and O. Lhot\'{a}k},
+	title = {Pick your contexts well: understanding object-sensitivity},
+	booktitle = {Proceedings of the 38th annual ACM SIGPLAN-SIGACT symposium on	Principles of programming languages},
+	series = {POPL '11},
+	year = {2011},
+	pages = {17--30},
+}
+
+%%% object context:
+@article{Milanova2005,
+ author = {A. Milanova and A. Rountev and B.~G. Ryder},
+ title = {Parameterized Object Sensitivity for Points-to Analysis for Java},
+ journal = {ACM Transations on Software Engineering and Methodology},
+ issue_date = {January 2005},
+ volume = {14},
+ number = {1},
+ year = {2005},
+ pages = {1--41},
+}
+@inproceedings{Tan16,
+	author    = {T. Tian and L. Yue and J. Xue},
+	title     = {Making k-Object-Sensitive Pointer Analysis More Precise with Still k-Limiting},
+	booktitle = {International Static Analysis Symposium, {SAS'16}},
+	year      = {2016},
+}
+@article{Li2018,
+ author = {Y. Li and T. Tan and A. M{\o}ller and Y. Smaragdakis},
+ title = {Precision-guided Context Sensitivity for Pointer Analysis},
+ journal = {Proc. ACM Program. Lang.},
+ issue_date = {November 2018},
+ volume = {2},
+ number = {OOPSLA},
+ month = oct,
+ year = {2018},
+ issn = {2475-1421},
+ pages = {141:1--141:29},
+ articleno = {141},
+}
+@inproceedings{Sridharan2006,
+ author = {M. Sridharan and R. Bod\'{\i}k},
+ title = {Refinement-based Context-sensitive Points-to Analysis for Java},
+ booktitle = {Proceedings of the 27th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+ series = {PLDI '06},
+ year = {2006},
+ pages = {387--400},
+}
+
+
+%%featherweight Java
+@article{Igarashi2001,
+  author = {A. Igarashi and B.~C. Pierce and P. Wadler},
+  title = {Featherweight Java: A Minimal Core Calculus for Java and GJ},
+  journal = {ACM Transations on Programming Languages and Systems},
+  volume = {23},
+  number = {3},
+  year = {2001},
+  pages = {396--450}
+}
+
+%%% Region inference papers
+@inproceedings{Boyapati2003,
+ author = {C. Boyapati and A. Salcianu and W. Beebee, Jr. and M. Rinard},
+ title = {Ownership Types for Safe Region-based Memory Management in Real-time Java},
+ booktitle = {Proceedings of the ACM SIGPLAN 2003 Conference on Programming Language Design and Implementation},
+ series = {PLDI '03},
+ year = {2003},
+ pages = {324--337}
+}
+@inproceedings{Chin2004,
+ author = {W. Chin and F. Craciun and S. Qin and M. Rinard},
+ title = {Region Inference for an Object-oriented Language},
+ booktitle = {Proceedings of the ACM SIGPLAN 2004 Conference on Programming Language Design and Implementation},
+ series = {PLDI '04},
+ year = {2004},
+ pages = {243--254},
+}
+
+%% graph reachability
+@inproceedings{Reps1997,
+  author = {T. Reps},
+  title = {Program Analysis via Graph Reachability},
+  booktitle = {Proceedings of the 1997 International Symposium on Logic Programming},
+  series = {ILPS '97},
+  year = {1997},
+  pages = {5--19},
+}
+@inproceedings{Lu2013,
+  author = {Y. Lu and L. Shang and X. Xie and J. Xue},
+  title = {An Incremental Points-to Analysis with CFL-Reachability},
+  booktitle = {Proceedings of the 22Nd International Conference on Compiler Construction},
+  series = {CC'13},
+  year = {2013},
+  pages = {61--81},
+}
+
+
+%% SOOT
+@misc{soot,
+  title = {SOOT},
+  howpublished = {\url{https://sable.github.io/soot/}},
+  note = {Accessed: 2019-06-10}
+}
+@inproceedings{Lhotak2003,
+  author = {O. Lhot\'{a}k and L. Hendren},
+  title = {Scaling Java Points-to Analysis Using SPARK},
+  booktitle = {Proceedings of the 12th International Conference on Compiler Construction},
+  series = {CC'03},
+  year = {2003},
+  pages = {153--169}
+}
+
+%%%ICFEM2019 conference
+@inproceedings{ZhuoZ19,
+  author    = {Xilong Zhuo and
+               Chenyi Zhang},
+  title     = {A Relational Static Semantics for Call Graph Construction},
+  booktitle = {Formal Methods and Software Engineering - 21st International Conference
+               on Formal Engineering Methods, {ICFEM} 2019, Shenzhen, China, November
+               5-9, 2019, Proceedings},
+  pages     = {322--335},
+  year      = {2019}
+}
+
+%%% others
+@misc{specjvm,
+  title = {SpecJVM2008},
+  howpublished = {\url{https://www.spec.org/jvm2008/}},
+  note = {Accessed: 2019-06-18}
+}
+@inproceedings{Blackburn2006,
+  author = {S.~M. Blackburn and R. Garner and C. Hoffmann and A.~M. Khang and K.~S. McKinley and R. Bentzur and A. Diwan and D. Feinberg and D. Frampton and S.~Z. Guyer and M. Hirzel and A. Hosking and M. Jump and H. Lee and J.~E.~B. Moss and A. Phansalkar and D. Stefanovi\'{c} and T. VanDrunen and D. von Dincklage and B. Wiedermann},
+  title = {The {DaCapo Benchmarks}: Java Benchmarking Development and Analysis},
+  booktitle = {Proceedings of the 21st Annual ACM SIGPLAN Conference on Object-oriented Programming Systems, Languages, and Applications},
+  series = {OOPSLA '06},
+  year = {2006},
+  pages = {169--190},
+}
+@article{Tarjan72,
+	author    = {R.~E. Tarjan},
+	title     = {Depth-first search and linear graph algorithms},
+	journal   = {SIAM Journal on Computing},
+	volume    = {1},
+    issue     = {2},
+	pages     = {146–-160},
+	year      = {1972},
+}
+@article{Kanellakis90,
+	author    = {P.~C.~Kanellakis and S.~A.~Smolka},
+	title     = {{CCS} expressions, finite state processes, and three problems of equivalence},
+	journal   = {Information and Computation},
+	volume    = {86},
+    issue     = {1},
+	pages     = {43–-68},
+	year      = {1990},
+}
+@article{Paige87,
+	author    = {R.~Paige and R.~E.~Tarjan},
+	title     = {Three partition refinement algorithms},
+	journal   = {SIAM Journal on Computing},
+	volume    = {16},
+    issue     = {6},
+	pages     = {973–-989},
+	year      = {1987},
+}
+
+%% String analysis by Abstract Interpretation
+
+@inproceedings{Christensen03,
+  author = {Christensen, Aske Simon and M{\o}ller, Anders and Schwartzbach, Michael I.},
+  title = {Precise Analysis of String Expressions},
+  booktitle = {Proceedings of the 10th International Conference on Static Analysis ({SAS'03})},
+  year = {2003},
+  pages = {1--18}
+}
+@incollection{MN01,
+  author        = {M. Mohri and M.~J.~Nederhof},
+  title         = {Regular Approximation of Context-Free Grammars through Transformation},
+  booktitle     = {In: Junqua JC., van Noord G. (eds) Robustness in Language and Speech Technology. Text, Speech and Language Technology},
+  year          = {2001},
+  volume        = {17},
+  pages         = {3-99},
+  publisher     = {Springer}
+}
+@inproceedings{LLMW015,
+   author = {Li, Ding and Lyu, Yingjun and Wan, Mian and Halfond, William G. J.},
+   title = {String Analysis for Java and Android Applications},
+   booktitle = {Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering, {ESEC/FSE 2015}},
+   year = {2015},
+   pages = {661--672},
+}
+
+
+@inproceedings{Yu11,
+   author = {Yu, Fang and Bultan, Tevfik and Hardekopf, Ben},
+   title = {String Abstractions for String Verification},
+   booktitle = {Proceedings of the 18th International SPIN Conference on Model Checking Software},
+   year = {2011},
+   pages = {20--37},
+}
+@inproceedings{Wang16,
+  author    = {Hung{-}En Wang and
+               Tzung{-}Lin Tsai and
+               Chun{-}Han Lin and
+               Fang Yu and
+               Jie{-}Hong R. Jiang},
+  title     = {String Analysis via Automata Manipulation with Logic Circuit Representation},
+  booktitle = {Computer Aided Verification, {CAV} 2016},
+  pages     = {241--260},
+  year      = {2016}
+}
+@inproceedings{YSLCWB16,
+   author = {Yu, Fang and Shueh, Ching-Yuan and Lin, Chun-Han and Chen, Yu-Fang and Wang, Bow-Yaw and Bultan, Tevfik},
+   title = {Optimal Sanitization Synthesis for Web Application Vulnerability Repair},
+   booktitle = {Proceedings of the 25th International Symposium on Software Testing and Analysis, {ISSTA 2016}},
+   year = {2016},
+   pages = {189--200},
+}
+
+@inproceedings{Amadini17,
+  author    = {Roberto Amadini and
+               Alexander Jordan and
+               Graeme Gange and
+               Fran{\c{c}}ois Gauthier and
+               Peter Schachte and
+               Harald S{\o}ndergaard and
+               Peter J. Stuckey and
+               Chenyi Zhang},
+  title     = {Combining String Abstract Domains for JavaScript Analysis: An Evaluation},
+  booktitle = {Tools and Algorithms for the Construction and Analysis of Systems
+               {TACAS} 2017},
+  pages     = {41--57},
+  year      = {2017}
+}
+@article{Costantini13,
+	author    = {Giulia Costantini and Pietro Ferrara and Agostino Cortesi},
+	title     = {A suite of abstract domains for static analysis of string values},
+	journal   = {Software --– Practice and Experience},
+	volume    = {45},
+	pages     = {245–-287},
+	year      = {2015},
+}
+
+
+%% String analysis by constraint solving
+
+@misc{z3str3,
+    title = {$Z3str3$ String Solver Documentation},
+    author = {$Z3Str3$ String Solver Team},
+    note = {https://zyh1121.github.io/z3str3Docs/index.html},
+    year = {2017}
+}
+@inproceedings{Barrett11,
+ author = {Barrett, Clark and Conway, Christopher L. and Deters, Morgan and Hadarean, Liana and Jovanovi\'{c}, Dejan and King, Tim and Reynolds, Andrew and Tinelli, Cesare},
+ title = {CVC4},
+ booktitle = {Proceedings of the 23rd International Conference on Computer Aided Verification, {CAV}'11},
+ year = {2011},
+ pages = {171--177}
+}
+@inproceedings{TrinhCJ16,
+  author    = {Minh{-}Thai Trinh and Duc{-}Hiep Chu and Joxan Jaffar},
+  title     = {Progressive Reasoning over Recursively-Defined Strings},
+  booktitle = {Computer Aided Verification - 28th International Conference, {CAV} 2016},
+  pages     = {218--240},
+  year      = {2016}
+}
+
+
+%% Java Reflection with string matching --- string set domain & datalog
+
+@inproceedings{GrechKS18,
+  author    = {Neville Grech and
+               George Kastrinis and
+               Yannis Smaragdakis},
+  title     = {Efficient Reflection String Analysis via Graph Coloring},
+  booktitle = {32nd European Conference on Object-Oriented Programming, {ECOOP} 2018},
+  pages     = {26:1--26:25},
+  year      = {2018},
+}
+@inproceedings{Smaragdakis15,
+    author = {Yannis Smaragdakis and George Kastrinis and George Balatsouras and Martin Bravenboer},
+    title = {More Sound Static Handling of Java Reflection},
+    booktitle = {{APLAS} 2015},
+    year = {2015},
+    pages = {485-503}
+}
+
+%%DOOP
+@inproceedings{Bravenboer09,
+    author = {Martin Bravenboer and Yannis Smaragdakis},
+    title = {Strictly declarative specification of sophisticated points-to analyses},
+    booktitle = {24th ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications, {OOPSLA}’09},
+    year = {2009},
+    pages = {243–-262}
+}
+
+@inproceedings{LTSX14,
+  author    = {Yue Li and Tian Tan and Yulei Sui and Jingling Xue},
+  title     = {Self-inferencing reflection resolution for Java},
+  booktitle = {28th European Conference on Object-Oriented Programming, {ECOOP} 2014},
+  pages     = {27-–53},
+  year      = {2014},
+}
+
+@phdthesis{Livshits06,
+  author       = {Benjamin Livshits},
+  title        = {Improving Software Security with Precise Static and Runtime Analysis},
+  school       = {Stanford University},
+  year         = 2006,
+}
+
+
+@inproceedings{Landman17,
+   author = {Landman, Davy and Serebrenik, Alexander and Vinju, Jurgen J.},
+   title = {Challenges for Static Analysis of Java Reflection: Literature Review and Empirical Study},
+   booktitle = {Proceedings of the 39th International Conference on Software Engineering {ICSE '17}},
+   year = {2017},
+   pages = {507--518},
+}
+
+
+%%Profiling
+@inproceedings{Codrut2014,
+  title={Comparing points-to static analysis with runtime recorded profiling data},
+  author={Stancu, Codru{\c{t}} and Wimmer, Christian and Brunthaler, Stefan and Larsen, Per and Franz, Michael},
+  booktitle={Proceedings of the 2014 International Conference on Principles and Practices of Programming on the Java platform: Virtual machines, Languages, and Tools},
+  pages={157--168},
+  year={2014},
+  organization={ACM}
+}
+
+%%%% soundiness
+@article{LivshitsSSLACGKMV15,
+  author    = {Benjamin Livshits and
+               Manu Sridharan and
+               Yannis Smaragdakis and
+               Ondrej Lhot{\'{a}}k and
+               Jos{\'{e}} Nelson Amaral and
+               Bor{-}Yuh Evan Chang and
+               Samuel Z. Guyer and
+               Uday P. Khedker and
+               Anders M{\o}ller and
+               Dimitrios Vardoulakis},
+  title     = {In defense of soundiness: a manifesto},
+  journal   = {Communications of the {ACM}},
+  volume    = {58},
+  number    = {2},
+  pages     = {44--46},
+  year      = {2015}
+}
+
+
+%%%%%%%%%%%%%% templates
+
+@inproceedings{gong97,
+	author    = {Li Gong and
+	Marianne Mueller and
+	Hemma Prafullchandra and
+	Roland Schemers},
+	title     = {Going Beyond the Sandbox: An Overview of the New Security Architecture
+	in the {J}ava {D}evelopment {K}it 1.2},
+	booktitle = {1st {USENIX} Symposium on Internet Technologies and Systems, USITS'97,
+	Monterey, California, USA, December 8-11, 1997},
+	year      = {1997},
+}
+
+@article{hardy88,
+	author    = {Norman Hardy},
+	title     = {The Confused Deputy (or why capabilities might have been invented)},
+	journal   = {Operating Systems Review},
+	volume    = {22},
+	number    = {4},
+	pages     = {36--38},
+	year      = {1988},
+}
