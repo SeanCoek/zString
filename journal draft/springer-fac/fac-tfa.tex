@@ -139,16 +139,12 @@
 \maketitle
 
 \begin{abstract}
-The problem of statically resolving virtual method calls in object-oriented programming languages has been a long standing challenge, often due to the overly complicated class inheritance and interface implementation structures in modern programming languages such as Java, C$\#$ and C++. Traditional ways of dealing with this problem include class hierarchy analysis (CHA), variable type analysis (VTA), and retrieval of type information after a sophisticated points-to analysis. In this paper, we tackle this problem by proposing a new approach called type flow analysis (TFA) which propagates type information as well as field access information through the syntactic structure of a program. Our methodology is purely algebraic so that there is no need to explicitly construct a heap abstraction.
-
-We have evaluated our methodology from two different perspectives. Regarding its theoretical foundation, we have proved that in the context insensitive setting, our method is as precise as the standard Andersen's subset-based points-to analysis regarding the derived types to variables. To empirically evaluate TFA, we have implemented the algorithm in the Soot framework and used it to analyze the SPECjvm2008 benchmark suite. During the experiment, we have shown that our method is usually $6-9$ times faster than the standard points-to analysis. We further conduct a range of detailed analysis based on the results by running a dynamic profiler, which is also implemented by us, on the SPECjvm2008. The experiment results confirm that TFA can achieve outstanding performance with acceptable accuracy when applied on real world Java programs.
-
-%The problem of resolving virtual method and interface calls in object-oriented languages has been a long standing challenge to the program analysis community. The complexities are due to various reasons, such as increased levels of class inheritance and polymorphism in large programs. In this paper, we propose a new approach called type flow analysis that represent propagation of type information between program variables by a group of relations without the help of a heap abstraction. We prove that regarding the precision on reachability of class information to a variable, our method produces results equivalent to that one can derive from a points-to analysis.
-%Moreover, we implement a static type analysis tool for our approach. To evaluate our method, we use instrumentation tenichque to implement a dynamic profiling type recorder. The experimental results show that our approach is more practical in both efficiency and accuracy.
+The problem of resolving virtual method and interface calls in object-oriented languages has been a long standing challenge to the program analysis community. The complexities are due to various reasons, such as increased levels of class inheritance and polymorphism in large programs. In this paper, we propose a new approach called type flow analysis that represent propagation of type information between program variables by a group of relations without the help of a heap abstraction. We prove that regarding the precision on reachability of class information to a variable, our method produces results equivalent to that one can derive from a points-to analysis.
+Moreover, we implement a static type analysis tool for our approach. To evaluate our method, we use instrumentation tenichque to implement a dynamic profiling type recorder. The experimental results show that our approach is more practical in both efficiency and accuracy.
 \end{abstract}
 
 \begin{keywords}
-Type Analysis; Static Analysis; Virtual Method Resolution; Call Graph Construction
+Type Analysis; Static Analysis; Method Resolving; Call Graph
 \end{keywords}
 
 \section{Introduction}\label{sec:introduction}
@@ -477,7 +473,7 @@ We check the following cases for the three relations $\tflow^*$, $\less^*$ and $
 \section{Implementation}\label{sec:implementation}
 The analysis algorithm is written in Java, and is implemented in the Soot framework, the most popular static analysis framework for Java. We use jimple as intermediate representation (IR).
 We do not take common types (\eg, \texttt{int} and \texttt{float}) under our consideration, since these are irrelevant to our analysis.
-Our work consists of two parts. The first part implements the static type flow analysis algorithm introduced in previous sections, based on the information extracted from jimple IR and computes a set of types for each reference variable in the program. The second part instantiates a dynamic profiler that collects type-related information, which is then used to analyze the precision of the static analysis algorithm, as well as making comparison to other type analysis algorithms including CHA, RTA, VTA and PTA. A more detailed description is given as follows, in Section~\ref{subsec:static-analysis-tool} and Section~\ref{subsec:dynamic-profiler}.
+Our work consists of two parts. The first part implements the static type flow analysis algorithm introduced in previous sections, based on the information extracted from jimple IR and computes a set of types for each reference variable in the program. The second part instantiates a dynamic profiler that collects type-related information, which is then used to analyze the precision of the static analysis algorithm, as well as making comparison to other type analysis algorithms including CHA, VTA and PTA. A more detailed description is given as follows, in Section~\ref{subsec:static-analysis-tool} and Section~\ref{subsec:dynamic-profiler}.
 
 
 %We keep method invocation from Java advanced features liked reflection or JNI as unresolvable. More detail will be discussed in \ref{subsubsec:reflection-call} and \ref{subsubsec:jni-call}. Conservative approximation is performed on invocation of methods from libraries (\eg, JDK) and array accesses. We will describe these strategies in \ref{subsubsec:library} and \ref{subsubsec:array-approximation}.
@@ -516,7 +512,7 @@ In order to achieve an acceptable performance, we make conservative treatments o
 
 \subsection{Dynamic Profiling}\label{subsec:dynamic-profiler}
 
-We apply dynamic analysis to collect the grountruth of a program's run-time behaviour, such as an actual type a given variable has during an execution and an actual method being called at a particular program location. To build up a baseline for measuring the precision of TFA, we have implemented a dynamic profiling tool that records the actual types that a variable may have at run-time, in particular when the variable is a receiver at a call site. Based on the Soot framework, We instrument the jimple statements of the target benchmark programs that are subsequently tested in our experiment. After the instrumentation phase, run-time types are collected during the benchmark execution and are dumped to the output. We consider the collected variable-type relation as the groundtruth and compare it with the results generated by our static TFA algorithm, with details presented in section~\ref{subsec:accuracy}. For an effective instrumentation, we consider the following four possible ways on how to instrument a Java program.
+We apply dynamic analysis to collect the grountruth of a program's run-time behaviour, such as an actual type a given variable has during an execution and an actual method being called at a particular program location. To build up a baseline for measuring the precision of TFA, we have implemented a dynamic profiling tool that records the actual types that a variable may have at run-time, in particular when the variable is a receiver at a call site. Based on the Soot framework, we instrument the jimple statements of the target benchmark programs that are subsequently tested in our experiment. After the instrumentation phase, run-time types are collected during the benchmark execution and are dumped to the output. We consider the collected variable-type relation as the groundtruth and compare it with the results generated by our static TFA algorithm, with details presented in section~\ref{subsec:accuracy}. For an effective instrumentation, we consider the following four possible ways on how to instrument a Java program.
 
 %There are four manners to instrument the source code to record the run-time type of a method receiver.
 %\begin{itemize}
@@ -614,38 +610,14 @@ We try to provide answers to these two questions as discussed in section~\ref{su
 
 \subsection{Analysis on Performance}\label{subsec:efficiency}
 
-We have executed all SPECjvm2008 benchmark programs $10$ times with the CHA, PTA and TFA algorithms. Then we calculate the average time consumption (in seconds) as displayed at column \textbf{T$_{CHA}$}(s), \textbf{T$_{PTA}$}(s) and \textbf{T$_{TFA}$}(s) of the Table in Fig.~\ref{fig:TimeCost}. We also list the sizes of the generated relations (\ie, the type flow relation `$\tflow$', variable partial order `$\less$' and the field access relation `$\hflow$'), which provide an estimation of input size for the problems we are treating. The result confirms that our approach consumes more time than CHA, which is reasonable, as CHA does not apply any propagation on types, but only analyzes the class and interface hierarchical structure.\footnote{Note that we have implemented the current CHA algorithm by using the class hierarchy structure provided in the Soot framework. The default CHA implementation in Soot runs much slower, as shown in our earlier experiment result in~\cite{ZhuoZ19}.} TFA is in general more efficient than points-to analysis. In general, the runtime cost of TFA increases on benchmarks with larger size of generated relations as well as higher relational complexity, as most of the time in TFA is spent on calculating a fixpoint (\eg, on benchmark $startup$ the number of generated relations reach to $50,478$, on which TFA spends the most amount of time($19.75s$) among all benchmarks). We conjecture that PTA is slower than TFA because it requires extra time for maintaining and updating a heap abstraction.
+We have executed all SPECjvm2008 benchmark programs $10$ times with the CHA, PTA and TFA algorithms. Then we calculate the average time consumption (in seconds) as displayed at column \textbf{T$_{CHA}$}(s), \textbf{T$_{PTA}$}(s) and \textbf{T$_{TFA}$}(s) of the Table in Fig.~\ref{fig:TimeCost}. We also list the sizes of the generated relations (\ie, the type flow relation `$\tflow$', variable partial order `$\less$' and the field access relation `$\hflow$'), which provide an estimation of input size for the problems we are treating. The result confirms that our approach consumes more time than CHA, which is reasonable, as CHA does not apply any propagation on types, but only analyzes the class and interface hierarchical structure.\footnote{Note that we have implemented the current CHA algorithm by using the class hierarchy structure provided in the Soot framework. The default CHA implementation in Soot runs much slower, as shown in our earlier experiment result in~\cite{ZhuoZ19}.} TFA is in general more efficient than points-to analysis. In general, the runtime cost of TFA increases on benchmarks with larger size of generated relations as well as higher relational complexity, as most of the time in TFA is spent on calculating a fixpoint (\eg, on benchmark $check$ the number of generated relations reach to $34,406$, on which TFA spends the most amount of time($3.52s$) among all benchmarks). We conjecture that PTA is slower than TFA because it requires extra time for maintaining and updating a heap abstraction.
 
-\begin{figure}\centering
-\begin{threeparttable}[b]
-%\begin{table}[!htbp]\centering
-\begin{tabular}{lccccccc}
-	\fullhline
-	\textbf{Benchmark} & \hspace{5pt}\textbf{T$_{\textsf{CHA}}(s)$}& \hspace{5pt}\textbf{T$_{\textsf{PTA}}(s)$} & \hspace{5pt}\textbf{T$_{\textsf{TFA}}(s)$} & \hspace{10pt}\textbf{R${\tflow}$}\hspace{10pt} & \hspace{10pt}\textbf{R$_{\less}$}\hspace{10pt} & \hspace{10pt}\textbf{R${\rightarrow}$}\hspace{10pt} &\hspace{10pt}\textbf{R$_{total}$}\hspace{10pt}\\
-	\fullhline
-check & 4.34 & 69.32 & 12.16 & 8718 & 15599 & 10089 & 34406\\
-compiler & 5.39 & 70.34 & 12.49 & 8307 & 14898 & 10433 & 33638\\
-compress & 5.00 & 71.73 & 12.70 & 7992 & 14344 & 10322 & 32658\\
-crypto & 4.43 & 69.22 & 10.09 & 8061 & 14424 & 10152 & 32637\\
-derby & 4.81 & 70.79 & 12.66 & 8549 & 14853 & 10603 & 34005\\
-helloworld & 4.33 & 70.44 & 13.96 & 7715 & 13652 & 10071 & 31438\\
-mpegaudio & 4.35 & 69.13 & 11.88 & 7766 & 13737 & 10084 & 31587\\
-scimark & 4.51 & 71.01 & 12.43 & 7957 & 14678 & 10214 & 32849\\
-serial & 4.53 & 69.20 & 12.22 & 8260 & 14309 & 10341 & 32910\\
-startup & 6.13 & 134.09 & 19.75 & 12591 & 24427 & 13460 & 50478\\
-sunflow & 4.35 & 71.26 & 12.28 & 7734 & 13675 & 10077 & 31486\\
-xml & 5.14 & 140.72 & 15.67 & 8516 & 16039 & 11060 & 35615\\
-	\fullhline
-\end{tabular}
+\begin{figure}
+\centering
+\includegraphics[scale=1]{timecost.pdf}
 \caption{Runtime cost with different analysis}
 \label{fig:TimeCost}
-\begin{tablenotes}
-  \item[1] \textbf{R}$_{relation}$ denotes different type of relation we generated.
-\end{tablenotes}
-%\end{table}
-\end{threeparttable}
 \end{figure}
-
 
 \subsection{Analysis on Accuracy}\label{subsec:accuracy}
 
@@ -693,7 +665,7 @@ We have also investigated why CHA also missed $8$ call edges on the benchmarks \
 
 %%discussion over precision
 
-Over all, for a comparison of the algorithms regarding precision, the experiment result has shown that in general TFA can achieve higher precision than CHA, since CHA blindly includes all the subclass of a declared class to the result. At the same time, TFA produces lower precision than VTA and PTA due to its decisive trade-off between recall and precision. The imprecision is mainly due to our approximation on library invocation and array (we defer a detailed discussion to section~\ref{subsec:analysis}). These conservative treatment has raised up recall but lowered precision at the same time. For example, on benchmark \texttt{compiler}, the recall of TFA achieves $0.955$, which is much higher than VTA($0.595$) and PTA($0.616$), as TFA catches more call edges than VTA($175$) and PTA($165$). As a result, TFA generates more records than VTA($89$) and PTA($96$), with a lower precision of $0.829$. Focusing on the benchmark \texttt{serial} and \texttt{startup} as shown in Fig.~\ref{fig:precision}. We notice that PTA has generated lots of FPs, which lowers its precision to $0.014$ and $0.386$. This is caused by Soot's conservative treatment on Java $Exception$ and preprocess on some specific library calls. %%% wait: We discuss it in section~\ref{subsubsec:exception} and section~\ref{subsubsec:pta-preprocess}.
+Over all, for a comparison of the algorithms regarding precision, the experiment result has shown that in general TFA can achieve higher precision than CHA, since CHA blindly includes all the subclass of a declared class to the result. At the same time, TFA produces lower precision than VTA and PTA due to its decisive trade-off between recall and precision. The imprecision is mainly due to our approximation on library invocation and array (we defer a detailed discussion to section~\ref{subsec:analysis}). These conservative treatment has raised up recall but lowered precision at the same time. For example, on benchmark \texttt{compiler}, the recall of TFA achieves $0.957$, which is much higher than VTA($0.610$) and PTA($0.616$), as TFA catches more call edges than VTA($169$) and PTA($166$). As a result, TFA generates more $FP$ than VTA($153$) and PTA($153$), with a lower precision of $0.829$. Focusing on the benchmark \texttt{serial} and \texttt{startup} as shown in Fig.~\ref{fig:precision}. We notice that PTA has generated lots of FPs, which lowers its precision to $0.127$ and $0.522$. This is caused by Soot's conservative treatment on Java $Exception$ and preprocess on some specific library calls. %%% wait: We discuss it in section~\ref{subsubsec:exception} and section~\ref{subsubsec:pta-preprocess}.
 
 
 
@@ -768,7 +740,7 @@ From line $6$ to line $10$, a new obejct of type $SPECJVMBenchmarkBase$ is creat
 \item Method Invocation.
 After a new object is instantiated, we can get an object of $Method$ type, referring to a specific method of a class, and call this method by the method $invoke()$ (line $17$). This effect is similar to a normal invocation at line $12$. The invocation receiver is passed to the first argument of $invoke()$. In a case of static invocation, a \textbf{null} reference is passed to the first argument. We do not consider this way of reflective method invocation in TFA, for the same reason as we discuss about object creation.
 \item Field Modification.
-The way to change a field using reflection is similar to processing method invocation. The line $24-25$ illustrate changing value of field $f$ from object $benchmark$ to a new object. %We discard this effect as well because of the difficulty on analyzing which class holds the target field.
+The way to change a field using reflection is similar to processing method invocation. The line $24-25$ illustrate changing value of field $f$ on object $benchmark$ to a new object. %We discard this effect as well because of the difficulty on analyzing which class holds the target field.
 We do not handle this effect in TFA, either.
 \end{itemize}
 
@@ -887,7 +859,7 @@ class B {
 
 %\subsubsection{Java Exception}
 %\label{subsubsec:exception}
-\paragraph{Exception handling.} PTA implemented by Soot conservatively add all the subclass of $Throwable$ to the possible types of variable $t$ if method $m()$ is reachable. Since $Throwable$ is the superclass of all errors and exceptions in Java. These result set could be pretty large. In general it would reach to more than $200$. That means if we only have a single dynamic record for this invocation statement, the precision will be reduced significantly.
+\paragraph{Exception handling.} PTA implemented by Soot conservatively add all the subclass of $Throwable$ to the possible types of variable $t$ if method $m()$ is reachable. Relevant code is shown in Listing~\ref{lst:exception}. Since $Throwable$ is the superclass of all errors and exceptions in Java. These result set could be pretty large. In general it would reach to more than $200$. That means if we only have a single dynamic record for this invocation statement, the precision will be reduced significantly.
 
 \begin{minipage}{\linewidth}
 \vspace{10pt}
@@ -909,7 +881,7 @@ class A {
 \commentout{%%%BEGIN
 \subsubsection{Preprocess of PTA}
 \label{subsubsec:pta-preprocess}
-\paragraph{The preprocessor by Soot.} Soot team performs a preprocess on some specific library calls, which aims to provide a sounder implementation of PTA. We pick up some code on the benchmark \texttt{serial} as shown in Listing~\ref{lst:pta-preprocess}, to describe why the precision of PTA is low on this benchmark. At line $5$, the reflective library call ``$method.invoke()$'', which is preprocessed by Soot framework. We put on the definition of this method in commented lines. The result of this preprocess is that $obj$ will receive its possible types as all the classes this method can return. We check out the number is generally reached to more than $1000$. Since there are almost 20 dynamic records for this case on benchmark $serial$, PTA generated more than $20000$ false positive cases and lower its precision to just $0.014$.
+\paragraph{The preprocessor by Soot.} Soot team performs a preprocess on some specific library calls, which aims to provide a sounder implementation of PTA. We pick up some code on the benchmark \texttt{serial} as shown in Listing~\ref{lst:pta-preprocess}, to describe why the precision of PTA is low on this benchmark. At line $5$, the reflective library call ``$method.invoke()$'', which is preprocessed by Soot framework. We put on the definition of this method in commented lines. The result of this preprocess is that $obj$ will receive its possible types as all the classes this method can return. We check out the number is generally reached to more than $1000$. \eg, on benchamrk $serial$, PTA generated more than $2000$ false positive cases and lower its precision to just $0.127$.
 
 \begin{minipage}{\linewidth}
 \vspace{10pt}
@@ -947,6 +919,8 @@ Call graphs may serve as a basis for points-to analysis, but often a points-to a
 Regarding the treatment of flow analysis in our algorithm, downcast analysis has been studied in region inference which is a special memory management scheme for preventing dangling pointers or improving precision in garbage collection in object-oriented programming languages~\cite{Boyapati2003,Chin2004}.  These works are type-based analysis, while our methodology belongs to traditional static program analysis. Similar ideas regarding value flow can also be found in the graph-reachability based formulation (e.g.~\cite{Reps1997,Lu2013}) to which all distributed data flow analyses can be adopted.
 
 Runtime profiling data can be recorded and used to compare with static analysis result. Furthermore, these runtime data can help static algorithms to increase precision and achieve adaptive ability. In general there are two ways to record runtime profiling data for Java programs, collecting from Java VM~\cite{Codrut2014}, or using program instrumentation technique to extract these data in runtime~\cite{Sundaresan2000}. Inspire by~\cite{Sundaresan2000}, and partialy due to Java VM can only internally provide the data we want, our dynamic type recorder is implemented using instumented technique.
+
+Instrumentation for Java bytecode can be performed both statically and dynamically. Traditional instrumentation is executed statically at most time, which suffers from the limitation that dynamically generated code or downloaded code will be skiped from instrumentation. Walter et al.~\cite{Binder2007} implemented an framework called FERRARI which can perform instrumentation in both ways. However, our dynamic profiler is implemented using statically instrumentation. Hence, dynamically generated code can not be instrumented. We do not implemented dynamic instrumentation yet, but note that all the benchmarks code we tested are statically asscessible (\ie, none of codes are dynamically generated or downloaded).
 
 \section{Conclusion and future work}\label{sec:conclusion}
 In this paper we have proposed Type Flow Analysis (TFA), an algorithm that statically determines reaching types of variable and constructs call graph edges for Object-Oriented programming languages. We have proved that our method is as precise as subset-based points-to analysis, regarding type related information. The computation of TFA is pure relational since it do not require a heap abstraction, which is needed by points-to analysis.
