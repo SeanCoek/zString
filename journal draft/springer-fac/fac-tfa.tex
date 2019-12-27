@@ -48,8 +48,9 @@
 \title{TFA: An Efficient and Precise Virtual Method Call Resolution for Java}
 
 \author[Xilong Zhuo and Chenyi Zhang]
-    {Xilong Zhuo$^1$ and Chenyi Zhang$^1$\\
-     $^1$College of Information Science and Technology, Jinan University, Guangzhou, China}
+    {Xilong Zhuo$^1$ and Chenyi Zhang$^2$\\
+     $^1$College of Information Science and Technology, Jinan University, Guangzhou, China\\
+     $^2$College of Information Science and Technology, Jinan University, Guangzhou, China}
 
 \correspond{Chenyi Zhang.
             e-mail: chenyi\_zhang@jnu.edu.cn}
@@ -139,16 +140,12 @@
 \maketitle
 
 \begin{abstract}
-The problem of statically resolving virtual method calls in object-oriented programming languages has been a long standing challenge, often due to the overly complicated class inheritance and interface implementation structures in modern programming languages such as Java, C$\#$ and C++. Traditional ways of dealing with this problem include class hierarchy analysis (CHA), variable type analysis (VTA), and retrieval of type information after a sophisticated points-to analysis. In this paper, we tackle this problem by proposing a new approach called type flow analysis (TFA) which propagates type information as well as field access information through the syntactic structure of a program. Our methodology is purely algebraic so that there is no need to explicitly construct a heap abstraction.
-
-We have evaluated our methodology from two different perspectives. Regarding its theoretical foundation, we have proved that in the context insensitive setting, our method is as precise as the standard Andersen's subset-based points-to analysis regarding the derived types to variables. To empirically evaluate TFA, we have implemented the algorithm in the Soot framework and used it to analyze the SPECjvm2008 benchmark suite. During the experiment, we have shown that our method is usually $6-9$ times faster than the standard points-to analysis. We further conduct a range of detailed analysis based on the results by running a dynamic profiler, which is also implemented by us, on the SPECjvm2008. The experiment results confirm that TFA can achieve outstanding performance with acceptable accuracy when applied on real world Java programs.
-
-%The problem of resolving virtual method and interface calls in object-oriented languages has been a long standing challenge to the program analysis community. The complexities are due to various reasons, such as increased levels of class inheritance and polymorphism in large programs. In this paper, we propose a new approach called type flow analysis that represent propagation of type information between program variables by a group of relations without the help of a heap abstraction. We prove that regarding the precision on reachability of class information to a variable, our method produces results equivalent to that one can derive from a points-to analysis.
-%Moreover, we implement a static type analysis tool for our approach. To evaluate our method, we use instrumentation tenichque to implement a dynamic profiling type recorder. The experimental results show that our approach is more practical in both efficiency and accuracy.
+The problem of resolving virtual method and interface calls in object-oriented languages has been a long standing challenge to the program analysis community. The complexities are due to various reasons, such as increased levels of class inheritance and polymorphism in large programs. In this paper, we propose a new approach called type flow analysis that represent propagation of type information between program variables by a group of relations without the help of a heap abstraction. We prove that regarding the precision on reachability of class information to a variable, our method produces results equivalent to that one can derive from a points-to analysis.
+Moreover, we implement a static type analysis tool for our approach. To evaluate our method, we use instrumentation tenichque to implement a dynamic profiling type recorder. The experimental results show that our approach is more practical in both efficiency and accuracy.
 \end{abstract}
 
 \begin{keywords}
-Type Analysis; Static Analysis; Virtual Method Resolution; Call Graph Construction
+Type Analysis; Static Analysis; Method Resolving; Call Graph
 \end{keywords}
 
 \section{Introduction}\label{sec:introduction}
@@ -457,7 +454,7 @@ Since those constrains of the points-to analysis establish the smallest model $(
   \item For all variables $x$ and $y$, and for all fields $f$, \begin{itemize}
     \item $x\lhflow{f}y$ iff for all $o\in\Obj$, $o\in\VPT(x)$ implies $\VPT(y)\subseteq\HPT(o,f)$.
     \item $x\lhflow{f\ *}y$ iff there exists $o\in\VPT(x)$, $\VPT(y)\subseteq\HPT(o,f)$.
-  \end{itemize}
+  \end{itemize} 
 \end{itemize}
 We check the following cases for the three relations $\tflow^*$, $\less^*$ and $\lhflow{*}$ that are defined from the above.
 \begin{itemize}
@@ -467,7 +464,7 @@ We check the following cases for the three relations $\tflow^*$, $\less^*$ and $
 \item[-] \textbf{Def~\ref{def:extension}(1).} It is obvious that $\less^*$ is transitive and reflexive, which is by $\subseteq$ being transitive and reflexive.
 \item[-] \textbf{Def~\ref{def:extension}(2).} W.l.o.g., for all $x\in\Var$, $\VPT(x)\neq\emptyset$, since the included type could be from $\kwnew$, or from method parameter passing or return. Given $x\lhflow{f}z$, $z'\less^*y$ and $z'\less^*x$, we need to show $y\lhflow{f\ *}z$.
     Let $\xi(c)\in\VPT(z')$, then $\xi(c)\in\VPT(x)$ and $\xi(c)\in\VPT(y)$. Then $\VPT(z)\subseteq\HPT(\xi(c),f)$ by $\xi(c)\in\VPT(x)$ and $x\lhflow{f}z$. Therefore we have $y\lhflow{f\ *}z$ by the existence of $\xi(c)$.
-
+    
 \item[-] \textbf{Def~\ref{def:extension}(3).} For each statement $x = y.f$, given $y\lhflow{f\ *}z$, we need to show $z\less^* x$. Equivalently, by definition there exists $o\in\VPT(y)$ such that $\VPT(z)\subseteq\HPT(o_1,f)$. Given the statement $x = y.f$, for all $o'\in \VPT(y)$ $\HPT(o',f)\subseteq\VPT(x)$, therefore by existence of $o$, we have $\VPT(z)\subseteq\VPT(x)$, the definition of $z\less^* x$.
 \item[-] \textbf{Def~\ref{def:extension}(4).} The first case that $c\tflow y$ implies $c\tflow^* y$ is trivial. Let $c\tflow^* x$ and $x\less^*y$, we need to show that $c\tflow^*y$. Since $\xi(c)\in\VPT(x)$ and $\VPT(x)\subseteq\VPT(x)$, we have $\xi(c)\in\VPT(y)$, which is equivalent to $c\tflow^*y$, as required.
 \end{itemize}
@@ -652,7 +649,7 @@ We present recall and precision of the given approaches, as displayed in Fig.~\r
 
 Regarding soundness, we use the call edges generated by the dynamic profiling (described in Section~\ref{subsec:dynamic-profiler}) as baseline, shown at the \textbf{Dynamic} columns of Figure~\ref{fig:recall} and Figure~\ref{fig:precision}. In general, CHA is able to achieve nearly $100\%$ recall, but VTA, TFA and PTA all fail to achieve $100\%$ recall except for the \texttt{helloworld} program. TFA is able to achieve above $90\%$ recall on average, higher than VTA and PTA ($20\%$ more recall on about half of the benchmark programs). Regarding precision, TFA archieves about $80\%$ on average, lower than VTA and PTA, but in general higher than CHA.
 
-Given that TFA achieves a higher recall than VTA and PTA, we have identified a few possible reasons. Firstly, VTA and PTA implemented by the Soot team have applied an on-the-fly reachability analysis which rules out a portion of methods which are reported as unreachable. Therefore the unreachable methods would not be analyzed, and variables receiving their type from JDK would be assigned with possible types based on the preprocessing from Soot. For TFA, we have implemented a conservative approach on JDK library functions which always returns the predefined types in API together with all their subtypes. We also implemented a conservative array analysis which may also contribute to higher recall as well as lower precision. We also note that we have not implemented special treatment on advanced Java language features including Java Reflection API and Java Native Interface calls, as well as more detailed analysis in the JDK library and side effects produced by callbacks from invisible codes (\eg from JDK library and reflective calls), which all contributed $FN$ instances, such that TFA still does not produce a sound result (\ie $100\%$ recall) on most benchmark programs.\footnote{As we mentioned earlier, most existing tools for Java program analysis are not sound, but soundy~\cite{LivshitsSSLACGKMV15}.}
+Given that TFA achieves a higher recall than VTA and PTA, we have identified a few possible reasons. Firstly, VTA and PTA implemented by the Soot team have applied an on-the-fly reachability analysis which rules out a portion of methods which are reported as unreachable. Therefore the unreachable methods would not be analyzed, and variables receiving their type from JDK would be assigned with possible types based on the preprocessing from Soot. For TFA, we have implemented a conservative approach on JDK library functions which always returns the predefined types in API together with all their subtypes. We also implemented a conservative array analysis which may also contribute to higher recall as well as lower precision. We also note that we have not implemented special treatment on advanced Java language features including Java Reflection API and Java Native Interface calls, as well as more detailed analysis in the JDK library and side effects produced by callbacks from invisible codes (\eg from JDK library and reflective calls), which all contributed $FN$ instances, such that TFA still does not produce a sound result (\ie $100\%$ recall) on most benchmark programs.\footnote{As we mentioned earlier, most existing tools for Java program analysis are not sound, but soundy~\cite{LivshitsSSLACGKMV15}.}  
 For a more detailed explanation regarding the special treatment implemented in TFA, we refer to Section~\ref{subsec:analysis}.
 
 We have also investigated why CHA also missed $8$ call edges on the benchmarks \texttt{compiler} and \texttt{startup}. The one missed on \texttt{compiler} is caused by the incomplete default hierarchy structure provided by the Soot framework. As an example, we put on a hierarchy structure of $javax.tools.JavaFileManager\$Location$ in JDK, as shown in Fig.~\ref{fig:cha-hierarchy}. Note that variable $x$ is declared of type $javax.tools.JavaFileManager\$Location$ in benchmark \texttt{compiler}. However, the hierarchy structure provided by the Soot framework does not properly include $javax.tools.DocumentationTool\$Location$ or $javax.tools.StandardLocation$ as subclassses of $javax.tools.JavaFileManager\$Location$. Hence, these $2$ types are missed by CHA for variable $x$. The other $7$ missed types in CHA are due to that the Soot framework mistakenly changes the name of a few temporary variables (\eg, variable $\$68$ is changed to $\$58$), which can be confirmed by reading the jimple representation. % and find out those mistaken variable do not appear in it.
@@ -739,9 +736,9 @@ In this section we briefly review the factors that hamper the performance of our
 %\subsubsection{Reflection Call}\label{subsubsec:reflection-call}
 \paragraph{Reflective calls.} Reflection is an advanced feature in the Java programming language which provides the ability to inspect and manipulate a Java class at runtime. It brings in extra complexity to programs and its behaviour is hard to predict statically. In Listing~\ref{lst:reflection} we show a sample code using reflection in one of the benchmark programs to discuss how reflection works and what our treatment is. Note that this is an example we have simplified from the real code in order to concentrate on the main functionality of reflection. We discuss in three cases.
 \begin{itemize}
-\item Object Creation.
+\item Object Creation. 
 From line $6$ to line $10$, a new obejct of type $SPECJVMBenchmarkBase$ is created by method $newInstance()$ on variable $c$ at line $10$, where $c$ is an object of $Constructor$ type and it refers to a specific constructor of class $SPECJVMBenchmarkBase$. In the TFA analysis, we discard the type information of the new object in such a case because it is usually difficult to statically identify which constructor is invoked. For example, At line $6$, if statement $Class.forName()$ receives a string argument from the outside such as file input and user input, it is usually not easy to find out the real type of $benchmarkClass$. As a result, the run time type of $c$ and $benchmark$ cannot be identified.
-\item Method Invocation.
+\item Method Invocation. 
 After a new object is instantiated, we can get an object of $Method$ type, referring to a specific method of a class, and call this method by the method $invoke()$ (line $17$). This effect is similar to a normal invocation at line $12$. The invocation receiver is passed to the first argument of $invoke()$. In a case of static invocation, a \textbf{null} reference is passed to the first argument. We do not consider this way of reflective method invocation in TFA, for the same reason as we discuss about object creation.
 \item Field Modification.
 The way to change a field using reflection is similar to processing method invocation. The line $24-25$ illustrate changing value of field $f$ on object $benchmark$ to a new object. %We discard this effect as well because of the difficulty on analyzing which class holds the target field.
