@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.12.6)  27 DEC 2019 15:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.12.6)  27 DEC 2019 15:25
 entering extended mode
 **./fac-tfa.tex
 (fac-tfa.tex
@@ -35,402 +35,6 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
 \c@theorem=\count87
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.51 <<
-       <<<<< HEAD
-? q
-OK, entering \batchmode...
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 52
-.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ulasy.fd"
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 52.
-
- ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 52.
-
- ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Overfull \hbox (31.66673pt too wide) in paragraph at lines 51--59
-[]\OT1/cmr/m/n/10 <<<<<<
- []
-
-
-Overfull \hbox (29.4445pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 HEAD
- []
-
-
-Overfull \hbox (13.61113pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 Xi-
- []
-
-
-Overfull \hbox (18.33339pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 long
- []
-
-
-Overfull \hbox (26.54172pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 Zhuo$[]$
- []
-
-
-Overfull \hbox (16.11116pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 and
- []
-
-
-Overfull \hbox (30.55562pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 Chenyi
- []
-
-
-Overfull \hbox (31.81952pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 Zhang$[]$ 
- []
-
-
-Overfull \hbox (36.26395pt too wide) in paragraph at lines 51--59
-[]$\OT1/cmr/m/n/10 College
- []
-
-
-Overfull \hbox (8.05559pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 of
- []
-
-
-Overfull \hbox (12.50002pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 In-
- []
-
-
-Overfull \hbox (15.30559pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 for-
- []
-
-
-Overfull \hbox (16.6667pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 ma-
- []
-
-
-Overfull \hbox (17.22227pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 tion
- []
-
-
-Overfull \hbox (16.11113pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 Sci-
- []
-
-
-Overfull \hbox (18.8889pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 ence
- []
-
-
-Overfull \hbox (16.11116pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 and
- []
-
-
-Overfull \hbox (23.88889pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 Tech-
- []
-
-
-Overfull \hbox (16.6667pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 nol-
- []
-
-
-Overfull \hbox (17.22227pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 ogy,
- []
-
-
-Overfull \hbox (11.25002pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 Ji-
- []
-
-
-Overfull \hbox (16.11116pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 nan
- []
-
-
-Overfull \hbox (19.1667pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 Uni-
- []
-
-
-Overfull \hbox (16.69446pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 ver-
- []
-
-
-Overfull \hbox (17.55559pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 sity,
- []
-
-
-Overfull \hbox (52.2918pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 Guangzhou,
- []
-
-
-Overfull \hbox (26.11118pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 China
- []
-
-
-Overfull \hbox (54.44461pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 =======
- []
-
-
-Overfull \hbox (13.61113pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 Xi-
- []
-
-
-Overfull \hbox (18.33339pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 long
- []
-
-
-Overfull \hbox (26.43062pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 Zhuo$[]$
- []
-
-
-Overfull \hbox (16.11116pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 and
- []
-
-
-Overfull \hbox (30.55562pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 Chenyi
- []
-
-
-Overfull \hbox (31.70842pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 Zhang$[]$ 
- []
-
-
-Overfull \hbox (36.15285pt too wide) in paragraph at lines 51--59
-[]$\OT1/cmr/m/n/10 College
- []
-
-
-Overfull \hbox (8.05559pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 of
- []
-
-
-Overfull \hbox (12.50002pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 In-
- []
-
-
-Overfull \hbox (15.30559pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 for-
- []
-
-
-Overfull \hbox (16.6667pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 ma-
- []
-
-
-Overfull \hbox (17.22227pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 tion
- []
-
-
-Overfull \hbox (16.11113pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 Sci-
- []
-
-
-Overfull \hbox (18.8889pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 ence
- []
-
-
-Overfull \hbox (16.11116pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 and
- []
-
-
-Overfull \hbox (23.88889pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 Tech-
- []
-
-
-Overfull \hbox (16.6667pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 nol-
- []
-
-
-Overfull \hbox (17.22227pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 ogy,
- []
-
-
-Overfull \hbox (11.25002pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 Ji-
- []
-
-
-Overfull \hbox (16.11116pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 nan
- []
-
-
-Overfull \hbox (19.1667pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 Uni-
- []
-
-
-Overfull \hbox (16.69446pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 ver-
- []
-
-
-Overfull \hbox (17.55559pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 sity,
- []
-
-
-Overfull \hbox (52.2918pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 Guangzhou,
- []
-
-
-Overfull \hbox (26.11118pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 China 
- []
-
-
-Overfull \hbox (36.15285pt too wide) in paragraph at lines 51--59
-[]$\OT1/cmr/m/n/10 College
- []
-
-
-Overfull \hbox (8.05559pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 of
- []
-
-
-Overfull \hbox (12.50002pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 In-
- []
-
-
-Overfull \hbox (15.30559pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 for-
- []
-
-
-Overfull \hbox (16.6667pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 ma-
- []
-
-
-Overfull \hbox (17.22227pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 tion
- []
-
-
-Overfull \hbox (16.11113pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 Sci-
- []
-
-
-Overfull \hbox (18.8889pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 ence
- []
-
-
-Overfull \hbox (16.11116pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 and
- []
-
-
-Overfull \hbox (23.88889pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 Tech-
- []
-
-
-Overfull \hbox (16.6667pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 nol-
- []
-
-
-Overfull \hbox (17.22227pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 ogy,
- []
-
-
-Overfull \hbox (11.25002pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 Ji-
- []
-
-
-Overfull \hbox (16.11116pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 nan
- []
-
-
-Overfull \hbox (19.1667pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 Uni-
- []
-
-
-Overfull \hbox (16.69446pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 ver-
- []
-
-
-Overfull \hbox (17.55559pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 sity,
- []
-
-
-Overfull \hbox (52.2918pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 Guangzhou,
- []
-
-
-Overfull \hbox (26.11118pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 China
- []
-
-
-Overfull \hbox (33.0556pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 >>>>>>>
- []
-
-
-Overfull \hbox (197.50049pt too wide) in paragraph at lines 51--59
-\OT1/cmr/m/n/10 7b9e9fde0c30ac6aaee1d2a6dd88b3de0e70a350 
- []
-
 \c@Definition=\count88
 \c@Theorem=\count89
 \c@Lemma=\count90
@@ -442,8 +46,8 @@ Overfull \hbox (197.50049pt too wide) in paragraph at lines 51--59
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
 Package: amsmath 2019/11/16 v2.17d AMS math features
 \@mathmargin=\skip41
-For additional information on amsmath, use the `?' option.
 
+For additional information on amsmath, use the `?' option.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
@@ -547,7 +151,8 @@ Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
 ("C:\Program Files\MiKTeX 2.9\tex/latex/readarray\readarray.sty"
 Package: readarray 2016/11/07\ 2.0\ Routines for inputting 2D and 3D array data
  and recalling it on an element-by-element basis.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/listofitems\listofitems.sty"
@@ -571,6 +176,7 @@ sep char (CT)
 \Arg@toks=\toks23
 \@arrayident@toks=\toks24
 \rdar@file=\read2
+
 readarray: bounds checking OFF
 )
 \savedverbbox=\box31
@@ -597,10 +203,10 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \c@lofdepth=\count121
 \c@subtable=\count122
 \c@lotdepth=\count123
+
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-
 ("C:\Program Files\MiKTeX 2.9\tex/latex/subfigure\subfigure.cfg")
 \subfig@top=\skip50
 \subfig@bottom=\skip51
@@ -641,22 +247,21 @@ Package: listings 2019/09/10 1.8c (Carsten Heinz)
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2019/09/10 1.8c listings language file
-)
-No file fac-tfa.aux.
+) (fac-tfa.aux)
 \openout1 = `fac-tfa.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
 
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -671,8 +276,7 @@ LaTeX Font Info:    ... okay on input line 140.
 \MPnumerator=\count137
 \makeMPintoPDFobject=\count138
 \everyMPtoPDFconversion=\toks27
-)
-("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2019/11/24 v2.7 Base part for package epstopdf
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\infwarerr.sty"
@@ -717,80 +321,49 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 460.
 )
 \c@lstlisting=\count139
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 13
+9.
 
-Overfull \vbox (219.24994pt too high) has occurred while \output is active []
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\ulasy.fd"
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 139
+.
 
- [1{C:/Users/张一/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 139
+.
 
-LaTeX Warning: Citation `Dean1995' on page 2 undefined on input line 159.
-
-
-LaTeX Warning: Citation `Fernandez1995' on page 2 undefined on input line 159.
-
-
-LaTeX Warning: Citation `Bacon1996' on page 2 undefined on input line 159.
-
-
-LaTeX Warning: Citation `Sundaresan2000' on page 2 undefined on input line 159.
-
-
-
-LaTeX Warning: Citation `andersen94' on page 2 undefined on input line 159.
-
-
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
- [2]
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 166--196
+[1{C:/Users/张一/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 160--190
 [][] [] 
  []
 
-
-LaTeX Warning: Reference `figure:vta' on page 3 undefined on input line 200.
-
-
-LaTeX Warning: Reference `figure:example' on page 3 undefined on input line 200
-.
-
-<points-to.pdf, id=18, 137.38326pt x 198.96132pt>
+<points-to.pdf, id=16, 137.38326pt x 198.96132pt>
 File: points-to.pdf Graphic file (type pdf)
 <use points-to.pdf>
-Package pdftex.def Info: points-to.pdf  used on input line 231.
+Package pdftex.def Info: points-to.pdf  used on input line 225.
 (pdftex.def)             Requested size: 99.58464pt x 144.22047pt.
 
-Overfull \hbox (24.00003pt too wide) in paragraph at lines 205--235
+Overfull \hbox (24.00003pt too wide) in paragraph at lines 199--229
 [][] 
  []
 
-
-LaTeX Warning: Citation `andersen94' on page 3 undefined on input line 237.
-
-
-LaTeX Warning: Reference `figure:example' on page 3 undefined on input line 237
-.
-
-
-LaTeX Warning: Reference `figure:points-to' on page 3 undefined on input line 2
-37.
-
-<tfa.pdf, id=19, 272.9387pt x 98.4177pt>
+<tfa.pdf, id=17, 272.9387pt x 98.4177pt>
 File: tfa.pdf Graphic file (type pdf)
 <use tfa.pdf>
-Package pdftex.def Info: tfa.pdf  used on input line 244.
+Package pdftex.def Info: tfa.pdf  used on input line 238.
 (pdftex.def)             Requested size: 227.62204pt x 82.07709pt.
-
-LaTeX Warning: Reference `figure:example' on page 3 undefined on input line 250
-.
-
-
-LaTeX Warning: Reference `fig:tfa' on page 3 undefined on input line 250.
-
-
-LaTeX Warning: Reference `fig:tfa' on page 3 undefined on input line 250.
-
-
+[2 <./points-to.pdf>]
 Overfull \hbox (459.58694pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/8 TFA: An Efficient and Precise Virtual Method Call Resolution for
  JavaA preliminary version appears in the proceedings of the $21$st Internation
@@ -798,96 +371,48 @@ al Conference on Formal Engineering Methods (ICFEM 2019) held in Shenzhen, Chin
 a, November 5th-9th, 2019. 3
  []
 
- [3 <./points-to.pdf>]
-
-LaTeX Warning: Citation `Shivers91' on page 4 undefined on input line 253.
-
-
-LaTeX Warning: Citation `Kastrinis2013' on page 4 undefined on input line 253.
-
-
-LaTeX Warning: Citation `Milanova2005' on page 4 undefined on input line 253.
-
-
-LaTeX Warning: Citation `Smaragdakis11' on page 4 undefined on input line 253.
-
-
-LaTeX Warning: Citation `Tan16' on page 4 undefined on input line 253.
-
-
-LaTeX Warning: Citation `Smaragdakis11' on page 4 undefined on input line 253.
-
-
-LaTeX Warning: Citation `soot' on page 4 undefined on input line 255.
-
-
-LaTeX Warning: Citation `specjvm' on page 4 undefined on input line 255.
-
-
-LaTeX Warning: Reference `fig:syntax' on page 4 undefined on input line 259.
-
-
-LaTeX Warning: Citation `Igarashi2001' on page 4 undefined on input line 259.
-
- [4 <./tfa.pdf>]
-
-LaTeX Warning: Reference `lst:relation' on page 5 undefined on input line 304.
-
-
-LaTeX Warning: Reference `fig:basic-relation' on page 5 undefined on input line
- 304.
-
+[3 <./tfa.pdf>]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 3
-09.
+03.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 309.
-<basic-relation.pdf, id=74, 338.26375pt x 159.59625pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 303.
+<basic-relation.pdf, id=72, 338.26375pt x 159.59625pt>
 File: basic-relation.pdf Graphic file (type pdf)
 <use basic-relation.pdf>
-Package pdftex.def Info: basic-relation.pdf  used on input line 327.
+Package pdftex.def Info: basic-relation.pdf  used on input line 321.
 (pdftex.def)             Requested size: 169.13145pt x 79.79791pt.
-
-LaTeX Warning: Reference `lst:relation' on page 5 undefined on input line 327.
-
-<extend-partial.pdf, id=75, 338.26375pt x 237.88875pt>
+<extend-partial.pdf, id=73, 338.26375pt x 237.88875pt>
 File: extend-partial.pdf Graphic file (type pdf)
 <use extend-partial.pdf>
-Package pdftex.def Info: extend-partial.pdf  used on input line 329.
+Package pdftex.def Info: extend-partial.pdf  used on input line 323.
 (pdftex.def)             Requested size: 169.13145pt x 118.94408pt.
-<extend-field-access.pdf, id=76, 338.26375pt x 237.88875pt>
+<extend-field-access.pdf, id=74, 338.26375pt x 237.88875pt>
 File: extend-field-access.pdf Graphic file (type pdf)
 <use extend-field-access.pdf>
-Package pdftex.def Info: extend-field-access.pdf  used on input line 331.
+Package pdftex.def Info: extend-field-access.pdf  used on input line 325.
 (pdftex.def)             Requested size: 169.13145pt x 118.94408pt.
-<extend-field-load.pdf, id=77, 338.26375pt x 237.88875pt>
+<extend-field-load.pdf, id=75, 338.26375pt x 237.88875pt>
 File: extend-field-load.pdf Graphic file (type pdf)
 <use extend-field-load.pdf>
-Package pdftex.def Info: extend-field-load.pdf  used on input line 333.
+Package pdftex.def Info: extend-field-load.pdf  used on input line 327.
 (pdftex.def)             Requested size: 169.13145pt x 118.94408pt.
-<extend-type-flow.pdf, id=78, 348.30125pt x 270.00874pt>
+<extend-type-flow.pdf, id=76, 348.30125pt x 270.00874pt>
 File: extend-type-flow.pdf Graphic file (type pdf)
 <use extend-type-flow.pdf>
-Package pdftex.def Info: extend-type-flow.pdf  used on input line 335.
+Package pdftex.def Info: extend-type-flow.pdf  used on input line 329.
 (pdftex.def)             Requested size: 174.15019pt x 135.00403pt.
-<extend-invocation.pdf, id=79, 430.60875pt x 313.17pt>
+<extend-invocation.pdf, id=77, 430.60875pt x 313.17pt>
 File: extend-invocation.pdf Graphic file (type pdf)
 <use extend-invocation.pdf>
-Package pdftex.def Info: extend-invocation.pdf  used on input line 337.
+Package pdftex.def Info: extend-invocation.pdf  used on input line 331.
 (pdftex.def)             Requested size: 215.30383pt x 156.58461pt.
 
-LaTeX Warning: Reference `lst:relation' on page 5 undefined on input line 338.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-LaTeX Warning: Reference `ex:def2' on page 5 undefined on input line 344.
-
-
-LaTeX Warning: Reference `fig:relations' on page 5 undefined on input line 344.
-
-
-
+ [4]
 Overfull \hbox (459.58694pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/8 TFA: An Efficient and Precise Virtual Method Call Resolution for
  JavaA preliminary version appears in the proceedings of the $21$st Internation
@@ -895,99 +420,8 @@ al Conference on Formal Engineering Methods (ICFEM 2019) held in Shenzhen, Chin
 a, November 5th-9th, 2019. 5
  []
 
- [5] [6 <./basic-relation.pdf> <./extend-partial.pdf> <./extend-field-access.pd
-f> <./extend-field-load.pdf> <./extend-type-flow.pdf> <./extend-invocation.pdf>
-]
-
-LaTeX Warning: Reference `def:extension' on page 7 undefined on input line 375.
-
-
-
-LaTeX Warning: Reference `def:extension' on page 7 undefined on input line 375.
-
-
-
-LaTeX Warning: Reference `def:extension' on page 7 undefined on input line 376.
-
-
-
-LaTeX Warning: Reference `def:extension' on page 7 undefined on input line 377.
-
-
-
-LaTeX Warning: Reference `def:extension' on page 7 undefined on input line 378.
-
-
-
-LaTeX Warning: Reference `def:extension' on page 7 undefined on input line 379.
-
-
-
-LaTeX Warning: Reference `fig:relations' on page 7 undefined on input line 385.
-
-
-
-LaTeX Warning: Reference `fig:relations' on page 7 undefined on input line 385.
-
-
-
-LaTeX Warning: Reference `lst:relation' on page 7 undefined on input line 385.
-
-
-LaTeX Warning: Reference `fig:relations' on page 7 undefined on input line 385.
-
-
-
-LaTeX Warning: Reference `def:extension' on page 7 undefined on input line 385.
-
-
-
-LaTeX Warning: Reference `fig:relations' on page 7 undefined on input line 385.
-
-
-
-LaTeX Warning: Reference `def:extension' on page 7 undefined on input line 385.
-
-
-
-LaTeX Warning: Reference `fig:relations' on page 7 undefined on input line 385.
-
-
-
-LaTeX Warning: Reference `def:extension' on page 7 undefined on input line 385.
-
-
-
-LaTeX Warning: Reference `fig:relations' on page 7 undefined on input line 385.
-
-
-
-LaTeX Warning: Reference `def:extension' on page 7 undefined on input line 385.
-
-
-
-LaTeX Warning: Reference `fig:relations' on page 7 undefined on input line 385.
-
-
-
-LaTeX Warning: Reference `fig:relations' on page 7 undefined on input line 385.
-
-
-
-LaTeX Warning: Reference `fig:relations' on page 7 undefined on input line 385.
-
-
-
-LaTeX Warning: Reference `def:extension' on page 7 undefined on input line 385.
-
-
-
-LaTeX Warning: Reference `lst:relation' on page 7 undefined on input line 385.
-
-
-LaTeX Warning: Reference `fig:constraints' on page 7 undefined on input line 39
-1.
-
+[5] [6 <./basic-relation.pdf> <./extend-partial.pdf> <./extend-field-access.pdf
+> <./extend-field-load.pdf> <./extend-type-flow.pdf> <./extend-invocation.pdf>]
 
 Overfull \hbox (459.58694pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/8 TFA: An Efficient and Precise Virtual Method Call Resolution for
@@ -996,104 +430,12 @@ al Conference on Formal Engineering Methods (ICFEM 2019) held in Shenzhen, Chin
 a, November 5th-9th, 2019. 7
  []
 
- [7]
-
-LaTeX Warning: Reference `lem:tfa-intra' on page 8 undefined on input line 428.
-
-
-
-LaTeX Warning: Reference `thm:tfa' on page 8 undefined on input line 431.
-
-
-LaTeX Warning: Reference `def:base' on page 8 undefined on input line 437.
-
-
-LaTeX Warning: Reference `def:extension' on page 8 undefined on input line 437.
-
-
-
-LaTeX Warning: Reference `fig:constraints' on page 8 undefined on input line 44
-1.
-
-
-LaTeX Warning: Reference `def:base' on page 8 undefined on input line 443.
-
-
-LaTeX Warning: Reference `def:base' on page 8 undefined on input line 444.
-
-
-LaTeX Warning: Reference `def:base' on page 8 undefined on input line 445.
-
-
-LaTeX Warning: Reference `def:extension' on page 8 undefined on input line 450.
-
-
-
-LaTeX Warning: Reference `def:extension' on page 8 undefined on input line 450.
-
-
-
-LaTeX Warning: Reference `fig:constraints' on page 8 undefined on input line 45
-5.
-
-
-LaTeX Warning: Reference `def:base' on page 8 undefined on input line 455.
-
-
-LaTeX Warning: Reference `def:extension' on page 8 undefined on input line 455.
-
-
-
-LaTeX Warning: Reference `def:base' on page 8 undefined on input line 466.
-
- [8]
-
-LaTeX Warning: Reference `def:base' on page 9 undefined on input line 467.
-
-
-LaTeX Warning: Reference `def:base' on page 9 undefined on input line 468.
-
-
-LaTeX Warning: Reference `def:extension' on page 9 undefined on input line 469.
-
-
-
-LaTeX Warning: Reference `def:extension' on page 9 undefined on input line 470.
-
-
-
-LaTeX Warning: Reference `def:extension' on page 9 undefined on input line 473.
-
-
-
-LaTeX Warning: Reference `def:extension' on page 9 undefined on input line 474.
-
-
-
-LaTeX Warning: Reference `subsec:static-analysis-tool' on page 9 undefined on i
-nput line 482.
-
-
-LaTeX Warning: Reference `subsec:dynamic-profiler' on page 9 undefined on input
- line 482.
-
-
-LaTeX Warning: Reference `fig:static-process' on page 9 undefined on input line
- 505.
-
-<static-process.pdf, id=168, 607.26875pt x 281.05pt>
+[7] [8]
+<static-process.pdf, id=169, 607.26875pt x 281.05pt>
 File: static-process.pdf Graphic file (type pdf)
 <use static-process.pdf>
-Package pdftex.def Info: static-process.pdf  used on input line 509.
+Package pdftex.def Info: static-process.pdf  used on input line 503.
 (pdftex.def)             Requested size: 455.25586pt x 170.71548pt.
-
-LaTeX Warning: Citation `LivshitsSSLACGKMV15' on page 9 undefined on input line
- 515.
-
-
-LaTeX Warning: Reference `sec:evaluation' on page 9 undefined on input line 515
-.
-
 
 Overfull \hbox (459.58694pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/8 TFA: An Efficient and Precise Virtual Method Call Resolution for
@@ -1102,63 +444,27 @@ al Conference on Formal Engineering Methods (ICFEM 2019) held in Shenzhen, Chin
 a, November 5th-9th, 2019. 9
  []
 
- [9]
-
-LaTeX Warning: Reference `subsec:accuracy' on page 10 undefined on input line 5
-21.
-
-
-LaTeX Warning: Reference `lst:spec-constructor' on page 10 undefined on input l
-ine 554.
-
-
-LaTeX Warning: Reference `lst:before-instru' on page 10 undefined on input line
- 555.
-
-
-LaTeX Warning: Reference `lst:after-instru' on page 10 undefined on input line 
-555.
-
-
-LaTeX Warning: Reference `lst:after-instru' on page 10 undefined on input line 
-555.
-
-
-Overfull \hbox (15.00002pt too wide) in paragraph at lines 557--572
-[]$[]$ 
- []
-
- [10 <./static-process.pdf>]
-Overfull \hbox (15.00002pt too wide) in paragraph at lines 573--584
+[9 <./static-process.pdf>]
+Overfull \hbox (15.00002pt too wide) in paragraph at lines 551--566
 []$[]$ 
  []
 
 
-Overfull \hbox (15.00002pt too wide) in paragraph at lines 585--598
+Overfull \hbox (15.00002pt too wide) in paragraph at lines 567--578
 []$[]$ 
  []
 
 
-LaTeX Warning: Citation `specjvm' on page 11 undefined on input line 600.
+Overfull \hbox (15.00002pt too wide) in paragraph at lines 579--592
+[]$[]$ 
+ []
 
-
-LaTeX Warning: Reference `fig:recall' on page 11 undefined on input line 603.
-
-
-LaTeX Warning: Reference `fig:precision' on page 11 undefined on input line 603
-.
-
-
-LaTeX Warning: Reference `fig:TimeCost' on page 11 undefined on input line 610.
-
-
-
-LaTeX Warning: Reference `fig:recall' on page 11 undefined on input line 610.
-
-
-LaTeX Warning: Reference `fig:precision' on page 11 undefined on input line 610
-.
-
+[10]
+<timecost.pdf, id=186, 421.575pt x 173.64874pt>
+File: timecost.pdf Graphic file (type pdf)
+<use timecost.pdf>
+Package pdftex.def Info: timecost.pdf  used on input line 617.
+(pdftex.def)             Requested size: 421.57396pt x 173.64832pt.
 
 Overfull \hbox (463.837pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/8 TFA: An Efficient and Precise Virtual Method Call Resolution for
@@ -1167,71 +473,23 @@ al Conference on Formal Engineering Methods (ICFEM 2019) held in Shenzhen, Chin
 a, November 5th-9th, 2019. 11
  []
 
- [11]
-
-LaTeX Warning: Reference `subsec:efficiency' on page 12 undefined on input line
- 615.
-
-
-LaTeX Warning: Reference `subsec:accuracy' on page 12 undefined on input line 6
-15.
-
-
-LaTeX Warning: Reference `fig:TimeCost' on page 12 undefined on input line 619.
-
-
-
-LaTeX Warning: Citation `ZhuoZ19' on page 12 undefined on input line 619.
-
-<timecost.pdf, id=188, 421.575pt x 173.64874pt>
-File: timecost.pdf Graphic file (type pdf)
-<use timecost.pdf>
-Package pdftex.def Info: timecost.pdf  used on input line 623.
-(pdftex.def)             Requested size: 421.57396pt x 173.64832pt.
-
-LaTeX Warning: Reference `eq:recall' on page 12 undefined on input line 630.
-
-
-LaTeX Warning: Reference `eq:precision' on page 12 undefined on input line 630.
-
-
- [12 <./timecost.pdf>]
-
-LaTeX Warning: Reference `fig:recall' on page 13 undefined on input line 638.
-
-
-LaTeX Warning: Reference `fig:precision' on page 13 undefined on input line 638
-.
-
-<recall-lib.pdf, id=231, 521.95pt x 199.74625pt>
+[11]
+<recall-lib.pdf, id=190, 521.95pt x 199.74625pt>
 File: recall-lib.pdf Graphic file (type pdf)
 <use recall-lib.pdf>
-Package pdftex.def Info: recall-lib.pdf  used on input line 642.
+Package pdftex.def Info: recall-lib.pdf  used on input line 636.
 (pdftex.def)             Requested size: 469.75066pt x 179.76996pt.
-<precision-lib.pdf, id=232, 519.9425pt x 199.74625pt>
+<precision-lib.pdf, id=191, 519.9425pt x 199.74625pt>
 File: precision-lib.pdf Graphic file (type pdf)
 <use precision-lib.pdf>
-Package pdftex.def Info: precision-lib.pdf  used on input line 648.
+Package pdftex.def Info: precision-lib.pdf  used on input line 642.
 (pdftex.def)             Requested size: 467.94394pt x 179.76996pt.
-
-LaTeX Warning: Reference `subsec:dynamic-profiler' on page 13 undefined on inpu
-t line 655.
-
-
-LaTeX Warning: Reference `fig:recall' on page 13 undefined on input line 655.
-
-
-LaTeX Warning: Reference `fig:precision' on page 13 undefined on input line 655
-.
-
-
-LaTeX Warning: Citation `LivshitsSSLACGKMV15' on page 13 undefined on input lin
-e 657.
-
-
-LaTeX Warning: Reference `subsec:analysis' on page 13 undefined on input line 6
-58.
-
+ [12 <./timecost.pdf> <./recall-lib.pdf>]
+<cha-hierarchy.pdf, id=253, 320.19624pt x 126.4725pt>
+File: cha-hierarchy.pdf Graphic file (type pdf)
+<use cha-hierarchy.pdf>
+Package pdftex.def Info: cha-hierarchy.pdf  used on input line 661.
+(pdftex.def)             Requested size: 320.19545pt x 126.47218pt.
 
 Overfull \hbox (463.837pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/8 TFA: An Efficient and Precise Virtual Method Call Resolution for
@@ -1240,50 +498,26 @@ al Conference on Formal Engineering Methods (ICFEM 2019) held in Shenzhen, Chin
 a, November 5th-9th, 2019. 13
  []
 
- [13 <./recall-lib.pdf> <./precision-lib.pdf>]
-
-LaTeX Warning: Reference `fig:cha-hierarchy' on page 14 undefined on input line
- 660.
-
-<cha-hierarchy.pdf, id=275, 320.19624pt x 126.4725pt>
-File: cha-hierarchy.pdf Graphic file (type pdf)
-<use cha-hierarchy.pdf>
-Package pdftex.def Info: cha-hierarchy.pdf  used on input line 667.
-(pdftex.def)             Requested size: 320.19545pt x 126.47218pt.
-
-LaTeX Warning: Reference `subsec:analysis' on page 14 undefined on input line 6
-74.
-
-
-LaTeX Warning: Reference `fig:precision' on page 14 undefined on input line 674
-.
-
-
-LaTeX Warning: Reference `sec:type-flow-analysis' on page 14 undefined on input
- line 681.
-
-
-LaTeX Warning: Reference `fig:nolib-recall' on page 14 undefined on input line 
-681.
-
-
-LaTeX Warning: Reference `fig:nolib-precision' on page 14 undefined on input li
-ne 681.
-
-<recall-no-lib.pdf, id=276, 517.935pt x 173.64874pt>
+[13 <./precision-lib.pdf> <./cha-hierarchy.pdf>]
+<recall-no-lib.pdf, id=287, 517.935pt x 173.64874pt>
 File: recall-no-lib.pdf Graphic file (type pdf)
 <use recall-no-lib.pdf>
-Package pdftex.def Info: recall-no-lib.pdf  used on input line 684.
+Package pdftex.def Info: recall-no-lib.pdf  used on input line 678.
 (pdftex.def)             Requested size: 466.13718pt x 156.28241pt.
- [14 <./cha-hierarchy.pdf>]
-<precision-no-lib.pdf, id=290, 509.905pt x 173.64874pt>
+<precision-no-lib.pdf, id=288, 509.905pt x 173.64874pt>
 File: precision-no-lib.pdf Graphic file (type pdf)
 <use precision-no-lib.pdf>
-Package pdftex.def Info: precision-no-lib.pdf  used on input line 690.
+Package pdftex.def Info: precision-no-lib.pdf  used on input line 684.
 (pdftex.def)             Requested size: 458.91025pt x 156.28241pt.
+ [14 <./recall-no-lib.pdf> <./precision-no-lib.pdf>]
+Overfull \hbox (4.53436pt too wide) in paragraph at lines 759--760
+[][][][][][][][][][][][][][][][][][][] 
+ []
 
-LaTeX Warning: Reference `lst:reflection' on page 15 undefined on input line 74
-2.
+
+Overfull \hbox (15.00002pt too wide) in paragraph at lines 747--778
+[]$[]$ 
+ []
 
 
 Overfull \hbox (463.837pt too wide) has occurred while \output is active
@@ -1293,28 +527,26 @@ al Conference on Formal Engineering Methods (ICFEM 2019) held in Shenzhen, Chin
 a, November 5th-9th, 2019. 15
  []
 
- [15 <./recall-no-lib.pdf> <./precision-no-lib.pdf>]
-Overfull \hbox (4.53436pt too wide) in paragraph at lines 765--766
-[][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (15.00002pt too wide) in paragraph at lines 753--784
-[]$[]$ 
- []
-
-
-LaTeX Warning: Reference `lst:jni' on page 16 undefined on input line 786.
-
+[15]
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 7
-98.
+92.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/base\omlcmr.fd"
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 798.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 792.
 
-Overfull \hbox (15.00002pt too wide) in paragraph at lines 788--803
+Overfull \hbox (15.00002pt too wide) in paragraph at lines 782--797
+[]$[]$ 
+ []
+
+
+Overfull \hbox (15.00002pt too wide) in paragraph at lines 802--819
+[]$[]$ 
+ []
+
+
+Overfull \hbox (15.00002pt too wide) in paragraph at lines 823--834
 []$[]$ 
  []
 
@@ -1322,28 +554,17 @@ Overfull \hbox (15.00002pt too wide) in paragraph at lines 788--803
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16]
-
-LaTeX Warning: Reference `lst:jdk' on page 17 undefined on input line 806.
-
-
-LaTeX Warning: Reference `lst:jdk' on page 17 undefined on input line 806.
-
-
-Overfull \hbox (15.00002pt too wide) in paragraph at lines 808--825
+Overfull \hbox (15.00002pt too wide) in paragraph at lines 839--858
 []$[]$ 
  []
 
 
-LaTeX Warning: Reference `lst:array' on page 17 undefined on input line 827.
-
-
-Overfull \hbox (15.00002pt too wide) in paragraph at lines 829--840
+Overfull \hbox (15.00002pt too wide) in paragraph at lines 864--878
 []$[]$ 
  []
 
 
-LaTeX Warning: Reference `lst:callback' on page 17 undefined on input line 842.
-
+Underfull \vbox (badness 5924) has occurred while \output is active []
 
 
 Overfull \hbox (463.837pt too wide) has occurred while \output is active
@@ -1353,98 +574,7 @@ al Conference on Formal Engineering Methods (ICFEM 2019) held in Shenzhen, Chin
 a, November 5th-9th, 2019. 17
  []
 
- [17]
-Overfull \hbox (15.00002pt too wide) in paragraph at lines 845--864
-[]$[]$ 
- []
-
-
-LaTeX Warning: Reference `lst:exception' on page 18 undefined on input line 868
-.
-
-
-Overfull \hbox (15.00002pt too wide) in paragraph at lines 870--884
-[]$[]$ 
- []
-
-
-LaTeX Warning: Citation `Dean1995' on page 18 undefined on input line 918.
-
-
-LaTeX Warning: Citation `Fernandez1995' on page 18 undefined on input line 918.
-
-
-
-LaTeX Warning: Citation `Bacon1996' on page 18 undefined on input line 918.
-
-
-LaTeX Warning: Citation `Sundaresan2000' on page 18 undefined on input line 918
-.
-
-
-LaTeX Warning: Citation `Grove1997' on page 18 undefined on input line 918.
-
-
-LaTeX Warning: Citation `Tip2000' on page 18 undefined on input line 920.
-
-
-LaTeX Warning: Citation `Reif2016' on page 18 undefined on input line 921.
-
- [18]
-
-LaTeX Warning: Citation `Lhotak2003' on page 19 undefined on input line 923.
-
-
-LaTeX Warning: Citation `Milanova2005' on page 19 undefined on input line 923.
-
-
-LaTeX Warning: Citation `Sridharan2006' on page 19 undefined on input line 923.
-
-
-
-LaTeX Warning: Citation `Smaragdakis11' on page 19 undefined on input line 923.
-
-
-
-LaTeX Warning: Citation `Tan16' on page 19 undefined on input line 923.
-
-
-LaTeX Warning: Citation `Boyapati2003' on page 19 undefined on input line 925.
-
-
-LaTeX Warning: Citation `Chin2004' on page 19 undefined on input line 925.
-
-
-LaTeX Warning: Citation `Reps1997' on page 19 undefined on input line 925.
-
-
-LaTeX Warning: Citation `Lu2013' on page 19 undefined on input line 925.
-
-
-LaTeX Warning: Citation `Codrut2014' on page 19 undefined on input line 927.
-
-
-LaTeX Warning: Citation `Sundaresan2000' on page 19 undefined on input line 927
-.
-
-
-LaTeX Warning: Citation `Sundaresan2000' on page 19 undefined on input line 927
-.
-
-
-LaTeX Warning: Citation `Binder2007' on page 19 undefined on input line 929.
-
-
-LaTeX Warning: Citation `Milanova2005' on page 19 undefined on input line 936.
-
-
-LaTeX Warning: Citation `Smaragdakis11' on page 19 undefined on input line 936.
-
-
-
-LaTeX Warning: Citation `Codrut2014' on page 19 undefined on input line 936.
-
- (fac-tfa.bbl
+[17] [18] (fac-tfa.bbl
 Overfull \hbox (463.837pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/8 TFA: An Efficient and Precise Virtual Method Call Resolution for
  JavaA preliminary version appears in the proceedings of the $21$st Internation
@@ -1452,44 +582,38 @@ al Conference on Formal Engineering Methods (ICFEM 2019) held in Shenzhen, Chin
 a, November 5th-9th, 2019. 19
  []
 
- [19]) [20] (fac-tfa.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[19]) [20] (fac-tfa.aux) ) 
 Here is how much of TeX's memory you used:
- 5680 strings out of 492484
- 74682 string characters out of 3131048
- 347853 words of memory out of 3000000
- 9901 multiletter control sequences out of 15000+200000
+ 5683 strings out of 492484
+ 74763 string characters out of 3131048
+ 343452 words of memory out of 3000000
+ 9902 multiletter control sequences out of 15000+200000
  20458 words of font info for 85 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,19n,40p,2533b,1382s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on fac-tfa.pdf (20 pages, 894969 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmti8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+tt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on fac-tfa.pdf (20 pages, 903954 bytes).
 PDF statistics:
- 400 PDF objects out of 1000 (max. 8388607)
+ 404 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
