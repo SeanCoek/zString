@@ -1,0 +1,177 @@
+\documentclass{article}
+
+\newcommand{\less}{\sqsubseteq}
+\newcommand{\tflow}{\dashrightarrow}
+\newcommand{\hflow}{\longrightarrow}
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{threeparttable}
+\usepackage{geometry}
+
+\pagestyle{empty}
+\geometry{left=0cm,right=0cm}
+
+\begin{document}
+
+% Recall with library
+\begin{table}[!htbp]\centering
+\begin{threeparttable}[b]
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+	\hline
+	\multirow{2}{*}{\textbf{Benchmark}} & \multirow{2}{*}{\textbf{Dynamic}} & \multicolumn{3}{c|}{\textbf{CHA}} & \multicolumn{3}{c|}{\textbf{VTA}} & \multicolumn{3}{c|}{\textbf{PTA}} & \multicolumn{3}{c|}{\textbf{TFA}}\\
+\cline{3-14} &  & \textit{TP} & \textit{FN} & \textit{Recall} & \textit{TP} & \textit{FN} & \textit{Recall}& \textit{TP} & \textit{FN} & \textit{Recall} & \textit{TP} & \textit{FN} & \textit{Recall}\\
+	\hline
+	\hline
+check & 149 & 149 & 0 & 1.000 & 116 & 33 & 0.779 & 116 & 33 & 0.779 & 145 & 4 & 0.973\\
+compiler & 487 & 486 & 1 & 0.998 & 297 & 190 & 0.610 & 300 & 187 & 0.616 & 466 & 21 & 0.957\\
+compress & 351 & 351 & 0 & 1.000 & 247 & 104 & 0.704 & 313 & 38 & 0.892 & 313 & 38 & 0.892\\
+crypto & 449 & 449 & 0 & 1.000 & 279 & 170 & 0.621 & 349 & 100 & 0.777 & 406 & 43 & 0.904\\
+derby & 583 & 583 & 0 & 1.000 & 352 & 231 & 0.604 & 433 & 150 & 0.743 & 549 & 34 & 0.942\\
+helloworld & 21 & 21 & 0 & 1.000 & 20 & 1 & 0.952 & 20 & 1 & 0.952 & 21 & 0 & 1.000\\
+mpegaudio & 254 & 254 & 0 & 1.000 & 213 & 41 & 0.839 & 232 & 22 & 0.913 & 246 & 8 & 0.969\\
+scimark & 377 & 377 & 0 & 1.000 & 283 & 94 & 0.751 & 349 & 28 & 0.926 & 367 & 10 & 0.973\\
+serial & 451 & 451 & 0 & 1.000 & 298 & 153 & 0.661 & 340 & 111 & 0.754 & 399 & 52 & 0.885\\
+startup & 1344 & 1337 & 7 & 0.995 & 1048 & 296 & 0.780 & 1117 & 227 & 0.831 & 1096 & 248 & 0.815\\
+sunflow & 225 & 225 & 0 & 1.000 & 200 & 25 & 0.889 & 200 & 25 & 0.889 & 214 & 11 & 0.951\\
+xml & 513 & 513 & 0 & 1.000 & 315 & 198 & 0.614 & 407 & 106 & 0.793 & 459 & 54 & 0.895\\
+	\hline
+\end{tabular}
+\begin{tablenotes}
+  \item[1] \textbf{Dynamic} denotes the number of dynamic records.
+  \item[2] \textit{TP}, \textit{FN} denote true positive, false nagative of different algorithms, respectively.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+%% Recall without library
+%\begin{table}[!htbp]\centering
+%\begin{threeparttable}[b]
+%\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+%	\hline
+%	\multirow{2}{*}{\textbf{Benchmark}} & \multirow{2}{*}{\textbf{Dynamic}} & \multicolumn{3}{c|}{\textbf{CHA}} & \multicolumn{3}{c|}{\textbf{VTA}} & \multicolumn{3}{c|}{\textbf{PTA}} & \multicolumn{3}{c|}{\textbf{TFA}}\\
+%\cline{3-14} &  & \textit{TP} & \textit{FN} & \textit{Recall} & \textit{TP} & \textit{FN} & \textit{Recall}& \textit{TP} & \textit{FN} & \textit{Recall} & \textit{TP} & \textit{FN} & \textit{Recall}\\
+%	\hline
+%	\hline
+%check & 149 & 149 & 0 & 1.000 & 116 & 33 & 0.779 & 116 & 33 & 0.779 & 89 & 60 & 0.597\\
+%compiler & 487 & 486 & 1 & 0.998 & 297 & 190 & 0.610 & 300 & 187 & 0.616 & 361 & 126 & 0.741\\
+%compress & 351 & 351 & 0 & 1.000 & 247 & 104 & 0.704 & 313 & 38 & 0.892 & 276 & 75 & 0.786\\
+%crypto & 449 & 449 & 0 & 1.000 & 279 & 170 & 0.621 & 349 & 100 & 0.777 & 294 & 155 & 0.655\\
+%derby & 583 & 583 & 0 & 1.000 & 352 & 231 & 0.604 & 433 & 150 & 0.743 & 411 & 172 & 0.705\\
+%helloworld & 21 & 21 & 0 & 1.000 & 20 & 1 & 0.952 & 20 & 1 & 0.952 & 16 & 5 & 0.762\\
+%mpegaudio & 254 & 254 & 0 & 1.000 & 213 & 41 & 0.839 & 232 & 22 & 0.913 & 213 & 41 & 0.839\\
+%scimark & 377 & 377 & 0 & 1.000 & 283 & 94 & 0.751 & 349 & 28 & 0.926 & 332 & 45 & 0.881\\
+%serial & 451 & 451 & 0 & 1.000 & 298 & 153 & 0.661 & 340 & 111 & 0.754 & 335 & 116 & 0.743\\
+%startup & 1344 & 1337 & 7 & 0.995 & 1048 & 296 & 0.780 & 1117 & 227 & 0.831 & 804 & 540 & 0.598\\
+%sunflow & 225 & 225 & 0 & 1.000 & 200 & 25 & 0.889 & 200 & 25 & 0.889 & 192 & 33 & 0.853\\
+%xml & 513 & 513 & 0 & 1.000 & 315 & 198 & 0.614 & 407 & 106 & 0.793 & 377 & 136 & 0.735\\
+%	\hline
+%\end{tabular}
+%%\begin{tablenotes}
+%%  \item[1] \textbf{Dynamic} denotes the number of dynamic records.
+%%  \item[2] \textit{TP}, \textit{FN} denote true positive, false nagative of different algorithms, respectively.
+%%\end{tablenotes}
+%\end{threeparttable}
+%\end{table}
+
+
+
+% Precision with lib
+%
+%\begin{table}[!htbp]\centering
+%\begin{threeparttable}[b]
+%\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+%	\hline
+%	\multirow{2}{*}{\textbf{Benchmark}} & \multirow{2}{*}{\textbf{Dynamic}} & \multicolumn{3}{c|}{\textbf{CHA}} & \multicolumn{3}{c|}{\textbf{VTA}} & \multicolumn{3}{c|}{\textbf{PTA}} & \multicolumn{3}{c|}{\textbf{TFA}}\\
+%\cline{3-14} &  & \textit{TP} & \textit{FP} & \textit{Pre} & \textit{TP} & \textit{FP} & \textit{Pre} & \textit{TP} & \textit{FP} & \textit{Pre} & \textit{TP} & \textit{FP} & \textit{Pre}\\
+%	\hline
+%	\hline
+%check & 149 & 149 & 22 & 0.871 & 116 & 6 & 0.951 & 116 & 6 & 0.951 & 145 & 46 & 0.759\\
+%compiler & 487 & 486 & 427 & 0.532 & 297 & 0 & 1.000 & 300 & 0 & 1.000 & 466 & 123 & 0.791\\
+%compress & 351 & 351 & 86 & 0.803 & 247 & 0 & 1.000 & 313 & 7 & 0.978 & 313 & 50 & 0.862\\
+%crypto & 449 & 449 & 169 & 0.727 & 279 & 4 & 0.986 & 349 & 5 & 0.986 & 406 & 123 & 0.767\\
+%derby & 583 & 583 & 185 & 0.759 & 352 & 0 & 1.000 & 433 & 19 & 0.958 & 549 & 112 & 0.831\\
+%helloworld & 21 & 21 & 2 & 0.913 & 20 & 0 & 1.000 & 20 & 0 & 1.000 & 21 & 1 & 0.955\\
+%mpegaudio & 254 & 254 & 59 & 0.812 & 213 & 0 & 1.000 & 232 & 6 & 0.975 & 246 & 33 & 0.882\\
+%scimark & 377 & 377 & 135 & 0.736 & 283 & 0 & 1.000 & 349 & 54 & 0.866 & 367 & 86 & 0.810\\
+%serial & 451 & 451 & 6684 & 0.063 & 298 & 0 & 1.000 & 340 & 2336 & 0.127 & 399 & 70 & 0.851\\
+%startup & 1344 & 1337 & 1700 & 0.440 & 1048 & 837 & 0.556 & 1117 & 1021 & 0.522 & 1096 & 989 & 0.526\\
+%sunflow & 225 & 225 & 50 & 0.818 & 200 & 0 & 1.000 & 200 & 0 & 1.000 & 214 & 23 & 0.903\\
+%xml & 513 & 513 & 322 & 0.614 & 315 & 4 & 0.987 & 407 & 60 & 0.872 & 459 & 122 & 0.790\\
+%	\hline
+%\end{tabular}
+%\begin{tablenotes}
+%  \item[1] \textbf{Dynamic} denotes the number of dynamic records.
+%  \item[2] \textit{TP}, \textit{FP} and \textit{Pre} denote true positive, false nagative and presicion of different algorithms, respectively.
+%\end{tablenotes}
+%\end{threeparttable}
+%\end{table}
+
+
+%% Precision without lib
+%\begin{table}[!htbp]\centering
+%\begin{threeparttable}[b]
+%\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+%	\hline
+%	\multirow{2}{*}{\textbf{Benchmark}} & \multirow{2}{*}{\textbf{Dynamic}} & \multicolumn{3}{c|}{\textbf{CHA}} & \multicolumn{3}{c|}{\textbf{VTA}} & \multicolumn{3}{c|}{\textbf{PTA}} & \multicolumn{3}{c|}{\textbf{TFA}}\\
+%\cline{3-14} &  & \textit{TP} & \textit{FP} & \textit{Pre} & \textit{TP} & \textit{FP} & \textit{Pre} & \textit{TP} & \textit{FP} & \textit{Pre} & \textit{TP} & \textit{FP} & \textit{Pre}\\
+%	\hline
+%	\hline
+%check & 149 & 149 & 22 & 0.871 & 116 & 6 & 0.951 & 116 & 6 & 0.951 & 89 & 6 & 0.937\\
+%compiler & 487 & 486 & 427 & 0.532 & 297 & 0 & 1.000 & 300 & 0 & 1.000 & 361 & 38 & 0.905\\
+%compress & 351 & 351 & 86 & 0.803 & 247 & 0 & 1.000 & 313 & 7 & 0.978 & 276 & 31 & 0.899\\
+%crypto & 449 & 449 & 169 & 0.727 & 279 & 4 & 0.986 & 349 & 5 & 0.986 & 294 & 17 & 0.945\\
+%derby & 583 & 583 & 185 & 0.759 & 352 & 0 & 1.000 & 433 & 19 & 0.958 & 411 & 37 & 0.917\\
+%helloworld & 21 & 21 & 2 & 0.913 & 20 & 0 & 1.000 & 20 & 0 & 1.000 & 16 & 0 & 1.000\\
+%mpegaudio & 254 & 254 & 59 & 0.812 & 213 & 0 & 1.000 & 232 & 6 & 0.975 & 213 & 18 & 0.922\\
+%scimark & 377 & 377 & 135 & 0.736 & 283 & 0 & 1.000 & 349 & 54 & 0.866 & 332 & 66 & 0.834\\
+%serial & 451 & 451 & 6684 & 0.063 & 298 & 0 & 1.000 & 340 & 2336 & 0.127 & 335 & 30 & 0.918\\
+%startup & 1344 & 1337 & 1700 & 0.440 & 1048 & 837 & 0.556 & 1117 & 1021 & 0.522 & 804 & 792 & 0.504\\
+%sunflow & 225 & 225 & 50 & 0.818 & 200 & 0 & 1.000 & 200 & 0 & 1.000 & 192 & 12 & 0.941\\
+%xml & 513 & 513 & 322 & 0.614 & 315 & 4 & 0.987 & 407 & 60 & 0.872 & 377 & 84 & 0.818\\
+%	\hline
+%\end{tabular}
+%%\begin{tablenotes}
+%%  \item[1] \textbf{Dynamic} denotes the number of dynamic records.
+%%  \item[2] \textit{TP}, \textit{FP} and \textit{Pre} denote true positive, false nagative and presicion of different algorithms, respectively.
+%%\end{tablenotes}
+%\end{threeparttable}
+%\end{table}
+
+
+%% runtime cost
+%\begin{table}[!htbp]\centering
+%\begin{threeparttable}[b]
+%%\begin{table}[!htbp]\centering
+%\begin{tabular}{lccccccc}
+%	\hline
+%	\textbf{Benchmark} & \hspace{5pt}\textbf{T$_{\textsf{CHA}}(s)$}& \hspace{5pt}\textbf{T$_{\textsf{PTA}}(s)$} & \hspace{5pt}\textbf{T$_{\textsf{TFA}}(s)$} & \hspace{10pt}\textbf{R${\tflow}$}\hspace{10pt} & \hspace{10pt}\textbf{R$_{\less}$}\hspace{10pt} & \hspace{10pt}\textbf{R${\rightarrow}$}\hspace{10pt} &\textbf{R$_{total}$}\\
+%	\hline
+%check & 0.35 & 69.32 & 3.52 & 8718 & 15599 & 10089 & 34406\\
+%compiler & 0.27 & 70.34 & 1.14 & 7781 & 11277 & 1990 & 21048\\
+%compress & 0.28 & 71.73 & 1.09 & 7428 & 10947 & 1876 & 20251\\
+%crypto & 0.25 & 69.22 & 1.13 & 7575 & 11220 & 1846 & 20641\\
+%derby & 0.31 & 70.79 & 1.38 & 7979 & 11450 & 2034 & 21463\\
+%helloworld & 0.25 & 70.44 & 1.25 & 7230 & 10543 & 1828 & 19601\\
+%mpegaudio & 0.25 & 69.13 & 1.04 & 7279 & 10612 & 1830 & 19721\\
+%scimark & 0.24 & 71.01 & 1.15 & 7451 & 11344 & 1845 & 20640\\
+%serial & 0.43 & 69.20 & 1.07 & 7683 & 10977 & 1886 & 20546\\
+%startup & 0.47 & 134.09 & 1.46 & 11597 & 17870 & 2651 & 32118\\
+%sunflow & 0.25 & 71.26 & 1.07 & 7245 & 10560 & 1830 & 19635\\
+%xml & 0.45 & 140.72 & 1.24 & 7837 & 11673 & 2016 & 21526\\
+%	\hline
+%\end{tabular}
+%%\caption{Runtime cost with different analysis}
+%%\label{fig:TimeCost}
+%\begin{tablenotes}
+%  \item[1] \textbf{R}$_{relation}$ denotes different type of relation we generated.
+%\end{tablenotes}
+%%\end{table}
+%\end{threeparttable}
+%\end{table}
+
+
+\end{document}
