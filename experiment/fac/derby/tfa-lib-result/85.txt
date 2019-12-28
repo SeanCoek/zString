@@ -1,0 +1,4 @@
+IN METHOD::<spec.reporter.PlainWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.lang.String::$r4::<java.lang.String: boolean equals(java.lang.Object)>::41
+IN METHOD::<spec.reporter.PlainWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::SPECIALINVOKE::<spec.reporter.PlainWriter: void handleIterRecord(spec.reporter.BenchmarkRecord)>::42
+IN METHOD::<spec.reporter.PlainWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::SPECIALINVOKE::<java.util.Formatter: void <init>(java.io.PrintStream)>::52
+IN METHOD::<spec.reporter.PlainWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.util.Formatter::r2::<java.util.Formatter: java.util.Formatter format(java.lang.String,java.lang.Object[])>::53

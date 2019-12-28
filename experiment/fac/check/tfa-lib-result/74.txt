@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.check.PepTest: void main(java.lang.String[])>::SPECIALINVOKE::<spec.benchmarks.check.PepTest: void <init>()>::1236
+IN METHOD::<spec.benchmarks.check.PepTest: void main(java.lang.String[])>::INVOKE::spec.benchmarks.check.PepTest::r1::<spec.benchmarks.check.PepTest: void instanceMain()>::1237
+IN METHOD::<spec.benchmarks.check.PepTest: void main(java.lang.String[])>::STATICINVOKE::<java.lang.System: void exit(int)>::1239

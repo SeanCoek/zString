@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.Iterable getLocation(javax.tools.JavaFileManager$Location)>::SPECIALINVOKE::<com.sun.tools.javac.util.JavacFileManager: java.lang.Iterable getLocation(javax.tools.JavaFileManager$Location)>::301

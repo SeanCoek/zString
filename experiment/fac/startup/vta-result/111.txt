@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.scimark.fft.FFT$1: java.lang.Object initialValue()>::INVOKE::spec.benchmarks.scimark.fft.FFT$1::r0::<spec.benchmarks.scimark.fft.FFT$1: double[] initialValue()>::201

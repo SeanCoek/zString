@@ -1,0 +1,16 @@
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doubleRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::104
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doubleRange(boolean)>::INVOKE::java.io.PrintStream::$r4::void println(java.lang.String)::104
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doubleRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::106
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doubleRange(boolean)>::INVOKE::java.io.PrintStream::$r5::void println(java.lang.String)::106
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doubleRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::108
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doubleRange(boolean)>::INVOKE::java.io.PrintStream::$r6::void println(java.lang.String)::108
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doubleRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::110
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doubleRange(boolean)>::INVOKE::java.io.PrintStream::$r7::void println(java.lang.String)::110
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doubleRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::112
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doubleRange(boolean)>::INVOKE::java.io.PrintStream::$r8::void println(java.lang.String)::112
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doubleRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::133
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doubleRange(boolean)>::INVOKE::java.io.PrintStream::$r0::void println(java.lang.String)::133
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doubleRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::135
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doubleRange(boolean)>::INVOKE::java.io.PrintStream::$r1::void println(java.lang.String)::135
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doubleRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::137
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doubleRange(boolean)>::INVOKE::java.io.PrintStream::$r2::void println(java.lang.String)::137

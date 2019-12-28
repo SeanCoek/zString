@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void doComputing(java.math.BigDecimal,int,byte[])>::SPECIALINVOKE::<spec.benchmarks.derby.DerbyHarness$Client: void updateStatistic(java.math.BigDecimal)>::165
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void doComputing(java.math.BigDecimal,int,byte[])>::STATICINVOKE::<spec.benchmarks.derby.Utils: int[] bytesToInts(byte[],int,int[])>::166
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void doComputing(java.math.BigDecimal,int,byte[])>::STATICINVOKE::<spec.benchmarks.derby.Utils: long bytesToLong(byte[],int)>::167
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void doComputing(java.math.BigDecimal,int,byte[])>::SPECIALINVOKE::<spec.benchmarks.derby.DerbyHarness$Client: int getTimeIndex(long)>::167
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void doComputing(java.math.BigDecimal,int,byte[])>::SPECIALINVOKE::<spec.benchmarks.derby.DerbyHarness$Client: java.math.BigDecimal getRates(boolean,java.lang.Object)>::169

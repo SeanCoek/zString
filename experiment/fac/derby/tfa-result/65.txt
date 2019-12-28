@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.derby.Utils: java.lang.String getPreparedSelectQuery(int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::138
+IN METHOD::<spec.benchmarks.derby.Utils: java.lang.String getPreparedSelectQuery(int)>::INVOKE::java.lang.StringBuilder::$r0::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::138

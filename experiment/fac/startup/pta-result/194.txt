@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.compiler.Util: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::29

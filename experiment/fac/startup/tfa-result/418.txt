@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void writeDiffToFile(int,int,java.lang.String[])>::SPECIALINVOKE::<java.io.FileOutputStream: void <init>(java.lang.String)>::135
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void writeDiffToFile(int,int,java.lang.String[])>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::137
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void writeDiffToFile(int,int,java.lang.String[])>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::137
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void writeDiffToFile(int,int,java.lang.String[])>::INVOKE::java.io.FileOutputStream::$r16::<java.io.FileOutputStream: void write(byte[])>::140
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void writeDiffToFile(int,int,java.lang.String[])>::SPECIALINVOKE::<spec.benchmarks.xml.transform.ExtOutputStream: java.lang.String getSendResultsMessage()>::144

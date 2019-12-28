@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.Iterable getLocation(javax.tools.JavaFileManager$Location)>::INVOKE::java.util.HashMap::$r3::<java.util.HashMap: boolean containsKey(java.lang.Object)>::298
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.Iterable getLocation(javax.tools.JavaFileManager$Location)>::INVOKE::java.util.HashMap::$r6::<java.util.HashMap: java.lang.Object get(java.lang.Object)>::299
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.Iterable getLocation(javax.tools.JavaFileManager$Location)>::SPECIALINVOKE::<com.sun.tools.javac.util.JavacFileManager: java.lang.Iterable getLocation(javax.tools.JavaFileManager$Location)>::301
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.Iterable getLocation(javax.tools.JavaFileManager$Location)>::INVOKE::java.util.HashMap::$r4::<java.util.HashMap: java.lang.Object put(java.lang.Object,java.lang.Object)>::302

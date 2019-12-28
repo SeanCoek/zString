@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void handleErrorValidation(int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::73
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void handleErrorValidation(int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::73
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void handleErrorValidation(int)>::INVOKE::java.lang.StringBuilder::$r2::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::73
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void handleErrorValidation(int)>::INVOKE::java.lang.StringBuilder::$r4::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::73
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void handleErrorValidation(int)>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.String toString()>::73

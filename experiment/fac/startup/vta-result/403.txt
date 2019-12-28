@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: java.lang.String getFullName(java.lang.Class,java.lang.String,java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::69
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: java.lang.String getFullName(java.lang.Class,java.lang.String,java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::70
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: java.lang.String getFullName(java.lang.Class,java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::70

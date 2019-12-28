@@ -1,0 +1,33 @@
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::STATICINVOKE::<spec.benchmarks.serial.Utils: java.util.BitSet createBitSet()>::75
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::spec.benchmarks.serial.Main$1::$r4::void reset()::76
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::SPECIALINVOKE::<java.io.ObjectOutputStream: void <init>(java.io.OutputStream)>::77
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::java.io.ObjectOutputStream::r2::void writeObject(java.lang.Object)::80
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::java.io.ObjectOutputStream::r2::void flush()::82
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::java.io.ObjectOutputStream::r2::void reset()::83
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::spec.benchmarks.serial.Main$1::$r8::byte[] toByteArray()::86
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::spec.benchmarks.serial.Main$1::$r10::int size()::86
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::SPECIALINVOKE::<java.io.ByteArrayInputStream: void <init>(byte[],int,int)>::86
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::SPECIALINVOKE::<java.io.ObjectInputStream: void <init>(java.io.InputStream)>::87
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::java.io.ObjectInputStream::r20::java.lang.Object readObject()::90
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::java.util.BitSet::r1::boolean get(int)::92
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::spec.benchmarks.serial.data.TestArray::r3::boolean equals(java.lang.Object)::89
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::java.util.BitSet::r1::void set(int,boolean)::92
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::spec.benchmarks.serial.data.TestArrayList::r3::boolean equals(java.lang.Object)::89
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::spec.benchmarks.serial.data.TestByteArray::r3::boolean equals(java.lang.Object)::89
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::spec.benchmarks.serial.data.TestClassReferenceTest::r3::boolean equals(java.lang.Object)::89
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::spec.benchmarks.serial.data.TestClassWithSQLDateOnly::r3::boolean equals(java.lang.Object)::89
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::spec.benchmarks.serial.data.TestDomainObject::r3::boolean equals(java.lang.Object)::89
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::spec.benchmarks.serial.data.TestExceptionReference::r3::boolean equals(java.lang.Object)::89
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::spec.benchmarks.serial.data.TestExternalizable::r3::boolean equals(java.lang.Object)::89
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::spec.benchmarks.serial.data.TestHugeData::r3::boolean equals(java.lang.Object)::89
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::spec.benchmarks.serial.data.TestParent::r3::boolean equals(java.lang.Object)::89
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::spec.benchmarks.serial.data.TestPayload::r3::boolean equals(java.lang.Object)::89
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::spec.benchmarks.serial.data.TestProxy::r3::boolean equals(java.lang.Object)::89
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::spec.benchmarks.serial.data.TestReadResolve::r3::boolean equals(java.lang.Object)::89
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::spec.benchmarks.serial.data.TestSimple::r3::boolean equals(java.lang.Object)::89
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::spec.benchmarks.serial.data.TestWithBigDecimal::r3::boolean equals(java.lang.Object)::89
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::spec.benchmarks.serial.data.TestWithFinalField::r3::boolean equals(java.lang.Object)::89
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::java.io.ObjectOutputStream::r2::void close()::97
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::java.io.ObjectInputStream::r20::void close()::98
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::99
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::STATICINVOKE::<spec.benchmarks.serial.Utils: void printResult(java.io.PrintStream,java.util.BitSet)>::99

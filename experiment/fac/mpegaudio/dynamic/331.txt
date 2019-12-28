@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.mpegaudio.Main: long runBenchmark(int)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::25
+IN METHOD::<spec.benchmarks.mpegaudio.Main: long runBenchmark(int)>::SPECIALINVOKE::<spec.benchmarks.mpegaudio.Harness: void <init>()>::27
+IN METHOD::<spec.benchmarks.mpegaudio.Main: long runBenchmark(int)>::INVOKE::spec.benchmarks.mpegaudio.Harness::$r1::void inst_main(int)::27
+IN METHOD::<spec.benchmarks.mpegaudio.Main: long runBenchmark(int)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::31

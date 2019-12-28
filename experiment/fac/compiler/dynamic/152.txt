@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.compiler.MainBase: void harnessMain()>::INVOKE::spec.benchmarks.compiler.Compiler::$r1::void compile(int)::53

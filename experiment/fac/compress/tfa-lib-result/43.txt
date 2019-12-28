@@ -1,0 +1,4 @@
+IN METHOD::<spec.reporter.BenchmarkRecord: void <init>(java.lang.String,int)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::53
+IN METHOD::<spec.reporter.BenchmarkRecord: void <init>(java.lang.String,int)>::SPECIALINVOKE::<java.util.ArrayList: void <init>()>::48
+IN METHOD::<spec.reporter.BenchmarkRecord: void <init>(java.lang.String,int)>::INVOKE::java.lang.String::r1::<java.lang.String: int indexOf(java.lang.String)>::55
+IN METHOD::<spec.reporter.BenchmarkRecord: void <init>(java.lang.String,int)>::INVOKE::any_subtype_of::java.lang.String::r1::<java.lang.String: int indexOf(java.lang.String)>::55

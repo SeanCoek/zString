@@ -1,0 +1,7 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void fillDurationsTable(int,int,int)>::SPECIALINVOKE::<spec.benchmarks.derby.DataReader: void <init>(int,int)>::395
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void fillDurationsTable(int,int,int)>::SPECIALINVOKE::<spec.benchmarks.derby.InitThread: void <init>(int,spec.benchmarks.derby.DataReader,int)>::398
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void fillDurationsTable(int,int,int)>::INVOKE::spec.benchmarks.derby.InitThread::$r7::void start()::399
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void fillDurationsTable(int,int,int)>::INVOKE::spec.benchmarks.derby.InitThread::$r5::void join()::404
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void fillDurationsTable(int,int,int)>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: java.sql.Connection getNestedConnection(int)>::410
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void fillDurationsTable(int,int,int)>::STATICINVOKE::<spec.benchmarks.derby.Utils: java.lang.String getInsertIntoDurationQuery(int,int)>::413
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void fillDurationsTable(int,int,int)>::INVOKE::spec.benchmarks.derby.DataReader::r0::void close()::415

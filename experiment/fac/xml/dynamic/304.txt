@@ -1,0 +1,2 @@
+IN METHOD::<spec.io.FileCache$CachedFile: void <init>(spec.io.FileCache,java.lang.String)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::112
+IN METHOD::<spec.io.FileCache$CachedFile: void <init>(spec.io.FileCache,java.lang.String)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::112

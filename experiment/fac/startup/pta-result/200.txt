@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getTmpDir(java.io.File,boolean)>::STATICINVOKE::<java.lang.System: java.lang.String getProperty(java.lang.String)>::106
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getTmpDir(java.io.File,boolean)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::109
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getTmpDir(java.io.File,boolean)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::109
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getTmpDir(java.io.File,boolean)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::112

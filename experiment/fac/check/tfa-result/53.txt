@@ -1,0 +1,15 @@
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClass()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: java.lang.String checkClassNameOf(java.lang.String,java.lang.Object,java.lang.String)>::733
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClass()>::STATICINVOKE::<java.lang.Integer: java.lang.Integer valueOf(int)>::735
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClass()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: java.lang.String checkClassNameOf(java.lang.String,java.lang.Object,java.lang.String)>::735
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClass()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: java.lang.String checkClassNameOf(java.lang.String,java.lang.Object,java.lang.String)>::737
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClass()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: java.lang.String checkClassNameOf(java.lang.String,java.lang.Object,java.lang.String)>::739
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClass()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: java.lang.String checkClassNameOf(java.lang.String,java.lang.Object,java.lang.String)>::741
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClass()>::SPECIALINVOKE::<java.util.Hashtable: void <init>()>::743
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClass()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: java.lang.String checkClassNameOf(java.lang.String,java.lang.Object,java.lang.String)>::743
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClass()>::INVOKE::java.lang.Object::r1::<java.lang.Object: java.lang.Class getClass()>::748
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClass()>::INVOKE::java.lang.Object::r1::<java.lang.Object: java.lang.Class getClass()>::750
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClass()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: void printInterfaces(java.lang.Class)>::750
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClass()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: void printInterfaces(java.lang.Class)>::753
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClass()>::SPECIALINVOKE::<java.util.Hashtable: void <init>()>::759
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClass()>::INVOKE::java.lang.Object::$r10::<java.lang.Object: java.lang.Class getClass()>::759
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClass()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: void printInterfaces(java.lang.Class)>::761

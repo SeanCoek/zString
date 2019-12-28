@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void runTidy()>::SPECIALINVOKE::<java.io.FileInputStream: void <init>(java.lang.String)>::168
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void runTidy()>::SPECIALINVOKE::<java.io.FileOutputStream: void <init>(java.lang.String)>::169
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void runTidy()>::SPECIALINVOKE::<org.w3c.tidy.Tidy: void <init>()>::170
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void runTidy()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::182
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void runTidy()>::SPECIALINVOKE::<spec.benchmarks.xml.transform.ExtOutputStream: java.lang.String getSendResultsMessage()>::183

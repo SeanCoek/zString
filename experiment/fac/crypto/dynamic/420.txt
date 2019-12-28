@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.crypto.signverify.Main: boolean verify(byte[],java.lang.String,byte[],java.security.PublicKey)>::STATICINVOKE::<java.security.Signature: java.security.Signature getInstance(java.lang.String)>::58
+IN METHOD::<spec.benchmarks.crypto.signverify.Main: boolean verify(byte[],java.lang.String,byte[],java.security.PublicKey)>::INVOKE::java.security.Signature$Delegate::r12::void initVerify(java.security.PublicKey)::59
+IN METHOD::<spec.benchmarks.crypto.signverify.Main: boolean verify(byte[],java.lang.String,byte[],java.security.PublicKey)>::INVOKE::java.security.Signature$Delegate::r12::void update(byte[])::61
+IN METHOD::<spec.benchmarks.crypto.signverify.Main: boolean verify(byte[],java.lang.String,byte[],java.security.PublicKey)>::INVOKE::java.security.Signature$Delegate::r12::boolean verify(byte[])::63

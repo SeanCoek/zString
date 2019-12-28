@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.compiler.Util: byte[] getBytes(java.io.InputStream)>::STATICINVOKE::<spec.benchmarks.compiler.Util: byte[] updateBuffer(byte[],byte[],int,int)>::190

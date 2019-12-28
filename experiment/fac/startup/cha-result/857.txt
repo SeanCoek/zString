@@ -1,0 +1,4 @@
+IN METHOD::<spec.harness.Util: java.lang.String getSizeFromHeapArg(java.lang.String)>::INVOKE::java.lang.String::r0::<java.lang.String: int length()>::373
+IN METHOD::<spec.harness.Util: java.lang.String getSizeFromHeapArg(java.lang.String)>::INVOKE::java.lang.String::r0::<java.lang.String: char charAt(int)>::374
+IN METHOD::<spec.harness.Util: java.lang.String getSizeFromHeapArg(java.lang.String)>::STATICINVOKE::<java.lang.Character: boolean isDigit(char)>::374
+IN METHOD::<spec.harness.Util: java.lang.String getSizeFromHeapArg(java.lang.String)>::INVOKE::java.lang.String::r0::<java.lang.String: java.lang.String substring(int)>::375

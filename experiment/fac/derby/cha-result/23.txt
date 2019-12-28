@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$1: void run()>::INVOKE::java.lang.Thread::r0::<java.lang.Thread: java.lang.String getName()>::439
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$1: void run()>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void access$000(java.lang.String)>::439

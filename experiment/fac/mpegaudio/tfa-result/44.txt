@@ -1,0 +1,1 @@
+IN METHOD::<spec.reporter.ReportGenerator: void generateHat(spec.reporter.Writer,java.lang.String,java.lang.String,java.lang.String)>::SPECIALINVOKE::<spec.reporter.ReportGenerator: java.lang.String getProperty(java.lang.String)>::166

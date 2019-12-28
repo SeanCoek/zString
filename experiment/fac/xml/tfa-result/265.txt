@@ -1,0 +1,7 @@
+IN METHOD::<spec.harness.analyzer.TempSensor: void startRun(int,int,int)>::STATICINVOKE::<java.lang.Integer: java.lang.Integer valueOf(int)>::131
+IN METHOD::<spec.harness.analyzer.TempSensor: void startRun(int,int,int)>::STATICINVOKE::<java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>::131
+IN METHOD::<spec.harness.analyzer.TempSensor: void startRun(int,int,int)>::SPECIALINVOKE::<spec.harness.analyzer.TempSensor: int writeMeter(java.lang.String)>::132
+IN METHOD::<spec.harness.analyzer.TempSensor: void startRun(int,int,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::134
+IN METHOD::<spec.harness.analyzer.TempSensor: void startRun(int,int,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::134
+IN METHOD::<spec.harness.analyzer.TempSensor: void startRun(int,int,int)>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::134
+IN METHOD::<spec.harness.analyzer.TempSensor: void startRun(int,int,int)>::SPECIALINVOKE::<spec.harness.analyzer.TempSensor: java.lang.String readMeter()>::134

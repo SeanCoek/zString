@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: void reset()>::SPECIALINVOKE::<java.util.HashMap: void <init>()>::209
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: void reset()>::SPECIALINVOKE::<java.util.HashMap: void <init>()>::210
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: void reset()>::SPECIALINVOKE::<java.util.HashMap: void <init>()>::211
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: void reset()>::SPECIALINVOKE::<java.util.HashMap: void <init>()>::209
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: void reset()>::SPECIALINVOKE::<java.util.HashMap: void <init>()>::210
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: void reset()>::SPECIALINVOKE::<java.util.HashMap: void <init>()>::211

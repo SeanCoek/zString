@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.compress.Compressor: void clBlock()>::SPECIALINVOKE::<spec.benchmarks.compress.Compressor: void output(int)>::439

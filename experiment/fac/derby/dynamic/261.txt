@@ -1,0 +1,8 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createDurationsTable(java.lang.String,java.lang.String,java.sql.Connection)>::STATICINVOKE::<spec.benchmarks.derby.Utils: java.lang.String getCreateDurationsTableQuery(java.lang.String,int)>::324
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createDurationsTable(java.lang.String,java.lang.String,java.sql.Connection)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::326
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createDurationsTable(java.lang.String,java.lang.String,java.sql.Connection)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createDurationsTable(java.lang.String,java.lang.String,java.sql.Connection)>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createDurationsTable(java.lang.String,java.lang.String,java.sql.Connection)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createDurationsTable(java.lang.String,java.lang.String,java.sql.Connection)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createDurationsTable(java.lang.String,java.lang.String,java.sql.Connection)>::INVOKE::java.lang.StringBuilder::$r9::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createDurationsTable(java.lang.String,java.lang.String,java.sql.Connection)>::INVOKE::java.lang.StringBuilder::$r10::java.lang.String toString()::326

@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.analyzer.TempSensor: void stop()>::SPECIALINVOKE::<spec.harness.analyzer.TempSensor: int writeMeter(java.lang.String)>::144
+IN METHOD::<spec.harness.analyzer.TempSensor: void stop()>::SPECIALINVOKE::<spec.harness.analyzer.TempSensor: java.lang.String readMeter()>::145

@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.check.PepTest: void checkAllNull(java.lang.Object[])>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::814
+IN METHOD::<spec.benchmarks.check.PepTest: void checkAllNull(java.lang.Object[])>::INVOKE::java.io.PrintStream::$r3::<java.io.PrintStream: void println(java.lang.String)>::814

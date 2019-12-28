@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.compress.Compressor: void <init>(spec.benchmarks.compress.InputBuffer,spec.benchmarks.compress.OutputBuffer)>::SPECIALINVOKE::<spec.benchmarks.compress.CompBase: void <init>(spec.benchmarks.compress.InputBuffer,spec.benchmarks.compress.OutputBuffer)>::238
+IN METHOD::<spec.benchmarks.compress.Compressor: void <init>(spec.benchmarks.compress.InputBuffer,spec.benchmarks.compress.OutputBuffer)>::SPECIALINVOKE::<spec.benchmarks.compress.Compressor$HashTable: void <init>()>::258
+IN METHOD::<spec.benchmarks.compress.Compressor: void <init>(spec.benchmarks.compress.InputBuffer,spec.benchmarks.compress.OutputBuffer)>::SPECIALINVOKE::<spec.benchmarks.compress.CodeTable: void <init>()>::259

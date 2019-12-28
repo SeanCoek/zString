@@ -1,0 +1,12 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createDatabases()>::STATICINVOKE::<spec.benchmarks.derby.Utils: void print(java.lang.String)>::425
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createDatabases()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::428
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createDatabases()>::STATICINVOKE::<spec.benchmarks.derby.Utils: void print(java.lang.String)>::428
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createDatabases()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::429
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createDatabases()>::STATICINVOKE::<spec.benchmarks.derby.Utils: void print(java.lang.String)>::429
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createDatabases()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::430
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createDatabases()>::STATICINVOKE::<spec.benchmarks.derby.Utils: void print(java.lang.String)>::430
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createDatabases()>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void createBaseDatabase(int,int,int)>::431
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createDatabases()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::435
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createDatabases()>::SPECIALINVOKE::<spec.benchmarks.derby.DerbyHarness$1: void <init>(java.lang.String)>::435
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createDatabases()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::451
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createDatabases()>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void doRestoring(java.lang.String)>::451

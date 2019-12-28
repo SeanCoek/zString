@@ -1,0 +1,11 @@
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::STATICINVOKE::<spec.benchmarks.compiler.Util: java.io.File getSrcFile(java.io.File)>::44
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::STATICINVOKE::<spec.benchmarks.compiler.Util: java.io.File getSrcDir(java.io.File,java.lang.String)>::45
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::STATICINVOKE::<spec.benchmarks.compiler.Util: java.io.File getZipFile(java.io.File)>::46
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::SPECIALINVOKE::<java.util.ArrayList: void <init>()>::48
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::SPECIALINVOKE::<java.io.FileWriter: void <init>(java.io.File)>::49
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::STATICINVOKE::<spec.benchmarks.compiler.Util: void unzip(java.lang.String,java.lang.String,java.util.ArrayList)>::50
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::57
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::58
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::STATICINVOKE::<spec.benchmarks.compiler.Util: java.lang.String linesep()>::63
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::69
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String)>::69

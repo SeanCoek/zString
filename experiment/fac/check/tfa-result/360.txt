@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::INVOKE::java.lang.String::r0::<java.lang.String: boolean startsWith(java.lang.String)>::253
+IN METHOD::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::INVOKE::java.lang.String::r0::<java.lang.String: boolean equals(java.lang.Object)>::253

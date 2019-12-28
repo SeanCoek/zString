@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.xml.validation.Main: void doValidationTests(int,spec.io.FileCache$CachedFile,javax.xml.validation.Validator)>::SPECIALINVOKE::<spec.benchmarks.xml.validation.Main: void validateSource(int,javax.xml.transform.Source,javax.xml.validation.Validator)>::158
+IN METHOD::<spec.benchmarks.xml.validation.Main: void doValidationTests(int,spec.io.FileCache$CachedFile,javax.xml.validation.Validator)>::SPECIALINVOKE::<spec.benchmarks.xml.validation.Main: void validateSource(int,javax.xml.transform.Source,javax.xml.validation.Validator)>::159

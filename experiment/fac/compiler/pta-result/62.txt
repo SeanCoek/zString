@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.compiler.Util: byte[] getBytes(java.io.File)>::SPECIALINVOKE::<java.io.FileInputStream: void <init>(java.lang.String)>::198
+IN METHOD::<spec.benchmarks.compiler.Util: byte[] getBytes(java.io.File)>::STATICINVOKE::<spec.benchmarks.compiler.Util: byte[] getBytes(java.io.InputStream)>::199

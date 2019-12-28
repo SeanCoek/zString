@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.crypto.Util: boolean check(byte[],byte[])>::STATICINVOKE::<java.util.Arrays: boolean equals(byte[],byte[])>::106
+IN METHOD::<spec.benchmarks.crypto.Util: boolean check(byte[],byte[])>::STATICINVOKE::<java.util.Arrays: boolean equals(byte[],byte[])>::106

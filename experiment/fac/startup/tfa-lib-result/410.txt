@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: javax.xml.transform.Source createDomSource(spec.io.FileCache$CachedFile)>::SPECIALINVOKE::<javax.xml.transform.dom.DOMSource: void <init>(org.w3c.dom.Node)>::61

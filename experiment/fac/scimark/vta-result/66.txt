@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.scimark.monte_carlo.MonteCarlo: void run()>::SPECIALINVOKE::<spec.benchmarks.scimark.utils.Random: void <init>(int)>::104

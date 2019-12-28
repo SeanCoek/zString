@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.derby.Utils: java.util.HashMap createRatesMap(int,int,int,java.math.BigDecimal)>::SPECIALINVOKE::<java.util.HashMap: void <init>()>::92
+IN METHOD::<spec.benchmarks.derby.Utils: java.util.HashMap createRatesMap(int,int,int,java.math.BigDecimal)>::STATICINVOKE::<java.text.NumberFormat: java.text.NumberFormat getNumberInstance()>::94
+IN METHOD::<spec.benchmarks.derby.Utils: java.util.HashMap createRatesMap(int,int,int,java.math.BigDecimal)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::101
+IN METHOD::<spec.benchmarks.derby.Utils: java.util.HashMap createRatesMap(int,int,int,java.math.BigDecimal)>::SPECIALINVOKE::<java.math.BigDecimal: void <init>(java.lang.String)>::101

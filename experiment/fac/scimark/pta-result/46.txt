@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.scimark.utils.Stopwatch: void start()>::STATICINVOKE::<spec.benchmarks.scimark.utils.Stopwatch: double seconds()>::69

@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.analyzer.CallbackAnalyzerExample$TheNumberGenerator: void <clinit>()>::SPECIALINVOKE::<spec.harness.analyzer.CallbackAnalyzerExample$TheNumberGenerator: void <init>()>::119

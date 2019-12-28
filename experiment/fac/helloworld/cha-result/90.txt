@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.SPECSubmissionPreparer: void main(java.lang.String[])>::INVOKE::java.io.PrintStream::$r1::<java.io.PrintStream: void println(java.lang.String)>::139
+IN METHOD::<spec.reporter.SPECSubmissionPreparer: void main(java.lang.String[])>::STATICINVOKE::<spec.reporter.SPECSubmissionPreparer: void prepareFiles(java.lang.String[])>::141

@@ -1,0 +1,14 @@
+IN METHOD::<spec.benchmarks.serial.data.TestParent: boolean equals(java.lang.Object)>::INVOKE::java.lang.Object::$r17::<java.lang.Object: boolean equals(java.lang.Object)>::99
+IN METHOD::<spec.benchmarks.serial.data.TestParent: boolean equals(java.lang.Object)>::INVOKE::java.lang.String::$r17::<java.lang.String: boolean equals(java.lang.Object)>::99
+IN METHOD::<spec.benchmarks.serial.data.TestParent: boolean equals(java.lang.Object)>::INVOKE::java.util.AbstractMap::$r4::<java.util.AbstractMap: int size()>::107
+IN METHOD::<spec.benchmarks.serial.data.TestParent: boolean equals(java.lang.Object)>::INVOKE::java.util.HashMap::$r4::<java.util.HashMap: int size()>::107
+IN METHOD::<spec.benchmarks.serial.data.TestParent: boolean equals(java.lang.Object)>::INVOKE::java.util.AbstractMap::$r5::<java.util.AbstractMap: int size()>::107
+IN METHOD::<spec.benchmarks.serial.data.TestParent: boolean equals(java.lang.Object)>::INVOKE::java.util.HashMap::$r5::<java.util.HashMap: int size()>::107
+IN METHOD::<spec.benchmarks.serial.data.TestParent: boolean equals(java.lang.Object)>::INVOKE::java.lang.Object::$r7::<java.lang.Object: boolean equals(java.lang.Object)>::115
+IN METHOD::<spec.benchmarks.serial.data.TestParent: boolean equals(java.lang.Object)>::INVOKE::java.lang.Integer::$r7::<java.lang.Integer: boolean equals(java.lang.Object)>::115
+IN METHOD::<spec.benchmarks.serial.data.TestParent: boolean equals(java.lang.Object)>::INVOKE::java.lang.Object::$r9::<java.lang.Object: boolean equals(java.lang.Object)>::117
+IN METHOD::<spec.benchmarks.serial.data.TestParent: boolean equals(java.lang.Object)>::INVOKE::java.lang.Long::$r9::<java.lang.Long: boolean equals(java.lang.Object)>::117
+IN METHOD::<spec.benchmarks.serial.data.TestParent: boolean equals(java.lang.Object)>::INVOKE::java.lang.Object::$r11::<java.lang.Object: boolean equals(java.lang.Object)>::121
+IN METHOD::<spec.benchmarks.serial.data.TestParent: boolean equals(java.lang.Object)>::INVOKE::java.util.Date::$r11::<java.util.Date: boolean equals(java.lang.Object)>::121
+IN METHOD::<spec.benchmarks.serial.data.TestParent: boolean equals(java.lang.Object)>::INVOKE::java.util.Date::$r13::<java.util.Date: boolean equals(java.lang.Object)>::122
+IN METHOD::<spec.benchmarks.serial.data.TestParent: boolean equals(java.lang.Object)>::INVOKE::java.lang.Object::$r13::<java.lang.Object: boolean equals(java.lang.Object)>::122

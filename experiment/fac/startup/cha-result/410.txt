@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.serial.data.TestExternalizable: spec.benchmarks.serial.data.TestExternalizable createTestInstance()>::SPECIALINVOKE::<java.util.Random: void <init>()>::34
+IN METHOD::<spec.benchmarks.serial.data.TestExternalizable: spec.benchmarks.serial.data.TestExternalizable createTestInstance()>::INVOKE::java.util.concurrent.ThreadLocalRandom::$r0::<java.util.concurrent.ThreadLocalRandom: int nextInt()>::34
+IN METHOD::<spec.benchmarks.serial.data.TestExternalizable: spec.benchmarks.serial.data.TestExternalizable createTestInstance()>::INVOKE::java.util.Random::$r0::<java.util.Random: int nextInt()>::34
+IN METHOD::<spec.benchmarks.serial.data.TestExternalizable: spec.benchmarks.serial.data.TestExternalizable createTestInstance()>::SPECIALINVOKE::<spec.benchmarks.serial.data.TestExternalizable: void <init>(int)>::35

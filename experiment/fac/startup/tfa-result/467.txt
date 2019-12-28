@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void dropTable(java.sql.Connection,java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::292
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void dropTable(java.sql.Connection,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r2::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::292

@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.derby.Utils: void print(java.lang.String)>::INVOKE::java.io.PrintStream::$r1::<java.io.PrintStream: void println(java.lang.String)>::175

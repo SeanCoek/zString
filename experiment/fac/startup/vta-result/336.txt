@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: void <init>()>::SPECIALINVOKE::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::42

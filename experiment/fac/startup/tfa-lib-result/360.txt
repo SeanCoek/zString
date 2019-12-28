@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.data.TestBigInteger: boolean equals(java.lang.Object)>::SPECIALINVOKE::<java.math.BigInteger: boolean equals(java.lang.Object)>::28

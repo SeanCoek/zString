@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.serial.data.TestByteArray: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::21
+IN METHOD::<spec.benchmarks.serial.data.TestByteArray: void <init>()>::SPECIALINVOKE::<java.util.Random: void <init>()>::23
+IN METHOD::<spec.benchmarks.serial.data.TestByteArray: void <init>()>::INVOKE::java.util.Random::r1::<java.util.Random: void nextBytes(byte[])>::24
+IN METHOD::<spec.benchmarks.serial.data.TestByteArray: void <init>()>::INVOKE::java.security.SecureRandom::r1::<java.security.SecureRandom: void nextBytes(byte[])>::24

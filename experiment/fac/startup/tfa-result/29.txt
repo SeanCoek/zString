@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.crypto.Util: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::12

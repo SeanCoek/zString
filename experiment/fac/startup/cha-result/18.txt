@@ -1,0 +1,3 @@
+IN METHOD::<spec.io.FileCache: void clearCache()>::INVOKE::java.util.AbstractMap::$r1::<java.util.AbstractMap: void clear()>::57
+IN METHOD::<spec.io.FileCache: void clearCache()>::INVOKE::java.util.HashMap::$r1::<java.util.HashMap: void clear()>::57
+IN METHOD::<spec.io.FileCache: void clearCache()>::INVOKE::java.util.LinkedHashMap::$r1::<java.util.LinkedHashMap: void clear()>::57

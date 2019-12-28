@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.scimark.utils.Stopwatch: double read()>::STATICINVOKE::<spec.benchmarks.scimark.utils.Stopwatch: double seconds()>::105
+IN METHOD::<spec.benchmarks.scimark.utils.Stopwatch: double read()>::STATICINVOKE::<spec.benchmarks.scimark.utils.Stopwatch: double seconds()>::106

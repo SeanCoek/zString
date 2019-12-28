@@ -1,0 +1,8 @@
+IN METHOD::<spec.benchmarks.xml.validation.Main: void executeWorkload()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::149
+IN METHOD::<spec.benchmarks.xml.validation.Main: void executeWorkload()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::149
+IN METHOD::<spec.benchmarks.xml.validation.Main: void executeWorkload()>::INVOKE::java.lang.StringBuilder::$r2::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::149
+IN METHOD::<spec.benchmarks.xml.validation.Main: void executeWorkload()>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::149
+IN METHOD::<spec.benchmarks.xml.validation.Main: void executeWorkload()>::INVOKE::java.lang.Object::$r6::<java.lang.Object: java.lang.String toString()>::149
+IN METHOD::<spec.benchmarks.xml.validation.Main: void executeWorkload()>::INVOKE::java.lang.StringBuilder::$r6::<java.lang.StringBuilder: java.lang.String toString()>::149
+IN METHOD::<spec.benchmarks.xml.validation.Main: void executeWorkload()>::INVOKE::java.io.PrintStream::$r1::<java.io.PrintStream: void println(java.lang.String)>::149
+IN METHOD::<spec.benchmarks.xml.validation.Main: void executeWorkload()>::SPECIALINVOKE::<spec.benchmarks.xml.validation.Main: void doValidationTests(int,spec.io.FileCache$CachedFile,javax.xml.validation.Validator)>::150

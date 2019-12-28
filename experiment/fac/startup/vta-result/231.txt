@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.compress.Compress: spec.benchmarks.compress.OutputBuffer performAction(byte[],int,int,byte[])>::SPECIALINVOKE::<spec.benchmarks.compress.InputBuffer: void <init>(int,byte[])>::74
+IN METHOD::<spec.benchmarks.compress.Compress: spec.benchmarks.compress.OutputBuffer performAction(byte[],int,int,byte[])>::SPECIALINVOKE::<spec.benchmarks.compress.OutputBuffer: void <init>(byte[])>::75
+IN METHOD::<spec.benchmarks.compress.Compress: spec.benchmarks.compress.OutputBuffer performAction(byte[],int,int,byte[])>::SPECIALINVOKE::<spec.benchmarks.compress.Compressor: void <init>(spec.benchmarks.compress.InputBuffer,spec.benchmarks.compress.OutputBuffer)>::78
+IN METHOD::<spec.benchmarks.compress.Compress: spec.benchmarks.compress.OutputBuffer performAction(byte[],int,int,byte[])>::SPECIALINVOKE::<spec.benchmarks.compress.Decompressor: void <init>(spec.benchmarks.compress.InputBuffer,spec.benchmarks.compress.OutputBuffer)>::80

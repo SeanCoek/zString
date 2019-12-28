@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: void transform_internal(double[],int)>::STATICINVOKE::<java.lang.Math: double sin(double)>::116
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: void transform_internal(double[],int)>::STATICINVOKE::<java.lang.Math: double sin(double)>::117

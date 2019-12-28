@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: javax.xml.transform.Source createSaxSource(spec.io.FileCache$CachedFile)>::INVOKE::spec.io.FileCache$CachedFile::r1::org.xml.sax.InputSource asNewInputSource()::65
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: javax.xml.transform.Source createSaxSource(spec.io.FileCache$CachedFile)>::SPECIALINVOKE::<javax.xml.transform.sax.SAXSource: void <init>(org.xml.sax.XMLReader,org.xml.sax.InputSource)>::65
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: javax.xml.transform.Source createSaxSource(spec.io.FileCache$CachedFile)>::INVOKE::spec.io.FileCache$CachedFile::r1::org.xml.sax.InputSource asNewInputSource()::65
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: javax.xml.transform.Source createSaxSource(spec.io.FileCache$CachedFile)>::SPECIALINVOKE::<javax.xml.transform.sax.SAXSource: void <init>(org.xml.sax.XMLReader,org.xml.sax.InputSource)>::65

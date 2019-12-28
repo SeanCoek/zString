@@ -1,0 +1,9 @@
+IN METHOD::<spec.benchmarks.compress.Harness: void runCompress(int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::41
+IN METHOD::<spec.benchmarks.compress.Harness: void runCompress(int)>::STATICINVOKE::<spec.benchmarks.compress.Compress: spec.benchmarks.compress.OutputBuffer performAction(byte[],int,int,byte[])>::46
+IN METHOD::<spec.benchmarks.compress.Harness: void runCompress(int)>::STATICINVOKE::<spec.benchmarks.compress.Compress: spec.benchmarks.compress.OutputBuffer performAction(byte[],int,int,byte[])>::50
+IN METHOD::<spec.benchmarks.compress.Harness: void runCompress(int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::54
+IN METHOD::<spec.benchmarks.compress.Harness: void runCompress(int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::54
+IN METHOD::<spec.benchmarks.compress.Harness: void runCompress(int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::55
+IN METHOD::<spec.benchmarks.compress.Harness: void runCompress(int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::55
+IN METHOD::<spec.benchmarks.compress.Harness: void runCompress(int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::56
+IN METHOD::<spec.benchmarks.compress.Harness: void runCompress(int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::56

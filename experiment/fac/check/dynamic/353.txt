@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.check.LoopBounds: void main(java.lang.String[])>::STATICINVOKE::<spec.benchmarks.check.LoopBounds: void run()>::64
+IN METHOD::<spec.benchmarks.check.LoopBounds: void main(java.lang.String[])>::STATICINVOKE::<spec.benchmarks.check.LoopBounds: void run()>::64

@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void init()>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::137
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void init()>::INVOKE::java.lang.String::$r1::<java.lang.String: boolean equals(java.lang.Object)>::139
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void init()>::INVOKE::java.lang.String::$r2::<java.lang.String: boolean equals(java.lang.Object)>::157

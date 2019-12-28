@@ -1,0 +1,9 @@
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClone()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::681
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClone()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::686
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClone()>::INVOKE::java.lang.StringBuilder::$r13::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::686
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClone()>::SPECIALINVOKE::<java.util.Hashtable: void <init>(int)>::688
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClone()>::INVOKE::java.util.Hashtable::r18::<java.util.Hashtable: java.lang.Object clone()>::689
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClone()>::SPECIALINVOKE::<java.lang.NullPointerException: void <init>(java.lang.String)>::-1
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClone()>::SPECIALINVOKE::<spec.benchmarks.check.StringAndInt: void <init>()>::700
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClone()>::INVOKE::spec.benchmarks.check.StringAndInt::r19::<spec.benchmarks.check.StringAndInt: java.lang.Object clone()>::703
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testClone()>::INVOKE::java.lang.String::$r12::<java.lang.String: boolean equals(java.lang.Object)>::707

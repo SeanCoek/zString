@@ -1,0 +1,12 @@
+IN METHOD::<spec.reporter.HTMLWriter: void handleIterRecord(java.util.ArrayList,int)>::INVOKE::java.util.ArrayList::r1::<java.util.ArrayList: java.lang.Object get(int)>::289
+IN METHOD::<spec.reporter.HTMLWriter: void handleIterRecord(java.util.ArrayList,int)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void insertData(java.lang.String)>::291
+IN METHOD::<spec.reporter.HTMLWriter: void handleIterRecord(java.util.ArrayList,int)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void insertData(java.lang.String)>::292
+IN METHOD::<spec.reporter.HTMLWriter: void handleIterRecord(java.util.ArrayList,int)>::STATICINVOKE::<java.lang.Long: java.lang.String toString(long)>::293
+IN METHOD::<spec.reporter.HTMLWriter: void handleIterRecord(java.util.ArrayList,int)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void insertData(java.lang.String)>::293
+IN METHOD::<spec.reporter.HTMLWriter: void handleIterRecord(java.util.ArrayList,int)>::INVOKE::spec.reporter.BenchmarkRecord$IterationRecord::r2::<spec.reporter.BenchmarkRecord$IterationRecord: boolean isValidIteration()>::294
+IN METHOD::<spec.reporter.HTMLWriter: void handleIterRecord(java.util.ArrayList,int)>::INVOKE::java.text.NumberFormat::$r9::<java.text.NumberFormat: java.lang.String format(double)>::295
+IN METHOD::<spec.reporter.HTMLWriter: void handleIterRecord(java.util.ArrayList,int)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void insertData(java.lang.String)>::295
+IN METHOD::<spec.reporter.HTMLWriter: void handleIterRecord(java.util.ArrayList,int)>::INVOKE::java.text.NumberFormat::$r11::<java.text.NumberFormat: java.lang.String format(double)>::296
+IN METHOD::<spec.reporter.HTMLWriter: void handleIterRecord(java.util.ArrayList,int)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void insertData(java.lang.String)>::296
+IN METHOD::<spec.reporter.HTMLWriter: void handleIterRecord(java.util.ArrayList,int)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: java.lang.String insertBRTags(java.util.ArrayList)>::298
+IN METHOD::<spec.reporter.HTMLWriter: void handleIterRecord(java.util.ArrayList,int)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void insertHeaderData(java.lang.String,java.lang.String,boolean,int,int)>::298

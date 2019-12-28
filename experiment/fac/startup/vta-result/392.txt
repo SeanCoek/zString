@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.Utils: java.util.BitSet createBitSet()>::SPECIALINVOKE::<java.util.BitSet: void <init>()>::38

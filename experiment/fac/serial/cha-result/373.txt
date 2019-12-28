@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.analyzer.AnalyzerBase: void report(spec.harness.analyzer.TYInfo)>::INVOKE::spec.harness.results.IterationResult::$r2::<spec.harness.results.IterationResult: void addAnalyzer(spec.harness.analyzer.TYInfo)>::82

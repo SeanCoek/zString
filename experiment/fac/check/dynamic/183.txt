@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.check.LoopBounds2: void <init>()>::SPECIALINVOKE::<spec.benchmarks.check.LoopBounds: void <init>()>::87
+IN METHOD::<spec.benchmarks.check.LoopBounds2: void <init>()>::SPECIALINVOKE::<spec.benchmarks.check.LoopBounds: void <init>()>::87

@@ -1,0 +1,6 @@
+IN METHOD::<spec.reporter.HTMLWriter: void insertData(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::87
+IN METHOD::<spec.reporter.HTMLWriter: void insertData(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r2::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::87
+IN METHOD::<spec.reporter.HTMLWriter: void insertData(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::87
+IN METHOD::<spec.reporter.HTMLWriter: void insertData(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r4::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::87
+IN METHOD::<spec.reporter.HTMLWriter: void insertData(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.String toString()>::87
+IN METHOD::<spec.reporter.HTMLWriter: void insertData(java.lang.String)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putString(java.lang.String)>::87

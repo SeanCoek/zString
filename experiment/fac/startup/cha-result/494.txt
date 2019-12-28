@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void run()>::SPECIALINVOKE::<spec.benchmarks.derby.DerbyHarness$Client: void handleAccounts()>::46
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void run()>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void connectClose(java.sql.Connection)>::47

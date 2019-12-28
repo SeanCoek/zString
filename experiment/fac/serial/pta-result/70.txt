@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.data.TestReadResolve: void <init>(int,java.lang.String)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::24

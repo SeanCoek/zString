@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.sunflow.Main$BenchmarkImpl: void <init>(int,boolean,boolean,boolean,int)>::SPECIALINVOKE::<org.sunflow.Benchmark: void <init>(int,boolean,boolean,boolean,int)>::38

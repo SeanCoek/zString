@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.serial.data.TestArrayList: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::23
+IN METHOD::<spec.benchmarks.serial.data.TestArrayList: void <init>()>::SPECIALINVOKE::<java.util.ArrayList: void <init>()>::21
+IN METHOD::<spec.benchmarks.serial.data.TestArrayList: void <init>()>::SPECIALINVOKE::<java.util.Random: void <init>()>::24
+IN METHOD::<spec.benchmarks.serial.data.TestArrayList: void <init>()>::INVOKE::java.util.Random::$r2::int nextInt()::24
+IN METHOD::<spec.benchmarks.serial.data.TestArrayList: void <init>()>::SPECIALINVOKE::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::26
+IN METHOD::<spec.benchmarks.serial.data.TestArrayList: void <init>()>::INVOKE::java.util.ArrayList::$r4::boolean add(java.lang.Object)::26

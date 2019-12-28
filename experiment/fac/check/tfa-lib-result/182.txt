@@ -1,0 +1,7 @@
+IN METHOD::<spec.reporter.BenchmarkChart: void <init>(java.lang.String)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::45
+IN METHOD::<spec.reporter.BenchmarkChart: void <init>(java.lang.String)>::SPECIALINVOKE::<java.util.Hashtable: void <init>()>::37
+IN METHOD::<spec.reporter.BenchmarkChart: void <init>(java.lang.String)>::SPECIALINVOKE::<org.jfree.data.xy.XYSeriesCollection: void <init>()>::38
+IN METHOD::<spec.reporter.BenchmarkChart: void <init>(java.lang.String)>::SPECIALINVOKE::<java.util.HashMap: void <init>()>::40
+IN METHOD::<spec.reporter.BenchmarkChart: void <init>(java.lang.String)>::STATICINVOKE::<org.jfree.chart.ChartFactory: org.jfree.chart.JFreeChart createXYLineChart(java.lang.String,java.lang.String,java.lang.String,org.jfree.data.xy.XYDataset,org.jfree.chart.plot.PlotOrientation,boolean,boolean,boolean)>::47
+IN METHOD::<spec.reporter.BenchmarkChart: void <init>(java.lang.String)>::INVOKE::org.jfree.chart.JFreeChart::$r8::<org.jfree.chart.JFreeChart: org.jfree.chart.plot.XYPlot getXYPlot()>::54
+IN METHOD::<spec.reporter.BenchmarkChart: void <init>(java.lang.String)>::INVOKE::any_subtype_of::org.jfree.chart.JFreeChart::$r8::<org.jfree.chart.JFreeChart: org.jfree.chart.plot.XYPlot getXYPlot()>::54

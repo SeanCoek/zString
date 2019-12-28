@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager$BaseFileObject: javax.tools.JavaFileObject$Kind getKind()>::SPECIALINVOKE::<java.lang.UnsupportedOperationException: void <init>(java.lang.String)>::46

@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void <init>(java.lang.String,boolean)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::26
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void <init>(java.lang.String,boolean)>::SPECIALINVOKE::<spec.benchmarks.derby.CyclicReader: void init()>::29

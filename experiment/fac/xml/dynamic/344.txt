@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: javax.xml.transform.Source createDomSource(spec.io.FileCache$CachedFile)>::INVOKE::spec.io.FileCache$CachedFile::r1::org.xml.sax.InputSource asNewInputSource()::61
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: javax.xml.transform.Source createDomSource(spec.io.FileCache$CachedFile)>::INVOKE::com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl::$r3::org.w3c.dom.Document parse(org.xml.sax.InputSource)::61
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: javax.xml.transform.Source createDomSource(spec.io.FileCache$CachedFile)>::SPECIALINVOKE::<javax.xml.transform.dom.DOMSource: void <init>(org.w3c.dom.Node)>::61
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: javax.xml.transform.Source createDomSource(spec.io.FileCache$CachedFile)>::INVOKE::spec.io.FileCache$CachedFile::r1::org.xml.sax.InputSource asNewInputSource()::61
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: javax.xml.transform.Source createDomSource(spec.io.FileCache$CachedFile)>::INVOKE::com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl::$r3::org.w3c.dom.Document parse(org.xml.sax.InputSource)::61
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: javax.xml.transform.Source createDomSource(spec.io.FileCache$CachedFile)>::SPECIALINVOKE::<javax.xml.transform.dom.DOMSource: void <init>(org.w3c.dom.Node)>::61

@@ -1,0 +1,3 @@
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssuesInfo()>::STATICINVOKE::<spec.harness.KnownIssues: void printKnownIssueJavacVersion()>::23
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssuesInfo()>::STATICINVOKE::<spec.harness.KnownIssues: void printKnownIssueXmlTransformRace()>::27
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssuesInfo()>::STATICINVOKE::<spec.harness.KnownIssues: void printKnownIssueutOfMemoryError()>::31

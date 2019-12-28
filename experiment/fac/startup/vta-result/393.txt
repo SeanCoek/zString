@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.Utils: void printResult(java.io.PrintStream,java.util.BitSet)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::46

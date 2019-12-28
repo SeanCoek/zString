@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager$BaseFileObject: javax.lang.model.element.NestingKind getNestingKind()>::SPECIALINVOKE::<java.lang.UnsupportedOperationException: void <init>(java.lang.String)>::58

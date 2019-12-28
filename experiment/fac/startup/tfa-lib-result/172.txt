@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager$BaseFileObject: boolean isNameCompatible(java.lang.String,javax.tools.JavaFileObject$Kind)>::SPECIALINVOKE::<java.lang.UnsupportedOperationException: void <init>(java.lang.String)>::62

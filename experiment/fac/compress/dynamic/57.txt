@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.compress.Main: long runBenchmark()>::SPECIALINVOKE::<spec.harness.BenchmarkThread: int getThreadId()>::35
+IN METHOD::<spec.benchmarks.compress.Main: long runBenchmark()>::INVOKE::spec.benchmarks.compress.Harness::$r1::long inst_main(int)::35

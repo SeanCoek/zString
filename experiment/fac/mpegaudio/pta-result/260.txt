@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.analyzer.PowerMeter: void go()>::SPECIALINVOKE::<spec.harness.analyzer.PowerMeter: int writeMeter(java.lang.String)>::144
+IN METHOD::<spec.harness.analyzer.PowerMeter: void go()>::SPECIALINVOKE::<spec.harness.analyzer.PowerMeter: java.lang.String readMeter()>::145

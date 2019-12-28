@@ -1,0 +1,5 @@
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::STATICINVOKE::<java.lang.Long: long parseLong(java.lang.String)>::58
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::STATICINVOKE::<java.lang.Long: long parseLong(java.lang.String)>::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::STATICINVOKE::<java.lang.Long: long parseLong(java.lang.String)>::63
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::STATICINVOKE::<java.lang.Long: long parseLong(java.lang.String)>::66
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::STATICINVOKE::<java.lang.Long: long parseLong(java.lang.String)>::69

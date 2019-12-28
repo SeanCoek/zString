@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.compress.Compressor: void compress()>::SPECIALINVOKE::<spec.benchmarks.compress.Compressor: void output(int)>::309
+IN METHOD::<spec.benchmarks.compress.Compressor: void compress()>::SPECIALINVOKE::<spec.benchmarks.compress.Compressor: void clBlock()>::316
+IN METHOD::<spec.benchmarks.compress.Compressor: void compress()>::SPECIALINVOKE::<spec.benchmarks.compress.Compressor: void output(int)>::322
+IN METHOD::<spec.benchmarks.compress.Compressor: void compress()>::SPECIALINVOKE::<spec.benchmarks.compress.Compressor: void output(int)>::324

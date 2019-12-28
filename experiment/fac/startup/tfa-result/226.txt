@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.compress.Harness: long inst_main(int)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::62
+IN METHOD::<spec.benchmarks.compress.Harness: long inst_main(int)>::INVOKE::spec.benchmarks.compress.Harness::r0::<spec.benchmarks.compress.Harness: void runCompress(int)>::63
+IN METHOD::<spec.benchmarks.compress.Harness: long inst_main(int)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::64

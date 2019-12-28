@@ -1,0 +1,3 @@
+IN METHOD::<spec.harness.results.IterationResult: boolean isValid()>::INVOKE::spec.harness.results.TestResult::r0::<spec.harness.results.TestResult: boolean hasErrors()>::186
+IN METHOD::<spec.harness.results.IterationResult: boolean isValid()>::INVOKE::spec.harness.results.LoopResult::r2::<spec.harness.results.LoopResult: boolean isValid()>::191
+IN METHOD::<spec.harness.results.IterationResult: boolean isValid()>::INVOKE::any_subtype_of::java.lang.Object::r2::<spec.harness.results.LoopResult: boolean isValid()>::191

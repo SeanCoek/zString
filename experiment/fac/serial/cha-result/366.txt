@@ -1,0 +1,4 @@
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.lang.String meterPtdMode()>::INVOKE::java.lang.String::$r2::<java.lang.String: java.lang.String substring(int,int)>::229
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.lang.String meterPtdMode()>::INVOKE::java.lang.Object::$r3::<java.lang.Object: boolean equals(java.lang.Object)>::229
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.lang.String meterPtdMode()>::INVOKE::java.lang.String::$r3::<java.lang.String: boolean equals(java.lang.Object)>::229
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.lang.String meterPtdMode()>::INVOKE::java.lang.String::$r5::<java.lang.String: java.lang.String substring(int)>::231

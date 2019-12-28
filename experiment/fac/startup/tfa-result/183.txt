@@ -1,0 +1,7 @@
+IN METHOD::<spec.benchmarks.compiler.MainBase: void preSetupBenchmark(java.lang.Class)>::STATICINVOKE::<spec.benchmarks.compiler.SpecFileManager: void reset()>::38
+IN METHOD::<spec.benchmarks.compiler.MainBase: void preSetupBenchmark(java.lang.Class)>::STATICINVOKE::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::39
+IN METHOD::<spec.benchmarks.compiler.MainBase: void preSetupBenchmark(java.lang.Class)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::39
+IN METHOD::<spec.benchmarks.compiler.MainBase: void preSetupBenchmark(java.lang.Class)>::STATICINVOKE::<spec.benchmarks.compiler.Util: java.io.File getTmpDir(java.io.File,boolean)>::40
+IN METHOD::<spec.benchmarks.compiler.MainBase: void preSetupBenchmark(java.lang.Class)>::INVOKE::java.io.File::$r8::<java.io.File: java.io.File getParentFile()>::42
+IN METHOD::<spec.benchmarks.compiler.MainBase: void preSetupBenchmark(java.lang.Class)>::STATICINVOKE::<spec.benchmarks.compiler.Util: void recursiveRemoveDir(java.io.File)>::42
+IN METHOD::<spec.benchmarks.compiler.MainBase: void preSetupBenchmark(java.lang.Class)>::STATICINVOKE::<spec.benchmarks.compiler.Util: java.io.File getTmpDir(java.io.File,boolean)>::44

@@ -1,0 +1,16 @@
+IN METHOD::<spec.reporter.Utils: void generateMainChart(double,java.util.TreeMap)>::INVOKE::java.util.TreeMap::r0::<java.util.TreeMap: int size()>::244
+IN METHOD::<spec.reporter.Utils: void generateMainChart(double,java.util.TreeMap)>::SPECIALINVOKE::<org.jfree.data.category.DefaultCategoryDataset: void <init>()>::247
+IN METHOD::<spec.reporter.Utils: void generateMainChart(double,java.util.TreeMap)>::INVOKE::java.util.TreeMap::r0::<java.util.TreeMap: java.util.Set keySet()>::250
+IN METHOD::<spec.reporter.Utils: void generateMainChart(double,java.util.TreeMap)>::INVOKE::java.util.TreeMap::r0::<java.util.TreeMap: java.lang.Object get(java.lang.Object)>::253
+IN METHOD::<spec.reporter.Utils: void generateMainChart(double,java.util.TreeMap)>::STATICINVOKE::<spec.reporter.Utils: boolean isValidScore(java.lang.Double)>::254
+IN METHOD::<spec.reporter.Utils: void generateMainChart(double,java.util.TreeMap)>::INVOKE::org.jfree.data.category.DefaultCategoryDataset::r2::<org.jfree.data.category.DefaultCategoryDataset: void addValue(java.lang.Number,java.lang.Comparable,java.lang.Comparable)>::255
+IN METHOD::<spec.reporter.Utils: void generateMainChart(double,java.util.TreeMap)>::INVOKE::java.util.HashMap::$r16::<java.util.HashMap: java.lang.Object get(java.lang.Object)>::256
+IN METHOD::<spec.reporter.Utils: void generateMainChart(double,java.util.TreeMap)>::STATICINVOKE::<spec.reporter.Utils: boolean isValidScore(double)>::260
+IN METHOD::<spec.reporter.Utils: void generateMainChart(double,java.util.TreeMap)>::INVOKE::org.jfree.data.category.DefaultCategoryDataset::r2::<org.jfree.data.category.DefaultCategoryDataset: void addValue(double,java.lang.Comparable,java.lang.Comparable)>::261
+IN METHOD::<spec.reporter.Utils: void generateMainChart(double,java.util.TreeMap)>::INVOKE::java.util.HashMap::$r11::<java.util.HashMap: java.lang.Object get(java.lang.Object)>::263
+IN METHOD::<spec.reporter.Utils: void generateMainChart(double,java.util.TreeMap)>::STATICINVOKE::<org.jfree.chart.ChartFactory: org.jfree.chart.JFreeChart createStackedBarChart(java.lang.String,java.lang.String,java.lang.String,org.jfree.data.category.CategoryDataset,org.jfree.chart.plot.PlotOrientation,boolean,boolean,boolean)>::266
+IN METHOD::<spec.reporter.Utils: void generateMainChart(double,java.util.TreeMap)>::STATICINVOKE::<spec.reporter.Utils: java.lang.String getFullImageName(java.lang.String)>::286
+IN METHOD::<spec.reporter.Utils: void generateMainChart(double,java.util.TreeMap)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::286
+IN METHOD::<spec.reporter.Utils: void generateMainChart(double,java.util.TreeMap)>::INVOKE::org.jfree.data.category.DefaultCategoryDataset::r2::<org.jfree.data.category.DefaultCategoryDataset: int getRowCount()>::286
+IN METHOD::<spec.reporter.Utils: void generateMainChart(double,java.util.TreeMap)>::STATICINVOKE::<org.jfree.chart.ChartUtilities: void saveChartAsJPEG(java.io.File,org.jfree.chart.JFreeChart,int,int)>::286
+IN METHOD::<spec.reporter.Utils: void generateMainChart(double,java.util.TreeMap)>::INVOKE::java.lang.Throwable::r24::<java.lang.Throwable: void printStackTrace()>::289

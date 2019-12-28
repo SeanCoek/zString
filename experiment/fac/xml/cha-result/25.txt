@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.xml.ReportingHandler: void warning(org.xml.sax.SAXParseException)>::SPECIALINVOKE::<spec.benchmarks.xml.ReportingHandler: void report(org.xml.sax.SAXParseException)>::28

@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.serial.data.TestSimple: java.lang.String toString()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::48
+IN METHOD::<spec.benchmarks.serial.data.TestSimple: java.lang.String toString()>::INVOKE::java.lang.StringBuilder::$r1::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::48
+IN METHOD::<spec.benchmarks.serial.data.TestSimple: java.lang.String toString()>::INVOKE::java.lang.StringBuilder::$r2::<java.lang.StringBuilder: java.lang.StringBuilder append(int)>::48
+IN METHOD::<spec.benchmarks.serial.data.TestSimple: java.lang.String toString()>::INVOKE::java.lang.Object::$r3::<java.lang.Object: java.lang.String toString()>::48
+IN METHOD::<spec.benchmarks.serial.data.TestSimple: java.lang.String toString()>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.String toString()>::48

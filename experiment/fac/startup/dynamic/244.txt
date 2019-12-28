@@ -1,0 +1,36 @@
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::SPECIALINVOKE::<java.util.StringTokenizer: void <init>(java.lang.String)>::106
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::INVOKE::java.util.StringTokenizer::r1::int countTokens()::109
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::SPECIALINVOKE::<java.util.StringTokenizer: void <init>(java.lang.String)>::106
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::INVOKE::java.util.StringTokenizer::r1::int countTokens()::109
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::SPECIALINVOKE::<java.util.StringTokenizer: void <init>(java.lang.String)>::106
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::INVOKE::java.util.StringTokenizer::r1::int countTokens()::109
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::SPECIALINVOKE::<java.util.StringTokenizer: void <init>(java.lang.String)>::106
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::INVOKE::java.util.StringTokenizer::r1::int countTokens()::109
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::SPECIALINVOKE::<java.util.StringTokenizer: void <init>(java.lang.String)>::106
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::INVOKE::java.util.StringTokenizer::r1::int countTokens()::109
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::SPECIALINVOKE::<java.util.StringTokenizer: void <init>(java.lang.String)>::106
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::INVOKE::java.util.StringTokenizer::r1::int countTokens()::109
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::SPECIALINVOKE::<java.util.StringTokenizer: void <init>(java.lang.String)>::106
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::INVOKE::java.util.StringTokenizer::r1::int countTokens()::109
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::SPECIALINVOKE::<java.util.StringTokenizer: void <init>(java.lang.String)>::106
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::INVOKE::java.util.StringTokenizer::r1::int countTokens()::109
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::SPECIALINVOKE::<java.util.StringTokenizer: void <init>(java.lang.String)>::106
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::INVOKE::java.util.StringTokenizer::r1::int countTokens()::109
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::SPECIALINVOKE::<java.util.StringTokenizer: void <init>(java.lang.String)>::106
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::INVOKE::java.util.StringTokenizer::r1::int countTokens()::109
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::SPECIALINVOKE::<java.util.StringTokenizer: void <init>(java.lang.String)>::106
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::INVOKE::java.util.StringTokenizer::r1::int countTokens()::109
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::SPECIALINVOKE::<java.util.StringTokenizer: void <init>(java.lang.String)>::106
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::INVOKE::java.util.StringTokenizer::r1::int countTokens()::109
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::SPECIALINVOKE::<java.util.StringTokenizer: void <init>(java.lang.String)>::106
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::INVOKE::java.util.StringTokenizer::r1::int countTokens()::109
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::SPECIALINVOKE::<java.util.StringTokenizer: void <init>(java.lang.String)>::106
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::INVOKE::java.util.StringTokenizer::r1::int countTokens()::109
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::SPECIALINVOKE::<java.util.StringTokenizer: void <init>(java.lang.String)>::106
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::INVOKE::java.util.StringTokenizer::r1::int countTokens()::109
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::SPECIALINVOKE::<java.util.StringTokenizer: void <init>(java.lang.String)>::106
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::INVOKE::java.util.StringTokenizer::r1::int countTokens()::109
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::SPECIALINVOKE::<java.util.StringTokenizer: void <init>(java.lang.String)>::106
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::INVOKE::java.util.StringTokenizer::r1::int countTokens()::109
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::SPECIALINVOKE::<java.util.StringTokenizer: void <init>(java.lang.String)>::106
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void setupAnalyzerClasses(java.lang.String)>::INVOKE::java.util.StringTokenizer::r1::int countTokens()::109

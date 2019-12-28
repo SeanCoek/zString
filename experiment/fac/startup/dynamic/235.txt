@@ -1,0 +1,12 @@
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::STATICINVOKE::<spec.harness.Util: boolean getBoolProperty(java.lang.String,java.lang.String)>::25
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::SPECIALINVOKE::<java.io.BufferedInputStream: void <init>(java.io.InputStream)>::30
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::INVOKE::java.io.BufferedInputStream::r3::int read(byte[])::33
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::SPECIALINVOKE::<java.lang.String: void <init>(byte[],int,int)>::34
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::INVOKE::java.lang.String::r1::boolean contains(java.lang.CharSequence)::42
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::STATICINVOKE::<spec.harness.Util: boolean getBoolProperty(java.lang.String,java.lang.String)>::25
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::SPECIALINVOKE::<java.io.BufferedInputStream: void <init>(java.io.InputStream)>::30
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::INVOKE::java.io.BufferedInputStream::r3::int read(byte[])::33
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::SPECIALINVOKE::<java.lang.String: void <init>(byte[],int,int)>::34
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::INVOKE::java.lang.String::r1::boolean contains(java.lang.CharSequence)::42
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::STATICINVOKE::<spec.benchmarks.startup.Main: void setStartupTestValidity(boolean)>::51
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::STATICINVOKE::<spec.benchmarks.startup.Main: void setStartupTestValidity(boolean)>::51

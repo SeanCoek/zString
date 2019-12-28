@@ -1,0 +1,1 @@
+IN METHOD::<spec.reporter.Utils: java.lang.String getImageName(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::310

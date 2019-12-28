@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: java.lang.String filter(java.lang.String)>::INVOKE::java.lang.String::r1::<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>::212
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: java.lang.String filter(java.lang.String)>::INVOKE::java.lang.String::$r2::<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>::212

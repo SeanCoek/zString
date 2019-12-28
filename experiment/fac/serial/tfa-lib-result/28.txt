@@ -1,0 +1,15 @@
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::46
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::INVOKE::java.util.Random::$r1::<java.util.Random: long nextLong()>::34
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::35
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::INVOKE::java.lang.StringBuilder::$r2::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::35
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::INVOKE::java.util.Random::$r4::<java.util.Random: double nextDouble()>::35
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(double)>::35
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.String toString()>::35
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::INVOKE::any_subtype_of::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.String toString()>::35
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::INVOKE::java.util.Random::$r7::<java.util.Random: int nextInt()>::36
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::INVOKE::java.util.Random::$r8::<java.util.Random: int nextInt()>::37
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::INVOKE::java.util.Random::$r9::<java.util.Random: long nextLong()>::38
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::STATICINVOKE::<java.lang.Long: java.lang.Long valueOf(long)>::38
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::STATICINVOKE::<java.lang.Boolean: java.lang.Boolean valueOf(boolean)>::39
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::INVOKE::java.util.Random::$r12::<java.util.Random: int nextInt()>::47
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::SPECIALINVOKE::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::52

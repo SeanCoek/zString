@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.check.LoopBounds2: int size()>::SPECIALINVOKE::<java.lang.Double: void <init>(double)>::92
+IN METHOD::<spec.benchmarks.check.LoopBounds2: int size()>::INVOKE::java.util.Vector::$r2::<java.util.Vector: void insertElementAt(java.lang.Object,int)>::92
+IN METHOD::<spec.benchmarks.check.LoopBounds2: int size()>::INVOKE::java.util.Vector::$r3::<java.util.Vector: int size()>::93

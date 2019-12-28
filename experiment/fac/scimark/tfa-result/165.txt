@@ -1,0 +1,9 @@
+IN METHOD::<spec.reporter.BenchmarkGroupRecords: double computeCompositeScore()>::STATICINVOKE::<spec.reporter.Utils: boolean isCheck(spec.reporter.BenchmarkRecord)>::133
+IN METHOD::<spec.reporter.BenchmarkGroupRecords: double computeCompositeScore()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::138
+IN METHOD::<spec.reporter.BenchmarkGroupRecords: double computeCompositeScore()>::INVOKE::java.lang.StringBuilder::$r17::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::138
+IN METHOD::<spec.reporter.BenchmarkGroupRecords: double computeCompositeScore()>::STATICINVOKE::<spec.reporter.Utils: void dbgPrint(java.lang.String)>::138
+IN METHOD::<spec.reporter.BenchmarkGroupRecords: double computeCompositeScore()>::STATICINVOKE::<java.lang.Double: java.lang.Double valueOf(double)>::141
+IN METHOD::<spec.reporter.BenchmarkGroupRecords: double computeCompositeScore()>::STATICINVOKE::<java.lang.Math: double pow(double,double)>::149
+IN METHOD::<spec.reporter.BenchmarkGroupRecords: double computeCompositeScore()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::148
+IN METHOD::<spec.reporter.BenchmarkGroupRecords: double computeCompositeScore()>::INVOKE::java.lang.StringBuilder::$r6::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::148
+IN METHOD::<spec.reporter.BenchmarkGroupRecords: double computeCompositeScore()>::STATICINVOKE::<spec.reporter.Utils: void dbgPrint(java.lang.String)>::148

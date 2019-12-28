@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void <init>(java.io.InputStream)>::SPECIALINVOKE::<java.lang.Thread: void <init>()>::59
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void <init>(java.io.InputStream)>::SPECIALINVOKE::<java.lang.Thread: void <init>()>::59

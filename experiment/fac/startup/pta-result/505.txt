@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.derby.Main: void deleteDirectory(java.io.File)>::STATICINVOKE::<spec.benchmarks.derby.Main: void deleteDirectory(java.io.File)>::124

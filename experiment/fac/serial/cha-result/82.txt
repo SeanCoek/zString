@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.serial.data.TestReadResolve: boolean equals(java.lang.Object)>::INVOKE::java.lang.Object::$r4::<java.lang.Object: boolean equals(java.lang.Object)>::40
+IN METHOD::<spec.benchmarks.serial.data.TestReadResolve: boolean equals(java.lang.Object)>::INVOKE::java.lang.String::$r4::<java.lang.String: boolean equals(java.lang.Object)>::40

@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$1: void <init>(java.lang.String)>::SPECIALINVOKE::<java.lang.Thread: void <init>(java.lang.String)>::435

@@ -1,0 +1,11 @@
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void tearDownAnalyzers(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.analyzer.AnalyzersRunner: int getNoAnalyzer()>::254
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void tearDownAnalyzers(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.harness.analyzer.AnalyzersRunner: void setDone()>::255
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void tearDownAnalyzers(spec.harness.results.IterationResult)>::INVOKE::java.lang.Thread::$r4::<java.lang.Thread: void interrupt()>::256
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void tearDownAnalyzers(spec.harness.results.IterationResult)>::INVOKE::java.lang.Thread::$r5::<java.lang.Thread: void join()>::258
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void tearDownAnalyzers(spec.harness.results.IterationResult)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::260
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void tearDownAnalyzers(spec.harness.results.IterationResult)>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::260
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void tearDownAnalyzers(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.TestResult::r0::<spec.harness.results.TestResult: void addError(java.lang.String)>::261
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void tearDownAnalyzers(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::262
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void tearDownAnalyzers(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.TestResult::r0::<spec.harness.results.TestResult: void addError(java.lang.String)>::262
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void tearDownAnalyzers(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String,java.lang.Throwable)>::263
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void tearDownAnalyzers(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.harness.analyzer.AnalyzersRunner: void internalTearDownAnalyzers()>::266

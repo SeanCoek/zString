@@ -1,0 +1,7 @@
+IN METHOD::<spec.reporter.ReportGenerator: java.util.ArrayList findProperties(java.lang.String,java.lang.String)>::SPECIALINVOKE::<java.util.ArrayList: void <init>()>::272
+IN METHOD::<spec.reporter.ReportGenerator: java.util.ArrayList findProperties(java.lang.String,java.lang.String)>::INVOKE::java.lang.Object::r2::<java.lang.Object: boolean equals(java.lang.Object)>::275
+IN METHOD::<spec.reporter.ReportGenerator: java.util.ArrayList findProperties(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r2::<java.lang.String: boolean equals(java.lang.Object)>::275
+IN METHOD::<spec.reporter.ReportGenerator: java.util.ArrayList findProperties(java.lang.String,java.lang.String)>::INVOKE::java.util.AbstractList::r6::<java.util.AbstractList: boolean add(java.lang.Object)>::276
+IN METHOD::<spec.reporter.ReportGenerator: java.util.ArrayList findProperties(java.lang.String,java.lang.String)>::INVOKE::java.util.AbstractCollection::r6::<java.util.AbstractCollection: boolean add(java.lang.Object)>::276
+IN METHOD::<spec.reporter.ReportGenerator: java.util.ArrayList findProperties(java.lang.String,java.lang.String)>::INVOKE::javax.management.AttributeList::r6::<javax.management.AttributeList: boolean add(java.lang.Object)>::276
+IN METHOD::<spec.reporter.ReportGenerator: java.util.ArrayList findProperties(java.lang.String,java.lang.String)>::INVOKE::java.util.ArrayList::r6::<java.util.ArrayList: boolean add(java.lang.Object)>::276

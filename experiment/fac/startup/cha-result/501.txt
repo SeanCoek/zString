@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.derby.InitThread: void <init>(int,spec.benchmarks.derby.DataReader,int)>::SPECIALINVOKE::<java.lang.Thread: void <init>()>::16
+IN METHOD::<spec.benchmarks.derby.InitThread: void <init>(int,spec.benchmarks.derby.DataReader,int)>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: java.sql.Connection getNestedConnection(int)>::17

@@ -1,0 +1,15 @@
+IN METHOD::<spec.benchmarks.check.PepTest: void printTime()>::SPECIALINVOKE::<java.util.Date: void <init>()>::331
+IN METHOD::<spec.benchmarks.check.PepTest: void printTime()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::332
+IN METHOD::<spec.benchmarks.check.PepTest: void printTime()>::INVOKE::java.io.PrintStream::$r3::<java.io.PrintStream: void print(java.lang.String)>::332
+IN METHOD::<spec.benchmarks.check.PepTest: void printTime()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::333
+IN METHOD::<spec.benchmarks.check.PepTest: void printTime()>::INVOKE::java.lang.Object::r1::<java.lang.Object: java.lang.String toString()>::333
+IN METHOD::<spec.benchmarks.check.PepTest: void printTime()>::INVOKE::java.sql.Date::r1::<java.sql.Date: java.lang.String toString()>::333
+IN METHOD::<spec.benchmarks.check.PepTest: void printTime()>::INVOKE::java.sql.Time::r1::<java.sql.Time: java.lang.String toString()>::333
+IN METHOD::<spec.benchmarks.check.PepTest: void printTime()>::INVOKE::java.sql.Timestamp::r1::<java.sql.Timestamp: java.lang.String toString()>::333
+IN METHOD::<spec.benchmarks.check.PepTest: void printTime()>::INVOKE::java.util.Date::r1::<java.util.Date: java.lang.String toString()>::333
+IN METHOD::<spec.benchmarks.check.PepTest: void printTime()>::INVOKE::java.io.PrintStream::$r4::<java.io.PrintStream: void print(java.lang.String)>::333
+IN METHOD::<spec.benchmarks.check.PepTest: void printTime()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::334
+IN METHOD::<spec.benchmarks.check.PepTest: void printTime()>::INVOKE::java.io.PrintStream::$r6::<java.io.PrintStream: void print(java.lang.String)>::334
+IN METHOD::<spec.benchmarks.check.PepTest: void printTime()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::335
+IN METHOD::<spec.benchmarks.check.PepTest: void printTime()>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::335
+IN METHOD::<spec.benchmarks.check.PepTest: void printTime()>::INVOKE::java.io.PrintStream::$r7::<java.io.PrintStream: void println(long)>::335

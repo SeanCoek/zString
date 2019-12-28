@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.sunflow.Main: void setupBenchmark()>::STATICINVOKE::<spec.harness.Util: int getIntProperty(java.lang.String,java.lang.String)>::58
+IN METHOD::<spec.benchmarks.sunflow.Main: void setupBenchmark()>::SPECIALINVOKE::<spec.benchmarks.sunflow.Main$BenchmarkImpl: void <init>(int,boolean,boolean,boolean,int)>::62

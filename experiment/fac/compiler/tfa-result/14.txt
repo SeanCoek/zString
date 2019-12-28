@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager$1: void <init>(com.sun.tools.javac.util.Context,spec.benchmarks.compiler.Compiler)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::198

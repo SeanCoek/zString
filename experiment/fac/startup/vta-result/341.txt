@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.serial.data.TestParent: spec.benchmarks.serial.data.TestParent createTestInstance()>::SPECIALINVOKE::<spec.benchmarks.serial.data.TestParent: void <init>(int)>::156
+IN METHOD::<spec.benchmarks.serial.data.TestParent: spec.benchmarks.serial.data.TestParent createTestInstance()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::160
+IN METHOD::<spec.benchmarks.serial.data.TestParent: spec.benchmarks.serial.data.TestParent createTestInstance()>::SPECIALINVOKE::<spec.benchmarks.serial.data.Child: void <init>()>::164

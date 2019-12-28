@@ -1,0 +1,1 @@
+IN METHOD::<spec.reporter.ReportGenerator$Pair: void <init>(spec.reporter.ReportGenerator,java.lang.Object,java.lang.Object)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::764

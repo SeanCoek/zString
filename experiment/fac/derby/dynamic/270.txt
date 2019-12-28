@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: java.sql.Connection getStartConnection(int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::500
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: java.sql.Connection getStartConnection(int)>::INVOKE::java.lang.StringBuilder::$r1::java.lang.StringBuilder append(java.lang.String)::500
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: java.sql.Connection getStartConnection(int)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(int)::500
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: java.sql.Connection getStartConnection(int)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::500
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: java.sql.Connection getStartConnection(int)>::INVOKE::java.lang.StringBuilder::$r4::java.lang.String toString()::500
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: java.sql.Connection getStartConnection(int)>::STATICINVOKE::<java.sql.DriverManager: java.sql.Connection getConnection(java.lang.String)>::500

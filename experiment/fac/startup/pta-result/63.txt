@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.scimark.lu.Main: void Main()>::STATICINVOKE::<spec.benchmarks.scimark.lu.Main: void runBenchmark()>::28

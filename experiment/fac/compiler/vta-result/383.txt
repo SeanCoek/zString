@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.results.TestResult: java.lang.String getIndent(int)>::SPECIALINVOKE::<java.lang.StringBuffer: void <init>()>::140

@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.results.TestResult: void <clinit>()>::SPECIALINVOKE::<java.text.DecimalFormat: void <init>(java.lang.String)>::25

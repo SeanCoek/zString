@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.data.TestBigInteger: void <init>()>::SPECIALINVOKE::<java.math.BigInteger: void <init>(java.lang.String)>::15

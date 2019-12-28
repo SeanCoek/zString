@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.serial.data.TestWithBigDecimal: spec.benchmarks.serial.data.TestWithBigDecimal createTestInstance()>::SPECIALINVOKE::<spec.benchmarks.serial.data.TestWithBigDecimal: void <init>()>::26
+IN METHOD::<spec.benchmarks.serial.data.TestWithBigDecimal: spec.benchmarks.serial.data.TestWithBigDecimal createTestInstance()>::SPECIALINVOKE::<java.util.Random: void <init>()>::28
+IN METHOD::<spec.benchmarks.serial.data.TestWithBigDecimal: spec.benchmarks.serial.data.TestWithBigDecimal createTestInstance()>::INVOKE::java.util.concurrent.ThreadLocalRandom::$r3::<java.util.concurrent.ThreadLocalRandom: double nextDouble()>::28
+IN METHOD::<spec.benchmarks.serial.data.TestWithBigDecimal: spec.benchmarks.serial.data.TestWithBigDecimal createTestInstance()>::INVOKE::java.util.Random::$r3::<java.util.Random: double nextDouble()>::28
+IN METHOD::<spec.benchmarks.serial.data.TestWithBigDecimal: spec.benchmarks.serial.data.TestWithBigDecimal createTestInstance()>::SPECIALINVOKE::<java.math.BigDecimal: void <init>(double)>::28

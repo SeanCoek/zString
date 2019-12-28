@@ -1,0 +1,8 @@
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.benchmarks.compiler.MainBase: void <init>(spec.harness.results.BenchmarkResult,int,int)>::25
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::26
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r4::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::26
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.io.File::$r6::<java.io.File: java.lang.String getPath()>::26
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::26
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.Object::$r8::<java.lang.Object: java.lang.String toString()>::26
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.String toString()>::26
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.benchmarks.compiler.Compiler: void <init>(java.lang.String[])>::29

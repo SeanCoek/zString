@@ -1,0 +1,15 @@
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::50
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::INVOKE::spec.io.FileCache::$r3::int getLength(java.lang.String)::50
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::53
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::INVOKE::spec.io.FileCache::$r4::java.io.ByteArrayInputStream getStream(java.lang.String)::53
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::INVOKE::java.io.ByteArrayInputStream::r2::int read(byte[],int,int)::58
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::50
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::INVOKE::spec.io.FileCache::$r3::int getLength(java.lang.String)::50
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::53
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::INVOKE::spec.io.FileCache::$r4::java.io.ByteArrayInputStream getStream(java.lang.String)::53
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::INVOKE::java.io.ByteArrayInputStream::r2::int read(byte[],int,int)::58
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::50
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::INVOKE::spec.io.FileCache::$r3::int getLength(java.lang.String)::50
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::53
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::INVOKE::spec.io.FileCache::$r4::java.io.ByteArrayInputStream getStream(java.lang.String)::53
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::INVOKE::java.io.ByteArrayInputStream::r2::int read(byte[],int,int)::58

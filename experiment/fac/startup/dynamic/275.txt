@@ -1,0 +1,14 @@
+IN METHOD::<spec.harness.BenchmarkThread: void run()>::INVOKE::spec.benchmarks.helloworld.Main::r0::boolean executeIteration()::59
+IN METHOD::<spec.harness.BenchmarkThread: void run()>::INVOKE::spec.benchmarks.startup.Main::r0::boolean executeIteration()::59
+IN METHOD::<spec.harness.BenchmarkThread: void run()>::INVOKE::spec.benchmarks.compress.Main::r0::boolean executeIteration()::59
+IN METHOD::<spec.harness.BenchmarkThread: void run()>::INVOKE::spec.benchmarks.crypto.aes.Main::r0::boolean executeIteration()::59
+IN METHOD::<spec.harness.BenchmarkThread: void run()>::INVOKE::spec.benchmarks.crypto.rsa.Main::r0::boolean executeIteration()::59
+IN METHOD::<spec.harness.BenchmarkThread: void run()>::INVOKE::spec.benchmarks.crypto.signverify.Main::r0::boolean executeIteration()::59
+IN METHOD::<spec.harness.BenchmarkThread: void run()>::INVOKE::spec.benchmarks.mpegaudio.Main::r0::boolean executeIteration()::59
+IN METHOD::<spec.harness.BenchmarkThread: void run()>::INVOKE::spec.benchmarks.scimark.fft.Main::r0::boolean executeIteration()::59
+IN METHOD::<spec.harness.BenchmarkThread: void run()>::INVOKE::spec.benchmarks.scimark.lu.Main::r0::boolean executeIteration()::59
+IN METHOD::<spec.harness.BenchmarkThread: void run()>::INVOKE::spec.benchmarks.scimark.monte_carlo.Main::r0::boolean executeIteration()::59
+IN METHOD::<spec.harness.BenchmarkThread: void run()>::INVOKE::spec.benchmarks.scimark.sor.Main::r0::boolean executeIteration()::59
+IN METHOD::<spec.harness.BenchmarkThread: void run()>::INVOKE::spec.benchmarks.scimark.sparse.Main::r0::boolean executeIteration()::59
+IN METHOD::<spec.harness.BenchmarkThread: void run()>::INVOKE::spec.benchmarks.serial.Main::r0::boolean executeIteration()::59
+IN METHOD::<spec.harness.BenchmarkThread: void run()>::INVOKE::spec.benchmarks.xml.validation.Main::r0::boolean executeIteration()::59

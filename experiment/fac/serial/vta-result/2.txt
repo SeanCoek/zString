@@ -1,0 +1,13 @@
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.io.ValidityCheckOutputStream: java.lang.String getValidityFileName(java.lang.String)>::98
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::101
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.IOException: void <init>(java.lang.String)>::101
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.ByteArrayInputStream: void <init>(byte[])>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::119
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::120
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<spec.io.ValidityCheckOutputStream: void handleValidationFailure(spec.harness.results.LoopResult,int,java.lang.String,java.lang.String)>::127

@@ -1,0 +1,3 @@
+IN METHOD::<spec.reporter.HTMLWriter: void insertImgData(java.lang.String,java.lang.String,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::60
+IN METHOD::<spec.reporter.HTMLWriter: void insertImgData(java.lang.String,java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::60
+IN METHOD::<spec.reporter.HTMLWriter: void insertImgData(java.lang.String,java.lang.String,int)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void insertHeaderData(java.lang.String,java.lang.String,boolean,int,int)>::60

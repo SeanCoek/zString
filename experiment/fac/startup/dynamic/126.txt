@@ -1,0 +1,271 @@
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::$r1::boolean equals(java.lang.Object)::306
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::boolean startsWith(java.lang.String)::308
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::309
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::int length()::313
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::313
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r32::boolean startsWith(java.lang.String)::314
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::318
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r9::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r10::java.lang.String toString()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.io.File::$r2::boolean exists()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::STATICINVOKE::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::317
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::315
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r23::java.lang.StringBuilder append(java.lang.String)::315
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r25::java.lang.StringBuilder append(java.lang.String)::315
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r26::java.lang.StringBuilder append(java.lang.String)::315
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r27::java.lang.StringBuilder append(java.lang.String)::315
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r28::java.lang.StringBuilder append(java.lang.String)::315
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r29::java.lang.StringBuilder append(java.lang.String)::315
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r30::java.lang.String toString()::315
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::315
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.io.File::$r22::boolean exists()::315
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::int lastIndexOf(java.lang.String)::319
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::323
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r13::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r15::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r16::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r17::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r18::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r19::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r20::java.lang.String toString()::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.io.File::$r12::boolean exists()::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::$r1::boolean equals(java.lang.Object)::306
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::boolean startsWith(java.lang.String)::308
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::318
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r9::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r10::java.lang.String toString()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.io.File::$r2::boolean exists()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::$r1::boolean equals(java.lang.Object)::306
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::boolean startsWith(java.lang.String)::308
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::318
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r9::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r10::java.lang.String toString()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.io.File::$r2::boolean exists()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::$r1::boolean equals(java.lang.Object)::306
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::boolean startsWith(java.lang.String)::308
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::318
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r9::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r10::java.lang.String toString()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.io.File::$r2::boolean exists()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::$r1::boolean equals(java.lang.Object)::306
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::boolean startsWith(java.lang.String)::308
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::318
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r9::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r10::java.lang.String toString()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.io.File::$r2::boolean exists()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::$r1::boolean equals(java.lang.Object)::306
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::boolean startsWith(java.lang.String)::308
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::318
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r9::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r10::java.lang.String toString()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.io.File::$r2::boolean exists()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::$r1::boolean equals(java.lang.Object)::306
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::boolean startsWith(java.lang.String)::308
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::318
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r9::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r10::java.lang.String toString()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.io.File::$r2::boolean exists()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::$r1::boolean equals(java.lang.Object)::306
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::boolean startsWith(java.lang.String)::308
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::318
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r9::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r10::java.lang.String toString()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.io.File::$r2::boolean exists()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::$r1::boolean equals(java.lang.Object)::306
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::boolean startsWith(java.lang.String)::308
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::318
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r9::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r10::java.lang.String toString()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.io.File::$r2::boolean exists()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::$r1::boolean equals(java.lang.Object)::306
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::boolean startsWith(java.lang.String)::308
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::318
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::int lastIndexOf(java.lang.String)::319
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::323
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r13::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r15::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r16::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r17::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r18::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r19::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r20::java.lang.String toString()::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.io.File::$r12::boolean exists()::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::$r1::boolean equals(java.lang.Object)::306
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::boolean startsWith(java.lang.String)::308
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::318
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::int lastIndexOf(java.lang.String)::319
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::323
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r13::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r15::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r16::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r17::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r18::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r19::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r20::java.lang.String toString()::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.io.File::$r12::boolean exists()::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::$r1::boolean equals(java.lang.Object)::306
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::boolean startsWith(java.lang.String)::308
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::318
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::int lastIndexOf(java.lang.String)::319
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::323
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r13::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r15::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r16::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r17::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r18::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r19::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r20::java.lang.String toString()::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.io.File::$r12::boolean exists()::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::$r1::boolean equals(java.lang.Object)::306
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::boolean startsWith(java.lang.String)::308
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::318
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::int lastIndexOf(java.lang.String)::319
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::323
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r13::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r15::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r16::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r17::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r18::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r19::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r20::java.lang.String toString()::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.io.File::$r12::boolean exists()::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::$r1::boolean equals(java.lang.Object)::306
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::boolean startsWith(java.lang.String)::308
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::318
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::int lastIndexOf(java.lang.String)::319
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::323
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r13::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r15::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r16::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r17::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r18::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r19::java.lang.StringBuilder append(java.lang.String)::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r20::java.lang.String toString()::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.io.File::$r12::boolean exists()::324
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::$r1::boolean equals(java.lang.Object)::306
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::boolean startsWith(java.lang.String)::308
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::318
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r9::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r10::java.lang.String toString()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.io.File::$r2::boolean exists()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::$r1::boolean equals(java.lang.Object)::306
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::boolean startsWith(java.lang.String)::308
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::318
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r9::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r10::java.lang.String toString()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.io.File::$r2::boolean exists()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::$r1::boolean equals(java.lang.Object)::306
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::boolean startsWith(java.lang.String)::308
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::318
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r9::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r10::java.lang.String toString()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.io.File::$r2::boolean exists()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::$r1::boolean equals(java.lang.Object)::306
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.String::r0::boolean startsWith(java.lang.String)::308
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::318
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r9::java.lang.StringBuilder append(java.lang.String)::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r10::java.lang.String toString()::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::326
+IN METHOD::<spec.harness.Util: boolean isBenchmark(java.lang.String)>::INVOKE::java.io.File::$r2::boolean exists()::326

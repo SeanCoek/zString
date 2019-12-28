@@ -1,0 +1,10 @@
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::149
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::155
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::157
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::159
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::161
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::163
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::171
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::176
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::178
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::180

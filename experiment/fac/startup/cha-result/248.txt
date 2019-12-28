@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.compress.Decompressor$DeStack: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::664

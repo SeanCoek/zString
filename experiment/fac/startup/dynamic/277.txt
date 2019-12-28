@@ -1,0 +1,290 @@
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.harness.results.LoopResult: void <init>()>::152
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setStartTime(long)::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setBmThreadId(int)::154
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.IterationResult::r1::int getIteration()::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setIteration(int)::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::163
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.harness.results.LoopResult: void <init>()>::152
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setStartTime(long)::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setBmThreadId(int)::154
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.IterationResult::r1::int getIteration()::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setIteration(int)::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::163
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::164
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.BenchmarkResult::$r9::java.lang.String getRunName()::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.io.ValidityCheckOutputStream: void <init>(java.lang.String)>::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<java.io.PrintStream: void <init>(java.io.OutputStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.benchmarks.helloworld.Main::r0::void harnessMain()::170
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::172
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::java.io.PrintStream::$r4::void close()::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::175
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::183
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.io.ValidityCheckOutputStream::r22::boolean validityCheck(spec.harness.results.LoopResult)::184
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setEndTime(long)::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.benchmarks.startup.Main::r0::void harnessMain()::170
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::172
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setEndTime(long)::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.harness.results.LoopResult: void <init>()>::152
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setStartTime(long)::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setBmThreadId(int)::154
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.IterationResult::r1::int getIteration()::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setIteration(int)::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::163
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::164
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.BenchmarkResult::$r9::java.lang.String getRunName()::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.io.ValidityCheckOutputStream: void <init>(java.lang.String)>::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<java.io.PrintStream: void <init>(java.io.OutputStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.benchmarks.compress.Main::r0::void harnessMain()::170
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::172
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::java.io.PrintStream::$r4::void close()::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::175
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::183
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.io.ValidityCheckOutputStream::r22::boolean validityCheck(spec.harness.results.LoopResult)::184
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setEndTime(long)::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.harness.results.LoopResult: void <init>()>::152
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setStartTime(long)::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setBmThreadId(int)::154
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.IterationResult::r1::int getIteration()::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setIteration(int)::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::163
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::164
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.BenchmarkResult::$r9::java.lang.String getRunName()::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.io.ValidityCheckOutputStream: void <init>(java.lang.String)>::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<java.io.PrintStream: void <init>(java.io.OutputStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.benchmarks.crypto.aes.Main::r0::void harnessMain()::170
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::172
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::java.io.PrintStream::$r4::void close()::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::175
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::183
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.io.ValidityCheckOutputStream::r22::boolean validityCheck(spec.harness.results.LoopResult)::184
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setEndTime(long)::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.harness.results.LoopResult: void <init>()>::152
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setStartTime(long)::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setBmThreadId(int)::154
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.IterationResult::r1::int getIteration()::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setIteration(int)::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::163
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::164
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.BenchmarkResult::$r9::java.lang.String getRunName()::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.io.ValidityCheckOutputStream: void <init>(java.lang.String)>::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<java.io.PrintStream: void <init>(java.io.OutputStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.benchmarks.crypto.rsa.Main::r0::void harnessMain()::170
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::172
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::java.io.PrintStream::$r4::void close()::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::175
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::183
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.io.ValidityCheckOutputStream::r22::boolean validityCheck(spec.harness.results.LoopResult)::184
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setEndTime(long)::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.harness.results.LoopResult: void <init>()>::152
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setStartTime(long)::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setBmThreadId(int)::154
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.IterationResult::r1::int getIteration()::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setIteration(int)::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::163
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::164
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.BenchmarkResult::$r9::java.lang.String getRunName()::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.io.ValidityCheckOutputStream: void <init>(java.lang.String)>::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<java.io.PrintStream: void <init>(java.io.OutputStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.benchmarks.crypto.signverify.Main::r0::void harnessMain()::170
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::172
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::java.io.PrintStream::$r4::void close()::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::175
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::183
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.io.ValidityCheckOutputStream::r22::boolean validityCheck(spec.harness.results.LoopResult)::184
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setEndTime(long)::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.harness.results.LoopResult: void <init>()>::152
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setStartTime(long)::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setBmThreadId(int)::154
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.IterationResult::r1::int getIteration()::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setIteration(int)::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::163
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::164
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.BenchmarkResult::$r9::java.lang.String getRunName()::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.io.ValidityCheckOutputStream: void <init>(java.lang.String)>::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<java.io.PrintStream: void <init>(java.io.OutputStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::202
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::java.lang.NoClassDefFoundError::r24::java.lang.Class getClass()::202
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::java.lang.Class::$r14::java.lang.String getName()::202
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::java.lang.StringBuilder::$r13::java.lang.StringBuilder append(java.lang.String)::202
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::java.lang.StringBuilder::$r16::java.lang.StringBuilder append(java.lang.String)::202
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::java.lang.NoClassDefFoundError::r24::java.lang.String getMessage()::202
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::java.lang.StringBuilder::$r17::java.lang.StringBuilder append(java.lang.String)::202
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::java.lang.StringBuilder::$r19::java.lang.String toString()::202
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void addError(java.lang.String)::203
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::204
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::java.io.PrintStream::$r20::void println(java.lang.String)::204
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::205
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::java.lang.NoClassDefFoundError::r24::void printStackTrace(java.io.PrintStream)::205
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setEndTime(long)::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.harness.results.LoopResult: void <init>()>::152
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setStartTime(long)::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setBmThreadId(int)::154
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.IterationResult::r1::int getIteration()::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setIteration(int)::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::163
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::164
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.BenchmarkResult::$r9::java.lang.String getRunName()::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.io.ValidityCheckOutputStream: void <init>(java.lang.String)>::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<java.io.PrintStream: void <init>(java.io.OutputStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.benchmarks.scimark.fft.Main::r0::void harnessMain()::170
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::172
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::java.io.PrintStream::$r4::void close()::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::175
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::183
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.io.ValidityCheckOutputStream::r22::boolean validityCheck(spec.harness.results.LoopResult)::184
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setEndTime(long)::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.harness.results.LoopResult: void <init>()>::152
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setStartTime(long)::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setBmThreadId(int)::154
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.IterationResult::r1::int getIteration()::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setIteration(int)::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::163
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::164
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.BenchmarkResult::$r9::java.lang.String getRunName()::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.io.ValidityCheckOutputStream: void <init>(java.lang.String)>::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<java.io.PrintStream: void <init>(java.io.OutputStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.benchmarks.scimark.lu.Main::r0::void harnessMain()::170
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::172
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::java.io.PrintStream::$r4::void close()::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::175
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::183
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.io.ValidityCheckOutputStream::r22::boolean validityCheck(spec.harness.results.LoopResult)::184
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setEndTime(long)::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.harness.results.LoopResult: void <init>()>::152
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setStartTime(long)::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setBmThreadId(int)::154
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.IterationResult::r1::int getIteration()::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setIteration(int)::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::163
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::164
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.BenchmarkResult::$r9::java.lang.String getRunName()::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.io.ValidityCheckOutputStream: void <init>(java.lang.String)>::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<java.io.PrintStream: void <init>(java.io.OutputStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.benchmarks.scimark.monte_carlo.Main::r0::void harnessMain()::170
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::172
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::java.io.PrintStream::$r4::void close()::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::175
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::183
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.io.ValidityCheckOutputStream::r22::boolean validityCheck(spec.harness.results.LoopResult)::184
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setEndTime(long)::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.harness.results.LoopResult: void <init>()>::152
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setStartTime(long)::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setBmThreadId(int)::154
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.IterationResult::r1::int getIteration()::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setIteration(int)::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::163
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::164
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.BenchmarkResult::$r9::java.lang.String getRunName()::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.io.ValidityCheckOutputStream: void <init>(java.lang.String)>::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<java.io.PrintStream: void <init>(java.io.OutputStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.benchmarks.scimark.sor.Main::r0::void harnessMain()::170
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::172
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::java.io.PrintStream::$r4::void close()::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::175
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::183
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.io.ValidityCheckOutputStream::r22::boolean validityCheck(spec.harness.results.LoopResult)::184
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setEndTime(long)::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.harness.results.LoopResult: void <init>()>::152
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setStartTime(long)::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setBmThreadId(int)::154
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.IterationResult::r1::int getIteration()::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setIteration(int)::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::163
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::164
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.BenchmarkResult::$r9::java.lang.String getRunName()::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.io.ValidityCheckOutputStream: void <init>(java.lang.String)>::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<java.io.PrintStream: void <init>(java.io.OutputStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.benchmarks.scimark.sparse.Main::r0::void harnessMain()::170
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::172
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::java.io.PrintStream::$r4::void close()::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::175
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::183
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.io.ValidityCheckOutputStream::r22::boolean validityCheck(spec.harness.results.LoopResult)::184
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setEndTime(long)::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.harness.results.LoopResult: void <init>()>::152
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setStartTime(long)::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setBmThreadId(int)::154
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.IterationResult::r1::int getIteration()::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setIteration(int)::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::163
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::164
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.BenchmarkResult::$r9::java.lang.String getRunName()::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.io.ValidityCheckOutputStream: void <init>(java.lang.String)>::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<java.io.PrintStream: void <init>(java.io.OutputStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.benchmarks.serial.Main::r0::void harnessMain()::170
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::172
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::java.io.PrintStream::$r4::void close()::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::175
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::183
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.io.ValidityCheckOutputStream::r22::boolean validityCheck(spec.harness.results.LoopResult)::184
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setEndTime(long)::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.harness.results.LoopResult: void <init>()>::152
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setStartTime(long)::153
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setBmThreadId(int)::154
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.IterationResult::r1::int getIteration()::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setIteration(int)::155
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::163
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::164
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.BenchmarkResult::$r9::java.lang.String getRunName()::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<spec.io.ValidityCheckOutputStream: void <init>(java.lang.String)>::165
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::SPECIALINVOKE::<java.io.PrintStream: void <init>(java.io.OutputStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::166
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.benchmarks.xml.validation.Main::r0::void harnessMain()::170
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::172
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::java.io.PrintStream::$r4::void close()::174
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: void setOut(java.io.PrintStream)>::175
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<spec.harness.Context: boolean getVerify()>::183
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.io.ValidityCheckOutputStream::r22::boolean validityCheck(spec.harness.results.LoopResult)::184
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::208
+IN METHOD::<spec.harness.BenchmarkThread: spec.harness.results.LoopResult runLoop(spec.harness.results.IterationResult)>::INVOKE::spec.harness.results.LoopResult::r2::void setEndTime(long)::208

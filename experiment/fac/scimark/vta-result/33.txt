@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::199
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::202
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::202

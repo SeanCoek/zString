@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void handleErrorValidation(int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::73
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void handleErrorValidation(int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::73

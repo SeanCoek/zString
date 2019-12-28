@@ -1,0 +1,16 @@
+IN METHOD::<spec.benchmarks.serial.data.TestParent: void <init>(int)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::20
+IN METHOD::<spec.benchmarks.serial.data.TestParent: void <init>(int)>::SPECIALINVOKE::<java.util.HashMap: void <init>()>::77
+IN METHOD::<spec.benchmarks.serial.data.TestParent: void <init>(int)>::STATICINVOKE::<java.lang.Long: java.lang.Long valueOf(long)>::79
+IN METHOD::<spec.benchmarks.serial.data.TestParent: void <init>(int)>::STATICINVOKE::<java.lang.Integer: java.lang.Integer valueOf(int)>::84
+IN METHOD::<spec.benchmarks.serial.data.TestParent: void <init>(int)>::STATICINVOKE::<java.lang.Long: java.lang.Long valueOf(long)>::86
+IN METHOD::<spec.benchmarks.serial.data.TestParent: void <init>(int)>::SPECIALINVOKE::<java.util.Date: void <init>()>::90
+IN METHOD::<spec.benchmarks.serial.data.TestParent: void <init>(int)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::91
+IN METHOD::<spec.benchmarks.serial.data.TestParent: void <init>(int)>::SPECIALINVOKE::<java.sql.Date: void <init>(long)>::91
+IN METHOD::<spec.benchmarks.serial.data.TestParent: void <init>(int)>::SPECIALINVOKE::<java.util.Random: void <init>()>::21
+IN METHOD::<spec.benchmarks.serial.data.TestParent: void <init>(int)>::INVOKE::java.util.Random::r1::double nextDouble()::22
+IN METHOD::<spec.benchmarks.serial.data.TestParent: void <init>(int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::24
+IN METHOD::<spec.benchmarks.serial.data.TestParent: void <init>(int)>::INVOKE::java.lang.StringBuilder::$r11::java.lang.StringBuilder append(java.lang.String)::24
+IN METHOD::<spec.benchmarks.serial.data.TestParent: void <init>(int)>::INVOKE::java.lang.StringBuilder::$r13::java.lang.StringBuilder append(int)::24
+IN METHOD::<spec.benchmarks.serial.data.TestParent: void <init>(int)>::INVOKE::java.lang.StringBuilder::$r14::java.lang.String toString()::24
+IN METHOD::<spec.benchmarks.serial.data.TestParent: void <init>(int)>::SPECIALINVOKE::<java.util.Random: void <init>()>::26
+IN METHOD::<spec.benchmarks.serial.data.TestParent: void <init>(int)>::INVOKE::java.util.Random::$r10::boolean nextBoolean()::26

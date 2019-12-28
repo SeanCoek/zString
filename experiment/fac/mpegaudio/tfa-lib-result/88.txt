@@ -1,0 +1,8 @@
+IN METHOD::<spec.reporter.Reporter: void usage()>::INVOKE::java.io.PrintStream::$r0::<java.io.PrintStream: void println(java.lang.String)>::9
+IN METHOD::<spec.reporter.Reporter: void usage()>::INVOKE::any_subtype_of::java.io.PrintStream::$r0::<java.io.PrintStream: void println(java.lang.String)>::9
+IN METHOD::<spec.reporter.Reporter: void usage()>::INVOKE::java.io.PrintStream::$r1::<java.io.PrintStream: void println(java.lang.String)>::10
+IN METHOD::<spec.reporter.Reporter: void usage()>::INVOKE::any_subtype_of::java.io.PrintStream::$r1::<java.io.PrintStream: void println(java.lang.String)>::10
+IN METHOD::<spec.reporter.Reporter: void usage()>::INVOKE::java.io.PrintStream::$r2::<java.io.PrintStream: void println(java.lang.String)>::11
+IN METHOD::<spec.reporter.Reporter: void usage()>::INVOKE::any_subtype_of::java.io.PrintStream::$r2::<java.io.PrintStream: void println(java.lang.String)>::11
+IN METHOD::<spec.reporter.Reporter: void usage()>::INVOKE::java.io.PrintStream::$r3::<java.io.PrintStream: void println(java.lang.String)>::12
+IN METHOD::<spec.reporter.Reporter: void usage()>::INVOKE::any_subtype_of::java.io.PrintStream::$r3::<java.io.PrintStream: void println(java.lang.String)>::12

@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.Context: void setOut(java.io.PrintStream)>::INVOKE::java.lang.ThreadLocal::$r1::<java.lang.ThreadLocal: void set(java.lang.Object)>::80

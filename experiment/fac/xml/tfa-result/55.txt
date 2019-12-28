@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.xml.validation.Main: void harnessMain()>::SPECIALINVOKE::<spec.benchmarks.xml.validation.Main: void executeWorkload()>::136
+IN METHOD::<spec.benchmarks.xml.validation.Main: void harnessMain()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::138

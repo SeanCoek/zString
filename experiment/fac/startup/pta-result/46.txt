@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.crypto.signverify.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.harness.SpecJVMBenchmarkBase: void <init>(spec.harness.results.BenchmarkResult,int)>::34

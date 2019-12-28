@@ -1,0 +1,11 @@
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: long decode(java.lang.String)>::SPECIALINVOKE::<java.io.FileInputStream: void <init>(java.lang.String)>::59
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: long decode(java.lang.String)>::SPECIALINVOKE::<javazoom.jl.decoder.Bitstream: void <init>(java.io.InputStream)>::59
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: long decode(java.lang.String)>::SPECIALINVOKE::<javazoom.jl.decoder.Decoder: void <init>()>::60
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: long decode(java.lang.String)>::SPECIALINVOKE::<java.util.zip.CRC32: void <init>()>::62
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: long decode(java.lang.String)>::INVOKE::javazoom.jl.decoder.Bitstream::r2::javazoom.jl.decoder.Header readFrame()::71
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: long decode(java.lang.String)>::INVOKE::javazoom.jl.decoder.Decoder::r3::javazoom.jl.decoder.Obuffer decodeFrame(javazoom.jl.decoder.Header,javazoom.jl.decoder.Bitstream)::66
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: long decode(java.lang.String)>::INVOKE::javazoom.jl.decoder.SampleBuffer::$r12::short[] getBuffer()::66
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: long decode(java.lang.String)>::SPECIALINVOKE::<spec.benchmarks.mpegaudio.Harness: void updateCRC32(java.util.zip.CRC32,short[])>::66
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: long decode(java.lang.String)>::INVOKE::javazoom.jl.decoder.Bitstream::r2::void closeFrame()::68
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: long decode(java.lang.String)>::INVOKE::javazoom.jl.decoder.Bitstream::r2::void close()::70
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: long decode(java.lang.String)>::INVOKE::java.util.zip.CRC32::r5::long getValue()::71

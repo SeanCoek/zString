@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void setCurrentProp(java.lang.String)>::SPECIALINVOKE::<spec.benchmarks.xml.transform.BaseOutputStream: void setCurrentProp(java.lang.String)>::217
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void setCurrentProp(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::219
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void setCurrentProp(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::220
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void setCurrentProp(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::221
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void setCurrentProp(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::222
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void setCurrentProp(java.lang.String)>::SPECIALINVOKE::<java.io.FileOutputStream: void <init>(java.lang.String)>::223

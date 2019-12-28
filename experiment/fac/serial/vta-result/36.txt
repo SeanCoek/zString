@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.data.TestClassWithSQLDateOnly: java.lang.String toString()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::23

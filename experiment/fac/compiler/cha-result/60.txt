@@ -1,0 +1,7 @@
+IN METHOD::<spec.benchmarks.compiler.Util: java.lang.String linesep()>::STATICINVOKE::<java.lang.System: java.lang.String getProperty(java.lang.String)>::41
+IN METHOD::<spec.benchmarks.compiler.Util: java.lang.String linesep()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::43
+IN METHOD::<spec.benchmarks.compiler.Util: java.lang.String linesep()>::INVOKE::java.lang.StringBuilder::$r4::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::43
+IN METHOD::<spec.benchmarks.compiler.Util: java.lang.String linesep()>::INVOKE::java.lang.StringBuilder::$r6::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>::43
+IN METHOD::<spec.benchmarks.compiler.Util: java.lang.String linesep()>::INVOKE::java.lang.Object::$r7::<java.lang.Object: java.lang.String toString()>::43
+IN METHOD::<spec.benchmarks.compiler.Util: java.lang.String linesep()>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.String toString()>::43
+IN METHOD::<spec.benchmarks.compiler.Util: java.lang.String linesep()>::INVOKE::java.io.PrintStream::$r5::<java.io.PrintStream: void println(java.lang.String)>::43

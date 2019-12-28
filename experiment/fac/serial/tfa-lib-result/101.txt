@@ -1,0 +1,3 @@
+IN METHOD::<spec.reporter.PlainWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::INVOKE::java.lang.Double::$r14::<java.lang.Double: double doubleValue()>::85
+IN METHOD::<spec.reporter.PlainWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::INVOKE::any_subtype_of::java.lang.Object::$r14::<java.lang.Double: double doubleValue()>::85
+IN METHOD::<spec.reporter.PlainWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::STATICINVOKE::<spec.reporter.Utils: java.lang.String formatScore(double)>::85

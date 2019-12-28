@@ -1,0 +1,17 @@
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::STATICINVOKE::<spec.harness.Util: boolean getBoolProperty(java.lang.String,java.lang.String)>::25
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::SPECIALINVOKE::<java.io.BufferedInputStream: void <init>(java.io.InputStream)>::30
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::INVOKE::java.io.FilterInputStream::r3::<java.io.FilterInputStream: int read(byte[])>::33
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::INVOKE::java.io.InputStream::r3::<java.io.InputStream: int read(byte[])>::33
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::INVOKE::java.lang.UNIXProcess$DeferredCloseProcessPipeInputStream::r3::<java.lang.UNIXProcess$DeferredCloseProcessPipeInputStream: int read(byte[])>::33
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::SPECIALINVOKE::<java.lang.String: void <init>(byte[],int,int)>::34
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::36
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::INVOKE::java.lang.StringBuilder::$r10::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::36
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::INVOKE::java.lang.StringBuilder::$r12::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::36
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::INVOKE::java.lang.Object::$r13::<java.lang.Object: java.lang.String toString()>::36
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::INVOKE::java.lang.StringBuilder::$r13::<java.lang.StringBuilder: java.lang.String toString()>::36
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::INVOKE::java.io.PrintStream::$r9::<java.io.PrintStream: void print(java.lang.String)>::40
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::INVOKE::java.lang.String::r1::<java.lang.String: boolean contains(java.lang.CharSequence)>::42
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::INVOKE::java.io.PrintStream::$r8::<java.io.PrintStream: void println(java.lang.String)>::44
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::STATICINVOKE::<spec.benchmarks.startup.Main: void setStartupTestValidity(boolean)>::51
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::INVOKE::java.io.PrintStream::$r16::<java.io.PrintStream: void println(java.lang.String)>::54
+IN METHOD::<spec.benchmarks.startup.StartupBenchmarkOutput: void run()>::INVOKE::java.lang.Throwable::r4::<java.lang.Throwable: void printStackTrace()>::55

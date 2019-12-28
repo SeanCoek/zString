@@ -1,0 +1,4 @@
+IN METHOD::<spec.reporter.HTMLWriter: void endReport()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void decIndent()>::391
+IN METHOD::<spec.reporter.HTMLWriter: void endReport()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putString(java.lang.String)>::392
+IN METHOD::<spec.reporter.HTMLWriter: void endReport()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void decIndent()>::393
+IN METHOD::<spec.reporter.HTMLWriter: void endReport()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putString(java.lang.String)>::394

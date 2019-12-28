@@ -1,0 +1,1 @@
+IN METHOD::<spec.io.FileCache: int getLength(java.lang.String)>::INVOKE::spec.io.FileCache::r0::<spec.io.FileCache: byte[] getByteArray(java.lang.String)>::53

@@ -1,0 +1,6 @@
+IN METHOD::<spec.io.ValidityCheckOutputStream: void createValidityFile()>::STATICINVOKE::<spec.io.ValidityCheckOutputStream: java.lang.String getValidityFileName(java.lang.String)>::211
+IN METHOD::<spec.io.ValidityCheckOutputStream: void createValidityFile()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::212
+IN METHOD::<spec.io.ValidityCheckOutputStream: void createValidityFile()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::212
+IN METHOD::<spec.io.ValidityCheckOutputStream: void createValidityFile()>::SPECIALINVOKE::<java.io.FileOutputStream: void <init>(java.lang.String)>::213
+IN METHOD::<spec.io.ValidityCheckOutputStream: void createValidityFile()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::217
+IN METHOD::<spec.io.ValidityCheckOutputStream: void createValidityFile()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::217

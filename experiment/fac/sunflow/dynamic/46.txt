@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.sunflow.Main: void harnessMain()>::INVOKE::spec.benchmarks.sunflow.Main$BenchmarkImpl::$r1::void kernelMain()::68
+IN METHOD::<spec.benchmarks.sunflow.Main: void harnessMain()>::INVOKE::spec.benchmarks.sunflow.Main$BenchmarkImpl::$r2::void kernelEnd()::69

@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.math.BigDecimal getRates(boolean,java.lang.Object)>::INVOKE::java.util.AbstractMap::$r4::<java.util.AbstractMap: java.lang.Object get(java.lang.Object)>::148
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.math.BigDecimal getRates(boolean,java.lang.Object)>::INVOKE::java.util.HashMap::$r4::<java.util.HashMap: java.lang.Object get(java.lang.Object)>::148
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.math.BigDecimal getRates(boolean,java.lang.Object)>::INVOKE::java.util.LinkedHashMap::$r4::<java.util.LinkedHashMap: java.lang.Object get(java.lang.Object)>::148
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.math.BigDecimal getRates(boolean,java.lang.Object)>::INVOKE::javax.swing.UIDefaults$TextAndMnemonicHashMap::$r4::<javax.swing.UIDefaults$TextAndMnemonicHashMap: java.lang.Object get(java.lang.Object)>::148

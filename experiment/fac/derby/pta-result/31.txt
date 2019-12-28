@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void main(int,int,int,int)>::SPECIALINVOKE::<spec.benchmarks.derby.DerbyHarness: void <init>(int,int,int,int)>::248

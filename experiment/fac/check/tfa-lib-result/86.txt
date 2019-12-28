@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.check.StringAndInt: java.lang.Object clone()>::SPECIALINVOKE::<java.lang.Object: java.lang.Object clone()>::57

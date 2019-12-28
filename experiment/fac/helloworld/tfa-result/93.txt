@@ -1,0 +1,1 @@
+IN METHOD::<spec.reporter.Utils: boolean isCheck(spec.reporter.BenchmarkRecord)>::INVOKE::java.lang.String::$r2::<java.lang.String: boolean equals(java.lang.Object)>::294

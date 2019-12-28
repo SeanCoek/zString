@@ -1,0 +1,5 @@
+IN METHOD::<spec.harness.results.IterationResult: java.util.List getAllErrors(java.lang.String)>::SPECIALINVOKE::<java.util.LinkedList: void <init>()>::199
+IN METHOD::<spec.harness.results.IterationResult: java.util.List getAllErrors(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::202
+IN METHOD::<spec.harness.results.IterationResult: java.util.List getAllErrors(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r18::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::202
+IN METHOD::<spec.harness.results.IterationResult: java.util.List getAllErrors(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::207
+IN METHOD::<spec.harness.results.IterationResult: java.util.List getAllErrors(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::207

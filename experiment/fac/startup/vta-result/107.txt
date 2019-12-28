@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double measureFFT(int,double,spec.benchmarks.scimark.utils.Random)>::STATICINVOKE::<spec.benchmarks.scimark.utils.kernel: double[] RandomizeVector(double[],spec.benchmarks.scimark.utils.Random)>::218
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double measureFFT(int,double,spec.benchmarks.scimark.utils.Random)>::SPECIALINVOKE::<spec.benchmarks.scimark.utils.Stopwatch: void <init>()>::223
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double measureFFT(int,double,spec.benchmarks.scimark.utils.Random)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::232
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double measureFFT(int,double,spec.benchmarks.scimark.utils.Random)>::STATICINVOKE::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::232

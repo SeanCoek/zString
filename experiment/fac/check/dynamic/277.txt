@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void main(java.lang.String[])>::STATICINVOKE::<spec.benchmarks.check.FloatingPointCheck: void run(int)>::269

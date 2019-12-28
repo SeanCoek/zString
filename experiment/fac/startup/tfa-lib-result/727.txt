@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.analyzer.TempSensor: void endSocConnection()>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String,java.lang.Throwable)>::124

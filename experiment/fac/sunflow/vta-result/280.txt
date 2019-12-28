@@ -1,0 +1,8 @@
+IN METHOD::<spec.harness.Util: void printProperties(java.io.PrintStream,java.util.HashMap)>::INVOKE::java.util.HashMap::r1::<java.util.HashMap: java.util.Set keySet()>::234
+IN METHOD::<spec.harness.Util: void printProperties(java.io.PrintStream,java.util.HashMap)>::INVOKE::java.util.HashMap::r1::<java.util.HashMap: java.lang.Object get(java.lang.Object)>::237
+IN METHOD::<spec.harness.Util: void printProperties(java.io.PrintStream,java.util.HashMap)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::238
+IN METHOD::<spec.harness.Util: void printProperties(java.io.PrintStream,java.util.HashMap)>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::238
+IN METHOD::<spec.harness.Util: void printProperties(java.io.PrintStream,java.util.HashMap)>::INVOKE::java.lang.StringBuilder::$r9::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::238
+IN METHOD::<spec.harness.Util: void printProperties(java.io.PrintStream,java.util.HashMap)>::INVOKE::java.lang.StringBuilder::$r10::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::238
+IN METHOD::<spec.harness.Util: void printProperties(java.io.PrintStream,java.util.HashMap)>::INVOKE::java.lang.StringBuilder::$r11::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::238
+IN METHOD::<spec.harness.Util: void printProperties(java.io.PrintStream,java.util.HashMap)>::INVOKE::java.lang.StringBuilder::$r12::<java.lang.StringBuilder: java.lang.String toString()>::238

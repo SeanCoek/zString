@@ -1,0 +1,1 @@
+IN METHOD::<spec.io.FileCache: void discard(java.lang.String)>::INVOKE::java.util.HashMap::$r2::<java.util.HashMap: java.lang.Object remove(java.lang.Object)>::49

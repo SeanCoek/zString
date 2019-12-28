@@ -1,0 +1,9 @@
+IN METHOD::<spec.benchmarks.check.syncTest: void main(java.lang.String[])>::SPECIALINVOKE::<spec.benchmarks.check.syncTest: void <init>()>::44
+IN METHOD::<spec.benchmarks.check.syncTest: void main(java.lang.String[])>::INVOKE::spec.benchmarks.check.syncTest::r1::<spec.benchmarks.check.syncTest: int syncMethod(int)>::46
+IN METHOD::<spec.benchmarks.check.syncTest: void main(java.lang.String[])>::INVOKE::spec.benchmarks.check.syncTest::r1::<spec.benchmarks.check.syncTest: int syncMethod2(int)>::47
+IN METHOD::<spec.benchmarks.check.syncTest: void main(java.lang.String[])>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::48
+IN METHOD::<spec.benchmarks.check.syncTest: void main(java.lang.String[])>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::48
+IN METHOD::<spec.benchmarks.check.syncTest: void main(java.lang.String[])>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.StringBuilder append(int)>::48
+IN METHOD::<spec.benchmarks.check.syncTest: void main(java.lang.String[])>::INVOKE::java.lang.Object::$r6::<java.lang.Object: java.lang.String toString()>::48
+IN METHOD::<spec.benchmarks.check.syncTest: void main(java.lang.String[])>::INVOKE::java.lang.StringBuilder::$r6::<java.lang.StringBuilder: java.lang.String toString()>::48
+IN METHOD::<spec.benchmarks.check.syncTest: void main(java.lang.String[])>::INVOKE::java.io.PrintStream::$r4::<java.io.PrintStream: void println(java.lang.String)>::48

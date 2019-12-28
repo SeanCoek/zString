@@ -1,0 +1,12 @@
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void canonicalize(java.lang.String,java.lang.String)>::SPECIALINVOKE::<java.io.FileOutputStream: void <init>(java.lang.String)>::152
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void canonicalize(java.lang.String,java.lang.String)>::SPECIALINVOKE::<java.io.FileInputStream: void <init>(java.lang.String)>::153
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void canonicalize(java.lang.String,java.lang.String)>::SPECIALINVOKE::<nu.xom.Builder: void <init>()>::154
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void canonicalize(java.lang.String,java.lang.String)>::INVOKE::nu.xom.Builder::$r7::<nu.xom.Builder: nu.xom.Document build(java.io.InputStream)>::154
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void canonicalize(java.lang.String,java.lang.String)>::SPECIALINVOKE::<nu.xom.canonical.Canonicalizer: void <init>(java.io.OutputStream)>::155
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void canonicalize(java.lang.String,java.lang.String)>::INVOKE::nu.xom.canonical.Canonicalizer::$r8::<nu.xom.canonical.Canonicalizer: void write(nu.xom.Node)>::155
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void canonicalize(java.lang.String,java.lang.String)>::INVOKE::java.io.FileInputStream::r3::<java.io.FileInputStream: void close()>::156
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void canonicalize(java.lang.String,java.lang.String)>::INVOKE::java.io.OutputStream::r19::<java.io.OutputStream: void flush()>::157
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void canonicalize(java.lang.String,java.lang.String)>::INVOKE::java.io.FileOutputStream::r19::<java.io.FileOutputStream: void close()>::158
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void canonicalize(java.lang.String,java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::161
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void canonicalize(java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r10::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::161
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void canonicalize(java.lang.String,java.lang.String)>::SPECIALINVOKE::<spec.benchmarks.xml.transform.ExtOutputStream: java.lang.String getSendResultsMessage()>::162

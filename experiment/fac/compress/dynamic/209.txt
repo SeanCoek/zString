@@ -1,0 +1,8 @@
+IN METHOD::<spec.benchmarks.compress.Harness: void prepareBuffers()>::SPECIALINVOKE::<spec.benchmarks.compress.Compress: void <init>()>::68
+IN METHOD::<spec.benchmarks.compress.Harness: void prepareBuffers()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::71
+IN METHOD::<spec.benchmarks.compress.Harness: void prepareBuffers()>::STATICINVOKE::<spec.harness.Context: java.lang.String getSpecBasePath()>::71
+IN METHOD::<spec.benchmarks.compress.Harness: void prepareBuffers()>::INVOKE::java.lang.StringBuilder::$r5::java.lang.StringBuilder append(java.lang.String)::71
+IN METHOD::<spec.benchmarks.compress.Harness: void prepareBuffers()>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::71
+IN METHOD::<spec.benchmarks.compress.Harness: void prepareBuffers()>::INVOKE::java.lang.StringBuilder::$r9::java.lang.StringBuilder append(java.lang.String)::71
+IN METHOD::<spec.benchmarks.compress.Harness: void prepareBuffers()>::INVOKE::java.lang.StringBuilder::$r12::java.lang.String toString()::71
+IN METHOD::<spec.benchmarks.compress.Harness: void prepareBuffers()>::SPECIALINVOKE::<spec.benchmarks.compress.Harness$Source: void <init>(java.lang.String)>::71

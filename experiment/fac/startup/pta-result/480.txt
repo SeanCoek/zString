@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void rmDir()>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::252
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void rmDir()>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void removeFile(java.io.File)>::256
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void rmDir()>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::258

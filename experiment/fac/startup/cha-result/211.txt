@@ -1,0 +1,9 @@
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getZipFile(java.io.File)>::INVOKE::sun.awt.shell.DefaultShellFolder::r0::<sun.awt.shell.DefaultShellFolder: java.io.File[] listFiles()>::139
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getZipFile(java.io.File)>::INVOKE::sun.awt.shell.ShellFolder::r0::<sun.awt.shell.ShellFolder: java.io.File[] listFiles()>::139
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getZipFile(java.io.File)>::INVOKE::java.io.File::r0::<java.io.File: java.io.File[] listFiles()>::139
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getZipFile(java.io.File)>::INVOKE::java.io.File::$r3::<java.io.File: boolean isFile()>::142
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getZipFile(java.io.File)>::INVOKE::sun.awt.shell.ShellFolder::$r3::<sun.awt.shell.ShellFolder: boolean isFile()>::142
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getZipFile(java.io.File)>::INVOKE::java.io.File::$r4::<java.io.File: java.lang.String getName()>::141
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getZipFile(java.io.File)>::INVOKE::javax.swing.filechooser.FileSystemView$FileSystemRoot::$r4::<javax.swing.filechooser.FileSystemView$FileSystemRoot: java.lang.String getName()>::141
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getZipFile(java.io.File)>::INVOKE::java.lang.String::$r5::<java.lang.String: boolean endsWith(java.lang.String)>::141
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getZipFile(java.io.File)>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String)>::148

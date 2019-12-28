@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.check.LoopBounds2: int size()>::SPECIALINVOKE::<java.lang.Double: void <init>(double)>::92

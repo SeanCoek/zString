@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.serial.data.TestArrayDouble: boolean equals(java.lang.Object)>::INVOKE::java.lang.Object::r0::<java.lang.Object: java.lang.Class getClass()>::43
+IN METHOD::<spec.benchmarks.serial.data.TestArrayDouble: boolean equals(java.lang.Object)>::INVOKE::java.lang.Object::r1::<java.lang.Object: java.lang.Class getClass()>::43
+IN METHOD::<spec.benchmarks.serial.data.TestArrayDouble: boolean equals(java.lang.Object)>::INVOKE::java.lang.Object::$r13::<java.lang.Object: boolean equals(java.lang.Object)>::51
+IN METHOD::<spec.benchmarks.serial.data.TestArrayDouble: boolean equals(java.lang.Object)>::INVOKE::spec.benchmarks.serial.data.TestDomainObject::$r13::<spec.benchmarks.serial.data.TestDomainObject: boolean equals(java.lang.Object)>::51

@@ -1,0 +1,11 @@
+IN METHOD::<spec.reporter.BenchmarkRecord: void printAllRecordedInfo()>::INVOKE::java.util.ArrayList::$r2::<java.util.ArrayList: int size()>::79
+IN METHOD::<spec.reporter.BenchmarkRecord: void printAllRecordedInfo()>::INVOKE::java.util.ArrayList::$r3::<java.util.ArrayList: java.lang.Object get(int)>::80
+IN METHOD::<spec.reporter.BenchmarkRecord: void printAllRecordedInfo()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::81
+IN METHOD::<spec.reporter.BenchmarkRecord: void printAllRecordedInfo()>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::81
+IN METHOD::<spec.reporter.BenchmarkRecord: void printAllRecordedInfo()>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::81
+IN METHOD::<spec.reporter.BenchmarkRecord: void printAllRecordedInfo()>::INVOKE::java.lang.StringBuilder::$r9::<java.lang.StringBuilder: java.lang.StringBuilder append(long)>::81
+IN METHOD::<spec.reporter.BenchmarkRecord: void printAllRecordedInfo()>::INVOKE::java.lang.StringBuilder::$r10::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::81
+IN METHOD::<spec.reporter.BenchmarkRecord: void printAllRecordedInfo()>::INVOKE::java.lang.StringBuilder::$r11::<java.lang.StringBuilder: java.lang.StringBuilder append(double)>::81
+IN METHOD::<spec.reporter.BenchmarkRecord: void printAllRecordedInfo()>::INVOKE::java.lang.Object::$r12::<java.lang.Object: java.lang.String toString()>::81
+IN METHOD::<spec.reporter.BenchmarkRecord: void printAllRecordedInfo()>::INVOKE::java.lang.StringBuilder::$r12::<java.lang.StringBuilder: java.lang.String toString()>::81
+IN METHOD::<spec.reporter.BenchmarkRecord: void printAllRecordedInfo()>::INVOKE::java.io.PrintStream::$r6::<java.io.PrintStream: void println(java.lang.String)>::81

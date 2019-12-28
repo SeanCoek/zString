@@ -1,0 +1,5 @@
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::SPECIALINVOKE::<java.util.Properties: void <init>()>::422
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::STATICINVOKE::<spec.harness.CommandLineParser: boolean parseArgs(java.lang.String[],java.util.Properties)>::423
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::STATICINVOKE::<spec.harness.Configuration: java.util.Properties readProperties(java.lang.String)>::429
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::431
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::STATICINVOKE::<spec.harness.Launch: void setupContext()>::442

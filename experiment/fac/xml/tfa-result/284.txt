@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDownAnalyzerClass()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::69
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void tearDownAnalyzerClass()>::INVOKE::spec.harness.analyzer.PowerMeter::$r0::<spec.harness.analyzer.PowerMeter: void endSocConnection()>::74

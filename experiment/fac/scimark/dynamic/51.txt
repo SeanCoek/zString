@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.scimark.monte_carlo.MonteCarlo: void main()>::SPECIALINVOKE::<spec.benchmarks.scimark.monte_carlo.MonteCarlo: void <init>()>::49
+IN METHOD::<spec.benchmarks.scimark.monte_carlo.MonteCarlo: void main()>::INVOKE::spec.benchmarks.scimark.monte_carlo.MonteCarlo::r0::void run()::50

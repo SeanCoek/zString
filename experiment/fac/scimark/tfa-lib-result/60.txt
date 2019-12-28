@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.scimark.monte_carlo.Main: void runBenchmark()>::STATICINVOKE::<spec.benchmarks.scimark.monte_carlo.MonteCarlo: void main()>::24

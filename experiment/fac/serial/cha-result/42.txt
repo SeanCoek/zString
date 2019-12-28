@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: int hashCode()>::INVOKE::java.lang.Object::$r2::<java.lang.Object: int hashCode()>::77
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: int hashCode()>::INVOKE::java.lang.String::$r2::<java.lang.String: int hashCode()>::77

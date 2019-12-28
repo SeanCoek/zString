@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::46
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::35
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::STATICINVOKE::<java.lang.Long: java.lang.Long valueOf(long)>::38
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::STATICINVOKE::<java.lang.Boolean: java.lang.Boolean valueOf(boolean)>::39
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::SPECIALINVOKE::<spec.benchmarks.serial.data.TestDomainObject: void <init>(boolean)>::52

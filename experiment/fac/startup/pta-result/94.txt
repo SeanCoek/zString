@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.scimark.sparse.Main: void runBenchmark()>::STATICINVOKE::<spec.benchmarks.scimark.sparse.SparseCompRow: void main(int)>::23

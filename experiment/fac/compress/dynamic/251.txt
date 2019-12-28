@@ -1,0 +1,16 @@
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::SPECIALINVOKE::<spec.benchmarks.compress.Decompressor: int getCode()>::534
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.OutputBuffer::$r1::void writeByte(byte)::538
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::SPECIALINVOKE::<spec.benchmarks.compress.Decompressor: int getCode()>::540
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.Decompressor$SuffixTable::$r2::byte of(int)::564
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.Decompressor$DeStack::$r3::void push(byte)::564
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.Decompressor$DeStack::$r4::byte pop()::570
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.OutputBuffer::$r5::void writeByte(byte)::570
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.Decompressor$DeStack::$r6::boolean isEmpty()::571
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.CodeTable::$r7::void set(int,int)::577
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.Decompressor$SuffixTable::$r8::void set(int,byte)::578
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.Decompressor$DeStack::$r12::void push(byte)::553
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.Decompressor$SuffixTable::$r9::byte of(int)::561
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.Decompressor$DeStack::$r10::void push(byte)::561
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.CodeTable::$r11::int of(int)::562
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.CodeTable::$r13::void clear(int)::542
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::SPECIALINVOKE::<spec.benchmarks.compress.Decompressor: int getCode()>::545

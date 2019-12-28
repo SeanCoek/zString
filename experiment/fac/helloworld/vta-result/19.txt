@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.helloworld.Main: void main(java.lang.String[])>::STATICINVOKE::<spec.benchmarks.helloworld.Main: void runBenchmark()>::29

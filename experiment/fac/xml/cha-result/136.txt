@@ -1,0 +1,4 @@
+IN METHOD::<spec.reporter.Writer: void <init>(java.lang.String)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::20
+IN METHOD::<spec.reporter.Writer: void <init>(java.lang.String)>::SPECIALINVOKE::<java.io.FileOutputStream: void <init>(java.lang.String)>::22
+IN METHOD::<spec.reporter.Writer: void <init>(java.lang.String)>::SPECIALINVOKE::<java.io.PrintStream: void <init>(java.io.OutputStream)>::23
+IN METHOD::<spec.reporter.Writer: void <init>(java.lang.String)>::INVOKE::java.lang.Throwable::r2::<java.lang.Throwable: void printStackTrace()>::25

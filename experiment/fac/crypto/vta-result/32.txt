@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.crypto.rsa.Main: void setupBenchmark()>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::119
+IN METHOD::<spec.benchmarks.crypto.rsa.Main: void setupBenchmark()>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::120
+IN METHOD::<spec.benchmarks.crypto.rsa.Main: void setupBenchmark()>::STATICINVOKE::<java.security.KeyPairGenerator: java.security.KeyPairGenerator getInstance(java.lang.String)>::122
+IN METHOD::<spec.benchmarks.crypto.rsa.Main: void setupBenchmark()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::132
+IN METHOD::<spec.benchmarks.crypto.rsa.Main: void setupBenchmark()>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String)>::132

@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: boolean equals(java.lang.Object)>::INVOKE::java.lang.String::$r4::<java.lang.String: boolean equals(java.lang.Object)>::32
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: boolean equals(java.lang.Object)>::INVOKE::any_subtype_of::java.lang.String::$r4::<java.lang.String: boolean equals(java.lang.Object)>::32

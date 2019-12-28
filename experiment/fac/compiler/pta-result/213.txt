@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.Context: java.io.PrintStream getOut()>::INVOKE::java.lang.ThreadLocal::$r0::<java.lang.ThreadLocal: java.lang.Object get()>::76

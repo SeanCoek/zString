@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.analyzer.AnalyzerBase: void addError(java.lang.String)>::INVOKE::spec.harness.results.TestResult::$r2::<spec.harness.results.TestResult: void addError(java.lang.String)>::106

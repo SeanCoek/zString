@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager$CachedFileObject: void <init>(spec.benchmarks.compiler.SpecFileManager,javax.tools.JavaFileObject)>::SPECIALINVOKE::<spec.benchmarks.compiler.SpecFileManager$BaseFileObject: void <init>(spec.benchmarks.compiler.SpecFileManager)>::148
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager$CachedFileObject: void <init>(spec.benchmarks.compiler.SpecFileManager,javax.tools.JavaFileObject)>::STATICINVOKE::<spec.benchmarks.compiler.Util: byte[] getBytes(java.io.InputStream)>::165

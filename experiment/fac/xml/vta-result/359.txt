@@ -1,0 +1,6 @@
+IN METHOD::<spec.harness.results.TestResult: void ptxElementOpen(java.io.PrintStream,int,java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::101
+IN METHOD::<spec.harness.results.TestResult: void ptxElementOpen(java.io.PrintStream,int,java.lang.String)>::STATICINVOKE::<spec.harness.results.TestResult: java.lang.String getIndent(int)>::101
+IN METHOD::<spec.harness.results.TestResult: void ptxElementOpen(java.io.PrintStream,int,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::101
+IN METHOD::<spec.harness.results.TestResult: void ptxElementOpen(java.io.PrintStream,int,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r6::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::101
+IN METHOD::<spec.harness.results.TestResult: void ptxElementOpen(java.io.PrintStream,int,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::101
+IN METHOD::<spec.harness.results.TestResult: void ptxElementOpen(java.io.PrintStream,int,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.String toString()>::101

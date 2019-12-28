@@ -1,0 +1,126 @@
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.harness.results.BenchmarkResult::r1::java.lang.String getLogicalName()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.String toString()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.Thread: void <init>(java.lang.String)>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::82
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.harness.results.BenchmarkResult::r1::java.lang.String getLogicalName()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.String toString()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.Thread: void <init>(java.lang.String)>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::82
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.harness.results.BenchmarkResult::r1::java.lang.String getLogicalName()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.String toString()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.Thread: void <init>(java.lang.String)>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::82
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.harness.results.BenchmarkResult::r1::java.lang.String getLogicalName()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.String toString()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.Thread: void <init>(java.lang.String)>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::82
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.harness.results.BenchmarkResult::r1::java.lang.String getLogicalName()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.String toString()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.Thread: void <init>(java.lang.String)>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::82
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.harness.results.BenchmarkResult::r1::java.lang.String getLogicalName()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.String toString()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.Thread: void <init>(java.lang.String)>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::82
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.harness.results.BenchmarkResult::r1::java.lang.String getLogicalName()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.String toString()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.Thread: void <init>(java.lang.String)>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::82
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.harness.results.BenchmarkResult::r1::java.lang.String getLogicalName()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.String toString()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.Thread: void <init>(java.lang.String)>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::82
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.harness.results.BenchmarkResult::r1::java.lang.String getLogicalName()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.String toString()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.Thread: void <init>(java.lang.String)>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::82
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.harness.results.BenchmarkResult::r1::java.lang.String getLogicalName()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.String toString()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.Thread: void <init>(java.lang.String)>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::82
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.harness.results.BenchmarkResult::r1::java.lang.String getLogicalName()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.String toString()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.Thread: void <init>(java.lang.String)>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::82
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.harness.results.BenchmarkResult::r1::java.lang.String getLogicalName()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.String toString()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.Thread: void <init>(java.lang.String)>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::82
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.harness.results.BenchmarkResult::r1::java.lang.String getLogicalName()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.String toString()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.Thread: void <init>(java.lang.String)>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::82
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.harness.results.BenchmarkResult::r1::java.lang.String getLogicalName()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.String toString()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.Thread: void <init>(java.lang.String)>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::82
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.harness.results.BenchmarkResult::r1::java.lang.String getLogicalName()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.String toString()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.Thread: void <init>(java.lang.String)>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::82
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.harness.results.BenchmarkResult::r1::java.lang.String getLogicalName()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.String toString()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.Thread: void <init>(java.lang.String)>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::82
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.harness.results.BenchmarkResult::r1::java.lang.String getLogicalName()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.String toString()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.Thread: void <init>(java.lang.String)>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::82
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.harness.results.BenchmarkResult::r1::java.lang.String getLogicalName()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.String toString()::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.Thread: void <init>(java.lang.String)>::74
+IN METHOD::<spec.harness.ProgramRunner: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::82

@@ -1,0 +1,6 @@
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::INVOKE::java.lang.String::r1::<java.lang.String: int length()>::134
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::136
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::STATICINVOKE::<spec.harness.Context: java.lang.String getSpecBasePath()>::136
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::INVOKE::java.lang.StringBuilder::$r6::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::136
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::136
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::INVOKE::java.io.File::r2::<java.io.File: java.lang.String getCanonicalPath()>::140

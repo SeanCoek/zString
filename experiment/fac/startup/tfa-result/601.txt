@@ -1,0 +1,1 @@
+IN METHOD::<spec.reporter.BenchmarkChart: void updateColors()>::SPECIALINVOKE::<java.awt.Color: void <init>(int,int,int)>::186

@@ -1,0 +1,4 @@
+IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord: void addBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.util.AbstractList::$r2::<java.util.AbstractList: boolean add(java.lang.Object)>::29
+IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord: void addBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.util.AbstractCollection::$r2::<java.util.AbstractCollection: boolean add(java.lang.Object)>::29
+IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord: void addBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::javax.management.AttributeList::$r2::<javax.management.AttributeList: boolean add(java.lang.Object)>::29
+IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord: void addBenchmarkRecord(spec.reporter.BenchmarkRecord)>::INVOKE::java.util.ArrayList::$r2::<java.util.ArrayList: boolean add(java.lang.Object)>::29

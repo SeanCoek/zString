@@ -1,0 +1,1 @@
+IN METHOD::<spec.reporter.SPECSubmissionProcessor: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::23

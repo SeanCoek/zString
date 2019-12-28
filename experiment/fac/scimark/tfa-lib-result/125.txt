@@ -1,0 +1,7 @@
+IN METHOD::<spec.reporter.ReportGenerator: void generateViolationsTable(spec.reporter.Writer)>::INVOKE::spec.reporter.Writer::r1::<spec.reporter.Writer: void startTable(java.lang.String,boolean)>::283
+IN METHOD::<spec.reporter.ReportGenerator: void generateViolationsTable(spec.reporter.Writer)>::INVOKE::any_subtype_of::java.lang.Object::r1::<spec.reporter.Writer: void startTable(java.lang.String,boolean)>::283
+IN METHOD::<spec.reporter.ReportGenerator: void generateViolationsTable(spec.reporter.Writer)>::INVOKE::java.util.ArrayList::$r3::<java.util.ArrayList: int size()>::288
+IN METHOD::<spec.reporter.ReportGenerator: void generateViolationsTable(spec.reporter.Writer)>::INVOKE::spec.reporter.Writer::r1::<spec.reporter.Writer: void insertRecords(java.util.ArrayList)>::285
+IN METHOD::<spec.reporter.ReportGenerator: void generateViolationsTable(spec.reporter.Writer)>::INVOKE::any_subtype_of::java.lang.Object::r1::<spec.reporter.Writer: void insertRecords(java.util.ArrayList)>::285
+IN METHOD::<spec.reporter.ReportGenerator: void generateViolationsTable(spec.reporter.Writer)>::INVOKE::spec.reporter.Writer::r1::<spec.reporter.Writer: void endTable(boolean)>::287
+IN METHOD::<spec.reporter.ReportGenerator: void generateViolationsTable(spec.reporter.Writer)>::INVOKE::any_subtype_of::java.lang.Object::r1::<spec.reporter.Writer: void endTable(boolean)>::287

@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.results.SuiteResult: boolean isValid()>::INVOKE::spec.harness.results.TestResult::r0::<spec.harness.results.TestResult: boolean hasErrors()>::164
+IN METHOD::<spec.harness.results.SuiteResult: boolean isValid()>::INVOKE::spec.harness.results.BenchmarkResult::r2::<spec.harness.results.BenchmarkResult: boolean isValid()>::169

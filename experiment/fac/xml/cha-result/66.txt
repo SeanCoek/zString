@@ -1,0 +1,13 @@
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupBenchmark()>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::79
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupBenchmark()>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::82
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.xml.XMLBenchmark: java.lang.String getFullName(java.lang.Class,java.lang.String,java.lang.String)>::84
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupBenchmark()>::INVOKE::java.lang.Object::r19::<java.lang.Object: java.lang.Class getClass()>::85
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupBenchmark()>::SPECIALINVOKE::<spec.io.FileCache$CachedFile: void <init>(spec.io.FileCache,java.lang.String)>::85
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupBenchmark()>::INVOKE::spec.io.FileCache$CachedFile::$r16::<spec.io.FileCache$CachedFile: void cache()>::86
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.xml.XMLBenchmark: java.lang.String getFullName(java.lang.Class,java.lang.String,java.lang.String)>::90
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupBenchmark()>::INVOKE::java.lang.Object::r19::<java.lang.Object: java.lang.Class getClass()>::91
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupBenchmark()>::SPECIALINVOKE::<spec.io.FileCache$CachedFile: void <init>(spec.io.FileCache,java.lang.String)>::91
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupBenchmark()>::INVOKE::spec.io.FileCache$CachedFile::$r9::<spec.io.FileCache$CachedFile: void cache()>::92
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.xml.validation.Main: void setupValidators(java.lang.String)>::95
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupBenchmark()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::97
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupBenchmark()>::INVOKE::java.lang.Throwable::r22::<java.lang.Throwable: void printStackTrace(java.io.PrintStream)>::97

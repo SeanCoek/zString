@@ -1,0 +1,11 @@
+IN METHOD::<spec.benchmarks.derby.Utils: java.lang.String getCreateDurationsTableQuery(java.lang.String,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::51
+IN METHOD::<spec.benchmarks.derby.Utils: java.lang.String getCreateDurationsTableQuery(java.lang.String,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::52
+IN METHOD::<spec.benchmarks.derby.Utils: java.lang.String getCreateDurationsTableQuery(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::52
+IN METHOD::<spec.benchmarks.derby.Utils: java.lang.String getCreateDurationsTableQuery(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::r1::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::52
+IN METHOD::<spec.benchmarks.derby.Utils: java.lang.String getCreateDurationsTableQuery(java.lang.String,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::56
+IN METHOD::<spec.benchmarks.derby.Utils: java.lang.String getCreateDurationsTableQuery(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r18::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::56
+IN METHOD::<spec.benchmarks.derby.Utils: java.lang.String getCreateDurationsTableQuery(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::r1::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::56
+IN METHOD::<spec.benchmarks.derby.Utils: java.lang.String getCreateDurationsTableQuery(java.lang.String,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::59
+IN METHOD::<spec.benchmarks.derby.Utils: java.lang.String getCreateDurationsTableQuery(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r11::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::59
+IN METHOD::<spec.benchmarks.derby.Utils: java.lang.String getCreateDurationsTableQuery(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::r1::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::59
+IN METHOD::<spec.benchmarks.derby.Utils: java.lang.String getCreateDurationsTableQuery(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::r1::<java.lang.StringBuilder: java.lang.String toString()>::60

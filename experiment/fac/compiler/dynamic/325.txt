@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.compiler.Util: void <clinit>()>::STATICINVOKE::<java.nio.charset.Charset: java.nio.charset.Charset forName(java.lang.String)>::32
+IN METHOD::<spec.benchmarks.compiler.Util: void <clinit>()>::STATICINVOKE::<java.nio.charset.Charset: java.nio.charset.Charset forName(java.lang.String)>::32

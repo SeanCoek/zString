@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.derby.Utils: java.math.BigDecimal[] getArray()>::SPECIALINVOKE::<java.math.BigDecimal: void <init>(java.lang.String)>::161

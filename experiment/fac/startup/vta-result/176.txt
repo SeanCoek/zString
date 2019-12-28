@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.compiler.MainBase: void <init>(spec.harness.results.BenchmarkResult,int,int)>::SPECIALINVOKE::<spec.harness.SpecJVMBenchmarkBase: void <init>(spec.harness.results.BenchmarkResult,int)>::29

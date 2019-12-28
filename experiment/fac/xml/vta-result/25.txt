@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: void remove(java.io.File)>::STATICINVOKE::<spec.benchmarks.xml.XMLBenchmark: void remove(java.io.File)>::92

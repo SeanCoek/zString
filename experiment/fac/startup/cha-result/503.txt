@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.derby.DataReader$Data: void <init>(spec.benchmarks.derby.DataReader)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::6

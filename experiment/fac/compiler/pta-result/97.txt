@@ -1,0 +1,3 @@
+IN METHOD::<spec.reporter.PlainWriter: void insertRecords(java.util.ArrayList)>::INVOKE::java.util.ArrayList::r1::<java.util.ArrayList: int size()>::103
+IN METHOD::<spec.reporter.PlainWriter: void insertRecords(java.util.ArrayList)>::INVOKE::java.util.ArrayList::r1::<java.util.ArrayList: java.lang.Object get(int)>::104
+IN METHOD::<spec.reporter.PlainWriter: void insertRecords(java.util.ArrayList)>::STATICINVOKE::<spec.harness.results.TestResult: java.lang.String correctContent(java.lang.String,boolean)>::104

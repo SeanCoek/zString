@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testObjectHash()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::644
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testObjectHash()>::SPECIALINVOKE::<java.util.Hashtable: void <init>()>::645
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testObjectHash()>::SPECIALINVOKE::<spec.benchmarks.check.syncTest: void <init>()>::648
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testObjectHash()>::STATICINVOKE::<java.lang.Integer: java.lang.Integer valueOf(int)>::648
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testObjectHash()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::652

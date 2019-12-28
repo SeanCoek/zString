@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.compiler.MainBase: void preSetupBenchmark(java.lang.Class)>::33
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.compiler.sunflow.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::34
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: void setupBenchmark()>::SPECIALINVOKE::<spec.harness.results.BenchmarkResult: void <init>()>::35
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: void setupBenchmark()>::SPECIALINVOKE::<spec.benchmarks.compiler.sunflow.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::35
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: void setupBenchmark()>::INVOKE::spec.benchmarks.compiler.sunflow.Main::$r3::void harnessMain(boolean)::35

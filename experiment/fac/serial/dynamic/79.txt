@@ -1,0 +1,7 @@
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: spec.benchmarks.serial.data.TestPayload createTestInstance()>::SPECIALINVOKE::<java.util.Random: void <init>()>::23
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: spec.benchmarks.serial.data.TestPayload createTestInstance()>::INVOKE::java.util.Random::$r3::int nextInt()::23
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: spec.benchmarks.serial.data.TestPayload createTestInstance()>::SPECIALINVOKE::<spec.benchmarks.serial.data.TestPayload: void <init>(java.lang.String,int)>::23
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: spec.benchmarks.serial.data.TestPayload createTestInstance()>::SPECIALINVOKE::<java.util.Random: void <init>()>::25
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: spec.benchmarks.serial.data.TestPayload createTestInstance()>::INVOKE::java.util.Random::$r5::int nextInt()::25
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: spec.benchmarks.serial.data.TestPayload createTestInstance()>::SPECIALINVOKE::<spec.benchmarks.serial.data.TestPayload: void <init>(java.lang.String,int)>::25
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: spec.benchmarks.serial.data.TestPayload createTestInstance()>::INVOKE::spec.benchmarks.serial.data.TestPayload::r0::void setChild(spec.benchmarks.serial.data.TestPayload)::26

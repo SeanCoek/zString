@@ -1,0 +1,12 @@
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.lang.String readMeter()>::INVOKE::java.lang.Throwable::r1::<java.lang.Throwable: java.lang.String getMessage()>::114
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.lang.String readMeter()>::INVOKE::java.nio.charset.MalformedInputException::r1::<java.nio.charset.MalformedInputException: java.lang.String getMessage()>::114
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.lang.String readMeter()>::INVOKE::java.io.InvalidClassException::r1::<java.io.InvalidClassException: java.lang.String getMessage()>::114
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.lang.String readMeter()>::INVOKE::java.nio.file.FileSystemException::r1::<java.nio.file.FileSystemException: java.lang.String getMessage()>::114
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.lang.String readMeter()>::INVOKE::java.nio.charset.UnmappableCharacterException::r1::<java.nio.charset.UnmappableCharacterException: java.lang.String getMessage()>::114
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.lang.String readMeter()>::INVOKE::java.io.WriteAbortedException::r1::<java.io.WriteAbortedException: java.lang.String getMessage()>::114
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.lang.String readMeter()>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String,java.lang.Throwable)>::114
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.lang.String readMeter()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::118
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.lang.String readMeter()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::118
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.lang.String readMeter()>::INVOKE::java.lang.StringBuilder::$r4::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::118
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.lang.String readMeter()>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::118
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.lang.String readMeter()>::INVOKE::java.lang.StringBuilder::$r6::<java.lang.StringBuilder: java.lang.String toString()>::118

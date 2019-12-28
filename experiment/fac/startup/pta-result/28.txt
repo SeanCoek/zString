@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.crypto.aes.Main: void printMe(java.lang.String,byte[])>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::50

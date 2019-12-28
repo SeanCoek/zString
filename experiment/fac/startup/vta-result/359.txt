@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: java.lang.String getIdentity()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::63

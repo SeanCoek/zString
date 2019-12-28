@@ -1,0 +1,7 @@
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: byte[] getFileArray(java.lang.String)>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::30
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: byte[] getFileArray(java.lang.String)>::INVOKE::java.lang.Object::r1::<java.lang.Object: java.lang.Class getClass()>::31
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: byte[] getFileArray(java.lang.String)>::SPECIALINVOKE::<spec.io.FileCache$CachedFile: void <init>(spec.io.FileCache,java.lang.String)>::31
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: byte[] getFileArray(java.lang.String)>::INVOKE::spec.io.FileCache$CachedFile::r2::<spec.io.FileCache$CachedFile: void cache()>::33
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: byte[] getFileArray(java.lang.String)>::INVOKE::java.lang.Throwable::r6::<java.lang.Throwable: void printStackTrace()>::35
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: byte[] getFileArray(java.lang.String)>::INVOKE::spec.io.FileCache::r1::<spec.io.FileCache: byte[] getByteArray(java.lang.String)>::37
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: byte[] getFileArray(java.lang.String)>::INVOKE::spec.io.FileCache$CachedFile::r2::<spec.io.FileCache$CachedFile: void discard()>::38

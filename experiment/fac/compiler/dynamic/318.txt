@@ -1,0 +1,8 @@
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getZipFile(java.io.File)>::INVOKE::java.io.File::r0::java.io.File[] listFiles()::139
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getZipFile(java.io.File)>::INVOKE::java.io.File::$r3::boolean isFile()::142
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getZipFile(java.io.File)>::INVOKE::java.io.File::$r4::java.lang.String getName()::141
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getZipFile(java.io.File)>::INVOKE::java.lang.String::$r5::boolean endsWith(java.lang.String)::141
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getZipFile(java.io.File)>::INVOKE::java.io.File::r0::java.io.File[] listFiles()::139
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getZipFile(java.io.File)>::INVOKE::java.io.File::$r3::boolean isFile()::142
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getZipFile(java.io.File)>::INVOKE::java.io.File::$r4::java.lang.String getName()::141
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getZipFile(java.io.File)>::INVOKE::java.lang.String::$r5::boolean endsWith(java.lang.String)::141

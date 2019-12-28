@@ -1,0 +1,108 @@
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::103
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::106
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::110
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int length()::115
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Integer: int parseInt(java.lang.String)>::116
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Math: long round(double)>::118
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::103
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::106
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::110
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int length()::115
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Integer: int parseInt(java.lang.String)>::116
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Math: long round(double)>::118
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::103
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::106
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::110
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int length()::115
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Integer: int parseInt(java.lang.String)>::116
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Math: long round(double)>::118
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::103
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::106
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::110
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int length()::115
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Integer: int parseInt(java.lang.String)>::116
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Math: long round(double)>::118
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::103
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::106
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::110
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int length()::115
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Integer: int parseInt(java.lang.String)>::116
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Math: long round(double)>::118
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::103
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::106
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::110
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int length()::115
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Integer: int parseInt(java.lang.String)>::116
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Math: long round(double)>::118
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::103
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::106
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::110
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int length()::115
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Integer: int parseInt(java.lang.String)>::116
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Math: long round(double)>::118
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::103
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::106
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::110
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int length()::115
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Integer: int parseInt(java.lang.String)>::116
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Math: long round(double)>::118
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::103
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::106
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::110
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int length()::115
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Integer: int parseInt(java.lang.String)>::116
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Math: long round(double)>::118
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::103
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::106
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::110
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int length()::115
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Integer: int parseInt(java.lang.String)>::116
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Math: long round(double)>::118
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::103
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::106
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::110
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int length()::115
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Integer: int parseInt(java.lang.String)>::116
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Math: long round(double)>::118
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::103
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::106
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::110
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int length()::115
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Integer: int parseInt(java.lang.String)>::116
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Math: long round(double)>::118
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::103
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::106
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::110
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int length()::115
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Integer: int parseInt(java.lang.String)>::116
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Math: long round(double)>::118
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::103
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::106
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::110
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int length()::115
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Integer: int parseInt(java.lang.String)>::116
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Math: long round(double)>::118
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::103
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::106
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::110
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int length()::115
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Integer: int parseInt(java.lang.String)>::116
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Math: long round(double)>::118
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::103
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::106
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::110
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int length()::115
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Integer: int parseInt(java.lang.String)>::116
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Math: long round(double)>::118
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::103
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::106
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::110
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int length()::115
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Integer: int parseInt(java.lang.String)>::116
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Math: long round(double)>::118
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::103
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::106
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int indexOf(java.lang.String)::110
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r4::int length()::115
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Integer: int parseInt(java.lang.String)>::116
+IN METHOD::<spec.harness.Util: int getHwtCalcProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<java.lang.Math: long round(double)>::118

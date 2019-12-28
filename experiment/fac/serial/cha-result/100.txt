@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.serial.Main: void harnessMain()>::INVOKE::spec.benchmarks.serial.Main::r0::<spec.benchmarks.serial.Main: void serialize()>::46
+IN METHOD::<spec.benchmarks.serial.Main: void harnessMain()>::INVOKE::spec.benchmarks.serial.Main::r0::<spec.benchmarks.serial.Main: void serialize()>::47
+IN METHOD::<spec.benchmarks.serial.Main: void harnessMain()>::INVOKE::spec.benchmarks.serial.Main::r0::<spec.benchmarks.serial.Main: void serialize()>::48
+IN METHOD::<spec.benchmarks.serial.Main: void harnessMain()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::50
+IN METHOD::<spec.benchmarks.serial.Main: void harnessMain()>::INVOKE::java.lang.Throwable::r1::<java.lang.Throwable: void printStackTrace(java.io.PrintStream)>::50
+IN METHOD::<spec.benchmarks.serial.Main: void harnessMain()>::INVOKE::javax.xml.transform.TransformerException::r1::<javax.xml.transform.TransformerException: void printStackTrace(java.io.PrintStream)>::50

@@ -1,0 +1,8 @@
+IN METHOD::<spec.benchmarks.crypto.Util: void <clinit>()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::16
+IN METHOD::<spec.benchmarks.crypto.Util: void <clinit>()>::STATICINVOKE::<spec.harness.Context: java.lang.String getSpecBasePath()>::16
+IN METHOD::<spec.benchmarks.crypto.Util: void <clinit>()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::24
+IN METHOD::<spec.benchmarks.crypto.Util: void <clinit>()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::27
+IN METHOD::<spec.benchmarks.crypto.Util: void <clinit>()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::30
+IN METHOD::<spec.benchmarks.crypto.Util: void <clinit>()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::33
+IN METHOD::<spec.benchmarks.crypto.Util: void <clinit>()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::36
+IN METHOD::<spec.benchmarks.crypto.Util: void <clinit>()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::39

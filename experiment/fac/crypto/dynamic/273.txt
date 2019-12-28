@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.crypto.aes.Main: byte[] decrypt(byte[],javax.crypto.SecretKey,java.lang.String,int)>::STATICINVOKE::<javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>::110
+IN METHOD::<spec.benchmarks.crypto.aes.Main: byte[] decrypt(byte[],javax.crypto.SecretKey,java.lang.String,int)>::INVOKE::javax.crypto.Cipher::r15::void init(int,java.security.Key,java.security.AlgorithmParameters)::111
+IN METHOD::<spec.benchmarks.crypto.aes.Main: byte[] decrypt(byte[],javax.crypto.SecretKey,java.lang.String,int)>::INVOKE::javax.crypto.Cipher::r15::byte[] update(byte[])::114
+IN METHOD::<spec.benchmarks.crypto.aes.Main: byte[] decrypt(byte[],javax.crypto.SecretKey,java.lang.String,int)>::INVOKE::javax.crypto.Cipher::r15::byte[] doFinal()::115
+IN METHOD::<spec.benchmarks.crypto.aes.Main: byte[] decrypt(byte[],javax.crypto.SecretKey,java.lang.String,int)>::STATICINVOKE::<java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>::120
+IN METHOD::<spec.benchmarks.crypto.aes.Main: byte[] decrypt(byte[],javax.crypto.SecretKey,java.lang.String,int)>::STATICINVOKE::<java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>::121

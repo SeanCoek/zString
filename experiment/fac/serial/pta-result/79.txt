@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.data.TestHugeData: spec.benchmarks.serial.data.TestHugeData createTestInstance()>::STATICINVOKE::<spec.benchmarks.serial.data.TestHugeData: spec.benchmarks.serial.data.TestHugeData createTestInstance(int)>::24

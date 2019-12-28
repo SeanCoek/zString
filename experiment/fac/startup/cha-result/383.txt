@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.serial.data.TestClassWithSQLDateOnly: boolean equals(java.lang.Object)>::INVOKE::java.util.Date::$r4::<java.util.Date: boolean equals(java.lang.Object)>::32
+IN METHOD::<spec.benchmarks.serial.data.TestClassWithSQLDateOnly: boolean equals(java.lang.Object)>::INVOKE::java.lang.Object::$r4::<java.lang.Object: boolean equals(java.lang.Object)>::32

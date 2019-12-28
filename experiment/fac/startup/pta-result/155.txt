@@ -1,0 +1,8 @@
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: void inst_main(int)>::INVOKE::spec.benchmarks.mpegaudio.Harness::r0::<spec.benchmarks.mpegaudio.Harness: void run(int)>::75
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: void inst_main(int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::77
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: void inst_main(int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::77
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: void inst_main(int)>::INVOKE::java.lang.StringBuilder::$r2::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::77
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: void inst_main(int)>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(int)>::77
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: void inst_main(int)>::INVOKE::java.lang.StringBuilder::$r4::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::77
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: void inst_main(int)>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.StringBuilder append(long)>::77
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: void inst_main(int)>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.String toString()>::77

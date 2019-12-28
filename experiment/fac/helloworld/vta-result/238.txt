@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.analyzer.CallbackAnalyzerExample$TheNumberGenerator: void run()>::STATICINVOKE::<java.lang.Thread: void sleep(long)>::158

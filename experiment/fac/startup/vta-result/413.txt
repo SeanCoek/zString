@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void canonicalize(java.lang.String,java.lang.String)>::SPECIALINVOKE::<java.io.FileOutputStream: void <init>(java.lang.String)>::152
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void canonicalize(java.lang.String,java.lang.String)>::SPECIALINVOKE::<java.io.FileInputStream: void <init>(java.lang.String)>::153
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void canonicalize(java.lang.String,java.lang.String)>::SPECIALINVOKE::<nu.xom.Builder: void <init>()>::154
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void canonicalize(java.lang.String,java.lang.String)>::SPECIALINVOKE::<nu.xom.canonical.Canonicalizer: void <init>(java.io.OutputStream)>::155
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void canonicalize(java.lang.String,java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::161
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void canonicalize(java.lang.String,java.lang.String)>::SPECIALINVOKE::<spec.benchmarks.xml.transform.ExtOutputStream: java.lang.String getSendResultsMessage()>::162

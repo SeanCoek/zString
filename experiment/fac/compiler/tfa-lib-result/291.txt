@@ -1,0 +1,8 @@
+IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.String readMeter()>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String,java.lang.Throwable)>::109
+IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.String readMeter()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::113
+IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.String readMeter()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::113
+IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.String readMeter()>::INVOKE::java.lang.StringBuilder::$r4::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::113
+IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.String readMeter()>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::113
+IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.String readMeter()>::INVOKE::java.lang.StringBuilder::$r6::<java.lang.StringBuilder: java.lang.String toString()>::113
+IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.String readMeter()>::INVOKE::java.io.PrintStream::$r3::<java.io.PrintStream: void println(java.lang.String)>::113
+IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.String readMeter()>::INVOKE::any_subtype_of::java.lang.Object::$r3::<java.io.PrintStream: void println(java.lang.String)>::113

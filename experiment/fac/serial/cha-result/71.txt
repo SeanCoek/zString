@@ -1,0 +1,10 @@
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::21
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: void <init>()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::22
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: void <init>()>::INVOKE::java.lang.StringBuilder::$r2::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::22
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: void <init>()>::SPECIALINVOKE::<java.util.Random: void <init>()>::22
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: void <init>()>::INVOKE::java.util.concurrent.ThreadLocalRandom::$r4::<java.util.concurrent.ThreadLocalRandom: int nextInt()>::22
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: void <init>()>::INVOKE::java.util.Random::$r4::<java.util.Random: int nextInt()>::22
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: void <init>()>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(int)>::22
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: void <init>()>::INVOKE::java.lang.Object::$r5::<java.lang.Object: java.lang.String toString()>::22
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: void <init>()>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.String toString()>::22
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: void <init>()>::SPECIALINVOKE::<java.io.IOException: void <init>(java.lang.String)>::22

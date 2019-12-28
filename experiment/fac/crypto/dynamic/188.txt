@@ -1,0 +1,6 @@
+IN METHOD::<spec.io.FileCache: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::35
+IN METHOD::<spec.io.FileCache: void <init>()>::SPECIALINVOKE::<java.util.HashMap: void <init>()>::38
+IN METHOD::<spec.io.FileCache: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::35
+IN METHOD::<spec.io.FileCache: void <init>()>::SPECIALINVOKE::<java.util.HashMap: void <init>()>::38
+IN METHOD::<spec.io.FileCache: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::35
+IN METHOD::<spec.io.FileCache: void <init>()>::SPECIALINVOKE::<java.util.HashMap: void <init>()>::38

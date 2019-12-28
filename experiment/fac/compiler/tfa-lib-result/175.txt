@@ -1,0 +1,9 @@
+IN METHOD::<spec.reporter.BenchmarkChart: void addMarker(long,java.lang.String)>::SPECIALINVOKE::<org.jfree.chart.plot.ValueMarker: void <init>(double)>::133
+IN METHOD::<spec.reporter.BenchmarkChart: void addMarker(long,java.lang.String)>::INVOKE::org.jfree.chart.plot.Marker::r2::<org.jfree.chart.plot.Marker: void setPaint(java.awt.Paint)>::134
+IN METHOD::<spec.reporter.BenchmarkChart: void addMarker(long,java.lang.String)>::INVOKE::org.jfree.chart.plot.ValueMarker::r2::<org.jfree.chart.plot.ValueMarker: void setLabel(java.lang.String)>::135
+IN METHOD::<spec.reporter.BenchmarkChart: void addMarker(long,java.lang.String)>::INVOKE::org.jfree.chart.plot.Marker::r2::<org.jfree.chart.plot.Marker: java.awt.Font getLabelFont()>::136
+IN METHOD::<spec.reporter.BenchmarkChart: void addMarker(long,java.lang.String)>::INVOKE::java.awt.Font::$r5::<java.awt.Font: java.awt.Font deriveFont(int,float)>::136
+IN METHOD::<spec.reporter.BenchmarkChart: void addMarker(long,java.lang.String)>::INVOKE::any_subtype_of::java.awt.Font::$r5::<java.awt.Font: java.awt.Font deriveFont(int,float)>::136
+IN METHOD::<spec.reporter.BenchmarkChart: void addMarker(long,java.lang.String)>::INVOKE::org.jfree.chart.plot.Marker::r2::<org.jfree.chart.plot.Marker: void setLabelFont(java.awt.Font)>::136
+IN METHOD::<spec.reporter.BenchmarkChart: void addMarker(long,java.lang.String)>::INVOKE::org.jfree.chart.plot.ValueMarker::r2::<org.jfree.chart.plot.ValueMarker: void setLabelAnchor(org.jfree.ui.RectangleAnchor)>::137
+IN METHOD::<spec.reporter.BenchmarkChart: void addMarker(long,java.lang.String)>::INVOKE::org.jfree.chart.plot.ValueMarker::r2::<org.jfree.chart.plot.ValueMarker: void setLabelTextAnchor(org.jfree.ui.TextAnchor)>::138

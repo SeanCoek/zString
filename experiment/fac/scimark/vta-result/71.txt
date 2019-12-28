@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: int log2(int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::97
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: int log2(int)>::SPECIALINVOKE::<java.lang.Error: void <init>(java.lang.String)>::97

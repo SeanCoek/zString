@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void removeFile(java.io.File)>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void removeFile(java.io.File)>::268

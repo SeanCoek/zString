@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.results.TestResult: void ptxAttrib(java.io.PrintStream,int,java.lang.String,long,boolean,java.lang.String)>::STATICINVOKE::<java.lang.Long: java.lang.String toString(long)>::80
+IN METHOD::<spec.harness.results.TestResult: void ptxAttrib(java.io.PrintStream,int,java.lang.String,long,boolean,java.lang.String)>::INVOKE::spec.harness.results.TestResult::r0::<spec.harness.results.TestResult: void ptxAttrib(java.io.PrintStream,int,java.lang.String,java.lang.String,boolean,java.lang.String)>::80

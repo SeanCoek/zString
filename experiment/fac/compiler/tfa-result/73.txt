@@ -1,0 +1,8 @@
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.Iterable getJavaFileObjectsFromFiles(java.lang.Iterable)>::SPECIALINVOKE::<java.util.ArrayList: void <init>(int)>::310
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.Iterable getJavaFileObjectsFromFiles(java.lang.Iterable)>::SPECIALINVOKE::<java.util.ArrayList: void <init>()>::312
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.Iterable getJavaFileObjectsFromFiles(java.lang.Iterable)>::INVOKE::java.util.HashMap::$r7::<java.util.HashMap: boolean containsKey(java.lang.Object)>::316
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.Iterable getJavaFileObjectsFromFiles(java.lang.Iterable)>::INVOKE::java.util.HashMap::$r12::<java.util.HashMap: java.lang.Object get(java.lang.Object)>::317
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.Iterable getJavaFileObjectsFromFiles(java.lang.Iterable)>::INVOKE::java.util.ArrayList::r16::<java.util.ArrayList: boolean add(java.lang.Object)>::317
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.Iterable getJavaFileObjectsFromFiles(java.lang.Iterable)>::SPECIALINVOKE::<spec.benchmarks.compiler.SpecFileManager$InputFileObject: void <init>(spec.benchmarks.compiler.SpecFileManager,java.lang.String,java.io.File)>::319
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.Iterable getJavaFileObjectsFromFiles(java.lang.Iterable)>::INVOKE::java.util.HashMap::$r10::<java.util.HashMap: java.lang.Object put(java.lang.Object,java.lang.Object)>::320
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.Iterable getJavaFileObjectsFromFiles(java.lang.Iterable)>::INVOKE::java.util.ArrayList::r16::<java.util.ArrayList: boolean add(java.lang.Object)>::321

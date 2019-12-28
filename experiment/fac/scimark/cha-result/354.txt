@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void <init>()>::SPECIALINVOKE::<spec.harness.analyzer.AnalyzerBase: void <init>()>::77

@@ -1,0 +1,8 @@
+IN METHOD::<spec.benchmarks.xml.transform.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.benchmarks.xml.XMLBenchmark: void <init>(spec.harness.results.BenchmarkResult,int)>::195
+IN METHOD::<spec.benchmarks.xml.transform.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::STATICINVOKE::<spec.benchmarks.xml.transform.Main: int getValidationMode()>::196
+IN METHOD::<spec.benchmarks.xml.transform.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.benchmarks.xml.transform.ExtOutputStream: void <init>()>::197
+IN METHOD::<spec.benchmarks.xml.transform.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.benchmarks.xml.transform.Main::r0::<spec.benchmarks.xml.transform.Main: void setOutputStream(spec.benchmarks.xml.transform.BaseOutputStream)>::197
+IN METHOD::<spec.benchmarks.xml.transform.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.benchmarks.xml.transform.Main: void setValidationProperties(java.util.Properties)>::198
+IN METHOD::<spec.benchmarks.xml.transform.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.benchmarks.xml.transform.BaseOutputStream: void <init>()>::200
+IN METHOD::<spec.benchmarks.xml.transform.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.benchmarks.xml.transform.Main::r0::<spec.benchmarks.xml.transform.Main: void setOutputStream(spec.benchmarks.xml.transform.BaseOutputStream)>::200
+IN METHOD::<spec.benchmarks.xml.transform.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.benchmarks.xml.transform.Main: void setValidationProperties(java.util.Properties)>::201

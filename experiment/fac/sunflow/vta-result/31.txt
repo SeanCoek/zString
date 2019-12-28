@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.PlainWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::SPECIALINVOKE::<spec.reporter.PlainWriter: void handleIterRecord(spec.reporter.BenchmarkRecord)>::42
+IN METHOD::<spec.reporter.PlainWriter: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::SPECIALINVOKE::<java.util.Formatter: void <init>(java.io.PrintStream)>::52

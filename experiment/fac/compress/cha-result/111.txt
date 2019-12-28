@@ -1,0 +1,14 @@
+IN METHOD::<spec.reporter.SPECSubmissionPreparer: void prepareFiles(java.lang.String[])>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::24
+IN METHOD::<spec.reporter.SPECSubmissionPreparer: void prepareFiles(java.lang.String[])>::INVOKE::java.io.File::$r3::<java.io.File: boolean exists()>::24
+IN METHOD::<spec.reporter.SPECSubmissionPreparer: void prepareFiles(java.lang.String[])>::INVOKE::sun.awt.shell.ShellFolder::$r3::<sun.awt.shell.ShellFolder: boolean exists()>::24
+IN METHOD::<spec.reporter.SPECSubmissionPreparer: void prepareFiles(java.lang.String[])>::INVOKE::javax.swing.filechooser.WindowsFileSystemView$2::$r3::<javax.swing.filechooser.WindowsFileSystemView$2: boolean exists()>::24
+IN METHOD::<spec.reporter.SPECSubmissionPreparer: void prepareFiles(java.lang.String[])>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::25
+IN METHOD::<spec.reporter.SPECSubmissionPreparer: void prepareFiles(java.lang.String[])>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::25
+IN METHOD::<spec.reporter.SPECSubmissionPreparer: void prepareFiles(java.lang.String[])>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::25
+IN METHOD::<spec.reporter.SPECSubmissionPreparer: void prepareFiles(java.lang.String[])>::INVOKE::java.lang.StringBuilder::$r9::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::25
+IN METHOD::<spec.reporter.SPECSubmissionPreparer: void prepareFiles(java.lang.String[])>::INVOKE::java.lang.Object::$r10::<java.lang.Object: java.lang.String toString()>::25
+IN METHOD::<spec.reporter.SPECSubmissionPreparer: void prepareFiles(java.lang.String[])>::INVOKE::java.lang.StringBuilder::$r10::<java.lang.StringBuilder: java.lang.String toString()>::25
+IN METHOD::<spec.reporter.SPECSubmissionPreparer: void prepareFiles(java.lang.String[])>::INVOKE::java.io.PrintStream::$r6::<java.io.PrintStream: void println(java.lang.String)>::25
+IN METHOD::<spec.reporter.SPECSubmissionPreparer: void prepareFiles(java.lang.String[])>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::34
+IN METHOD::<spec.reporter.SPECSubmissionPreparer: void prepareFiles(java.lang.String[])>::STATICINVOKE::<spec.reporter.SPECSubmissionPreparer: java.lang.String mergeFiles(java.io.File[])>::37
+IN METHOD::<spec.reporter.SPECSubmissionPreparer: void prepareFiles(java.lang.String[])>::STATICINVOKE::<spec.reporter.SPECSubmissionPreparer: void zipFile(java.lang.String)>::43

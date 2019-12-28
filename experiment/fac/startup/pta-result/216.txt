@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.String generateKey(javax.tools.JavaFileManager$Location,java.lang.String,java.util.Set,boolean)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::239
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.String generateKey(javax.tools.JavaFileManager$Location,java.lang.String,java.util.Set,boolean)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::242
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.String generateKey(javax.tools.JavaFileManager$Location,java.lang.String,java.util.Set,boolean)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::244

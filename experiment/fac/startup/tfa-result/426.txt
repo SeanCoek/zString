@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void checkResult(int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::271
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void checkResult(int)>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::271

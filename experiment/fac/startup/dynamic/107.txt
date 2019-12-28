@@ -1,0 +1,90 @@
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::57
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::59
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::STATICINVOKE::<java.lang.Long: long parseLong(java.lang.String)>::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::57
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::59
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::STATICINVOKE::<java.lang.Long: long parseLong(java.lang.String)>::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::57
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::59
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::STATICINVOKE::<java.lang.Long: long parseLong(java.lang.String)>::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::57
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::59
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::STATICINVOKE::<java.lang.Long: long parseLong(java.lang.String)>::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::57
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::59
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::STATICINVOKE::<java.lang.Long: long parseLong(java.lang.String)>::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::57
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::59
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::STATICINVOKE::<java.lang.Long: long parseLong(java.lang.String)>::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::57
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::59
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::STATICINVOKE::<java.lang.Long: long parseLong(java.lang.String)>::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::57
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::59
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::STATICINVOKE::<java.lang.Long: long parseLong(java.lang.String)>::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::57
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::59
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::STATICINVOKE::<java.lang.Long: long parseLong(java.lang.String)>::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::57
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::59
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::STATICINVOKE::<java.lang.Long: long parseLong(java.lang.String)>::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::57
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::59
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::STATICINVOKE::<java.lang.Long: long parseLong(java.lang.String)>::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::57
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::59
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::STATICINVOKE::<java.lang.Long: long parseLong(java.lang.String)>::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::57
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::59
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::STATICINVOKE::<java.lang.Long: long parseLong(java.lang.String)>::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::57
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::59
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::STATICINVOKE::<java.lang.Long: long parseLong(java.lang.String)>::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::57
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::59
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::STATICINVOKE::<java.lang.Long: long parseLong(java.lang.String)>::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::57
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::59
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::STATICINVOKE::<java.lang.Long: long parseLong(java.lang.String)>::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::57
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::59
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::STATICINVOKE::<java.lang.Long: long parseLong(java.lang.String)>::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::57
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::59
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::int indexOf(java.lang.String)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::60
+IN METHOD::<spec.harness.Util: long getTimeAsMillis(java.lang.String)>::STATICINVOKE::<java.lang.Long: long parseLong(java.lang.String)>::60

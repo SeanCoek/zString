@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: long inst_main(java.lang.String[])>::INVOKE::spec.benchmarks.scimark.fft.FFT::r0::<spec.benchmarks.scimark.fft.FFT: void run()>::42

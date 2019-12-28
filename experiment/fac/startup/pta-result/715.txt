@@ -1,0 +1,4 @@
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: boolean executeAnalyzers()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::81
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: boolean executeAnalyzers()>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::84
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: boolean executeAnalyzers()>::INVOKE::java.lang.Throwable::r6::<java.lang.Throwable: void printStackTrace()>::91
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: boolean executeAnalyzers()>::INVOKE::javax.xml.transform.TransformerException::r6::<javax.xml.transform.TransformerException: void printStackTrace()>::91

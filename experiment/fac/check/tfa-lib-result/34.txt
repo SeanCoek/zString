@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testHiddenField()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::316
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testHiddenField()>::INVOKE::java.io.PrintStream::$r3::<java.io.PrintStream: void print(java.lang.String)>::316
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testHiddenField()>::INVOKE::any_subtype_of::java.lang.Object::$r3::<java.io.PrintStream: void print(java.lang.String)>::316
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testHiddenField()>::SPECIALINVOKE::<spec.benchmarks.check.subClass: void <init>()>::317
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testHiddenField()>::INVOKE::spec.benchmarks.check.subClass::r2::<spec.benchmarks.check.subClass: int getVal()>::323
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testHiddenField()>::INVOKE::spec.benchmarks.check.subClass::r1::<spec.benchmarks.check.subClass: int getVal()>::325

@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.BenchmarkRecord: boolean isValidRun()>::INVOKE::spec.reporter.BenchmarkRecord$IterationRecord::$r4::<spec.reporter.BenchmarkRecord$IterationRecord: boolean isValidIteration()>::88
+IN METHOD::<spec.reporter.BenchmarkRecord: boolean isValidRun()>::INVOKE::any_subtype_of::java.lang.Object::$r4::<spec.reporter.BenchmarkRecord$IterationRecord: boolean isValidIteration()>::88

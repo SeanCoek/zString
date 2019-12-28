@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.derby.Main: long runBenchmark(int)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::27
+IN METHOD::<spec.benchmarks.derby.Main: long runBenchmark(int)>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void main(int,int,int,int)>::29
+IN METHOD::<spec.benchmarks.derby.Main: long runBenchmark(int)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::31

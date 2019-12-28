@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.derby.Utils: java.math.BigDecimal[] init(java.math.BigDecimal)>::STATICINVOKE::<java.util.Arrays: void fill(java.lang.Object[],int,int,java.lang.Object)>::124

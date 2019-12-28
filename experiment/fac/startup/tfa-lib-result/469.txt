@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void removeFile(java.io.File)>::INVOKE::java.io.File::r0::<java.io.File: boolean isDirectory()>::263
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void removeFile(java.io.File)>::INVOKE::java.io.File::r0::<java.io.File: boolean delete()>::264
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void removeFile(java.io.File)>::INVOKE::java.io.File::r0::<java.io.File: java.io.File[] listFiles()>::266
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void removeFile(java.io.File)>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void removeFile(java.io.File)>::268
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void removeFile(java.io.File)>::INVOKE::java.io.File::r0::<java.io.File: boolean delete()>::270

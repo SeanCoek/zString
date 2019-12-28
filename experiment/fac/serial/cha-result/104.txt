@@ -1,0 +1,9 @@
+IN METHOD::<spec.benchmarks.serial.Utils: java.lang.Object getInstance(int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::31
+IN METHOD::<spec.benchmarks.serial.Utils: java.lang.Object getInstance(int)>::INVOKE::java.lang.StringBuilder::$r2::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::31
+IN METHOD::<spec.benchmarks.serial.Utils: java.lang.Object getInstance(int)>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::31
+IN METHOD::<spec.benchmarks.serial.Utils: java.lang.Object getInstance(int)>::INVOKE::java.lang.Object::$r6::<java.lang.Object: java.lang.String toString()>::31
+IN METHOD::<spec.benchmarks.serial.Utils: java.lang.Object getInstance(int)>::INVOKE::java.lang.StringBuilder::$r6::<java.lang.StringBuilder: java.lang.String toString()>::31
+IN METHOD::<spec.benchmarks.serial.Utils: java.lang.Object getInstance(int)>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::32
+IN METHOD::<spec.benchmarks.serial.Utils: java.lang.Object getInstance(int)>::INVOKE::java.lang.Class::$r7::<java.lang.Class: java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])>::32
+IN METHOD::<spec.benchmarks.serial.Utils: java.lang.Object getInstance(int)>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::34
+IN METHOD::<spec.benchmarks.serial.Utils: java.lang.Object getInstance(int)>::INVOKE::java.lang.reflect.Method::r1::<java.lang.reflect.Method: java.lang.Object invoke(java.lang.Object,java.lang.Object[])>::34

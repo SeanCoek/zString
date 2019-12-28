@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.compiler.MainBase: void tearDownBenchmark()>::INVOKE::java.io.File::$r0::java.io.File getParentFile()::48
+IN METHOD::<spec.benchmarks.compiler.MainBase: void tearDownBenchmark()>::STATICINVOKE::<spec.benchmarks.compiler.Util: void recursiveRemoveDir(java.io.File)>::48
+IN METHOD::<spec.benchmarks.compiler.MainBase: void tearDownBenchmark()>::STATICINVOKE::<spec.benchmarks.compiler.SpecFileManager: void reset()>::49
+IN METHOD::<spec.benchmarks.compiler.MainBase: void tearDownBenchmark()>::INVOKE::java.io.File::$r0::java.io.File getParentFile()::48
+IN METHOD::<spec.benchmarks.compiler.MainBase: void tearDownBenchmark()>::STATICINVOKE::<spec.benchmarks.compiler.Util: void recursiveRemoveDir(java.io.File)>::48
+IN METHOD::<spec.benchmarks.compiler.MainBase: void tearDownBenchmark()>::STATICINVOKE::<spec.benchmarks.compiler.SpecFileManager: void reset()>::49

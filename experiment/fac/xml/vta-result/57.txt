@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.xml.validation.Main: void executeWorkload()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::149
+IN METHOD::<spec.benchmarks.xml.validation.Main: void executeWorkload()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::149
+IN METHOD::<spec.benchmarks.xml.validation.Main: void executeWorkload()>::SPECIALINVOKE::<spec.benchmarks.xml.validation.Main: void doValidationTests(int,spec.io.FileCache$CachedFile,javax.xml.validation.Validator)>::150

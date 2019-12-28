@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.analyzer.HeapMemoryFreeAnalyzer$HeapMemoryFree: java.lang.String getName()>::STATICINVOKE::<spec.harness.analyzer.HeapMemoryFreeAnalyzer: java.lang.String access$000()>::27

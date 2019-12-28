@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setOutputStream(spec.benchmarks.xml.transform.BaseOutputStream)>::SPECIALINVOKE::<javax.xml.transform.stream.StreamResult: void <init>(java.io.OutputStream)>::219

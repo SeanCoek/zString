@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void updateStatistic(java.math.BigDecimal)>::INVOKE::java.math.BigDecimal::r1::<java.math.BigDecimal: int compareTo(java.math.BigDecimal)>::153
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void updateStatistic(java.math.BigDecimal)>::INVOKE::java.math.BigDecimal::r1::<java.math.BigDecimal: long longValue()>::160
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void updateStatistic(java.math.BigDecimal)>::INVOKE::java.math.BigDecimal::r1::<java.math.BigDecimal: int compareTo(java.math.BigDecimal)>::155
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void updateStatistic(java.math.BigDecimal)>::INVOKE::java.math.BigDecimal::$r5::<java.math.BigDecimal: java.math.BigDecimal add(java.math.BigDecimal)>::159
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void updateStatistic(java.math.BigDecimal)>::INVOKE::any_subtype_of::java.math.BigDecimal::$r5::<java.math.BigDecimal: java.math.BigDecimal add(java.math.BigDecimal)>::159

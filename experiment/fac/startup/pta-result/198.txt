@@ -1,0 +1,8 @@
+IN METHOD::<spec.benchmarks.compiler.Util: void unzip(java.lang.String,java.lang.String,java.util.ArrayList)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::74
+IN METHOD::<spec.benchmarks.compiler.Util: void unzip(java.lang.String,java.lang.String,java.util.ArrayList)>::SPECIALINVOKE::<java.util.zip.ZipFile: void <init>(java.lang.String)>::65
+IN METHOD::<spec.benchmarks.compiler.Util: void unzip(java.lang.String,java.lang.String,java.util.ArrayList)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::78
+IN METHOD::<spec.benchmarks.compiler.Util: void unzip(java.lang.String,java.lang.String,java.util.ArrayList)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::78
+IN METHOD::<spec.benchmarks.compiler.Util: void unzip(java.lang.String,java.lang.String,java.util.ArrayList)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::82
+IN METHOD::<spec.benchmarks.compiler.Util: void unzip(java.lang.String,java.lang.String,java.util.ArrayList)>::SPECIALINVOKE::<java.io.BufferedInputStream: void <init>(java.io.InputStream)>::85
+IN METHOD::<spec.benchmarks.compiler.Util: void unzip(java.lang.String,java.lang.String,java.util.ArrayList)>::SPECIALINVOKE::<java.io.FileOutputStream: void <init>(java.lang.String)>::86
+IN METHOD::<spec.benchmarks.compiler.Util: void unzip(java.lang.String,java.lang.String,java.util.ArrayList)>::SPECIALINVOKE::<java.io.BufferedOutputStream: void <init>(java.io.OutputStream)>::86

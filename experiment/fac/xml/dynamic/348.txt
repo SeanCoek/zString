@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: void remove(java.io.File)>::INVOKE::java.io.File::r0::boolean isDirectory()::87
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: void remove(java.io.File)>::INVOKE::java.io.File::r0::java.io.File[] listFiles()::90
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: void remove(java.io.File)>::INVOKE::java.io.File::r0::boolean delete()::88
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: void remove(java.io.File)>::STATICINVOKE::<spec.benchmarks.xml.XMLBenchmark: void remove(java.io.File)>::92
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: void remove(java.io.File)>::INVOKE::java.io.File::r0::boolean delete()::94

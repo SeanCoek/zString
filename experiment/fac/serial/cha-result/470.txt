@@ -1,0 +1,12 @@
+IN METHOD::<spec.harness.results.IterationResult: java.lang.String resultString(java.lang.String)>::INVOKE::java.lang.Object::r1::<java.lang.Object: boolean equals(java.lang.Object)>::164
+IN METHOD::<spec.harness.results.IterationResult: java.lang.String resultString(java.lang.String)>::INVOKE::java.lang.String::r1::<java.lang.String: boolean equals(java.lang.Object)>::164
+IN METHOD::<spec.harness.results.IterationResult: java.lang.String resultString(java.lang.String)>::INVOKE::spec.harness.results.IterationResult::r0::<spec.harness.results.IterationResult: boolean isValid()>::165
+IN METHOD::<spec.harness.results.IterationResult: java.lang.String resultString(java.lang.String)>::INVOKE::spec.harness.results.IterationResult::r0::<spec.harness.results.IterationResult: boolean isValid()>::167
+IN METHOD::<spec.harness.results.IterationResult: java.lang.String resultString(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::168
+IN METHOD::<spec.harness.results.IterationResult: java.lang.String resultString(java.lang.String)>::INVOKE::spec.harness.results.IterationResult::r0::<spec.harness.results.IterationResult: double getScore()>::168
+IN METHOD::<spec.harness.results.IterationResult: java.lang.String resultString(java.lang.String)>::STATICINVOKE::<spec.harness.results.TestResult: java.lang.String doubleAsRes(double)>::168
+IN METHOD::<spec.harness.results.IterationResult: java.lang.String resultString(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r2::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::168
+IN METHOD::<spec.harness.results.IterationResult: java.lang.String resultString(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r4::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::168
+IN METHOD::<spec.harness.results.IterationResult: java.lang.String resultString(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::168
+IN METHOD::<spec.harness.results.IterationResult: java.lang.String resultString(java.lang.String)>::INVOKE::java.lang.Object::$r6::<java.lang.Object: java.lang.String toString()>::168
+IN METHOD::<spec.harness.results.IterationResult: java.lang.String resultString(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r6::<java.lang.StringBuilder: java.lang.String toString()>::168

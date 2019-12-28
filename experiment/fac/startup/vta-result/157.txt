@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager$InputFileObject: java.io.InputStream openInputStream()>::SPECIALINVOKE::<java.lang.UnsupportedOperationException: void <init>()>::104

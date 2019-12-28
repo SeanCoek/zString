@@ -1,0 +1,15 @@
+IN METHOD::<spec.harness.results.TestResult: java.lang.String correctContent(java.lang.String,boolean)>::INVOKE::java.lang.String::r0::<java.lang.String: boolean matches(java.lang.String)>::148
+IN METHOD::<spec.harness.results.TestResult: java.lang.String correctContent(java.lang.String,boolean)>::INVOKE::java.lang.String::r0::<java.lang.String: int indexOf(java.lang.String)>::150
+IN METHOD::<spec.harness.results.TestResult: java.lang.String correctContent(java.lang.String,boolean)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::153
+IN METHOD::<spec.harness.results.TestResult: java.lang.String correctContent(java.lang.String,boolean)>::INVOKE::java.lang.String::r0::<java.lang.String: int length()>::156
+IN METHOD::<spec.harness.results.TestResult: java.lang.String correctContent(java.lang.String,boolean)>::INVOKE::java.lang.String::r0::<java.lang.String: char charAt(int)>::158
+IN METHOD::<spec.harness.results.TestResult: java.lang.String correctContent(java.lang.String,boolean)>::INVOKE::java.lang.StringBuilder::r1::<java.lang.StringBuilder: java.lang.StringBuilder append(char)>::161
+IN METHOD::<spec.harness.results.TestResult: java.lang.String correctContent(java.lang.String,boolean)>::INVOKE::java.lang.StringBuilder::r1::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::170
+IN METHOD::<spec.harness.results.TestResult: java.lang.String correctContent(java.lang.String,boolean)>::INVOKE::java.lang.StringBuilder::r1::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::173
+IN METHOD::<spec.harness.results.TestResult: java.lang.String correctContent(java.lang.String,boolean)>::INVOKE::java.lang.StringBuilder::r1::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::176
+IN METHOD::<spec.harness.results.TestResult: java.lang.String correctContent(java.lang.String,boolean)>::INVOKE::java.lang.StringBuilder::r1::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::180
+IN METHOD::<spec.harness.results.TestResult: java.lang.String correctContent(java.lang.String,boolean)>::INVOKE::java.lang.StringBuilder::r1::<java.lang.StringBuilder: java.lang.StringBuilder append(char)>::182
+IN METHOD::<spec.harness.results.TestResult: java.lang.String correctContent(java.lang.String,boolean)>::INVOKE::java.lang.StringBuilder::r1::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::186
+IN METHOD::<spec.harness.results.TestResult: java.lang.String correctContent(java.lang.String,boolean)>::INVOKE::java.lang.StringBuilder::r1::<java.lang.StringBuilder: java.lang.StringBuilder append(char)>::189
+IN METHOD::<spec.harness.results.TestResult: java.lang.String correctContent(java.lang.String,boolean)>::INVOKE::java.lang.Object::r1::<java.lang.Object: java.lang.String toString()>::193
+IN METHOD::<spec.harness.results.TestResult: java.lang.String correctContent(java.lang.String,boolean)>::INVOKE::java.lang.StringBuilder::r1::<java.lang.StringBuilder: java.lang.String toString()>::193

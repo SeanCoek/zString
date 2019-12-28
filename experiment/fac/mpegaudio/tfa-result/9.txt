@@ -1,0 +1,1 @@
+IN METHOD::<spec.io.FileCache$CachedFile: javax.xml.transform.stream.StreamSource asNewStreamSource()>::SPECIALINVOKE::<javax.xml.transform.stream.StreamSource: void <init>(java.io.InputStream,java.lang.String)>::137

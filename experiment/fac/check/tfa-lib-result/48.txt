@@ -1,0 +1,7 @@
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testStringHash()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::626
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testStringHash()>::INVOKE::java.io.PrintStream::$r1::<java.io.PrintStream: void print(java.lang.String)>::626
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testStringHash()>::INVOKE::any_subtype_of::java.lang.Object::$r1::<java.io.PrintStream: void print(java.lang.String)>::626
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testStringHash()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: java.lang.String stringHash(java.lang.String,int,int)>::629
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testStringHash()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: java.lang.String stringHash(java.lang.String,int,int)>::631
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testStringHash()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: java.lang.String stringHash(java.lang.String,int,int)>::633
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testStringHash()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: java.lang.String stringHash(java.lang.String,int,int)>::635

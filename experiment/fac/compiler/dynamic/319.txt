@@ -1,0 +1,12 @@
+IN METHOD::<spec.benchmarks.compiler.Util: void recursiveRemoveDir(java.io.File)>::INVOKE::java.io.File::r0::boolean exists()::155
+IN METHOD::<spec.benchmarks.compiler.Util: void recursiveRemoveDir(java.io.File)>::INVOKE::java.io.File::r0::java.io.File[] listFiles()::157
+IN METHOD::<spec.benchmarks.compiler.Util: void recursiveRemoveDir(java.io.File)>::INVOKE::java.io.File::$r8::boolean isDirectory()::159
+IN METHOD::<spec.benchmarks.compiler.Util: void recursiveRemoveDir(java.io.File)>::INVOKE::java.io.File::$r9::boolean delete()::162
+IN METHOD::<spec.benchmarks.compiler.Util: void recursiveRemoveDir(java.io.File)>::INVOKE::java.io.File::r0::boolean delete()::167
+IN METHOD::<spec.benchmarks.compiler.Util: void recursiveRemoveDir(java.io.File)>::STATICINVOKE::<spec.benchmarks.compiler.Util: void recursiveRemoveDir(java.io.File)>::160
+IN METHOD::<spec.benchmarks.compiler.Util: void recursiveRemoveDir(java.io.File)>::INVOKE::java.io.File::r0::boolean exists()::155
+IN METHOD::<spec.benchmarks.compiler.Util: void recursiveRemoveDir(java.io.File)>::INVOKE::java.io.File::r0::java.io.File[] listFiles()::157
+IN METHOD::<spec.benchmarks.compiler.Util: void recursiveRemoveDir(java.io.File)>::INVOKE::java.io.File::$r8::boolean isDirectory()::159
+IN METHOD::<spec.benchmarks.compiler.Util: void recursiveRemoveDir(java.io.File)>::INVOKE::java.io.File::$r9::boolean delete()::162
+IN METHOD::<spec.benchmarks.compiler.Util: void recursiveRemoveDir(java.io.File)>::INVOKE::java.io.File::r0::boolean delete()::167
+IN METHOD::<spec.benchmarks.compiler.Util: void recursiveRemoveDir(java.io.File)>::STATICINVOKE::<spec.benchmarks.compiler.Util: void recursiveRemoveDir(java.io.File)>::160

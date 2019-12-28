@@ -1,0 +1,2 @@
+IN METHOD::<spec.io.ValidityCheckOutputStream: void <init>(java.lang.String)>::SPECIALINVOKE::<java.io.OutputStream: void <init>()>::53
+IN METHOD::<spec.io.ValidityCheckOutputStream: void <init>(java.lang.String)>::SPECIALINVOKE::<java.io.ByteArrayOutputStream: void <init>(int)>::41

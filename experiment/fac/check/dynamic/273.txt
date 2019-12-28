@@ -1,0 +1,26 @@
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::201
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::201
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r1::java.lang.StringBuilder append(java.lang.String)::201
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(double)::201
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.String toString()::201
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::INVOKE::java.io.PrintStream::$r0::void println(java.lang.String)::201
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::203
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::203
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::203
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::STATICINVOKE::<java.lang.Double: long doubleToLongBits(double)>::203
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::STATICINVOKE::<java.lang.Long: java.lang.String toString(long,int)>::203
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::203
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r9::java.lang.String toString()::203
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::INVOKE::java.io.PrintStream::$r5::void println(java.lang.String)::203
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::205
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::205
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r12::java.lang.StringBuilder append(java.lang.String)::205
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r13::java.lang.StringBuilder append(double)::205
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r14::java.lang.String toString()::205
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::INVOKE::java.io.PrintStream::$r11::void println(java.lang.String)::205
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::207
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::207
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r17::java.lang.StringBuilder append(java.lang.String)::207
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r18::java.lang.StringBuilder append(double)::207
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r19::java.lang.String toString()::207
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::INVOKE::java.io.PrintStream::$r16::void println(java.lang.String)::207

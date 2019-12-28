@@ -1,0 +1,9 @@
+IN METHOD::<spec.reporter.HTMLWriter: void startDetailsTable()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void startTable(boolean)>::66
+IN METHOD::<spec.reporter.HTMLWriter: void startDetailsTable()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putTHEAD(boolean)>::67
+IN METHOD::<spec.reporter.HTMLWriter: void startDetailsTable()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putColumnsSpec(int[])>::68
+IN METHOD::<spec.reporter.HTMLWriter: void startDetailsTable()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void insertHeaderRecord(java.lang.String,java.lang.String,boolean,int,int)>::76
+IN METHOD::<spec.reporter.HTMLWriter: void startDetailsTable()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void startRecord()>::77
+IN METHOD::<spec.reporter.HTMLWriter: void startDetailsTable()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void insertHeaderData(java.lang.String,java.lang.String,boolean,int,int)>::79
+IN METHOD::<spec.reporter.HTMLWriter: void startDetailsTable()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void endRecord()>::81
+IN METHOD::<spec.reporter.HTMLWriter: void startDetailsTable()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putTHEAD(boolean)>::82
+IN METHOD::<spec.reporter.HTMLWriter: void startDetailsTable()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putTBODY(boolean)>::83

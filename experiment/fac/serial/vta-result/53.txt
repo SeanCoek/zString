@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.data.TestArray: spec.benchmarks.serial.data.TestArray createTestInstance()>::SPECIALINVOKE::<spec.benchmarks.serial.data.TestArray: void <init>()>::36

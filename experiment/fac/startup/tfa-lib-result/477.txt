@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void fillTables(java.sql.Connection,int,int,int)>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void fillAccountsTable(java.sql.Connection,int)>::420
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void fillTables(java.sql.Connection,int,int,int)>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void fillDurationsTable(int,int,int)>::421

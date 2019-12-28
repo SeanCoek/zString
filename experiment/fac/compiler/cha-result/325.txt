@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.analyzer.CallbackAnalyzerExample$TheNumberGenerator: void <init>()>::SPECIALINVOKE::<java.lang.Thread: void <init>()>::124
+IN METHOD::<spec.harness.analyzer.CallbackAnalyzerExample$TheNumberGenerator: void <init>()>::SPECIALINVOKE::<java.util.Random: void <init>()>::115

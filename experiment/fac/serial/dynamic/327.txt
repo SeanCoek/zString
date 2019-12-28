@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.serial.data.TestSimple: boolean equals(java.lang.Object)>::INVOKE::spec.benchmarks.serial.data.TestSimple::r0::java.lang.Class getClass()::34
+IN METHOD::<spec.benchmarks.serial.data.TestSimple: boolean equals(java.lang.Object)>::INVOKE::spec.benchmarks.serial.data.TestSimple::r1::java.lang.Class getClass()::34

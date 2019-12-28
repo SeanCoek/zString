@@ -1,0 +1,1 @@
+IN METHOD::<spec.reporter.BenchmarkGroupRecords: void updateGroupRecord(java.lang.String,spec.reporter.BenchmarkRecord)>::SPECIALINVOKE::<spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord: void <init>(java.lang.String)>::155

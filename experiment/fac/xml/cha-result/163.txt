@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.Utils: boolean isValidScore(java.lang.Double)>::INVOKE::java.lang.Object::$r1::<java.lang.Object: boolean equals(java.lang.Object)>::347
+IN METHOD::<spec.reporter.Utils: boolean isValidScore(java.lang.Double)>::INVOKE::java.lang.Double::$r1::<java.lang.Double: boolean equals(java.lang.Object)>::347

@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.data.TestArray: boolean equals(java.lang.Object)>::STATICINVOKE::<java.util.Arrays: boolean equals(java.lang.Object[],java.lang.Object[])>::47

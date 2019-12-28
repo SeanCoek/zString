@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.helloworld.HelloWorld: void main()>::SPECIALINVOKE::<spec.benchmarks.helloworld.HelloWorld: void <init>()>::13
+IN METHOD::<spec.benchmarks.helloworld.HelloWorld: void main()>::INVOKE::spec.benchmarks.helloworld.HelloWorld::r0::<spec.benchmarks.helloworld.HelloWorld: void run()>::14

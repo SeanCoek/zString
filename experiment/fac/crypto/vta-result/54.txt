@@ -1,0 +1,1 @@
+IN METHOD::<spec.reporter.PlainWriter: void insertRecord(java.lang.String,java.lang.String)>::SPECIALINVOKE::<java.util.Formatter: void <init>(java.io.PrintStream)>::60

@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.analyzer.AnalyzerResult: java.lang.String getDescription()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::41
+IN METHOD::<spec.harness.analyzer.AnalyzerResult: java.lang.String getDescription()>::INVOKE::java.lang.StringBuilder::$r1::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::41

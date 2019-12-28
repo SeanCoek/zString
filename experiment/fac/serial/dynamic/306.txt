@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.data.TestDomainObject: void <clinit>()>::SPECIALINVOKE::<java.util.Random: void <init>()>::24

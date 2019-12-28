@@ -1,0 +1,6 @@
+IN METHOD::<spec.harness.results.BenchmarkResult: double getScore()>::INVOKE::spec.harness.results.IterationResult::r2::<spec.harness.results.IterationResult: boolean isValid()>::207
+IN METHOD::<spec.harness.results.BenchmarkResult: double getScore()>::INVOKE::any_subtype_of::java.lang.Object::r2::<spec.harness.results.IterationResult: boolean isValid()>::207
+IN METHOD::<spec.harness.results.BenchmarkResult: double getScore()>::INVOKE::spec.harness.results.IterationResult::r2::<spec.harness.results.IterationResult: double getScore()>::208
+IN METHOD::<spec.harness.results.BenchmarkResult: double getScore()>::INVOKE::any_subtype_of::java.lang.Object::r2::<spec.harness.results.IterationResult: double getScore()>::208
+IN METHOD::<spec.harness.results.BenchmarkResult: double getScore()>::INVOKE::spec.harness.results.IterationResult::r2::<spec.harness.results.IterationResult: double getScore()>::209
+IN METHOD::<spec.harness.results.BenchmarkResult: double getScore()>::INVOKE::any_subtype_of::java.lang.Object::r2::<spec.harness.results.IterationResult: double getScore()>::209

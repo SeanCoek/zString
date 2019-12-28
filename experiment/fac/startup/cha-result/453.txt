@@ -1,0 +1,7 @@
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void handleSuccessfullValidation()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::69
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void handleSuccessfullValidation()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::69
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void handleSuccessfullValidation()>::INVOKE::java.lang.StringBuilder::$r2::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::69
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void handleSuccessfullValidation()>::INVOKE::java.lang.StringBuilder::$r4::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::69
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void handleSuccessfullValidation()>::INVOKE::java.lang.Object::$r5::<java.lang.Object: java.lang.String toString()>::69
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void handleSuccessfullValidation()>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.String toString()>::69
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void handleSuccessfullValidation()>::INVOKE::java.io.PrintStream::$r1::<java.io.PrintStream: void println(java.lang.String)>::69

@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.serial.data.TestWithBigDecimal: boolean equals(java.lang.Object)>::INVOKE::java.lang.Object::r0::<java.lang.Object: java.lang.Class getClass()>::36
+IN METHOD::<spec.benchmarks.serial.data.TestWithBigDecimal: boolean equals(java.lang.Object)>::INVOKE::java.lang.Object::r1::<java.lang.Object: java.lang.Class getClass()>::36
+IN METHOD::<spec.benchmarks.serial.data.TestWithBigDecimal: boolean equals(java.lang.Object)>::INVOKE::java.lang.Object::$r8::<java.lang.Object: boolean equals(java.lang.Object)>::42
+IN METHOD::<spec.benchmarks.serial.data.TestWithBigDecimal: boolean equals(java.lang.Object)>::INVOKE::java.math.BigDecimal::$r8::<java.math.BigDecimal: boolean equals(java.lang.Object)>::42

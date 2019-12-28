@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testExc5()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::491
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testExc5()>::SPECIALINVOKE::<java.lang.ArithmeticException: void <init>(java.lang.String)>::506

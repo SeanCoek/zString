@@ -1,0 +1,12 @@
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testWaitNull()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::768
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testWaitNull()>::INVOKE::java.io.PrintStream::$r2::<java.io.PrintStream: void print(java.lang.String)>::768
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testWaitNull()>::INVOKE::any_subtype_of::java.lang.Object::$r2::<java.io.PrintStream: void print(java.lang.String)>::768
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testWaitNull()>::INVOKE::java.lang.Class::$r5::<java.lang.Class: java.lang.String getName()>::772
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testWaitNull()>::INVOKE::any_subtype_of::java.lang.Class::$r5::<java.lang.Class: java.lang.String getName()>::772
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testWaitNull()>::INVOKE::java.lang.String::$r6::<java.lang.String: boolean equals(java.lang.Object)>::772
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testWaitNull()>::INVOKE::any_subtype_of::java.lang.String::$r6::<java.lang.String: boolean equals(java.lang.Object)>::772
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testWaitNull()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::774
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testWaitNull()>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::774
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testWaitNull()>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>::774
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testWaitNull()>::INVOKE::java.lang.StringBuilder::$r9::<java.lang.StringBuilder: java.lang.String toString()>::774
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testWaitNull()>::INVOKE::any_subtype_of::java.lang.StringBuilder::$r9::<java.lang.StringBuilder: java.lang.String toString()>::774

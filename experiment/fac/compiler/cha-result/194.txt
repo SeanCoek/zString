@@ -1,0 +1,17 @@
+IN METHOD::<spec.reporter.BenchmarkChart: void setMemoryAxis()>::SPECIALINVOKE::<org.jfree.chart.axis.NumberAxis: void <init>(java.lang.String)>::145
+IN METHOD::<spec.reporter.BenchmarkChart: void setMemoryAxis()>::INVOKE::org.jfree.chart.plot.XYPlot::$r5::<org.jfree.chart.plot.XYPlot: void setRangeAxis(int,org.jfree.chart.axis.ValueAxis)>::145
+IN METHOD::<spec.reporter.BenchmarkChart: void setMemoryAxis()>::INVOKE::org.jfree.chart.plot.XYPlot::$r7::<org.jfree.chart.plot.XYPlot: void setRangeAxisLocation(int,org.jfree.chart.axis.AxisLocation)>::146
+IN METHOD::<spec.reporter.BenchmarkChart: void setMemoryAxis()>::SPECIALINVOKE::<org.jfree.data.xy.XYSeriesCollection: void <init>()>::147
+IN METHOD::<spec.reporter.BenchmarkChart: void setMemoryAxis()>::INVOKE::org.jfree.data.xy.XYSeriesCollection::r1::<org.jfree.data.xy.XYSeriesCollection: void addSeries(org.jfree.data.xy.XYSeries)>::148
+IN METHOD::<spec.reporter.BenchmarkChart: void setMemoryAxis()>::INVOKE::org.jfree.data.xy.XYSeriesCollection::r1::<org.jfree.data.xy.XYSeriesCollection: void addSeries(org.jfree.data.xy.XYSeries)>::149
+IN METHOD::<spec.reporter.BenchmarkChart: void setMemoryAxis()>::INVOKE::org.jfree.chart.plot.XYPlot::$r11::<org.jfree.chart.plot.XYPlot: void setDataset(int,org.jfree.data.xy.XYDataset)>::150
+IN METHOD::<spec.reporter.BenchmarkChart: void setMemoryAxis()>::INVOKE::org.jfree.chart.plot.XYPlot::$r12::<org.jfree.chart.plot.XYPlot: void mapDatasetToRangeAxis(int,int)>::151
+IN METHOD::<spec.reporter.BenchmarkChart: void setMemoryAxis()>::SPECIALINVOKE::<org.jfree.chart.renderer.xy.XYAreaRenderer: void <init>()>::152
+IN METHOD::<spec.reporter.BenchmarkChart: void setMemoryAxis()>::INVOKE::org.jfree.chart.plot.XYPlot::$r14::<org.jfree.chart.plot.XYPlot: void setRenderer(int,org.jfree.chart.renderer.xy.XYItemRenderer)>::153
+IN METHOD::<spec.reporter.BenchmarkChart: void setMemoryAxis()>::SPECIALINVOKE::<java.awt.Color: void <init>(int,int,int)>::154
+IN METHOD::<spec.reporter.BenchmarkChart: void setMemoryAxis()>::INVOKE::org.jfree.chart.renderer.xy.XYAreaRenderer::r2::<org.jfree.chart.renderer.xy.XYAreaRenderer: void setSeriesPaint(int,java.awt.Paint)>::154
+IN METHOD::<spec.reporter.BenchmarkChart: void setMemoryAxis()>::SPECIALINVOKE::<java.awt.Color: void <init>(int,int,int)>::155
+IN METHOD::<spec.reporter.BenchmarkChart: void setMemoryAxis()>::INVOKE::org.jfree.chart.renderer.xy.XYAreaRenderer::r2::<org.jfree.chart.renderer.xy.XYAreaRenderer: void setSeriesPaint(int,java.awt.Paint)>::155
+IN METHOD::<spec.reporter.BenchmarkChart: void setMemoryAxis()>::INVOKE::org.jfree.chart.renderer.xy.XYAreaRenderer::r2::<org.jfree.chart.renderer.xy.XYAreaRenderer: void setOutline(boolean)>::156
+IN METHOD::<spec.reporter.BenchmarkChart: void setMemoryAxis()>::INVOKE::org.jfree.chart.renderer.xy.XYAreaRenderer::r2::<org.jfree.chart.renderer.xy.XYAreaRenderer: void setOutlinePaint(java.awt.Paint)>::157
+IN METHOD::<spec.reporter.BenchmarkChart: void setMemoryAxis()>::INVOKE::org.jfree.chart.plot.XYPlot::$r18::<org.jfree.chart.plot.XYPlot: void setForegroundAlpha(float)>::158

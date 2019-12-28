@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.HTMLWriter: void startRecordAndData()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void startRecord()>::213
+IN METHOD::<spec.reporter.HTMLWriter: void startRecordAndData()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void startData()>::214

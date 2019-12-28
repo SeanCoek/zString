@@ -1,0 +1,10 @@
+IN METHOD::<spec.reporter.Writer: spec.reporter.Writer getInstance(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::$r2::<java.lang.String: boolean equals(java.lang.Object)>::73
+IN METHOD::<spec.reporter.Writer: spec.reporter.Writer getInstance(java.lang.String,java.lang.String)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void <init>(java.lang.String)>::74
+IN METHOD::<spec.reporter.Writer: spec.reporter.Writer getInstance(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::$r3::<java.lang.String: boolean equals(java.lang.Object)>::75
+IN METHOD::<spec.reporter.Writer: spec.reporter.Writer getInstance(java.lang.String,java.lang.String)>::SPECIALINVOKE::<spec.reporter.PlainWriter: void <init>(java.lang.String)>::76
+IN METHOD::<spec.reporter.Writer: spec.reporter.Writer getInstance(java.lang.String,java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::78
+IN METHOD::<spec.reporter.Writer: spec.reporter.Writer getInstance(java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::78
+IN METHOD::<spec.reporter.Writer: spec.reporter.Writer getInstance(java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r6::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::78
+IN METHOD::<spec.reporter.Writer: spec.reporter.Writer getInstance(java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::78
+IN METHOD::<spec.reporter.Writer: spec.reporter.Writer getInstance(java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.String toString()>::78
+IN METHOD::<spec.reporter.Writer: spec.reporter.Writer getInstance(java.lang.String,java.lang.String)>::SPECIALINVOKE::<java.lang.RuntimeException: void <init>(java.lang.String)>::78

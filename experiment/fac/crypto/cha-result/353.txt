@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.BenchmarkThread: void run()>::INVOKE::spec.harness.BenchmarkThread::r0::<spec.harness.BenchmarkThread: boolean executeIteration()>::59
+IN METHOD::<spec.harness.BenchmarkThread: void run()>::INVOKE::java.io.PrintStream::$r3::<java.io.PrintStream: void print(java.lang.Object)>::61

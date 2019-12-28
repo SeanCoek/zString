@@ -1,0 +1,1 @@
+IN METHOD::<spec.reporter.Reporter: void main(java.lang.String[])>::STATICINVOKE::<spec.reporter.Reporter: java.lang.String main2(java.lang.String[])>::59

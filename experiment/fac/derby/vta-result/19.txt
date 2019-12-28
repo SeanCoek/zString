@@ -1,0 +1,7 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::53
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::54
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::55
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::56
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::57
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::58
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::STATICINVOKE::<java.math.BigDecimal: java.math.BigDecimal valueOf(long)>::58

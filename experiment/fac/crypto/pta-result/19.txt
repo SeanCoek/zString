@@ -1,0 +1,9 @@
+IN METHOD::<spec.benchmarks.crypto.aes.Main: byte[] encrypt(byte[],javax.crypto.SecretKey,java.lang.String,int)>::STATICINVOKE::<javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>::72
+IN METHOD::<spec.benchmarks.crypto.aes.Main: byte[] encrypt(byte[],javax.crypto.SecretKey,java.lang.String,int)>::STATICINVOKE::<java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>::84
+IN METHOD::<spec.benchmarks.crypto.aes.Main: byte[] encrypt(byte[],javax.crypto.SecretKey,java.lang.String,int)>::STATICINVOKE::<java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>::85
+IN METHOD::<spec.benchmarks.crypto.aes.Main: byte[] encrypt(byte[],javax.crypto.SecretKey,java.lang.String,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::88
+IN METHOD::<spec.benchmarks.crypto.aes.Main: byte[] encrypt(byte[],javax.crypto.SecretKey,java.lang.String,int)>::INVOKE::java.lang.StringBuilder::r17::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::88
+IN METHOD::<spec.benchmarks.crypto.aes.Main: byte[] encrypt(byte[],javax.crypto.SecretKey,java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r10::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::88
+IN METHOD::<spec.benchmarks.crypto.aes.Main: byte[] encrypt(byte[],javax.crypto.SecretKey,java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r11::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::88
+IN METHOD::<spec.benchmarks.crypto.aes.Main: byte[] encrypt(byte[],javax.crypto.SecretKey,java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r12::<java.lang.StringBuilder: java.lang.String toString()>::88
+IN METHOD::<spec.benchmarks.crypto.aes.Main: byte[] encrypt(byte[],javax.crypto.SecretKey,java.lang.String,int)>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String,java.lang.Throwable)>::88

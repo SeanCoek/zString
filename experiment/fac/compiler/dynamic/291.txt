@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager$1: javax.tools.JavaFileManager make()>::SPECIALINVOKE::<spec.benchmarks.compiler.SpecFileManager: void <init>(com.sun.tools.javac.util.Context,boolean,java.nio.charset.Charset)>::200
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager$1: javax.tools.JavaFileManager make()>::SPECIALINVOKE::<spec.benchmarks.compiler.SpecFileManager: void <init>(com.sun.tools.javac.util.Context,boolean,java.nio.charset.Charset)>::200

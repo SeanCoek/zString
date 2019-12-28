@@ -1,0 +1,6 @@
+IN METHOD::<spec.harness.Launch: void <clinit>()>::STATICINVOKE::<java.lang.System: java.lang.String getProperty(java.lang.String,java.lang.String)>::32
+IN METHOD::<spec.harness.Launch: void <clinit>()>::STATICINVOKE::<spec.harness.Configuration: void setupProperties()>::39
+IN METHOD::<spec.harness.Launch: void <clinit>()>::STATICINVOKE::<java.lang.System: java.lang.String getProperty(java.lang.String,java.lang.String)>::32
+IN METHOD::<spec.harness.Launch: void <clinit>()>::STATICINVOKE::<spec.harness.Configuration: void setupProperties()>::39
+IN METHOD::<spec.harness.Launch: void <clinit>()>::STATICINVOKE::<java.lang.System: java.lang.String getProperty(java.lang.String,java.lang.String)>::32
+IN METHOD::<spec.harness.Launch: void <clinit>()>::STATICINVOKE::<spec.harness.Configuration: void setupProperties()>::39

@@ -1,0 +1,7 @@
+IN METHOD::<spec.reporter.SPECSubmissionPreparer: void prepareFiles(java.lang.String[])>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::24
+IN METHOD::<spec.reporter.SPECSubmissionPreparer: void prepareFiles(java.lang.String[])>::INVOKE::java.io.File::$r3::<java.io.File: boolean exists()>::24
+IN METHOD::<spec.reporter.SPECSubmissionPreparer: void prepareFiles(java.lang.String[])>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::25
+IN METHOD::<spec.reporter.SPECSubmissionPreparer: void prepareFiles(java.lang.String[])>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::25
+IN METHOD::<spec.reporter.SPECSubmissionPreparer: void prepareFiles(java.lang.String[])>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::34
+IN METHOD::<spec.reporter.SPECSubmissionPreparer: void prepareFiles(java.lang.String[])>::STATICINVOKE::<spec.reporter.SPECSubmissionPreparer: java.lang.String mergeFiles(java.io.File[])>::37
+IN METHOD::<spec.reporter.SPECSubmissionPreparer: void prepareFiles(java.lang.String[])>::STATICINVOKE::<spec.reporter.SPECSubmissionPreparer: void zipFile(java.lang.String)>::43

@@ -1,0 +1,3 @@
+IN METHOD::<spec.harness.results.IterationResult: double getScore()>::INVOKE::spec.harness.results.IterationResult::r0::<spec.harness.results.IterationResult: boolean isValid()>::178
+IN METHOD::<spec.harness.results.IterationResult: double getScore()>::INVOKE::spec.harness.results.IterationResult::r0::<spec.harness.results.IterationResult: double getOperations()>::179
+IN METHOD::<spec.harness.results.IterationResult: double getScore()>::INVOKE::spec.harness.results.IterationResult::r0::<spec.harness.results.IterationResult: long getDuration()>::179

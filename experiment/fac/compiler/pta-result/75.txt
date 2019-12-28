@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.Iterable getJavaFileObjectsFromFiles(java.lang.Iterable)>::SPECIALINVOKE::<java.util.ArrayList: void <init>(int)>::310
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.Iterable getJavaFileObjectsFromFiles(java.lang.Iterable)>::SPECIALINVOKE::<java.util.ArrayList: void <init>()>::312
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.Iterable getJavaFileObjectsFromFiles(java.lang.Iterable)>::SPECIALINVOKE::<spec.benchmarks.compiler.SpecFileManager$InputFileObject: void <init>(spec.benchmarks.compiler.SpecFileManager,java.lang.String,java.io.File)>::319

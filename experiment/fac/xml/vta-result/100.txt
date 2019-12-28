@@ -1,0 +1,1 @@
+IN METHOD::<spec.reporter.ReportGenerator: void main(java.lang.String[])>::STATICINVOKE::<spec.reporter.ReportGenerator: java.lang.String main2(java.lang.String[])>::755

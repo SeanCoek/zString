@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.data.TestClassReferenceTest: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::17

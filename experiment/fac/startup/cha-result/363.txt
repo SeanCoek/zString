@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.data.Handler: void <init>(int,java.lang.Object)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::22

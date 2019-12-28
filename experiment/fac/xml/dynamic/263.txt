@@ -1,0 +1,18 @@
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: boolean checkValidity()>::STATICINVOKE::<spec.benchmarks.xml.transform.ExtOutputStream: byte[] getFileArray(java.lang.String)>::52
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: boolean checkValidity()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::53
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: boolean checkValidity()>::INVOKE::java.lang.StringBuilder::$r14::java.lang.StringBuilder append(java.lang.String)::53
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: boolean checkValidity()>::INVOKE::java.lang.StringBuilder::$r16::java.lang.StringBuilder append(java.lang.String)::53
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: boolean checkValidity()>::INVOKE::java.lang.StringBuilder::$r17::java.lang.String toString()::53
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: boolean checkValidity()>::STATICINVOKE::<spec.benchmarks.xml.XMLBenchmark: java.lang.String getFullName(java.lang.Class,java.lang.String,java.lang.String)>::53
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: boolean checkValidity()>::STATICINVOKE::<spec.benchmarks.xml.transform.ExtOutputStream: byte[] getFileArray(java.lang.String)>::53
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: boolean checkValidity()>::SPECIALINVOKE::<java.util.HashMap: void <init>()>::54
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: boolean checkValidity()>::STATICINVOKE::<java.lang.Integer: java.lang.Integer valueOf(int)>::55
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: boolean checkValidity()>::INVOKE::java.util.HashMap::r3::java.lang.Object put(java.lang.Object,java.lang.Object)::55
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: boolean checkValidity()>::STATICINVOKE::<java.lang.Integer: java.lang.Integer valueOf(int)>::56
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: boolean checkValidity()>::INVOKE::java.util.HashMap::r3::java.lang.Object put(java.lang.Object,java.lang.Object)::56
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: boolean checkValidity()>::STATICINVOKE::<java.lang.Integer: java.lang.Integer valueOf(int)>::72
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: boolean checkValidity()>::INVOKE::java.util.HashMap::r3::java.lang.Object get(java.lang.Object)::72
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: boolean checkValidity()>::STATICINVOKE::<spec.benchmarks.xml.transform.ExtOutputStream: boolean isDosNewLine(byte[],int)>::76
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: boolean checkValidity()>::STATICINVOKE::<spec.benchmarks.xml.transform.ExtOutputStream: boolean isUnixNewLine(byte[],int)>::79
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: boolean checkValidity()>::STATICINVOKE::<java.lang.Integer: java.lang.Integer valueOf(int)>::112
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: boolean checkValidity()>::INVOKE::java.util.HashMap::r3::java.lang.Object get(java.lang.Object)::112

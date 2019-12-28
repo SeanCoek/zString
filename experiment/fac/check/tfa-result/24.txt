@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.check.syncTest: void main(java.lang.String[])>::SPECIALINVOKE::<spec.benchmarks.check.syncTest: void <init>()>::44
+IN METHOD::<spec.benchmarks.check.syncTest: void main(java.lang.String[])>::INVOKE::spec.benchmarks.check.syncTest::r1::<spec.benchmarks.check.syncTest: int syncMethod(int)>::46
+IN METHOD::<spec.benchmarks.check.syncTest: void main(java.lang.String[])>::INVOKE::spec.benchmarks.check.syncTest::r1::<spec.benchmarks.check.syncTest: int syncMethod2(int)>::47
+IN METHOD::<spec.benchmarks.check.syncTest: void main(java.lang.String[])>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::48
+IN METHOD::<spec.benchmarks.check.syncTest: void main(java.lang.String[])>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::48

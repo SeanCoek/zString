@@ -1,0 +1,16 @@
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testObjectHash()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::644
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testObjectHash()>::INVOKE::java.io.PrintStream::$r3::<java.io.PrintStream: void print(java.lang.String)>::644
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testObjectHash()>::INVOKE::any_subtype_of::java.lang.Object::$r3::<java.io.PrintStream: void print(java.lang.String)>::644
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testObjectHash()>::SPECIALINVOKE::<java.util.Hashtable: void <init>()>::645
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testObjectHash()>::SPECIALINVOKE::<spec.benchmarks.check.syncTest: void <init>()>::648
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testObjectHash()>::INVOKE::java.lang.Object::$r10::<java.lang.Object: int hashCode()>::648
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testObjectHash()>::STATICINVOKE::<java.lang.Integer: java.lang.Integer valueOf(int)>::648
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testObjectHash()>::INVOKE::java.util.Hashtable::r1::<java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>::649
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testObjectHash()>::INVOKE::java.util.Hashtable::r1::<java.util.Hashtable: int size()>::651
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testObjectHash()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::652
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testObjectHash()>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::652
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testObjectHash()>::INVOKE::java.util.Hashtable::r1::<java.util.Hashtable: int size()>::652
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testObjectHash()>::INVOKE::java.lang.StringBuilder::$r6::<java.lang.StringBuilder: java.lang.StringBuilder append(int)>::652
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testObjectHash()>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::652
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testObjectHash()>::INVOKE::any_subtype_of::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::652
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testObjectHash()>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.String toString()>::652

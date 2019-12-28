@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.helloworld.HelloWorld: void run()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::20
+IN METHOD::<spec.benchmarks.helloworld.HelloWorld: void run()>::INVOKE::java.io.PrintStream::r1::void println(java.lang.String)::21

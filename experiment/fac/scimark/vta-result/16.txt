@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.scimark.lu.LU: void main(int)>::SPECIALINVOKE::<spec.benchmarks.scimark.lu.LU: void <init>(int)>::43

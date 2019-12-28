@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.check.LoopBounds: int constraintAt(int)>::INVOKE::java.lang.Integer::$r3::<java.lang.Integer: int intValue()>::48
+IN METHOD::<spec.benchmarks.check.LoopBounds: int constraintAt(int)>::INVOKE::any_subtype_of::java.lang.Object::$r3::<java.lang.Integer: int intValue()>::48

@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.check.syncTest: int syncMethod2(int)>::SPECIALINVOKE::<java.lang.ArithmeticException: void <init>(java.lang.String)>::39

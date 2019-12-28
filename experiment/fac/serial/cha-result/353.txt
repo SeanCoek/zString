@@ -1,0 +1,4 @@
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void endMeasurementInterval()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::107
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void endMeasurementInterval()>::INVOKE::java.io.PrintStream::$r4::<java.io.PrintStream: void println(java.lang.String)>::107
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void endMeasurementInterval()>::INVOKE::spec.harness.analyzer.PowerMeter::$r1::<spec.harness.analyzer.PowerMeter: void stop()>::112
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void endMeasurementInterval()>::INVOKE::spec.harness.analyzer.PowerMeter::$r2::<spec.harness.analyzer.PowerMeter: java.util.HashMap reportRun(java.lang.String)>::113

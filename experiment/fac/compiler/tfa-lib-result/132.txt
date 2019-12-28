@@ -1,0 +1,1 @@
+IN METHOD::<spec.reporter.SPECSubmissionProcessor: void <clinit>()>::SPECIALINVOKE::<java.util.LinkedList: void <init>()>::39

@@ -1,0 +1,101 @@
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::STATICINVOKE::<java.lang.System: java.util.Properties getProperties()>::62
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.util.Properties::r1::java.lang.String getProperty(java.lang.String)::63
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.util.Properties::r1::java.lang.String getProperty(java.lang.String)::64
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::65
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::67
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r58::java.lang.StringBuilder append(java.lang.String)::67
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r59::java.lang.StringBuilder append(java.lang.String)::67
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r61::java.lang.StringBuilder append(java.lang.String)::67
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r62::java.lang.StringBuilder append(java.lang.String)::67
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r64::java.lang.StringBuilder append(java.lang.String)::67
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r65::java.lang.String toString()::67
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::69
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r9::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r10::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r11::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r12::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r13::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r14::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::STATICINVOKE::<java.lang.System: java.lang.String getProperty(java.lang.String,java.lang.String)>::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r15::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r17::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r18::java.lang.StringBuilder append(int)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r19::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r20::java.lang.StringBuilder append(int)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r21::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r22::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r23::java.lang.String toString()::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::81
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.String::$r24::boolean startsWith(java.lang.String)::86
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.String::$r25::boolean startsWith(java.lang.String)::88
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.String::$r26::boolean startsWith(java.lang.String)::90
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::93
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r27::java.lang.StringBuilder append(java.lang.String)::93
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r28::java.lang.StringBuilder append(java.lang.String)::93
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r29::java.lang.StringBuilder append(java.lang.String)::93
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r31::java.lang.String toString()::93
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::STATICINVOKE::<java.lang.Runtime: java.lang.Runtime getRuntime()>::98
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.Runtime::r5::java.lang.Process exec(java.lang.String)::100
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.UNIXProcess::r72::java.io.InputStream getInputStream()::101
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::SPECIALINVOKE::<spec.benchmarks.startup.StartupBenchmarkOutput: void <init>(java.io.InputStream)>::101
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::spec.benchmarks.startup.StartupBenchmarkOutput::r6::void start()::105
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::STATICINVOKE::<java.lang.System: java.util.Properties getProperties()>::62
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.util.Properties::r1::java.lang.String getProperty(java.lang.String)::63
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.util.Properties::r1::java.lang.String getProperty(java.lang.String)::64
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::65
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::67
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r58::java.lang.StringBuilder append(java.lang.String)::67
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r59::java.lang.StringBuilder append(java.lang.String)::67
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r61::java.lang.StringBuilder append(java.lang.String)::67
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r62::java.lang.StringBuilder append(java.lang.String)::67
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r64::java.lang.StringBuilder append(java.lang.String)::67
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r65::java.lang.String toString()::67
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::69
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r9::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r10::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r11::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r12::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r13::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r14::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::STATICINVOKE::<java.lang.System: java.lang.String getProperty(java.lang.String,java.lang.String)>::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r15::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r17::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r18::java.lang.StringBuilder append(int)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r19::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r20::java.lang.StringBuilder append(int)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r21::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r22::java.lang.StringBuilder append(java.lang.String)::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r23::java.lang.String toString()::75
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::81
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.String::$r24::boolean startsWith(java.lang.String)::86
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.String::$r25::boolean startsWith(java.lang.String)::88
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.String::$r26::boolean startsWith(java.lang.String)::90
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::93
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r27::java.lang.StringBuilder append(java.lang.String)::93
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r28::java.lang.StringBuilder append(java.lang.String)::93
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r29::java.lang.StringBuilder append(java.lang.String)::93
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r31::java.lang.String toString()::93
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::STATICINVOKE::<java.lang.Runtime: java.lang.Runtime getRuntime()>::98
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.Runtime::r5::java.lang.Process exec(java.lang.String)::100
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.UNIXProcess::r72::java.io.InputStream getInputStream()::101
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::SPECIALINVOKE::<spec.benchmarks.startup.StartupBenchmarkOutput: void <init>(java.io.InputStream)>::101
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::spec.benchmarks.startup.StartupBenchmarkOutput::r6::void start()::105
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::spec.benchmarks.startup.StartupBenchmarkOutput::r6::void join()::106
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.UNIXProcess::r72::int waitFor()::108
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::STATICINVOKE::<spec.benchmarks.startup.Main: boolean startupTestValid()>::114
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::89
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r44::java.lang.StringBuilder append(java.lang.String)::89
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r45::java.lang.StringBuilder append(java.lang.String)::89
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.String::$r47::java.lang.String trim()::89
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r46::java.lang.StringBuilder append(java.lang.String)::89
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r49::java.lang.StringBuilder append(java.lang.String)::89
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.StringBuilder::$r50::java.lang.String toString()::89
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::spec.benchmarks.startup.StartupBenchmarkOutput::r6::void join()::106
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::INVOKE::java.lang.UNIXProcess::r72::int waitFor()::108
+IN METHOD::<spec.benchmarks.startup.Main: void harnessMain()>::STATICINVOKE::<spec.benchmarks.startup.Main: boolean startupTestValid()>::114

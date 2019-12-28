@@ -1,0 +1,4 @@
+IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.String sensorPtdMode()>::INVOKE::java.lang.String::$r2::<java.lang.String: java.lang.String substring(int,int)>::207
+IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.String sensorPtdMode()>::INVOKE::java.lang.String::$r3::<java.lang.String: boolean equals(java.lang.Object)>::207
+IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.String sensorPtdMode()>::INVOKE::any_subtype_of::java.lang.String::$r3::<java.lang.String: boolean equals(java.lang.Object)>::207
+IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.String sensorPtdMode()>::INVOKE::java.lang.String::$r5::<java.lang.String: java.lang.String substring(int)>::208

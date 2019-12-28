@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.compiler.MainBase: void harnessMain(boolean)>::INVOKE::spec.benchmarks.compiler.Compiler::$r2::<spec.benchmarks.compiler.Compiler: void compile(int)>::58

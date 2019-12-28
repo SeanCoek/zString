@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void handleErrorValidation(int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::280
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void handleErrorValidation(int)>::SPECIALINVOKE::<spec.benchmarks.xml.transform.ExtOutputStream: java.lang.String getSendResultsMessage()>::280

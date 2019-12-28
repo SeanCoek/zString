@@ -1,0 +1,14 @@
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void internalTearDownAnalyzers()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::222
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void internalTearDownAnalyzers()>::INVOKE::java.io.PrintStream::$r4::<java.io.PrintStream: void println(java.lang.String)>::222
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void internalTearDownAnalyzers()>::INVOKE::any_subtype_of::java.lang.Object::$r4::<java.io.PrintStream: void println(java.lang.String)>::222
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void internalTearDownAnalyzers()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::229
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void internalTearDownAnalyzers()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::229
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void internalTearDownAnalyzers()>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::229
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void internalTearDownAnalyzers()>::INVOKE::java.lang.Class::$r10::<java.lang.Class: java.lang.String getName()>::229
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void internalTearDownAnalyzers()>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::229
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void internalTearDownAnalyzers()>::INVOKE::java.lang.StringBuilder::$r12::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::229
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void internalTearDownAnalyzers()>::INVOKE::java.lang.StringBuilder::$r13::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::229
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void internalTearDownAnalyzers()>::INVOKE::java.lang.StringBuilder::$r15::<java.lang.StringBuilder: java.lang.String toString()>::229
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void internalTearDownAnalyzers()>::INVOKE::java.io.PrintStream::$r6::<java.io.PrintStream: void println(java.lang.String)>::229
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void internalTearDownAnalyzers()>::INVOKE::any_subtype_of::java.lang.Object::$r6::<java.io.PrintStream: void println(java.lang.String)>::229
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void internalTearDownAnalyzers()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::232

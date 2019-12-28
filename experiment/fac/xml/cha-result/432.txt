@@ -1,0 +1,4 @@
+IN METHOD::<spec.harness.results.SuiteResult: java.lang.String getCommandLineOptions()>::INVOKE::java.util.AbstractMap::$r1::<java.util.AbstractMap: java.lang.Object get(java.lang.Object)>::258
+IN METHOD::<spec.harness.results.SuiteResult: java.lang.String getCommandLineOptions()>::INVOKE::java.util.HashMap::$r1::<java.util.HashMap: java.lang.Object get(java.lang.Object)>::258
+IN METHOD::<spec.harness.results.SuiteResult: java.lang.String getCommandLineOptions()>::INVOKE::java.util.LinkedHashMap::$r1::<java.util.LinkedHashMap: java.lang.Object get(java.lang.Object)>::258
+IN METHOD::<spec.harness.results.SuiteResult: java.lang.String getCommandLineOptions()>::INVOKE::javax.swing.UIDefaults$TextAndMnemonicHashMap::$r1::<javax.swing.UIDefaults$TextAndMnemonicHashMap: java.lang.Object get(java.lang.Object)>::258

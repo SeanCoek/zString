@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.data.TestArrayList: boolean equals(java.lang.Object)>::INVOKE::java.util.ArrayList::$r5::boolean equals(java.lang.Object)::42

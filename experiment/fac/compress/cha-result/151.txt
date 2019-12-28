@@ -1,0 +1,13 @@
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(long,long)>::INVOKE::java.util.Hashtable::$r3::<java.util.Hashtable: boolean containsKey(java.lang.Object)>::122
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(long,long)>::INVOKE::java.util.Hashtable::$r8::<java.util.Hashtable: java.lang.Object get(java.lang.Object)>::123
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(long,long)>::INVOKE::java.security.Provider::$r8::<java.security.Provider: java.lang.Object get(java.lang.Object)>::123
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(long,long)>::INVOKE::javax.swing.MultiUIDefaults::$r8::<javax.swing.MultiUIDefaults: java.lang.Object get(java.lang.Object)>::123
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(long,long)>::INVOKE::javax.swing.UIDefaults::$r8::<javax.swing.UIDefaults: java.lang.Object get(java.lang.Object)>::123
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(long,long)>::INVOKE::org.jfree.data.xy.XYSeries::$r10::<org.jfree.data.xy.XYSeries: void add(double,double)>::123
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(long,long)>::SPECIALINVOKE::<org.jfree.data.xy.XYSeries: void <init>(java.lang.Comparable)>::125
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(long,long)>::INVOKE::org.jfree.data.xy.XYSeries::r2::<org.jfree.data.xy.XYSeries: void add(double,double)>::126
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(long,long)>::INVOKE::java.util.Hashtable::$r5::<java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>::127
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(long,long)>::INVOKE::java.security.Provider::$r5::<java.security.Provider: java.lang.Object put(java.lang.Object,java.lang.Object)>::127
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(long,long)>::INVOKE::sun.awt.FontConfiguration$PropertiesHandler$FontProperties::$r5::<sun.awt.FontConfiguration$PropertiesHandler$FontProperties: java.lang.Object put(java.lang.Object,java.lang.Object)>::127
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(long,long)>::INVOKE::javax.swing.UIDefaults::$r5::<javax.swing.UIDefaults: java.lang.Object put(java.lang.Object,java.lang.Object)>::127
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(long,long)>::INVOKE::org.jfree.data.xy.XYSeriesCollection::$r7::<org.jfree.data.xy.XYSeriesCollection: void addSeries(org.jfree.data.xy.XYSeries)>::128

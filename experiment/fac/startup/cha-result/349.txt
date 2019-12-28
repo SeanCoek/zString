@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.check.Main: boolean checkCompilerVersion()>::STATICINVOKE::<com.sun.tools.javac.main.JavaCompiler: java.lang.String version()>::103
+IN METHOD::<spec.benchmarks.check.Main: boolean checkCompilerVersion()>::INVOKE::java.lang.Object::$r1::<java.lang.Object: boolean equals(java.lang.Object)>::103
+IN METHOD::<spec.benchmarks.check.Main: boolean checkCompilerVersion()>::INVOKE::java.lang.String::$r1::<java.lang.String: boolean equals(java.lang.Object)>::103

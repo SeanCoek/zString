@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void <init>()>::SPECIALINVOKE::<spec.benchmarks.xml.transform.BaseOutputStream: void <init>()>::207
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void <init>()>::SPECIALINVOKE::<java.util.Properties: void <init>()>::208

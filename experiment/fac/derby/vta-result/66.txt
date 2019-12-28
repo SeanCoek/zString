@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.derby.Utils: java.lang.String getUpdateAccountsQuery(java.math.BigDecimal[],int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::146

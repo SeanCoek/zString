@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.HTMLWriter: void startTable(boolean)>::INVOKE::spec.reporter.Writer::r0::<spec.reporter.Writer: void startTable(java.lang.String,boolean,boolean,boolean)>::56
+IN METHOD::<spec.reporter.HTMLWriter: void startTable(boolean)>::INVOKE::spec.reporter.HTMLWriter::r0::<spec.reporter.HTMLWriter: void startTable(java.lang.String,boolean,boolean,boolean)>::56

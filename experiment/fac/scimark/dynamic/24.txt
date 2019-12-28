@@ -1,0 +1,13 @@
+IN METHOD::<spec.benchmarks.scimark.sor.SOR: double measureSOR(int,double,spec.benchmarks.scimark.utils.Random)>::INVOKE::spec.benchmarks.scimark.sor.SOR$1::$r3::java.lang.Object get()::71
+IN METHOD::<spec.benchmarks.scimark.sor.SOR: double measureSOR(int,double,spec.benchmarks.scimark.utils.Random)>::STATICINVOKE::<spec.benchmarks.scimark.utils.kernel: double[][] RandomizeMatrix(double[][],spec.benchmarks.scimark.utils.Random)>::77
+IN METHOD::<spec.benchmarks.scimark.sor.SOR: double measureSOR(int,double,spec.benchmarks.scimark.utils.Random)>::SPECIALINVOKE::<spec.benchmarks.scimark.utils.Stopwatch: void <init>()>::79
+IN METHOD::<spec.benchmarks.scimark.sor.SOR: double measureSOR(int,double,spec.benchmarks.scimark.utils.Random)>::INVOKE::spec.benchmarks.scimark.utils.Stopwatch::r2::void start()::83
+IN METHOD::<spec.benchmarks.scimark.sor.SOR: double measureSOR(int,double,spec.benchmarks.scimark.utils.Random)>::INVOKE::spec.benchmarks.scimark.sor.SOR::r0::double execute(double,double[][],int)::84
+IN METHOD::<spec.benchmarks.scimark.sor.SOR: double measureSOR(int,double,spec.benchmarks.scimark.utils.Random)>::INVOKE::spec.benchmarks.scimark.utils.Stopwatch::r2::double stop()::85
+IN METHOD::<spec.benchmarks.scimark.sor.SOR: double measureSOR(int,double,spec.benchmarks.scimark.utils.Random)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::92
+IN METHOD::<spec.benchmarks.scimark.sor.SOR: double measureSOR(int,double,spec.benchmarks.scimark.utils.Random)>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::92
+IN METHOD::<spec.benchmarks.scimark.sor.SOR: double measureSOR(int,double,spec.benchmarks.scimark.utils.Random)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(double)::92
+IN METHOD::<spec.benchmarks.scimark.sor.SOR: double measureSOR(int,double,spec.benchmarks.scimark.utils.Random)>::INVOKE::java.lang.StringBuilder::$r9::java.lang.String toString()::92
+IN METHOD::<spec.benchmarks.scimark.sor.SOR: double measureSOR(int,double,spec.benchmarks.scimark.utils.Random)>::STATICINVOKE::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::92
+IN METHOD::<spec.benchmarks.scimark.sor.SOR: double measureSOR(int,double,spec.benchmarks.scimark.utils.Random)>::INVOKE::spec.benchmarks.scimark.sor.SOR::r0::double num_flops(int,int,int)::93
+IN METHOD::<spec.benchmarks.scimark.sor.SOR: double measureSOR(int,double,spec.benchmarks.scimark.utils.Random)>::INVOKE::spec.benchmarks.scimark.utils.Stopwatch::r2::double read()::93

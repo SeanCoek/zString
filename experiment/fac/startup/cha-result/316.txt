@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.check.PepTest: void throwArithmeticException(int)>::SPECIALINVOKE::<java.lang.ArithmeticException: void <init>(java.lang.String)>::928
+IN METHOD::<spec.benchmarks.check.PepTest: void throwArithmeticException(int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::930
+IN METHOD::<spec.benchmarks.check.PepTest: void throwArithmeticException(int)>::INVOKE::java.io.PrintStream::$r2::<java.io.PrintStream: void println(java.lang.String)>::930
+IN METHOD::<spec.benchmarks.check.PepTest: void throwArithmeticException(int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::932
+IN METHOD::<spec.benchmarks.check.PepTest: void throwArithmeticException(int)>::INVOKE::java.io.PrintStream::$r1::<java.io.PrintStream: void println(java.lang.String)>::932

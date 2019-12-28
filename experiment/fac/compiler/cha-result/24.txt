@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager$1: java.lang.Object make()>::INVOKE::spec.benchmarks.compiler.SpecFileManager$1::r0::<spec.benchmarks.compiler.SpecFileManager$1: javax.tools.JavaFileManager make()>::198

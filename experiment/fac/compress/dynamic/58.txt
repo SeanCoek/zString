@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.compress.Main: void harnessMain()>::INVOKE::spec.benchmarks.compress.Main::r0::long runBenchmark()::40

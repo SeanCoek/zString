@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkInterfaceInstanceOf()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::377
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkInterfaceInstanceOf()>::INVOKE::java.io.PrintStream::$r4::<java.io.PrintStream: void print(java.lang.String)>::377
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkInterfaceInstanceOf()>::SPECIALINVOKE::<spec.benchmarks.check.C1: void <init>()>::378
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkInterfaceInstanceOf()>::SPECIALINVOKE::<spec.benchmarks.check.C2: void <init>()>::379
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkInterfaceInstanceOf()>::SPECIALINVOKE::<spec.benchmarks.check.C3: void <init>()>::380

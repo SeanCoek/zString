@@ -1,0 +1,4 @@
+IN METHOD::<spec.io.FileCache: boolean hasFile(java.lang.String)>::INVOKE::java.util.AbstractMap::$r2::<java.util.AbstractMap: java.lang.Object get(java.lang.Object)>::61
+IN METHOD::<spec.io.FileCache: boolean hasFile(java.lang.String)>::INVOKE::java.util.HashMap::$r2::<java.util.HashMap: java.lang.Object get(java.lang.Object)>::61
+IN METHOD::<spec.io.FileCache: boolean hasFile(java.lang.String)>::INVOKE::java.util.LinkedHashMap::$r2::<java.util.LinkedHashMap: java.lang.Object get(java.lang.Object)>::61
+IN METHOD::<spec.io.FileCache: boolean hasFile(java.lang.String)>::INVOKE::javax.swing.UIDefaults$TextAndMnemonicHashMap::$r2::<javax.swing.UIDefaults$TextAndMnemonicHashMap: java.lang.Object get(java.lang.Object)>::61

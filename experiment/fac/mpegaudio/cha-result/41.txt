@@ -1,0 +1,5 @@
+IN METHOD::<spec.reporter.BenchmarkRecord$IterationRecord: void addError(java.lang.String)>::SPECIALINVOKE::<java.util.ArrayList: void <init>()>::38
+IN METHOD::<spec.reporter.BenchmarkRecord$IterationRecord: void addError(java.lang.String)>::INVOKE::java.util.AbstractList::$r3::<java.util.AbstractList: boolean add(java.lang.Object)>::40
+IN METHOD::<spec.reporter.BenchmarkRecord$IterationRecord: void addError(java.lang.String)>::INVOKE::java.util.AbstractCollection::$r3::<java.util.AbstractCollection: boolean add(java.lang.Object)>::40
+IN METHOD::<spec.reporter.BenchmarkRecord$IterationRecord: void addError(java.lang.String)>::INVOKE::javax.management.AttributeList::$r3::<javax.management.AttributeList: boolean add(java.lang.Object)>::40
+IN METHOD::<spec.reporter.BenchmarkRecord$IterationRecord: void addError(java.lang.String)>::INVOKE::java.util.ArrayList::$r3::<java.util.ArrayList: boolean add(java.lang.Object)>::40

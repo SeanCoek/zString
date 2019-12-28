@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void connectClose(java.sql.Connection)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::523

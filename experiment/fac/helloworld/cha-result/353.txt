@@ -1,0 +1,4 @@
+IN METHOD::<spec.harness.results.TestResult: void printErrorsToXml(java.io.PrintStream,int)>::INVOKE::spec.harness.results.TestResult::r0::<spec.harness.results.TestResult: boolean hasErrors()>::64
+IN METHOD::<spec.harness.results.TestResult: void printErrorsToXml(java.io.PrintStream,int)>::INVOKE::spec.harness.results.TestResult::r0::<spec.harness.results.TestResult: void ptxElementOpen(java.io.PrintStream,int,java.lang.String)>::65
+IN METHOD::<spec.harness.results.TestResult: void printErrorsToXml(java.io.PrintStream,int)>::INVOKE::spec.harness.results.TestResult::r0::<spec.harness.results.TestResult: void ptxElement(java.io.PrintStream,int,java.lang.String,java.lang.String)>::67
+IN METHOD::<spec.harness.results.TestResult: void printErrorsToXml(java.io.PrintStream,int)>::INVOKE::spec.harness.results.TestResult::r0::<spec.harness.results.TestResult: void ptxElementClose(java.io.PrintStream,int,java.lang.String)>::69

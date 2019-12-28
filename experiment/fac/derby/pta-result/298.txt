@@ -1,0 +1,16 @@
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void setupAnalyzerClass()>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::31
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void setupAnalyzerClass()>::STATICINVOKE::<spec.harness.Util: int getIntProperty(java.lang.String,java.lang.String)>::32
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void setupAnalyzerClass()>::STATICINVOKE::<spec.harness.Util: boolean getBoolProperty(java.lang.String,java.lang.String)>::33
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void setupAnalyzerClass()>::STATICINVOKE::<spec.harness.Util: boolean getBoolProperty(java.lang.String,java.lang.String)>::34
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void setupAnalyzerClass()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::45
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void setupAnalyzerClass()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::45
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void setupAnalyzerClass()>::STATICINVOKE::<spec.harness.analyzer.AnalyzerBase: void addViolationToSuiteResult(java.lang.String)>::49
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void setupAnalyzerClass()>::SPECIALINVOKE::<spec.harness.analyzer.PowerMeter: void <init>(java.lang.String,int)>::53
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void setupAnalyzerClass()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::55
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void setupAnalyzerClass()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::55
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void setupAnalyzerClass()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::56
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void setupAnalyzerClass()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::56
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void setupAnalyzerClass()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::57
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void setupAnalyzerClass()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::57
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void setupAnalyzerClass()>::STATICINVOKE::<spec.harness.analyzer.AnalyzerBase: void addViolationToSuiteResult(java.lang.String)>::60
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer: void setupAnalyzerClass()>::STATICINVOKE::<spec.harness.analyzer.AnalyzerBase: void addViolationToSuiteResult(java.lang.String)>::63

@@ -1,0 +1,9 @@
+IN METHOD::<spec.benchmarks.crypto.rsa.Main: void setupBenchmark()>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::119
+IN METHOD::<spec.benchmarks.crypto.rsa.Main: void setupBenchmark()>::INVOKE::spec.io.FileCache::$r1::void loadFile(java.lang.String)::119
+IN METHOD::<spec.benchmarks.crypto.rsa.Main: void setupBenchmark()>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::120
+IN METHOD::<spec.benchmarks.crypto.rsa.Main: void setupBenchmark()>::INVOKE::spec.io.FileCache::$r3::void loadFile(java.lang.String)::120
+IN METHOD::<spec.benchmarks.crypto.rsa.Main: void setupBenchmark()>::STATICINVOKE::<java.security.KeyPairGenerator: java.security.KeyPairGenerator getInstance(java.lang.String)>::122
+IN METHOD::<spec.benchmarks.crypto.rsa.Main: void setupBenchmark()>::INVOKE::java.security.KeyPairGenerator$Delegate::r13::void initialize(int)::124
+IN METHOD::<spec.benchmarks.crypto.rsa.Main: void setupBenchmark()>::INVOKE::java.security.KeyPairGenerator$Delegate::r13::java.security.KeyPair generateKeyPair()::126
+IN METHOD::<spec.benchmarks.crypto.rsa.Main: void setupBenchmark()>::INVOKE::java.security.KeyPair::r0::java.security.PublicKey getPublic()::128
+IN METHOD::<spec.benchmarks.crypto.rsa.Main: void setupBenchmark()>::INVOKE::java.security.KeyPair::r0::java.security.PrivateKey getPrivate()::129

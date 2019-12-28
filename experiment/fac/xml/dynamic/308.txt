@@ -1,0 +1,4 @@
+IN METHOD::<spec.io.FileCache$CachedFile: org.xml.sax.InputSource asNewInputSource()>::INVOKE::spec.io.FileCache$CachedFile::r0::java.io.ByteArrayInputStream getStream()::133
+IN METHOD::<spec.io.FileCache$CachedFile: org.xml.sax.InputSource asNewInputSource()>::SPECIALINVOKE::<org.xml.sax.InputSource: void <init>(java.io.InputStream)>::133
+IN METHOD::<spec.io.FileCache$CachedFile: org.xml.sax.InputSource asNewInputSource()>::INVOKE::spec.io.FileCache$CachedFile::r0::java.io.ByteArrayInputStream getStream()::133
+IN METHOD::<spec.io.FileCache$CachedFile: org.xml.sax.InputSource asNewInputSource()>::SPECIALINVOKE::<org.xml.sax.InputSource: void <init>(java.io.InputStream)>::133

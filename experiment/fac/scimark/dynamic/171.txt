@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: void run()>::SPECIALINVOKE::<spec.benchmarks.scimark.utils.Random: void <init>(int)>::245
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: void run()>::INVOKE::spec.benchmarks.scimark.fft.FFT::r0::double measureFFT(int,double,spec.benchmarks.scimark.utils.Random)::246

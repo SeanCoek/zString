@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getZipFile(java.io.File)>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String)>::148

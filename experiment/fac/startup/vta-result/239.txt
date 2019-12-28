@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::SPECIALINVOKE::<spec.benchmarks.compress.Decompressor: int getCode()>::534
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::SPECIALINVOKE::<spec.benchmarks.compress.Decompressor: int getCode()>::540
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::SPECIALINVOKE::<spec.benchmarks.compress.Decompressor: int getCode()>::545

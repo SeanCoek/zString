@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void startMeasurementInterval()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::94
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void startMeasurementInterval()>::INVOKE::java.io.PrintStream::$r1::<java.io.PrintStream: void println(java.lang.String)>::94

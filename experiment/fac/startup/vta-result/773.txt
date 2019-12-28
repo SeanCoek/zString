@@ -1,0 +1,3 @@
+IN METHOD::<spec.harness.BenchmarkThread: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::33
+IN METHOD::<spec.harness.BenchmarkThread: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.Thread: void <init>(java.lang.String)>::33
+IN METHOD::<spec.harness.BenchmarkThread: void <init>(spec.harness.results.BenchmarkResult,int)>::STATICINVOKE::<spec.harness.Util: boolean getBoolProperty(java.lang.String,java.lang.String)>::38

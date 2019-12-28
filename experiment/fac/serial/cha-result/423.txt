@@ -1,0 +1,9 @@
+IN METHOD::<spec.harness.results.BenchmarkResult: java.lang.String resultString()>::INVOKE::spec.harness.results.BenchmarkResult::r0::<spec.harness.results.BenchmarkResult: boolean isValid()>::218
+IN METHOD::<spec.harness.results.BenchmarkResult: java.lang.String resultString()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::219
+IN METHOD::<spec.harness.results.BenchmarkResult: java.lang.String resultString()>::INVOKE::spec.harness.results.BenchmarkResult::r0::<spec.harness.results.BenchmarkResult: double getScore()>::219
+IN METHOD::<spec.harness.results.BenchmarkResult: java.lang.String resultString()>::STATICINVOKE::<spec.harness.results.TestResult: java.lang.String doubleAsRes(double)>::219
+IN METHOD::<spec.harness.results.BenchmarkResult: java.lang.String resultString()>::INVOKE::java.lang.StringBuilder::$r1::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::219
+IN METHOD::<spec.harness.results.BenchmarkResult: java.lang.String resultString()>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::219
+IN METHOD::<spec.harness.results.BenchmarkResult: java.lang.String resultString()>::INVOKE::java.lang.StringBuilder::$r4::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::219
+IN METHOD::<spec.harness.results.BenchmarkResult: java.lang.String resultString()>::INVOKE::java.lang.Object::$r5::<java.lang.Object: java.lang.String toString()>::219
+IN METHOD::<spec.harness.results.BenchmarkResult: java.lang.String resultString()>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.String toString()>::219

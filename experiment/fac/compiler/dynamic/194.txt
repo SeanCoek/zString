@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager$OutputFileObject: void <init>(spec.benchmarks.compiler.SpecFileManager,java.lang.String)>::SPECIALINVOKE::<spec.benchmarks.compiler.SpecFileManager$BaseFileObject: void <init>(spec.benchmarks.compiler.SpecFileManager)>::114
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager$OutputFileObject: void <init>(spec.benchmarks.compiler.SpecFileManager,java.lang.String)>::SPECIALINVOKE::<spec.benchmarks.compiler.SpecFileManager$BaseFileObject: void <init>(spec.benchmarks.compiler.SpecFileManager)>::114

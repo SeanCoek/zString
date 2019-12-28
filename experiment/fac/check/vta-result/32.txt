@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testBitOps()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::231
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testBitOps()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: int shiftAnd(int,int)>::233
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testBitOps()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: int shiftAnd(int,int)>::234
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testBitOps()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: int shiftAnd(int,int)>::235
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testBitOps()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: int shiftAnd(int,int)>::236

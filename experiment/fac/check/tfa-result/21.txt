@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.check.Sub: void <init>(int)>::SPECIALINVOKE::<spec.benchmarks.check.Super: void <init>(int)>::35

@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.data.TestReadResolve: void <clinit>()>::SPECIALINVOKE::<spec.benchmarks.serial.data.TestReadResolve: void <init>(int,java.lang.String)>::19

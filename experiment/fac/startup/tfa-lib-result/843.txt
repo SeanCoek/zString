@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.results.SuiteResult: boolean isValid()>::INVOKE::spec.harness.results.BenchmarkResult::r2::<spec.harness.results.BenchmarkResult: boolean isValid()>::169
+IN METHOD::<spec.harness.results.SuiteResult: boolean isValid()>::INVOKE::any_subtype_of::java.lang.Object::r2::<spec.harness.results.BenchmarkResult: boolean isValid()>::169

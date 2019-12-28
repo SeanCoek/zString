@@ -1,0 +1,46 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void setDerbyProperties()>::208
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void rmDir()>::210
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::219
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r1::java.lang.StringBuilder append(java.lang.String)::219
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(int)::219
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r3::java.lang.String toString()::219
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::STATICINVOKE::<spec.benchmarks.derby.Utils: void print(java.lang.String)>::219
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::220
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r5::java.lang.StringBuilder append(java.lang.String)::220
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(int)::220
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r7::java.lang.String toString()::220
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::STATICINVOKE::<spec.benchmarks.derby.Utils: void print(java.lang.String)>::220
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::221
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r9::java.lang.StringBuilder append(java.lang.String)::221
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r10::java.lang.StringBuilder append(int)::221
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r11::java.lang.String toString()::221
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::STATICINVOKE::<spec.benchmarks.derby.Utils: void print(java.lang.String)>::221
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::222
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r13::java.lang.StringBuilder append(java.lang.String)::222
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r14::java.lang.StringBuilder append(int)::222
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r15::java.lang.String toString()::222
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::STATICINVOKE::<spec.benchmarks.derby.Utils: void print(java.lang.String)>::222
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::223
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r17::java.lang.StringBuilder append(java.lang.String)::223
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r18::java.lang.StringBuilder append(int)::223
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r19::java.lang.String toString()::223
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::STATICINVOKE::<spec.benchmarks.derby.Utils: void print(java.lang.String)>::223
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::224
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r21::java.lang.StringBuilder append(java.lang.String)::224
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r22::java.lang.StringBuilder append(int)::224
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r23::java.lang.String toString()::224
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::STATICINVOKE::<spec.benchmarks.derby.Utils: void print(java.lang.String)>::224
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::225
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r25::java.lang.StringBuilder append(java.lang.String)::225
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r26::java.lang.StringBuilder append(int)::225
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r27::java.lang.String toString()::225
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::STATICINVOKE::<spec.benchmarks.derby.Utils: void print(java.lang.String)>::225
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::STATICINVOKE::<spec.benchmarks.derby.Utils: void print(java.lang.String)>::226
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::228
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r30::java.lang.StringBuilder append(int)::228
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r31::java.lang.StringBuilder append(java.lang.String)::228
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r32::java.lang.StringBuilder append(int)::228
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::INVOKE::java.lang.StringBuilder::$r34::java.lang.String toString()::228
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::STATICINVOKE::<spec.benchmarks.derby.Utils: void print(java.lang.String)>::228
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::232
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void createDatabases()>::233

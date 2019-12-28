@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getSrcFile(java.io.File)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::180
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getSrcFile(java.io.File)>::INVOKE::java.io.File::r0::<java.io.File: java.lang.String getPath()>::180
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getSrcFile(java.io.File)>::INVOKE::java.lang.StringBuilder::$r2::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::180
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getSrcFile(java.io.File)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::180

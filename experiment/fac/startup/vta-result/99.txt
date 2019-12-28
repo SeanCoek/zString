@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.scimark.monte_carlo.MonteCarlo: double measureMonteCarlo(double,spec.benchmarks.scimark.utils.Random)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::80
+IN METHOD::<spec.benchmarks.scimark.monte_carlo.MonteCarlo: double measureMonteCarlo(double,spec.benchmarks.scimark.utils.Random)>::SPECIALINVOKE::<spec.benchmarks.scimark.utils.Stopwatch: void <init>()>::81

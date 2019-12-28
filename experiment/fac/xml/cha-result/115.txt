@@ -1,0 +1,7 @@
+IN METHOD::<spec.reporter.ReportGenerator: void insertSuiteConfiguration(spec.reporter.Writer)>::INVOKE::spec.reporter.HTMLWriter::r1::<spec.reporter.HTMLWriter: void startTable(java.lang.String,boolean)>::692
+IN METHOD::<spec.reporter.ReportGenerator: void insertSuiteConfiguration(spec.reporter.Writer)>::INVOKE::spec.reporter.Writer::r1::<spec.reporter.Writer: void startTable(java.lang.String,boolean)>::692
+IN METHOD::<spec.reporter.ReportGenerator: void insertSuiteConfiguration(spec.reporter.Writer)>::INVOKE::spec.reporter.HTMLWriter::r1::<spec.reporter.HTMLWriter: void insertRecords(java.util.ArrayList)>::693
+IN METHOD::<spec.reporter.ReportGenerator: void insertSuiteConfiguration(spec.reporter.Writer)>::INVOKE::spec.reporter.PlainWriter::r1::<spec.reporter.PlainWriter: void insertRecords(java.util.ArrayList)>::693
+IN METHOD::<spec.reporter.ReportGenerator: void insertSuiteConfiguration(spec.reporter.Writer)>::INVOKE::spec.reporter.Writer::r1::<spec.reporter.Writer: void insertRecords(java.util.ArrayList)>::693
+IN METHOD::<spec.reporter.ReportGenerator: void insertSuiteConfiguration(spec.reporter.Writer)>::INVOKE::spec.reporter.HTMLWriter::r1::<spec.reporter.HTMLWriter: void endTable(boolean)>::694
+IN METHOD::<spec.reporter.ReportGenerator: void insertSuiteConfiguration(spec.reporter.Writer)>::INVOKE::spec.reporter.Writer::r1::<spec.reporter.Writer: void endTable(boolean)>::694

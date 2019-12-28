@@ -1,0 +1,15 @@
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::STATICINVOKE::<spec.harness.analyzer.AnalyzersRunner: int getNoAnalyzer()>::177
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::182
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::INVOKE::java.io.PrintStream::$r4::<java.io.PrintStream: void println(java.lang.String)>::182
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::INVOKE::any_subtype_of::java.lang.Object::$r4::<java.io.PrintStream: void println(java.lang.String)>::182
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::189
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::189
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::189
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::INVOKE::java.lang.Class::$r10::<java.lang.Class: java.lang.String getName()>::189
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::189
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::INVOKE::java.lang.StringBuilder::$r12::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::189
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::INVOKE::java.lang.StringBuilder::$r13::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::189
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::INVOKE::java.lang.StringBuilder::$r15::<java.lang.StringBuilder: java.lang.String toString()>::189
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::INVOKE::java.io.PrintStream::$r6::<java.io.PrintStream: void println(java.lang.String)>::189
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::INVOKE::any_subtype_of::java.lang.Object::$r6::<java.io.PrintStream: void println(java.lang.String)>::189
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::192

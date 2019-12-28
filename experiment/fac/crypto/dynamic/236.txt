@@ -1,0 +1,24 @@
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::SPECIALINVOKE::<java.util.Properties: void <init>()>::422
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::STATICINVOKE::<spec.harness.CommandLineParser: boolean parseArgs(java.lang.String[],java.util.Properties)>::423
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::INVOKE::java.util.Properties::r1::java.lang.String getProperty(java.lang.String)::429
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::STATICINVOKE::<spec.harness.Configuration: java.util.Properties readProperties(java.lang.String)>::429
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::INVOKE::java.util.Properties::$r6::void putAll(java.util.Map)::436
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::INVOKE::java.util.Properties::$r8::java.lang.Object put(java.lang.Object,java.lang.Object)::437
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::INVOKE::java.util.Properties::$r10::java.lang.Object put(java.lang.Object,java.lang.Object)::438
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::STATICINVOKE::<spec.harness.Launch: void setupContext()>::442
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::SPECIALINVOKE::<java.util.Properties: void <init>()>::422
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::STATICINVOKE::<spec.harness.CommandLineParser: boolean parseArgs(java.lang.String[],java.util.Properties)>::423
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::INVOKE::java.util.Properties::r1::java.lang.String getProperty(java.lang.String)::429
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::STATICINVOKE::<spec.harness.Configuration: java.util.Properties readProperties(java.lang.String)>::429
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::INVOKE::java.util.Properties::$r6::void putAll(java.util.Map)::436
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::INVOKE::java.util.Properties::$r8::java.lang.Object put(java.lang.Object,java.lang.Object)::437
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::INVOKE::java.util.Properties::$r10::java.lang.Object put(java.lang.Object,java.lang.Object)::438
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::STATICINVOKE::<spec.harness.Launch: void setupContext()>::442
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::SPECIALINVOKE::<java.util.Properties: void <init>()>::422
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::STATICINVOKE::<spec.harness.CommandLineParser: boolean parseArgs(java.lang.String[],java.util.Properties)>::423
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::INVOKE::java.util.Properties::r1::java.lang.String getProperty(java.lang.String)::429
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::STATICINVOKE::<spec.harness.Configuration: java.util.Properties readProperties(java.lang.String)>::429
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::INVOKE::java.util.Properties::$r6::void putAll(java.util.Map)::436
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::INVOKE::java.util.Properties::$r8::java.lang.Object put(java.lang.Object,java.lang.Object)::437
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::INVOKE::java.util.Properties::$r10::java.lang.Object put(java.lang.Object,java.lang.Object)::438
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::STATICINVOKE::<spec.harness.Launch: void setupContext()>::442

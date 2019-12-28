@@ -1,0 +1,26 @@
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::229
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::229
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r1::java.lang.StringBuilder append(java.lang.String)::229
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(float)::229
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.String toString()::229
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::INVOKE::java.io.PrintStream::$r0::void println(java.lang.String)::229
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::231
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::231
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::231
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::STATICINVOKE::<java.lang.Float: int floatToIntBits(float)>::231
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::STATICINVOKE::<java.lang.Integer: java.lang.String toString(int,int)>::231
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::231
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r9::java.lang.String toString()::231
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::INVOKE::java.io.PrintStream::$r5::void println(java.lang.String)::231
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::233
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::233
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r12::java.lang.StringBuilder append(java.lang.String)::233
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r13::java.lang.StringBuilder append(float)::233
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r14::java.lang.String toString()::233
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::INVOKE::java.io.PrintStream::$r11::void println(java.lang.String)::233
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::235
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::235
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r17::java.lang.StringBuilder append(java.lang.String)::235
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r18::java.lang.StringBuilder append(float)::235
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::INVOKE::java.lang.StringBuilder::$r19::java.lang.String toString()::235
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::INVOKE::java.io.PrintStream::$r16::void println(java.lang.String)::235

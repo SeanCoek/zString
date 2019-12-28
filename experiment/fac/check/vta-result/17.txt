@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.check.Super: java.lang.String toString()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::63

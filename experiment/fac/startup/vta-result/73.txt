@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.scimark.utils.Stopwatch: double seconds()>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::43

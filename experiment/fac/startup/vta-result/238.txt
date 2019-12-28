@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.compress.Decompressor: void <init>(spec.benchmarks.compress.InputBuffer,spec.benchmarks.compress.OutputBuffer)>::SPECIALINVOKE::<spec.benchmarks.compress.CompBase: void <init>(spec.benchmarks.compress.InputBuffer,spec.benchmarks.compress.OutputBuffer)>::496
+IN METHOD::<spec.benchmarks.compress.Decompressor: void <init>(spec.benchmarks.compress.InputBuffer,spec.benchmarks.compress.OutputBuffer)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::509
+IN METHOD::<spec.benchmarks.compress.Decompressor: void <init>(spec.benchmarks.compress.InputBuffer,spec.benchmarks.compress.OutputBuffer)>::SPECIALINVOKE::<spec.benchmarks.compress.CodeTable: void <init>()>::520
+IN METHOD::<spec.benchmarks.compress.Decompressor: void <init>(spec.benchmarks.compress.InputBuffer,spec.benchmarks.compress.OutputBuffer)>::SPECIALINVOKE::<spec.benchmarks.compress.Decompressor$SuffixTable: void <init>()>::521
+IN METHOD::<spec.benchmarks.compress.Decompressor: void <init>(spec.benchmarks.compress.InputBuffer,spec.benchmarks.compress.OutputBuffer)>::SPECIALINVOKE::<spec.benchmarks.compress.Decompressor$DeStack: void <init>()>::522

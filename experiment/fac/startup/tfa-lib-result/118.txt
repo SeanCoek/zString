@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.scimark.fft.Main: void runBenchmark()>::STATICINVOKE::<spec.benchmarks.scimark.fft.FFT: void main(int)>::27

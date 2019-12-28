@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.check.C1: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::85

@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: void run(int)>::SPECIALINVOKE::<spec.benchmarks.mpegaudio.Harness: java.lang.String getName(int)>::38
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: void run(int)>::INVOKE::spec.benchmarks.mpegaudio.Harness::r0::<spec.benchmarks.mpegaudio.Harness: long decode(java.lang.String)>::38
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: void run(int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::41
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: void run(int)>::INVOKE::java.lang.Throwable::r5::<java.lang.Throwable: void printStackTrace(java.io.PrintStream)>::41

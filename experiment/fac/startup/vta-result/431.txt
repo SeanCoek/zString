@@ -1,0 +1,8 @@
+IN METHOD::<spec.benchmarks.xml.transform.Main: void executeWorkload()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::240
+IN METHOD::<spec.benchmarks.xml.transform.Main: void executeWorkload()>::STATICINVOKE::<spec.benchmarks.xml.transform.Main: int getLoopMode()>::241
+IN METHOD::<spec.benchmarks.xml.transform.Main: void executeWorkload()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::244
+IN METHOD::<spec.benchmarks.xml.transform.Main: void executeWorkload()>::SPECIALINVOKE::<spec.benchmarks.xml.transform.Main: void transform(javax.xml.transform.Transformer,javax.xml.transform.Source,java.lang.String,int)>::244
+IN METHOD::<spec.benchmarks.xml.transform.Main: void executeWorkload()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::245
+IN METHOD::<spec.benchmarks.xml.transform.Main: void executeWorkload()>::SPECIALINVOKE::<spec.benchmarks.xml.transform.Main: void transform(javax.xml.transform.Transformer,javax.xml.transform.Source,java.lang.String,int)>::245
+IN METHOD::<spec.benchmarks.xml.transform.Main: void executeWorkload()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::246
+IN METHOD::<spec.benchmarks.xml.transform.Main: void executeWorkload()>::SPECIALINVOKE::<spec.benchmarks.xml.transform.Main: void transform(javax.xml.transform.Transformer,javax.xml.transform.Source,java.lang.String,int)>::246

@@ -1,0 +1,5 @@
+IN METHOD::<spec.harness.results.TestResult: java.lang.String ptxArrToValue(java.lang.String[])>::SPECIALINVOKE::<java.lang.StringBuffer: void <init>()>::113
+IN METHOD::<spec.harness.results.TestResult: java.lang.String ptxArrToValue(java.lang.String[])>::INVOKE::java.lang.StringBuffer::r2::<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>::115
+IN METHOD::<spec.harness.results.TestResult: java.lang.String ptxArrToValue(java.lang.String[])>::INVOKE::java.lang.StringBuffer::r2::<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>::117
+IN METHOD::<spec.harness.results.TestResult: java.lang.String ptxArrToValue(java.lang.String[])>::INVOKE::java.lang.Object::r2::<java.lang.Object: java.lang.String toString()>::120
+IN METHOD::<spec.harness.results.TestResult: java.lang.String ptxArrToValue(java.lang.String[])>::INVOKE::java.lang.StringBuffer::r2::<java.lang.StringBuffer: java.lang.String toString()>::120

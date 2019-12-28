@@ -1,0 +1,5 @@
+IN METHOD::<spec.harness.results.BenchmarkResult: void toXml(java.io.PrintStream,int)>::INVOKE::spec.harness.results.BenchmarkResult::r0::<spec.harness.results.BenchmarkResult: void headerToXml(java.io.PrintStream,int)>::283
+IN METHOD::<spec.harness.results.BenchmarkResult: void toXml(java.io.PrintStream,int)>::INVOKE::spec.harness.results.IterationResult::$r7::<spec.harness.results.IterationResult: void toXml(java.io.PrintStream,int)>::285
+IN METHOD::<spec.harness.results.BenchmarkResult: void toXml(java.io.PrintStream,int)>::INVOKE::spec.harness.results.BenchmarkResult::r0::<spec.harness.results.BenchmarkResult: void middleToXml(java.io.PrintStream,int)>::287
+IN METHOD::<spec.harness.results.BenchmarkResult: void toXml(java.io.PrintStream,int)>::INVOKE::spec.harness.results.IterationResult::$r6::<spec.harness.results.IterationResult: void toXml(java.io.PrintStream,int)>::289
+IN METHOD::<spec.harness.results.BenchmarkResult: void toXml(java.io.PrintStream,int)>::INVOKE::spec.harness.results.BenchmarkResult::r0::<spec.harness.results.BenchmarkResult: void footerToXml(java.io.PrintStream,int)>::291

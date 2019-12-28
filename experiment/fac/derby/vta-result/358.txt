@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.results.BenchmarkResult: void middleToXml(java.io.PrintStream,int)>::INVOKE::spec.harness.results.TestResult::r0::<spec.harness.results.TestResult: void ptxElementClose(java.io.PrintStream,int,java.lang.String)>::295
+IN METHOD::<spec.harness.results.BenchmarkResult: void middleToXml(java.io.PrintStream,int)>::INVOKE::spec.harness.results.TestResult::r0::<spec.harness.results.TestResult: void ptxElementOpen(java.io.PrintStream,int,java.lang.String)>::296

@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.compiler.MainBase: void preSetupBenchmark(java.lang.Class)>::38
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::39
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: void setupBenchmark()>::SPECIALINVOKE::<spec.harness.results.BenchmarkResult: void <init>()>::40
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: void setupBenchmark()>::SPECIALINVOKE::<spec.benchmarks.compiler.compiler.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::40
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: void setupBenchmark()>::INVOKE::spec.benchmarks.compiler.MainBase::$r3::<spec.benchmarks.compiler.MainBase: void harnessMain(boolean)>::40

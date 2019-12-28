@@ -1,0 +1,16 @@
+IN METHOD::<spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>::SPECIALINVOKE::<java.io.FileInputStream: void <init>(java.lang.String)>::106
+IN METHOD::<spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::107
+IN METHOD::<spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>::INVOKE::java.io.File::$r3::<java.io.File: long length()>::107
+IN METHOD::<spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>::INVOKE::sun.awt.shell.ShellFolder::$r3::<sun.awt.shell.ShellFolder: long length()>::107
+IN METHOD::<spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>::INVOKE::java.io.InputStream::r8::<java.io.InputStream: int read(byte[],int,int)>::119
+IN METHOD::<spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>::INVOKE::java.net.SocketInputStream::r8::<java.net.SocketInputStream: int read(byte[],int,int)>::119
+IN METHOD::<spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>::INVOKE::java.lang.UNIXProcess$DeferredCloseInputStream::r8::<java.lang.UNIXProcess$DeferredCloseInputStream: int read(byte[],int,int)>::119
+IN METHOD::<spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>::INVOKE::java.io.FileInputStream::r8::<java.io.FileInputStream: int read(byte[],int,int)>::119
+IN METHOD::<spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>::INVOKE::java.io.InputStream::r8::<java.io.InputStream: void close()>::123
+IN METHOD::<spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>::INVOKE::java.net.SocketInputStream::r8::<java.net.SocketInputStream: void close()>::123
+IN METHOD::<spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>::INVOKE::java.lang.UNIXProcess$DeferredCloseInputStream::r8::<java.lang.UNIXProcess$DeferredCloseInputStream: void close()>::123
+IN METHOD::<spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>::INVOKE::java.io.FileInputStream::r8::<java.io.FileInputStream: void close()>::123
+IN METHOD::<spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::126
+IN METHOD::<spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>::INVOKE::java.io.PrintStream::$r4::<java.io.PrintStream: void println(java.lang.String)>::126
+IN METHOD::<spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::131
+IN METHOD::<spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>::INVOKE::java.lang.Throwable::r9::<java.lang.Throwable: void printStackTrace(java.io.PrintStream)>::131

@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.derby.DataReader: void close()>::INVOKE::spec.benchmarks.derby.CyclicReader::$r1::void close()::56
+IN METHOD::<spec.benchmarks.derby.DataReader: void close()>::INVOKE::spec.benchmarks.derby.CyclicReader::$r2::void close()::57

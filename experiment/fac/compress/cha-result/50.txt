@@ -1,0 +1,16 @@
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::SPECIALINVOKE::<spec.benchmarks.compress.Decompressor: int getCode()>::534
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.OutputBuffer::$r1::<spec.benchmarks.compress.OutputBuffer: void writeByte(byte)>::538
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::SPECIALINVOKE::<spec.benchmarks.compress.Decompressor: int getCode()>::540
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.CodeTable::$r13::<spec.benchmarks.compress.CodeTable: void clear(int)>::542
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::SPECIALINVOKE::<spec.benchmarks.compress.Decompressor: int getCode()>::545
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.Decompressor$DeStack::$r12::<spec.benchmarks.compress.Decompressor$DeStack: void push(byte)>::553
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.Decompressor$SuffixTable::$r9::<spec.benchmarks.compress.Decompressor$SuffixTable: byte of(int)>::561
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.Decompressor$DeStack::$r10::<spec.benchmarks.compress.Decompressor$DeStack: void push(byte)>::561
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.CodeTable::$r11::<spec.benchmarks.compress.CodeTable: int of(int)>::562
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.Decompressor$SuffixTable::$r2::<spec.benchmarks.compress.Decompressor$SuffixTable: byte of(int)>::564
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.Decompressor$DeStack::$r3::<spec.benchmarks.compress.Decompressor$DeStack: void push(byte)>::564
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.Decompressor$DeStack::$r4::<spec.benchmarks.compress.Decompressor$DeStack: byte pop()>::570
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.OutputBuffer::$r5::<spec.benchmarks.compress.OutputBuffer: void writeByte(byte)>::570
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.Decompressor$DeStack::$r6::<spec.benchmarks.compress.Decompressor$DeStack: boolean isEmpty()>::571
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.CodeTable::$r7::<spec.benchmarks.compress.CodeTable: void set(int,int)>::577
+IN METHOD::<spec.benchmarks.compress.Decompressor: void decompress()>::INVOKE::spec.benchmarks.compress.Decompressor$SuffixTable::$r8::<spec.benchmarks.compress.Decompressor$SuffixTable: void set(int,byte)>::578

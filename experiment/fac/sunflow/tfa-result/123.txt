@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.HTMLWriter: void endRecord()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void decIndent()>::123
+IN METHOD::<spec.reporter.HTMLWriter: void endRecord()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putString(java.lang.String)>::124

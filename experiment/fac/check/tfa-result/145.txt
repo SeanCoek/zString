@@ -1,0 +1,4 @@
+IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord: double computeScore()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::42
+IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord: double computeScore()>::INVOKE::java.lang.StringBuilder::$r12::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::42
+IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord: double computeScore()>::STATICINVOKE::<spec.reporter.Utils: void dbgPrint(java.lang.String)>::42
+IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkGroupRecord: double computeScore()>::STATICINVOKE::<java.lang.Math: double pow(double,double)>::45

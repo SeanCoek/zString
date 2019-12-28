@@ -1,0 +1,8 @@
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testExc1()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::404
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testExc1()>::SPECIALINVOKE::<java.lang.ArithmeticException: void <init>(java.lang.String)>::423
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testExc1()>::INVOKE::java.lang.Object::r1::<java.lang.Object: java.lang.Class getClass()>::418
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testExc1()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::420
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testExc1()>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::420
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testExc1()>::INVOKE::java.lang.Object::r1::<java.lang.Object: java.lang.Class getClass()>::420
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testExc1()>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::420
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testExc1()>::INVOKE::java.lang.StringBuilder::$r11::<java.lang.StringBuilder: java.lang.String toString()>::420

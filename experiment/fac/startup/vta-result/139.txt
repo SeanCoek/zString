@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: java.lang.String getName(int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::31

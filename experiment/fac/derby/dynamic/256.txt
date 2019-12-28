@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void rmDir()>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::252
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void rmDir()>::INVOKE::java.io.File::r2::boolean exists()::253

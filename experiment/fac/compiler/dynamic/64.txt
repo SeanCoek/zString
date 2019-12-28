@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager$CachedFileObject: java.io.InputStream openInputStream()>::SPECIALINVOKE::<java.io.ByteArrayInputStream: void <init>(byte[])>::186
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager$CachedFileObject: java.io.InputStream openInputStream()>::SPECIALINVOKE::<java.io.ByteArrayInputStream: void <init>(byte[])>::186

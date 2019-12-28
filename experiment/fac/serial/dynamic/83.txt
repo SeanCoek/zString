@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: java.lang.String getIdentity()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::63
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: java.lang.String getIdentity()>::INVOKE::java.lang.StringBuilder::$r1::java.lang.StringBuilder append(java.lang.String)::63
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: java.lang.String getIdentity()>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(int)::63
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: java.lang.String getIdentity()>::INVOKE::java.lang.StringBuilder::$r4::java.lang.String toString()::63

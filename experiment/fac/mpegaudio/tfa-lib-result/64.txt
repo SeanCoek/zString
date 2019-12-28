@@ -1,0 +1,1 @@
+IN METHOD::<spec.reporter.ReportGenerator: boolean isCompliantRun()>::INVOKE::java.util.ArrayList::$r2::<java.util.ArrayList: int size()>::688

@@ -1,0 +1,8 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void rmDir()>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::252
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void rmDir()>::INVOKE::java.io.File::r2::<java.io.File: boolean exists()>::253
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void rmDir()>::INVOKE::sun.awt.shell.ShellFolder::r2::<sun.awt.shell.ShellFolder: boolean exists()>::253
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void rmDir()>::INVOKE::javax.swing.filechooser.WindowsFileSystemView$2::r2::<javax.swing.filechooser.WindowsFileSystemView$2: boolean exists()>::253
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void rmDir()>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void removeFile(java.io.File)>::256
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void rmDir()>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::258
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void rmDir()>::INVOKE::java.io.File::r3::<java.io.File: boolean delete()>::259
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void rmDir()>::INVOKE::sun.awt.shell.ShellFolder::r3::<sun.awt.shell.ShellFolder: boolean delete()>::259

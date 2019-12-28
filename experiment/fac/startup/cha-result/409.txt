@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.data.TestExternalizable: void <init>(int)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::29

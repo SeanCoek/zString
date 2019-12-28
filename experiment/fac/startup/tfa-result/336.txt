@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.data.Handler: java.lang.Object invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[])>::STATICINVOKE::<java.lang.Integer: java.lang.Integer valueOf(int)>::29

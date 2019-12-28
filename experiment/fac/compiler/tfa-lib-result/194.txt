@@ -1,0 +1,14 @@
+IN METHOD::<spec.reporter.HTMLWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void startTable(boolean)>::139
+IN METHOD::<spec.reporter.HTMLWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putTHEAD(boolean)>::140
+IN METHOD::<spec.reporter.HTMLWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putColumnsSpec(int[])>::141
+IN METHOD::<spec.reporter.HTMLWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putTHEAD(boolean)>::146
+IN METHOD::<spec.reporter.HTMLWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putTBODY(boolean)>::147
+IN METHOD::<spec.reporter.HTMLWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void startRecord()>::148
+IN METHOD::<spec.reporter.HTMLWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void insertData(java.lang.String,int)>::149
+IN METHOD::<spec.reporter.HTMLWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void insertData(java.lang.String,int)>::150
+IN METHOD::<spec.reporter.HTMLWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void insertImgData(java.lang.String,java.lang.String,int)>::151
+IN METHOD::<spec.reporter.HTMLWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void endRecord()>::152
+IN METHOD::<spec.reporter.HTMLWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::INVOKE::java.lang.Double::$r9::<java.lang.Double: double doubleValue()>::157
+IN METHOD::<spec.reporter.HTMLWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::INVOKE::any_subtype_of::java.lang.Object::$r9::<java.lang.Double: double doubleValue()>::157
+IN METHOD::<spec.reporter.HTMLWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::STATICINVOKE::<spec.reporter.Utils: java.lang.String formatScore(double)>::157
+IN METHOD::<spec.reporter.HTMLWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void insertHeaderRecord(java.lang.String,java.lang.String,boolean,int,int)>::160

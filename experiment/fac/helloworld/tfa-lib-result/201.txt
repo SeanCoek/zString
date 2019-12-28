@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.analyzer.PowerAnalyzer$PowerConsumtionResult: void <init>(double,java.lang.String,java.lang.String)>::SPECIALINVOKE::<spec.harness.analyzer.AnalyzerResult: void <init>(double)>::183

@@ -1,0 +1,11 @@
+IN METHOD::<spec.harness.analyzer.PowerMeter: void startRun(int,int,int)>::STATICINVOKE::<java.lang.Integer: java.lang.Integer valueOf(int)>::136
+IN METHOD::<spec.harness.analyzer.PowerMeter: void startRun(int,int,int)>::STATICINVOKE::<java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>::136
+IN METHOD::<spec.harness.analyzer.PowerMeter: void startRun(int,int,int)>::SPECIALINVOKE::<spec.harness.analyzer.PowerMeter: int writeMeter(java.lang.String)>::137
+IN METHOD::<spec.harness.analyzer.PowerMeter: void startRun(int,int,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::139
+IN METHOD::<spec.harness.analyzer.PowerMeter: void startRun(int,int,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::139
+IN METHOD::<spec.harness.analyzer.PowerMeter: void startRun(int,int,int)>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::139
+IN METHOD::<spec.harness.analyzer.PowerMeter: void startRun(int,int,int)>::SPECIALINVOKE::<spec.harness.analyzer.PowerMeter: java.lang.String readMeter()>::139
+IN METHOD::<spec.harness.analyzer.PowerMeter: void startRun(int,int,int)>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::139
+IN METHOD::<spec.harness.analyzer.PowerMeter: void startRun(int,int,int)>::INVOKE::java.lang.StringBuilder::$r10::<java.lang.StringBuilder: java.lang.String toString()>::139
+IN METHOD::<spec.harness.analyzer.PowerMeter: void startRun(int,int,int)>::INVOKE::java.io.PrintStream::$r6::<java.io.PrintStream: void println(java.lang.String)>::139
+IN METHOD::<spec.harness.analyzer.PowerMeter: void startRun(int,int,int)>::INVOKE::any_subtype_of::java.lang.Object::$r6::<java.io.PrintStream: void println(java.lang.String)>::139

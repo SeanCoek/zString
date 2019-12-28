@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: void inst_main(int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::77
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: void inst_main(int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::77

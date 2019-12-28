@@ -1,0 +1,17 @@
+IN METHOD::<spec.harness.analyzer.TempSensor: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.util.HashMap: void <init>()>::150
+IN METHOD::<spec.harness.analyzer.TempSensor: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<spec.harness.analyzer.TempSensor: int writeMeter(java.lang.String)>::155
+IN METHOD::<spec.harness.analyzer.TempSensor: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<spec.harness.analyzer.TempSensor: java.lang.String readMeter()>::156
+IN METHOD::<spec.harness.analyzer.TempSensor: java.util.HashMap reportRun(java.lang.String)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::158
+IN METHOD::<spec.harness.analyzer.TempSensor: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::162
+IN METHOD::<spec.harness.analyzer.TempSensor: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::163
+IN METHOD::<spec.harness.analyzer.TempSensor: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::164
+IN METHOD::<spec.harness.analyzer.TempSensor: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::165
+IN METHOD::<spec.harness.analyzer.TempSensor: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::166
+IN METHOD::<spec.harness.analyzer.TempSensor: java.util.HashMap reportRun(java.lang.String)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::168
+IN METHOD::<spec.harness.analyzer.TempSensor: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::168
+IN METHOD::<spec.harness.analyzer.TempSensor: java.util.HashMap reportRun(java.lang.String)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::169
+IN METHOD::<spec.harness.analyzer.TempSensor: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::171
+IN METHOD::<spec.harness.analyzer.TempSensor: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::172
+IN METHOD::<spec.harness.analyzer.TempSensor: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::173
+IN METHOD::<spec.harness.analyzer.TempSensor: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::177
+IN METHOD::<spec.harness.analyzer.TempSensor: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::178

@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.xml.transform.Main: void main(java.lang.String[])>::STATICINVOKE::<spec.harness.SpecJVMBenchmarkBase: void runSimple(java.lang.Class,java.lang.String[])>::223

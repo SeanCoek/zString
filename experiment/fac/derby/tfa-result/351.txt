@@ -1,0 +1,5 @@
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueXmlTransformRace()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::38
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueXmlTransformRace()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::39
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueXmlTransformRace()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::40
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueXmlTransformRace()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::40
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueXmlTransformRace()>::INVOKE::java.lang.StringBuilder::$r4::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::40

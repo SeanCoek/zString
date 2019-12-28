@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.serial.data.ProxiedClass: spec.benchmarks.serial.data.InterfaceForProxy createMyProxy(int,int)>::SPECIALINVOKE::<spec.benchmarks.serial.data.ProxiedClass: void <init>(int)>::37
+IN METHOD::<spec.benchmarks.serial.data.ProxiedClass: spec.benchmarks.serial.data.InterfaceForProxy createMyProxy(int,int)>::STATICINVOKE::<java.lang.Thread: java.lang.Thread currentThread()>::39
+IN METHOD::<spec.benchmarks.serial.data.ProxiedClass: spec.benchmarks.serial.data.InterfaceForProxy createMyProxy(int,int)>::STATICINVOKE::<java.lang.reflect.Proxy: java.lang.Class getProxyClass(java.lang.ClassLoader,java.lang.Class[])>::39
+IN METHOD::<spec.benchmarks.serial.data.ProxiedClass: spec.benchmarks.serial.data.InterfaceForProxy createMyProxy(int,int)>::STATICINVOKE::<java.lang.Thread: java.lang.Thread currentThread()>::41
+IN METHOD::<spec.benchmarks.serial.data.ProxiedClass: spec.benchmarks.serial.data.InterfaceForProxy createMyProxy(int,int)>::SPECIALINVOKE::<spec.benchmarks.serial.data.Handler: void <init>(int,java.lang.Object)>::41
+IN METHOD::<spec.benchmarks.serial.data.ProxiedClass: spec.benchmarks.serial.data.InterfaceForProxy createMyProxy(int,int)>::STATICINVOKE::<java.lang.reflect.Proxy: java.lang.Object newProxyInstance(java.lang.ClassLoader,java.lang.Class[],java.lang.reflect.InvocationHandler)>::41

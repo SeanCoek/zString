@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.ProgramRunner: void invokeBmSetupBenchmark()>::INVOKE::java.lang.reflect.Method::$r3::<java.lang.reflect.Method: java.lang.Object invoke(java.lang.Object,java.lang.Object[])>::183
+IN METHOD::<spec.harness.ProgramRunner: void invokeBmSetupBenchmark()>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String,java.lang.Throwable)>::185

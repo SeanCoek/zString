@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.check.C2: void <init>()>::SPECIALINVOKE::<spec.benchmarks.check.C1: void <init>()>::89

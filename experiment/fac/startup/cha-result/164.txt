@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.mpegaudio.Main: void harnessMain()>::SPECIALINVOKE::<spec.harness.BenchmarkThread: int getThreadId()>::43
+IN METHOD::<spec.benchmarks.mpegaudio.Main: void harnessMain()>::STATICINVOKE::<spec.benchmarks.mpegaudio.Main: long runBenchmark(int)>::43

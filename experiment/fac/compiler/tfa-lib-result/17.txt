@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager$OutputFileObject$1: void write(int)>::STATICINVOKE::<spec.benchmarks.compiler.SpecFileManager: long access$000(spec.benchmarks.compiler.SpecFileManager)>::120
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager$OutputFileObject$1: void write(int)>::STATICINVOKE::<spec.benchmarks.compiler.SpecFileManager: long access$002(spec.benchmarks.compiler.SpecFileManager,long)>::120

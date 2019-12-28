@@ -1,0 +1,5 @@
+IN METHOD::<spec.reporter.HTMLWriter: java.lang.String[] initIndents()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::25
+IN METHOD::<spec.reporter.HTMLWriter: java.lang.String[] initIndents()>::INVOKE::java.lang.StringBuilder::$r1::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::25
+IN METHOD::<spec.reporter.HTMLWriter: java.lang.String[] initIndents()>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::25
+IN METHOD::<spec.reporter.HTMLWriter: java.lang.String[] initIndents()>::INVOKE::java.lang.Object::$r5::<java.lang.Object: java.lang.String toString()>::25
+IN METHOD::<spec.reporter.HTMLWriter: java.lang.String[] initIndents()>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.String toString()>::25

@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.check.superClass: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::64

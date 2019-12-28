@@ -1,0 +1,1 @@
+IN METHOD::<spec.reporter.PlainWriter: void insertRecords(java.util.ArrayList)>::STATICINVOKE::<spec.harness.results.TestResult: java.lang.String correctContent(java.lang.String,boolean)>::104

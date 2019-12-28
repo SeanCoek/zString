@@ -1,0 +1,12 @@
+IN METHOD::<spec.harness.SpecJVMBenchmarkBase: void runSimple(java.lang.Class,java.lang.String[])>::STATICINVOKE::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::95
+IN METHOD::<spec.harness.SpecJVMBenchmarkBase: void runSimple(java.lang.Class,java.lang.String[])>::SPECIALINVOKE::<spec.harness.results.BenchmarkResult: void <init>()>::100
+IN METHOD::<spec.harness.SpecJVMBenchmarkBase: void runSimple(java.lang.Class,java.lang.String[])>::INVOKE::spec.harness.results.BenchmarkResult::r49::<spec.harness.results.BenchmarkResult: void setNames(java.lang.String)>::101
+IN METHOD::<spec.harness.SpecJVMBenchmarkBase: void runSimple(java.lang.Class,java.lang.String[])>::INVOKE::spec.harness.results.BenchmarkResult::r49::<spec.harness.results.BenchmarkResult: void setRunMode(int)>::102
+IN METHOD::<spec.harness.SpecJVMBenchmarkBase: void runSimple(java.lang.Class,java.lang.String[])>::INVOKE::spec.harness.results.BenchmarkResult::r49::<spec.harness.results.BenchmarkResult: void setNumberOfLoops(int)>::103
+IN METHOD::<spec.harness.SpecJVMBenchmarkBase: void runSimple(java.lang.Class,java.lang.String[])>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::107
+IN METHOD::<spec.harness.SpecJVMBenchmarkBase: void runSimple(java.lang.Class,java.lang.String[])>::INVOKE::spec.harness.results.BenchmarkResult::r49::<spec.harness.results.BenchmarkResult: void setArgs(java.lang.String[])>::108
+IN METHOD::<spec.harness.SpecJVMBenchmarkBase: void runSimple(java.lang.Class,java.lang.String[])>::STATICINVOKE::<java.lang.Integer: java.lang.Integer valueOf(int)>::111
+IN METHOD::<spec.harness.SpecJVMBenchmarkBase: void runSimple(java.lang.Class,java.lang.String[])>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::136
+IN METHOD::<spec.harness.SpecJVMBenchmarkBase: void runSimple(java.lang.Class,java.lang.String[])>::INVOKE::java.lang.StringBuilder::$r32::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::136
+IN METHOD::<spec.harness.SpecJVMBenchmarkBase: void runSimple(java.lang.Class,java.lang.String[])>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::137
+IN METHOD::<spec.harness.SpecJVMBenchmarkBase: void runSimple(java.lang.Class,java.lang.String[])>::INVOKE::java.lang.StringBuilder::$r39::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::137

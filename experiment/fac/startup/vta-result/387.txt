@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.Main: void harnessMain()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::50

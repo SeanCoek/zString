@@ -1,0 +1,108 @@
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::spec.harness.StopBenchmarkException::r0::java.lang.Class getClass()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.Class::$r5::java.lang.String getName()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::spec.harness.StopBenchmarkException::r0::java.lang.String getMessage()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r10::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r11::java.lang.String toString()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>(java.lang.String)>::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::spec.harness.StopBenchmarkException::r0::java.lang.StackTraceElement[] getStackTrace()::552
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StackTraceElement::$r15::java.lang.String toString()::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r14::java.lang.StringBuilder append(java.lang.String)::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r17::java.lang.StringBuilder append(java.lang.String)::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r18::java.lang.String toString()::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::r1::java.lang.StringBuilder append(java.lang.String)::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::r1::java.lang.String toString()::556
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::spec.harness.StopBenchmarkException::r0::java.lang.Class getClass()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.Class::$r5::java.lang.String getName()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::spec.harness.StopBenchmarkException::r0::java.lang.String getMessage()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r10::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r11::java.lang.String toString()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>(java.lang.String)>::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::spec.harness.StopBenchmarkException::r0::java.lang.StackTraceElement[] getStackTrace()::552
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StackTraceElement::$r15::java.lang.String toString()::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r14::java.lang.StringBuilder append(java.lang.String)::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r17::java.lang.StringBuilder append(java.lang.String)::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r18::java.lang.String toString()::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::r1::java.lang.StringBuilder append(java.lang.String)::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::r1::java.lang.String toString()::556
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.InterruptedException::r0::java.lang.Class getClass()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.Class::$r5::java.lang.String getName()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.InterruptedException::r0::java.lang.String getMessage()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r10::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r11::java.lang.String toString()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>(java.lang.String)>::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.InterruptedException::r0::java.lang.StackTraceElement[] getStackTrace()::552
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StackTraceElement::$r15::java.lang.String toString()::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r14::java.lang.StringBuilder append(java.lang.String)::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r17::java.lang.StringBuilder append(java.lang.String)::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r18::java.lang.String toString()::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::r1::java.lang.StringBuilder append(java.lang.String)::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::r1::java.lang.String toString()::556
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::spec.harness.StopBenchmarkException::r0::java.lang.Class getClass()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.Class::$r5::java.lang.String getName()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::spec.harness.StopBenchmarkException::r0::java.lang.String getMessage()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r10::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r11::java.lang.String toString()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>(java.lang.String)>::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::spec.harness.StopBenchmarkException::r0::java.lang.StackTraceElement[] getStackTrace()::552
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StackTraceElement::$r15::java.lang.String toString()::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r14::java.lang.StringBuilder append(java.lang.String)::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r17::java.lang.StringBuilder append(java.lang.String)::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r18::java.lang.String toString()::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::r1::java.lang.StringBuilder append(java.lang.String)::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::r1::java.lang.String toString()::556
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::spec.harness.StopBenchmarkException::r0::java.lang.Class getClass()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.Class::$r5::java.lang.String getName()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::spec.harness.StopBenchmarkException::r0::java.lang.String getMessage()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r10::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r11::java.lang.String toString()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>(java.lang.String)>::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::spec.harness.StopBenchmarkException::r0::java.lang.StackTraceElement[] getStackTrace()::552
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StackTraceElement::$r15::java.lang.String toString()::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r14::java.lang.StringBuilder append(java.lang.String)::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r17::java.lang.StringBuilder append(java.lang.String)::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r18::java.lang.String toString()::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::r1::java.lang.StringBuilder append(java.lang.String)::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::r1::java.lang.String toString()::556
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::spec.harness.StopBenchmarkException::r0::java.lang.Class getClass()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.Class::$r5::java.lang.String getName()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::spec.harness.StopBenchmarkException::r0::java.lang.String getMessage()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r10::java.lang.StringBuilder append(java.lang.String)::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r11::java.lang.String toString()::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>(java.lang.String)>::551
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::spec.harness.StopBenchmarkException::r0::java.lang.StackTraceElement[] getStackTrace()::552
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StackTraceElement::$r15::java.lang.String toString()::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r14::java.lang.StringBuilder append(java.lang.String)::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r17::java.lang.StringBuilder append(java.lang.String)::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::$r18::java.lang.String toString()::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::r1::java.lang.StringBuilder append(java.lang.String)::554
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String getStackTraceAsString(java.lang.Throwable)>::INVOKE::java.lang.StringBuilder::r1::java.lang.String toString()::556

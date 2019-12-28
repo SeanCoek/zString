@@ -1,0 +1,17 @@
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkMathFcts()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::1078
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkMathFcts()>::INVOKE::java.io.PrintStream::$r1::<java.io.PrintStream: void print(java.lang.String)>::1078
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkMathFcts()>::INVOKE::any_subtype_of::java.lang.Object::$r1::<java.io.PrintStream: void print(java.lang.String)>::1078
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkMathFcts()>::STATICINVOKE::<java.lang.Math: double log(double)>::1080
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkMathFcts()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: boolean checkClose(java.lang.String,double,double)>::1080
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkMathFcts()>::STATICINVOKE::<java.lang.Math: double sin(double)>::1081
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkMathFcts()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: boolean checkClose(java.lang.String,double,double)>::1081
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkMathFcts()>::STATICINVOKE::<java.lang.Math: double cos(double)>::1082
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkMathFcts()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: boolean checkClose(java.lang.String,double,double)>::1082
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkMathFcts()>::STATICINVOKE::<java.lang.Math: double tan(double)>::1083
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkMathFcts()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: boolean checkClose(java.lang.String,double,double)>::1083
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkMathFcts()>::STATICINVOKE::<java.lang.Math: double asin(double)>::1084
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkMathFcts()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: boolean checkClose(java.lang.String,double,double)>::1084
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkMathFcts()>::STATICINVOKE::<java.lang.Math: double acos(double)>::1085
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkMathFcts()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: boolean checkClose(java.lang.String,double,double)>::1085
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkMathFcts()>::STATICINVOKE::<java.lang.Math: double atan(double)>::1086
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkMathFcts()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: boolean checkClose(java.lang.String,double,double)>::1086

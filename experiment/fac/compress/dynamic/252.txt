@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.compress.Decompressor: int getCode()>::INVOKE::spec.benchmarks.compress.InputBuffer::$r2::int readBytes(byte[],int)::617
+IN METHOD::<spec.benchmarks.compress.Decompressor: int getCode()>::INVOKE::spec.benchmarks.compress.Decompressor::r0::int getMaxCode()::609
+IN METHOD::<spec.benchmarks.compress.Decompressor: int getCode()>::INVOKE::spec.benchmarks.compress.Decompressor::r0::int getMaxCode()::614

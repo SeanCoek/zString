@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void connectClose(java.sql.Connection)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::523
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void connectClose(java.sql.Connection)>::INVOKE::java.lang.Throwable::r1::<java.lang.Throwable: void printStackTrace(java.io.PrintStream)>::523
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void connectClose(java.sql.Connection)>::INVOKE::javax.xml.transform.TransformerException::r1::<javax.xml.transform.TransformerException: void printStackTrace(java.io.PrintStream)>::523

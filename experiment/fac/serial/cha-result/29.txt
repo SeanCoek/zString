@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.data.TestWithBigDecimal: int compare(java.lang.Object,java.lang.Object)>::INVOKE::java.math.BigDecimal::$r6::<java.math.BigDecimal: int compareTo(java.math.BigDecimal)>::53

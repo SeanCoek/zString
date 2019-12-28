@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.derby.DataReader: int[] getData(spec.benchmarks.derby.DataReader$Data[],int)>::SPECIALINVOKE::<spec.benchmarks.derby.DataReader: boolean isEndOfTableReached(int)>::26
+IN METHOD::<spec.benchmarks.derby.DataReader: int[] getData(spec.benchmarks.derby.DataReader$Data[],int)>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: byte[] getSpec(byte[],byte[])>::33

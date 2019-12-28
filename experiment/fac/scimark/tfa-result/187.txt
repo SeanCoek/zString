@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(java.lang.String,long,long)>::SPECIALINVOKE::<org.jfree.data.xy.XYSeries: void <init>(java.lang.Comparable)>::111
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(java.lang.String,long,long)>::INVOKE::org.jfree.data.xy.XYSeries::r2::<org.jfree.data.xy.XYSeries: void add(double,double)>::112

@@ -1,0 +1,11 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: java.sql.Connection getNestedConnection(int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::482
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: java.sql.Connection getNestedConnection(int)>::INVOKE::java.lang.StringBuilder::$r1::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::482
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: java.sql.Connection getNestedConnection(int)>::INVOKE::java.lang.StringBuilder::$r2::<java.lang.StringBuilder: java.lang.StringBuilder append(int)>::482
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: java.sql.Connection getNestedConnection(int)>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.String toString()>::482
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: java.sql.Connection getNestedConnection(int)>::STATICINVOKE::<java.sql.DriverManager: java.sql.Connection getConnection(java.lang.String)>::482
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: java.sql.Connection getNestedConnection(int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::488
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: java.sql.Connection getNestedConnection(int)>::INVOKE::java.lang.Throwable::r0::<java.lang.Throwable: void printStackTrace(java.io.PrintStream)>::488
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: java.sql.Connection getNestedConnection(int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::492
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: java.sql.Connection getNestedConnection(int)>::INVOKE::java.lang.Throwable::r11::<java.lang.Throwable: void printStackTrace(java.io.PrintStream)>::492
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: java.sql.Connection getNestedConnection(int)>::INVOKE::javax.xml.transform.TransformerException::r11::<javax.xml.transform.TransformerException: void printStackTrace(java.io.PrintStream)>::492
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: java.sql.Connection getNestedConnection(int)>::INVOKE::com.sun.org.apache.xpath.internal.XPathException::r11::<com.sun.org.apache.xpath.internal.XPathException: void printStackTrace(java.io.PrintStream)>::492

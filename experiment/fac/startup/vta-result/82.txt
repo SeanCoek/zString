@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.scimark.sparse.SparseCompRow: void matmult(double[],double[],int[],int[],double[],int,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::65
+IN METHOD::<spec.benchmarks.scimark.sparse.SparseCompRow: void matmult(double[],double[],int[],int[],double[],int,int)>::STATICINVOKE::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::65

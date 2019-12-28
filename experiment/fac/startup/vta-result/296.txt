@@ -1,0 +1,8 @@
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkClose(java.lang.String,double,double)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::1071
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkClose(java.lang.String,double,double)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::1071
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkClose(java.lang.String,double,double)>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::1071
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkClose(java.lang.String,double,double)>::INVOKE::java.lang.StringBuilder::$r4::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::1071
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkClose(java.lang.String,double,double)>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.StringBuilder append(double)>::1071
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkClose(java.lang.String,double,double)>::INVOKE::java.lang.StringBuilder::$r6::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::1071
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkClose(java.lang.String,double,double)>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.StringBuilder append(double)>::1071
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkClose(java.lang.String,double,double)>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.String toString()>::1071

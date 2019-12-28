@@ -1,0 +1,314 @@
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r2::java.lang.String getLogicalName()::116
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::boolean startsWith(java.lang.String)::117
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r39::void setRunName(java.lang.String)::118
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::121
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r5::java.lang.String getRunName()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r8::java.lang.String toString()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::137
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r13::java.lang.reflect.Constructor getConstructor(java.lang.Class[])::144
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r16::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::145
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r19::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::146
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r22::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::147
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r25::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::148
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r28::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::149
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r2::java.lang.String getLogicalName()::116
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::boolean startsWith(java.lang.String)::117
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::121
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r5::java.lang.String getRunName()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r8::java.lang.String toString()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::137
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r13::java.lang.reflect.Constructor getConstructor(java.lang.Class[])::144
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r16::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::145
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r19::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::146
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r22::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::147
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r25::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::148
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r28::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::149
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r2::java.lang.String getLogicalName()::116
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::boolean startsWith(java.lang.String)::117
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::121
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r5::java.lang.String getRunName()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r8::java.lang.String toString()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::137
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r13::java.lang.reflect.Constructor getConstructor(java.lang.Class[])::144
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r16::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::145
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r19::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::146
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r22::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::147
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r25::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::148
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r28::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::149
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r2::java.lang.String getLogicalName()::116
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::boolean startsWith(java.lang.String)::117
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::121
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r5::java.lang.String getRunName()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r8::java.lang.String toString()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::137
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r13::java.lang.reflect.Constructor getConstructor(java.lang.Class[])::144
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r16::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::145
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r19::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::146
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r22::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::147
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r25::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::148
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r28::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::149
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r2::java.lang.String getLogicalName()::116
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::boolean startsWith(java.lang.String)::117
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::121
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r5::java.lang.String getRunName()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r8::java.lang.String toString()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::137
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r13::java.lang.reflect.Constructor getConstructor(java.lang.Class[])::144
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r16::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::145
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r19::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::146
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r22::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::147
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r25::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::148
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r28::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::149
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r2::java.lang.String getLogicalName()::116
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::boolean startsWith(java.lang.String)::117
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::121
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r5::java.lang.String getRunName()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r8::java.lang.String toString()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::137
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r13::java.lang.reflect.Constructor getConstructor(java.lang.Class[])::144
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r16::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::145
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r19::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::146
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r22::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::147
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r25::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::148
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r28::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::149
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r2::java.lang.String getLogicalName()::116
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::boolean startsWith(java.lang.String)::117
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::121
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r5::java.lang.String getRunName()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r8::java.lang.String toString()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::137
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r13::java.lang.reflect.Constructor getConstructor(java.lang.Class[])::144
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r16::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::145
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r19::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::146
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r22::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::147
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r25::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::148
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r28::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::149
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r2::java.lang.String getLogicalName()::116
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::boolean startsWith(java.lang.String)::117
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::121
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r5::java.lang.String getRunName()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r8::java.lang.String toString()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::137
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r13::java.lang.reflect.Constructor getConstructor(java.lang.Class[])::144
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r16::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::145
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r19::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::146
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r22::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::147
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r25::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::148
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r28::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::149
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r2::java.lang.String getLogicalName()::116
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::boolean startsWith(java.lang.String)::117
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::121
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r5::java.lang.String getRunName()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r8::java.lang.String toString()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::137
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r13::java.lang.reflect.Constructor getConstructor(java.lang.Class[])::144
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r16::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::145
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r19::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::146
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r22::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::147
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r25::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::148
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r28::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::149
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r2::java.lang.String getLogicalName()::116
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::boolean startsWith(java.lang.String)::117
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::121
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::int indexOf(java.lang.String)::122
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::int lastIndexOf(java.lang.String)::122
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::int lastIndexOf(java.lang.String)::123
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::java.lang.String substring(int,int)::123
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r38::void setRunName(java.lang.String)::124
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r5::java.lang.String getRunName()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r8::java.lang.String toString()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::137
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r13::java.lang.reflect.Constructor getConstructor(java.lang.Class[])::144
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r16::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::145
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r19::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::146
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r22::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::147
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r25::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::148
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r28::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::149
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r2::java.lang.String getLogicalName()::116
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::boolean startsWith(java.lang.String)::117
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::121
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::int indexOf(java.lang.String)::122
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::int lastIndexOf(java.lang.String)::122
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::int lastIndexOf(java.lang.String)::123
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::java.lang.String substring(int,int)::123
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r38::void setRunName(java.lang.String)::124
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r5::java.lang.String getRunName()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r8::java.lang.String toString()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::137
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r13::java.lang.reflect.Constructor getConstructor(java.lang.Class[])::144
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r16::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::145
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r19::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::146
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r22::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::147
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r25::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::148
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r28::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::149
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r2::java.lang.String getLogicalName()::116
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::boolean startsWith(java.lang.String)::117
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::121
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::int indexOf(java.lang.String)::122
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::int lastIndexOf(java.lang.String)::122
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::int lastIndexOf(java.lang.String)::123
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::java.lang.String substring(int,int)::123
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r38::void setRunName(java.lang.String)::124
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r5::java.lang.String getRunName()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r8::java.lang.String toString()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::137
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r13::java.lang.reflect.Constructor getConstructor(java.lang.Class[])::144
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r16::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::145
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r19::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::146
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r22::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::147
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r25::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::148
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r28::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::149
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r2::java.lang.String getLogicalName()::116
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::boolean startsWith(java.lang.String)::117
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::121
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::int indexOf(java.lang.String)::122
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::int lastIndexOf(java.lang.String)::122
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::int lastIndexOf(java.lang.String)::123
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::java.lang.String substring(int,int)::123
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r38::void setRunName(java.lang.String)::124
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r5::java.lang.String getRunName()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r8::java.lang.String toString()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::137
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r13::java.lang.reflect.Constructor getConstructor(java.lang.Class[])::144
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r16::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::145
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r19::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::146
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r22::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::147
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r25::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::148
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r28::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::149
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r2::java.lang.String getLogicalName()::116
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::boolean startsWith(java.lang.String)::117
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::121
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::int indexOf(java.lang.String)::122
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::int lastIndexOf(java.lang.String)::122
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::int lastIndexOf(java.lang.String)::123
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::java.lang.String substring(int,int)::123
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r38::void setRunName(java.lang.String)::124
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r5::java.lang.String getRunName()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r8::java.lang.String toString()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::137
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r13::java.lang.reflect.Constructor getConstructor(java.lang.Class[])::144
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r16::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::145
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r19::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::146
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r22::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::147
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r25::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::148
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r28::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::149
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r2::java.lang.String getLogicalName()::116
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::boolean startsWith(java.lang.String)::117
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::121
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r5::java.lang.String getRunName()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r8::java.lang.String toString()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::137
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r13::java.lang.reflect.Constructor getConstructor(java.lang.Class[])::144
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r16::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::145
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r19::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::146
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r22::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::147
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r25::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::148
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r28::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::149
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r2::java.lang.String getLogicalName()::116
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::boolean startsWith(java.lang.String)::117
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::121
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r5::java.lang.String getRunName()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r8::java.lang.String toString()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::137
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r13::java.lang.reflect.Constructor getConstructor(java.lang.Class[])::144
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r16::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::145
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r19::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::146
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r22::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::147
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r25::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::148
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r28::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::149
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r2::java.lang.String getLogicalName()::116
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::boolean startsWith(java.lang.String)::117
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::121
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r5::java.lang.String getRunName()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r8::java.lang.String toString()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::137
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r13::java.lang.reflect.Constructor getConstructor(java.lang.Class[])::144
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r16::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::145
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r19::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::146
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r22::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::147
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r25::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::148
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r28::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::149
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r2::java.lang.String getLogicalName()::116
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.String::r44::boolean startsWith(java.lang.String)::117
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<spec.harness.Util: boolean isScimarkAndNotMonteCarlo(java.lang.String)>::121
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::spec.harness.results.BenchmarkResult::$r5::java.lang.String getRunName()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r7::java.lang.StringBuilder append(java.lang.String)::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.StringBuilder::$r8::java.lang.String toString()::134
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::137
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r13::java.lang.reflect.Constructor getConstructor(java.lang.Class[])::144
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r16::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::145
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r19::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::146
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r22::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::147
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r25::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::148
+IN METHOD::<spec.harness.ProgramRunner: boolean setupBenchmarkMethods()>::INVOKE::java.lang.Class::$r28::java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])::149

@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void close()>::INVOKE::java.io.FileInputStream::$r4::void close()::50
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void close()>::INVOKE::java.io.BufferedInputStream::$r5::void close()::51
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void close()>::INVOKE::java.io.FileReader::$r2::void close()::53
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void close()>::INVOKE::java.io.BufferedReader::$r3::void close()::54

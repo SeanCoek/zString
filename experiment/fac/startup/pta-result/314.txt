@@ -1,0 +1,16 @@
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testMisk()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::1122
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testMisk()>::INVOKE::java.lang.String::r1::<java.lang.String: boolean equals(java.lang.Object)>::1124
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testMisk()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::1125
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testMisk()>::INVOKE::java.lang.StringBuilder::$r16::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::1125
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testMisk()>::INVOKE::java.lang.StringBuilder::$r17::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::1125
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testMisk()>::INVOKE::java.lang.StringBuilder::$r18::<java.lang.StringBuilder: java.lang.String toString()>::1125
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testMisk()>::INVOKE::java.lang.Object::r0::<java.lang.Object: java.lang.Class getClass()>::1129
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testMisk()>::SPECIALINVOKE::<spec.benchmarks.check.PepTest: void <init>()>::1129
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testMisk()>::INVOKE::java.lang.Object::$r7::<java.lang.Object: java.lang.Class getClass()>::1129
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testMisk()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: java.lang.String fiskString()>::1136
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testMisk()>::SPECIALINVOKE::<java.lang.Double: void <init>(java.lang.String)>::1139
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testMisk()>::INVOKE::java.lang.Double::$r12::<java.lang.Double: double doubleValue()>::1139
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testMisk()>::SPECIALINVOKE::<java.lang.Double: void <init>(java.lang.String)>::1142
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testMisk()>::INVOKE::java.lang.Double::$r13::<java.lang.Double: double doubleValue()>::1142
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testMisk()>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::1147
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testMisk()>::INVOKE::java.lang.String::r22::<java.lang.String: boolean equals(java.lang.Object)>::1147

@@ -1,0 +1,17 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void handleAccounts()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::64
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void handleAccounts()>::STATICINVOKE::<spec.benchmarks.derby.Utils: java.lang.String getPreparedSelectQuery(int)>::73
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void handleAccounts()>::STATICINVOKE::<spec.benchmarks.derby.Utils: java.math.BigDecimal[] initResultsArray(java.math.BigDecimal[])>::78
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void handleAccounts()>::SPECIALINVOKE::<spec.benchmarks.derby.DerbyHarness$Client: void handleResultSet(java.sql.ResultSet)>::82
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void handleAccounts()>::STATICINVOKE::<spec.benchmarks.derby.Utils: java.math.BigDecimal[] add(java.math.BigDecimal[],java.math.BigDecimal[])>::91
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void handleAccounts()>::STATICINVOKE::<spec.benchmarks.derby.Utils: java.math.BigDecimal[] initResultsArray(java.math.BigDecimal[])>::96
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void handleAccounts()>::STATICINVOKE::<spec.benchmarks.derby.Utils: java.lang.String getSelectQuery(int,int)>::100
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void handleAccounts()>::SPECIALINVOKE::<spec.benchmarks.derby.DerbyHarness$Client: void handleResultSet(java.sql.ResultSet)>::100
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void handleAccounts()>::STATICINVOKE::<spec.benchmarks.derby.Utils: java.math.BigDecimal[] add(java.math.BigDecimal[],java.math.BigDecimal[])>::103
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void handleAccounts()>::STATICINVOKE::<spec.benchmarks.derby.Utils: java.math.BigDecimal[] add(java.math.BigDecimal[],java.math.BigDecimal[])>::104
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void handleAccounts()>::STATICINVOKE::<spec.benchmarks.derby.Utils: java.lang.String getUpdateAccountsQuery(java.math.BigDecimal[],int)>::105
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void handleAccounts()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::114
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void handleAccounts()>::INVOKE::java.lang.Throwable::r47::<java.lang.Throwable: void printStackTrace(java.io.PrintStream)>::114
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void handleAccounts()>::INVOKE::javax.xml.transform.TransformerException::r47::<javax.xml.transform.TransformerException: void printStackTrace(java.io.PrintStream)>::114
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void handleAccounts()>::INVOKE::com.sun.org.apache.xpath.internal.XPathException::r47::<com.sun.org.apache.xpath.internal.XPathException: void printStackTrace(java.io.PrintStream)>::114
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void handleAccounts()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::120
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void handleAccounts()>::INVOKE::java.lang.Throwable::r48::<java.lang.Throwable: void printStackTrace(java.io.PrintStream)>::120

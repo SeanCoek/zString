@@ -1,0 +1,10 @@
+IN METHOD::<spec.benchmarks.derby.CyclicReader: int read(byte[],int)>::INVOKE::java.io.FilterInputStream::$r2::<java.io.FilterInputStream: int read(byte[],int,int)>::65
+IN METHOD::<spec.benchmarks.derby.CyclicReader: int read(byte[],int)>::INVOKE::java.io.InputStream::$r2::<java.io.InputStream: int read(byte[],int,int)>::65
+IN METHOD::<spec.benchmarks.derby.CyclicReader: int read(byte[],int)>::INVOKE::java.lang.UNIXProcess$DeferredCloseProcessPipeInputStream::$r2::<java.lang.UNIXProcess$DeferredCloseProcessPipeInputStream: int read(byte[],int,int)>::65
+IN METHOD::<spec.benchmarks.derby.CyclicReader: int read(byte[],int)>::INVOKE::java.io.BufferedInputStream::$r2::<java.io.BufferedInputStream: int read(byte[],int,int)>::65
+IN METHOD::<spec.benchmarks.derby.CyclicReader: int read(byte[],int)>::INVOKE::spec.benchmarks.derby.CyclicReader::r0::<spec.benchmarks.derby.CyclicReader: void close()>::67
+IN METHOD::<spec.benchmarks.derby.CyclicReader: int read(byte[],int)>::SPECIALINVOKE::<spec.benchmarks.derby.CyclicReader: void init()>::68
+IN METHOD::<spec.benchmarks.derby.CyclicReader: int read(byte[],int)>::INVOKE::java.io.FilterInputStream::$r3::<java.io.FilterInputStream: int read(byte[],int,int)>::69
+IN METHOD::<spec.benchmarks.derby.CyclicReader: int read(byte[],int)>::INVOKE::java.io.InputStream::$r3::<java.io.InputStream: int read(byte[],int,int)>::69
+IN METHOD::<spec.benchmarks.derby.CyclicReader: int read(byte[],int)>::INVOKE::java.lang.UNIXProcess$DeferredCloseProcessPipeInputStream::$r3::<java.lang.UNIXProcess$DeferredCloseProcessPipeInputStream: int read(byte[],int,int)>::69
+IN METHOD::<spec.benchmarks.derby.CyclicReader: int read(byte[],int)>::INVOKE::java.io.BufferedInputStream::$r3::<java.io.BufferedInputStream: int read(byte[],int,int)>::69

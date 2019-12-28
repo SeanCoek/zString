@@ -1,0 +1,13 @@
+IN METHOD::<spec.benchmarks.check.LoopBounds: void execute()>::INVOKE::spec.benchmarks.check.LoopBounds::r0::<spec.benchmarks.check.LoopBounds: int size()>::55
+IN METHOD::<spec.benchmarks.check.LoopBounds: void execute()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::58
+IN METHOD::<spec.benchmarks.check.LoopBounds: void execute()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::58
+IN METHOD::<spec.benchmarks.check.LoopBounds: void execute()>::INVOKE::spec.benchmarks.check.LoopBounds::r0::<spec.benchmarks.check.LoopBounds: int constraintAt(int)>::58
+IN METHOD::<spec.benchmarks.check.LoopBounds: void execute()>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(int)>::58
+IN METHOD::<spec.benchmarks.check.LoopBounds: void execute()>::INVOKE::java.lang.StringBuilder::$r4::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::58
+IN METHOD::<spec.benchmarks.check.LoopBounds: void execute()>::INVOKE::any_subtype_of::java.lang.StringBuilder::$r4::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::58
+IN METHOD::<spec.benchmarks.check.LoopBounds: void execute()>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.String toString()>::58
+IN METHOD::<spec.benchmarks.check.LoopBounds: void execute()>::INVOKE::java.io.PrintStream::$r2::<java.io.PrintStream: void print(java.lang.String)>::58
+IN METHOD::<spec.benchmarks.check.LoopBounds: void execute()>::INVOKE::any_subtype_of::java.lang.Object::$r2::<java.io.PrintStream: void print(java.lang.String)>::58
+IN METHOD::<spec.benchmarks.check.LoopBounds: void execute()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::60
+IN METHOD::<spec.benchmarks.check.LoopBounds: void execute()>::INVOKE::java.io.PrintStream::$r1::<java.io.PrintStream: void println()>::60
+IN METHOD::<spec.benchmarks.check.LoopBounds: void execute()>::INVOKE::any_subtype_of::java.lang.Object::$r1::<java.io.PrintStream: void println()>::60

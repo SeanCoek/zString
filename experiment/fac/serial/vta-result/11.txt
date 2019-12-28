@@ -1,0 +1,2 @@
+IN METHOD::<spec.io.FileCache: java.io.ByteArrayInputStream getStream(java.lang.String)>::SPECIALINVOKE::<spec.io.FileCache: boolean hasFile(java.lang.String)>::41
+IN METHOD::<spec.io.FileCache: java.io.ByteArrayInputStream getStream(java.lang.String)>::SPECIALINVOKE::<java.io.ByteArrayInputStream: void <init>(byte[])>::45

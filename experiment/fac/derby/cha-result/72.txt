@@ -1,0 +1,14 @@
+IN METHOD::<spec.benchmarks.derby.Utils: java.util.HashMap createRatesMap(int,int,int,java.math.BigDecimal)>::SPECIALINVOKE::<java.util.HashMap: void <init>()>::92
+IN METHOD::<spec.benchmarks.derby.Utils: java.util.HashMap createRatesMap(int,int,int,java.math.BigDecimal)>::STATICINVOKE::<java.text.NumberFormat: java.text.NumberFormat getNumberInstance()>::94
+IN METHOD::<spec.benchmarks.derby.Utils: java.util.HashMap createRatesMap(int,int,int,java.math.BigDecimal)>::INVOKE::java.text.DecimalFormat::r2::<java.text.DecimalFormat: void setMinimumIntegerDigits(int)>::95
+IN METHOD::<spec.benchmarks.derby.Utils: java.util.HashMap createRatesMap(int,int,int,java.math.BigDecimal)>::INVOKE::java.text.NumberFormat::r2::<java.text.NumberFormat: void setMinimumIntegerDigits(int)>::95
+IN METHOD::<spec.benchmarks.derby.Utils: java.util.HashMap createRatesMap(int,int,int,java.math.BigDecimal)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::101
+IN METHOD::<spec.benchmarks.derby.Utils: java.util.HashMap createRatesMap(int,int,int,java.math.BigDecimal)>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.StringBuilder append(long)>::101
+IN METHOD::<spec.benchmarks.derby.Utils: java.util.HashMap createRatesMap(int,int,int,java.math.BigDecimal)>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::101
+IN METHOD::<spec.benchmarks.derby.Utils: java.util.HashMap createRatesMap(int,int,int,java.math.BigDecimal)>::INVOKE::java.lang.StringBuilder::$r9::<java.lang.StringBuilder: java.lang.StringBuilder append(long)>::101
+IN METHOD::<spec.benchmarks.derby.Utils: java.util.HashMap createRatesMap(int,int,int,java.math.BigDecimal)>::INVOKE::java.lang.Object::$r10::<java.lang.Object: java.lang.String toString()>::101
+IN METHOD::<spec.benchmarks.derby.Utils: java.util.HashMap createRatesMap(int,int,int,java.math.BigDecimal)>::INVOKE::java.lang.StringBuilder::$r10::<java.lang.StringBuilder: java.lang.String toString()>::101
+IN METHOD::<spec.benchmarks.derby.Utils: java.util.HashMap createRatesMap(int,int,int,java.math.BigDecimal)>::SPECIALINVOKE::<java.math.BigDecimal: void <init>(java.lang.String)>::101
+IN METHOD::<spec.benchmarks.derby.Utils: java.util.HashMap createRatesMap(int,int,int,java.math.BigDecimal)>::INVOKE::java.math.BigDecimal::r0::<java.math.BigDecimal: java.math.BigDecimal setScale(int,int)>::103
+IN METHOD::<spec.benchmarks.derby.Utils: java.util.HashMap createRatesMap(int,int,int,java.math.BigDecimal)>::INVOKE::java.util.AbstractMap::r1::<java.util.AbstractMap: java.lang.Object put(java.lang.Object,java.lang.Object)>::103
+IN METHOD::<spec.benchmarks.derby.Utils: java.util.HashMap createRatesMap(int,int,int,java.math.BigDecimal)>::INVOKE::java.util.HashMap::r1::<java.util.HashMap: java.lang.Object put(java.lang.Object,java.lang.Object)>::103

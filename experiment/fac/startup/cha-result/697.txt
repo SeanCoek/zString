@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.HTMLWriter: void insertRecords(java.util.ArrayList)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: java.lang.String insertBRTags(java.util.ArrayList)>::374
+IN METHOD::<spec.reporter.HTMLWriter: void insertRecords(java.util.ArrayList)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void insertHeaderRecord(java.lang.String,java.lang.String,boolean,int,int)>::374

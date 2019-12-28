@@ -1,0 +1,4 @@
+IN METHOD::<spec.harness.Configuration: java.lang.String getFixedOperationsProp(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::51
+IN METHOD::<spec.harness.Configuration: java.lang.String getFixedOperationsProp(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r1::java.lang.StringBuilder append(java.lang.String)::51
+IN METHOD::<spec.harness.Configuration: java.lang.String getFixedOperationsProp(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::51
+IN METHOD::<spec.harness.Configuration: java.lang.String getFixedOperationsProp(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.String toString()::51

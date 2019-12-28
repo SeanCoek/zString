@@ -1,0 +1,15 @@
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setupBenchmark()>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::128
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setupBenchmark()>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::130
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.xml.XMLBenchmark: java.lang.String getFullName(java.lang.Class,java.lang.String,java.lang.String)>::131
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.xml.XMLBenchmark: spec.io.FileCache$CachedFile getCachedFile(java.lang.Class,java.lang.String,java.lang.String)>::135
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.xml.XMLBenchmark: spec.io.FileCache$CachedFile getCachedFile(java.lang.Class,java.lang.String,java.lang.String)>::136
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setupBenchmark()>::SPECIALINVOKE::<java.util.Properties: void <init>()>::138
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setupBenchmark()>::SPECIALINVOKE::<java.io.FileInputStream: void <init>(java.lang.String)>::143
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.xml.transform.Main: void setupTransformers()>::148
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.xml.transform.Main: void setValidationMode(int)>::150
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.xml.transform.Main: void setLoopMode(int)>::151
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setupBenchmark()>::SPECIALINVOKE::<spec.harness.results.BenchmarkResult: void <init>()>::152
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setupBenchmark()>::SPECIALINVOKE::<spec.benchmarks.xml.transform.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::152
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setupBenchmark()>::SPECIALINVOKE::<spec.benchmarks.xml.transform.Main: java.util.Properties getOutProperties()>::156
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.xml.transform.Main: void setValidationMode(int)>::160
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.xml.transform.Main: void setLoopMode(int)>::161

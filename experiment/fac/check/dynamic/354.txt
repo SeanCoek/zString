@@ -1,0 +1,10 @@
+IN METHOD::<spec.benchmarks.check.LoopBounds: void run()>::SPECIALINVOKE::<spec.benchmarks.check.LoopBounds: void <init>()>::68
+IN METHOD::<spec.benchmarks.check.LoopBounds: void run()>::INVOKE::spec.benchmarks.check.LoopBounds::$r2::void execute()::68
+IN METHOD::<spec.benchmarks.check.LoopBounds: void run()>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::71
+IN METHOD::<spec.benchmarks.check.LoopBounds: void run()>::INVOKE::java.lang.Class::r15::java.lang.Object newInstance()::72
+IN METHOD::<spec.benchmarks.check.LoopBounds: void run()>::INVOKE::spec.benchmarks.check.LoopBounds2::$r3::void execute()::78
+IN METHOD::<spec.benchmarks.check.LoopBounds: void run()>::SPECIALINVOKE::<spec.benchmarks.check.LoopBounds: void <init>()>::68
+IN METHOD::<spec.benchmarks.check.LoopBounds: void run()>::INVOKE::spec.benchmarks.check.LoopBounds::$r2::void execute()::68
+IN METHOD::<spec.benchmarks.check.LoopBounds: void run()>::STATICINVOKE::<java.lang.Class: java.lang.Class forName(java.lang.String)>::71
+IN METHOD::<spec.benchmarks.check.LoopBounds: void run()>::INVOKE::java.lang.Class::r15::java.lang.Object newInstance()::72
+IN METHOD::<spec.benchmarks.check.LoopBounds: void run()>::INVOKE::spec.benchmarks.check.LoopBounds2::$r3::void execute()::78

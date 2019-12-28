@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: void <init>(com.sun.tools.javac.util.Context,boolean,java.nio.charset.Charset)>::SPECIALINVOKE::<com.sun.tools.javac.util.JavacFileManager: void <init>(com.sun.tools.javac.util.Context,boolean,java.nio.charset.Charset)>::217
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: void <init>(com.sun.tools.javac.util.Context,boolean,java.nio.charset.Charset)>::SPECIALINVOKE::<com.sun.tools.javac.util.JavacFileManager: void <init>(com.sun.tools.javac.util.Context,boolean,java.nio.charset.Charset)>::217

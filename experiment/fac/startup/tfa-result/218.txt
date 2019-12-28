@@ -1,0 +1,15 @@
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::STATICINVOKE::<spec.benchmarks.compiler.Util: java.io.File getSrcFile(java.io.File)>::46
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::STATICINVOKE::<spec.benchmarks.compiler.Util: java.io.File getSrcDir(java.io.File,java.lang.String)>::47
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::STATICINVOKE::<spec.benchmarks.compiler.Util: java.io.File getZipFile(java.io.File)>::48
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::SPECIALINVOKE::<java.util.ArrayList: void <init>()>::50
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::SPECIALINVOKE::<java.io.FileWriter: void <init>(java.io.File)>::51
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::INVOKE::java.io.File::r1::<java.io.File: java.lang.String getPath()>::52
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::STATICINVOKE::<spec.benchmarks.compiler.Util: void unzip(java.lang.String,java.lang.String,java.util.ArrayList)>::52
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::INVOKE::java.util.ArrayList::r21::<java.util.ArrayList: java.util.Iterator iterator()>::53
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::INVOKE::java.io.Writer::r5::<java.io.Writer: void write(java.lang.String)>::56
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::STATICINVOKE::<spec.benchmarks.compiler.Util: java.lang.String linesep()>::57
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::INVOKE::java.io.Writer::r5::<java.io.Writer: void write(java.lang.String)>::57
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::INVOKE::java.io.OutputStreamWriter::r5::<java.io.OutputStreamWriter: void close()>::60
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::62
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::INVOKE::java.lang.StringBuilder::$r15::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::62
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::INVOKE::java.io.File::r2::<java.io.File: java.lang.String getPath()>::62

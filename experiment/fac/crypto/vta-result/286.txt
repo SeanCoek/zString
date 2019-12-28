@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.analyzer.CallbackAnalyzerExample$NumberResult: void <init>(double,java.lang.String,java.lang.String)>::SPECIALINVOKE::<spec.harness.analyzer.AnalyzerResult: void <init>(double)>::92

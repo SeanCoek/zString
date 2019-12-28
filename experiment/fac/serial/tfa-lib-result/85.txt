@@ -1,0 +1,9 @@
+IN METHOD::<spec.benchmarks.serial.Utils: void printResult(java.io.PrintStream,java.util.BitSet)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::46
+IN METHOD::<spec.benchmarks.serial.Utils: void printResult(java.io.PrintStream,java.util.BitSet)>::INVOKE::java.lang.StringBuilder::$r2::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::46
+IN METHOD::<spec.benchmarks.serial.Utils: void printResult(java.io.PrintStream,java.util.BitSet)>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::46
+IN METHOD::<spec.benchmarks.serial.Utils: void printResult(java.io.PrintStream,java.util.BitSet)>::INVOKE::java.lang.StringBuilder::$r6::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::46
+IN METHOD::<spec.benchmarks.serial.Utils: void printResult(java.io.PrintStream,java.util.BitSet)>::INVOKE::java.util.BitSet::r1::<java.util.BitSet: boolean get(int)>::46
+IN METHOD::<spec.benchmarks.serial.Utils: void printResult(java.io.PrintStream,java.util.BitSet)>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::46
+IN METHOD::<spec.benchmarks.serial.Utils: void printResult(java.io.PrintStream,java.util.BitSet)>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.String toString()>::46
+IN METHOD::<spec.benchmarks.serial.Utils: void printResult(java.io.PrintStream,java.util.BitSet)>::INVOKE::java.io.PrintStream::r0::<java.io.PrintStream: void println(java.lang.String)>::46
+IN METHOD::<spec.benchmarks.serial.Utils: void printResult(java.io.PrintStream,java.util.BitSet)>::INVOKE::any_subtype_of::java.lang.Object::r0::<java.io.PrintStream: void println(java.lang.String)>::46

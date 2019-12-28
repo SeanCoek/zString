@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::STATICINVOKE::<spec.benchmarks.serial.Utils: java.util.BitSet createBitSet()>::75
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::SPECIALINVOKE::<java.io.ObjectOutputStream: void <init>(java.io.OutputStream)>::77
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::SPECIALINVOKE::<java.io.ByteArrayInputStream: void <init>(byte[],int,int)>::86
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::SPECIALINVOKE::<java.io.ObjectInputStream: void <init>(java.io.InputStream)>::87
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::99
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::STATICINVOKE::<spec.benchmarks.serial.Utils: void printResult(java.io.PrintStream,java.util.BitSet)>::99

@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.check.PepTest: void throwArithmeticException(int)>::SPECIALINVOKE::<java.lang.ArithmeticException: void <init>(java.lang.String)>::928
+IN METHOD::<spec.benchmarks.check.PepTest: void throwArithmeticException(int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::930
+IN METHOD::<spec.benchmarks.check.PepTest: void throwArithmeticException(int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::932

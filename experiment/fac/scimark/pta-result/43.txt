@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.scimark.utils.Random: void initialize(int)>::STATICINVOKE::<java.lang.Math: int abs(int)>::265
+IN METHOD::<spec.benchmarks.scimark.utils.Random: void initialize(int)>::STATICINVOKE::<java.lang.Math: int min(int,int)>::265

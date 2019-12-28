@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void dropTables(java.sql.Connection)>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void dropTable(java.sql.Connection,java.lang.String)>::304
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void dropTables(java.sql.Connection)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::306
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void dropTables(java.sql.Connection)>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void dropTable(java.sql.Connection,java.lang.String)>::306

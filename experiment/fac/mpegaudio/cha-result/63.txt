@@ -1,0 +1,11 @@
+IN METHOD::<spec.reporter.ReportGenerator: java.lang.String insertBRTag(java.lang.String,spec.reporter.Writer)>::INVOKE::java.lang.String::r1::<java.lang.String: int length()>::448
+IN METHOD::<spec.reporter.ReportGenerator: java.lang.String insertBRTag(java.lang.String,spec.reporter.Writer)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::451
+IN METHOD::<spec.reporter.ReportGenerator: java.lang.String insertBRTag(java.lang.String,spec.reporter.Writer)>::INVOKE::java.lang.String::r1::<java.lang.String: int length()>::453
+IN METHOD::<spec.reporter.ReportGenerator: java.lang.String insertBRTag(java.lang.String,spec.reporter.Writer)>::INVOKE::java.lang.String::r1::<java.lang.String: char charAt(int)>::454
+IN METHOD::<spec.reporter.ReportGenerator: java.lang.String insertBRTag(java.lang.String,spec.reporter.Writer)>::INVOKE::java.lang.StringBuilder::r3::<java.lang.StringBuilder: java.lang.StringBuilder append(char)>::455
+IN METHOD::<spec.reporter.ReportGenerator: java.lang.String insertBRTag(java.lang.String,spec.reporter.Writer)>::INVOKE::spec.reporter.Writer::r2::<spec.reporter.Writer: java.lang.String getType()>::458
+IN METHOD::<spec.reporter.ReportGenerator: java.lang.String insertBRTag(java.lang.String,spec.reporter.Writer)>::INVOKE::java.lang.Object::$r7::<java.lang.Object: boolean equals(java.lang.Object)>::458
+IN METHOD::<spec.reporter.ReportGenerator: java.lang.String insertBRTag(java.lang.String,spec.reporter.Writer)>::INVOKE::java.lang.String::$r7::<java.lang.String: boolean equals(java.lang.Object)>::458
+IN METHOD::<spec.reporter.ReportGenerator: java.lang.String insertBRTag(java.lang.String,spec.reporter.Writer)>::INVOKE::java.lang.StringBuilder::r3::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::459
+IN METHOD::<spec.reporter.ReportGenerator: java.lang.String insertBRTag(java.lang.String,spec.reporter.Writer)>::INVOKE::java.lang.Object::r3::<java.lang.Object: java.lang.String toString()>::464
+IN METHOD::<spec.reporter.ReportGenerator: java.lang.String insertBRTag(java.lang.String,spec.reporter.Writer)>::INVOKE::java.lang.StringBuilder::r3::<java.lang.StringBuilder: java.lang.String toString()>::464

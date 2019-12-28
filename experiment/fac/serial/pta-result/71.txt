@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.serial.data.TestReadResolve: java.lang.String toString()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::44
+IN METHOD::<spec.benchmarks.serial.data.TestReadResolve: java.lang.String toString()>::INVOKE::java.lang.StringBuilder::$r1::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::44
+IN METHOD::<spec.benchmarks.serial.data.TestReadResolve: java.lang.String toString()>::INVOKE::java.lang.StringBuilder::$r2::<java.lang.StringBuilder: java.lang.StringBuilder append(int)>::44
+IN METHOD::<spec.benchmarks.serial.data.TestReadResolve: java.lang.String toString()>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::44
+IN METHOD::<spec.benchmarks.serial.data.TestReadResolve: java.lang.String toString()>::INVOKE::java.lang.StringBuilder::$r4::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::44
+IN METHOD::<spec.benchmarks.serial.data.TestReadResolve: java.lang.String toString()>::INVOKE::java.lang.StringBuilder::$r6::<java.lang.StringBuilder: java.lang.String toString()>::44

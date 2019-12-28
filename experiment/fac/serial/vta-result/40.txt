@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.serial.data.TestWithFinalField: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::22
+IN METHOD::<spec.benchmarks.serial.data.TestWithFinalField: void <init>()>::SPECIALINVOKE::<java.util.Random: void <init>()>::23

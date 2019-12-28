@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.VMVersionTest: void main(java.lang.String[])>::STATICINVOKE::<spec.harness.VMVersionTest: java.lang.String getVersionInfo()>::16
+IN METHOD::<spec.harness.VMVersionTest: void main(java.lang.String[])>::INVOKE::java.io.PrintStream::$r1::<java.io.PrintStream: void print(java.lang.String)>::16

@@ -1,0 +1,5 @@
+IN METHOD::<spec.reporter.HTMLWriter: java.lang.String insertBRTags(java.util.ArrayList)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::361
+IN METHOD::<spec.reporter.HTMLWriter: java.lang.String insertBRTags(java.util.ArrayList)>::INVOKE::java.lang.StringBuilder::r2::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::364
+IN METHOD::<spec.reporter.HTMLWriter: java.lang.String insertBRTags(java.util.ArrayList)>::STATICINVOKE::<spec.harness.results.TestResult: java.lang.String correctContent(java.lang.String,boolean)>::366
+IN METHOD::<spec.reporter.HTMLWriter: java.lang.String insertBRTags(java.util.ArrayList)>::INVOKE::java.lang.StringBuilder::r2::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::366
+IN METHOD::<spec.reporter.HTMLWriter: java.lang.String insertBRTags(java.util.ArrayList)>::INVOKE::java.lang.StringBuilder::r2::<java.lang.StringBuilder: java.lang.String toString()>::368

@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.lang.Boolean meterCompliant()>::STATICINVOKE::<java.lang.Boolean: java.lang.Boolean valueOf(boolean)>::206

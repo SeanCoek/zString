@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.compress.Decompressor: int getCode()>::INVOKE::spec.benchmarks.compress.CompBase::r0::<spec.benchmarks.compress.CompBase: int getMaxCode()>::609
+IN METHOD::<spec.benchmarks.compress.Decompressor: int getCode()>::INVOKE::spec.benchmarks.compress.CompBase::r0::<spec.benchmarks.compress.CompBase: int getMaxCode()>::614

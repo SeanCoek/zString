@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.results.SuiteResult: void addJvmInfo(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::74
+IN METHOD::<spec.harness.results.SuiteResult: void addJvmInfo(java.lang.String,java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::74

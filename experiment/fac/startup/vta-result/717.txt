@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.analyzer.CallbackAnalyzerExample$TheNumberGenerator: void register(spec.harness.analyzer.CallbackAnalyzerExample)>::SPECIALINVOKE::<spec.harness.analyzer.CallbackAnalyzerExample$TheNumberGenerator: void setListener(spec.harness.analyzer.CallbackAnalyzerExample)>::131

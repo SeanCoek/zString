@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.derby.DataReader: int[] getData(spec.benchmarks.derby.DataReader$Data[],int)>::SPECIALINVOKE::<spec.benchmarks.derby.DataReader: boolean isEndOfTableReached(int)>::26
+IN METHOD::<spec.benchmarks.derby.DataReader: int[] getData(spec.benchmarks.derby.DataReader$Data[],int)>::INVOKE::spec.benchmarks.derby.CyclicReader::$r10::int read(byte[],int)::31
+IN METHOD::<spec.benchmarks.derby.DataReader: int[] getData(spec.benchmarks.derby.DataReader$Data[],int)>::INVOKE::spec.benchmarks.derby.CyclicReader::$r14::int read(java.lang.String[])::39
+IN METHOD::<spec.benchmarks.derby.DataReader: int[] getData(spec.benchmarks.derby.DataReader$Data[],int)>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: byte[] getSpec(byte[],byte[])>::33

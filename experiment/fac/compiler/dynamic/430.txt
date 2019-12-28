@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: void <clinit>()>::SPECIALINVOKE::<java.util.HashMap: void <init>()>::190
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: void <clinit>()>::SPECIALINVOKE::<java.util.HashMap: void <init>()>::191
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: void <clinit>()>::SPECIALINVOKE::<java.util.HashMap: void <init>()>::194
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: void <clinit>()>::SPECIALINVOKE::<java.util.HashMap: void <init>()>::190
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: void <clinit>()>::SPECIALINVOKE::<java.util.HashMap: void <init>()>::191
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: void <clinit>()>::SPECIALINVOKE::<java.util.HashMap: void <init>()>::194

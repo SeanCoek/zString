@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.Utils: void dbgPrint(java.lang.String)>::INVOKE::java.io.PrintStream::$r1::<java.io.PrintStream: void println(java.lang.String)>::342
+IN METHOD::<spec.reporter.Utils: void dbgPrint(java.lang.String)>::INVOKE::any_subtype_of::java.io.PrintStream::$r1::<java.io.PrintStream: void println(java.lang.String)>::342

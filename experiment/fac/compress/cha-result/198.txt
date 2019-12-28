@@ -1,0 +1,5 @@
+IN METHOD::<spec.harness.Context: java.lang.String staticToString()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::170
+IN METHOD::<spec.harness.Context: java.lang.String staticToString()>::INVOKE::java.lang.StringBuilder::$r0::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::170
+IN METHOD::<spec.harness.Context: java.lang.String staticToString()>::INVOKE::java.lang.StringBuilder::$r1::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::170
+IN METHOD::<spec.harness.Context: java.lang.String staticToString()>::INVOKE::java.lang.Object::$r3::<java.lang.Object: java.lang.String toString()>::170
+IN METHOD::<spec.harness.Context: java.lang.String staticToString()>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.String toString()>::170

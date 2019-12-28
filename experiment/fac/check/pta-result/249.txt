@@ -1,0 +1,6 @@
+IN METHOD::<spec.harness.SpecJVMBenchmarkBase: void runSimple(java.lang.Class,java.lang.String[])>::STATICINVOKE::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::95
+IN METHOD::<spec.harness.SpecJVMBenchmarkBase: void runSimple(java.lang.Class,java.lang.String[])>::SPECIALINVOKE::<spec.harness.results.BenchmarkResult: void <init>()>::100
+IN METHOD::<spec.harness.SpecJVMBenchmarkBase: void runSimple(java.lang.Class,java.lang.String[])>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::107
+IN METHOD::<spec.harness.SpecJVMBenchmarkBase: void runSimple(java.lang.Class,java.lang.String[])>::STATICINVOKE::<java.lang.Integer: java.lang.Integer valueOf(int)>::111
+IN METHOD::<spec.harness.SpecJVMBenchmarkBase: void runSimple(java.lang.Class,java.lang.String[])>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::136
+IN METHOD::<spec.harness.SpecJVMBenchmarkBase: void runSimple(java.lang.Class,java.lang.String[])>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::137

@@ -1,0 +1,3 @@
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.lang.Boolean meterCompliant()>::INVOKE::java.lang.Object::$r2::<java.lang.Object: boolean equals(java.lang.Object)>::206
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.lang.Boolean meterCompliant()>::INVOKE::java.lang.String::$r2::<java.lang.String: boolean equals(java.lang.Object)>::206
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.lang.Boolean meterCompliant()>::STATICINVOKE::<java.lang.Boolean: java.lang.Boolean valueOf(boolean)>::206

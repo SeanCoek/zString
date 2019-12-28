@@ -1,0 +1,8 @@
+IN METHOD::<spec.reporter.HTMLWriter: void insertData(java.lang.String,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::91
+IN METHOD::<spec.reporter.HTMLWriter: void insertData(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r2::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::91
+IN METHOD::<spec.reporter.HTMLWriter: void insertData(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(int)>::91
+IN METHOD::<spec.reporter.HTMLWriter: void insertData(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r4::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::91
+IN METHOD::<spec.reporter.HTMLWriter: void insertData(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::91
+IN METHOD::<spec.reporter.HTMLWriter: void insertData(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r6::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::91
+IN METHOD::<spec.reporter.HTMLWriter: void insertData(java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.String toString()>::91
+IN METHOD::<spec.reporter.HTMLWriter: void insertData(java.lang.String,int)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void insertData(java.lang.String)>::91

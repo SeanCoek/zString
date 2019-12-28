@@ -1,0 +1,7 @@
+IN METHOD::<spec.io.FileCache: byte[] getByteArray(java.lang.String)>::INVOKE::java.util.HashMap::$r3::<java.util.HashMap: java.lang.Object get(java.lang.Object)>::65
+IN METHOD::<spec.io.FileCache: byte[] getByteArray(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::67
+IN METHOD::<spec.io.FileCache: byte[] getByteArray(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::67
+IN METHOD::<spec.io.FileCache: byte[] getByteArray(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::67
+IN METHOD::<spec.io.FileCache: byte[] getByteArray(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r9::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::67
+IN METHOD::<spec.io.FileCache: byte[] getByteArray(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r10::<java.lang.StringBuilder: java.lang.String toString()>::67
+IN METHOD::<spec.io.FileCache: byte[] getByteArray(java.lang.String)>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String)>::67

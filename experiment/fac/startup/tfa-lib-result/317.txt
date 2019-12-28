@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void test(boolean)>::STATICINVOKE::<spec.benchmarks.check.FloatingPointCheck: void doubleRange(boolean)>::241
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void test(boolean)>::STATICINVOKE::<spec.benchmarks.check.FloatingPointCheck: void doublePrecision(boolean)>::242
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void test(boolean)>::STATICINVOKE::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::243
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void test(boolean)>::STATICINVOKE::<spec.benchmarks.check.FloatingPointCheck: void floatPrecision(boolean)>::244

@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.ReportGenerator: void generateSummaryTable(spec.reporter.Writer,java.lang.String)>::INVOKE::spec.reporter.Writer::r1::<spec.reporter.Writer: void putSummaryTable(java.lang.String,java.util.TreeMap)>::180
+IN METHOD::<spec.reporter.ReportGenerator: void generateSummaryTable(spec.reporter.Writer,java.lang.String)>::INVOKE::any_subtype_of::java.lang.Object::r1::<spec.reporter.Writer: void putSummaryTable(java.lang.String,java.util.TreeMap)>::180

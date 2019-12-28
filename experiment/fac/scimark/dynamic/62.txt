@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.scimark.utils.Stopwatch: double stop()>::STATICINVOKE::<spec.benchmarks.scimark.utils.Stopwatch: double seconds()>::92
+IN METHOD::<spec.benchmarks.scimark.utils.Stopwatch: double stop()>::STATICINVOKE::<spec.benchmarks.scimark.utils.Stopwatch: double seconds()>::92
+IN METHOD::<spec.benchmarks.scimark.utils.Stopwatch: double stop()>::STATICINVOKE::<spec.benchmarks.scimark.utils.Stopwatch: double seconds()>::92
+IN METHOD::<spec.benchmarks.scimark.utils.Stopwatch: double stop()>::STATICINVOKE::<spec.benchmarks.scimark.utils.Stopwatch: double seconds()>::92
+IN METHOD::<spec.benchmarks.scimark.utils.Stopwatch: double stop()>::STATICINVOKE::<spec.benchmarks.scimark.utils.Stopwatch: double seconds()>::92

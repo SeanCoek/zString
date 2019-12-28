@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void <init>(int,int,int,int)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::275
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void <init>(int,int,int,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::277
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void <init>(int,int,int,int)>::STATICINVOKE::<spec.benchmarks.derby.Utils: void print(java.lang.String)>::277
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void <init>(int,int,int,int)>::SPECIALINVOKE::<spec.benchmarks.derby.DerbyHarness$Client: void <init>(spec.benchmarks.derby.DerbyHarness,int)>::281
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void <init>(int,int,int,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::283
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void <init>(int,int,int,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::285

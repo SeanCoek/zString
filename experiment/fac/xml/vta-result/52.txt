@@ -1,0 +1,8 @@
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupBenchmark()>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::79
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupBenchmark()>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::82
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.xml.XMLBenchmark: java.lang.String getFullName(java.lang.Class,java.lang.String,java.lang.String)>::84
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupBenchmark()>::SPECIALINVOKE::<spec.io.FileCache$CachedFile: void <init>(spec.io.FileCache,java.lang.String)>::85
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.xml.XMLBenchmark: java.lang.String getFullName(java.lang.Class,java.lang.String,java.lang.String)>::90
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupBenchmark()>::SPECIALINVOKE::<spec.io.FileCache$CachedFile: void <init>(spec.io.FileCache,java.lang.String)>::91
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.xml.validation.Main: void setupValidators(java.lang.String)>::95
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupBenchmark()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::97

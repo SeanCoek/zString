@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.serial.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.serial.Utils: java.lang.Object[] createInstances()>::60
+IN METHOD::<spec.benchmarks.serial.Main: void setupBenchmark()>::SPECIALINVOKE::<spec.benchmarks.serial.Main$1: void <init>()>::61
+IN METHOD::<spec.benchmarks.serial.Main: void setupBenchmark()>::INVOKE::java.lang.Throwable::r8::<java.lang.Throwable: void printStackTrace()>::68
+IN METHOD::<spec.benchmarks.serial.Main: void setupBenchmark()>::INVOKE::javax.xml.transform.TransformerException::r8::<javax.xml.transform.TransformerException: void printStackTrace()>::68
+IN METHOD::<spec.benchmarks.serial.Main: void setupBenchmark()>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String)>::69

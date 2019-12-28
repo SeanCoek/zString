@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void init()>::SPECIALINVOKE::<java.io.FileInputStream: void <init>(java.lang.String)>::35
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void init()>::SPECIALINVOKE::<java.io.BufferedInputStream: void <init>(java.io.InputStream)>::36
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void init()>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::38
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void init()>::SPECIALINVOKE::<java.io.FileReader: void <init>(java.io.File)>::39
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void init()>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::40
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void init()>::INVOKE::java.lang.Throwable::r1::<java.lang.Throwable: void printStackTrace()>::43

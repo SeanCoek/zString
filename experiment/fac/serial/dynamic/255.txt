@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.data.TestWithFinalField: spec.benchmarks.serial.data.TestWithFinalField createTestInstance()>::SPECIALINVOKE::<spec.benchmarks.serial.data.TestWithFinalField: void <init>()>::27

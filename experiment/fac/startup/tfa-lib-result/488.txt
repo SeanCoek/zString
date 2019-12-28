@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.derby.CyclicReader: int read(java.lang.String[])>::SPECIALINVOKE::<spec.benchmarks.derby.CyclicReader: void init()>::84

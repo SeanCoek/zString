@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager$OutputFileObject$1: void write(byte[],int,int)>::STATICINVOKE::<spec.benchmarks.compiler.SpecFileManager: long access$000(spec.benchmarks.compiler.SpecFileManager)>::133
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager$OutputFileObject$1: void write(byte[],int,int)>::STATICINVOKE::<spec.benchmarks.compiler.SpecFileManager: long access$002(spec.benchmarks.compiler.SpecFileManager,long)>::133
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager$OutputFileObject$1: void write(byte[],int,int)>::STATICINVOKE::<spec.benchmarks.compiler.SpecFileManager: long access$000(spec.benchmarks.compiler.SpecFileManager)>::133
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager$OutputFileObject$1: void write(byte[],int,int)>::STATICINVOKE::<spec.benchmarks.compiler.SpecFileManager: long access$002(spec.benchmarks.compiler.SpecFileManager,long)>::133

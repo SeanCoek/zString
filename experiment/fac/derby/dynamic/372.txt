@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void handleAccounts()>::STATICINVOKE::<spec.benchmarks.derby.Utils: java.lang.String getPreparedSelectQuery(int)>::73
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void handleAccounts()>::STATICINVOKE::<spec.benchmarks.derby.Utils: java.math.BigDecimal[] initResultsArray(java.math.BigDecimal[])>::78
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void handleAccounts()>::SPECIALINVOKE::<spec.benchmarks.derby.DerbyHarness$Client: void handleResultSet(java.sql.ResultSet)>::82
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void handleAccounts()>::STATICINVOKE::<spec.benchmarks.derby.Utils: java.math.BigDecimal[] add(java.math.BigDecimal[],java.math.BigDecimal[])>::91

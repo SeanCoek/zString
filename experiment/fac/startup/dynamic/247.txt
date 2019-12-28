@@ -1,0 +1,14 @@
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::STATICINVOKE::<spec.harness.analyzer.AnalyzersRunner: int getNoAnalyzer()>::177
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::STATICINVOKE::<spec.harness.analyzer.AnalyzersRunner: int getNoAnalyzer()>::177
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::STATICINVOKE::<spec.harness.analyzer.AnalyzersRunner: int getNoAnalyzer()>::177
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::STATICINVOKE::<spec.harness.analyzer.AnalyzersRunner: int getNoAnalyzer()>::177
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::STATICINVOKE::<spec.harness.analyzer.AnalyzersRunner: int getNoAnalyzer()>::177
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::STATICINVOKE::<spec.harness.analyzer.AnalyzersRunner: int getNoAnalyzer()>::177
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::STATICINVOKE::<spec.harness.analyzer.AnalyzersRunner: int getNoAnalyzer()>::177
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::STATICINVOKE::<spec.harness.analyzer.AnalyzersRunner: int getNoAnalyzer()>::177
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::STATICINVOKE::<spec.harness.analyzer.AnalyzersRunner: int getNoAnalyzer()>::177
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::STATICINVOKE::<spec.harness.analyzer.AnalyzersRunner: int getNoAnalyzer()>::177
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::STATICINVOKE::<spec.harness.analyzer.AnalyzersRunner: int getNoAnalyzer()>::177
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::STATICINVOKE::<spec.harness.analyzer.AnalyzersRunner: int getNoAnalyzer()>::177
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::STATICINVOKE::<spec.harness.analyzer.AnalyzersRunner: int getNoAnalyzer()>::177
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void invokeStartMeasurementIntervalForAnalyzers()>::STATICINVOKE::<spec.harness.analyzer.AnalyzersRunner: int getNoAnalyzer()>::177

@@ -1,0 +1,10 @@
+IN METHOD::<spec.benchmarks.compiler.Util: byte[] getBytes(java.io.InputStream)>::INVOKE::java.io.FileInputStream::r0::int available()::184
+IN METHOD::<spec.benchmarks.compiler.Util: byte[] getBytes(java.io.InputStream)>::INVOKE::java.io.FileInputStream::r0::int read(byte[])::189
+IN METHOD::<spec.benchmarks.compiler.Util: byte[] getBytes(java.io.InputStream)>::STATICINVOKE::<spec.benchmarks.compiler.Util: byte[] updateBuffer(byte[],byte[],int,int)>::190
+IN METHOD::<spec.benchmarks.compiler.Util: byte[] getBytes(java.io.InputStream)>::INVOKE::java.io.ByteArrayInputStream::r0::int available()::184
+IN METHOD::<spec.benchmarks.compiler.Util: byte[] getBytes(java.io.InputStream)>::INVOKE::java.io.ByteArrayInputStream::r0::int read(byte[])::189
+IN METHOD::<spec.benchmarks.compiler.Util: byte[] getBytes(java.io.InputStream)>::INVOKE::java.io.FileInputStream::r0::int available()::184
+IN METHOD::<spec.benchmarks.compiler.Util: byte[] getBytes(java.io.InputStream)>::INVOKE::java.io.FileInputStream::r0::int read(byte[])::189
+IN METHOD::<spec.benchmarks.compiler.Util: byte[] getBytes(java.io.InputStream)>::STATICINVOKE::<spec.benchmarks.compiler.Util: byte[] updateBuffer(byte[],byte[],int,int)>::190
+IN METHOD::<spec.benchmarks.compiler.Util: byte[] getBytes(java.io.InputStream)>::INVOKE::java.io.ByteArrayInputStream::r0::int available()::184
+IN METHOD::<spec.benchmarks.compiler.Util: byte[] getBytes(java.io.InputStream)>::INVOKE::java.io.ByteArrayInputStream::r0::int read(byte[])::189

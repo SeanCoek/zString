@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: spec.benchmarks.serial.data.TestExceptionReference createTestInstance()>::SPECIALINVOKE::<spec.benchmarks.serial.data.TestExceptionReference: void <init>()>::26

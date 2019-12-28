@@ -1,0 +1,7 @@
+IN METHOD::<spec.benchmarks.serial.data.TestParent: boolean equals(java.lang.Object)>::INVOKE::java.lang.String::$r17::boolean equals(java.lang.Object)::99
+IN METHOD::<spec.benchmarks.serial.data.TestParent: boolean equals(java.lang.Object)>::INVOKE::java.util.HashMap::$r4::int size()::107
+IN METHOD::<spec.benchmarks.serial.data.TestParent: boolean equals(java.lang.Object)>::INVOKE::java.util.HashMap::$r5::int size()::107
+IN METHOD::<spec.benchmarks.serial.data.TestParent: boolean equals(java.lang.Object)>::INVOKE::java.lang.Integer::$r7::boolean equals(java.lang.Object)::115
+IN METHOD::<spec.benchmarks.serial.data.TestParent: boolean equals(java.lang.Object)>::INVOKE::java.lang.Long::$r9::boolean equals(java.lang.Object)::117
+IN METHOD::<spec.benchmarks.serial.data.TestParent: boolean equals(java.lang.Object)>::INVOKE::java.util.Date::$r11::boolean equals(java.lang.Object)::121
+IN METHOD::<spec.benchmarks.serial.data.TestParent: boolean equals(java.lang.Object)>::INVOKE::java.sql.Date::$r13::boolean equals(java.lang.Object)::122

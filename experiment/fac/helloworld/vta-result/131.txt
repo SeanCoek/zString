@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.HTMLWriter: void putColumnsSpec(int[])>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::134
+IN METHOD::<spec.reporter.HTMLWriter: void putColumnsSpec(int[])>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putString(java.lang.String)>::134

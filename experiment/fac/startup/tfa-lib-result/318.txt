@@ -1,0 +1,11 @@
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void run(int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::255
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void run(int)>::INVOKE::java.io.PrintStream::$r0::<java.io.PrintStream: void println(java.lang.String)>::255
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void run(int)>::INVOKE::any_subtype_of::java.lang.Object::$r0::<java.io.PrintStream: void println(java.lang.String)>::255
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void run(int)>::STATICINVOKE::<spec.benchmarks.check.FloatingPointCheck: void test(boolean)>::258
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void run(int)>::STATICINVOKE::<spec.benchmarks.check.FloatingPointCheck: void test(boolean)>::261
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void run(int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::263
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void run(int)>::INVOKE::java.io.PrintStream::$r2::<java.io.PrintStream: void println(java.lang.String)>::263
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void run(int)>::INVOKE::any_subtype_of::java.lang.Object::$r2::<java.io.PrintStream: void println(java.lang.String)>::263
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void run(int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::265
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void run(int)>::INVOKE::java.io.PrintStream::$r1::<java.io.PrintStream: void println(java.lang.String)>::265
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void run(int)>::INVOKE::any_subtype_of::java.lang.Object::$r1::<java.io.PrintStream: void println(java.lang.String)>::265

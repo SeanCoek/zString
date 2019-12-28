@@ -1,0 +1,12 @@
+IN METHOD::<spec.benchmarks.check.PepTest: void Verify(java.lang.String)>::INVOKE::java.lang.Object::r1::<java.lang.Object: boolean equals(java.lang.Object)>::1018
+IN METHOD::<spec.benchmarks.check.PepTest: void Verify(java.lang.String)>::INVOKE::java.lang.String::r1::<java.lang.String: boolean equals(java.lang.Object)>::1018
+IN METHOD::<spec.benchmarks.check.PepTest: void Verify(java.lang.String)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::1010
+IN METHOD::<spec.benchmarks.check.PepTest: void Verify(java.lang.String)>::INVOKE::java.io.PrintStream::$r2::<java.io.PrintStream: void println(java.lang.String)>::1010
+IN METHOD::<spec.benchmarks.check.PepTest: void Verify(java.lang.String)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::1013
+IN METHOD::<spec.benchmarks.check.PepTest: void Verify(java.lang.String)>::INVOKE::java.io.PrintStream::$r3::<java.io.PrintStream: void println()>::1013
+IN METHOD::<spec.benchmarks.check.PepTest: void Verify(java.lang.String)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::1014
+IN METHOD::<spec.benchmarks.check.PepTest: void Verify(java.lang.String)>::INVOKE::java.io.PrintStream::$r4::<java.io.PrintStream: void println(java.lang.String)>::1014
+IN METHOD::<spec.benchmarks.check.PepTest: void Verify(java.lang.String)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::1015
+IN METHOD::<spec.benchmarks.check.PepTest: void Verify(java.lang.String)>::INVOKE::java.io.PrintStream::$r5::<java.io.PrintStream: void println(java.lang.String)>::1015
+IN METHOD::<spec.benchmarks.check.PepTest: void Verify(java.lang.String)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::1016
+IN METHOD::<spec.benchmarks.check.PepTest: void Verify(java.lang.String)>::INVOKE::java.io.PrintStream::$r6::<java.io.PrintStream: void println(java.lang.String)>::1016

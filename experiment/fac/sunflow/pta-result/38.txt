@@ -1,0 +1,4 @@
+IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarksResults(org.w3c.dom.Node)>::SPECIALINVOKE::<spec.reporter.ReportGenerator: boolean isNotTextNode(org.w3c.dom.Node)>::104
+IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarksResults(org.w3c.dom.Node)>::SPECIALINVOKE::<spec.reporter.ReportGenerator: void handleBenchmarkResult(org.w3c.dom.Node)>::105
+IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarksResults(org.w3c.dom.Node)>::INVOKE::spec.reporter.BenchmarkGroupRecords::$r3::<spec.reporter.BenchmarkGroupRecords: double computeCompositeScore()>::108
+IN METHOD::<spec.reporter.ReportGenerator: void handleBenchmarksResults(org.w3c.dom.Node)>::INVOKE::java.lang.String::$r5::<java.lang.String: boolean equals(java.lang.Object)>::112

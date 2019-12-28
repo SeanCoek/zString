@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.check.LoopBounds: int size()>::INVOKE::java.util.Vector::$r1::int size()::42
+IN METHOD::<spec.benchmarks.check.LoopBounds: int size()>::INVOKE::java.util.Vector::$r1::int size()::42

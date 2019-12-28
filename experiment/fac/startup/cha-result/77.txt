@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: double[] RandomizeVector(double[],spec.benchmarks.scimark.utils.Random)>::INVOKE::spec.benchmarks.scimark.utils.Random::r1::<spec.benchmarks.scimark.utils.Random: double nextDouble()>::92

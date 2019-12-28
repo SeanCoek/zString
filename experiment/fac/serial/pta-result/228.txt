@@ -1,0 +1,3 @@
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::136
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::STATICINVOKE::<spec.harness.Context: java.lang.String getSpecBasePath()>::136
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::136

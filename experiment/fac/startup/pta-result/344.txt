@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.data.Child: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::16

@@ -1,0 +1,11 @@
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkInstanceOf()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::351
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkInstanceOf()>::INVOKE::java.io.PrintStream::$r1::<java.io.PrintStream: void print(java.lang.String)>::351
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkInstanceOf()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::371
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkInstanceOf()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: java.lang.String checkInst(spec.benchmarks.check.superClass,boolean,boolean,boolean,int)>::371
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkInstanceOf()>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::371
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkInstanceOf()>::SPECIALINVOKE::<spec.benchmarks.check.superClass: void <init>()>::371
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkInstanceOf()>::INVOKE::java.lang.StringBuilder::$r9::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::371
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkInstanceOf()>::SPECIALINVOKE::<spec.benchmarks.check.subClass: void <init>()>::371
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkInstanceOf()>::INVOKE::java.lang.StringBuilder::$r12::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::371
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkInstanceOf()>::INVOKE::java.lang.Object::$r15::<java.lang.Object: java.lang.String toString()>::371
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String checkInstanceOf()>::INVOKE::java.lang.StringBuilder::$r15::<java.lang.StringBuilder: java.lang.String toString()>::371

@@ -1,0 +1,12 @@
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: boolean executeAnalyzers()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::81
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: boolean executeAnalyzers()>::INVOKE::java.io.PrintStream::$r3::<java.io.PrintStream: void println(java.lang.String)>::81
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: boolean executeAnalyzers()>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::84
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: boolean executeAnalyzers()>::INVOKE::spec.harness.analyzer.TempAnalyzer::$r2::<spec.harness.analyzer.TempAnalyzer: void execute(long)>::88
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: boolean executeAnalyzers()>::INVOKE::spec.harness.analyzer.PollingAnalyzerExample::$r2::<spec.harness.analyzer.PollingAnalyzerExample: void execute(long)>::88
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: boolean executeAnalyzers()>::INVOKE::spec.harness.analyzer.HeapMemoryTotalAnalyzer::$r2::<spec.harness.analyzer.HeapMemoryTotalAnalyzer: void execute(long)>::88
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: boolean executeAnalyzers()>::INVOKE::spec.harness.analyzer.CallbackAnalyzerExample::$r2::<spec.harness.analyzer.CallbackAnalyzerExample: void execute(long)>::88
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: boolean executeAnalyzers()>::INVOKE::spec.harness.analyzer.HeapMemoryFreeAnalyzer::$r2::<spec.harness.analyzer.HeapMemoryFreeAnalyzer: void execute(long)>::88
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: boolean executeAnalyzers()>::INVOKE::spec.harness.analyzer.PowerAnalyzer::$r2::<spec.harness.analyzer.PowerAnalyzer: void execute(long)>::88
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: boolean executeAnalyzers()>::INVOKE::spec.harness.analyzer.AnalyzerBase::$r2::<spec.harness.analyzer.AnalyzerBase: void execute(long)>::88
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: boolean executeAnalyzers()>::INVOKE::java.lang.Throwable::r6::<java.lang.Throwable: void printStackTrace()>::91
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: boolean executeAnalyzers()>::INVOKE::javax.xml.transform.TransformerException::r6::<javax.xml.transform.TransformerException: void printStackTrace()>::91

@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.compress.Compressor: void output(int)>::INVOKE::spec.benchmarks.compress.OutputBuffer::$r11::void writeByte(byte)::371
+IN METHOD::<spec.benchmarks.compress.Compressor: void output(int)>::INVOKE::spec.benchmarks.compress.Compressor::r0::int getMaxCode()::400
+IN METHOD::<spec.benchmarks.compress.Compressor: void output(int)>::INVOKE::spec.benchmarks.compress.OutputBuffer::$r9::void writebytes(byte[],int)::386
+IN METHOD::<spec.benchmarks.compress.Compressor: void output(int)>::INVOKE::spec.benchmarks.compress.Compressor::r0::int getMaxCode()::393
+IN METHOD::<spec.benchmarks.compress.Compressor: void output(int)>::INVOKE::spec.benchmarks.compress.OutputBuffer::$r2::void writebytes(byte[],int)::409

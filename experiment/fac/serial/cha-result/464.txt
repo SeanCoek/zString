@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.results.SuiteResult: void toXml(java.io.PrintStream,int)>::INVOKE::spec.harness.results.BenchmarkResult::$r5::<spec.harness.results.BenchmarkResult: void toXml(java.io.PrintStream,int)>::247

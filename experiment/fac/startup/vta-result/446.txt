@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void handleResultSet(java.sql.ResultSet)>::SPECIALINVOKE::<java.math.BigDecimal: void <init>(java.lang.String,java.math.MathContext)>::130
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void handleResultSet(java.sql.ResultSet)>::SPECIALINVOKE::<spec.benchmarks.derby.DerbyHarness$Client: void doComputing(java.math.BigDecimal,int,byte[])>::130

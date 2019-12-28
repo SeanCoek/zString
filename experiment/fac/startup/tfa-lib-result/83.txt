@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.scimark.utils.Constants: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::9

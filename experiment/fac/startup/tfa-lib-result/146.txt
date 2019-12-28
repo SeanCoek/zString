@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: void updateCRC32(java.util.zip.CRC32,short[])>::INVOKE::java.util.zip.CRC32::r1::<java.util.zip.CRC32: void update(byte[],int,int)>::54

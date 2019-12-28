@@ -1,0 +1,4 @@
+IN METHOD::<spec.reporter.BenchmarkChart: void addAnalyzerReport(java.lang.String,java.lang.String,long,long)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::82
+IN METHOD::<spec.reporter.BenchmarkChart: void addAnalyzerReport(java.lang.String,java.lang.String,long,long)>::INVOKE::java.lang.StringBuilder::$r9::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::82
+IN METHOD::<spec.reporter.BenchmarkChart: void addAnalyzerReport(java.lang.String,java.lang.String,long,long)>::SPECIALINVOKE::<org.jfree.data.xy.XYSeries: void <init>(java.lang.Comparable)>::82
+IN METHOD::<spec.reporter.BenchmarkChart: void addAnalyzerReport(java.lang.String,java.lang.String,long,long)>::INVOKE::spec.reporter.BenchmarkChart::r0::<spec.reporter.BenchmarkChart: void addAxis(java.lang.String,java.lang.String,org.jfree.data.xy.XYSeries)>::84

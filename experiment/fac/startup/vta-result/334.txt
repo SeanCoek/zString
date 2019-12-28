@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.data.TestProxy: spec.benchmarks.serial.data.TestProxy createTestInstance()>::SPECIALINVOKE::<spec.benchmarks.serial.data.TestProxy: void <init>()>::37

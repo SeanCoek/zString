@@ -1,0 +1,16 @@
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::155
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::INVOKE::java.io.PrintStream::$r4::void println(java.lang.String)::155
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::157
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::INVOKE::java.io.PrintStream::$r5::void println(java.lang.String)::157
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::159
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::INVOKE::java.io.PrintStream::$r6::void println(java.lang.String)::159
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::161
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::INVOKE::java.io.PrintStream::$r7::void println(java.lang.String)::161
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::163
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::INVOKE::java.io.PrintStream::$r8::void println(java.lang.String)::163
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::176
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::INVOKE::java.io.PrintStream::$r0::void println(java.lang.String)::176
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::178
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::INVOKE::java.io.PrintStream::$r1::void println(java.lang.String)::178
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::180
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void floatRange(boolean)>::INVOKE::java.io.PrintStream::$r2::void println(java.lang.String)::180

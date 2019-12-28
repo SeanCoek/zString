@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.crypto.rsa.Main: void harnessMain()>::INVOKE::spec.benchmarks.crypto.rsa.Main::r0::<spec.benchmarks.crypto.rsa.Main: void runSingleEncryptDecrypt(java.lang.String,java.lang.String)>::109
+IN METHOD::<spec.benchmarks.crypto.rsa.Main: void harnessMain()>::INVOKE::spec.benchmarks.crypto.rsa.Main::r0::<spec.benchmarks.crypto.rsa.Main: void runMultiEncryptDecrypt(java.lang.String,java.lang.String)>::110
+IN METHOD::<spec.benchmarks.crypto.rsa.Main: void harnessMain()>::INVOKE::spec.benchmarks.crypto.rsa.Main::r0::<spec.benchmarks.crypto.rsa.Main: void runSingleEncryptDecrypt(java.lang.String,java.lang.String)>::112
+IN METHOD::<spec.benchmarks.crypto.rsa.Main: void harnessMain()>::INVOKE::spec.benchmarks.crypto.rsa.Main::r0::<spec.benchmarks.crypto.rsa.Main: void runMultiEncryptDecrypt(java.lang.String,java.lang.String)>::113
+IN METHOD::<spec.benchmarks.crypto.rsa.Main: void harnessMain()>::INVOKE::spec.benchmarks.crypto.rsa.Main::r0::<spec.benchmarks.crypto.rsa.Main: void runSingleEncryptDecrypt(java.lang.String,java.lang.String)>::114

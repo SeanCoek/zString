@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager$InputFileObject: java.lang.CharSequence getCharContent(boolean)>::INVOKE::spec.benchmarks.compiler.SpecFileManager$InputFileObject::r0::java.nio.CharBuffer getCharContent(boolean)::86
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager$InputFileObject: java.lang.CharSequence getCharContent(boolean)>::INVOKE::spec.benchmarks.compiler.SpecFileManager$InputFileObject::r0::java.nio.CharBuffer getCharContent(boolean)::86

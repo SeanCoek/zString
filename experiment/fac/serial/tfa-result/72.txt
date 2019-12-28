@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.serial.data.TestHugeData: spec.benchmarks.serial.data.TestHugeData createTestInstance(int)>::SPECIALINVOKE::<spec.benchmarks.serial.data.TestHugeData: void <init>()>::28
+IN METHOD::<spec.benchmarks.serial.data.TestHugeData: spec.benchmarks.serial.data.TestHugeData createTestInstance(int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::30
+IN METHOD::<spec.benchmarks.serial.data.TestHugeData: spec.benchmarks.serial.data.TestHugeData createTestInstance(int)>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::30
+IN METHOD::<spec.benchmarks.serial.data.TestHugeData: spec.benchmarks.serial.data.TestHugeData createTestInstance(int)>::INVOKE::java.util.Random::$r6::<java.util.Random: double nextDouble()>::30
+IN METHOD::<spec.benchmarks.serial.data.TestHugeData: spec.benchmarks.serial.data.TestHugeData createTestInstance(int)>::STATICINVOKE::<spec.benchmarks.serial.data.TestHugeData: spec.benchmarks.serial.data.TestHugeData createTestInstance(int)>::33

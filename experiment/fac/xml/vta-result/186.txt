@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.HTMLWriter: java.lang.String createConfRecord(java.lang.String[])>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::303
+IN METHOD::<spec.reporter.HTMLWriter: java.lang.String createConfRecord(java.lang.String[])>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::306

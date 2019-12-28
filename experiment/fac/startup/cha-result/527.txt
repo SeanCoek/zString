@@ -1,0 +1,12 @@
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void close()>::INVOKE::java.io.InputStream::$r4::<java.io.InputStream: void close()>::50
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void close()>::INVOKE::java.net.SocketInputStream::$r4::<java.net.SocketInputStream: void close()>::50
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void close()>::INVOKE::java.lang.UNIXProcess$DeferredCloseInputStream::$r4::<java.lang.UNIXProcess$DeferredCloseInputStream: void close()>::50
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void close()>::INVOKE::java.io.FileInputStream::$r4::<java.io.FileInputStream: void close()>::50
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void close()>::INVOKE::java.io.FilterInputStream::$r5::<java.io.FilterInputStream: void close()>::51
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void close()>::INVOKE::java.io.InputStream::$r5::<java.io.InputStream: void close()>::51
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void close()>::INVOKE::java.lang.UNIXProcess$DeferredCloseProcessPipeInputStream::$r5::<java.lang.UNIXProcess$DeferredCloseProcessPipeInputStream: void close()>::51
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void close()>::INVOKE::java.lang.UNIXProcess$ProcessPipeInputStream::$r5::<java.lang.UNIXProcess$ProcessPipeInputStream: void close()>::51
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void close()>::INVOKE::java.io.BufferedInputStream::$r5::<java.io.BufferedInputStream: void close()>::51
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void close()>::INVOKE::java.io.InputStreamReader::$r2::<java.io.InputStreamReader: void close()>::53
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void close()>::INVOKE::java.io.BufferedReader::$r3::<java.io.BufferedReader: void close()>::54
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void close()>::INVOKE::java.lang.Throwable::r1::<java.lang.Throwable: void printStackTrace()>::57

@@ -1,0 +1,2 @@
+IN METHOD::<spec.io.ValidityCheckOutputStream: boolean validityCheck(spec.harness.results.LoopResult)>::SPECIALINVOKE::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::77
+IN METHOD::<spec.io.ValidityCheckOutputStream: boolean validityCheck(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::79

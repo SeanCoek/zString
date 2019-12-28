@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void setup()>::INVOKE::spec.harness.analyzer.AnalyzerBase::r0::<spec.harness.analyzer.AnalyzerBase: boolean isTimedRun()>::86

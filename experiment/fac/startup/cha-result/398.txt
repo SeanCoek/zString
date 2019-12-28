@@ -1,0 +1,14 @@
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: boolean equals(java.lang.Object)>::INVOKE::spec.benchmarks.serial.data.TestPayload::r2::<spec.benchmarks.serial.data.TestPayload: spec.benchmarks.serial.data.TestPayload getChild()>::73
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: boolean equals(java.lang.Object)>::INVOKE::spec.benchmarks.serial.data.TestPayload::r0::<spec.benchmarks.serial.data.TestPayload: java.lang.String getIdentity()>::76
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: boolean equals(java.lang.Object)>::INVOKE::spec.benchmarks.serial.data.TestPayload::r2::<spec.benchmarks.serial.data.TestPayload: java.lang.String getIdentity()>::76
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: boolean equals(java.lang.Object)>::INVOKE::java.lang.Object::$r10::<java.lang.Object: boolean equals(java.lang.Object)>::76
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: boolean equals(java.lang.Object)>::INVOKE::java.lang.String::$r10::<java.lang.String: boolean equals(java.lang.Object)>::76
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: boolean equals(java.lang.Object)>::INVOKE::spec.benchmarks.serial.data.TestPayload::r2::<spec.benchmarks.serial.data.TestPayload: spec.benchmarks.serial.data.TestPayload getChild()>::79
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: boolean equals(java.lang.Object)>::INVOKE::spec.benchmarks.serial.data.TestPayload::r0::<spec.benchmarks.serial.data.TestPayload: spec.benchmarks.serial.data.TestPayload getChild()>::82
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: boolean equals(java.lang.Object)>::INVOKE::spec.benchmarks.serial.data.TestPayload::r2::<spec.benchmarks.serial.data.TestPayload: spec.benchmarks.serial.data.TestPayload getChild()>::82
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: boolean equals(java.lang.Object)>::INVOKE::java.lang.Object::$r5::<java.lang.Object: boolean equals(java.lang.Object)>::82
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: boolean equals(java.lang.Object)>::INVOKE::spec.benchmarks.serial.data.TestPayload::$r5::<spec.benchmarks.serial.data.TestPayload: boolean equals(java.lang.Object)>::82
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: boolean equals(java.lang.Object)>::INVOKE::spec.benchmarks.serial.data.TestPayload::r0::<spec.benchmarks.serial.data.TestPayload: java.lang.String getIdentity()>::83
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: boolean equals(java.lang.Object)>::INVOKE::spec.benchmarks.serial.data.TestPayload::r2::<spec.benchmarks.serial.data.TestPayload: java.lang.String getIdentity()>::83
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: boolean equals(java.lang.Object)>::INVOKE::java.lang.Object::$r7::<java.lang.Object: boolean equals(java.lang.Object)>::83
+IN METHOD::<spec.benchmarks.serial.data.TestPayload: boolean equals(java.lang.Object)>::INVOKE::java.lang.String::$r7::<java.lang.String: boolean equals(java.lang.Object)>::83

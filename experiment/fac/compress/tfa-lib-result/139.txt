@@ -1,0 +1,7 @@
+IN METHOD::<spec.reporter.BenchmarkChart: void buildJPEG()>::SPECIALINVOKE::<spec.reporter.BenchmarkChart: void setMemoryAxis()>::164
+IN METHOD::<spec.reporter.BenchmarkChart: void buildJPEG()>::SPECIALINVOKE::<spec.reporter.BenchmarkChart: void updateColors()>::166
+IN METHOD::<spec.reporter.BenchmarkChart: void buildJPEG()>::STATICINVOKE::<spec.reporter.Utils: java.lang.String getFullImageName(java.lang.String)>::167
+IN METHOD::<spec.reporter.BenchmarkChart: void buildJPEG()>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::167
+IN METHOD::<spec.reporter.BenchmarkChart: void buildJPEG()>::STATICINVOKE::<org.jfree.chart.ChartUtilities: void saveChartAsJPEG(java.io.File,org.jfree.chart.JFreeChart,int,int)>::167
+IN METHOD::<spec.reporter.BenchmarkChart: void buildJPEG()>::INVOKE::java.io.PrintStream::$r7::<java.io.PrintStream: void println(java.lang.String)>::170
+IN METHOD::<spec.reporter.BenchmarkChart: void buildJPEG()>::INVOKE::any_subtype_of::java.io.PrintStream::$r7::<java.io.PrintStream: void println(java.lang.String)>::170

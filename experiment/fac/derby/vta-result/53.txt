@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.derby.Main: void tearDownBenchmark()>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void shutdownDerbySystem()>::104
+IN METHOD::<spec.benchmarks.derby.Main: void tearDownBenchmark()>::STATICINVOKE::<spec.benchmarks.derby.Utils: void releaseResources()>::105
+IN METHOD::<spec.benchmarks.derby.Main: void tearDownBenchmark()>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::108
+IN METHOD::<spec.benchmarks.derby.Main: void tearDownBenchmark()>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::113
+IN METHOD::<spec.benchmarks.derby.Main: void tearDownBenchmark()>::STATICINVOKE::<spec.benchmarks.derby.Main: void deleteDirectory(java.io.File)>::115

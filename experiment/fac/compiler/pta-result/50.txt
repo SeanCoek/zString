@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.compiler.Util: java.lang.String linesep()>::STATICINVOKE::<java.lang.System: java.lang.String getProperty(java.lang.String)>::41
+IN METHOD::<spec.benchmarks.compiler.Util: java.lang.String linesep()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::43

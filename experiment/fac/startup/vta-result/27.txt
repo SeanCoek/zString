@@ -1,0 +1,7 @@
+IN METHOD::<spec.benchmarks.crypto.aes.Main: void setupBenchmark()>::SPECIALINVOKE::<java.security.SecureRandom: void <init>(byte[])>::155
+IN METHOD::<spec.benchmarks.crypto.aes.Main: void setupBenchmark()>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::156
+IN METHOD::<spec.benchmarks.crypto.aes.Main: void setupBenchmark()>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::157
+IN METHOD::<spec.benchmarks.crypto.aes.Main: void setupBenchmark()>::STATICINVOKE::<javax.crypto.KeyGenerator: javax.crypto.KeyGenerator getInstance(java.lang.String)>::158
+IN METHOD::<spec.benchmarks.crypto.aes.Main: void setupBenchmark()>::STATICINVOKE::<javax.crypto.KeyGenerator: javax.crypto.KeyGenerator getInstance(java.lang.String)>::160
+IN METHOD::<spec.benchmarks.crypto.aes.Main: void setupBenchmark()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::165
+IN METHOD::<spec.benchmarks.crypto.aes.Main: void setupBenchmark()>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String)>::165

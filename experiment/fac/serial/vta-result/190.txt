@@ -1,0 +1,3 @@
+IN METHOD::<spec.reporter.HTMLWriter: void insertHeaderData(java.lang.String,java.lang.String,boolean,int,int,java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::102
+IN METHOD::<spec.reporter.HTMLWriter: void insertHeaderData(java.lang.String,java.lang.String,boolean,int,int,java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::103
+IN METHOD::<spec.reporter.HTMLWriter: void insertHeaderData(java.lang.String,java.lang.String,boolean,int,int,java.lang.String)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putString(java.lang.String)>::102

@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.data.TestBigInteger: spec.benchmarks.serial.data.TestBigInteger createTestInstance()>::SPECIALINVOKE::<spec.benchmarks.serial.data.TestBigInteger: void <init>()>::20

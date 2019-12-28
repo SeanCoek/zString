@@ -1,0 +1,19 @@
+IN METHOD::<spec.harness.ProgramRunner: void invokeBmTearDownBenchmark()>::INVOKE::java.lang.reflect.Method::$r3::java.lang.Object invoke(java.lang.Object,java.lang.Object[])::207
+IN METHOD::<spec.harness.ProgramRunner: void invokeBmTearDownBenchmark()>::INVOKE::java.lang.reflect.Method::$r3::java.lang.Object invoke(java.lang.Object,java.lang.Object[])::207
+IN METHOD::<spec.harness.ProgramRunner: void invokeBmTearDownBenchmark()>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String,java.lang.Throwable)>::209
+IN METHOD::<spec.harness.ProgramRunner: void invokeBmTearDownBenchmark()>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String,java.lang.Throwable)>::209
+IN METHOD::<spec.harness.ProgramRunner: void invokeBmTearDownBenchmark()>::INVOKE::java.lang.reflect.Method::$r3::java.lang.Object invoke(java.lang.Object,java.lang.Object[])::207
+IN METHOD::<spec.harness.ProgramRunner: void invokeBmTearDownBenchmark()>::INVOKE::java.lang.reflect.Method::$r3::java.lang.Object invoke(java.lang.Object,java.lang.Object[])::207
+IN METHOD::<spec.harness.ProgramRunner: void invokeBmTearDownBenchmark()>::INVOKE::java.lang.reflect.Method::$r3::java.lang.Object invoke(java.lang.Object,java.lang.Object[])::207
+IN METHOD::<spec.harness.ProgramRunner: void invokeBmTearDownBenchmark()>::INVOKE::java.lang.reflect.Method::$r3::java.lang.Object invoke(java.lang.Object,java.lang.Object[])::207
+IN METHOD::<spec.harness.ProgramRunner: void invokeBmTearDownBenchmark()>::INVOKE::java.lang.reflect.Method::$r3::java.lang.Object invoke(java.lang.Object,java.lang.Object[])::207
+IN METHOD::<spec.harness.ProgramRunner: void invokeBmTearDownBenchmark()>::INVOKE::java.lang.reflect.Method::$r3::java.lang.Object invoke(java.lang.Object,java.lang.Object[])::207
+IN METHOD::<spec.harness.ProgramRunner: void invokeBmTearDownBenchmark()>::INVOKE::java.lang.reflect.Method::$r3::java.lang.Object invoke(java.lang.Object,java.lang.Object[])::207
+IN METHOD::<spec.harness.ProgramRunner: void invokeBmTearDownBenchmark()>::INVOKE::java.lang.reflect.Method::$r3::java.lang.Object invoke(java.lang.Object,java.lang.Object[])::207
+IN METHOD::<spec.harness.ProgramRunner: void invokeBmTearDownBenchmark()>::INVOKE::java.lang.reflect.Method::$r3::java.lang.Object invoke(java.lang.Object,java.lang.Object[])::207
+IN METHOD::<spec.harness.ProgramRunner: void invokeBmTearDownBenchmark()>::INVOKE::java.lang.reflect.Method::$r3::java.lang.Object invoke(java.lang.Object,java.lang.Object[])::207
+IN METHOD::<spec.harness.ProgramRunner: void invokeBmTearDownBenchmark()>::INVOKE::java.lang.reflect.Method::$r3::java.lang.Object invoke(java.lang.Object,java.lang.Object[])::207
+IN METHOD::<spec.harness.ProgramRunner: void invokeBmTearDownBenchmark()>::INVOKE::java.lang.reflect.Method::$r3::java.lang.Object invoke(java.lang.Object,java.lang.Object[])::207
+IN METHOD::<spec.harness.ProgramRunner: void invokeBmTearDownBenchmark()>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String,java.lang.Throwable)>::209
+IN METHOD::<spec.harness.ProgramRunner: void invokeBmTearDownBenchmark()>::INVOKE::java.lang.reflect.Method::$r3::java.lang.Object invoke(java.lang.Object,java.lang.Object[])::207
+IN METHOD::<spec.harness.ProgramRunner: void invokeBmTearDownBenchmark()>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String,java.lang.Throwable)>::209

@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.serial.data.TestClassWithSQLDateOnly: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::17
+IN METHOD::<spec.benchmarks.serial.data.TestClassWithSQLDateOnly: void <init>()>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::20
+IN METHOD::<spec.benchmarks.serial.data.TestClassWithSQLDateOnly: void <init>()>::SPECIALINVOKE::<java.sql.Date: void <init>(long)>::20

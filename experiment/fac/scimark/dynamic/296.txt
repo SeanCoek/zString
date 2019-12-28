@@ -1,0 +1,10 @@
+IN METHOD::<spec.benchmarks.scimark.utils.Random: void <init>(int)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::87
+IN METHOD::<spec.benchmarks.scimark.utils.Random: void <init>(int)>::SPECIALINVOKE::<spec.benchmarks.scimark.utils.Random: void initialize(int)>::88
+IN METHOD::<spec.benchmarks.scimark.utils.Random: void <init>(int)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::87
+IN METHOD::<spec.benchmarks.scimark.utils.Random: void <init>(int)>::SPECIALINVOKE::<spec.benchmarks.scimark.utils.Random: void initialize(int)>::88
+IN METHOD::<spec.benchmarks.scimark.utils.Random: void <init>(int)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::87
+IN METHOD::<spec.benchmarks.scimark.utils.Random: void <init>(int)>::SPECIALINVOKE::<spec.benchmarks.scimark.utils.Random: void initialize(int)>::88
+IN METHOD::<spec.benchmarks.scimark.utils.Random: void <init>(int)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::87
+IN METHOD::<spec.benchmarks.scimark.utils.Random: void <init>(int)>::SPECIALINVOKE::<spec.benchmarks.scimark.utils.Random: void initialize(int)>::88
+IN METHOD::<spec.benchmarks.scimark.utils.Random: void <init>(int)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::87
+IN METHOD::<spec.benchmarks.scimark.utils.Random: void <init>(int)>::SPECIALINVOKE::<spec.benchmarks.scimark.utils.Random: void initialize(int)>::88

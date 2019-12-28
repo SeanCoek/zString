@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void write(int)>::SPECIALINVOKE::<spec.benchmarks.xml.transform.BaseOutputStream: void write(int)>::230
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void write(int)>::INVOKE::java.net.SocketOutputStream::$r1::<java.net.SocketOutputStream: void write(int)>::231
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void write(int)>::INVOKE::java.io.FileOutputStream::$r1::<java.io.FileOutputStream: void write(int)>::231

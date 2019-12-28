@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.derby.Main: void deleteDirectory(java.io.File)>::INVOKE::java.io.File::r0::<java.io.File: boolean exists()>::120
+IN METHOD::<spec.benchmarks.derby.Main: void deleteDirectory(java.io.File)>::INVOKE::java.io.File::r0::<java.io.File: java.io.File[] listFiles()>::121
+IN METHOD::<spec.benchmarks.derby.Main: void deleteDirectory(java.io.File)>::INVOKE::java.io.File::$r2::<java.io.File: boolean isDirectory()>::123
+IN METHOD::<spec.benchmarks.derby.Main: void deleteDirectory(java.io.File)>::STATICINVOKE::<spec.benchmarks.derby.Main: void deleteDirectory(java.io.File)>::124
+IN METHOD::<spec.benchmarks.derby.Main: void deleteDirectory(java.io.File)>::INVOKE::java.io.File::$r3::<java.io.File: boolean delete()>::126
+IN METHOD::<spec.benchmarks.derby.Main: void deleteDirectory(java.io.File)>::INVOKE::java.io.File::r0::<java.io.File: boolean delete()>::130

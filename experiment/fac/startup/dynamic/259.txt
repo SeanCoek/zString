@@ -1,0 +1,2 @@
+IN METHOD::<spec.io.FileCache$CachedFile: java.io.ByteArrayInputStream getStream()>::INVOKE::spec.io.FileCache::$r2::java.io.ByteArrayInputStream getStream(java.lang.String)::121
+IN METHOD::<spec.io.FileCache$CachedFile: java.io.ByteArrayInputStream getStream()>::INVOKE::spec.io.FileCache::$r2::java.io.ByteArrayInputStream getStream(java.lang.String)::121

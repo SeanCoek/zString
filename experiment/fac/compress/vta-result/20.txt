@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.compress.Harness: long inst_main(int)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::62
+IN METHOD::<spec.benchmarks.compress.Harness: long inst_main(int)>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::64

@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.scimark.monte_carlo.Main: void main(java.lang.String[])>::STATICINVOKE::<spec.harness.SpecJVMBenchmarkBase: void runSimple(java.lang.Class,java.lang.String[])>::41

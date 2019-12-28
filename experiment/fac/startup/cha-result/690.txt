@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.HTMLWriter: void endTable()>::INVOKE::spec.reporter.Writer::r0::<spec.reporter.Writer: void endTable(boolean)>::265
+IN METHOD::<spec.reporter.HTMLWriter: void endTable()>::INVOKE::spec.reporter.HTMLWriter::r0::<spec.reporter.HTMLWriter: void endTable(boolean)>::265

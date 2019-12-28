@@ -1,0 +1,2 @@
+IN METHOD::<spec.io.FileCache: boolean hasFile(java.lang.String)>::INVOKE::java.util.HashMap::$r2::java.lang.Object get(java.lang.Object)::61
+IN METHOD::<spec.io.FileCache: boolean hasFile(java.lang.String)>::INVOKE::java.util.HashMap::$r2::java.lang.Object get(java.lang.Object)::61

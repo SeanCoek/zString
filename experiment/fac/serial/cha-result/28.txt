@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.serial.data.TestWithBigDecimal: int hashCode()>::INVOKE::java.lang.Object::$r2::<java.lang.Object: int hashCode()>::46
+IN METHOD::<spec.benchmarks.serial.data.TestWithBigDecimal: int hashCode()>::INVOKE::java.math.BigDecimal::$r2::<java.math.BigDecimal: int hashCode()>::46

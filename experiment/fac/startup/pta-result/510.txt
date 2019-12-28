@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.derby.Utils: java.lang.String getCreateDurationsTableQuery(java.lang.String,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::51
+IN METHOD::<spec.benchmarks.derby.Utils: java.lang.String getCreateDurationsTableQuery(java.lang.String,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::52
+IN METHOD::<spec.benchmarks.derby.Utils: java.lang.String getCreateDurationsTableQuery(java.lang.String,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::56
+IN METHOD::<spec.benchmarks.derby.Utils: java.lang.String getCreateDurationsTableQuery(java.lang.String,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::59

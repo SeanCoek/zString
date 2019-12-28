@@ -1,0 +1,14 @@
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::SPECIALINVOKE::<java.util.Properties: void <init>()>::422
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::STATICINVOKE::<spec.harness.CommandLineParser: boolean parseArgs(java.lang.String[],java.util.Properties)>::423
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::INVOKE::java.util.Properties::r1::<java.util.Properties: java.lang.String getProperty(java.lang.String)>::429
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::STATICINVOKE::<spec.harness.Configuration: java.util.Properties readProperties(java.lang.String)>::429
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::431
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::INVOKE::java.lang.StringBuilder::$r13::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::431
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::INVOKE::java.lang.StringBuilder::$r15::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::431
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::INVOKE::java.lang.StringBuilder::$r17::<java.lang.StringBuilder: java.lang.String toString()>::431
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::INVOKE::java.io.PrintStream::$r14::<java.io.PrintStream: void println(java.lang.String)>::431
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::INVOKE::any_subtype_of::java.io.PrintStream::$r14::<java.io.PrintStream: void println(java.lang.String)>::431
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::INVOKE::java.util.Hashtable::$r6::<java.util.Hashtable: void putAll(java.util.Map)>::436
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::INVOKE::java.util.Hashtable::$r8::<java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>::437
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::INVOKE::java.util.Hashtable::$r10::<java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>::438
+IN METHOD::<spec.harness.Launch: boolean setupSimple(java.lang.String[])>::STATICINVOKE::<spec.harness.Launch: void setupContext()>::442

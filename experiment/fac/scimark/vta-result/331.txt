@@ -1,0 +1,17 @@
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.util.HashMap: void <init>()>::156
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<spec.harness.analyzer.PowerMeter: int writeMeter(java.lang.String)>::162
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<spec.harness.analyzer.PowerMeter: java.lang.String readMeter()>::163
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.util.HashMap reportRun(java.lang.String)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::166
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::171
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::172
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::173
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::174
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::175
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.util.HashMap reportRun(java.lang.String)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::179
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::179
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.util.HashMap reportRun(java.lang.String)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::180
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::182
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::183
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::184
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::187
+IN METHOD::<spec.harness.analyzer.PowerMeter: java.util.HashMap reportRun(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::188

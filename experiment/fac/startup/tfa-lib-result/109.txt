@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double test(double[])>::STATICINVOKE::<java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>::67
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double test(double[])>::INVOKE::spec.benchmarks.scimark.fft.FFT::r0::<spec.benchmarks.scimark.fft.FFT: void transform(double[])>::69
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double test(double[])>::INVOKE::spec.benchmarks.scimark.fft.FFT::r0::<spec.benchmarks.scimark.fft.FFT: void inverse(double[])>::70
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double test(double[])>::STATICINVOKE::<java.lang.Math: double sqrt(double)>::76

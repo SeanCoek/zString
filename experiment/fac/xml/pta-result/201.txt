@@ -1,0 +1,16 @@
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::INVOKE::java.lang.Package::$r4::<java.lang.Package: java.lang.String getName()>::132
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::INVOKE::java.lang.String::r17::<java.lang.String: boolean startsWith(java.lang.String)>::133
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::INVOKE::java.lang.String::r1::<java.lang.String: int length()>::134
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::INVOKE::java.lang.String::r17::<java.lang.String: java.lang.String substring(int)>::134
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::136
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::STATICINVOKE::<spec.harness.Context: java.lang.String getSpecBasePath()>::136
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::INVOKE::java.lang.StringBuilder::$r6::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::136
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::136
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::INVOKE::java.lang.StringBuilder::$r10::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::136
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::INVOKE::java.lang.StringBuilder::$r11::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::136
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::INVOKE::java.lang.StringBuilder::$r13::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::136
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::INVOKE::java.lang.StringBuilder::$r14::<java.lang.StringBuilder: java.lang.String toString()>::136
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::136
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::INVOKE::java.io.File::r2::<java.io.File: java.lang.String getCanonicalPath()>::140
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::INVOKE::java.lang.Throwable::r3::<java.lang.Throwable: void printStackTrace()>::145
+IN METHOD::<spec.harness.Context: java.lang.String getResourceDirFor(java.lang.Class)>::INVOKE::javax.xml.transform.TransformerException::r3::<javax.xml.transform.TransformerException: void printStackTrace()>::145

@@ -1,0 +1,14 @@
+IN METHOD::<spec.harness.results.LoopResult: void <init>()>::SPECIALINVOKE::<spec.harness.results.TestResult: void <init>()>::16
+IN METHOD::<spec.harness.results.LoopResult: void <init>()>::SPECIALINVOKE::<spec.harness.results.TestResult: void <init>()>::16
+IN METHOD::<spec.harness.results.LoopResult: void <init>()>::SPECIALINVOKE::<spec.harness.results.TestResult: void <init>()>::16
+IN METHOD::<spec.harness.results.LoopResult: void <init>()>::SPECIALINVOKE::<spec.harness.results.TestResult: void <init>()>::16
+IN METHOD::<spec.harness.results.LoopResult: void <init>()>::SPECIALINVOKE::<spec.harness.results.TestResult: void <init>()>::16
+IN METHOD::<spec.harness.results.LoopResult: void <init>()>::SPECIALINVOKE::<spec.harness.results.TestResult: void <init>()>::16
+IN METHOD::<spec.harness.results.LoopResult: void <init>()>::SPECIALINVOKE::<spec.harness.results.TestResult: void <init>()>::16
+IN METHOD::<spec.harness.results.LoopResult: void <init>()>::SPECIALINVOKE::<spec.harness.results.TestResult: void <init>()>::16
+IN METHOD::<spec.harness.results.LoopResult: void <init>()>::SPECIALINVOKE::<spec.harness.results.TestResult: void <init>()>::16
+IN METHOD::<spec.harness.results.LoopResult: void <init>()>::SPECIALINVOKE::<spec.harness.results.TestResult: void <init>()>::16
+IN METHOD::<spec.harness.results.LoopResult: void <init>()>::SPECIALINVOKE::<spec.harness.results.TestResult: void <init>()>::16
+IN METHOD::<spec.harness.results.LoopResult: void <init>()>::SPECIALINVOKE::<spec.harness.results.TestResult: void <init>()>::16
+IN METHOD::<spec.harness.results.LoopResult: void <init>()>::SPECIALINVOKE::<spec.harness.results.TestResult: void <init>()>::16
+IN METHOD::<spec.harness.results.LoopResult: void <init>()>::SPECIALINVOKE::<spec.harness.results.TestResult: void <init>()>::16

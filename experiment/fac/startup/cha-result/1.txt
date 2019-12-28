@@ -1,0 +1,3 @@
+IN METHOD::<spec.io.ValidityCheckOutputStream: void write(int)>::INVOKE::java.io.ByteArrayOutputStream::$r1::<java.io.ByteArrayOutputStream: void write(int)>::64
+IN METHOD::<spec.io.ValidityCheckOutputStream: void write(int)>::INVOKE::sun.net.www.http.PosterOutputStream::$r1::<sun.net.www.http.PosterOutputStream: void write(int)>::64
+IN METHOD::<spec.io.ValidityCheckOutputStream: void write(int)>::INVOKE::java.io.OutputStream::r0::<java.io.OutputStream: void flush()>::65

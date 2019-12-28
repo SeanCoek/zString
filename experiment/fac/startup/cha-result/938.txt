@@ -1,0 +1,17 @@
+IN METHOD::<spec.harness.ProgramRunner: int getNoBmHarnessThreads(spec.harness.results.BenchmarkResult)>::INVOKE::spec.harness.results.BenchmarkResult::r0::<spec.harness.results.BenchmarkResult: java.lang.String getBmType()>::561
+IN METHOD::<spec.harness.ProgramRunner: int getNoBmHarnessThreads(spec.harness.results.BenchmarkResult)>::INVOKE::java.lang.Object::$r1::<java.lang.Object: boolean equals(java.lang.Object)>::561
+IN METHOD::<spec.harness.ProgramRunner: int getNoBmHarnessThreads(spec.harness.results.BenchmarkResult)>::INVOKE::java.lang.String::$r1::<java.lang.String: boolean equals(java.lang.Object)>::561
+IN METHOD::<spec.harness.ProgramRunner: int getNoBmHarnessThreads(spec.harness.results.BenchmarkResult)>::INVOKE::spec.harness.results.BenchmarkResult::r0::<spec.harness.results.BenchmarkResult: int getNumberBmThreads()>::562
+IN METHOD::<spec.harness.ProgramRunner: int getNoBmHarnessThreads(spec.harness.results.BenchmarkResult)>::INVOKE::spec.harness.results.BenchmarkResult::r0::<spec.harness.results.BenchmarkResult: java.lang.String getBmType()>::563
+IN METHOD::<spec.harness.ProgramRunner: int getNoBmHarnessThreads(spec.harness.results.BenchmarkResult)>::INVOKE::java.lang.Object::$r2::<java.lang.Object: boolean equals(java.lang.Object)>::563
+IN METHOD::<spec.harness.ProgramRunner: int getNoBmHarnessThreads(spec.harness.results.BenchmarkResult)>::INVOKE::java.lang.String::$r2::<java.lang.String: boolean equals(java.lang.Object)>::563
+IN METHOD::<spec.harness.ProgramRunner: int getNoBmHarnessThreads(spec.harness.results.BenchmarkResult)>::INVOKE::spec.harness.results.BenchmarkResult::r0::<spec.harness.results.BenchmarkResult: java.lang.String getBmType()>::565
+IN METHOD::<spec.harness.ProgramRunner: int getNoBmHarnessThreads(spec.harness.results.BenchmarkResult)>::INVOKE::java.lang.Object::$r3::<java.lang.Object: boolean equals(java.lang.Object)>::565
+IN METHOD::<spec.harness.ProgramRunner: int getNoBmHarnessThreads(spec.harness.results.BenchmarkResult)>::INVOKE::java.lang.String::$r3::<java.lang.String: boolean equals(java.lang.Object)>::565
+IN METHOD::<spec.harness.ProgramRunner: int getNoBmHarnessThreads(spec.harness.results.BenchmarkResult)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::568
+IN METHOD::<spec.harness.ProgramRunner: int getNoBmHarnessThreads(spec.harness.results.BenchmarkResult)>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::568
+IN METHOD::<spec.harness.ProgramRunner: int getNoBmHarnessThreads(spec.harness.results.BenchmarkResult)>::INVOKE::spec.harness.results.BenchmarkResult::r0::<spec.harness.results.BenchmarkResult: java.lang.String getBmType()>::568
+IN METHOD::<spec.harness.ProgramRunner: int getNoBmHarnessThreads(spec.harness.results.BenchmarkResult)>::INVOKE::java.lang.StringBuilder::$r6::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::568
+IN METHOD::<spec.harness.ProgramRunner: int getNoBmHarnessThreads(spec.harness.results.BenchmarkResult)>::INVOKE::java.lang.Object::$r8::<java.lang.Object: java.lang.String toString()>::568
+IN METHOD::<spec.harness.ProgramRunner: int getNoBmHarnessThreads(spec.harness.results.BenchmarkResult)>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.String toString()>::568
+IN METHOD::<spec.harness.ProgramRunner: int getNoBmHarnessThreads(spec.harness.results.BenchmarkResult)>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String)>::568

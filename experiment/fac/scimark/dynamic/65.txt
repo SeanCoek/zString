@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: double normabs(double[],double[])>::STATICINVOKE::<java.lang.Math: double abs(double)>::38

@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.compress.Main: void <clinit>()>::SPECIALINVOKE::<spec.benchmarks.compress.Harness: void <init>()>::16

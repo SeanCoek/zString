@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.Configuration: java.util.Properties readProperties(java.lang.String)>::SPECIALINVOKE::<java.util.Properties: void <init>()>::325

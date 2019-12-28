@@ -1,0 +1,13 @@
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::INVOKE::java.lang.Object::r0::<java.lang.Object: boolean equals(java.lang.Object)>::197
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::INVOKE::java.lang.String::r0::<java.lang.String: boolean equals(java.lang.Object)>::197
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::199
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::INVOKE::java.io.PrintStream::$r9::<java.io.PrintStream: void println(java.lang.String)>::199
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::202
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::202
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::202
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r4::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::202
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::202
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r6::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::202
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::INVOKE::java.lang.Object::$r7::<java.lang.Object: java.lang.String toString()>::202
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.String toString()>::202
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::INVOKE::java.io.PrintStream::$r2::<java.io.PrintStream: void println(java.lang.String)>::202

@@ -1,0 +1,8 @@
+IN METHOD::<spec.benchmarks.check.LoopBounds: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::29
+IN METHOD::<spec.benchmarks.check.LoopBounds: void <init>()>::SPECIALINVOKE::<java.util.Vector: void <init>()>::30
+IN METHOD::<spec.benchmarks.check.LoopBounds: void <init>()>::STATICINVOKE::<java.lang.Integer: java.lang.Integer valueOf(int)>::34
+IN METHOD::<spec.benchmarks.check.LoopBounds: void <init>()>::INVOKE::java.util.Vector::$r2::void addElement(java.lang.Object)::34
+IN METHOD::<spec.benchmarks.check.LoopBounds: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::29
+IN METHOD::<spec.benchmarks.check.LoopBounds: void <init>()>::SPECIALINVOKE::<java.util.Vector: void <init>()>::30
+IN METHOD::<spec.benchmarks.check.LoopBounds: void <init>()>::STATICINVOKE::<java.lang.Integer: java.lang.Integer valueOf(int)>::34
+IN METHOD::<spec.benchmarks.check.LoopBounds: void <init>()>::INVOKE::java.util.Vector::$r2::void addElement(java.lang.Object)::34

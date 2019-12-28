@@ -1,0 +1,11 @@
+IN METHOD::<spec.harness.results.SuiteResult: void addJvmInfo(java.lang.String,java.lang.String)>::INVOKE::java.util.AbstractMap::$r3::<java.util.AbstractMap: java.lang.Object put(java.lang.Object,java.lang.Object)>::72
+IN METHOD::<spec.harness.results.SuiteResult: void addJvmInfo(java.lang.String,java.lang.String)>::INVOKE::java.util.HashMap::$r3::<java.util.HashMap: java.lang.Object put(java.lang.Object,java.lang.Object)>::72
+IN METHOD::<spec.harness.results.SuiteResult: void addJvmInfo(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::74
+IN METHOD::<spec.harness.results.SuiteResult: void addJvmInfo(java.lang.String,java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::74
+IN METHOD::<spec.harness.results.SuiteResult: void addJvmInfo(java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r6::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::74
+IN METHOD::<spec.harness.results.SuiteResult: void addJvmInfo(java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::74
+IN METHOD::<spec.harness.results.SuiteResult: void addJvmInfo(java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::74
+IN METHOD::<spec.harness.results.SuiteResult: void addJvmInfo(java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r9::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::74
+IN METHOD::<spec.harness.results.SuiteResult: void addJvmInfo(java.lang.String,java.lang.String)>::INVOKE::java.lang.Object::$r10::<java.lang.Object: java.lang.String toString()>::74
+IN METHOD::<spec.harness.results.SuiteResult: void addJvmInfo(java.lang.String,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r10::<java.lang.StringBuilder: java.lang.String toString()>::74
+IN METHOD::<spec.harness.results.SuiteResult: void addJvmInfo(java.lang.String,java.lang.String)>::INVOKE::java.io.PrintStream::$r5::<java.io.PrintStream: void println(java.lang.String)>::74

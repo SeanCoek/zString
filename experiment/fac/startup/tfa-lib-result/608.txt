@@ -1,0 +1,4 @@
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(java.lang.String,long,long)>::INVOKE::org.jfree.data.xy.XYSeries::$r10::<org.jfree.data.xy.XYSeries: void add(double,double)>::109
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(java.lang.String,long,long)>::INVOKE::any_subtype_of::java.lang.Object::$r10::<org.jfree.data.xy.XYSeries: void add(double,double)>::109
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(java.lang.String,long,long)>::SPECIALINVOKE::<org.jfree.data.xy.XYSeries: void <init>(java.lang.Comparable)>::111
+IN METHOD::<spec.reporter.BenchmarkChart: void addTimeInfo(java.lang.String,long,long)>::INVOKE::org.jfree.data.xy.XYSeries::r2::<org.jfree.data.xy.XYSeries: void add(double,double)>::112

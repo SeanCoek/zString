@@ -1,0 +1,8 @@
+IN METHOD::<spec.benchmarks.derby.CyclicReader: int read(java.lang.String[])>::INVOKE::java.io.Reader::$r2::<java.io.Reader: boolean ready()>::80
+IN METHOD::<spec.benchmarks.derby.CyclicReader: int read(java.lang.String[])>::INVOKE::java.io.BufferedReader::$r2::<java.io.BufferedReader: boolean ready()>::80
+IN METHOD::<spec.benchmarks.derby.CyclicReader: int read(java.lang.String[])>::INVOKE::java.io.BufferedReader::$r5::<java.io.BufferedReader: java.lang.String readLine()>::81
+IN METHOD::<spec.benchmarks.derby.CyclicReader: int read(java.lang.String[])>::INVOKE::spec.benchmarks.derby.CyclicReader::r0::<spec.benchmarks.derby.CyclicReader: void close()>::83
+IN METHOD::<spec.benchmarks.derby.CyclicReader: int read(java.lang.String[])>::SPECIALINVOKE::<spec.benchmarks.derby.CyclicReader: void init()>::84
+IN METHOD::<spec.benchmarks.derby.CyclicReader: int read(java.lang.String[])>::INVOKE::java.io.Reader::$r3::<java.io.Reader: boolean ready()>::85
+IN METHOD::<spec.benchmarks.derby.CyclicReader: int read(java.lang.String[])>::INVOKE::java.io.BufferedReader::$r3::<java.io.BufferedReader: boolean ready()>::85
+IN METHOD::<spec.benchmarks.derby.CyclicReader: int read(java.lang.String[])>::INVOKE::java.io.BufferedReader::$r4::<java.io.BufferedReader: java.lang.String readLine()>::86

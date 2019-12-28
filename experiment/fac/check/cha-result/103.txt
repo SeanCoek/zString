@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.check.Main: void harnessMain()>::INVOKE::spec.benchmarks.check.Main::r0::<spec.benchmarks.check.Main: long runBenchmark()>::107

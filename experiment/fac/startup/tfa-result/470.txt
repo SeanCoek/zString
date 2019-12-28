@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createTables(java.sql.Connection)>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void createAccountsTable(java.sql.Connection)>::336
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createTables(java.sql.Connection)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::338
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createTables(java.sql.Connection)>::INVOKE::java.lang.StringBuilder::$r1::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::338
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createTables(java.sql.Connection)>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::338
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createTables(java.sql.Connection)>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void createDurationsTable(java.lang.String,java.lang.String,java.sql.Connection)>::338

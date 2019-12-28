@@ -1,0 +1,14 @@
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getSrcFile(java.io.File)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::180
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getSrcFile(java.io.File)>::INVOKE::java.io.File::r0::java.lang.String getPath()::180
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getSrcFile(java.io.File)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::180
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getSrcFile(java.io.File)>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::180
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getSrcFile(java.io.File)>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::180
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getSrcFile(java.io.File)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.String toString()::180
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getSrcFile(java.io.File)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::180
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getSrcFile(java.io.File)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::180
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getSrcFile(java.io.File)>::INVOKE::java.io.File::r0::java.lang.String getPath()::180
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getSrcFile(java.io.File)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::180
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getSrcFile(java.io.File)>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.String)::180
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getSrcFile(java.io.File)>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::180
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getSrcFile(java.io.File)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.String toString()::180
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getSrcFile(java.io.File)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::180

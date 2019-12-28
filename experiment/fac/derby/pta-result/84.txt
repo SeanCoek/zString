@@ -1,0 +1,1 @@
+IN METHOD::<spec.reporter.PlainWriter: void <init>(java.lang.String)>::SPECIALINVOKE::<spec.reporter.Writer: void <init>(java.lang.String)>::20

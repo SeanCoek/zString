@@ -1,0 +1,7 @@
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testGC()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::1154
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testGC()>::STATICINVOKE::<java.lang.Runtime: java.lang.Runtime getRuntime()>::1157
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testGC()>::INVOKE::java.lang.Runtime::$r5::<java.lang.Runtime: void gc()>::1157
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testGC()>::INVOKE::java.lang.Object::r0::<java.lang.Object: java.lang.Class getClass()>::1160
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testGC()>::STATICINVOKE::<java.lang.Runtime: java.lang.Runtime getRuntime()>::1161
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testGC()>::INVOKE::java.lang.Runtime::$r10::<java.lang.Runtime: void gc()>::1161
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testGC()>::INVOKE::java.lang.Object::r0::<java.lang.Object: java.lang.Class getClass()>::1163

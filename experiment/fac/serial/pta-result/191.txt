@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.HTMLWriter: void <init>(java.lang.String)>::SPECIALINVOKE::<spec.reporter.Writer: void <init>(java.lang.String)>::33
+IN METHOD::<spec.reporter.HTMLWriter: void <init>(java.lang.String)>::STATICINVOKE::<spec.reporter.HTMLWriter: java.lang.String[] initIndents()>::19

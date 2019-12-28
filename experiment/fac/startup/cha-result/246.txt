@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.compress.OutputBuffer: void <init>(byte[])>::SPECIALINVOKE::<java.lang.Object: void <init>()>::116

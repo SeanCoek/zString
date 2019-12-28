@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void <clinit>()>::STATICINVOKE::<java.lang.Math: double pow(double,double)>::73
+IN METHOD::<spec.benchmarks.check.FloatingPointCheck: void <clinit>()>::STATICINVOKE::<java.lang.Math: double pow(double,double)>::76

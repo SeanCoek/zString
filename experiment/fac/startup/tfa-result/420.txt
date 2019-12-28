@@ -1,0 +1,15 @@
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void runTidy()>::SPECIALINVOKE::<java.io.FileInputStream: void <init>(java.lang.String)>::168
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void runTidy()>::SPECIALINVOKE::<java.io.FileOutputStream: void <init>(java.lang.String)>::169
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void runTidy()>::SPECIALINVOKE::<org.w3c.tidy.Tidy: void <init>()>::170
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void runTidy()>::INVOKE::org.w3c.tidy.Tidy::r2::<org.w3c.tidy.Tidy: void setQuiet(boolean)>::171
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void runTidy()>::INVOKE::org.w3c.tidy.Tidy::r2::<org.w3c.tidy.Tidy: void setShowWarnings(boolean)>::172
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void runTidy()>::INVOKE::org.w3c.tidy.Tidy::r2::<org.w3c.tidy.Tidy: void setDocType(java.lang.String)>::173
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void runTidy()>::INVOKE::org.w3c.tidy.Tidy::r2::<org.w3c.tidy.Tidy: void setXmlOut(boolean)>::174
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void runTidy()>::INVOKE::org.w3c.tidy.Tidy::r2::<org.w3c.tidy.Tidy: void setCharEncoding(int)>::175
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void runTidy()>::INVOKE::org.w3c.tidy.Tidy::r2::<org.w3c.tidy.Tidy: void setQuoteNbsp(boolean)>::176
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void runTidy()>::INVOKE::org.w3c.tidy.Tidy::r2::<org.w3c.tidy.Tidy: org.w3c.tidy.Node parse(java.io.InputStream,java.io.OutputStream)>::177
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void runTidy()>::INVOKE::java.io.FileInputStream::r19::<java.io.FileInputStream: void close()>::178
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void runTidy()>::INVOKE::java.io.FileOutputStream::r1::<java.io.FileOutputStream: void close()>::179
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void runTidy()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::182
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void runTidy()>::INVOKE::java.lang.StringBuilder::$r10::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::182
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void runTidy()>::SPECIALINVOKE::<spec.benchmarks.xml.transform.ExtOutputStream: java.lang.String getSendResultsMessage()>::183

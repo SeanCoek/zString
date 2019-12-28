@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: byte[] getSpec(byte[],byte[])>::STATICINVOKE::<java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>::386

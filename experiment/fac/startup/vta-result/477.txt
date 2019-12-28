@@ -1,0 +1,8 @@
+IN METHOD::<spec.benchmarks.derby.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.derby.Main: void configure()>::73
+IN METHOD::<spec.benchmarks.derby.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.derby.Main: int getThrNumber(int)>::79
+IN METHOD::<spec.benchmarks.derby.Main: void setupBenchmark()>::STATICINVOKE::<java.lang.Math: int max(int,int)>::80
+IN METHOD::<spec.benchmarks.derby.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.derby.Utils: void print(java.lang.String)>::93
+IN METHOD::<spec.benchmarks.derby.Main: void setupBenchmark()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::95
+IN METHOD::<spec.benchmarks.derby.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.derby.Utils: void print(java.lang.String)>::95
+IN METHOD::<spec.benchmarks.derby.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.derby.Utils: void initRates()>::98
+IN METHOD::<spec.benchmarks.derby.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void initDatabases()>::99

@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.BenchmarkRecord: void <init>(java.lang.String,int)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::53
+IN METHOD::<spec.reporter.BenchmarkRecord: void <init>(java.lang.String,int)>::SPECIALINVOKE::<java.util.ArrayList: void <init>()>::48

@@ -1,0 +1,9 @@
+IN METHOD::<spec.benchmarks.derby.Main: void tearDownBenchmark()>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void shutdownDerbySystem()>::104
+IN METHOD::<spec.benchmarks.derby.Main: void tearDownBenchmark()>::STATICINVOKE::<spec.benchmarks.derby.Utils: void releaseResources()>::105
+IN METHOD::<spec.benchmarks.derby.Main: void tearDownBenchmark()>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::108
+IN METHOD::<spec.benchmarks.derby.Main: void tearDownBenchmark()>::INVOKE::java.io.File::r0::<java.io.File: boolean exists()>::109
+IN METHOD::<spec.benchmarks.derby.Main: void tearDownBenchmark()>::INVOKE::java.io.File::r0::<java.io.File: boolean delete()>::110
+IN METHOD::<spec.benchmarks.derby.Main: void tearDownBenchmark()>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::113
+IN METHOD::<spec.benchmarks.derby.Main: void tearDownBenchmark()>::INVOKE::java.io.File::r1::<java.io.File: boolean exists()>::114
+IN METHOD::<spec.benchmarks.derby.Main: void tearDownBenchmark()>::INVOKE::java.io.File::r1::<java.io.File: boolean isDirectory()>::117
+IN METHOD::<spec.benchmarks.derby.Main: void tearDownBenchmark()>::STATICINVOKE::<spec.benchmarks.derby.Main: void deleteDirectory(java.io.File)>::115

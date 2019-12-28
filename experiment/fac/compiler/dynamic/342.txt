@@ -1,0 +1,16 @@
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::STATICINVOKE::<spec.benchmarks.compiler.Util: java.io.File getSrcFile(java.io.File)>::44
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::STATICINVOKE::<spec.benchmarks.compiler.Util: java.io.File getSrcDir(java.io.File,java.lang.String)>::45
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::STATICINVOKE::<spec.benchmarks.compiler.Util: java.io.File getZipFile(java.io.File)>::46
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::SPECIALINVOKE::<java.util.ArrayList: void <init>()>::48
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::SPECIALINVOKE::<java.io.FileWriter: void <init>(java.io.File)>::49
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::INVOKE::java.io.File::r4::java.lang.String getPath()::50
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::INVOKE::java.io.File::r1::java.lang.String getPath()::50
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::STATICINVOKE::<spec.benchmarks.compiler.Util: void unzip(java.lang.String,java.lang.String,java.util.ArrayList)>::50
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::INVOKE::java.util.ArrayList::r25::java.util.Iterator iterator()::52
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::INVOKE::java.lang.String::r26::boolean endsWith(java.lang.String)::53
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::INVOKE::java.lang.String::r26::boolean contains(java.lang.CharSequence)::53
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::INVOKE::java.lang.String::r26::boolean endsWith(java.lang.String)::55
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::INVOKE::java.io.FileWriter::r5::void write(java.lang.String)::62
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::STATICINVOKE::<spec.benchmarks.compiler.Util: java.lang.String linesep()>::63
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::INVOKE::java.io.FileWriter::r5::void write(java.lang.String)::63
+IN METHOD::<spec.benchmarks.compiler.compiler.Main: java.io.File getSrcFile(java.io.File,java.io.File)>::INVOKE::java.io.FileWriter::r5::void close()::66

@@ -1,0 +1,6 @@
+IN METHOD::<spec.harness.BenchmarkThread: boolean executeIteration()>::STATICINVOKE::<spec.harness.ProgramRunner: int getNoBmHarnessThreads(spec.harness.results.BenchmarkResult)>::74
+IN METHOD::<spec.harness.BenchmarkThread: boolean executeIteration()>::STATICINVOKE::<spec.harness.ProgramRunner: void interruptProgramRunner()>::94
+IN METHOD::<spec.harness.BenchmarkThread: boolean executeIteration()>::INVOKE::java.io.PrintStream::$r13::<java.io.PrintStream: void print(java.lang.String)>::101
+IN METHOD::<spec.harness.BenchmarkThread: boolean executeIteration()>::INVOKE::any_subtype_of::java.io.PrintStream::$r13::<java.io.PrintStream: void print(java.lang.String)>::101
+IN METHOD::<spec.harness.BenchmarkThread: boolean executeIteration()>::INVOKE::java.io.PrintStream::$r7::<java.io.PrintStream: void print(java.lang.String)>::141
+IN METHOD::<spec.harness.BenchmarkThread: boolean executeIteration()>::INVOKE::any_subtype_of::java.io.PrintStream::$r7::<java.io.PrintStream: void print(java.lang.String)>::141

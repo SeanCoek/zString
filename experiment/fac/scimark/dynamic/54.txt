@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.scimark.monte_carlo.MonteCarlo: void run()>::SPECIALINVOKE::<spec.benchmarks.scimark.utils.Random: void <init>(int)>::104
+IN METHOD::<spec.benchmarks.scimark.monte_carlo.MonteCarlo: void run()>::INVOKE::spec.benchmarks.scimark.monte_carlo.MonteCarlo::r0::double measureMonteCarlo(double,spec.benchmarks.scimark.utils.Random)::105

@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.compress.Harness$Source: void <init>(java.lang.String)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::83
+IN METHOD::<spec.benchmarks.compress.Harness$Source: void <init>(java.lang.String)>::STATICINVOKE::<spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>::84
+IN METHOD::<spec.benchmarks.compress.Harness$Source: void <init>(java.lang.String)>::STATICINVOKE::<java.lang.Math: int max(int,int)>::86
+IN METHOD::<spec.benchmarks.compress.Harness$Source: void <init>(java.lang.String)>::SPECIALINVOKE::<java.util.zip.CRC32: void <init>()>::87

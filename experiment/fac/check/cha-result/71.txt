@@ -1,0 +1,9 @@
+IN METHOD::<spec.benchmarks.check.PepTest: void printPrimes()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::998
+IN METHOD::<spec.benchmarks.check.PepTest: void printPrimes()>::INVOKE::java.io.PrintStream::$r1::<java.io.PrintStream: void print(java.lang.String)>::998
+IN METHOD::<spec.benchmarks.check.PepTest: void printPrimes()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: boolean isPrime(int)>::1000
+IN METHOD::<spec.benchmarks.check.PepTest: void printPrimes()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::1001
+IN METHOD::<spec.benchmarks.check.PepTest: void printPrimes()>::INVOKE::java.io.PrintStream::$r3::<java.io.PrintStream: void print(int)>::1001
+IN METHOD::<spec.benchmarks.check.PepTest: void printPrimes()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::1002
+IN METHOD::<spec.benchmarks.check.PepTest: void printPrimes()>::INVOKE::java.io.PrintStream::$r4::<java.io.PrintStream: void print(java.lang.String)>::1002
+IN METHOD::<spec.benchmarks.check.PepTest: void printPrimes()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::1005
+IN METHOD::<spec.benchmarks.check.PepTest: void printPrimes()>::INVOKE::java.io.PrintStream::$r2::<java.io.PrintStream: void println(java.lang.String)>::1005

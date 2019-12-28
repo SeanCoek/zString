@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.scimark.monte_carlo.MonteCarlo: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::45

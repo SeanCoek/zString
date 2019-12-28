@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.Launch: java.lang.String createReport(java.lang.String[])>::STATICINVOKE::<spec.reporter.Reporter: java.lang.String main2(java.lang.String[])>::307

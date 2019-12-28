@@ -1,0 +1,9 @@
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void reset()>::SPECIALINVOKE::<spec.benchmarks.xml.transform.BaseOutputStream: void reset()>::248
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void reset()>::INVOKE::java.io.OutputStream::$r5::<java.io.OutputStream: void flush()>::251
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void reset()>::INVOKE::java.io.OutputStream::$r6::<java.io.OutputStream: void close()>::252
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void reset()>::INVOKE::java.net.SocketOutputStream::$r6::<java.net.SocketOutputStream: void close()>::252
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void reset()>::INVOKE::java.io.FileOutputStream::$r6::<java.io.FileOutputStream: void close()>::252
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void reset()>::INVOKE::java.io.OutputStream::$r4::<java.io.OutputStream: void close()>::256
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void reset()>::INVOKE::java.net.SocketOutputStream::$r4::<java.net.SocketOutputStream: void close()>::256
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void reset()>::INVOKE::java.io.FileOutputStream::$r4::<java.io.FileOutputStream: void close()>::256
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void reset()>::INVOKE::java.lang.Throwable::r1::<java.lang.Throwable: void printStackTrace()>::259

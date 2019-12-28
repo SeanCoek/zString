@@ -1,0 +1,3 @@
+IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.String readMeter()>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String,java.lang.Throwable)>::109
+IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.String readMeter()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::113
+IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.String readMeter()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::113

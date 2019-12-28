@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.Boolean sensorCompliant()>::INVOKE::java.lang.String::$r2::<java.lang.String: boolean equals(java.lang.Object)>::189
+IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.Boolean sensorCompliant()>::STATICINVOKE::<java.lang.Boolean: java.lang.Boolean valueOf(boolean)>::189

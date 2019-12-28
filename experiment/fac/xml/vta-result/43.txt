@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: java.lang.String getSendResultsMessage()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::289

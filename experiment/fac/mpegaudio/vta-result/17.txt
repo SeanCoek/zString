@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: void run(int)>::SPECIALINVOKE::<spec.benchmarks.mpegaudio.Harness: java.lang.String getName(int)>::38
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: void run(int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::41

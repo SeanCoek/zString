@@ -1,0 +1,192 @@
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.io.ValidityCheckOutputStream: java.lang.String getValidityFileName(java.lang.String)>::98
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.File::$r8::boolean exists()::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::spec.io.FileCache::$r11::java.io.ByteArrayInputStream getStream(java.lang.String)::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.ByteArrayOutputStream::$r16::byte[] toByteArray()::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.ByteArrayInputStream: void <init>(byte[])>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::java.lang.String readLine()::110
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::java.lang.String readLine()::111
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.lang.String::r5::boolean equals(java.lang.Object)::129
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::void close()::131
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::void close()::132
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.io.ValidityCheckOutputStream: java.lang.String getValidityFileName(java.lang.String)>::98
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.File::$r8::boolean exists()::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::spec.io.FileCache::$r11::java.io.ByteArrayInputStream getStream(java.lang.String)::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.ByteArrayOutputStream::$r16::byte[] toByteArray()::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.ByteArrayInputStream: void <init>(byte[])>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::java.lang.String readLine()::110
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::java.lang.String readLine()::111
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.lang.String::r5::boolean equals(java.lang.Object)::129
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::void close()::131
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::void close()::132
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.io.ValidityCheckOutputStream: java.lang.String getValidityFileName(java.lang.String)>::98
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.File::$r8::boolean exists()::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::spec.io.FileCache::$r11::java.io.ByteArrayInputStream getStream(java.lang.String)::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.ByteArrayOutputStream::$r16::byte[] toByteArray()::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.ByteArrayInputStream: void <init>(byte[])>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::java.lang.String readLine()::110
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::java.lang.String readLine()::111
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.lang.String::r5::boolean equals(java.lang.Object)::129
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::void close()::131
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::void close()::132
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.io.ValidityCheckOutputStream: java.lang.String getValidityFileName(java.lang.String)>::98
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.File::$r8::boolean exists()::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::spec.io.FileCache::$r11::java.io.ByteArrayInputStream getStream(java.lang.String)::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.ByteArrayOutputStream::$r16::byte[] toByteArray()::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.ByteArrayInputStream: void <init>(byte[])>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::java.lang.String readLine()::110
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::java.lang.String readLine()::111
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.lang.String::r5::boolean equals(java.lang.Object)::129
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::void close()::131
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::void close()::132
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.io.ValidityCheckOutputStream: java.lang.String getValidityFileName(java.lang.String)>::98
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.File::$r8::boolean exists()::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::spec.io.FileCache::$r11::java.io.ByteArrayInputStream getStream(java.lang.String)::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.ByteArrayOutputStream::$r16::byte[] toByteArray()::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.ByteArrayInputStream: void <init>(byte[])>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::java.lang.String readLine()::110
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::java.lang.String readLine()::111
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.lang.String::r5::boolean equals(java.lang.Object)::129
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::void close()::131
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::void close()::132
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.io.ValidityCheckOutputStream: java.lang.String getValidityFileName(java.lang.String)>::98
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.File::$r8::boolean exists()::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::spec.io.FileCache::$r11::java.io.ByteArrayInputStream getStream(java.lang.String)::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.ByteArrayOutputStream::$r16::byte[] toByteArray()::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.ByteArrayInputStream: void <init>(byte[])>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::java.lang.String readLine()::110
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::java.lang.String readLine()::111
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.lang.String::r5::boolean equals(java.lang.Object)::129
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::void close()::131
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::void close()::132
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.io.ValidityCheckOutputStream: java.lang.String getValidityFileName(java.lang.String)>::98
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.File::$r8::boolean exists()::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::spec.io.FileCache::$r11::java.io.ByteArrayInputStream getStream(java.lang.String)::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.ByteArrayOutputStream::$r16::byte[] toByteArray()::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.ByteArrayInputStream: void <init>(byte[])>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::java.lang.String readLine()::110
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::java.lang.String readLine()::111
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.lang.String::r5::boolean equals(java.lang.Object)::129
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::void close()::131
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::void close()::132
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.io.ValidityCheckOutputStream: java.lang.String getValidityFileName(java.lang.String)>::98
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.File::$r8::boolean exists()::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::spec.io.FileCache::$r11::java.io.ByteArrayInputStream getStream(java.lang.String)::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.ByteArrayOutputStream::$r16::byte[] toByteArray()::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.ByteArrayInputStream: void <init>(byte[])>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::java.lang.String readLine()::110
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::java.lang.String readLine()::111
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.lang.String::r5::boolean equals(java.lang.Object)::129
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::void close()::131
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::void close()::132
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.io.ValidityCheckOutputStream: java.lang.String getValidityFileName(java.lang.String)>::98
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.File::$r8::boolean exists()::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::spec.io.FileCache::$r11::java.io.ByteArrayInputStream getStream(java.lang.String)::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.ByteArrayOutputStream::$r16::byte[] toByteArray()::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.ByteArrayInputStream: void <init>(byte[])>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::java.lang.String readLine()::110
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::java.lang.String readLine()::111
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.lang.String::r5::boolean equals(java.lang.Object)::129
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::void close()::131
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::void close()::132
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.io.ValidityCheckOutputStream: java.lang.String getValidityFileName(java.lang.String)>::98
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.File::$r8::boolean exists()::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::spec.io.FileCache::$r11::java.io.ByteArrayInputStream getStream(java.lang.String)::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.ByteArrayOutputStream::$r16::byte[] toByteArray()::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.ByteArrayInputStream: void <init>(byte[])>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::java.lang.String readLine()::110
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::java.lang.String readLine()::111
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.lang.String::r5::boolean equals(java.lang.Object)::129
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::void close()::131
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::void close()::132
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.io.ValidityCheckOutputStream: java.lang.String getValidityFileName(java.lang.String)>::98
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.File::$r8::boolean exists()::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::spec.io.FileCache::$r11::java.io.ByteArrayInputStream getStream(java.lang.String)::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.ByteArrayOutputStream::$r16::byte[] toByteArray()::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.ByteArrayInputStream: void <init>(byte[])>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::java.lang.String readLine()::110
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::java.lang.String readLine()::111
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.lang.String::r5::boolean equals(java.lang.Object)::129
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::void close()::131
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::void close()::132
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.io.ValidityCheckOutputStream: java.lang.String getValidityFileName(java.lang.String)>::98
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.File::$r8::boolean exists()::100
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::spec.io.FileCache::$r11::java.io.ByteArrayInputStream getStream(java.lang.String)::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::105
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.ByteArrayOutputStream::$r16::byte[] toByteArray()::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.ByteArrayInputStream: void <init>(byte[])>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.InputStreamReader: void <init>(java.io.InputStream)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::SPECIALINVOKE::<java.io.BufferedReader: void <init>(java.io.Reader)>::106
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::java.lang.String readLine()::110
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::java.lang.String readLine()::111
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.lang.String::r5::boolean equals(java.lang.Object)::129
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r3::void close()::131
+IN METHOD::<spec.io.ValidityCheckOutputStream: void validityCheck2(spec.harness.results.LoopResult)>::INVOKE::java.io.BufferedReader::r4::void close()::132

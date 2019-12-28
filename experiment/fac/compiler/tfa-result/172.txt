@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.HTMLWriter: java.lang.String[] initIndents()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::25
+IN METHOD::<spec.reporter.HTMLWriter: java.lang.String[] initIndents()>::INVOKE::java.lang.StringBuilder::$r1::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::25

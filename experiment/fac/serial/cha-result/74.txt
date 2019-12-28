@@ -1,0 +1,12 @@
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: java.lang.String toString()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::36
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: java.lang.String toString()>::INVOKE::java.lang.StringBuilder::$r1::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::36
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: java.lang.String toString()>::INVOKE::java.lang.Throwable::$r3::<java.lang.Throwable: java.lang.String getMessage()>::36
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: java.lang.String toString()>::INVOKE::java.io.InvalidClassException::$r3::<java.io.InvalidClassException: java.lang.String getMessage()>::36
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: java.lang.String toString()>::INVOKE::java.io.WriteAbortedException::$r3::<java.io.WriteAbortedException: java.lang.String getMessage()>::36
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: java.lang.String toString()>::INVOKE::java.nio.charset.MalformedInputException::$r3::<java.nio.charset.MalformedInputException: java.lang.String getMessage()>::36
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: java.lang.String toString()>::INVOKE::java.nio.charset.UnmappableCharacterException::$r3::<java.nio.charset.UnmappableCharacterException: java.lang.String getMessage()>::36
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: java.lang.String toString()>::INVOKE::java.nio.file.FileSystemException::$r3::<java.nio.file.FileSystemException: java.lang.String getMessage()>::36
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: java.lang.String toString()>::INVOKE::java.lang.StringBuilder::$r2::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::36
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: java.lang.String toString()>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::36
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: java.lang.String toString()>::INVOKE::java.lang.Object::$r6::<java.lang.Object: java.lang.String toString()>::36
+IN METHOD::<spec.benchmarks.serial.data.TestExceptionReference: java.lang.String toString()>::INVOKE::java.lang.StringBuilder::$r6::<java.lang.StringBuilder: java.lang.String toString()>::36

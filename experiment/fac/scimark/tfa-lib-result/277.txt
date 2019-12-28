@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void <init>()>::SPECIALINVOKE::<spec.harness.analyzer.AnalyzerBase: void <init>()>::77

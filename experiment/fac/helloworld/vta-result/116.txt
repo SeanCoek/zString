@@ -1,0 +1,3 @@
+IN METHOD::<spec.reporter.BenchmarkChart: void updateColors()>::SPECIALINVOKE::<java.awt.Color: void <init>(int,int,int)>::186
+IN METHOD::<spec.reporter.BenchmarkChart: void updateColors()>::INVOKE::java.util.Hashtable::$r19::<java.util.Hashtable: int size()>::187
+IN METHOD::<spec.reporter.BenchmarkChart: void updateColors()>::INVOKE::java.awt.Color::$r21::<java.awt.Color: java.awt.Color darker()>::189

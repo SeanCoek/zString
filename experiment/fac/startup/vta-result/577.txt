@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.Utils: boolean isScimarkLarge(spec.reporter.BenchmarkRecord)>::INVOKE::java.lang.String::$r1::<java.lang.String: boolean startsWith(java.lang.String)>::302
+IN METHOD::<spec.reporter.Utils: boolean isScimarkLarge(spec.reporter.BenchmarkRecord)>::INVOKE::java.lang.String::$r2::<java.lang.String: boolean endsWith(java.lang.String)>::302

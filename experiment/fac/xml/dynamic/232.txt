@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: java.lang.String getResult()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::50
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: java.lang.String getResult()>::INVOKE::java.lang.StringBuilder::$r1::java.lang.StringBuilder append(java.lang.String)::50
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: java.lang.String getResult()>::INVOKE::spec.benchmarks.xml.transform.BaseOutputStream::r0::long getCRC()::50
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: java.lang.String getResult()>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(long)::50
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: java.lang.String getResult()>::INVOKE::java.lang.StringBuilder::$r3::java.lang.String toString()::50

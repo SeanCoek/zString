@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.check.Main: boolean checkCompilerVersion()>::STATICINVOKE::<com.sun.tools.javac.main.JavaCompiler: java.lang.String version()>::103

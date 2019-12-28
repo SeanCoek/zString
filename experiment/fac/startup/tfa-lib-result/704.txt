@@ -1,0 +1,8 @@
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void run()>::INVOKE::java.lang.Object::$r2::<java.lang.Object: void notify()>::41
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void run()>::SPECIALINVOKE::<spec.harness.analyzer.AnalyzersRunner: boolean isDone()>::60
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void run()>::SPECIALINVOKE::<spec.harness.analyzer.AnalyzersRunner: boolean executeAnalyzers()>::47
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void run()>::STATICINVOKE::<java.lang.Thread: void sleep(long)>::48
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void run()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::52
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void run()>::INVOKE::java.io.PrintStream::$r5::<java.io.PrintStream: void println(java.lang.String)>::52
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void run()>::INVOKE::any_subtype_of::java.lang.Object::$r5::<java.io.PrintStream: void println(java.lang.String)>::52
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void run()>::SPECIALINVOKE::<spec.harness.analyzer.AnalyzersRunner: boolean executeAnalyzers()>::58

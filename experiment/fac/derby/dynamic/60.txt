@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.derby.CyclicReader: int read(byte[],int)>::INVOKE::java.io.BufferedInputStream::$r2::int read(byte[],int,int)::65
+IN METHOD::<spec.benchmarks.derby.CyclicReader: int read(byte[],int)>::INVOKE::spec.benchmarks.derby.CyclicReader::r0::void close()::67
+IN METHOD::<spec.benchmarks.derby.CyclicReader: int read(byte[],int)>::SPECIALINVOKE::<spec.benchmarks.derby.CyclicReader: void init()>::68
+IN METHOD::<spec.benchmarks.derby.CyclicReader: int read(byte[],int)>::INVOKE::java.io.BufferedInputStream::$r3::int read(byte[],int,int)::69

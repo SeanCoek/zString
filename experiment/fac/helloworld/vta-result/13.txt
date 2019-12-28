@@ -1,0 +1,2 @@
+IN METHOD::<spec.io.FileCache: byte[] getByteArray(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::67
+IN METHOD::<spec.io.FileCache: byte[] getByteArray(java.lang.String)>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String)>::67

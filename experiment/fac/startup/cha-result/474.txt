@@ -1,0 +1,7 @@
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setupTransformers()>::STATICINVOKE::<javax.xml.transform.TransformerFactory: javax.xml.transform.TransformerFactory newInstance()>::175
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setupTransformers()>::INVOKE::spec.io.FileCache$CachedFile::$r3::<spec.io.FileCache$CachedFile: javax.xml.transform.stream.StreamSource asNewStreamSource()>::177
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setupTransformers()>::INVOKE::com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl::r10::<com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl: javax.xml.transform.Templates newTemplates(javax.xml.transform.Source)>::177
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setupTransformers()>::INVOKE::javax.xml.transform.TransformerFactory::r10::<javax.xml.transform.TransformerFactory: javax.xml.transform.Templates newTemplates(javax.xml.transform.Source)>::177
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setupTransformers()>::INVOKE::javax.xml.transform.TransformerException::r11::<javax.xml.transform.TransformerException: void printStackTrace()>::184
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setupTransformers()>::INVOKE::java.lang.Throwable::r11::<java.lang.Throwable: void printStackTrace()>::184
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setupTransformers()>::INVOKE::java.lang.Throwable::r12::<java.lang.Throwable: void printStackTrace()>::186

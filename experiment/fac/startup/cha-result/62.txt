@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.scimark.lu.LU: double[] solve(double[])>::STATICINVOKE::<spec.benchmarks.scimark.lu.LU: double[] new_copy(double[])>::155
+IN METHOD::<spec.benchmarks.scimark.lu.LU: double[] solve(double[])>::INVOKE::spec.benchmarks.scimark.lu.LU::r0::<spec.benchmarks.scimark.lu.LU: void solve(double[][],int[],double[])>::157

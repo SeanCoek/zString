@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void <init>(spec.benchmarks.derby.DerbyHarness,int)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::40
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void <init>(spec.benchmarks.derby.DerbyHarness,int)>::STATICINVOKE::<spec.benchmarks.derby.Utils: java.math.BigDecimal[] initResultsArray(java.math.BigDecimal[])>::28
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void <init>(spec.benchmarks.derby.DerbyHarness,int)>::STATICINVOKE::<spec.benchmarks.derby.Utils: java.math.BigDecimal[] initResultsArray(java.math.BigDecimal[])>::32
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void <init>(spec.benchmarks.derby.DerbyHarness,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::35
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void <init>(spec.benchmarks.derby.DerbyHarness,int)>::SPECIALINVOKE::<java.math.BigDecimal: void <init>(long)>::36
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: void <init>(spec.benchmarks.derby.DerbyHarness,int)>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: java.sql.Connection getNestedConnection(int)>::41

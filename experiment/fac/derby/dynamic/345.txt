@@ -1,0 +1,10 @@
+IN METHOD::<spec.harness.BenchmarkThread: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::33
+IN METHOD::<spec.harness.BenchmarkThread: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::33
+IN METHOD::<spec.harness.BenchmarkThread: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.harness.results.BenchmarkResult::r1::java.lang.String getLogicalName()::33
+IN METHOD::<spec.harness.BenchmarkThread: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::33
+IN METHOD::<spec.harness.BenchmarkThread: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r5::java.lang.StringBuilder append(java.lang.String)::33
+IN METHOD::<spec.harness.BenchmarkThread: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(int)::33
+IN METHOD::<spec.harness.BenchmarkThread: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r7::java.lang.String toString()::33
+IN METHOD::<spec.harness.BenchmarkThread: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.Thread: void <init>(java.lang.String)>::33
+IN METHOD::<spec.harness.BenchmarkThread: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.harness.results.BenchmarkResult::r1::java.lang.String getLogicalName()::38
+IN METHOD::<spec.harness.BenchmarkThread: void <init>(spec.harness.results.BenchmarkResult,int)>::STATICINVOKE::<spec.harness.Util: boolean getBoolProperty(java.lang.String,java.lang.String)>::38

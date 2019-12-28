@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.scimark.sor.SOR: double measureSOR(int,double,spec.benchmarks.scimark.utils.Random)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::73
+IN METHOD::<spec.benchmarks.scimark.sor.SOR: double measureSOR(int,double,spec.benchmarks.scimark.utils.Random)>::STATICINVOKE::<spec.benchmarks.scimark.utils.kernel: double[][] RandomizeMatrix(double[][],spec.benchmarks.scimark.utils.Random)>::77
+IN METHOD::<spec.benchmarks.scimark.sor.SOR: double measureSOR(int,double,spec.benchmarks.scimark.utils.Random)>::SPECIALINVOKE::<spec.benchmarks.scimark.utils.Stopwatch: void <init>()>::79
+IN METHOD::<spec.benchmarks.scimark.sor.SOR: double measureSOR(int,double,spec.benchmarks.scimark.utils.Random)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::92
+IN METHOD::<spec.benchmarks.scimark.sor.SOR: double measureSOR(int,double,spec.benchmarks.scimark.utils.Random)>::STATICINVOKE::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::92

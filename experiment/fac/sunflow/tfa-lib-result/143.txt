@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.HTMLWriter: void endTable(boolean)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putTBODY(boolean)>::270
+IN METHOD::<spec.reporter.HTMLWriter: void endTable(boolean)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putTABLE(boolean,java.lang.String)>::272

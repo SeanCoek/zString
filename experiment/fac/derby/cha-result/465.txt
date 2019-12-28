@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.ProgramRunner: void interruptProgramRunner()>::INVOKE::java.lang.Thread::$r5::<java.lang.Thread: void interrupt()>::591

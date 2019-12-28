@@ -1,0 +1,10 @@
+IN METHOD::<spec.benchmarks.compiler.Compiler: void compile(int)>::SPECIALINVOKE::<com.sun.tools.javac.util.Context: void <init>()>::29
+IN METHOD::<spec.benchmarks.compiler.Compiler: void compile(int)>::STATICINVOKE::<spec.benchmarks.compiler.SpecFileManager: void preRegister(com.sun.tools.javac.util.Context,spec.benchmarks.compiler.Compiler)>::30
+IN METHOD::<spec.benchmarks.compiler.Compiler: void compile(int)>::SPECIALINVOKE::<com.sun.tools.javac.main.Main: void <init>(java.lang.String)>::31
+IN METHOD::<spec.benchmarks.compiler.Compiler: void compile(int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::34
+IN METHOD::<spec.benchmarks.compiler.Compiler: void compile(int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::34
+IN METHOD::<spec.benchmarks.compiler.Compiler: void compile(int)>::STATICINVOKE::<java.lang.Integer: java.lang.String toString(int)>::34
+IN METHOD::<spec.benchmarks.compiler.Compiler: void compile(int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::43
+IN METHOD::<spec.benchmarks.compiler.Compiler: void compile(int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::43
+IN METHOD::<spec.benchmarks.compiler.Compiler: void compile(int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::48
+IN METHOD::<spec.benchmarks.compiler.Compiler: void compile(int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::48

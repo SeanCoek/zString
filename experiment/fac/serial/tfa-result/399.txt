@@ -1,0 +1,4 @@
+IN METHOD::<spec.harness.results.SuiteResult: void addSwInfo(java.lang.String,java.util.Properties,java.lang.String)>::INVOKE::java.util.Properties::r2::<java.util.Properties: java.lang.String getProperty(java.lang.String,java.lang.String)>::100
+IN METHOD::<spec.harness.results.SuiteResult: void addSwInfo(java.lang.String,java.util.Properties,java.lang.String)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::105
+IN METHOD::<spec.harness.results.SuiteResult: void addSwInfo(java.lang.String,java.util.Properties,java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::105
+IN METHOD::<spec.harness.results.SuiteResult: void addSwInfo(java.lang.String,java.util.Properties,java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::105

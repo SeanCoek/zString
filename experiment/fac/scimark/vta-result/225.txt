@@ -1,0 +1,10 @@
+IN METHOD::<spec.reporter.HTMLWriter: void startReport()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putString(java.lang.String)>::378
+IN METHOD::<spec.reporter.HTMLWriter: void startReport()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void incIndent()>::379
+IN METHOD::<spec.reporter.HTMLWriter: void startReport()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putString(java.lang.String)>::380
+IN METHOD::<spec.reporter.HTMLWriter: void startReport()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void incIndent()>::381
+IN METHOD::<spec.reporter.HTMLWriter: void startReport()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putString(java.lang.String)>::382
+IN METHOD::<spec.reporter.HTMLWriter: void startReport()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putString(java.lang.String)>::383
+IN METHOD::<spec.reporter.HTMLWriter: void startReport()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void decIndent()>::384
+IN METHOD::<spec.reporter.HTMLWriter: void startReport()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putString(java.lang.String)>::385
+IN METHOD::<spec.reporter.HTMLWriter: void startReport()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putString(java.lang.String)>::386
+IN METHOD::<spec.reporter.HTMLWriter: void startReport()>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void incIndent()>::387

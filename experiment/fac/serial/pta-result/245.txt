@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.SpecJVMBenchmarkBase: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.harness.BenchmarkThread: void <init>(spec.harness.results.BenchmarkResult,int)>::45

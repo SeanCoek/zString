@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.helloworld.Main: void harnessMain()>::STATICINVOKE::<spec.benchmarks.helloworld.Main: void runBenchmark()>::33

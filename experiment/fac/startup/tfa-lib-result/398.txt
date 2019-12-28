@@ -1,0 +1,16 @@
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::STATICINVOKE::<spec.benchmarks.serial.Utils: java.util.BitSet createBitSet()>::75
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::SPECIALINVOKE::<java.io.ObjectOutputStream: void <init>(java.io.OutputStream)>::77
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::java.io.ObjectOutputStream::r2::<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>::80
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::java.io.ObjectOutputStream::r2::<java.io.ObjectOutputStream: void flush()>::82
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::java.io.ObjectOutputStream::r2::<java.io.ObjectOutputStream: void reset()>::83
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::SPECIALINVOKE::<java.io.ByteArrayInputStream: void <init>(byte[],int,int)>::86
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::SPECIALINVOKE::<java.io.ObjectInputStream: void <init>(java.io.InputStream)>::87
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::java.io.ObjectInputStream::r20::<java.io.ObjectInputStream: java.lang.Object readObject()>::90
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::java.util.BitSet::r1::<java.util.BitSet: boolean get(int)>::92
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::java.lang.Object::r3::<java.lang.Object: boolean equals(java.lang.Object)>::89
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::any_subtype_of::java.lang.Object::r3::<java.lang.Object: boolean equals(java.lang.Object)>::89
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::java.util.BitSet::r1::<java.util.BitSet: void set(int,boolean)>::92
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::java.io.ObjectOutputStream::r2::<java.io.ObjectOutputStream: void close()>::97
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::INVOKE::java.io.ObjectInputStream::r20::<java.io.ObjectInputStream: void close()>::98
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::99
+IN METHOD::<spec.benchmarks.serial.Main: void serialize()>::STATICINVOKE::<spec.benchmarks.serial.Utils: void printResult(java.io.PrintStream,java.util.BitSet)>::99

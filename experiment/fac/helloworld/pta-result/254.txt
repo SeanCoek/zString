@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.analyzer.PowerMeter: void endSocConnection()>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String,java.lang.Throwable)>::129

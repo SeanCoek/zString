@@ -1,0 +1,5 @@
+IN METHOD::<spec.reporter.BenchmarkChart: void setMemoryAxis()>::SPECIALINVOKE::<org.jfree.chart.axis.NumberAxis: void <init>(java.lang.String)>::145
+IN METHOD::<spec.reporter.BenchmarkChart: void setMemoryAxis()>::SPECIALINVOKE::<org.jfree.data.xy.XYSeriesCollection: void <init>()>::147
+IN METHOD::<spec.reporter.BenchmarkChart: void setMemoryAxis()>::SPECIALINVOKE::<org.jfree.chart.renderer.xy.XYAreaRenderer: void <init>()>::152
+IN METHOD::<spec.reporter.BenchmarkChart: void setMemoryAxis()>::SPECIALINVOKE::<java.awt.Color: void <init>(int,int,int)>::154
+IN METHOD::<spec.reporter.BenchmarkChart: void setMemoryAxis()>::SPECIALINVOKE::<java.awt.Color: void <init>(int,int,int)>::155

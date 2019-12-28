@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.compiler.Util: boolean copyFile(java.lang.String,java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::101
+IN METHOD::<spec.benchmarks.compiler.Util: boolean copyFile(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.benchmarks.compiler.Util: boolean copyFile(java.io.File,java.io.File)>::101

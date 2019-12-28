@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.serial.data.TestParent: java.lang.String toString()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::172
+IN METHOD::<spec.benchmarks.serial.data.TestParent: java.lang.String toString()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::184
+IN METHOD::<spec.benchmarks.serial.data.TestParent: java.lang.String toString()>::STATICINVOKE::<java.lang.System: int identityHashCode(java.lang.Object)>::184

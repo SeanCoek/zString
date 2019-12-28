@@ -1,0 +1,6 @@
+IN METHOD::<spec.reporter.HTMLWriter: void insertRecord(java.lang.String,java.lang.String)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void startRecord()>::95
+IN METHOD::<spec.reporter.HTMLWriter: void insertRecord(java.lang.String,java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::96
+IN METHOD::<spec.reporter.HTMLWriter: void insertRecord(java.lang.String,java.lang.String)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putString(java.lang.String)>::96
+IN METHOD::<spec.reporter.HTMLWriter: void insertRecord(java.lang.String,java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::97
+IN METHOD::<spec.reporter.HTMLWriter: void insertRecord(java.lang.String,java.lang.String)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void putString(java.lang.String)>::97
+IN METHOD::<spec.reporter.HTMLWriter: void insertRecord(java.lang.String,java.lang.String)>::SPECIALINVOKE::<spec.reporter.HTMLWriter: void endRecord()>::98

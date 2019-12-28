@@ -1,0 +1,14 @@
+IN METHOD::<spec.harness.results.LoopResult: boolean isValid()>::INVOKE::spec.harness.results.LoopResult::r0::boolean hasErrors()::78
+IN METHOD::<spec.harness.results.LoopResult: boolean isValid()>::INVOKE::spec.harness.results.LoopResult::r0::boolean hasErrors()::78
+IN METHOD::<spec.harness.results.LoopResult: boolean isValid()>::INVOKE::spec.harness.results.LoopResult::r0::boolean hasErrors()::78
+IN METHOD::<spec.harness.results.LoopResult: boolean isValid()>::INVOKE::spec.harness.results.LoopResult::r0::boolean hasErrors()::78
+IN METHOD::<spec.harness.results.LoopResult: boolean isValid()>::INVOKE::spec.harness.results.LoopResult::r0::boolean hasErrors()::78
+IN METHOD::<spec.harness.results.LoopResult: boolean isValid()>::INVOKE::spec.harness.results.LoopResult::r0::boolean hasErrors()::78
+IN METHOD::<spec.harness.results.LoopResult: boolean isValid()>::INVOKE::spec.harness.results.LoopResult::r0::boolean hasErrors()::78
+IN METHOD::<spec.harness.results.LoopResult: boolean isValid()>::INVOKE::spec.harness.results.LoopResult::r0::boolean hasErrors()::78
+IN METHOD::<spec.harness.results.LoopResult: boolean isValid()>::INVOKE::spec.harness.results.LoopResult::r0::boolean hasErrors()::78
+IN METHOD::<spec.harness.results.LoopResult: boolean isValid()>::INVOKE::spec.harness.results.LoopResult::r0::boolean hasErrors()::78
+IN METHOD::<spec.harness.results.LoopResult: boolean isValid()>::INVOKE::spec.harness.results.LoopResult::r0::boolean hasErrors()::78
+IN METHOD::<spec.harness.results.LoopResult: boolean isValid()>::INVOKE::spec.harness.results.LoopResult::r0::boolean hasErrors()::78
+IN METHOD::<spec.harness.results.LoopResult: boolean isValid()>::INVOKE::spec.harness.results.LoopResult::r0::boolean hasErrors()::78
+IN METHOD::<spec.harness.results.LoopResult: boolean isValid()>::INVOKE::spec.harness.results.LoopResult::r0::boolean hasErrors()::78

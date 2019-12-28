@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void check(java.lang.String)>::INVOKE::java.lang.String::$r3::boolean equals(java.lang.Object)::189
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void check(java.lang.String)>::INVOKE::spec.benchmarks.xml.transform.ExtOutputStream::r0::void canonicalize(java.lang.String,java.lang.String)::190
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void check(java.lang.String)>::INVOKE::spec.benchmarks.xml.transform.ExtOutputStream::r0::boolean checkValidity()::196
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void check(java.lang.String)>::INVOKE::java.lang.String::$r4::boolean equals(java.lang.Object)::191
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void check(java.lang.String)>::SPECIALINVOKE::<spec.benchmarks.xml.transform.ExtOutputStream: void runTidy()>::192
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void check(java.lang.String)>::INVOKE::spec.benchmarks.xml.transform.ExtOutputStream::r0::void canonicalize(java.lang.String,java.lang.String)::193

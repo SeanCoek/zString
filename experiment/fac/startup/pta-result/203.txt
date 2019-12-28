@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.compiler.Util: void recursiveRemoveDir(java.io.File)>::STATICINVOKE::<spec.benchmarks.compiler.Util: void recursiveRemoveDir(java.io.File)>::160
+IN METHOD::<spec.benchmarks.compiler.Util: void recursiveRemoveDir(java.io.File)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::163
+IN METHOD::<spec.benchmarks.compiler.Util: void recursiveRemoveDir(java.io.File)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::168

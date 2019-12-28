@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.String removeExtension(java.lang.String)>::INVOKE::java.lang.String::r0::int lastIndexOf(java.lang.String)::293
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.String removeExtension(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::294
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.String removeExtension(java.lang.String)>::INVOKE::java.lang.String::r0::int lastIndexOf(java.lang.String)::293
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.String removeExtension(java.lang.String)>::INVOKE::java.lang.String::r0::java.lang.String substring(int,int)::294

@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testDiv()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::103
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testDiv()>::INVOKE::java.io.PrintStream::$r1::<java.io.PrintStream: void print(java.lang.String)>::103

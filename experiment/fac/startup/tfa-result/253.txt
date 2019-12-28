@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.check.LoopBounds: void execute()>::INVOKE::spec.benchmarks.check.LoopBounds::r0::<spec.benchmarks.check.LoopBounds: int size()>::55
+IN METHOD::<spec.benchmarks.check.LoopBounds: void execute()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::58
+IN METHOD::<spec.benchmarks.check.LoopBounds: void execute()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::58
+IN METHOD::<spec.benchmarks.check.LoopBounds: void execute()>::INVOKE::spec.benchmarks.check.LoopBounds::r0::<spec.benchmarks.check.LoopBounds: int constraintAt(int)>::58
+IN METHOD::<spec.benchmarks.check.LoopBounds: void execute()>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(int)>::58
+IN METHOD::<spec.benchmarks.check.LoopBounds: void execute()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::60

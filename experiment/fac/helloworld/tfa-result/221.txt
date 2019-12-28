@@ -1,0 +1,3 @@
+IN METHOD::<spec.harness.analyzer.CallbackAnalyzerExample: void tearDown()>::STATICINVOKE::<spec.harness.analyzer.CallbackAnalyzerExample$TheNumberGenerator: void deregister(spec.harness.analyzer.CallbackAnalyzerExample)>::56
+IN METHOD::<spec.harness.analyzer.CallbackAnalyzerExample: void tearDown()>::SPECIALINVOKE::<spec.harness.analyzer.CallbackAnalyzerExample$NumberResult: void <init>(double,java.lang.String,java.lang.String)>::59
+IN METHOD::<spec.harness.analyzer.CallbackAnalyzerExample: void tearDown()>::SPECIALINVOKE::<spec.harness.analyzer.CallbackAnalyzerExample$NumberResult: void <init>(double,java.lang.String,java.lang.String)>::60

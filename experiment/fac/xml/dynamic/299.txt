@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.xml.ReportingHandler: void <init>()>::SPECIALINVOKE::<org.xml.sax.ext.DefaultHandler2: void <init>()>::16
+IN METHOD::<spec.benchmarks.xml.ReportingHandler: void <init>()>::SPECIALINVOKE::<org.xml.sax.ext.DefaultHandler2: void <init>()>::16

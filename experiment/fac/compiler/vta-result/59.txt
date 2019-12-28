@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getSrcFile(java.io.File)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::180
+IN METHOD::<spec.benchmarks.compiler.Util: java.io.File getSrcFile(java.io.File)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::180

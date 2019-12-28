@@ -1,0 +1,9 @@
+IN METHOD::<spec.benchmarks.startup.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.harness.SpecJVMBenchmarkBase: void <init>(spec.harness.results.BenchmarkResult,int)>::45
+IN METHOD::<spec.benchmarks.startup.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.harness.results.BenchmarkResult::r1::<spec.harness.results.BenchmarkResult: java.lang.String[] getArgs()>::46
+IN METHOD::<spec.benchmarks.startup.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::47
+IN METHOD::<spec.benchmarks.startup.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::47
+IN METHOD::<spec.benchmarks.startup.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::spec.harness.results.BenchmarkResult::r1::<spec.harness.results.BenchmarkResult: java.lang.String[] getArgs()>::47
+IN METHOD::<spec.benchmarks.startup.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::47
+IN METHOD::<spec.benchmarks.startup.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::47
+IN METHOD::<spec.benchmarks.startup.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.Object::$r9::<java.lang.Object: java.lang.String toString()>::47
+IN METHOD::<spec.benchmarks.startup.Main: void <init>(spec.harness.results.BenchmarkResult,int)>::INVOKE::java.lang.StringBuilder::$r9::<java.lang.StringBuilder: java.lang.String toString()>::47

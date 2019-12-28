@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.scimark.sor.SOR: void main(int)>::SPECIALINVOKE::<spec.benchmarks.scimark.sor.SOR: void <init>(int)>::24

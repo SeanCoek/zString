@@ -1,0 +1,16 @@
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void setupAnalyzerClass()>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::29
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void setupAnalyzerClass()>::STATICINVOKE::<spec.harness.Util: int getIntProperty(java.lang.String,java.lang.String)>::30
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void setupAnalyzerClass()>::STATICINVOKE::<spec.harness.Util: boolean getBoolProperty(java.lang.String,java.lang.String)>::31
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void setupAnalyzerClass()>::STATICINVOKE::<spec.harness.Util: boolean getBoolProperty(java.lang.String,java.lang.String)>::32
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void setupAnalyzerClass()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::43
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void setupAnalyzerClass()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::43
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void setupAnalyzerClass()>::SPECIALINVOKE::<spec.harness.analyzer.TempSensor: void <init>(java.lang.String,int)>::47
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void setupAnalyzerClass()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::49
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void setupAnalyzerClass()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::49
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void setupAnalyzerClass()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::50
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void setupAnalyzerClass()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::50
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void setupAnalyzerClass()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::51
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void setupAnalyzerClass()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::51
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void setupAnalyzerClass()>::STATICINVOKE::<spec.harness.analyzer.AnalyzerBase: void addViolationToSuiteResult(java.lang.String)>::54
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void setupAnalyzerClass()>::STATICINVOKE::<spec.harness.analyzer.AnalyzerBase: void addViolationToSuiteResult(java.lang.String)>::57
+IN METHOD::<spec.harness.analyzer.TempAnalyzer: void setupAnalyzerClass()>::STATICINVOKE::<spec.harness.analyzer.AnalyzerBase: void addViolationToSuiteResult(java.lang.String)>::62

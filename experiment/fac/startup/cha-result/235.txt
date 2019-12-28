@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.compiler.sunflow.Main: void harnessMain()>::INVOKE::spec.benchmarks.compiler.Compiler::$r1::<spec.benchmarks.compiler.Compiler: void compile(int)>::40

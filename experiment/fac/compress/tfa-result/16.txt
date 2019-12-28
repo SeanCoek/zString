@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.compress.Compressor: void output(int)>::INVOKE::spec.benchmarks.compress.CompBase::r0::<spec.benchmarks.compress.CompBase: int getMaxCode()>::393
+IN METHOD::<spec.benchmarks.compress.Compressor: void output(int)>::INVOKE::spec.benchmarks.compress.CompBase::r0::<spec.benchmarks.compress.CompBase: int getMaxCode()>::400

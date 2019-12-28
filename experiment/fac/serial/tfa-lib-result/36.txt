@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.serial.data.TestClassWithSQLDateOnly: spec.benchmarks.serial.data.TestClassWithSQLDateOnly createTestInstance()>::SPECIALINVOKE::<spec.benchmarks.serial.data.TestClassWithSQLDateOnly: void <init>()>::27

@@ -1,0 +1,12 @@
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::50
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::INVOKE::spec.io.FileCache::$r3::<spec.io.FileCache: int getLength(java.lang.String)>::50
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::53
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::INVOKE::spec.io.FileCache::$r4::<spec.io.FileCache: java.io.ByteArrayInputStream getStream(java.lang.String)>::53
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::INVOKE::java.io.InputStream::r2::<java.io.InputStream: int read(byte[],int,int)>::58
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::INVOKE::java.io.ByteArrayInputStream::r2::<java.io.ByteArrayInputStream: int read(byte[],int,int)>::58
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::64
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::64
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::64
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::INVOKE::java.lang.Object::$r9::<java.lang.Object: java.lang.String toString()>::64
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r9::<java.lang.StringBuilder: java.lang.String toString()>::64
+IN METHOD::<spec.benchmarks.crypto.Util: byte[] getTestData(java.lang.String)>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String,java.lang.Throwable)>::64

@@ -1,0 +1,7 @@
+IN METHOD::<spec.benchmarks.crypto.signverify.Main: void setupBenchmark()>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::108
+IN METHOD::<spec.benchmarks.crypto.signverify.Main: void setupBenchmark()>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::109
+IN METHOD::<spec.benchmarks.crypto.signverify.Main: void setupBenchmark()>::STATICINVOKE::<spec.harness.Context: spec.io.FileCache getFileCache()>::110
+IN METHOD::<spec.benchmarks.crypto.signverify.Main: void setupBenchmark()>::STATICINVOKE::<java.security.KeyPairGenerator: java.security.KeyPairGenerator getInstance(java.lang.String)>::112
+IN METHOD::<spec.benchmarks.crypto.signverify.Main: void setupBenchmark()>::STATICINVOKE::<java.security.KeyPairGenerator: java.security.KeyPairGenerator getInstance(java.lang.String)>::121
+IN METHOD::<spec.benchmarks.crypto.signverify.Main: void setupBenchmark()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::129
+IN METHOD::<spec.benchmarks.crypto.signverify.Main: void setupBenchmark()>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String)>::129

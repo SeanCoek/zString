@@ -1,0 +1,3 @@
+IN METHOD::<spec.reporter.ReportGenerator: void generateSummaryTable(spec.reporter.Writer,java.lang.String)>::INVOKE::spec.reporter.HTMLWriter::r1::<spec.reporter.HTMLWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::180
+IN METHOD::<spec.reporter.ReportGenerator: void generateSummaryTable(spec.reporter.Writer,java.lang.String)>::INVOKE::spec.reporter.PlainWriter::r1::<spec.reporter.PlainWriter: void putSummaryTable(java.lang.String,java.util.TreeMap)>::180
+IN METHOD::<spec.reporter.ReportGenerator: void generateSummaryTable(spec.reporter.Writer,java.lang.String)>::INVOKE::spec.reporter.Writer::r1::<spec.reporter.Writer: void putSummaryTable(java.lang.String,java.util.TreeMap)>::180

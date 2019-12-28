@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.compiler.SpecFileManager: java.lang.String inferBinaryName(javax.tools.JavaFileManager$Location,javax.tools.JavaFileObject)>::SPECIALINVOKE::<com.sun.tools.javac.util.JavacFileManager: java.lang.String inferBinaryName(javax.tools.JavaFileManager$Location,javax.tools.JavaFileObject)>::252

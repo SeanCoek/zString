@@ -1,0 +1,34 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r1::void setLength(int)::52
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::53
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r2::java.lang.StringBuilder append(java.lang.String)::53
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r4::java.lang.StringBuilder append(java.lang.Object)::53
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r7::java.lang.String toString()::53
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r3::java.lang.StringBuilder append(java.lang.String)::53
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::54
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r10::java.lang.StringBuilder append(java.lang.String)::54
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r12::java.lang.StringBuilder append(java.lang.Object)::54
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r15::java.lang.String toString()::54
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r11::java.lang.StringBuilder append(java.lang.String)::54
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::55
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r18::java.lang.StringBuilder append(java.lang.String)::55
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r20::java.lang.StringBuilder append(java.lang.Object)::55
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r23::java.lang.String toString()::55
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r19::java.lang.StringBuilder append(java.lang.String)::55
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::56
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r26::java.lang.StringBuilder append(java.lang.String)::56
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r28::java.lang.StringBuilder append(java.lang.Object)::56
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r30::java.lang.String toString()::56
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r27::java.lang.StringBuilder append(java.lang.String)::56
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::57
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r33::java.lang.StringBuilder append(java.lang.String)::57
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r35::java.lang.StringBuilder append(java.lang.Object)::57
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r37::java.lang.String toString()::57
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r34::java.lang.StringBuilder append(java.lang.String)::57
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::58
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r40::java.lang.StringBuilder append(java.lang.String)::58
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::STATICINVOKE::<java.math.BigDecimal: java.math.BigDecimal valueOf(long)>::58
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.math.BigDecimal::$r43::java.math.BigDecimal divide(java.math.BigDecimal,java.math.MathContext)::58
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r42::java.lang.StringBuilder append(java.lang.Object)::58
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r47::java.lang.String toString()::58
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r41::java.lang.StringBuilder append(java.lang.String)::58
+IN METHOD::<spec.benchmarks.derby.DerbyHarness$Client: java.lang.String resultsToString()>::INVOKE::java.lang.StringBuilder::$r50::java.lang.String toString()::59

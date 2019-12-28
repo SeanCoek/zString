@@ -1,0 +1,10 @@
+IN METHOD::<spec.benchmarks.scimark.utils.Stopwatch: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::56
+IN METHOD::<spec.benchmarks.scimark.utils.Stopwatch: void <init>()>::INVOKE::spec.benchmarks.scimark.utils.Stopwatch::r0::void reset()::57
+IN METHOD::<spec.benchmarks.scimark.utils.Stopwatch: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::56
+IN METHOD::<spec.benchmarks.scimark.utils.Stopwatch: void <init>()>::INVOKE::spec.benchmarks.scimark.utils.Stopwatch::r0::void reset()::57
+IN METHOD::<spec.benchmarks.scimark.utils.Stopwatch: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::56
+IN METHOD::<spec.benchmarks.scimark.utils.Stopwatch: void <init>()>::INVOKE::spec.benchmarks.scimark.utils.Stopwatch::r0::void reset()::57
+IN METHOD::<spec.benchmarks.scimark.utils.Stopwatch: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::56
+IN METHOD::<spec.benchmarks.scimark.utils.Stopwatch: void <init>()>::INVOKE::spec.benchmarks.scimark.utils.Stopwatch::r0::void reset()::57
+IN METHOD::<spec.benchmarks.scimark.utils.Stopwatch: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::56
+IN METHOD::<spec.benchmarks.scimark.utils.Stopwatch: void <init>()>::INVOKE::spec.benchmarks.scimark.utils.Stopwatch::r0::void reset()::57

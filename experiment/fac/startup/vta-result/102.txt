@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double test(double[])>::STATICINVOKE::<java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>::67
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double test(double[])>::STATICINVOKE::<java.lang.Math: double sqrt(double)>::76

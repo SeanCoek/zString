@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.check.PepTest: void printTime()>::SPECIALINVOKE::<java.util.Date: void <init>()>::331
+IN METHOD::<spec.benchmarks.check.PepTest: void printTime()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::332
+IN METHOD::<spec.benchmarks.check.PepTest: void printTime()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::333
+IN METHOD::<spec.benchmarks.check.PepTest: void printTime()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::334
+IN METHOD::<spec.benchmarks.check.PepTest: void printTime()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::335
+IN METHOD::<spec.benchmarks.check.PepTest: void printTime()>::STATICINVOKE::<java.lang.System: long currentTimeMillis()>::335

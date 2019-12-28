@@ -1,0 +1,16 @@
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueXmlTransformRace()>::INVOKE::java.io.PrintStream::$r0::<java.io.PrintStream: void println()>::37
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueXmlTransformRace()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::38
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueXmlTransformRace()>::INVOKE::java.io.PrintStream::$r1::<java.io.PrintStream: void println(java.lang.String)>::38
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueXmlTransformRace()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::39
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueXmlTransformRace()>::INVOKE::java.io.PrintStream::$r2::<java.io.PrintStream: void println(java.lang.String)>::39
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueXmlTransformRace()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::40
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueXmlTransformRace()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::40
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueXmlTransformRace()>::INVOKE::java.lang.StringBuilder::$r4::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::40
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueXmlTransformRace()>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::40
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueXmlTransformRace()>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::40
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueXmlTransformRace()>::INVOKE::java.lang.StringBuilder::$r9::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::40
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueXmlTransformRace()>::INVOKE::java.lang.StringBuilder::$r10::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::40
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueXmlTransformRace()>::INVOKE::java.lang.StringBuilder::$r12::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::40
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueXmlTransformRace()>::INVOKE::java.lang.Object::$r13::<java.lang.Object: java.lang.String toString()>::40
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueXmlTransformRace()>::INVOKE::java.lang.StringBuilder::$r13::<java.lang.StringBuilder: java.lang.String toString()>::40
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssueXmlTransformRace()>::INVOKE::java.io.PrintStream::$r3::<java.io.PrintStream: void println(java.lang.String)>::40

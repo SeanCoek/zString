@@ -1,0 +1,8 @@
+IN METHOD::<spec.benchmarks.compiler.Util: boolean copyFile(java.io.File,java.io.File)>::INVOKE::java.io.File::r0::<java.io.File: java.lang.String getCanonicalPath()>::121
+IN METHOD::<spec.benchmarks.compiler.Util: boolean copyFile(java.io.File,java.io.File)>::INVOKE::java.io.File::r1::<java.io.File: java.lang.String getCanonicalPath()>::121
+IN METHOD::<spec.benchmarks.compiler.Util: boolean copyFile(java.io.File,java.io.File)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::122
+IN METHOD::<spec.benchmarks.compiler.Util: boolean copyFile(java.io.File,java.io.File)>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::122
+IN METHOD::<spec.benchmarks.compiler.Util: boolean copyFile(java.io.File,java.io.File)>::SPECIALINVOKE::<java.io.FileInputStream: void <init>(java.io.File)>::124
+IN METHOD::<spec.benchmarks.compiler.Util: boolean copyFile(java.io.File,java.io.File)>::INVOKE::java.io.FileInputStream::$r5::<java.io.FileInputStream: java.nio.channels.FileChannel getChannel()>::124
+IN METHOD::<spec.benchmarks.compiler.Util: boolean copyFile(java.io.File,java.io.File)>::SPECIALINVOKE::<java.io.FileOutputStream: void <init>(java.io.File)>::125
+IN METHOD::<spec.benchmarks.compiler.Util: boolean copyFile(java.io.File,java.io.File)>::INVOKE::java.io.FileOutputStream::$r6::<java.io.FileOutputStream: java.nio.channels.FileChannel getChannel()>::125

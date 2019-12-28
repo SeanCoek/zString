@@ -1,0 +1,1 @@
+IN METHOD::<spec.reporter.BenchmarkGroupRecords$BenchmarkResultsIterator: void <init>(spec.reporter.BenchmarkGroupRecords)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::59

@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.compress.CompBase: void <init>(spec.benchmarks.compress.InputBuffer,spec.benchmarks.compress.OutputBuffer)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::189

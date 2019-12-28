@@ -1,0 +1,15 @@
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double measureFFT(int,double,spec.benchmarks.scimark.utils.Random)>::INVOKE::spec.benchmarks.scimark.fft.FFT$1::$r3::java.lang.Object get()::211
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double measureFFT(int,double,spec.benchmarks.scimark.utils.Random)>::STATICINVOKE::<spec.benchmarks.scimark.utils.kernel: double[] RandomizeVector(double[],spec.benchmarks.scimark.utils.Random)>::218
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double measureFFT(int,double,spec.benchmarks.scimark.utils.Random)>::SPECIALINVOKE::<spec.benchmarks.scimark.utils.Stopwatch: void <init>()>::223
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double measureFFT(int,double,spec.benchmarks.scimark.utils.Random)>::INVOKE::spec.benchmarks.scimark.utils.Stopwatch::r2::void start()::225
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double measureFFT(int,double,spec.benchmarks.scimark.utils.Random)>::INVOKE::spec.benchmarks.scimark.fft.FFT::r0::void transform(double[])::226
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double measureFFT(int,double,spec.benchmarks.scimark.utils.Random)>::INVOKE::spec.benchmarks.scimark.fft.FFT::r0::void inverse(double[])::227
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double measureFFT(int,double,spec.benchmarks.scimark.utils.Random)>::INVOKE::spec.benchmarks.scimark.utils.Stopwatch::r2::double stop()::228
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double measureFFT(int,double,spec.benchmarks.scimark.utils.Random)>::INVOKE::spec.benchmarks.scimark.fft.FFT::r0::double test(double[])::231
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double measureFFT(int,double,spec.benchmarks.scimark.utils.Random)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::232
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double measureFFT(int,double,spec.benchmarks.scimark.utils.Random)>::INVOKE::java.lang.StringBuilder::$r6::java.lang.StringBuilder append(java.lang.String)::232
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double measureFFT(int,double,spec.benchmarks.scimark.utils.Random)>::INVOKE::java.lang.StringBuilder::$r8::java.lang.StringBuilder append(double)::232
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double measureFFT(int,double,spec.benchmarks.scimark.utils.Random)>::INVOKE::java.lang.StringBuilder::$r9::java.lang.String toString()::232
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double measureFFT(int,double,spec.benchmarks.scimark.utils.Random)>::STATICINVOKE::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::232
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double measureFFT(int,double,spec.benchmarks.scimark.utils.Random)>::INVOKE::spec.benchmarks.scimark.fft.FFT::r0::double num_flops(int)::237
+IN METHOD::<spec.benchmarks.scimark.fft.FFT: double measureFFT(int,double,spec.benchmarks.scimark.utils.Random)>::INVOKE::spec.benchmarks.scimark.utils.Stopwatch::r2::double read()::237

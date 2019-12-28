@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.compress.InputBuffer: int readBytes(byte[],int)>::STATICINVOKE::<java.lang.Math: int min(int,int)>::103

@@ -1,0 +1,14 @@
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkRemL(long,long,long)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::1023
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkRemL(long,long,long)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::1023
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkRemL(long,long,long)>::INVOKE::java.lang.StringBuilder::$r2::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::1023
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkRemL(long,long,long)>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(long)>::1023
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkRemL(long,long,long)>::INVOKE::java.lang.StringBuilder::$r4::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::1023
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkRemL(long,long,long)>::INVOKE::java.lang.StringBuilder::$r5::<java.lang.StringBuilder: java.lang.StringBuilder append(long)>::1023
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkRemL(long,long,long)>::INVOKE::java.lang.StringBuilder::$r6::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::1023
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkRemL(long,long,long)>::INVOKE::java.lang.StringBuilder::$r7::<java.lang.StringBuilder: java.lang.StringBuilder append(long)>::1023
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkRemL(long,long,long)>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.String toString()>::1023
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkRemL(long,long,long)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::1024
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkRemL(long,long,long)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::1024
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkRemL(long,long,long)>::INVOKE::java.lang.StringBuilder::$r11::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::1024
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkRemL(long,long,long)>::INVOKE::java.lang.StringBuilder::$r12::<java.lang.StringBuilder: java.lang.StringBuilder append(long)>::1024
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkRemL(long,long,long)>::INVOKE::java.lang.StringBuilder::$r13::<java.lang.StringBuilder: java.lang.String toString()>::1024

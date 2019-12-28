@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.derby.Main: void harnessMain()>::SPECIALINVOKE::<spec.harness.BenchmarkThread: int getThreadId()>::143
+IN METHOD::<spec.benchmarks.derby.Main: void harnessMain()>::STATICINVOKE::<spec.benchmarks.derby.Main: long runBenchmark(int)>::143

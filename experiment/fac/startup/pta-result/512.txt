@@ -1,0 +1,8 @@
+IN METHOD::<spec.benchmarks.derby.Utils: void initRates()>::SPECIALINVOKE::<java.math.BigDecimal: void <init>(java.lang.String)>::78
+IN METHOD::<spec.benchmarks.derby.Utils: void initRates()>::SPECIALINVOKE::<java.math.BigDecimal: void <init>(java.lang.String)>::79
+IN METHOD::<spec.benchmarks.derby.Utils: void initRates()>::SPECIALINVOKE::<java.math.BigDecimal: void <init>(java.lang.String)>::80
+IN METHOD::<spec.benchmarks.derby.Utils: void initRates()>::STATICINVOKE::<spec.benchmarks.derby.Utils: java.util.HashMap createRatesMap(int,int,int,java.math.BigDecimal)>::81
+IN METHOD::<spec.benchmarks.derby.Utils: void initRates()>::STATICINVOKE::<spec.benchmarks.derby.Utils: java.util.HashMap createRatesMap(int,int,int,java.math.BigDecimal)>::82
+IN METHOD::<spec.benchmarks.derby.Utils: void initRates()>::SPECIALINVOKE::<java.math.BigDecimal: void <init>(java.lang.String)>::83
+IN METHOD::<spec.benchmarks.derby.Utils: void initRates()>::STATICINVOKE::<spec.benchmarks.derby.Utils: java.math.BigDecimal[] init(java.math.BigDecimal)>::83
+IN METHOD::<spec.benchmarks.derby.Utils: void initRates()>::STATICINVOKE::<spec.benchmarks.derby.Utils: java.math.BigDecimal[] init(java.math.BigDecimal)>::84

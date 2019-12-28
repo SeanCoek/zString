@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void write(byte[])>::INVOKE::spec.benchmarks.xml.transform.BaseOutputStream::r0::<spec.benchmarks.xml.transform.BaseOutputStream: void write(int)>::236
+IN METHOD::<spec.benchmarks.xml.transform.ExtOutputStream: void write(byte[])>::INVOKE::spec.benchmarks.xml.transform.ExtOutputStream::r0::<spec.benchmarks.xml.transform.ExtOutputStream: void write(int)>::236

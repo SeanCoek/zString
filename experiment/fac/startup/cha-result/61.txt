@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.scimark.lu.LU: int[] getPivot()>::STATICINVOKE::<spec.benchmarks.scimark.lu.LU: int[] new_copy(int[])>::123

@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setValidationProperties(java.util.Properties)>::INVOKE::spec.benchmarks.xml.transform.ExtOutputStream::$r2::void setValidationProperties(java.util.Properties)::227
+IN METHOD::<spec.benchmarks.xml.transform.Main: void setValidationProperties(java.util.Properties)>::INVOKE::spec.benchmarks.xml.transform.BaseOutputStream::$r2::void setValidationProperties(java.util.Properties)::227

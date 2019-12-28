@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.scimark.sparse.Main: void setupBenchmark()>::STATICINVOKE::<spec.benchmarks.scimark.utils.kernel: void init()>::40

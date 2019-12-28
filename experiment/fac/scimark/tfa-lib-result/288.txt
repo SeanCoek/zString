@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void <init>(spec.harness.results.IterationResult,long)>::SPECIALINVOKE::<java.lang.Thread: void <init>(java.lang.String)>::29
+IN METHOD::<spec.harness.analyzer.AnalyzersRunner: void <init>(spec.harness.results.IterationResult,long)>::INVOKE::spec.harness.analyzer.AnalyzersRunner::r0::<spec.harness.analyzer.AnalyzersRunner: boolean internalSetupAnalyzers()>::34

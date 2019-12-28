@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.scimark.lu.LU: void <init>(int)>::SPECIALINVOKE::<java.lang.Object: void <init>()>::28

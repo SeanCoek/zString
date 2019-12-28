@@ -1,0 +1,4 @@
+IN METHOD::<spec.harness.results.TestResult: java.lang.String getIndent(int)>::SPECIALINVOKE::<java.lang.StringBuffer: void <init>()>::140
+IN METHOD::<spec.harness.results.TestResult: java.lang.String getIndent(int)>::INVOKE::java.lang.StringBuffer::r0::<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>::142
+IN METHOD::<spec.harness.results.TestResult: java.lang.String getIndent(int)>::INVOKE::java.lang.Object::r0::<java.lang.Object: java.lang.String toString()>::144
+IN METHOD::<spec.harness.results.TestResult: java.lang.String getIndent(int)>::INVOKE::java.lang.StringBuffer::r0::<java.lang.StringBuffer: java.lang.String toString()>::144

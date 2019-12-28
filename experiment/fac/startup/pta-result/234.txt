@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.compress.Harness: void prepareBuffers()>::SPECIALINVOKE::<spec.benchmarks.compress.Compress: void <init>()>::68
+IN METHOD::<spec.benchmarks.compress.Harness: void prepareBuffers()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::71
+IN METHOD::<spec.benchmarks.compress.Harness: void prepareBuffers()>::STATICINVOKE::<spec.harness.Context: java.lang.String getSpecBasePath()>::71
+IN METHOD::<spec.benchmarks.compress.Harness: void prepareBuffers()>::SPECIALINVOKE::<spec.benchmarks.compress.Harness$Source: void <init>(java.lang.String)>::71

@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createBaseDatabase(int,int,int)>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: java.sql.Connection getStartConnection(int)>::469
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createBaseDatabase(int,int,int)>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void dropTables(java.sql.Connection)>::470
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createBaseDatabase(int,int,int)>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void createTables(java.sql.Connection)>::471
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createBaseDatabase(int,int,int)>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void fillTables(java.sql.Connection,int,int,int)>::472
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void createBaseDatabase(int,int,int)>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void connectClose(java.sql.Connection)>::477

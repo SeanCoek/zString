@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>::SPECIALINVOKE::<java.io.FileInputStream: void <init>(java.lang.String)>::106
+IN METHOD::<spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::107
+IN METHOD::<spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>::INVOKE::java.io.File::$r3::long length()::107
+IN METHOD::<spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>::INVOKE::java.io.FileInputStream::r8::int read(byte[],int,int)::119
+IN METHOD::<spec.benchmarks.compress.Harness$Source: byte[] fillBuffer(java.lang.String)>::INVOKE::java.io.FileInputStream::r8::void close()::123

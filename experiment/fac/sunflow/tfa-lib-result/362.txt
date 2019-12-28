@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.ProgramRunner: java.lang.String invokeBmTestTypeMethod()>::SPECIALINVOKE::<spec.harness.StopBenchmarkException: void <init>(java.lang.String,java.lang.Throwable)>::177

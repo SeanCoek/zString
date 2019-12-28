@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: long decode(java.lang.String)>::SPECIALINVOKE::<java.io.FileInputStream: void <init>(java.lang.String)>::59
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: long decode(java.lang.String)>::SPECIALINVOKE::<javazoom.jl.decoder.Bitstream: void <init>(java.io.InputStream)>::59
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: long decode(java.lang.String)>::SPECIALINVOKE::<javazoom.jl.decoder.Decoder: void <init>()>::60
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: long decode(java.lang.String)>::SPECIALINVOKE::<java.util.zip.CRC32: void <init>()>::62
+IN METHOD::<spec.benchmarks.mpegaudio.Harness: long decode(java.lang.String)>::SPECIALINVOKE::<spec.benchmarks.mpegaudio.Harness: void updateCRC32(java.util.zip.CRC32,short[])>::66

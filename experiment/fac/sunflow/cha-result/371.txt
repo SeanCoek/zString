@@ -1,0 +1,1 @@
+IN METHOD::<spec.harness.results.LoopResult: boolean isValid()>::INVOKE::spec.harness.results.TestResult::r0::<spec.harness.results.TestResult: boolean hasErrors()>::78

@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkRemD(double,double,double)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::1032
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkRemD(double,double,double)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::1032
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkRemD(double,double,double)>::INVOKE::java.lang.StringBuilder::$r2::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::1032
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkRemD(double,double,double)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::1033
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkRemD(double,double,double)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::1033
+IN METHOD::<spec.benchmarks.check.PepTest: boolean checkRemD(double,double,double)>::INVOKE::java.lang.StringBuilder::$r11::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::1033

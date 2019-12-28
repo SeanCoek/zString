@@ -1,0 +1,15 @@
+IN METHOD::<spec.benchmarks.xml.transform.Main: void executeWorkload()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::240
+IN METHOD::<spec.benchmarks.xml.transform.Main: void executeWorkload()>::INVOKE::java.lang.StringBuilder::$r3::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::240
+IN METHOD::<spec.benchmarks.xml.transform.Main: void executeWorkload()>::STATICINVOKE::<spec.benchmarks.xml.transform.Main: int getLoopMode()>::241
+IN METHOD::<spec.benchmarks.xml.transform.Main: void executeWorkload()>::INVOKE::spec.benchmarks.xml.XMLBenchmark::r0::<spec.benchmarks.xml.XMLBenchmark: javax.xml.transform.Source createSaxSource(spec.io.FileCache$CachedFile)>::244
+IN METHOD::<spec.benchmarks.xml.transform.Main: void executeWorkload()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::244
+IN METHOD::<spec.benchmarks.xml.transform.Main: void executeWorkload()>::INVOKE::java.lang.StringBuilder::$r13::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::244
+IN METHOD::<spec.benchmarks.xml.transform.Main: void executeWorkload()>::SPECIALINVOKE::<spec.benchmarks.xml.transform.Main: void transform(javax.xml.transform.Transformer,javax.xml.transform.Source,java.lang.String,int)>::244
+IN METHOD::<spec.benchmarks.xml.transform.Main: void executeWorkload()>::INVOKE::spec.benchmarks.xml.XMLBenchmark::r0::<spec.benchmarks.xml.XMLBenchmark: javax.xml.transform.Source createDomSource(spec.io.FileCache$CachedFile)>::245
+IN METHOD::<spec.benchmarks.xml.transform.Main: void executeWorkload()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::245
+IN METHOD::<spec.benchmarks.xml.transform.Main: void executeWorkload()>::INVOKE::java.lang.StringBuilder::$r20::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::245
+IN METHOD::<spec.benchmarks.xml.transform.Main: void executeWorkload()>::SPECIALINVOKE::<spec.benchmarks.xml.transform.Main: void transform(javax.xml.transform.Transformer,javax.xml.transform.Source,java.lang.String,int)>::245
+IN METHOD::<spec.benchmarks.xml.transform.Main: void executeWorkload()>::INVOKE::spec.io.FileCache$CachedFile::$r25::<spec.io.FileCache$CachedFile: javax.xml.transform.stream.StreamSource asNewStreamSource()>::246
+IN METHOD::<spec.benchmarks.xml.transform.Main: void executeWorkload()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::246
+IN METHOD::<spec.benchmarks.xml.transform.Main: void executeWorkload()>::INVOKE::java.lang.StringBuilder::$r27::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::246
+IN METHOD::<spec.benchmarks.xml.transform.Main: void executeWorkload()>::SPECIALINVOKE::<spec.benchmarks.xml.transform.Main: void transform(javax.xml.transform.Transformer,javax.xml.transform.Source,java.lang.String,int)>::246

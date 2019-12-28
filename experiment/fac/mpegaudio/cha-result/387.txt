@@ -1,0 +1,15 @@
+IN METHOD::<spec.harness.results.SuiteResult: java.util.List getAllErrors(java.lang.String)>::SPECIALINVOKE::<java.util.LinkedList: void <init>()>::177
+IN METHOD::<spec.harness.results.SuiteResult: java.util.List getAllErrors(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::180
+IN METHOD::<spec.harness.results.SuiteResult: java.util.List getAllErrors(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r16::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::180
+IN METHOD::<spec.harness.results.SuiteResult: java.util.List getAllErrors(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r17::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::180
+IN METHOD::<spec.harness.results.SuiteResult: java.util.List getAllErrors(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r18::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>::180
+IN METHOD::<spec.harness.results.SuiteResult: java.util.List getAllErrors(java.lang.String)>::INVOKE::java.lang.Object::$r20::<java.lang.Object: java.lang.String toString()>::180
+IN METHOD::<spec.harness.results.SuiteResult: java.util.List getAllErrors(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r20::<java.lang.StringBuilder: java.lang.String toString()>::180
+IN METHOD::<spec.harness.results.SuiteResult: java.util.List getAllErrors(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::185
+IN METHOD::<spec.harness.results.SuiteResult: java.util.List getAllErrors(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r8::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::185
+IN METHOD::<spec.harness.results.SuiteResult: java.util.List getAllErrors(java.lang.String)>::INVOKE::spec.harness.results.BenchmarkResult::r3::<spec.harness.results.BenchmarkResult: java.lang.String getLogicalName()>::185
+IN METHOD::<spec.harness.results.SuiteResult: java.util.List getAllErrors(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r9::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::185
+IN METHOD::<spec.harness.results.SuiteResult: java.util.List getAllErrors(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r11::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::185
+IN METHOD::<spec.harness.results.SuiteResult: java.util.List getAllErrors(java.lang.String)>::INVOKE::java.lang.Object::$r12::<java.lang.Object: java.lang.String toString()>::185
+IN METHOD::<spec.harness.results.SuiteResult: java.util.List getAllErrors(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r12::<java.lang.StringBuilder: java.lang.String toString()>::185
+IN METHOD::<spec.harness.results.SuiteResult: java.util.List getAllErrors(java.lang.String)>::INVOKE::spec.harness.results.BenchmarkResult::r3::<spec.harness.results.BenchmarkResult: java.util.List getAllErrors(java.lang.String)>::185

@@ -1,0 +1,4 @@
+IN METHOD::<spec.reporter.Writer: void closeStream()>::INVOKE::java.io.FilterOutputStream::$r1::<java.io.FilterOutputStream: void close()>::30
+IN METHOD::<spec.reporter.Writer: void closeStream()>::INVOKE::java.io.OutputStream::$r1::<java.io.OutputStream: void close()>::30
+IN METHOD::<spec.reporter.Writer: void closeStream()>::INVOKE::sun.net.www.http.ChunkedOutputStream::$r1::<sun.net.www.http.ChunkedOutputStream: void close()>::30
+IN METHOD::<spec.reporter.Writer: void closeStream()>::INVOKE::java.io.PrintStream::$r1::<java.io.PrintStream: void close()>::30

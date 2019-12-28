@@ -1,0 +1,12 @@
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::INVOKE::java.lang.String::r0::boolean equals(java.lang.Object)::197
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::199
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::INVOKE::java.io.PrintStream::$r9::void println(java.lang.String)::199
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::INVOKE::java.lang.String::r0::boolean equals(java.lang.Object)::197
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::199
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::INVOKE::java.io.PrintStream::$r9::void println(java.lang.String)::199
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::INVOKE::java.lang.String::r0::boolean equals(java.lang.Object)::197
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::199
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::INVOKE::java.io.PrintStream::$r9::void println(java.lang.String)::199
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::INVOKE::java.lang.String::r0::boolean equals(java.lang.Object)::197
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::199
+IN METHOD::<spec.benchmarks.scimark.utils.kernel: void checkResults(java.lang.String,java.lang.String,int)>::INVOKE::java.io.PrintStream::$r9::void println(java.lang.String)::199

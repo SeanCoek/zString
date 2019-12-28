@@ -1,0 +1,11 @@
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void checkResult(int)>::INVOKE::spec.benchmarks.xml.transform.BaseOutputStream::r0::<spec.benchmarks.xml.transform.BaseOutputStream: java.lang.String getResult()>::58
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void checkResult(int)>::INVOKE::java.util.Properties::$r3::<java.util.Properties: java.lang.String getProperty(java.lang.String)>::58
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void checkResult(int)>::INVOKE::java.security.Provider::$r3::<java.security.Provider: java.lang.String getProperty(java.lang.String)>::58
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void checkResult(int)>::INVOKE::java.lang.Object::$r1::<java.lang.Object: boolean equals(java.lang.Object)>::58
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void checkResult(int)>::INVOKE::java.lang.String::$r1::<java.lang.String: boolean equals(java.lang.Object)>::58
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void checkResult(int)>::INVOKE::spec.benchmarks.xml.transform.ExtOutputStream::r0::<spec.benchmarks.xml.transform.ExtOutputStream: void handleSuccessfullValidation()>::60
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void checkResult(int)>::INVOKE::spec.benchmarks.xml.transform.BaseOutputStream::r0::<spec.benchmarks.xml.transform.BaseOutputStream: void handleSuccessfullValidation()>::60
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void checkResult(int)>::INVOKE::spec.benchmarks.xml.transform.ExtOutputStream::r0::<spec.benchmarks.xml.transform.ExtOutputStream: void handleErrorValidation(int)>::63
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void checkResult(int)>::INVOKE::spec.benchmarks.xml.transform.BaseOutputStream::r0::<spec.benchmarks.xml.transform.BaseOutputStream: void handleErrorValidation(int)>::63
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void checkResult(int)>::INVOKE::spec.benchmarks.xml.transform.ExtOutputStream::r0::<spec.benchmarks.xml.transform.ExtOutputStream: void reset()>::65
+IN METHOD::<spec.benchmarks.xml.transform.BaseOutputStream: void checkResult(int)>::INVOKE::spec.benchmarks.xml.transform.BaseOutputStream::r0::<spec.benchmarks.xml.transform.BaseOutputStream: void reset()>::65

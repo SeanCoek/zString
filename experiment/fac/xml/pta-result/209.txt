@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.Launch: void closeSubmissionFile(java.lang.String)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::299
+IN METHOD::<spec.harness.Launch: void closeSubmissionFile(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::299

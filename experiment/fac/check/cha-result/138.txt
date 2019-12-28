@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.ReportGenerator: boolean checkName(java.lang.String,org.w3c.dom.Node)>::INVOKE::java.lang.Object::r1::<java.lang.Object: boolean equals(java.lang.Object)>::505
+IN METHOD::<spec.reporter.ReportGenerator: boolean checkName(java.lang.String,org.w3c.dom.Node)>::INVOKE::java.lang.String::r1::<java.lang.String: boolean equals(java.lang.Object)>::505

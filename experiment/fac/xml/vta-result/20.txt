@@ -1,0 +1,6 @@
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.harness.SpecJVMBenchmarkBase: void <init>(spec.harness.results.BenchmarkResult,int)>::39
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: void <init>(spec.harness.results.BenchmarkResult,int)>::SPECIALINVOKE::<spec.benchmarks.xml.ReportingHandler: void <init>()>::33
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: void <init>(spec.harness.results.BenchmarkResult,int)>::STATICINVOKE::<javax.xml.parsers.SAXParserFactory: javax.xml.parsers.SAXParserFactory newInstance()>::40
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: void <init>(spec.harness.results.BenchmarkResult,int)>::STATICINVOKE::<javax.xml.parsers.DocumentBuilderFactory: javax.xml.parsers.DocumentBuilderFactory newInstance()>::42
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: void <init>(spec.harness.results.BenchmarkResult,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::53
+IN METHOD::<spec.benchmarks.xml.XMLBenchmark: void <init>(spec.harness.results.BenchmarkResult,int)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::55

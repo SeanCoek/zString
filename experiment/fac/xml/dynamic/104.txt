@@ -1,0 +1,4 @@
+IN METHOD::<spec.harness.Util: boolean getBoolProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::129
+IN METHOD::<spec.harness.Util: boolean getBoolProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r2::boolean equalsIgnoreCase(java.lang.String)::130
+IN METHOD::<spec.harness.Util: boolean getBoolProperty(java.lang.String,java.lang.String)>::STATICINVOKE::<spec.harness.Util: java.lang.String getProperty(java.lang.String,java.lang.String)>::129
+IN METHOD::<spec.harness.Util: boolean getBoolProperty(java.lang.String,java.lang.String)>::INVOKE::java.lang.String::r2::boolean equalsIgnoreCase(java.lang.String)::130

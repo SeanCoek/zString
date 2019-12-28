@@ -1,0 +1,12 @@
+IN METHOD::<spec.benchmarks.check.Main: long runBenchmark()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::49
+IN METHOD::<spec.benchmarks.check.Main: long runBenchmark()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::57
+IN METHOD::<spec.benchmarks.check.Main: long runBenchmark()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::60
+IN METHOD::<spec.benchmarks.check.Main: long runBenchmark()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::63
+IN METHOD::<spec.benchmarks.check.Main: long runBenchmark()>::STATICINVOKE::<spec.benchmarks.check.Main: void checkSubclassing()>::66
+IN METHOD::<spec.benchmarks.check.Main: long runBenchmark()>::STATICINVOKE::<spec.benchmarks.check.LoopBounds: void run()>::70
+IN METHOD::<spec.benchmarks.check.Main: long runBenchmark()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::73
+IN METHOD::<spec.benchmarks.check.Main: long runBenchmark()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::75
+IN METHOD::<spec.benchmarks.check.Main: long runBenchmark()>::SPECIALINVOKE::<spec.benchmarks.check.Main: boolean checkCompilerVersion()>::78
+IN METHOD::<spec.benchmarks.check.Main: long runBenchmark()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::79
+IN METHOD::<spec.benchmarks.check.Main: long runBenchmark()>::SPECIALINVOKE::<spec.benchmarks.check.PepTest: void <init>()>::83
+IN METHOD::<spec.benchmarks.check.Main: long runBenchmark()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::87

@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testExc7()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::528
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testExc7()>::INVOKE::java.io.PrintStream::$r2::<java.io.PrintStream: void print(java.lang.String)>::528
+IN METHOD::<spec.benchmarks.check.PepTest: java.lang.String testExc7()>::INVOKE::spec.benchmarks.check.PepTest::r0::<spec.benchmarks.check.PepTest: int dontDouble(int)>::532

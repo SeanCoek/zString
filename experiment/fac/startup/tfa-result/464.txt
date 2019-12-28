@@ -1,0 +1,5 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void rmDir()>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::252
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void rmDir()>::INVOKE::java.io.File::r2::<java.io.File: boolean exists()>::253
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void rmDir()>::STATICINVOKE::<spec.benchmarks.derby.DerbyHarness: void removeFile(java.io.File)>::256
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void rmDir()>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::258
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void rmDir()>::INVOKE::java.io.File::r3::<java.io.File: boolean delete()>::259

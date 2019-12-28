@@ -1,0 +1,5 @@
+IN METHOD::<spec.harness.analyzer.CallbackAnalyzerExample: void tearDown()>::STATICINVOKE::<spec.harness.analyzer.CallbackAnalyzerExample$TheNumberGenerator: void deregister(spec.harness.analyzer.CallbackAnalyzerExample)>::56
+IN METHOD::<spec.harness.analyzer.CallbackAnalyzerExample: void tearDown()>::SPECIALINVOKE::<spec.harness.analyzer.CallbackAnalyzerExample$NumberResult: void <init>(double,java.lang.String,java.lang.String)>::59
+IN METHOD::<spec.harness.analyzer.CallbackAnalyzerExample: void tearDown()>::INVOKE::spec.harness.analyzer.AnalyzerBase::r0::<spec.harness.analyzer.AnalyzerBase: void report(spec.harness.analyzer.AnalyzerResult)>::59
+IN METHOD::<spec.harness.analyzer.CallbackAnalyzerExample: void tearDown()>::SPECIALINVOKE::<spec.harness.analyzer.CallbackAnalyzerExample$NumberResult: void <init>(double,java.lang.String,java.lang.String)>::60
+IN METHOD::<spec.harness.analyzer.CallbackAnalyzerExample: void tearDown()>::INVOKE::spec.harness.analyzer.AnalyzerBase::r0::<spec.harness.analyzer.AnalyzerBase: void report(spec.harness.analyzer.AnalyzerResult)>::60

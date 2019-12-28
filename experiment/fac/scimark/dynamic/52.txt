@@ -1,0 +1,3 @@
+IN METHOD::<spec.benchmarks.scimark.monte_carlo.MonteCarlo: double integrate(int)>::SPECIALINVOKE::<spec.benchmarks.scimark.utils.Random: void <init>(int)>::64
+IN METHOD::<spec.benchmarks.scimark.monte_carlo.MonteCarlo: double integrate(int)>::INVOKE::spec.benchmarks.scimark.utils.Random::r1::double nextDouble()::69
+IN METHOD::<spec.benchmarks.scimark.monte_carlo.MonteCarlo: double integrate(int)>::INVOKE::spec.benchmarks.scimark.utils.Random::r1::double nextDouble()::70

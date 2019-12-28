@@ -1,0 +1,10 @@
+IN METHOD::<spec.reporter.ReportGenerator: void generateDetailsTable(spec.reporter.Writer)>::INVOKE::spec.reporter.Writer::r1::<spec.reporter.Writer: void startDetailsTable()>::291
+IN METHOD::<spec.reporter.ReportGenerator: void generateDetailsTable(spec.reporter.Writer)>::INVOKE::any_subtype_of::java.lang.Object::r1::<spec.reporter.Writer: void startDetailsTable()>::291
+IN METHOD::<spec.reporter.ReportGenerator: void generateDetailsTable(spec.reporter.Writer)>::INVOKE::java.lang.Object::$r4::<java.lang.Object: java.lang.Class getClass()>::292
+IN METHOD::<spec.reporter.ReportGenerator: void generateDetailsTable(spec.reporter.Writer)>::SPECIALINVOKE::<spec.reporter.BenchmarkGroupRecords$BenchmarkResultsIterator: void <init>(spec.reporter.BenchmarkGroupRecords)>::292
+IN METHOD::<spec.reporter.ReportGenerator: void generateDetailsTable(spec.reporter.Writer)>::INVOKE::spec.reporter.BenchmarkGroupRecords$BenchmarkResultsIterator::r2::<spec.reporter.BenchmarkGroupRecords$BenchmarkResultsIterator: spec.reporter.BenchmarkRecord next()>::294
+IN METHOD::<spec.reporter.ReportGenerator: void generateDetailsTable(spec.reporter.Writer)>::INVOKE::spec.reporter.BenchmarkGroupRecords$BenchmarkResultsIterator::r2::<spec.reporter.BenchmarkGroupRecords$BenchmarkResultsIterator: spec.reporter.BenchmarkRecord getCurrentRecord()>::295
+IN METHOD::<spec.reporter.ReportGenerator: void generateDetailsTable(spec.reporter.Writer)>::INVOKE::spec.reporter.Writer::r1::<spec.reporter.Writer: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::295
+IN METHOD::<spec.reporter.ReportGenerator: void generateDetailsTable(spec.reporter.Writer)>::INVOKE::any_subtype_of::java.lang.Object::r1::<spec.reporter.Writer: void handleBenchmarkRecord(spec.reporter.BenchmarkRecord)>::295
+IN METHOD::<spec.reporter.ReportGenerator: void generateDetailsTable(spec.reporter.Writer)>::INVOKE::spec.reporter.Writer::r1::<spec.reporter.Writer: void endTable(boolean)>::298
+IN METHOD::<spec.reporter.ReportGenerator: void generateDetailsTable(spec.reporter.Writer)>::INVOKE::any_subtype_of::java.lang.Object::r1::<spec.reporter.Writer: void endTable(boolean)>::298

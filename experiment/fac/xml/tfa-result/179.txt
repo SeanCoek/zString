@@ -1,0 +1,2 @@
+IN METHOD::<spec.reporter.HTMLWriter: void putString(java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::285
+IN METHOD::<spec.reporter.HTMLWriter: void putString(java.lang.String)>::INVOKE::java.lang.StringBuilder::$r2::<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>::285

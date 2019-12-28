@@ -1,0 +1,10 @@
+IN METHOD::<spec.benchmarks.check.Main: void checkSubclassing()>::SPECIALINVOKE::<spec.benchmarks.check.Super: void <init>(int)>::94
+IN METHOD::<spec.benchmarks.check.Main: void checkSubclassing()>::SPECIALINVOKE::<spec.benchmarks.check.Sub: void <init>(int)>::95
+IN METHOD::<spec.benchmarks.check.Main: void checkSubclassing()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::96
+IN METHOD::<spec.benchmarks.check.Main: void checkSubclassing()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::96
+IN METHOD::<spec.benchmarks.check.Main: void checkSubclassing()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::97
+IN METHOD::<spec.benchmarks.check.Main: void checkSubclassing()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::97
+IN METHOD::<spec.benchmarks.check.Main: void checkSubclassing()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::98
+IN METHOD::<spec.benchmarks.check.Main: void checkSubclassing()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::98
+IN METHOD::<spec.benchmarks.check.Main: void checkSubclassing()>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::99
+IN METHOD::<spec.benchmarks.check.Main: void checkSubclassing()>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::99

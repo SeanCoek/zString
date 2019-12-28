@@ -1,0 +1,15 @@
+IN METHOD::<spec.benchmarks.compress.Compressor: void compress()>::INVOKE::spec.benchmarks.compress.InputBuffer::$r1::<spec.benchmarks.compress.InputBuffer: int readByte()>::273
+IN METHOD::<spec.benchmarks.compress.Compressor: void compress()>::INVOKE::spec.benchmarks.compress.Compressor$HashTable::$r2::<spec.benchmarks.compress.Compressor$HashTable: int hsize()>::275
+IN METHOD::<spec.benchmarks.compress.Compressor: void compress()>::INVOKE::spec.benchmarks.compress.Compressor$HashTable::$r3::<spec.benchmarks.compress.Compressor$HashTable: int hsize()>::280
+IN METHOD::<spec.benchmarks.compress.Compressor: void compress()>::INVOKE::spec.benchmarks.compress.Compressor$HashTable::$r4::<spec.benchmarks.compress.Compressor$HashTable: void clear()>::281
+IN METHOD::<spec.benchmarks.compress.Compressor: void compress()>::INVOKE::spec.benchmarks.compress.InputBuffer::$r12::<spec.benchmarks.compress.InputBuffer: int readByte()>::283
+IN METHOD::<spec.benchmarks.compress.Compressor: void compress()>::INVOKE::spec.benchmarks.compress.Compressor$HashTable::$r5::<spec.benchmarks.compress.Compressor$HashTable: int of(int)>::287
+IN METHOD::<spec.benchmarks.compress.Compressor: void compress()>::INVOKE::spec.benchmarks.compress.CodeTable::$r11::<spec.benchmarks.compress.CodeTable: int of(int)>::289
+IN METHOD::<spec.benchmarks.compress.Compressor: void compress()>::INVOKE::spec.benchmarks.compress.Compressor$HashTable::$r8::<spec.benchmarks.compress.Compressor$HashTable: int of(int)>::301
+IN METHOD::<spec.benchmarks.compress.Compressor: void compress()>::INVOKE::spec.benchmarks.compress.CodeTable::$r10::<spec.benchmarks.compress.CodeTable: int of(int)>::303
+IN METHOD::<spec.benchmarks.compress.Compressor: void compress()>::SPECIALINVOKE::<spec.benchmarks.compress.Compressor: void output(int)>::309
+IN METHOD::<spec.benchmarks.compress.Compressor: void compress()>::INVOKE::spec.benchmarks.compress.CodeTable::$r6::<spec.benchmarks.compress.CodeTable: void set(int,int)>::313
+IN METHOD::<spec.benchmarks.compress.Compressor: void compress()>::INVOKE::spec.benchmarks.compress.Compressor$HashTable::$r7::<spec.benchmarks.compress.Compressor$HashTable: void set(int,int)>::314
+IN METHOD::<spec.benchmarks.compress.Compressor: void compress()>::SPECIALINVOKE::<spec.benchmarks.compress.Compressor: void clBlock()>::316
+IN METHOD::<spec.benchmarks.compress.Compressor: void compress()>::SPECIALINVOKE::<spec.benchmarks.compress.Compressor: void output(int)>::322
+IN METHOD::<spec.benchmarks.compress.Compressor: void compress()>::SPECIALINVOKE::<spec.benchmarks.compress.Compressor: void output(int)>::324

@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.check.LoopBounds: int constraintAt(int)>::INVOKE::java.util.Vector::$r2::java.lang.Object elementAt(int)::46
+IN METHOD::<spec.benchmarks.check.LoopBounds: int constraintAt(int)>::INVOKE::java.lang.Integer::$r3::int intValue()::48
+IN METHOD::<spec.benchmarks.check.LoopBounds: int constraintAt(int)>::INVOKE::java.util.Vector::$r2::java.lang.Object elementAt(int)::46
+IN METHOD::<spec.benchmarks.check.LoopBounds: int constraintAt(int)>::INVOKE::java.lang.Integer::$r3::int intValue()::48

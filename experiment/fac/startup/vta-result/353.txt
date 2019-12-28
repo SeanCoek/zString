@@ -1,0 +1,2 @@
+IN METHOD::<spec.benchmarks.serial.data.TestByteArray: void <init>()>::SPECIALINVOKE::<java.lang.Object: void <init>()>::21
+IN METHOD::<spec.benchmarks.serial.data.TestByteArray: void <init>()>::SPECIALINVOKE::<java.util.Random: void <init>()>::23

@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.compress.OutputBuffer: long getCRC()>::SPECIALINVOKE::<java.util.zip.CRC32: void <init>()>::125

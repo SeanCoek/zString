@@ -1,0 +1,8 @@
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssuesInfo()>::INVOKE::java.io.PrintStream::$r0::<java.io.PrintStream: void println()>::15
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssuesInfo()>::INVOKE::java.io.PrintStream::$r1::<java.io.PrintStream: void println(java.lang.String)>::16
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssuesInfo()>::INVOKE::java.io.PrintStream::$r2::<java.io.PrintStream: void println()>::17
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssuesInfo()>::INVOKE::java.io.PrintStream::$r3::<java.io.PrintStream: void println(java.lang.String)>::18
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssuesInfo()>::INVOKE::java.io.PrintStream::$r4::<java.io.PrintStream: void println()>::19
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssuesInfo()>::STATICINVOKE::<spec.harness.KnownIssues: void printKnownIssueJavacVersion()>::23
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssuesInfo()>::STATICINVOKE::<spec.harness.KnownIssues: void printKnownIssueXmlTransformRace()>::27
+IN METHOD::<spec.harness.KnownIssues: void printKnownIssuesInfo()>::STATICINVOKE::<spec.harness.KnownIssues: void printKnownIssueutOfMemoryError()>::31

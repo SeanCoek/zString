@@ -1,0 +1,5 @@
+IN METHOD::<spec.reporter.Utils: java.lang.String getDescription(java.lang.String)>::STATICINVOKE::<spec.reporter.Utils: void initDescriptions()>::216
+IN METHOD::<spec.reporter.Utils: java.lang.String getDescription(java.lang.String)>::INVOKE::java.util.Hashtable::$r3::<java.util.Hashtable: java.lang.Object get(java.lang.Object)>::218
+IN METHOD::<spec.reporter.Utils: java.lang.String getDescription(java.lang.String)>::INVOKE::java.security.Provider::$r3::<java.security.Provider: java.lang.Object get(java.lang.Object)>::218
+IN METHOD::<spec.reporter.Utils: java.lang.String getDescription(java.lang.String)>::INVOKE::javax.swing.MultiUIDefaults::$r3::<javax.swing.MultiUIDefaults: java.lang.Object get(java.lang.Object)>::218
+IN METHOD::<spec.reporter.Utils: java.lang.String getDescription(java.lang.String)>::INVOKE::javax.swing.UIDefaults::$r3::<javax.swing.UIDefaults: java.lang.Object get(java.lang.Object)>::218

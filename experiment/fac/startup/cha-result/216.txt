@@ -1,0 +1,7 @@
+IN METHOD::<spec.benchmarks.compiler.Util: byte[] getBytes(java.io.File)>::INVOKE::java.io.File::r0::<java.io.File: java.lang.String getAbsolutePath()>::198
+IN METHOD::<spec.benchmarks.compiler.Util: byte[] getBytes(java.io.File)>::SPECIALINVOKE::<java.io.FileInputStream: void <init>(java.lang.String)>::198
+IN METHOD::<spec.benchmarks.compiler.Util: byte[] getBytes(java.io.File)>::STATICINVOKE::<spec.benchmarks.compiler.Util: byte[] getBytes(java.io.InputStream)>::199
+IN METHOD::<spec.benchmarks.compiler.Util: byte[] getBytes(java.io.File)>::INVOKE::java.io.InputStream::r1::<java.io.InputStream: void close()>::200
+IN METHOD::<spec.benchmarks.compiler.Util: byte[] getBytes(java.io.File)>::INVOKE::java.net.SocketInputStream::r1::<java.net.SocketInputStream: void close()>::200
+IN METHOD::<spec.benchmarks.compiler.Util: byte[] getBytes(java.io.File)>::INVOKE::java.lang.UNIXProcess$DeferredCloseInputStream::r1::<java.lang.UNIXProcess$DeferredCloseInputStream: void close()>::200
+IN METHOD::<spec.benchmarks.compiler.Util: byte[] getBytes(java.io.File)>::INVOKE::java.io.FileInputStream::r1::<java.io.FileInputStream: void close()>::200

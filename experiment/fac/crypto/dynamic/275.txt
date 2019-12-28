@@ -1,0 +1,8 @@
+IN METHOD::<spec.benchmarks.crypto.aes.Main: void harnessMain()>::INVOKE::spec.benchmarks.crypto.aes.Main::r0::void runEncryptDecrypt(javax.crypto.SecretKey,java.lang.String,java.lang.String)::142
+IN METHOD::<spec.benchmarks.crypto.aes.Main: void harnessMain()>::INVOKE::spec.benchmarks.crypto.aes.Main::r0::void runEncryptDecrypt(javax.crypto.SecretKey,java.lang.String,java.lang.String)::143
+IN METHOD::<spec.benchmarks.crypto.aes.Main: void harnessMain()>::INVOKE::spec.benchmarks.crypto.aes.Main::r0::void runEncryptDecrypt(javax.crypto.SecretKey,java.lang.String,java.lang.String)::144
+IN METHOD::<spec.benchmarks.crypto.aes.Main: void harnessMain()>::INVOKE::spec.benchmarks.crypto.aes.Main::r0::void runEncryptDecrypt(javax.crypto.SecretKey,java.lang.String,java.lang.String)::145
+IN METHOD::<spec.benchmarks.crypto.aes.Main: void harnessMain()>::INVOKE::spec.benchmarks.crypto.aes.Main::r0::void runEncryptDecrypt(javax.crypto.SecretKey,java.lang.String,java.lang.String)::146
+IN METHOD::<spec.benchmarks.crypto.aes.Main: void harnessMain()>::INVOKE::spec.benchmarks.crypto.aes.Main::r0::void runEncryptDecrypt(javax.crypto.SecretKey,java.lang.String,java.lang.String)::147
+IN METHOD::<spec.benchmarks.crypto.aes.Main: void harnessMain()>::INVOKE::spec.benchmarks.crypto.aes.Main::r0::void runEncryptDecrypt(javax.crypto.SecretKey,java.lang.String,java.lang.String)::148
+IN METHOD::<spec.benchmarks.crypto.aes.Main: void harnessMain()>::INVOKE::spec.benchmarks.crypto.aes.Main::r0::void runEncryptDecrypt(javax.crypto.SecretKey,java.lang.String,java.lang.String)::149

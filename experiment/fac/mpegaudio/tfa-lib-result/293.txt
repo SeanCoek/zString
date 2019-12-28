@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.Util: void printProperties(java.util.Properties)>::STATICINVOKE::<spec.harness.Context: java.io.PrintStream getOut()>::214
+IN METHOD::<spec.harness.Util: void printProperties(java.util.Properties)>::STATICINVOKE::<spec.harness.Util: void printProperties(java.io.PrintStream,java.util.Properties)>::214

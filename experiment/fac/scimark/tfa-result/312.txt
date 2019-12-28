@@ -1,0 +1,2 @@
+IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.String sensorPtdHostOs()>::INVOKE::java.lang.String::$r2::<java.lang.String: java.lang.String substring(int,int)>::200
+IN METHOD::<spec.harness.analyzer.TempSensor: java.lang.String sensorPtdHostOs()>::INVOKE::java.lang.String::$r5::<java.lang.String: java.lang.String substring(int)>::201

@@ -1,0 +1,9 @@
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupValidators(java.lang.String)>::STATICINVOKE::<javax.xml.validation.SchemaFactory: javax.xml.validation.SchemaFactory newInstance(java.lang.String)>::105
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupValidators(java.lang.String)>::STATICINVOKE::<spec.benchmarks.xml.XMLBenchmark: java.lang.String getFullName(java.lang.Class,java.lang.String,java.lang.String)>::108
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupValidators(java.lang.String)>::SPECIALINVOKE::<java.io.File: void <init>(java.lang.String)>::109
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupValidators(java.lang.String)>::INVOKE::java.io.File::r2::<java.io.File: boolean isAbsolute()>::111
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupValidators(java.lang.String)>::INVOKE::spec.io.FileCache$CachedFile::$r16::<spec.io.FileCache$CachedFile: java.io.ByteArrayInputStream getStream()>::112
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupValidators(java.lang.String)>::INVOKE::java.io.File::r2::<java.io.File: java.net.URI toURI()>::112
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupValidators(java.lang.String)>::SPECIALINVOKE::<javax.xml.transform.stream.StreamSource: void <init>(java.io.InputStream,java.lang.String)>::112
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupValidators(java.lang.String)>::INVOKE::spec.io.FileCache$CachedFile::$r9::<spec.io.FileCache$CachedFile: java.io.ByteArrayInputStream getStream()>::115
+IN METHOD::<spec.benchmarks.xml.validation.Main: void setupValidators(java.lang.String)>::SPECIALINVOKE::<javax.xml.transform.stream.StreamSource: void <init>(java.io.InputStream,java.lang.String)>::115

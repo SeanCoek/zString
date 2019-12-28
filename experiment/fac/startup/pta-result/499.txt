@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.derby.CyclicReader: void close()>::INVOKE::java.lang.Throwable::r1::<java.lang.Throwable: void printStackTrace()>::57

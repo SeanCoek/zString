@@ -1,0 +1,1 @@
+IN METHOD::<spec.benchmarks.derby.DerbyHarness: void dropTable(java.sql.Connection,java.lang.String)>::SPECIALINVOKE::<java.lang.StringBuilder: void <init>()>::292

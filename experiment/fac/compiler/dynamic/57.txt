@@ -1,0 +1,4 @@
+IN METHOD::<spec.benchmarks.compiler.Compiler: void <init>(java.lang.String[])>::SPECIALINVOKE::<java.lang.Object: void <init>()>::22
+IN METHOD::<spec.benchmarks.compiler.Compiler: void <init>(java.lang.String[])>::SPECIALINVOKE::<com.sun.tools.javac.main.Main: void <init>(java.lang.String)>::18
+IN METHOD::<spec.benchmarks.compiler.Compiler: void <init>(java.lang.String[])>::SPECIALINVOKE::<java.lang.Object: void <init>()>::22
+IN METHOD::<spec.benchmarks.compiler.Compiler: void <init>(java.lang.String[])>::SPECIALINVOKE::<com.sun.tools.javac.main.Main: void <init>(java.lang.String)>::18
