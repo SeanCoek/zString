@@ -7,6 +7,13 @@ L.~O. Andersen.
   language}.
 \newblock PhD thesis, DIKU, University of Copenhagen, May 1994.
 
+\bibitem[BHM07]{Binder2007}
+Walter Binder, Jarle Hulaas, and Philippe Moret.
+\newblock Advanced java bytecode instrumentation.
+\newblock In {\em Proceedings of the 5th International Symposium on Principles
+  and Practice of Programming in Java}, PPPJ '07, pages 135--144, New York, NY,
+  USA, 2007. ACM.
+
 \bibitem[BS96]{Bacon1996}
 D.~F. Bacon and P.~F. Sweeney.
 \newblock Fast static analysis of c++ virtual function calls.

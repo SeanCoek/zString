@@ -540,34 +540,41 @@ We answer these two questions in section~\ref{subsec:efficiency} and section~\re
 \subsection{Efficiency}\label{subsec:efficiency}
 We executed each benchmark program $10$ times with the CHA, PTA and TFA algorithms. We calculated the average time consumption (in seconds) as displayed at column \textbf{T$_{CHA}$}(s), \textbf{T$_{PTA}$}(s) and \textbf{T$_{TFA}$}(s) of the Table in Fig.~\ref{fig:TimeCost}. We counted the sizes of each generated realtion (\ie, the type flow realtion `$\tflow$', variable partial order `$\less$' and the field access relation `$\hflow$'). It provides an estimation of size for the problem we are treating. The result shows that our approach consums more time than CHA, for the reason that CHA do not have to analyze detail logic inside the program but only analyze the class and interface hierarchical structure. TFA is in general more efficient than points-to analysis. The runtime cost in TFA basically depends on the size of generated relations, as well as the relational complexity as most of the time is consumed to calculate a fixpoint (\eg, on benchmark $startup$ the number of generated relations reach to 50478, hence TFA cost the most time(19.75s) among these benchmarks). For PTA it also require extra time for maintaining and updating a heap abstraction.
 
-\begin{figure}\centering
-\begin{threeparttable}[b]
-%\begin{table}[!htbp]\centering
-\begin{tabular}{lccccccc}
-	\fullhline
-	\textbf{Benchmark} & \hspace{5pt}\textbf{T$_{\textsf{CHA}}(s)$}& \hspace{5pt}\textbf{T$_{\textsf{PTA}}(s)$} & \hspace{5pt}\textbf{T$_{\textsf{TFA}}(s)$} & \hspace{10pt}\textbf{R${\tflow}$}\hspace{10pt} & \hspace{10pt}\textbf{R$_{\less}$}\hspace{10pt} & \hspace{10pt}\textbf{R${\rightarrow}$}\hspace{10pt} &\hspace{10pt}\textbf{R$_{total}$}\hspace{10pt}\\
-	\fullhline
-check & 4.34 & 69.32 & 3.52 & 8718 & 15599 & 10089 & 34406\\
-compiler & 5.39 & 70.34 & 1.14 & 7781 & 11277 & 1990 & 21048\\
-compress & 5.00 & 71.73 & 1.09 & 7428 & 10947 & 1876 & 20251\\
-crypto & 4.43 & 69.22 & 1.13 & 7575 & 11220 & 1846 & 20641\\
-derby & 4.81 & 70.79 & 1.38 & 7979 & 11450 & 2034 & 21463\\
-helloworld & 4.33 & 70.44 & 1.25 & 7230 & 10543 & 1828 & 19601\\
-mpegaudio & 4.35 & 69.13 & 1.04 & 7279 & 10612 & 1830 & 19721\\
-scimark & 4.51 & 71.01 & 1.15 & 7451 & 11344 & 1845 & 20640\\
-serial & 4.53 & 69.20 & 1.07 & 7683 & 10977 & 1886 & 20546\\
-startup & 6.13 & 134.09 & 1.46 & 11597 & 17870 & 2651 & 32118\\
-sunflow & 4.35 & 71.26 & 1.07 & 7245 & 10560 & 1830 & 19635\\
-xml & 5.14 & 140.72 & 1.24 & 7837 & 11673 & 2016 & 21526\\
-	\fullhline
-\end{tabular}
+%\begin{figure}\centering
+%\begin{threeparttable}[b]
+%%\begin{table}[!htbp]\centering
+%\begin{tabular}{lccccccc}
+%	\fullhline
+%	\textbf{Benchmark} & \hspace{5pt}\textbf{T$_{\textsf{CHA}}(s)$}& \hspace{5pt}\textbf{T$_{\textsf{PTA}}(s)$} & \hspace{5pt}\textbf{T$_{\textsf{TFA}}(s)$} & \hspace{10pt}\textbf{R${\tflow}$}\hspace{10pt} & \hspace{10pt}\textbf{R$_{\less}$}\hspace{10pt} & \hspace{10pt}\textbf{R${\rightarrow}$}\hspace{10pt} &\hspace{10pt}\textbf{R$_{total}$}\hspace{10pt}\\
+%	\fullhline
+%check & 4.34 & 69.32 & 3.52 & 8718 & 15599 & 10089 & 34406\\
+%compiler & 5.39 & 70.34 & 1.14 & 7781 & 11277 & 1990 & 21048\\
+%compress & 5.00 & 71.73 & 1.09 & 7428 & 10947 & 1876 & 20251\\
+%crypto & 4.43 & 69.22 & 1.13 & 7575 & 11220 & 1846 & 20641\\
+%derby & 4.81 & 70.79 & 1.38 & 7979 & 11450 & 2034 & 21463\\
+%helloworld & 4.33 & 70.44 & 1.25 & 7230 & 10543 & 1828 & 19601\\
+%mpegaudio & 4.35 & 69.13 & 1.04 & 7279 & 10612 & 1830 & 19721\\
+%scimark & 4.51 & 71.01 & 1.15 & 7451 & 11344 & 1845 & 20640\\
+%serial & 4.53 & 69.20 & 1.07 & 7683 & 10977 & 1886 & 20546\\
+%startup & 6.13 & 134.09 & 1.46 & 11597 & 17870 & 2651 & 32118\\
+%sunflow & 4.35 & 71.26 & 1.07 & 7245 & 10560 & 1830 & 19635\\
+%xml & 5.14 & 140.72 & 1.24 & 7837 & 11673 & 2016 & 21526\\
+%	\fullhline
+%\end{tabular}
+%\caption{Runtime cost with different analysis}
+%\label{fig:TimeCost}
+%\begin{tablenotes}
+%  \item[1] \textbf{R}$_{relation}$ denotes different type of relation we generated.
+%\end{tablenotes}
+%%\end{table}
+%\end{threeparttable}
+%\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[scale=1]{timecost.pdf}
 \caption{Runtime cost with different analysis}
 \label{fig:TimeCost}
-\begin{tablenotes}
-  \item[1] \textbf{R}$_{relation}$ denotes different type of relation we generated.
-\end{tablenotes}
-%\end{table}
-\end{threeparttable}
 \end{figure}
 
 
@@ -815,6 +822,8 @@ Call graphs may serve as a basis for points-to analysis, but often a points-to a
 Regarding the treatment of flow analysis in our algorithm, downcast analysis has been studied in region inference which is a special memory management scheme for preventing dangling pointers or improving precision in garbage collection in object-oriented programming languages~\cite{Boyapati2003,Chin2004}.  These works are type-based analysis, while our methodology belongs to traditional static program analysis. Similar ideas regarding value flow can also be found in the graph-reachability based formulation (e.g.~\cite{Reps1997,Lu2013}) to which all distributed data flow analyses can be adopted.
 
 Runtime profiling data can be recorded and used to compare with static analysis result. Furthermore, these runtime data can help static algorithms to increase precision and achieve adaptive ability. In general there are two ways to record runtime profiling data for Java programs, collecting from Java VM~\cite{Codrut2014}, or using program instrumentation technique to extract these data in runtime~\cite{Sundaresan2000}. Inspire by~\cite{Sundaresan2000}, and partialy due to Java VM can only internally provide the data we want, our dynamic type recorder is implemented using instumented technique.
+
+Instrumentation for Java bytecode can be performed both statically and dynamically. Traditional instrumentation is executed statically at most time, which suffers from the limitation that dynamically generated code or downloaded code will be skiped from instrumentation. Walter et al.~\cite{Binder2007} implemented an framework called FERRARI which can perform instrumentation in both ways. However, our dynamic profiler is implemented using statically instrumentation. Hence, dynamically generated code can not be instrumented. We do not implemented dynamic instrumentation yet, but note that all the benchmarks code we tested are statically asscessible (\ie, none of codes are dynamically generated or downloaded).
 
 \section{Conclusion and future work}\label{sec:conclusion}
 In this paper we have proposed Type Flow Analysis (TFA), an algorithm that statically determines reaching types of variable and constructs call graph edges for Object-Oriented programming languages. We have proved that our method is as precise as subset-based points-to analysis, regarding type related information. The computation of TFA is pure relational since it do not require a heap abstraction, which is needed by points-to analysis. 

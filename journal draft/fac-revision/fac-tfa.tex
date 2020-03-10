@@ -508,7 +508,7 @@ After basic relations are generated, we use the extended relation rules to perfo
 After all required analysis is done, we extract the set of reaching types as final result.
 \end{enumerate}
 Note that since our analysis is inter-procedural, type information for a receiver of a call site can be used to resolve potential callee methods, which further help to propagate type information from actual parameters to virtual parameters and from return variables back to the caller statement. Since the additional inter-procedural type flow may incrementally help to enrich type information at call sites, the type flow process is mutually recursive between call sites and defined methods. %
-Fig~\ref{fig:static-process} illustrates the entire process of our static analysis tool. Input data and generated data are represented in dash arrow. The final result is passed on by the ``Result Extraction'' phase and represented in green background.
+Fig~\ref{fig:static-process} illustrates the entire process of our static analysis tool. Input data and generated data are represented in dash arrow. The final result is passed on by the ``Result Extraction'' phase and represented in the final circle.
 
 \begin{figure}
 \centering
@@ -540,9 +540,9 @@ New statements are inserted  before each call site to collect the receiver type.
 
 \textbf{Insert Last.}
 %This manner is similar with
-Similar to \emph{Insert First}, except that statements are inserted after the last statement of a method block. We also record the type of \texttt{this} reference. % in this way.
+Similar to \emph{Insert First}, except that statements are inserted before the last statement of a method block. We also record the type of \texttt{this} reference. % in this way.
 
-\textbf{Insert After.}
+\textbf{Insert After. \emph{(our scheme)}}
 %Statments will be inserted right after invocations and the type of receiver will be recorded. It is similar with ``Insert Before'', except that statements are inserted at different position. We take this manner in our implementation and the reason will be discuss in section ~\ref{subsubsec:instrument}
 In this way we insert statements right after each call site to record the type of the receiver, which is similar to \emph{Insert Before}. We choose to adopt this scheme and the reason is given as follows.
 %\end{itemize}
@@ -557,7 +557,7 @@ In this way we insert statements right after each call site to record the type o
 %\subsubsection{Our Instrumentation Manner}\label{subsubsec:instrument}
 
 %We take ``Insert After'' as our instrumentation manner. The reason is mainly
-According to the Java specification, the first statement of each constructor should be either another constructor of its own or its super class. Therefore, we would get a \emph{JVM voilation} error if we instrument a statement before the first statement in a constructor. We illustrate this problem in an example given in Listing~\ref{lst:spec-constructor}. Due to this restriction, both \emph{Insert First} and \emph{Insert Before} schemes cannot be applied. For the remaining to schemes, we choose \emph{Insert After} over \emph{Insert Last}, so that a type can be straightforwardly collected and bundled with its receiver. %due to the reason. %that it's more straightforward.
+According to the Java specification, the first statement of each constructor should be either another constructor of its own or its super class. Therefore, we would get a \emph{JVM voilation} error if we instrument a statement before the first statement in a constructor. We illustrate this problem in an example given in Listing~\ref{lst:spec-constructor}. Due to this restriction, both \emph{Insert First} and \emph{Insert Before} schemes cannot be applied. For the remaining to schemes, we choose \emph{Insert After} over \emph{Insert Last} for the reason that a last statement could be appeared in many different kinds like a return statement, an exception throwing statement, or even an application terminating invocation. It will take more time to tackle this problem if we use the  \emph{Insert Last} scheme to implement our profiler. As a result, we use \emph{Insert After} as our implementation manner so that a type can be more easier and straightforwardly collected and bundled with its receiver. %due to the reason. %that it's more straightforward.
 As an example, the code before and after instrumentation are shown in Listing~\ref{lst:before-instru} and Listing~\ref{lst:after-instru}, respectively. For Listing~\ref{lst:after-instru}, at line $5$, the funtion $RecordUtils.id()$ takes an invocation expression ($invokeExprssion$) and a method receiver ($b$) as parameters and return an unique representation string for this invocation. In this example, the collected unique representation is \emph{A:m1:b:B:m2:4}, which stands for $b$ calls method $m2$ of class $B$, at line $4$ within method $m1$ of class $A$. It also shows that $b$ is of type $B$ at this program location.
 
 \begin{minipage}{\linewidth}
