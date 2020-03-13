@@ -8,9 +8,10 @@ public class ZStringAnalyzer {
 
     public static void main(String[] args) {
         String cp = "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar";
-        String pp = "/home/sean/bench_compared/crypto";
+        String pp = "/home/sean/bench_to_instrument/compiler";
         SootEnvironment.init(cp, pp);
-        PointsToAnalysis pta = Scene.v().getPointsToAnalysis();
+//        PointsToAnalysis pta = Scene.v().getPointsToAnalysis();
         SootEnvironment.travelStruct();
+//        SootEnvironment.extractReachableMethods();
     }
 }

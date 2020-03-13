@@ -25,24 +25,38 @@ public class RelationAnalyzer {
     public static String outputTxt;
     public static String SPLITTER = "::";
     public static String FILE_SUFFIX = ".txt";
+    private static boolean LIB_APP = false;
+    private static String BUILDER_APPEND = "<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+    private static String BUFFER_APPEND = "<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    private static String TO_STRING = "<java.lang.String: java.lang.String toString()>";
 
     public static void main(String[] args) {
-        String cp = "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar";
+//        String cp = "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar";
+        String cp = null;
         String pp = null;
         for(int i=0; i < args.length; i++) {
             switch (args[i]) {
+                case "-cp": cp = args[i+1]; break;
                 case "-pp": pp = args[i+1]; break;
                 case "-split": isSplit = true; break;
                 case "-d" : outputTxt = args[i+1]; break;
-                default:
+                case "-lib" : LIB_APP = true;
+                default: printHelp(); return;
             }
         }
-        if(pp == null) {
-//            pp = "/home/sean/bench_compile/";
-//            pp = "/home/sean/bench_compared/compress";
-//            pp = "/home/sean/bench_compared/crypto";
-            pp = "/home/sean/bench_compared/helloworld";
+//        if(pp == null) {
+////            pp = "/home/sean/bench_compared/compress";
+////            pp = "/home/sean/bench_compared/crypto";
 //            pp = "/home/sean/instruTest";
+////            pp = "/home/sean/bench_compared/compiler";
+//        }
+        if(cp == null) {
+            System.out.println("rt.jar not included, please use \"-h\" to see how to specify rt.jar");
+            return;
+        }
+        if(pp == null) {
+            System.out.println("target is empty, please use \"-h\" to see how to specify target files");
+            return;
         }
         if(outputTxt == null) {
             outputTxt = "default.txt";
@@ -107,6 +121,9 @@ public class RelationAnalyzer {
                     if(returnValue instanceof JArrayRef) {
                         returnValue = ((JArrayRef) returnValue).getBase();
                     }
+                    if(returnValue instanceof StringConstant) {
+                        relationSet.add(new Relation(null, returnValue, RefType.v("java.lang.String")));
+                    }
                     returns.add(returnValue);
                 }
                 if(u instanceof JIdentityStmt) {
@@ -123,10 +140,17 @@ public class RelationAnalyzer {
                         relationSet.add(new Relation(right, left));
                         params.add(right);
                     }
+                    if(right instanceof StringConstant) {
+                        relationSet.add(new Relation(null, right, RefType.v("java.lang.String")));
+                    }
 
                 } else if(u instanceof JAssignStmt) {
                     Value left = ((JAssignStmt) u).getLeftOp();
                     Value right = ((JAssignStmt) u).getRightOp();
+                    if(right instanceof StringConstant) {
+                        relationSet.add(new Relation(null, right, RefType.v("java.lang.String")));
+                    }
+
                     if(left instanceof JArrayRef) {
                         left = ((JArrayRef) left).getBase();
                     }
@@ -152,6 +176,9 @@ public class RelationAnalyzer {
                                     left = ((JInstanceFieldRef) left).getBase();
                                     relationSet.add(new Relation(left, right, field));
                                 }
+                                if(right instanceof StringConstant) {
+                                    relationSet.add(new Relation(null, right, RefType.v("java.lang.String")));
+                                }
                             } else if (right instanceof FieldRef) {
                                 // x = y.f
                                 fieldLoadToResolve.add((JAssignStmt) u);
@@ -163,15 +190,20 @@ public class RelationAnalyzer {
                                 fieldLoadStmt.add((JAssignStmt) u);
                                 globalfieldLoadStmts.put(field, fieldLoadStmt);
                                 // library treatment
-                                if(!field.getDeclaringClass().isApplicationClass()) {
-                                    if(left instanceof JArrayRef) {
-                                        left = ((JArrayRef) left).getBase();
-                                    }
-                                    Type t = field.getType();
-                                    if(t instanceof RefType) {
-                                        relationSet.add(new Relation(null, left, AnySubType.v((RefType)t)));
-                                    } else if(t instanceof ArrayType) {
-                                        relationSet.add(new Relation(null, left, t));
+                                if(LIB_APP) {
+                                    if (!field.getDeclaringClass().isApplicationClass()) {
+                                        if (left instanceof JArrayRef) {
+                                            left = ((JArrayRef) left).getBase();
+                                        }
+                                        Type t = field.getType();
+                                        if (t instanceof RefType) {
+                                            relationSet.add(new Relation(null, left, AnySubType.v((RefType) t)));
+                                        } else if (t instanceof ArrayType) {
+                                            relationSet.add(new Relation(null, left, t));
+                                            if(((ArrayType) t).baseType instanceof RefType) {
+                                                relationSet.add(new Relation(null, left, ((ArrayType) t).baseType));
+                                            }
+                                        }
                                     }
                                 }
 //                                globalFiledLoadStmts.add((JAssignStmt) u);
@@ -261,7 +293,11 @@ public class RelationAnalyzer {
             } else if(invokeUnit instanceof JInvokeStmt) {
                 invokeExpr = ((JInvokeStmt) invokeUnit).getInvokeExpr();
             }
-
+            for(Value v: invokeExpr.getArgs()){
+                if(v instanceof StringConstant) {
+                    globalRelations.add(new Relation(null, v, RefType.v("java.lang.String")));
+                }
+            }
             Value caller = null;
             String calleeSub = null;
             if(invokeExpr instanceof JStaticInvokeExpr) {
@@ -287,23 +323,6 @@ public class RelationAnalyzer {
                 genRelationFromVirtualInvoke(invokeExpr, caller, calleeSub, receiver);
             }
 
-//            String declaredClassName = invokeExpr.getMethodRef().getDeclaringClass().getName();
-//            if(receiver != null) {
-//                if(declaredClassName.startsWith("java")
-//                        || declaredClassName.startsWith("sun")
-//                        || declaredClassName.startsWith("com.oracle")
-//                        || declaredClassName.startsWith("com.sun")
-//                        || declaredClassName.startsWith("jdk")) {
-//
-//                    Type t = invokeExpr.getMethodRef().getReturnType();
-//                    if(t instanceof RefType) {
-//                        globalRelations.add(new Relation(null, receiver, AnySubType.v((RefType)t)));
-//                    } else if(t instanceof ArrayType) {
-//                        globalRelations.add(new Relation(null, receiver, t));
-//                    }
-//                }
-//            }
-
             // keep "x.m()" so we could extend relation when the type of "x" changing.
             if(caller != null) {
                 Set<Unit> invokeSet = invocationIfCallerTypeChange.get(caller);
@@ -321,12 +340,22 @@ public class RelationAnalyzer {
         String callee = invokeExpr.getMethod().getSignature();
         if(methodInfoMap.get(callee) == null) {
             //Logger.getLogger(callee).info("can't generated relation for " + invokeExpr.toString());
-            if(receiver != null) {
-                Type t = invokeExpr.getMethodRef().getReturnType();
-                if(t instanceof RefType) {
-                    globalRelations.add(new Relation(null, receiver, AnySubType.v((RefType)t)));
-                } else if(t instanceof ArrayType) {
-                    globalRelations.add(new Relation(null, receiver, t));
+            if(LIB_APP) {
+                if (callee.equals(BUILDER_APPEND) || callee.equals(BUFFER_APPEND) || callee.equals(TO_STRING)) {
+                    if (receiver != null) {
+                        Type t = invokeExpr.getMethodRef().getReturnType();
+                        globalRelations.add(new Relation(null, receiver, t));
+                    }
+                } else if(receiver != null) {
+                    Type t = invokeExpr.getMethodRef().getReturnType();
+                    if (t instanceof RefType) {
+                        globalRelations.add(new Relation(null, receiver, AnySubType.v((RefType) t)));
+                    } else if (t instanceof ArrayType) {
+                        globalRelations.add(new Relation(null, receiver, t));
+                        if(((ArrayType) t).baseType instanceof RefType) {
+                            globalRelations.add(new Relation(null, receiver, ((ArrayType) t).baseType));
+                        }
+                    }
                 }
             }
             //return;
@@ -361,7 +390,7 @@ public class RelationAnalyzer {
                 }
             }
 
-            globalRelations.add(new Relation(caller, vThis));
+            //globalRelations.add(new Relation(caller, vThis));
 
             int paramIdx = 1;
             for(int i=0; i < invokeExpr.getArgCount(); i++) {
@@ -386,12 +415,19 @@ public class RelationAnalyzer {
         String callee = invokeExpr.getMethod().getSignature();
         if(methodInfoMap.get(callee) == null) {
             //Logger.getLogger(callee).info("can't generated relation for " + invokeExpr.toString());
-            if(receiver != null) {
-                Type t = invokeExpr.getMethodRef().getReturnType();
-                if(t instanceof RefType) {
-                    globalRelations.add(new Relation(null, receiver, AnySubType.v((RefType)t)));
-                } else if(t instanceof ArrayType) {
-                    globalRelations.add(new Relation(null, receiver, t));
+            if(LIB_APP) {
+                if (callee.equals(BUILDER_APPEND) || callee.equals(BUFFER_APPEND) || callee.equals(TO_STRING)) {
+                    if (receiver != null) {
+                        Type t = invokeExpr.getMethodRef().getReturnType();
+                        globalRelations.add(new Relation(null, receiver, t));
+                    }
+                } else if (receiver != null) {
+                    Type t = invokeExpr.getMethodRef().getReturnType();
+                    if (t instanceof RefType) {
+                        globalRelations.add(new Relation(null, receiver, AnySubType.v((RefType) t)));
+                    } else if (t instanceof ArrayType) {
+                        globalRelations.add(new Relation(null, receiver, t));
+                    }
                 }
             }
             return;
@@ -424,7 +460,7 @@ public class RelationAnalyzer {
             }
             globalRelations.add(new Relation(z, p));
         }
-        globalRelations.add(new Relation(caller, vThis));
+        //globalRelations.add(new Relation(caller, vThis));
 
         Set<Type> typeReachByCaller = Relation.typeReachByValue.get(caller);
         if(typeReachByCaller != null) {
@@ -439,12 +475,22 @@ public class RelationAnalyzer {
         String callee = invokeExpr.getMethod().getSignature();
         if(methodInfoMap.get(callee) == null) {
             //Logger.getLogger(callee).info("can't generated relation for " + invokeExpr.toString());
-            if(receiver != null) {
-                Type t = invokeExpr.getMethodRef().getReturnType();
-                if(t instanceof RefType) {
-                    globalRelations.add(new Relation(null, receiver, AnySubType.v((RefType)t)));
-                } else if(t instanceof ArrayType) {
-                    globalRelations.add(new Relation(null, receiver, t));
+            if(LIB_APP) {
+                if (callee.equals(BUILDER_APPEND) || callee.equals(BUFFER_APPEND) || callee.equals(TO_STRING)) {
+                    if (receiver != null) {
+                        Type t = invokeExpr.getMethodRef().getReturnType();
+                        globalRelations.add(new Relation(null, receiver, t));
+                    }
+                } else if (receiver != null) {
+                    Type t = invokeExpr.getMethodRef().getReturnType();
+                    if (t instanceof RefType) {
+                        globalRelations.add(new Relation(null, receiver, AnySubType.v((RefType) t)));
+                    } else if (t instanceof ArrayType) {
+                        globalRelations.add(new Relation(null, receiver, t));
+                        if(((ArrayType) t).baseType instanceof RefType) {
+                            globalRelations.add(new Relation(null, receiver, ((ArrayType) t).baseType));
+                        }
+                    }
                 }
             }
             return;
@@ -974,17 +1020,21 @@ public class RelationAnalyzer {
         Iterator<JAssignStmt> stmtIter = fieldLoadIfRelationChange.iterator();
         while(stmtIter.hasNext()) {
             JAssignStmt stmt = stmtIter.next();
-            Value x = stmt.getLeftOp();
-            if (x instanceof JArrayRef) {
-                x = ((JArrayRef) x).getBase();
-            }
             Value y = stmt.getRightOp();
             if (y instanceof JArrayRef) {
                 y = ((JArrayRef) y).getBase();
             }
-            Value z = newFieldRelation.right;
+            if(y instanceof JInstanceFieldRef){
+                if(((JInstanceFieldRef) y).getBase().equals(newFieldRelation.left)) {
+                    Value x = stmt.getLeftOp();
+                    if (x instanceof JArrayRef) {
+                        x = ((JArrayRef) x).getBase();
+                    }
+                    Value z = newFieldRelation.right;
 
-            extendSet.add(new Relation(z, x));
+                    extendSet.add(new Relation(z, x));
+                }
+            }
         }
     }
 
@@ -1058,6 +1108,7 @@ public class RelationAnalyzer {
                 }
                 String thisMethodSig = m.getSignature();
                 String recordStaticPrefix = "IN METHOD" + SPLITTER + thisMethodSig + SPLITTER + "STATICINVOKE";
+                String recordSpecialrefix = "IN METHOD" + SPLITTER + thisMethodSig + SPLITTER + "SPECIALINVOKE";
                 String recordVirtualCallPrefix = "IN METHOD"+ SPLITTER + thisMethodSig + SPLITTER + "INVOKE";
                 Chain<Unit> units = m.retrieveActiveBody().getUnits();
                 List<String> data2Write = new ArrayList<>();
@@ -1080,8 +1131,11 @@ public class RelationAnalyzer {
                         data2Write.add(writeLine);
                     } else if(invokeExpr instanceof JDynamicInvokeExpr) {
                         //TODO: dynamic invoke is a new feature and we haven't handle this.
-                    } else if(invokeExpr instanceof InstanceInvokeExpr){
-                        Value receiver = ((InstanceInvokeExpr) invokeExpr).getBase();
+                    } else if(invokeExpr instanceof JSpecialInvokeExpr) {
+                        writeLine = recordSpecialrefix + SPLITTER + invokeExpr.getMethod().getSignature() + SPLITTER + lineNum;
+                        data2Write.add(writeLine);
+                    } else if(invokeExpr instanceof JVirtualInvokeExpr){
+                        Value receiver = ((JVirtualInvokeExpr) invokeExpr).getBase();
                         Set<Type> reachTypes = Relation.typeReachByValue.get(receiver);
                         if(reachTypes == null || reachTypes.isEmpty()) {
                             continue;
@@ -1089,13 +1143,26 @@ public class RelationAnalyzer {
                         for(Type t : reachTypes) {
                             if(t instanceof RefType) {
                                 SootClass c = ((RefType) t).getSootClass();
-                                writeLine = recordVirtualCallPrefix + SPLITTER + c.getName() + SPLITTER +receiver + SPLITTER + invokeExpr.getMethod().getSubSignature() + SPLITTER + lineNum;
-                                data2Write.add(writeLine);
+                                try {
+                                    SootMethod sm = c.getMethod(invokeExpr.getMethod().getSubSignature());
+                                    writeLine = recordVirtualCallPrefix + SPLITTER + c.getName() + SPLITTER +receiver + SPLITTER + sm.getSignature() + SPLITTER + lineNum;
+                                    data2Write.add(writeLine);
+                                } catch (Exception e) {
+                                    writeLine = recordVirtualCallPrefix + SPLITTER + invokeExpr.getMethod().getDeclaringClass() + SPLITTER +receiver + SPLITTER + invokeExpr.getMethod().getSignature() + SPLITTER + lineNum;
+                                    data2Write.add(writeLine);
+//                                    e.printStackTrace();
+                                }
                             } else if (t instanceof AnySubType) {
                                 SootClass c = ((AnySubType) t).getBase().getSootClass();
-                                writeLine = recordVirtualCallPrefix + SPLITTER + c.getName() + SPLITTER +receiver + SPLITTER + invokeExpr.getMethod().getSubSignature() + SPLITTER + lineNum;
-                                data2Write.add(writeLine);
-                                writeLine = recordVirtualCallPrefix + SPLITTER + "any_subtype_of" + SPLITTER + c.getName() + SPLITTER +receiver + SPLITTER + invokeExpr.getMethod().getSubSignature() + SPLITTER + lineNum;
+                                try {
+                                    SootMethod sm = c.getMethod(invokeExpr.getMethod().getSubSignature());
+                                    writeLine = recordVirtualCallPrefix + SPLITTER + c.getName() + SPLITTER +receiver + SPLITTER + sm.getSignature() + SPLITTER + lineNum;
+                                    data2Write.add(writeLine);
+                                } catch (Exception e) {
+                                    writeLine = recordVirtualCallPrefix + SPLITTER + invokeExpr.getMethod().getDeclaringClass() + SPLITTER +receiver + SPLITTER + invokeExpr.getMethod().getSignature() + SPLITTER + lineNum;
+                                    data2Write.add(writeLine);
+                                }
+                                writeLine = recordVirtualCallPrefix + SPLITTER + "any_subtype_of" + SPLITTER + c.getName() + SPLITTER +receiver + SPLITTER + invokeExpr.getMethod().getSignature() + SPLITTER + lineNum;
                                 data2Write.add(writeLine);
                             }
                         }
@@ -1109,6 +1176,14 @@ public class RelationAnalyzer {
             }
             FileUtil.writeMap(filenameMap, "tfa-result", "map.txt");
         }
+    }
+
+    private static void printHelp() {
+        System.out.println("Usage:");
+        System.out.println("-cp classpath   include jdk library which is needed by Soot, like rt.jar");
+        System.out.println("-pp target      specify target code your wanna analysis, could be jar file or project folder");
+        System.out.println("-d log.txt      specify output log file, which record time consumption and relation count");
+        System.out.println("-h              show how to use TFA analyzer");
     }
 
 }

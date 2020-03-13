@@ -1,15 +1,15 @@
 package com.zstring.utils;
 
+import com.zstring.env.SootEnvironment;
 import com.zstring.structs.Relation;
 import com.zstring.structs.Transition;
-import soot.Type;
-import soot.Value;
+import org.apache.commons.io.FileUtils;
+import soot.*;
+import soot.jimple.toolkits.callgraph.ReachableMethods;
+import soot.util.Chain;
 
 import java.io.*;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class CommonUtils {
 
@@ -112,5 +112,56 @@ public class CommonUtils {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void recordPreprocess(String bench, String method) {
+        String path = null;
+        if(method.equals("dynamic")) {
+            path = "/home/sean/bench_instrumented/" + bench + "/dynamic/";
+        } else {
+            path = "/home/sean/bench_instrumented/" + bench + "/" + method + "-result/";
+        }
+        File recordDir = new File(path);
+        Collection<File> files = FileUtils.listFiles(recordDir, new String[]{"txt"}, false);
+        File map = new File(path + "map.txt");
+        files.remove(map);
+        for(File f: files) {
+            File f_new = new File(f.getName() + "_new");
+            try {
+                if(!f_new.exists()) {
+                    f_new.createNewFile();
+                }
+                BufferedWriter bw = new BufferedWriter(new FileWriter(f_new));
+                Set<String> new_result = new HashSet<>();
+                BufferedReader bf = new BufferedReader(new FileReader(f));
+                while((bf.readLine()) != null) {
+                    String line = bf.readLine();
+                    String[] l_split = line.split("::");
+                    if(l_split[2].equals("INVOKE")) {
+                        String type = l_split[3];
+                        String methodSub = l_split[5];
+                        SootClass c = Scene.v().getSootClass(type);
+//                        SootUtils.
+                    }
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public static void writeReachableMethods(ReachableMethods rm, Chain<SootClass> appClasses, String folder, String file) {
+        List<String> dataToWrite = new ArrayList<>(10);
+        for(SootClass c: appClasses) {
+            for(SootMethod m: c.getMethods()) {
+                if(m.isConcrete() && rm.contains(m)) {
+                    dataToWrite.add(m.getSignature());
+                }
+            }
+        }
+        if(!dataToWrite.isEmpty()) {
+            FileUtil.writeStaticResult(dataToWrite, folder, file);
+        }
+
     }
 }

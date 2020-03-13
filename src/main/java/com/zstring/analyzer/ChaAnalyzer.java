@@ -11,6 +11,7 @@ import soot.jimple.internal.*;
 import soot.jimple.spark.SparkTransformer;
 import soot.jimple.toolkits.callgraph.CHATransformer;
 import soot.jimple.toolkits.callgraph.CallGraph;
+import soot.jimple.toolkits.callgraph.ReachableMethods;
 import soot.util.Chain;
 
 import java.util.*;
@@ -23,6 +24,7 @@ public class ChaAnalyzer {
     public Hierarchy hierarchy;
     public static String SPLITTER = "::";
     public static String FILE_SUFFIX = ".txt";
+    private static long writeTime = 0L;
 
 
     public static void main(String[] args) {
@@ -39,6 +41,7 @@ public class ChaAnalyzer {
         }
         if(pp == null) {
             pp = "/home/sean/bench_compared/check";
+//            pp = "/home/sean/instruTest";
         }
         if(outputTxt == null) {
             outputTxt = "default.txt";
@@ -56,17 +59,18 @@ public class ChaAnalyzer {
     public void analyze(String cp, String pp) {
         // Time [0]
         String[] dataOutput = new String[1];
-        long t1 = new Date().getTime();
+
         SootEnvironment.init(cp, pp);
 //        calcOriginCallsite();
 //        setCHA();
 
         hierarchy = Scene.v().getActiveHierarchy();
 //        calcCHA();
+        long t1 = new Date().getTime();
         generateResult();
         long t2 = new Date().getTime();
-        System.out.println("CHA analysis ended, used " + (t2-t1)/1000.0 + "s");
-        dataOutput[0] = String.valueOf((t2-t1)/1000.0);
+        System.out.println("CHA analysis ended, used " + (t2-t1-writeTime)/1000.0 + "s");
+        dataOutput[0] = String.valueOf((t2-t1-writeTime)/1000.0);
         FileUtil.writeLog(dataOutput, "cha-log", outputTxt);
     }
 
@@ -153,6 +157,7 @@ public class ChaAnalyzer {
                 }
                 String thisMethodSig = m.getSignature();
                 String recordStaticPrefix = "IN METHOD" + SPLITTER + thisMethodSig + SPLITTER + "STATICINVOKE";
+                String recordSpecialrefix = "IN METHOD" + SPLITTER + thisMethodSig + SPLITTER + "SPECIALINVOKE";
                 String recordVirtualCallPrefix = "IN METHOD"+ SPLITTER + thisMethodSig + SPLITTER + "INVOKE";
                 Chain<Unit> units = m.retrieveActiveBody().getUnits();
                 List<String> data2Write = new ArrayList<>();
@@ -175,8 +180,11 @@ public class ChaAnalyzer {
                         data2Write.add(writeLine);
                     } else if(invokeExpr instanceof JDynamicInvokeExpr) {
                         //TODO: dynamic invoke is a new feature and we haven't handle this.
-                    } else if(invokeExpr instanceof InstanceInvokeExpr){
-                        Value receiver = ((InstanceInvokeExpr) invokeExpr).getBase();
+                    } else if(invokeExpr instanceof JSpecialInvokeExpr) {
+                        writeLine = recordSpecialrefix + SPLITTER + invokeExpr.getMethod().getSignature() + SPLITTER + lineNum;
+                        data2Write.add(writeLine);
+                    } else if(invokeExpr instanceof JVirtualInvokeExpr){
+                        Value receiver = ((JVirtualInvokeExpr) invokeExpr).getBase();
                         SootClass c = Scene.v().getSootClass(receiver.getType().toString());
 
                         List<SootClass> posibleTypes = new ArrayList<>(10);
@@ -190,58 +198,62 @@ public class ChaAnalyzer {
                         for(SootClass sc : posibleTypes) {
                             try {
                                 SootMethod sm = sc.getMethod(invokeExpr.getMethod().getSubSignature());
-                                if(sm.isConcrete()) {
+                                if((sm.isConcrete() && !sm.isPrivate()) || sm.isNative()) {
                                     chas.add(sc);
                                 }
                             } catch (Exception e) {
-                                e.printStackTrace();
+                                if(c.isInterface()) {
+                                    List<SootClass> scSuper = hierarchy.getSuperclassesOf(sc);
+                                    for (SootClass ss : scSuper) {
+                                        try {
+                                            SootMethod sm = ss.getMethod(invokeExpr.getMethod().getSubSignature());
+                                            if ((sm.isConcrete() && !sm.isPrivate()) || sm.isNative()) {
+                                                chas.add(sc);
+                                                break;
+                                            }
+                                        } catch (Exception e2) {
+//                                            e2.printStackTrace();
+                                        }
+                                    }
+                                }
                             }
                         }
 
-//                        try {
-//                            SootMethod sm = c.getMethod(invokeExpr.getMethod().getSubSignature());
-//                            List<SootClass> subclass = hierarchy.getSubclassesOf(c);
-                            // means this method can be access by all subclass
-//                            if(!sm.isPrivate()) {
-//                                chas.addAll(subclass);
-//                            } else {
-//                                for(SootClass sc : subclass) {
-//                                    try {
-//                                        sm = c.getMethod(invokeExpr.getMethod().getSubSignature());
-//                                        if(sm.isConcrete()) {
-//                                            chas.add(sc);
-//                                        }
-//                                    } catch (Exception e) {
-//                                        e.printStackTrace();
-//                                    }
-//                                }
-//                            }
-//                        } catch (Exception e) {
-//                            e.printStackTrace();
-//                        }
                         if(!c.isInterface()) {
                             try {
                                 List<SootClass> subclass = hierarchy.getSubclassesOf(c);
                                 chas.addAll(subclass);
                             } catch (Exception e) {
-                                e.printStackTrace();
+//                                e.printStackTrace();
                             }
                             chas.add(c);
                         }
                         for(SootClass sc : chas) {
-                            writeLine = recordVirtualCallPrefix + SPLITTER + sc.getName() + SPLITTER + receiver + SPLITTER + invokeExpr.getMethod().getSubSignature() + SPLITTER + lineNum;
-                            data2Write.add(writeLine);
+                            try {
+                                SootMethod sm = sc.getMethod(invokeExpr.getMethod().getSubSignature());
+                                writeLine = recordVirtualCallPrefix + SPLITTER + sc.getName() + SPLITTER + receiver + SPLITTER + sm.getSignature() + SPLITTER + lineNum;
+                                data2Write.add(writeLine);
+                            } catch (Exception e) {
+                                writeLine = recordVirtualCallPrefix + SPLITTER + invokeExpr.getMethod().getDeclaringClass() + SPLITTER + receiver + SPLITTER + invokeExpr.getMethod().getSignature() + SPLITTER + lineNum;
+                                data2Write.add(writeLine);
+                            }
                         }
 
                     }
                 }
                 if(!data2Write.isEmpty()) {
+                    long t1 = new Date().getTime();
                     filenameMap.put(fileIdx, m.getSignature());
                     FileUtil.writeStaticResult(data2Write,  "cha-result", fileIdx + FILE_SUFFIX);
                     fileIdx++;
+                    long t2 =new Date().getTime();
+                    writeTime += (t2-t1);
                 }
             }
+            long t1 = new Date().getTime();
             FileUtil.writeMap(filenameMap, "cha-result", "map.txt");
+            long t2 = new Date().getTime();
+            writeTime += (t2-t1);
         }
     }
 

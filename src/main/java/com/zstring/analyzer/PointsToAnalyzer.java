@@ -2,6 +2,7 @@ package com.zstring.analyzer;
 
 import com.zstring.env.SootEnvironment;
 import com.zstring.structs.Relation;
+import com.zstring.utils.CommonUtils;
 import com.zstring.utils.FileUtil;
 import com.zstring.utils.SootUtils;
 import soot.*;
@@ -38,8 +39,8 @@ public class PointsToAnalyzer {
         }
         if(pp == null) {
 //            pp = "/home/sean/bench_compile/";
-            pp = "/home/sean/bench_compared/serial";
-//            pp = "/home/sean/instruTest";
+//            pp = "/home/sean/bench_compared/check";
+            pp = "/home/sean/instruTest";
         }
         if(outputTxt == null) {
             outputTxt = "default.txt";
@@ -57,18 +58,15 @@ public class PointsToAnalyzer {
         // Time [0]
         String[] dataOutput = new String[1];
         SootEnvironment.init(cp, pp);
-//        calcOriginCallsite();
         long t1 = new Date().getTime();
         setSparkPointsToAnalysis();
         long t2 = new Date().getTime();
         System.out.println("spark analysis ended, used " + (t2-t1)/1000.0 + "s");
         dataOutput[0] = String.valueOf((t2-t1)/1000.0);
         pta = Scene.v().getPointsToAnalysis();
-//        SootEnvironment.travelStruct();
-//        calcPTA();
-        generateResult();
-        FileUtil.writeLog(dataOutput, "pta-log", outputTxt);
-//        SootEnvironment.cg = new CG(Scene.v().getCallGraph(), SootEnvironment.allMethods);
+//        generateResult();
+        CommonUtils.writeReachableMethods(Scene.v().getReachableMethods(), Scene.v().getApplicationClasses(), "pta-reach", outputTxt);
+//        FileUtil.writeLog(dataOutput, "pta-log", outputTxt);
     }
 
     private int calcPTA() {
@@ -168,6 +166,7 @@ public class PointsToAnalyzer {
                 }
                 String thisMethodSig = m.getSignature();
                 String recordStaticPrefix = "IN METHOD" + SPLITTER + thisMethodSig + SPLITTER + "STATICINVOKE";
+                String recordSpecialrefix = "IN METHOD" + SPLITTER + thisMethodSig + SPLITTER + "SPECIALINVOKE";
                 String recordVirtualCallPrefix = "IN METHOD"+ SPLITTER + thisMethodSig + SPLITTER + "INVOKE";
                 Chain<Unit> units = m.retrieveActiveBody().getUnits();
                 List<String> data2Write = new ArrayList<>();
@@ -190,8 +189,11 @@ public class PointsToAnalyzer {
                         data2Write.add(writeLine);
                     } else if(invokeExpr instanceof JDynamicInvokeExpr) {
                         //TODO: dynamic invoke is a new feature and we haven't handle this.
-                    } else if(invokeExpr instanceof InstanceInvokeExpr){
-                        Value receiver = ((InstanceInvokeExpr) invokeExpr).getBase();
+                    } else if(invokeExpr instanceof JSpecialInvokeExpr) {
+                        writeLine = recordSpecialrefix + SPLITTER + invokeExpr.getMethod().getSignature() + SPLITTER + lineNum;
+                        data2Write.add(writeLine);
+                    } else if(invokeExpr instanceof JVirtualInvokeExpr){
+                        Value receiver = ((JVirtualInvokeExpr) invokeExpr).getBase();
                         Local local = SootUtils.getLocalByValue(m.retrieveActiveBody(), receiver);
                         Set<Type> reachTypes = pta.reachingObjects(local).possibleTypes();
                         if(reachTypes == null || reachTypes.isEmpty()) {
@@ -200,12 +202,24 @@ public class PointsToAnalyzer {
                         for(Type t : reachTypes) {
                             if(t instanceof RefType) {
                                 SootClass c = ((RefType) t).getSootClass();
-                                writeLine = recordVirtualCallPrefix + SPLITTER + c.getName() + SPLITTER +receiver + SPLITTER + invokeExpr.getMethod().getSubSignature() + SPLITTER + lineNum;
-                                data2Write.add(writeLine);
+                                try{
+                                    SootMethod sm = c.getMethod(invokeExpr.getMethod().getSubSignature());
+                                    writeLine = recordVirtualCallPrefix + SPLITTER + c.getName() + SPLITTER +receiver + SPLITTER + sm.getSignature() + SPLITTER + lineNum;
+                                    data2Write.add(writeLine);
+                                } catch (Exception e) {
+                                    writeLine = recordVirtualCallPrefix + SPLITTER + invokeExpr.getMethod().getDeclaringClass() + SPLITTER +receiver + SPLITTER + invokeExpr.getMethod().getSignature() + SPLITTER + lineNum;
+                                    data2Write.add(writeLine);
+                                }
                             } else if (t instanceof AnySubType) {
                                 SootClass c = ((AnySubType) t).getBase().getSootClass();
-                                writeLine = recordVirtualCallPrefix + SPLITTER + c.getName() + SPLITTER +receiver + SPLITTER + invokeExpr.getMethod().getSubSignature() + SPLITTER + lineNum;
-                                data2Write.add(writeLine);
+                                try {
+                                    SootMethod sm = c.getMethod(invokeExpr.getMethod().getSubSignature());
+                                    writeLine = recordVirtualCallPrefix + SPLITTER + c.getName() + SPLITTER +receiver + SPLITTER + sm.getSignature() + SPLITTER + lineNum;
+                                    data2Write.add(writeLine);
+                                } catch (Exception e) {
+                                    writeLine = recordVirtualCallPrefix + SPLITTER + invokeExpr.getMethod().getDeclaringClass() + SPLITTER +receiver + SPLITTER + invokeExpr.getMethod().getSignature() + SPLITTER + lineNum;
+                                    data2Write.add(writeLine);
+                                }
                                 writeLine = recordVirtualCallPrefix + SPLITTER + "any_subtype_of" + SPLITTER + c.getName() + SPLITTER +receiver + SPLITTER + invokeExpr.getMethod().getSubSignature() + SPLITTER + lineNum;
                                 data2Write.add(writeLine);
                             }

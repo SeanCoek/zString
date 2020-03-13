@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.5.6)  29 OCT 2019 16:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.5.6)  12 DEC 2019 18:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -276,34 +276,41 @@ Package: ifnextok 2011/06/27 v0.3 test next token (UL)
 \boxtop@sep=\skip48
 \boxbottom@sep=\skip49
 )
+\c@Definition=\count138
+\c@Theorem=\count139
+\c@Lemma=\count140
+\c@Property=\count141
+\c@Corollary=\count142
+\c@Proof=\count143
+
 (./icfem-2019.aux)
 \openout1 = `icfem-2019.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count138
+\scratchcounter=\count144
 \scratchdimen=\dimen139
 \scratchbox=\box58
-\nofMPsegments=\count139
-\nofMParguments=\count140
+\nofMPsegments=\count145
+\nofMParguments=\count146
 \everyMPshowfont=\toks26
-\MPscratchCnt=\count141
+\MPscratchCnt=\count147
 \MPscratchDim=\dimen140
-\MPnumerator=\count142
-\makeMPintoPDFobject=\count143
+\MPnumerator=\count148
+\makeMPintoPDFobject=\count149
 \everyMPtoPDFconversion=\toks27
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -353,67 +360,40 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 75.
+LaTeX Font Info:    Try loading font information for U+msa on input line 82.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 75.
+LaTeX Font Info:    Try loading font information for U+msb on input line 82.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (2.05554pt too wide) in paragraph at lines 98--128
+Overfull \hbox (2.05554pt too wide) in paragraph at lines 105--135
 [][] [] 
  []
 
 <points-to.pdf, id=13, 137.38326pt x 198.96132pt>
 File: points-to.pdf Graphic file (type pdf)
  <use points-to.pdf>
-Package pdftex.def Info: points-to.pdf used on input line 163.
+Package pdftex.def Info: points-to.pdf used on input line 170.
 (pdftex.def)             Requested size: 99.58464pt x 144.22047pt.
 
-Overfull \hbox (5.59998pt too wide) in paragraph at lines 137--167
+Overfull \hbox (5.59998pt too wide) in paragraph at lines 144--174
 [][] 
  []
 
 [2 <./points-to.pdf>] <tfa.pdf, id=43, 272.9387pt x 98.4177pt>
 File: tfa.pdf Graphic file (type pdf)
  <use tfa.pdf>
-Package pdftex.def Info: tfa.pdf used on input line 180.
+Package pdftex.def Info: tfa.pdf used on input line 187.
 (pdftex.def)             Requested size: 227.62204pt x 82.07709pt.
 
-[3 <./tfa.pdf>] [4]
-
-! LaTeX Error: Environment Theorem undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.288 \begin{Theorem}
-                     ~\label{thm:tfa}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{document} ended by \end{Theorem}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.290 \end{Theorem}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[5] [6]
-Overfull \hbox (26.0625pt too wide) in paragraph at lines 312--313
+[3 <./tfa.pdf>] [4] [5] [6]
+Overfull \hbox (26.0625pt too wide) in paragraph at lines 319--320
 []\OT1/cmr/m/n/10 For each state-ment $\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 = \OM
 L/cmm/m/it/10 y$\OT1/cmr/m/n/10 , we have $\OML/cmm/m/it/10 Reaches\OT1/cmr/m/n
 /10 (\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^R \OML/cmm/m/it/10 
@@ -423,7 +403,7 @@ Reaches\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$ and $\OML/cmm/m/it
  []
 
 
-Overfull \hbox (22.94788pt too wide) in paragraph at lines 314--315
+Overfull \hbox (22.94788pt too wide) in paragraph at lines 321--322
 []\OT1/cmr/m/n/10 For each state-ment $\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 = \OM
 L/cmm/m/it/10 y:f$\OT1/cmr/m/n/10 , let $\OML/cmm/m/it/10 c \OMS/cmsy/m/n/10 2 
 \OML/cmm/m/it/10 Reaches\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 )$, 
@@ -432,7 +412,7 @@ T1/cmr/m/n/10 (\OML/cmm/m/it/10 c; f\OT1/cmr/m/n/10 )) \OMS/cmsy/m/n/10 ^^R
  []
 
 
-Overfull \hbox (11.92369pt too wide) in paragraph at lines 314--315
+Overfull \hbox (11.92369pt too wide) in paragraph at lines 321--322
 \OML/cmm/m/it/10 ^^X\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Reaches\OT1/cmr/m/n/10 (\
 OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ))$, or equiv-a-lently, $\OML/cmm/m/it/10 Acce
 ss\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 c; f\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^R 
@@ -442,7 +422,7 @@ et $\OML/cmm/m/it/10 c[] \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 Access\OT1/cmr/m/n
  []
 
 
-Overfull \hbox (3.20554pt too wide) in paragraph at lines 314--315
+Overfull \hbox (3.20554pt too wide) in paragraph at lines 321--322
 \OT1/cmr/m/n/10 then by def-i-ni-tion, there ex-ist $\OML/cmm/m/it/10 z$\OT1/cm
 r/m/n/10 , $\OML/cmm/m/it/10 z[]$ \OT1/cmr/m/n/10 such that $\OML/cmm/m/it/10 c
  \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 Reaches\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 z
@@ -467,44 +447,40 @@ ges or Tam-ing
 Missing character: There is no â in font cmr9!
 Missing character: There is no € in font cmr9!
 Missing character: There is no “ in font cmr9!
-) [14] (./icfem-2019.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+) [14] (./icfem-2019.aux) ) 
 Here is how much of TeX's memory you used:
- 3248 strings out of 493029
- 41859 string characters out of 6136235
- 122036 words of memory out of 5000000
- 6708 multiletter control sequences out of 15000+600000
+ 3282 strings out of 493029
+ 42184 string characters out of 6136235
+ 122320 words of memory out of 5000000
+ 6742 multiletter control sequences out of 15000+600000
  15709 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,18n,26p,1075b,371s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
-pfb>
-Output written on icfem-2019.pdf (14 pages, 336922 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+bx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/symbols/msam10.pfb>
+Output written on icfem-2019.pdf (14 pages, 337222 bytes).
 PDF statistics:
  188 PDF objects out of 1000 (max. 8388607)
  143 compressed objects within 2 object streams

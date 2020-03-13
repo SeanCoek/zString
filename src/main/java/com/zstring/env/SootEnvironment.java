@@ -5,6 +5,7 @@ import soot.*;
 import soot.jimple.JimpleBody;
 import soot.jimple.Stmt;
 import soot.jimple.internal.JAssignStmt;
+import soot.jimple.toolkits.callgraph.ReachableMethods;
 import soot.options.Options;
 import soot.tagkit.LineNumberTag;
 
@@ -26,23 +27,15 @@ public class SootEnvironment {
 
 
     public static void init(String cp, String pp) {
-//        pp = "/home/sean/doop-benchmarks/dacapo-2006/antlr.jar";
         Options.v().set_keep_line_number(true);
         Options.v().set_whole_program(true);
         Options.v().set_allow_phantom_refs(true);
         Options.v().set_keep_offset(false);
-//        Options.v().setPhaseOption("cg.spark", "vta:true");
-//        Options.v().setPhaseOption("cg", "library:anysubtype");
         Scene.v().setSootClassPath(cp + File.pathSeparator + pp);
         List<String> processDir = new ArrayList<String>();
         processDir.add(pp);
         Options.v().set_process_dir(processDir);
-//        load(appclass);
-//        loadClasses(pp, "class");
         Scene.v().loadNecessaryClasses();
-        List<String> pkgList = new ArrayList<>();
-//        pkgList.add("cg.cha");
-//        Scene.v().setPkgList(pkgList);
         allClasses = new HashSet<SootClass>();
         allClasses.addAll(Scene.v().getApplicationClasses());
         initialStruct();
@@ -167,4 +160,16 @@ public class SootEnvironment {
             }
         }
     }
+
+    public static void extractReachableMethods() {
+        List<String> outputs = new ArrayList<>(100);
+        for(SootMethod m : allMethods) {
+            if(m.isConcrete()) {
+                outputs.add(m.getSignature());
+            }
+        }
+        FileUtil.writeStaticResult(outputs, "static", "reachMethodStatic.txt");
+    }
+
+
 }
