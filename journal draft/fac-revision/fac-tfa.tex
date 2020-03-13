@@ -557,7 +557,7 @@ In this way we insert statements right after each call site to record the type o
 %\subsubsection{Our Instrumentation Manner}\label{subsubsec:instrument}
 
 %We take ``Insert After'' as our instrumentation manner. The reason is mainly
-According to the Java specification, the first statement of each constructor should be either another constructor of its own or its super class. Therefore, we would get a \emph{JVM voilation} error if we instrument a statement before the first statement in a constructor. We illustrate this problem in an example given in Listing~\ref{lst:spec-constructor}. Due to this restriction, both \emph{Insert First} and \emph{Insert Before} schemes cannot be applied. For the remaining to schemes, we choose \emph{Insert After} over \emph{Insert Last} for the reason that a last statement could be appeared in many different kinds like a return statement, an exception throwing statement, or even an application terminating invocation. It will take more time to tackle this problem if we use the  \emph{Insert Last} scheme to implement our profiler. As a result, we use \emph{Insert After} as our implementation manner so that a type can be more easier and straightforwardly collected and bundled with its receiver. %due to the reason. %that it's more straightforward.
+According to the Java specification, the first statement of each constructor should be either another constructor of its own or its super class. Therefore, we would get a \emph{JVM voilation} error if we instrument a statement before the first statement in a constructor. We illustrate this problem in an example given in Listing~\ref{lst:spec-constructor}. Due to this restriction, both \emph{Insert First} and \emph{Insert Before} schemes cannot be applied. For the remaining to schemes, we choose \emph{Insert After} over \emph{Insert Last} for the reason that a last statement could be appeared in many different kinds like a return statement, an exception throwing statement, or even an application terminating invocation. It will take more time to tackle this problem if we use the  \emph{Insert Last} scheme to implement our profiler. More details are displayed in an example in Listing~\ref{lst:last-statement}. We can easily insert at line 4 and line 8, for an exception throwing statement and a return statement, respectively. However, it requires significant time to recognize line 7 as a last statement of method $m1$ since it will terminate the whole application. As a result, we use \emph{Insert After} as our implementation manner so that a type can be more easier and straightforwardly collected and bundled with its receiver. %due to the reason. %that it's more straightforward.
 As an example, the code before and after instrumentation are shown in Listing~\ref{lst:before-instru} and Listing~\ref{lst:after-instru}, respectively. For Listing~\ref{lst:after-instru}, at line $5$, the funtion $RecordUtils.id()$ takes an invocation expression ($invokeExprssion$) and a method receiver ($b$) as parameters and return an unique representation string for this invocation. In this example, the collected unique representation is \emph{A:m1:b:B:m2:4}, which stands for $b$ calls method $m2$ of class $B$, at line $4$ within method $m1$ of class $A$. It also shows that $b$ is of type $B$ at this program location.
 
 \begin{minipage}{\linewidth}
@@ -578,7 +578,28 @@ class A {
 
 \begin{minipage}{\linewidth}
 \vspace{10pt}
-\begin{lstlisting}[caption={Example code before instrumentation},label={lst:before-instru}]
+\begin{lstlisting}[caption={Example code of \emph{Insert Last}},label={lst:last-statement}]
+class A {
+  public Obejct m1(int i) {
+    if(i>0) {
+      // insert here, right before an exception throwing statement
+      throw new Exception(``i>0'');  
+    }
+    exit(); // this invocation terminates application
+    // insert here, right before a return statement
+    return null;  // insert before this statement
+  }
+
+  public void exit() {
+    System.exit(0);  // this invocation terminates application
+  }
+}
+\end{lstlisting}
+\end{minipage}
+
+\begin{minipage}{\linewidth}
+\vspace{10pt}
+\begin{lstlisting}[caption={Example code before our instrumentation},label={lst:before-instru}]
 class A {
   public void m1() {
     B b = new B();
@@ -590,7 +611,7 @@ class A {
 
 \begin{minipage}{\linewidth}
 \vspace{10pt}
-\begin{lstlisting}[caption={Example code after instrumentation},label={lst:after-instru}]
+\begin{lstlisting}[caption={Example code after our instrumentation},label={lst:after-instru}]
 class A {
   public void m1() {
     B b = new B();
@@ -684,7 +705,7 @@ For a comparison of the algorithms regarding precision, the experiment result ha
 %We analyzed those missed records and find out the reason is due to some Java advance features, liked reflection call and JNI call, which we will describe in section~\ref{subsubsec:reflection-call} and section~\ref{subsubsec:jni-call}. In addition, callback mechanism will raise unsoundness under our treatment on reflection, JNI and library call. We will discuss it in section~\ref{subsubsec:callback}. The result shows that VTA and PTA produces lower recall than TFA in general. We study the reason for this gap from reading the source code of Soot and find out there are some different treatments that produce this result. The first one is the on-the-fly reachability analysis used on PTA implemented by Soot team. Method invoked by reflection, or invoked as a callback function inside reflection, JNI and library, will be denoted as unreachable under this analysis. As a consequence, some methods would not be analyzed by PTA. Note that even the unreachable method would not be analyzed, a variable receiving its type from JDK would be assigned to possible types based on the preprocessing from Soot. Such that the set of possible reaching types for these variables would not be empty. The second one is that our approach performs conservatively treatment on library. We will discuss it in section~\ref{subsubsec:library}. Moreover, we find out that VTA make inappropriate treatment on anonymous class which reduce its recall. We consider it as a bug produced by Soot team. More details will be illustrated in section~\ref{subsubsec:anonymous}. Note that CHA also misses $10$ records on $compiler, crypto, startup$ in total. The $3$ missed records on $compiler$ and $crypto$ are caused by the incomplete hierarchy structure which is defaultly provided in Soot framework. \eg, we put on a hierarchy structure of $java.security.KeyPairGenerator$ in JDK, as shown in Fig.~\ref{fig:cha-hierarchy}. On benchmark $crypto$, variable $x$ is declared as ``$java.security.KeyPairGenerator$''. The hierarchy structure provided by Soot framework do not include ``$DSAKeyPairGenerator$,``$DSAKeyPairGenerator\$Current$'' and ``$DSAKeyPairGenerator\$Legacy$'' as subclassses of ``$KeyPairGenerator$''. Hence, these $3$ types will be missed for variable $x$. The rest $7$ missed records in CHA are produced by Soot framework mistakenly changing the name of variable (\eg, variable $\$68$ is changed to $\$58$). We confirm the reason by reading the Jimple representation and find out those mistaken variable do not appear in it.
 
 
-Due to the conservative approach on JDK library function, the TFA analysis achieves higher recall with the price of lower precision in comparison to VTA and PTA. Note that in theory context insensitive TFA is equivalent to context insensitive PTA and is more precise than VTA, as sudied in Section~\ref{sec:type-flow-analysis}. In order to make the implementations more comparable, we modify the implementation of TFA by removing the library call approximation to JDK. As shown in Figure~\ref{fig:nolib-recall} and Figure\ref{fig:nolib-precision}, without the conservative treatment on JDK library, in general TFA has a comparable precision and recall to VTA and PTA on the given benchmark suite. To explain the reason that VTA and PTA marginally outperform TFA in a few benchmarks, we refer to the optimization processes implemented by the Soot team on array operations and certain reflective calls that are exploited by the VTA and PTA processes.
+Due to the conservative approach on JDK library function, the TFA analysis achieves higher recall with the price of lower precision in comparison to VTA and PTA. Note that in theory context insensitive TFA is equivalent to context insensitive PTA and is more precise than VTA, as studied in Section~\ref{sec:type-flow-analysis}. In order to make the implementations more comparable, we modify the implementation of TFA by removing the library call approximation to JDK. As shown in Figure~\ref{fig:nolib-recall} and Figure\ref{fig:nolib-precision}, without the conservative treatment on JDK library, in general TFA has a comparable precision and recall to VTA and PTA on the given benchmark suite. To explain the reason that VTA and PTA marginally outperform TFA in a few benchmarks, we refer to the optimization processes implemented by the Soot team on array operations and certain reflective calls that are exploited by the VTA and PTA processes.
 
 \begin{figure}\centering
 \includegraphics[scale=0.9]{recall-no-lib.pdf}
