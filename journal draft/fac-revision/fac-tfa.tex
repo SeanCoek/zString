@@ -264,7 +264,7 @@ Over all the contributions of the paper are listed as follows.
 
 We define a core calculus consisting of most of the key object-oriented language features, shown in Figure~\ref{fig:syntax}, which is designed in the same spirit as Featherweight Java~\cite{Igarashi2001}.
 A program is defined as a code base $\overline{C}$ (i.e., a collection of class definitions) with statement $s$ to be evaluated.
-To run a program, one may assume that $s$ is the default (static) entry method with local variable declarations $\overline{D}$,
+To run a program, one may assume that $main$ is the default (static) entry method with local variable declarations $\overline{D}$,
 similar to e.g., Java and C++, which may differ in specific language designs.
 %% to consider dynamic semantics later: Let $S$ and $H$ be the runtime stack and heap, where $S:\Var\rightarrow \Val$maps local variables to values and $H:\Val\rightarrow \Obj\cup\set{\kwnull}$ maps values to objects.
 We define a few auxiliary functions. Let function $fields$ maps class names to their fields, $methods$ maps class names to their defined or inherited methods, and $type$ provides types (or class names) for objects. Given class $c$, if $f\in fields(c)$, then $ftype(c,f)$ is the defined class type of field $f$ in $c$. Similarly, give an object $o$, if $f\in fields(type(o))$, then $o.f$ may refer to an object of type $ftype(type(o),f)$ or %%an object of
@@ -273,14 +273,14 @@ any of its subclass at runtime. Write $\Class$ for the set of classes, $\Obj$ fo
 
 \begin{figure}\centering
 	\begin{tabular}[c]{lll}
-		$C$&$::=$&$\kwclass\ c\ [\kwextends\ c] \ \{\overline{F};\ \overline{M}\}$\\
+		$C$&$::=$&$\kwclass\ c\ [\kwextends\ c'] \ \{\overline{F};\ \overline{M}\}$\\
         $F$&$::=$&$c \ f$\\
         $D$&$::=$&$c \ z$\\
 		$M$&$::=$&$m(x) \ \{\overline{D}; s; \kw{return}\ x'\}$\\
-		$s$&$::=$&$e\mid x{=}\kwnew \ c\mid  x {=} e \mid x.f{=}y \mid s;s$\\
+		$s$&$::=$&$x{=}\kwnew \ c\mid  x {=} e \mid x.f{=}y \mid s;s$\\
 
 		$e$&$::=$&$ \kwnull\mid x \mid x.f \mid x.m(y) $\\
-        $prog$&$::=$&$\overline{C};\overline{D}; s$\\
+        $prog$&$::=$&$\overline{C};\overline{D}; main$\\
 	\end{tabular}
 	\caption{Abstract syntax for the core language. \label{fig:syntax}}
 \end{figure}
