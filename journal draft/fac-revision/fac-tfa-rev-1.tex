@@ -158,7 +158,8 @@ For object-oriented programming languages, virtual methods (or functions) are th
 Efficient solutions, such as Class Hierarchy Analysis (CHA)~\cite{Dean1995,Fernandez1995} and Rapid Type Analysis (RTA)~\cite{Bacon1996}, conservatively assign each variable a set of class definitions, with relatively low precision. Variable Type Analysis (VTA)~\cite{Sundaresan2000} collects types from the object instantiation sites and then propagates type information within the program. However, VTA does not differentiate variables of the same class, which potentially causes imprecision. Alternatively, with the help of a heap abstraction, one may take advantage of points-to analysis~\cite{andersen94} to compute a set of objects that a variable may refer to, and resolve the receiver classes by retrieving the types of the objects, before determining associated methods at call sites.
 
 %% Zhang_1: tidy up
-In general, the algorithms used by CHA, RTA and VTA provide an efficient way to resolve call edges, which usually take linear-time in the size of a program, by focusing on the types that are collected at the receiver of a call site. These methods are usually regarded as conservative, as in theory, the set of collected types always contains types of all objects that the receiver possibly points to.
+In general, the algorithms used by CHA, RTA and VTA provide an efficient way to resolve call edges, which usually take linear-time in the size of a program. %, by focusing on the types that are collected at the receiver of a call site. 
+These methods are usually regarded as conservative, as in theory, the collected types contain all possible types a reference may point to at run-time and maybe more.
 %
 %are conservative, which aim to provide an efficient way to resolve calling edges, and which usually take linear-time in the size of a program, by focusing on the types that are collected at the receiver of a call site. 
 For instance, let $x$ be %a variable of declared 
@@ -204,7 +205,7 @@ class C extends A{}
 Variable Type Analysis (VTA) is a further improvement. VTA defines a node for each variable, method, method parameter and field. Class names are treated as values and propagation of such values between variables work in the way of value flow.
 As shown in Figure~\ref{figure:vta} (example code in Figure~\ref{figure:example}), the statements on line $1-4$ of Figure~\ref{figure:example} initialize type information for variables $x$, $y$, $b$ and $c$, and statements on line $5-7$ establish value flow relations. 
 %Zhang_1:
-Moreover, method $A.m()$ is (implicitly) defined with nodes for local variables $A.m.this$ and $A.m.return$, which represent a reference to a receiver anywhere that calls $A.m()$ and the value to be returned by the method, respectively. 
+Moreover, method $A.m()$ is defined with nodes for (implicit) local variables $A.m.this$ and $A.m.return$, which represent a reference to a receiver that calls $A.m()$ and a value to be returned by the method, respectively. 
 %Zhang_1
 %Since both $x$ and $y$ are assigned type $A$, $x.f$ and $y.f$ are both represented by node $A.f$, thus the set of types reaching $A.f$ is now $\set{B,C}$. 
 Since $x$ is assigned type $A$, the statement $x.f=b$ propagates type $B$ to $A.f$. Similarly, $y.f=c$ also propagates type $C$ to $A.f$. Therefore, the set of types reaching $A.f$ is now $\set{B,C}$.
@@ -245,7 +246,7 @@ Since $A.m.this$ refers to $x$, $this.f$ inside method $A.m()$ now refers to $A.
 \end{tabular}
 \end{figure}
 
-The result of a context-insensitive subset based points-to analysis~\cite{andersen94} creates a heap abstraction of four objects (shown on line $1-4$ of Figure~\ref{figure:example} as well as the ellipses in Figure~\ref{figure:points-to}). These abstract objects are then inter-connected via field store access defined on line $5-6$ of Figure~\ref{figure:example}. The derived field access from $A.m.this$ to $O_2$ is shown in dashed arrow. By return of the method call $z=x.m()$, variable $z$ receives $O_2$ of type $B$ from $A.m.this.f$, which gives a more precise set of reaching types for variable $z$.
+The result of a context-insensitive subset based points-to analysis~\cite{andersen94} creates a heap abstraction of four objects (shown on line $1-4$ of Figure~\ref{figure:example} as well as the ellipses in Figure~\ref{figure:points-to}). These abstract objects are then inter-connected via field store access defined on line $5-6$ of Figure~\ref{figure:example}, where solid arrows represent the explicitly defined relations and dashed arrows represent the derived relations. For example, the derived field access from $A.m.this$ to $O_2$ is shown in dashed arrow. By return of the method call $z=x.m()$, variable $z$ receives $O_2$ of type $B$ from $A.m.this.f$, which gives a more precise singleton set $\set{B}$ of reaching types for variable $z$.
 
 From this example, one may conclude that the imprecision of VTA in comparison with points-to analysis is due to the over abstraction of object types, such that $O_1$ and $O_3$, both of type $A$, are treated under the same type. Nevertheless, points-to analysis requires to construct a heap abstraction, which brings in undersirable extra information when we are only interested in the set of reaching types of a variable.
 
@@ -263,20 +264,21 @@ Taking the example from Figure~\ref{figure:example}, we are able to collect the 
 %%% contributions with %%% discussion on context-sensitivity
 We have proved that in the context-insensitive inter-procedural setting, TFA is as precise as the subset based points-to analysis (which we refer to as PTA in the rest of the paper) regarding type related information. Since points-to analysis can be enhanced with various types of context-sensitivity on variables and objects (\eg, call-site-sensitivity~\cite{Shivers91,Kastrinis2013}, object-sensitivity~\cite{Milanova2005,Smaragdakis11,Tan16} and type-sensitivity~\cite{Smaragdakis11}), extending type flow analysis with context-sensitivity will only require to consider contexts on variables, which is left for future work.
 
-We have implemented a static type analysis tool for context-insensitive type flow analysis, which is written in Java and aims to analyze Java programs. We run our algorithm on the jimple IR, a typed, 3-address, statement based intermediate representation provided by Soot framework~\cite{soot}. The implementation has been tested on a collection of benchmark programs from SPECjvm2008~\cite{specjvm}. We conducted several experiments to compare TFA regarding efficiency and accuracy with CHA and PTA implemented by the Soot team. In order to establish a reliable comparison regarding \emph{precision} and \emph{recall} of different approaches, we apply the instrumentation technique to implement a dynamic profiling tool for jimple, which extracts types of callee method at runtime. We then conduct a sophisticated study on the different static approaches regarding results generated by the dynamic profiler. The experimental result has shown that TFA is in general more efficient than PTA. In terms of accuracy, TFA is more precise than CHA. Note that due to the comprehensive optimizations for VTA and PTA that are implemented by the Soot team, a decent comparison to the VTA and PTA implementation available in Soot is not straightforward. We have tried to create a relatively suitable environment by disabling some of the optimizations in Soot, and eventually reach the conclusion that the precision of TFA is comparable to VTA and PTA regarding the SPECjvm2008 benchmark suite. In addition, we confirm that most existing approaches, including PTA and TFA, do not guarantee soundness on all benchmarks, as already discussed in the literature~\cite{LivshitsSSLACGKMV15}. We then look into all the unmatch record to find out the source of imprecision and unsoundness, with short discussions regarding the related Java language features such as JDK library calls, Java reflection API, Java Native Interface and the callback mechanism. %%%We will discuss it in the experiment section of this paper. %(Need more citations here, and brief the experimental results.)
+We have implemented a static type analysis tool for context-insensitive inter-procedural type flow analysis. %, which is written in Java and aims to analyze Java programs. 
+We run our algorithm on the jimple IR, a typed, 3-address, statement based intermediate representation provided by Soot framework~\cite{soot}. The implementation has been tested on a collection of benchmark programs from SPECjvm2008~\cite{specjvm}. We conducted several experiments to compare TFA regarding efficiency and accuracy with CHA, VTA and PTA implemented by the Soot team. In order to establish a reliable comparison regarding \emph{precision} and \emph{recall} of different approaches, we apply the instrumentation technique to implement a dynamic profiling tool for jimple, which extracts types of callee methods at run-time. We then conduct a sophisticated study on the different static approaches regarding results generated by the dynamic profiler. The experimental result has shown that TFA is in general more efficient than PTA. In terms of accuracy, TFA is more precise than CHA. Note that due to the comprehensive optimizations for VTA and PTA that are implemented by the Soot team, a decent comparison to the VTA and PTA implementation available in Soot is not straightforward. We have tried to create a relatively suitable environment by disabling some of the optimizations in Soot, and eventually reach the conclusion that the precision of TFA is comparable to VTA and PTA regarding the SPECjvm2008 benchmark suite. In addition, we confirm that most existing approaches, including PTA and TFA, do not guarantee soundness on all benchmarks, as already discussed in the literature~\cite{LivshitsSSLACGKMV15}. We then look into all the unmatched records to find out the source of imprecision and unsoundness, with short discussions regarding the related Java language features such as JDK library calls, Java reflection API, Java Native Interface and the callback mechanism. %%%We will discuss it in the experiment section of this paper. %(Need more citations here, and brief the experimental results.)
 Our implementation is publicly available at \url{https://github.com/SeanCoek/tfa}.
 %
 Over all the contributions of the paper are listed as follows.
 \begin{enumerate}
-  \item We have proposed a new relational static semantics called Type Flow Analysis (TFA), which computes a collection of reachable types for variables. Our methodology is enforced by type propagation via value flow between program variables as well field accesses, following predefined relational rules (C.f.~Definition~\ref{def:base} and Definition~\ref{def:extension}). We have proved equivalence between TFA and the subset based points-to analysis regarding collected types for variables (Theorem~\ref{thm:tfa}), presented in Section~\ref{sec:type-flow-analysis}.
-  \item We have implemented the TFA algorithm in the Soot framework, and conducted a comprehensive study regarding performance and accuracy. The detailed description regarding the implementation and comparison with existing approaches (CHA, VTA and PTA) are presented in Section~\ref{sec:implementation} and Section~\ref{sec:evaluation}.
+  \item We have proposed a new relational static semantics called Type Flow Analysis (TFA), which computes a collection of reachable types for variables. Our methodology is enforced by type propagation via value flow between program variables and field accesses, following predefined relational rules (C.f.~Definition~\ref{def:base} and Definition~\ref{def:extension}). We have proved equivalence between TFA and the subset based points-to analysis regarding collected types for variables (Theorem~\ref{thm:tfa}). %, presented in Section~\ref{sec:type-flow-analysis}.
+  \item We have implemented the TFA algorithm in the Soot framework, and conducted a comprehensive study regarding performance and accuracy. %The detailed description regarding the implementation and comparison with existing approaches (CHA, VTA and PTA).  are presented in Section~\ref{sec:implementation} and Section~\ref{sec:evaluation}.
   \item %As a byproduct, 
-  We have implemented a dynamic profiler, by instrumenting code that collects at each call site a set of types of the receiver variable as well as callee methods. The collected type information serves as a baseline for measuring and comparing the precision between TFA and the aforementioned virtual method call resolution algorithms.
+  We have implemented a dynamic profiler, by instrumenting code that collects at each call site a set of types of the receiver variable as well as callee methods at run-time. The collected type information serves as a baseline for measuring and comparing the precision between TFA and the aforementioned virtual method call resolution algorithms.
 \end{enumerate}
 
 %%% related to the conference version
 %Zhang_1:
-Comparing to the conference version, we have provided a detailed proof in Section~\ref{sec:type-flow-analysis} that shows the equivalence between TFA and Andersen's subset based points-to analysis regarding collected types in the context-insensitive setting (Theorem~\ref{thm:tfa}). On the practical side, we have re-conducted an assessment in Section~\ref{sec:evaluation}, by comparing TFA to CHA, VTA and the points-to algorithms implemented by the Soot team (the conference version only shows results with CHA and points-to), regarding performance, precision and recall on the SPECjvm2008 benchmark suite. This experiment is now more reliable than in the conference paper due to the use of a dynamic profiler that collects run-time type information at each call site as a baseline (introduced in Section~\ref{subsec:dynamic-profiler}).
+Comparing to the conference version of the paper, we have provided a detailed proof in Section~\ref{sec:type-flow-analysis} that shows the equivalence between TFA and Andersen's subset based points-to analysis regarding collected types in the context-insensitive setting (Theorem~\ref{thm:tfa}). On the practical side, we have re-conducted an assessment in Section~\ref{sec:evaluation}, by comparing TFA to CHA, VTA and the points-to algorithms implemented by the Soot team (the conference version does not provide results with VTA), regarding performance, precision and recall on the SPECjvm2008 benchmark suite. The new experiments are more reliable in that a dynamic profiler (introduced in Section~\ref{subsec:dynamic-profiler}) that collects run-time type information at each call site is used as a baseline.
 
 The rest of the paper is organized as follows. Section \ref{sec:type-flow-analysis} introduces a simple OO language, the type flow analysis (TFA) algorithm as well as proving its equivalence with the classical subset based points-to analysis regarding collected types for variables. Section~\ref{sec:implementation} describes our implementation, which is further divided into two parts --- static analysis (Section~\ref{subsec:static-analysis-tool}) and dynamic profiling (Section~\ref{subsec:dynamic-profiler}). A detailed evaluation of our implementation is given in Section~\ref{sec:evaluation}.
 Section \ref{sec:related-work} discusses related work and Section \ref{sec:conclusion} concludes the paper.
@@ -287,10 +289,10 @@ Section \ref{sec:related-work} discusses related work and Section \ref{sec:concl
 We define a core calculus consisting of most of the key object-oriented language features, shown in Figure~\ref{fig:syntax}, which is designed in the same spirit as Featherweight Java~\cite{Igarashi2001}.
 A program is defined as a code base $\overline{C}$ (i.e., a collection of class definitions) with statement $\keyword{out}=c.\keyword{main}(\keyword{in})$ as the entry point.
 To run a program, one may assume that $\keyword{main}$ is the unique default (static) entry method of class $c$, reading a user input from $\keyword{in}$ and generating a result that is returned to $\keyword{out}$ which may be a predefined environment variable or the standard output.  %with local variable declarations $\overline{D}$, similar to e.g., Java and C++, which may differ in specific language designs.
-%% to consider dynamic semantics later: Let $S$ and $H$ be the runtime stack and heap, where $S:\Var\rightarrow \Val$maps local variables to values and $H:\Val\rightarrow \Obj\cup\set{\kwnull}$ maps values to objects.
+%% to consider dynamic semantics later: Let $S$ and $H$ be the run-time stack and heap, where $S:\Var\rightarrow \Val$maps local variables to values and $H:\Val\rightarrow \Obj\cup\set{\kwnull}$ maps values to objects.
 We define a few auxiliary functions. Let function $fields$ maps class names to their fields, $methods$ maps class names to their defined or inherited methods, and $type$ provides types (or class names) for objects. Given class $c$, if $f\in fields(c)$, then $ftype(c,f)$ is the defined class type of field $f$ in $c$. Similarly, give an object $o$, if $f\in fields(type(o))$, then $o.f$ may refer to an object of type $ftype(type(o),f)$ or %%an object of
-any of its subclass at runtime. Write $\Class$ for the set of classes, $\Obj$ for the set of objects, $\Field$ for the set of fields and $\Var$ for the set of variables that appear in a program.%
-\footnote{We use the term \emph{type} of a variable $v$ to denote $v$'s class name.}
+any of its subclass at run-time. Write $\Class$ for the set of classes, $\Obj$ for the set of objects, $\Field$ for the set of fields and $\Var$ for the set of variables that appear in a program.%
+\footnote{We use the term \emph{type} of variable $v$ to denote $v$'s class name.}
 
 %Sometimes we mix-use the terms \emph{type} and \emph{class} in this paper when it is clear from the context.}
 
@@ -310,7 +312,7 @@ any of its subclass at runtime. Write $\Class$ for the set of classes, $\Obj$ fo
 
 In this simple language we do not model common types (\eg, int and float) that are irrelevant to our analysis. We focus on the reference types which form a class hierarchical structure. We assume a context insensitive setting, such that every variable can be uniquely determined by its name together with its enclosing class and method.
 For example, if a local variable $x$ is defined in method $m$ of class $c$, then $c.m.x$ is the unique representation of that variable. Therefore, it is safe to drop the enclosing class and method name if it is clear from the context.
-In general, we have the following types of variables in our analysis: (1) local variables of a given method, (2) method parameters, (3) the special variable $\keyword{return}$ and the \texttt{this} reference of each method. All of the above variables are syntactically bounded by their enclosing classes and methods.
+In general, we have the following types of variables in our analysis: (1) local variables of a given method, (2) method parameters, (3) a special variable $\keyword{return}$ and a \texttt{this} reference for each method. All of the above variables are syntactically bounded by their enclosing classes and methods. %For example, $c.m.x$ is the variable named $x$ in method $m$ that is defined in class $c$.
 
 We define three relations for catching type flow information in programs, a partial order on variables $\less\ \subseteq\Var\times\Var$, a type flow relation
 $\tflow\subseteq\Class\times\Var$, as well as a field access relation $\hflow\subseteq\Var\times\Field\times\Var$,
@@ -330,8 +332,8 @@ from statements syntactically appearing in programs.
 Intuitively, $c\tflow x$ means variable $x$ may have type $c$ (\ie $c$ flows to $x$), $y\less x$ means all types that flow to $y$ also flow to $x$, and $x\lhflow{f}y$ means that one may access variable $y$ from field $f$ together with variable $x$.\footnote{Note that VTA treats statement $x.f = y$ in a different way. For each class $c$ that flows to $x$ which defines field $f$, VTA assigns all types that flow to $y$ also to $c.f$.}
 
 \begin{Example}\label{ex:def1}
-We give a snippet code shown in Listing~\ref{lst:relation} to illustrate the generation of relations. For statement ``$A\ a1=new \ A()$'' and ``$B\ b1=new\ B()$'', we generates two type flow relations ``$A \tflow a1$'' and ``$B \tflow b1$'', respectively. We also generate ``$a1 \less a2$'' and ``$a2 \less a3$'' from statements ``$a2=a1$'' and ``$a3=a2$''. For the field store statement on line $6$, we generate a field access relation ``$a1 \lhflow{f} b1$''. The resulting base relations are shown in Figure.~\ref{fig:basic-relation}, where dashed circles refer to types and solid nodes in gray colour represent variables. The type relation, partial order relation and field access relation are shown in dashed arrows, solid arrows labelled ``$\less$'' and solid arrows labelled with field names.
-Note that $b2$ is declared of type $A$, and since $B$ extends $A$, $b2.m2(a3)$ may refer to either the method $A.m2()$ or the method $B.m2()$. From the base relation one is able to resolve this virtual method call by tracing the type flow from $B$ to $b2$. 
+We give a snippet code shown in Listing~\ref{lst:relation} to illustrate the generation of relations. For statement ``$A\ a1=new \ A()$'' and ``$B\ b1=new\ B()$'', we generates two type flow relations ``$A \tflow a1$'' and ``$B \tflow b1$'', respectively. We also generate ``$a1 \less a2$'' and ``$a2 \less a3$'' from statements ``$a2=a1$'' and ``$a3=a2$''. For the field store statement on line $6$, we generate a field access relation ``$a1 \lhflow{f} b1$''. The resulting base relations are shown in Figure.~\ref{fig:basic-relation}, where dashed circles refer to types and solid nodes in gray colour represent variables. The type relation, partial order relation and field access relation are shown in dashed arrows, solid arrows labelled with ``$\less$'' and solid arrows labelled with field names.
+Note that $b2$ is declared of type $A$, and since $B$ extends $A$, $b2.m2(a3)$ may refer to either the method $A.m2()$ or the method $B.m2()$ at run-time due to polymorphism. Nevertheless, from the collected base relation one can resolve this virtual method call by tracing the type flow at $b2$ back to $B$, but not to $A$. 
 \end{Example}
 \begin{minipage}{\linewidth}
 %\vspace{10pt}
@@ -374,7 +376,8 @@ class B extends A{
 
 %We use five rules to extend the basic relations for  calculating a program fixpoint, which are given in the following definition 2. These rules intuitively represent propagation of type information. We put a `$^*$' label behind relation symbol to destinguish from basic relations.
 
-In the following we define extended relations to capture propagation of type information inter-procedurally in programs. As a convention, $R^*$ (Kleene star) is used to represent the reflexive and transitive closure of relation $R$. Then we explain the associated operations in Example~\ref{ex:def2}, illustrated~in~Figure~\ref{fig:relations}.
+In the following we define extended relations to capture propagation of type information inter-procedurally in programs. %Zhang_1:may cause confusion: As a convention, $R^*$ (Kleene star) is used to represent the reflexive and transitive closure of relation $R$. 
+Then we explain the associated operations in Example~\ref{ex:def2}, illustrated~in~Figure~\ref{fig:relations}.
 
 \begin{Definition}\label{def:extension} (Extended Relations)
 \begin{enumerate}
@@ -398,7 +401,7 @@ In the following we define extended relations to capture propagation of type inf
   \begin{equation*}
   \left.\begin{array}{l}\forall\ c\tflow^* y:\\ \forall\ m(z')\{\dots \kw{return}\ x'\}\in methods(c):\end{array}\right.\left\{\begin{array}{l}
         z\less^* c.m.z'\\
-        c\tflow^* c.m.this\\
+        y\tflow^* c.m.\keyword{this}\\
         c.m.x'\less^* x \\
         \end{array}\right.
   \end{equation*}
@@ -406,16 +409,17 @@ In the following we define extended relations to capture propagation of type inf
 \end{Definition}
 
 Regarding the extended relations given in Definition~\ref{def:extension}, we provide the following intuitions. Definition~\ref{def:extension}($1$)  computes the reflexive and transitive closure of the relation $\less$.
-In Definition~\ref{def:extension}($2$), with the existence of $z'$, variables $x$ and $y$ are in the \emph{may-alias} relation, therefore, all that is accessible by $x$ via field $f$ is also accessible by $y$ via $f$. This rule is designed to extend the field access relation.
+In Definition~\ref{def:extension}($2$), with the existence of $z'$, variables $x$ and $y$ are in the \emph{may-alias} relation, therefore, all that is accessible by $x$ via field $f$ is also accessible by $y$ via $f$. This rule is designed to extend the field access relation into $\lhflow{f\ *}$. Notably, Definition~\ref{def:extension}($2$) only allows $\lhflow{f\ *}$ to be generated directly from $\lhflow{f}$ (i.e., we cannot further generate $\lhflow{f\ *}$ from $\lhflow{f\ *}$), given the fact that may-alias is in general not transitive.
 Definition~\ref{def:extension}($3$) loads $z$ to $x$ (via $f$) from $y$, provided that $z$ is accessible by $y$ via $f$.
 Definition~\ref{def:extension}($4$) extends the type flow relation by taking advantage of the extended partial order $\less^*$ on variables.
 Definition~\ref{def:extension}($5$) deals with inter-procedural type flow, which defines three extensions for parameter variables, $\keyword{this}$ references and $\keyword{return}$ variables, respectively.
+For all types $c$ that flows to receiver $y$, and $m$ is defined for $c$, we extend the partial order $\less^*$ on variables, indicating type flows from the actual parameter $z$ to the formal parameter $c.m.z'$, and from the returned value of $c.m.x'$ to variable $x$ (which is the left hand side of the method call statement $x=y.m(z)$), and from receiver $y$ to the reference $c.m.\keyword{this}$.
 
 %These three kinds of generated relation reprensent the type flow on parameter variables, ``$this$'' reference variable and return variables, respectively.
 %The reaching type of variable $b2$ is $\{B\}$, \ie, we have ``$B \tflow^* b2$'', which we can extract from the result of ~\ref{fig:extend-type-flow}. That means statement ``$a4=b2.m2(a3)$'' will trigger the invocation of method $m2()$ in class $B$. In this case, we generated three relations, ``$a3 \less^* B.m2.p1$'', ``$B \tflow^* B.m2.this$'' and ``$B.m2.r \less^* a4$''. The result is shown is ~\ref{fig:extend-invocation}, where variables in method $B.m2()$ is represented as circle in green background.
 
 \begin{Example}\label{ex:def2} %% need to expand by describing functionalities of the rules in Def 2.
-We describe the process of generating extended relations for the base model that is discussed in Example~\ref{ex:def1}, depicted in Figure~\ref{fig:relations}. Although the actual computation may take a number of iterations updating relations interdependently before reaching a fixpoint, to make the process more understandable, we try to sketch in separate how each rule given in Figure~\ref{fig:relations} works. Initially, the base relation for Listing~\ref{lst:relation} is given in Figure~\ref{fig:relations}(a). Definition~\ref{def:extension}($1$) extends the base relation $\less$ into $\less^*$, as shown in Figure~\ref{fig:relations}(b). Definition~\ref{def:extension}($2$) extends the field access relation, resulting in Figure~\ref{fig:relations}(c). By applying Definition~\ref{def:extension}($3$), we further extends $\less^*$ through the existing field access relation, reaching the graph in Figure~\ref{fig:relations}(d). Then Definition~\ref{def:extension}($4$) propagates the type flow relation $\tflow^*$ by considering the existing partial order relation and field access relation on variables, as shown in Figure~\ref{fig:relations}(e). In Figure~\ref{fig:relations}(f) we further enrich the relations for inter-procedural type flow, where the statement ``$a4=b2.m2(a3)$'' triggers the invocation of method $m2()$ in class $B$, from which we establish ``$a3 \less^* B.m2.p1$'', ``$B \tflow^* B.m2.\keyword{this}$'' and ``$B.m2.r \less^* a4$'', where $B.m2.p1$ and $B.m2.r$ are respectively the virtual parameter of method $m2()$ and the return variable of method $m2()$. In fact, Figure~\ref{fig:relations}(f) is very close to the smallest type flow model satisfying all constraints given in Definition~\ref{def:extension} regarding the program in Listing~\ref{lst:relation}.
+We describe the process of generating extended relations for the base model that is introduced in Example~\ref{ex:def1}, depicted in Figure~\ref{fig:relations}. Although the actual computation may take a number of iterations updating relations interdependently before reaching a fixpoint, to make the process more understandable, we try to sketch in separate how each rule given in Figure~\ref{fig:relations} works. Initially, the base relation for Listing~\ref{lst:relation} is given in Figure~\ref{fig:relations}(a). Definition~\ref{def:extension}($1$) extends the base relation $\less$ into $\less^*$, as shown in Figure~\ref{fig:relations}(b). Definition~\ref{def:extension}($2$) extends the field access relation, resulting in Figure~\ref{fig:relations}(c). By applying Definition~\ref{def:extension}($3$), we further extends $\less^*$ through the existing field access relation, reaching the graph in Figure~\ref{fig:relations}(d). Then Definition~\ref{def:extension}($4$) propagates the type flow relation $\tflow^*$ by considering the existing partial order relation and field access relation on variables, as shown in Figure~\ref{fig:relations}(e). In Figure~\ref{fig:relations}(f) we further enrich the relations for inter-procedural type flow, where the statement ``$a4=b2.m2(a3)$'' triggers the invocation of method $m2()$ in class $B$, from which we establish ``$a3 \less^* B.m2.p1$'', ``$B \tflow^* B.m2.\keyword{this}$'' and ``$B.m2.r \less^* a4$'', where $B.m2.p1$ and $B.m2.r$ are respectively the virtual parameter of method $m2()$ and the return variable of method $m2()$. At this stage, Figure~\ref{fig:relations}(f) is very close to the smallest type flow model satisfying all constraints given in Definition~\ref{def:extension} regarding the program in Listing~\ref{lst:relation}.
 %
 %We show the detailed process of relation generation in one round, as displayed in~\ref{fig:relations}. In general we need more round to calculte a program fixpoint. The final relations are the least relations that satisfy constraints of Definition 2. Although the three relations are inter-dependent, one may find that without method call (i.e., Definition~\ref{def:extension}.5), a smallest model satisfying the two relations $\rightarrow^*$ (field access) and $\less^*$ (variable partial order) can be uniquely determined without considering the type flow relation $\tflow^*$.
 \end{Example}
@@ -424,7 +428,7 @@ We describe the process of generating extended relations for the base model that
 
 %In order to 
 In this section we compare the precision of TFA with points-to analysis. Firstly, we present a brief list of the classical subset-based points-to rules for our language in Figure~\ref{fig:constraints}, in which $\VPT$ (the var-points-to relation) maps a reference to a set of objects it may point to, and $\HPT$ (the heap-points-to relation) maps an object and a field to a set of objects. The points-to rules are mostly straightforward, except that %where
-$param(type(o),m))$, $this(type(o),m))$ and $return(type(o),m)$ refer to the formal parameter, \textsf{this} reference and \textsf{return} variable of method $m$ of the class for which object $o$ is declared, respectively.
+$param(type(o),m))$, $this(type(o),m))$ and $return(type(o),m)$ refer to the formal parameter, \textsf{this} reference and \textsf{return} variable of method $m$ of the class for which object $o$ is declared, respectively. For each memory allocation statement $x=\kwnew\ c$, we assume $i$ is the line number of the statement, and that object $o_i$ is uniquely identified by $i$.
 
 \begin{figure}%[!htbp]
 	\centering %
@@ -451,13 +455,13 @@ $param(type(o),m))$, $this(type(o),m))$ and $return(type(o),m)$ refer to the for
 \caption{Constraints for an context-insensitive points-to analysis. \label{fig:constraints}}
 \end{figure}
 
-To this end we present the first result of the paper, which says type flow analysis has the same precision regarding type based check, such as call site resolution and cast failure check, when comparing with the points-to analysis. We define a program is well defined if all field access is legal, \ie, every $x.f = e$ is preceded by a proper allocation for $x$.
+To this end we present the first result of the paper, which says type flow analysis has the same precision regarding type based check, such as call site resolution and cast failure check, when comparing with the points-to analysis. We say a program is well defined if all field access is legal, \ie, every $x.f = e$ is preceded by a proper allocation for $x$ such that field $f$ is available for $x$.
 
 \begin{Theorem}~\label{thm:tfa}
 For a well defined program in the context-insensitive setting, for all variables $x$ and class types $c$, $c\tflow^*x$ in TFA iff there exists an object abstraction $o$ of $c$ such that $o\in\VPT(x)$ in points-to analysis.
 \end{Theorem}
 
-First we assume that for each class $c$, every object creation site $x = \kwnew\ c$ at line $i$ defines a ``mini-type '' $c_i$. Intuitively, if the theorem is satisfied in this setting, then merging of mini-types in the form of $c_i$ into class $c$ will preserve the result. We present the following auxiliary lemma. Given $c$ the type of a class, and $I_c$ a collection of all object creation sites of the form $y = \kwnew\ c$ at line $i\in I_c$ in the program, we assume $c_i\tflow y$, and $o_i\in\VPT(y)$ with $o_i$ of type $c_i$.
+First we assume that for each class $c$, every object creation site $x = \kwnew\ c$ at line $i$ defines a ``mini-type'' $c_i$. Intuitively, if the theorem is satisfied in this setting, then merging of mini-types in the form of $c_i$ into class $c$ will preserve the result, which is given in the following auxiliary lemma. Given $c$ the type of a class, and $I_c$ a collection of object creation sites of the form $y = \kwnew\ c$ at a unique line number $i\in I_c$ in the program, we assume $c_i\tflow y$, and $o_i\in\VPT(y)$ with $o_i$ of type $c_i$.
 
 \begin{Lemma}\label{lem:mini-type}
 In the context-insensitive setting, for all variables $x$ and class types $c$, we have \begin{enumerate}
@@ -465,6 +469,9 @@ In the context-insensitive setting, for all variables $x$ and class types $c$, w
 \item $o\in\VPT(x)$ with $o$ of type $c$, iff there exists $i\in I_c$, $o_i$ of type $c_i$, such that $o_i\in\VPT(x)$.
 \end{enumerate}
 \end{Lemma}
+\begin{proof}
+Trivial.
+\end{proof}
 
 %Zhang_1
 %\begin{proof} (sketch)
@@ -473,10 +480,10 @@ In the context-insensitive setting, for all variables $x$ and class types $c$, w
 %Moreover, we only need to prove the result in the intraprocedural setting (\ie Lemma~\ref{lem:tfa-intra}). Because if in the intraprocedural setting the two systems have the same smallest model for all methods, then at each call site $x=y.m(a)$ both analyses will assign $y$ the same set of classes and thus resolve the call site to the same set of method definitions, and as a consequence, each method body will be given the same set of extra conditions, thus all methods will have the same initial condition for the next round iteration. Therefore, both inter-procedural systems will stabilize at the same model.
 %\end{proof}
 
-The following lemma focuses on the key part of the proof for Theorem~\ref{thm:tfa}, which shows that TFA and points-to analysis are equivalent regarding reachable types to variables. % intraprocedurally.
+The following lemma focuses on the key part of the proof for Theorem~\ref{thm:tfa}, which shows that TFA and points-to analysis are equivalent regarding reachable types to variables, provided that each class is (syntactically) instantiated only once in the program. % intraprocedurally.
 
 \begin{Lemma}\label{lem:tfa-inter}
-In a context-insensitive inter-procedural analysis where each class $c$ only syntactically appears once in the form of $y = \kwnew\ c$, for all variables $x$ and classes $c$, $c\tflow^*x$ iff there exists an object abstraction $o$ of type $c$ such that $o\in\VPT(x)$.
+In a context-insensitive inter-procedural analysis, if each defined type $c$ only syntactically appears once in the form of $y = \kwnew\ c$, then for all variables $x$ and classes $c$, we have $c\tflow^*x$ iff there exists an object abstraction $o$ of type $c$ such that $o\in\VPT(x)$.
 \end{Lemma}
 \begin{proof}
 Since those constrains of the points-to analysis establish the smallest model $(\VPT, \HPT)$ with $\VPT:\Var\rightarrow\Obj$ and $\HPT:\Obj\times\Field\rightarrow\power(\Obj)$, and the three relations of type flow analysis also define the smallest model that satisfies Definition~\ref{def:base} and Definition~\ref{def:extension}, we prove that every model established by points-to analysis constraints is also a model of TFA, and vice versa. Then the least model of both systems must be the same, as otherwise it would lead to contradiction.
@@ -563,11 +570,12 @@ After basic relations are generated, we use the extended relation rules to perfo
 After all required analysis is done, we extract the set of reaching types for each reference variable as final result.
 \end{enumerate}
 
-During the fixpoint calculation, each iteration generates three \emph{new} relations ($\less^*$, $\tflow^*$ and $\lhflow{*}$) that are larger than or equal to the three relations before the iteration. That is, the evolution of relations are monotonic during the type flow analysis. Given the number of variables, fields and class types are all finitely bounded by the size of a program, our target relations have fixed upper bounds, thus the type flow analysis computation is sure to terminate.
+During the fixpoint calculation, each iteration generates three \emph{new} relations ($\less^*$, $\tflow^*$ and $\lhflow{*}$) that are larger than or equal to the three relations before the iteration. That is, the evolution of relations are monotonic during the type flow analysis. Given the number of variables, fields and class types are all finitely bounded by the size of the program, our target relations have fixed upper bounds, thus the type flow analysis computation is guaranteed to terminate.
 
 
-Note that since our analysis is inter-procedural, type information for a receiver of a call site can be used to resolve potential callee methods, which further help to propagate type information from actual parameters to virtual parameters and from return variables back to the caller statement. Since the additional inter-procedural type flow may incrementally help to enrich type information at call sites, the type flow process is mutually recursive between call sites and defined methods. %
-Fig~\ref{fig:static-process} illustrates the entire process of our static analysis tool. Input data and generated data are represented in dash arrow. The final result is passed on by the ``Result Extraction'' phase and represented in the final circle.
+Note that since our analysis is inter-procedural, type information for a receiver of a call site can be used to resolve potential callee methods, which further help to propagate type information from actual parameters to virtual parameters and from return variables back to the caller statement via newly added call edges. %Since the additional inter-procedural type flow may incrementally help to enrich type information at call sites, the type flow process is mutually recursive between call sites and defined methods. %
+Therefore, the task of tracing value flow with field access and the task of resolving call sites to methods are mutually recursive in the TFA algorithm.
+Fig~\ref{fig:static-process} illustrates the entire process of our static analysis tool. Input data and generated data are represented in dashed arrow. The final result is passed on by the ``Result Extraction'' phase and represented in the final circle.
 
 \begin{figure}
 \centering
@@ -584,7 +592,7 @@ In order to achieve an acceptable performance, we make conservative treatments o
 \subsection{Dynamic Profiling}\label{subsec:dynamic-profiler}
 
 
-We apply dynamic analysis to collect the groundtruth of a program's run-time behaviour, such as the actual type that a given variable has during an execution and the actual method being called at a particular program location. To build up a baseline for measuring the precision of TFA, we have implemented a dynamic profiling tool that records the actual types that a variable may have at run-time, in particular when the variable is a receiver at a call site. Based on the Soot framework, we instrument the jimple statements of the target benchmark programs that are subsequently tested in our experiment. After the instrumentation phase, run-time types are collected during the benchmark execution and are dumped to the output. We consider the collected variable-type relation as the groundtruth and compare it with the results generated by our static TFA algorithm. The details of the profiler are presented in section~\ref{subsec:accuracy}. %In order to achieve effective instrumentation, we consider the following four possible ways on how to instrument a Java program.
+We apply dynamic analysis to collect the groundtruth of a program's run-time behaviour, such as the actual type that a given variable has during an execution and the actual method being called at a particular program location. To build up a baseline for measuring the precision of TFA, we have implemented a dynamic profiling tool that records the actual types that a variable may have at run-time, in particular when the variable is a receiver at a call site. Based on the Soot framework, we instrument the jimple statements of the target benchmark programs that are subsequently tested in our experiment. After the instrumentation phase, run-time types are collected during the benchmark execution and are dumped to the output. We consider the collected variable-type relation as the groundtruth and compare it with the results generated by our static TFA algorithm. The details of the analysis are presented in section~\ref{subsec:accuracy}. %In order to achieve effective instrumentation, we consider the following four possible ways on how to instrument a Java program.
 %
 %There are four manners to instrument the source code to record the run-time type of a method receiver.
 %\begin{itemize}
@@ -618,8 +626,8 @@ We apply dynamic analysis to collect the groundtruth of a program's run-time beh
 
 %We take ``Insert After'' as our instrumentation manner. The reason is mainly
 During the instrumentation process, we choose to insert statements right after each call site to record the type of the receiver.
-An example is given in Listing~\ref{lst:after-instru}, of which at line $5$, the funtion $RecordUtils.id()$ takes an invocation expression ($invokeExprssion$) and a method receiver ($b$) as parameters and returns a unique representation string for this invocation. In this example, the collected unique representation is \emph{A:m1:b:B:m2:4}, which stands for $b$ calls method $m2$ of class $B$, at line $4$ within method $m1$ of class $A$. It also shows that $b$ is of type $B$ at this program location. 
-%We have also considered other options, such as inserting a recording statement inside the callee method (the runtime type of $\keyword{this}$ is the same as the receiver's type), or inserting a recording statement before the callsite. However, all these attempts are unsuccessful
+An example is given in Listing~\ref{lst:after-instru}, in which at line $5$, the function $RecordUtils.id()$ takes an invocation expression ($invokeExprssion$) and a method receiver ($b$) as parameters and returns a unique representation string for this invocation. In this example, the collected unique representation is \emph{A:m1:b:B:m2:4}, which stands for $b$ calls method $m2$ of class $B$, at line $4$ within method $m1$ of class $A$. It also shows that $b$ is of type $B$ at this program location. 
+%We have also considered other options, such as inserting a recording statement inside the callee method (the run-time type of $\keyword{this}$ is the same as the receiver's type), or inserting a recording statement before the callsite. However, all these attempts are unsuccessful
 %
 %According to the Java specification, the first statement of each constructor should be either another constructor of its own or its super class. Therefore, we would get a \emph{JVM voilation} error if we instrument a statement before the first statement in a constructor. We illustrate this problem in an example given in Listing~\ref{lst:spec-constructor}. Due to this restriction, both \emph{Insert First} and \emph{Insert Before} schemes cannot be applied. For the remaining to schemes, we choose \emph{Insert After} over \emph{Insert Last} for the reason that a last statement could be appeared in many different kinds like a return statement, an exception throwing statement, or even an application terminating invocation. It will take more time to tackle this problem if we use the  \emph{Insert Last} scheme to implement our profiler. More details are displayed in an example in Listing~\ref{lst:last-statement}. We can easily insert at line 4 and line 8, for an exception throwing statement and a return statement, respectively. However, it requires significant time to recognize line 7 as a last statement of method $m1$ since it will terminate the whole application. As a result, we use \emph{Insert After} as our implementation manner so that a type can be more easier and straightforwardly collected and bundled with its receiver. %due to the reason. %that it's more straightforward.
 %As an example, the code before and after instrumentation are shown in Listing~\ref{lst:before-instru} and Listing~\ref{lst:after-instru}, respectively. For Listing~\ref{lst:after-instru}, at line $5$, the funtion $RecordUtils.id()$ takes an invocation expression ($invokeExprssion$) and a method receiver ($b$) as parameters and return an unique representation string for this invocation. In this example, the collected unique representation is \emph{A:m1:b:B:m2:4}, which stands for $b$ calls method $m2$ of class $B$, at line $4$ within method $m1$ of class $A$. It also shows that $b$ is of type $B$ at this program location.
@@ -639,28 +647,28 @@ class A {
 \end{lstlisting}
 \end{minipage}
 
-SPECjvm2008~\cite{specjvm} suite consists of a series of subbenchmark program with predefined inputs, which are officially provided by the benchmarks. Since static analysis takes into account all possible paths of a program execution, the uncovered parts of the code become possibly source of imprecision for static analysis. In this work we use \emph{method coverage} as the index of code coverage, as presented in Table~\ref{table:coverage}. From the table one may find that these test cases cover most of the defined methods on the majority of benchmarks. However, for some benchmarks, the test cases missed a significant percentage of the code base. %plenty of defined methods. Focus on the first 
+SPECjvm2008~\cite{specjvm} suite consists of a series of subbenchmark programs with predefined inputs that are officially provided by the suite. Since static analysis takes into account all possible paths of a program execution, the uncovered parts of the code become possible source of imprecision for static analysis. In this work we apply \emph{method coverage} as the index of code coverage, as presented in Table~\ref{table:coverage}. From the table one may find that these test cases cover most of the defined methods on the majority of benchmarks. However, for some benchmarks, the test cases missed a significant percentage of the code base. %plenty of defined methods. Focus on the first 
 
-Taking the worst covered benchmark $check$, on which $18$ methods (or $46\%$ of the entire number of defined methods) are not invoked at runtime. 
+Taking the worst covered benchmark $check$, on which $18$ methods (or $46\%$ of the entire number of defined methods) are not invoked at run-time. 
 We have investigated the benchmark and found two possible reasons, which we are going to explain by using (simplified) real code in Listing~\ref{lst:uncovered-method}. 
-As we known, SPECjvm2008~\cite{specjvm} provides multi-threaded mode to run the benchmarks, in order to test the performance of the underlying hardware, operating systems and particular implementations of JVM. It defines specific methods to be executed under this mode, such as the method $testType()$ at line 2. Since we run the benchmarks on single-threaded mode, these methods would not be executed at runtime. %For another reason that raise up the number of uncovered methods, 
+As we known, SPECjvm2008~\cite{specjvm} provides multi-threaded mode to run the benchmarks to test  performance of the underlying hardware, operating systems and particular implementations of JVM. It defines specific methods to be executed under this mode, such as the method $testType()$ at line 2. Since we run the benchmarks on single-threaded mode, these methods would not be executed at run-time. %For another reason that raise up the number of uncovered methods, 
 The second reason is that some classes are designed as a pattern for different children classes. That is, methods in these classes are generally implemented differently from parent classes and interfaces. Since many of the defined methods are not actually required for the functionality purpose, they are usually dummy implementations, as we know that all methods of an interface need to be implemented in a non-abstract class.
 %implements numerous inheriting methods from interface, tricklly doing nothing on their implementation. In this way, children classes could simply extend these pattern classes and override a few of methods. Note that interface`s method has to be all implemented on a non-abstract class. Therefore, if the children classes directly extend the original interface, they have to implement all the inheriting methods, even those they do not need at all. 
-As shown in Listing~\ref{lst:uncovered-method}, class $BaseFileObject$ extends interface $JavaFileObject$ and implements $13$ methods by simply throwing an exception. These methods would not be executed. $CachedFileObject$ and $OutputFileObject$ are two children classes extending $BaseFileObject$, %they 
+As shown in Listing~\ref{lst:uncovered-method}, class $BaseFileObject$ extends interface $JavaFileObject$ and implements $13$ methods by simply throwing an exception. Therefore, these methods would not be executed. $CachedFileObject$ and $OutputFileObject$ are two child classes extending $BaseFileObject$, %they 
 each only overriding one method of its parent (\ie $getKind()$ at line 23 and $openOutputStream()$ at line 28). 
 %Coverage
 \begin{table} %[!htbp]%
 \centering
 %\begin{threeparttable}[b]
-\begin{tabular*}{1.01\textwidth}{|l|c|c|c|c|c|c|c|c|c|c|c|c|}
+\begin{tabular*}{1.0\textwidth}{|l|c|c|c|c|c|c|c|c|c|c|c|c|}
 %\begin{tabular*}{0.45\textwidth}{l|c|c|c}
 \hline
  & \hspace{-2pt}check\hspace{-2pt} & \hspace{-2pt}compiler\hspace{-2pt} & \hspace{-2pt}compress\hspace{-2pt} & \hspace{-2pt}crypto\hspace{-2pt} & \hspace{-2pt}derby\hspace{-2pt} & \hspace{-2pt}helloworld\hspace{-2pt} & \hspace{-2pt}mpegaudio\hspace{-2pt} & \hspace{-2pt}scimark\hspace{-2pt} & \hspace{-2pt}serial\hspace{-2pt} & \hspace{-2pt}startup\hspace{-2pt} & \hspace{-2pt}sunflow\hspace{-2pt} & \hspace{-2pt}xml\hspace{-2pt}\\
 %\hline
 \hline
-\textbf{dynamic} & 21 & 57 & 53 & 27 & 64 & 5 & 11 & 89 & 81 & 10 & 6 & 57\\
-\textbf{static} & 39 & 81 & 55 & 34 & 76 & 8 & 12 & 116 & 121 & 11 & 7 & 73\\
-\textit{coverage} & 0.54 & 0.70 & 0.96 & 0.79 & 0.84 & 0.62 & 0.92 & 0.77 & 0.67 & 0.91 & 0.86 & 0.78\\
+\hspace{-3pt}\textbf{dynamic}\hspace{-2pt} & 21 & 57 & 53 & 27 & 64 & 5 & 11 & 89 & 81 & 10 & 6 & 57\\
+\hspace{-3pt}\textbf{static} & 39 & 81 & 55 & 34 & 76 & 8 & 12 & 116 & 121 & 11 & 7 & 73\\
+\hspace{-3pt}\textit{coverage} & 0.54 & 0.70 & 0.96 & 0.79 & 0.84 & 0.62 & 0.92 & 0.77 & 0.67 & 0.91 & 0.86 & 0.78\\
 %\textbf{Benchmark} & \textbf{dynamic} & \textbf{static} & \textbf{coverage} \\
 %	\hline
 %check & 21 & 39 & 0.54\\
@@ -680,12 +688,12 @@ each only overriding one method of its parent (\ie $getKind()$ at line 23 and $o
 \hline
 \end{tabular*}
 \begin{tablenotes}
-  \item[1] \textbf{dynamic} denotes the number of reached methods at runtime.
+  \item[1] \textbf{dynamic} denotes the number of reached methods at run-time.
   \item[2] \textbf{static} denotes the number of defined methods, excluding abstract methods.
   \item[3] $\textit{coverage} = \textbf{dynamic}\ /\ \textbf{static}$.
 \end{tablenotes}
-%\end{threeparttable}
 \caption{Method coverage for test cases}\label{table:coverage}
+%\end{threeparttable}
 \end{table}
 
 
@@ -697,7 +705,7 @@ each only overriding one method of its parent (\ie $getKind()$ at line 23 and $o
 %\end{figure}
 
 
-\begin{minipage}{\linewidth}
+\begin{minipage}{0.96\linewidth}
 %\vspace{10pt}
 \begin{lstlisting}[caption={Example code for uncovered methods },label={lst:uncovered-method}]
 public class Main extends SpecJVMBenchmarkBase{
@@ -705,13 +713,16 @@ public class Main extends SpecJVMBenchmarkBase{
 }
 
 public class BaseFileObject implements JavaFileObject {
-  public Kind getKind(){throw new UnsupportedOperationException("getKind()");}
+  public Kind getKind(){
+      throw new UnsupportedOperationException("getKind()");
+  }
 		
   public OutputStream openOutputStream() throws IOException {
-			throw new UnsupportedOperationException("openOutputStream()");
+	  throw new UnsupportedOperationException("openOutputStream()");
   }
   // still 11 methods below which is defined in interface "JavaFileObject",
-  // thus this class have to implement them even they are never being executed.
+  // thus this class have to implement them even they are never being 
+  // executed.
   ...
 }
 
@@ -751,16 +762,16 @@ We try to provide answers to these two questions as discussed in section~\ref{su
 
 \subsection{Analysis on Performance}\label{subsec:efficiency}
 
-We have executed all SPECjvm2008 benchmark programs $10$ times with the CHA, PTA and TFA algorithms. Then we calculate the average time consumption (in seconds) as displayed at column \textbf{T$_{CHA}$}(s), \textbf{T$_{PTA}$}(s) and \textbf{T$_{TFA}$}(s) in Table~\ref{table:TimeCost}. We also list the sizes of the generated relations (\ie, the type flow relation `$\tflow$', variable partial order `$\less$' and the field access relation `$\hflow$'), which provide an estimation of input size for the problems we are treating. The result confirms that our approach consumes more time than CHA, which is reasonable, as CHA does not apply any propagation on types, but only analyzes the class and interface hierarchy structure.\footnote{Note that we have implemented the current CHA algorithm by using the class hierarchy structure provided in the Soot framework. The default CHA implementation in Soot runs much slower, as shown in our earlier experiment result in~\cite{ZhuoZ19}.} TFA is in general more efficient than points-to analysis. In general, the runtime cost of TFA increases on benchmarks with larger size of generated relations as well as higher relational complexity, as most of the time in TFA is spent on calculating a fixpoint (\eg, on benchmark $check$ the number of generated relations reach to $34,406$, on which TFA spends the most amount of time($3.52s$) among all benchmarks). We conjecture that PTA is slower than TFA because it requires extra time for maintaining and updating a heap abstraction.
+We have executed all SPECjvm2008 benchmark programs $10$ times with the CHA, PTA and TFA algorithms. Then we calculate the average time consumption (in seconds) as displayed at column \textbf{T$_{CHA}$}(s), \textbf{T$_{PTA}$}(s) and \textbf{T$_{TFA}$}(s) in Table~\ref{table:TimeCost}. We also list the sizes of the generated relations (\ie, the type flow relation `$\tflow$', variable partial order `$\less$' and the field access relation `$\hflow$'), which provide an estimation of input size for the problems we are treating. The result confirms that our approach consumes more time than CHA, which is reasonable, as CHA does not apply any propagation on types, but only analyzes the class and interface hierarchy structure.\footnote{Note that we have implemented the current CHA algorithm by using the class hierarchy structure provided in the Soot framework. The default CHA implementation in Soot runs much slower, as shown in our earlier experiment result in~\cite{ZhuoZ19}.} TFA is in general more efficient than points-to analysis. In general, the run-time cost of TFA increases on benchmarks with larger size of generated relations as well as higher relational complexity, as most of the time in TFA is spent on calculating a fixpoint (\eg, on benchmark $check$ the number of generated relations reach to $34,406$, on which TFA spends the most amount of time($3.52s$) among all benchmarks). We conjecture that PTA is slower than TFA because it requires extra time for maintaining and updating a heap abstraction.
 
 %\begin{figure}
 %\centering
 %\includegraphics[scale=1]{timecost.pdf}
-%\caption{Runtime cost with different analysis}
+%\caption{run-time cost with different analysis}
 %\label{fig:TimeCost}
 %\end{figure}
 
-%% Runtime cost
+%% run-time cost
 \begin{table} %[!htbp]
 \centering
 \begin{threeparttable}[b]
@@ -787,7 +798,7 @@ xml & 0.45 & 140.72 & 1.24 & 7837 & 11673 & 2016 & 21526\\
   \item[1] \textbf{R}$_{relation}$ denotes different type of relation we generated.
 \end{tablenotes}
 %\end{table}
-\caption{Runtime cost with different analysis}
+\caption{run-time cost with different analysis}
 \label{table:TimeCost}
 \end{threeparttable}
 \end{table}
@@ -805,7 +816,7 @@ recall = \dfrac{TP}{TP+FN}
 \begin{equation}\label{eq:precision}
 precision =  \dfrac{TP}{TP+FP}
 \end{equation}
-Here, $TP$ stands for \emph{true positive} which refers to the number of call edges identified by the analysis which also happens during program execution. $FN$ stands for \emph{false negative}, which is the number of call edges missed by the analysis. $FP$ (\emph{false positive}) refers to the number of call edges erroneously generated by the analysis. In general, a sound analysis should catch all existing runtime type information, \ie, the \emph{recall} should be $100\%$. On the other hand, \emph{precision} is defined as percentage of reported types that are correctly generated by the analysis. In general, given \emph{recall} fixed, a more precise algorithm should generate a smaller set of types for each calling variable. %%That is, $FP$ will be reduced.
+Here, $TP$ stands for \emph{true positive} which refers to the number of call edges identified by the analysis which also happens during program execution. $FN$ stands for \emph{false negative}, which is the number of call edges missed by the analysis. $FP$ (\emph{false positive}) refers to the number of call edges erroneously generated by the analysis. In general, a sound analysis should catch all existing run-time type information, \ie, the \emph{recall} should be $100\%$. On the other hand, \emph{precision} is defined as percentage of reported types that are correctly generated by the analysis. In general, given \emph{recall} fixed, a more precise algorithm should generate a smaller set of types for each calling variable. %%That is, $FP$ will be reduced.
 We present recall and precision of the given approaches in Table~\ref{table:recall} and Table~\ref{table:precision}, respectively.
 
 
@@ -1048,7 +1059,7 @@ xml & 513 & 513 & 322 & 0.614 & 315 & 4 & 0.987 & 407 & 60 & 0.872 & 377 & 84 & 
 In this section we briefly review the factors that hamper the performance of our type flow analysis.
 
 %\subsubsection{Reflection Call}\label{subsubsec:reflection-call}
-\paragraph{Reflective calls.} Reflection is an advanced feature in the Java programming language which provides the ability to inspect and manipulate a Java class at runtime. It brings in extra complexity to programs and its behaviour is hard to predict statically. In Listing~\ref{lst:reflection} we show a sample code using reflection in one of the benchmark programs to discuss how reflection works and what our treatment is. Note that this is an example we have simplified from the real code in order to concentrate on the main functionality of reflection. We discuss in three cases.
+\paragraph{Reflective calls.} Reflection is an advanced feature in the Java programming language which provides the ability to inspect and manipulate a Java class at run-time. It brings in extra complexity to programs and its behaviour is hard to predict statically. In Listing~\ref{lst:reflection} we show a sample code using reflection in one of the benchmark programs to discuss how reflection works and what our treatment is. Note that this is an example we have simplified from the real code in order to concentrate on the main functionality of reflection. We discuss in three cases.
 \begin{itemize}
 \item Object Creation.
 From line $6$ to line $10$, a new obejct of type $SPECJVMBenchmarkBase$ is created by method $newInstance()$ on variable $c$ at line $10$, where $c$ is an object of $Constructor$ type and it refers to a specific constructor of class $SPECJVMBenchmarkBase$. In the TFA analysis, we discard the type information of the new object in such a case because it is usually difficult to statically identify which constructor is invoked. For example, At line $6$, if statement $Class.forName()$ receives a string argument from the outside such as file input and user input, it is usually not easy to find out the real type of $benchmarkClass$. As a result, the run time type of $c$ and $benchmark$ cannot be identified.
@@ -1059,28 +1070,31 @@ The way to change a field using reflection is similar to processing method invoc
 We do not handle this effect in TFA, either.
 \end{itemize}
 
-\begin{minipage}{\linewidth}
-%\vspace{10pt}
-\begin{lstlisting}[caption={Example code of reflection},label={lst:reflection}]
+%\begin{minipage}{0.95\linewidth}
+%\vspace{5pt}
+\begin{lstlisting}[caption={Example code for reflection},label={lst:reflection}]
 public static void runSimple(Class benchmarkClass, String [] args) {
-  ...
   ...
   Class[] cArgs = { BenchmarkResult.class, int.class };
   Object[] inArgs = { bmResult, Integer.valueOf(1)};
-  Class benchmarkClass = Class.forName("spec.harness.SpecJVMBenchmarkBase");
+  Class benchmarkClass =
+      Class.forName("spec.harness.SpecJVMBenchmarkBase");
   Constructor c = benchmarkClass.getConstructor(cArgs);
 
   // Object creation using reflection
-  SpecJVMBenchmarkBase benchmark = (SpecJVMBenchmarkBase)c.newInstance(inArgs);
+  SpecJVMBenchmarkBase benchmark =
+      (SpecJVMBenchmarkBase)c.newInstance(inArgs);
   // normal method invocation
   benchmark.harnessMain();
 
   // method invocation
-  Method harnessMain = benchmarkClass.getMethod("harnessMain", new Class[]{});
+  Method harnessMain = 
+      benchmarkClass.getMethod("harnessMain", new Class[]{});
   // just like line 11 but in reflection manner
   harnessMain.invoke(benchmark, new Object[]{});
 
-  Method setup = benchmarkClass.getMethod( "setupBenchmark", new Class[]{});
+  Method setup = 
+      benchmarkClass.getMethod( "setupBenchmark", new Class[]{});
   // static invocation
   setup.invoke(null, new Object[]{});
 
@@ -1089,14 +1103,14 @@ public static void runSimple(Class benchmarkClass, String [] args) {
   f.set(benchmark, new Object());
 }
 \end{lstlisting}
-\end{minipage}
+%\end{minipage}
 
 %\subsubsection{Java Native Interface Call}\label{subsubsec:jni-call}
 \paragraph{JNI calls.} Java Native Interface (JNI) is a standard Java programming interface which provide ability for Java code to interoperate with application or library written in other programming languages, such as C, C++ or assembly. We show the usage of JNI in Listing~\ref{lst:jni}. Method $m()$ is defined as a native method and should not be implemented in Java. This program will load a native library named $lib$, in which the method $m()$ is implemented in a different program language. We do not consider JNI calls in our algorithm since the code is not written in Java. Analyzing that code and the communication between Java and other languages are out of our research scope. As a consequence, the effect of the invocation $a.m()$ at line $8$ is not analyzed by TFA.
 
-\begin{minipage}{\linewidth}
-%\vspace{10pt}
-\begin{lstlisting}[caption={Example code of JNI},label={lst:jni}]
+%\begin{minipage}{0.95\linewidth}
+%\vspace{5pt}
+\begin{lstlisting}[caption={Example code for JNI},label={lst:jni}]
 public class A {
   public native void m();
   static {
@@ -1108,15 +1122,15 @@ public class A {
   }
 }
 \end{lstlisting}
-\end{minipage}
+%\end{minipage}
 
 %\subsubsection{Library}\label{subsubsec:library}
 
 \paragraph{Library call.} Library calls included in an application (\eg, JDK libraries, third-party libraries) are usually in pre-compiled bit code format, and their source code is often large and not made explicitly available. Listing~\ref{lst:jdk} shows a common case of JDK invocation. We do not analyze the detailed logic inside library code which are written at line $10-11$. Instead, we perform an over approximation on library invocation, based on the method definition which appears at line $9$. We assume that library invocation will return the definition type and any subtype of this definition type as the result type. For Listing~\ref{lst:jdk}, $sb2$ will receive $\{StringBuilder,\ any\_subtype\_of\_StringBuilder\}$ as the set of reaching types under this strategy.
 
-\begin{minipage}{\linewidth}
-%\vspace{10pt}
-\begin{lstlisting}[caption={Example of JDK library call},label={lst:jdk}]
+%\begin{minipage}{0.95\linewidth}
+%\vspace{5pt}
+\begin{lstlisting}[caption={Example code for JDK library calls},label={lst:jdk}]
 import java.lang.StringBuilder;
 
 public void m() {
@@ -1126,14 +1140,14 @@ public void m() {
 //  @Override
 //  public StringBuilder append(String str) { ... }
 \end{lstlisting}
-\end{minipage}
+%\end{minipage}
 
 %\subsubsection{Array Approximation}\label{subsubsec:array-approximation}
-\paragraph{Array approximation.} We perform a conservative treatment on array accesses in the way that all type information that flows to one member of an array flows to all members of that array. Codes in Listing~\ref{lst:array} are used to explain how this approximation works. In this example, type information of $A$ and $B$ flow to the first member and the second member of array $arr$, respectively. We treat in the way that both $A$ and $B$ flow to the array $arr$, so that loadding an element of $arr$ receives both types (\ie $b$ receives $\{A, B\}$ as the set of reaching types, which is the same set of types that array $arr$ can access).
+\paragraph{Array approximation.} We perform a conservative treatment on array accesses in the way that all type information that flows to one member of an array flows to all members of that array. Codes in Listing~\ref{lst:array} are used to explain how this approximation works. In this example, type information of $A$ and $B$ flow to the first member and the second member of array $arr$, respectively. We treat this in the way that both $A$ and $B$ flow to the array $arr$, so that loading an element of $arr$ receives both types (\ie $b$ receives $\{A, B\}$ as the set of reaching types, which is the same set of types that array $arr$ can access). Applying constant propagation on array indices may help to increase the precision of our analysis.
 
-\begin{minipage}{\linewidth}
-\vspace{10pt}
-\begin{lstlisting}[caption={Example of array access},label={lst:array}]
+%\begin{minipage}{0.95\linewidth}
+%\vspace{5pt}
+\begin{lstlisting}[caption={Example code for array accesses},label={lst:array}]
 public void m() {
 	Object[] arr = new Object[2]{};
 	arr[1] = new A();
@@ -1141,40 +1155,39 @@ public void m() {
 	Object b = arr[1];  <---
 }
 \end{lstlisting}
-\end{minipage}
+%\end{minipage}
 
 %\subsubsection{Callback}\label{subsubsec:callback}
-\paragraph{Callbacks.} A callback function is known as a ``call-after'' function, which is widely used in object-oriented styled programming. By passing an argument to a method, the receiver may be used inside the callee to trigger a callback invocation. In functional language a callback funtion can be passed as argument directly. Listing~\ref{lst:callback}
-illustrates the callback mechanism, where function $callback()$ of class $B$ is invoked after the invocation of $trigger()$ of class $A$. Since we do not analyze the effect of reflection calls, JNI calls and library calls, we are unable to catch the type flow information inside $a.trigger(b)$ if it happens to be one of these calls (\eg, $trigger()$ is a method of a library class). Note that we only conservatively approximate on the return type of a library invocation. %, but not analyze the detail logic inside a library method.
+\paragraph{Callbacks.} A callback function is known as a ``call-after'' function, which is widely used in object-oriented styled programming. After being passed through an argument, the receiver may be used inside the callee to trigger a callback invocation. In functional language a callback function can be passed as argument directly. Listing~\ref{lst:callback}
+illustrates the callback mechanism, where function $callback()$ of class $B$ is invoked after the invocation of $trigger()$ of class $A$. Since we do not analyze the effect of reflection calls, JNI calls and library calls, we are unable to catch the type flow information inside $a.trigger(b)$ if it happens to be one of these calls (\eg, $trigger()$ is a method of a library class). We only conservatively approximate on the return type of a library invocation. %, but not analyze the detail logic inside a library method.
 
-\begin{minipage}{\linewidth}
-\vspace{10pt}
-\begin{lstlisting}[caption={Callback mechanism},label={lst:callback}]
+%\begin{minipage}{0.95\linewidth}
+%\vspace{5pt}
+\begin{lstlisting}[caption={Example code for Callback mechanism},label={lst:callback}]
 class A {
 	public void trigger(B b) {
 		b.callback();  // here the callback function actually executes
 	}
 }
-
 class B {
 	public void callback() {...}
 	public void static main() {
 		A a = new A();
 		B b = new B();
 		a.trigger(b);
- 	}
+	}
 }
 \end{lstlisting}
-\end{minipage}
+%\end{minipage}
 
 
 %\subsubsection{Java Exception}
 %\label{subsubsec:exception}
 \paragraph{Exception handling.} PTA implemented by Soot conservatively add all the subclass of $Throwable$ to the possible types of variable $t$ if method $m()$ is reachable. Relevant code is shown in Listing~\ref{lst:exception}. Since $Throwable$ is the superclass of all errors and exceptions in Java. These result set could be pretty large. In general it would reach to more than $200$. That means if we only have a single dynamic record for this invocation statement, the precision will be reduced significantly.
 
-\begin{minipage}{\linewidth}
-\vspace{10pt}
-\begin{lstlisting}[caption={Java Exception},label={lst:exception}]
+%\begin{minipage}{0.95\linewidth}
+%\vspace{5pt}
+\begin{lstlisting}[caption={Example code for Exception handling},label={lst:exception}]
 class A {
 	void m() {
 		try {
@@ -1185,7 +1198,7 @@ class A {
 	}
 }
 \end{lstlisting}
-\end{minipage}
+%\end{minipage}
 
 \newcommand\commentout[1]{}
 
@@ -1231,11 +1244,11 @@ Regarding the treatment of flow analysis in our algorithm, downcast analysis has
 
 Instead of using static program analysis, Cao and Xu~\cite{Cao2009} proposed a type analysis method of object-oriented program based on SAT solver. The approach abstracts programs into proposition formulas and provides both context-insensitive and context-sensitive during analyzing type information. Field variables of object are treated in the same way as VTA, which results in over abstraction and imprecision existing in VTA.
 
-Runtime profiling data can be recorded and used to compare with static analysis result. Furthermore, these runtime data can help static algorithms to increase precision and achieve adaptive ability. In general there are two ways to record runtime profiling data for Java programs, collecting from Java VM~\cite{Codrut2014}, or using program instrumentation technique to extract these data in runtime~\cite{Sundaresan2000}. Inspire by~\cite{Sundaresan2000}, and partialy due to Java VM can only internally provide the data we want, our dynamic type recorder is implemented using instumented technique.
+Run-time profiling data can be recorded and used to compare with static analysis result. Furthermore, these run-time data can help static algorithms to increase precision and achieve adaptive ability. In general there are two ways to record run-time profiling data for Java programs, collecting from Java VM~\cite{Codrut2014}, or using program instrumentation to extract these data at run-time~\cite{Sundaresan2000}. Inspire by~\cite{Sundaresan2000}, and partially due to the fact that Java VM can only internally provide the data we want, our dynamic type recorder applies instrumentation-based technique.
 
-Instrumentation for Java bytecode can be performed either statically or dynamically. Traditional instrumentation is executed statically at most time, which suffers from the limitation that dynamically generated code or downloaded code will be skiped from instrumentation. Walter et al.~\cite{Binder2007} implemented an framework called FERRARI which can perform instrumentation in both ways. However, our dynamic profiler is implemented using statically instrumentation. Hence, dynamically generated code cannot be instrumented. We do not implement dynamic instrumentation yet, but note that all the benchmarks code we tested are statically asscessible (\ie, none of codes are dynamically generated or downloaded).
+Instrumentation for Java bytecode can be performed either statically or dynamically. Traditional instrumentation is executed statically at most time, which suffers from the limitation that dynamically generated code or downloaded code will be skipped from instrumentation. Walter et al.~\cite{Binder2007} implemented an framework called FERRARI which can perform instrumentation in both ways. However, our dynamic profiler is implemented using statically instrumentation. Hence, dynamically generated code cannot be instrumented. We do not implement dynamic instrumentation yet, but note that all the benchmarks code we tested are statically accessible (\ie, none of codes are dynamically generated or downloaded).
 
-Similar to type analysis on statically typed language, dynamically typed language liked JavaScript and Python, also requires type inference analysis to perform optimization. Differently, type inference analyzer is generally equipped with a sound type system and performs type inference algorithm on this system~\cite{Chandra2016}. In recent years, some AI algorithms are appeared to solve this problem. Xu et al.~\cite{Xu2016} used probobilistic inference algorithm to calculate the possible variable types based on Supoort Vector Machine algorithm. Similarly, Hellendoorn et al.~\cite{Hellendoorn2018} tackled this problem with deep learning algorithm.
+Similar to type analysis on statically typed language, dynamically typed languages such as JavaScript and Python, also require type inference analysis to perform optimization. Differently, type inference analyzer is generally equipped with a sound type system and performs type inference algorithm on this system~\cite{Chandra2016}. In recent years, some AI algorithms are introduced to solve this category of problems. Xu et al.~\cite{Xu2016} used probabilistic inference algorithm to calculate the possible variable types based on Support Vector Machine algorithm. Similarly, Hellendoorn et al.~\cite{Hellendoorn2018} tackled this problem with deep learning algorithm.
 
 \section{Conclusion and future work}\label{sec:conclusion}
 In this paper we have proposed Type Flow Analysis (TFA), a new semantics that statically determines reaching types of variables and constructs a relatively precise call graph edges for Object-Oriented programming languages in an efficient way. We have proved that our method is as precise as subset-based points-to analysis, regarding type related information. The computation of TFA is purely relational, since it do not require a heap abstraction that is needed by a points-to analysis.
@@ -1244,7 +1257,7 @@ To evaluate our method in practice, we implement a static type analysis tool in 
 
 There are still some works we can do to enhance our algorithm. On the theoretical aspect, we can develop our algorithm to be context-sensitive, in a way similar to the known points-to analyses~\cite{Milanova2005,Smaragdakis11}. On the practical aspect, we can combine static result and dynamic result to make our algorithm more adaptive, inspire by the approach proposed in~\cite{Codrut2014}.
 
-\paragraph{Acknowlegements} The authors thank Bernhard Scholz for his guidance in our experiment regarding JVM configurations. We also thank anonymous reviewers of ICFEM 2019 for their help suggestions.
+\paragraph{Acknowlegements} The authors thank Bernhard Scholz for his guidance in our experiment regarding JVM configurations. We also thank anonymous reviewers for ICFEM 2019 and Formal Aspects of Computing (FAOC) for their helpful suggestions.
 \label{lastpage}
 
 \bibliographystyle{alpha}

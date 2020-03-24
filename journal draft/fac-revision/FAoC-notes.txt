@@ -1,0 +1,140 @@
+The authors thank the reviewers for their insightful comments and have carried out a revision on the paper. 
+The response starts with >>>.
+
+COMMENTS FOR THE AUTHOR:
+
+Reviewer #1: Summary
+This paper proposes the type flow analysis (TFA) to address the problem of statically resolving virtual method calls in JAVA. Compared with existing approaches such as class hierarchy analysis, point-to analysis and variable type analysis, the main idea of this paper lies in the freeness of constructing any heap abstraction, such that it can be efficient.
+
+General comments
+The writing of this paper needs some improvement. Sometimes the paper is difficult to follow, especially when many long sentences and attributive clauses are used. For example, in the first sentence of the third paragraph in page 2 (line 24), "which aim" is ambiguous -- the algorithms or the algorithms being conservative?  Similar examples are enclosed below in the comments for each section. The writing of Section 4 needs significant effort, as there are many typos and grammar errors.
+
+>>> In this version we try to use shorter sentences as much as possible. This particular sentence has been revised to "In general, the algorithms used by CHA, RTA and VTA provide an efficient way to resolve call edges, ..."
+
+Comments on Section 1 Introduction
+In Introduction, many symbols are used before definition, such as A.m.this, dotted arrows in Fig. 3. Their definitions don't appear until section 2.
+
+>>> We introduced "A.m.this" and "A.m.return" on page 2 within the VTA paragragh to clarify the presentation. For the sake of readabilitly we still keep the complete set of definitions formally unchanged in Section 2.
+
+"let x be a variable of declared class A," "For a variable x of declared interface I": Is x a field of class A, or a variable of type A?
+
+>>> The sentence is now "let x be of class A, ..."
+
+Since both x and y are assigned type A, x.f and y.f are both represented by node A.f, thus the set of types reaching A.f is now {B, C}. --> wrong sentence
+
+>>> This sentence has been revised.
+
+There should be a summary of new contributions, compared with the work published in conference proceedings.
+
+>>> A summary of new contributions is now on page 4, second last paragraph at the end of Section 1.
+
+I would suggest not call the implementation a byproduct (contribution #3) if it is listed as one of the main contributions.
+
+>>> We've revised that sentence.
+
+Comments on Section 2 Type Flow Analysis
+The syntax definition seems incorrect:
+As s is defined as the entry point, s ::= s;s allows multiple entry points, which may contradict the practice in Java
+According to definition of M, s should be a statement, then it shouldn't be an entry point
+Since s := e and e := x, it is possible to yield a statement with only a variable
+c is a terminator, so class c and extends c should have different c. 
+Please fix it in the revision.
+
+>>> We revised the core language in the follow ways:
+- C ::= class c [extends c′]
+- "s ::= e" has been removed
+- the entry point is now a single statement "out=c.main(in)" which is in the style of C/C++/Java-type languages
+
+In Definition 2.2 the notation "y\xrightarrow(f*)  z" shall be defined. The explanation of 2.5 needs to be elaborated.
+
+>>> We have included new explanations for "\xrightarrow(f*)" and for the method call rule, covering the three inter-procedural type flow relations.
+
+Fig 7. o_i at the second line is not defined.
+
+>>> We have included an explanation that "i" is the line number of the allocation statement and that object o_i is uniquely identified by the line number i.
+
+The proof sketch of Theorem 1 is not clear, especially the argument on why only intra-procedural setting is needed. It may be better if the long sentence in the second paragraph can be separated into a few shorter ones. In addition, the concept of mini-type is not defined and the merging of mini-typing is thus not clear. Similarly, "the same smallest model" is not clear.
+
+>>> We reorganized the proof of Theorem 1 as follows. First we separate the condition that it is equivalent to prove the case that each class is instantiated only once (Lemma 1). Then we prove the inter-procedural TFA is equivalent to inter-procedural subset based points-to analysis wrt type, by integrate the method call condition into the main proof of Lemma 2. Finally Theorem 1 is derivable by combining results of Lemma 1 and Lemma 2.
+
+Comments on Section 3 Implementations
+The dynamic profiling aims to collect groundtruth. Will the test cases used to drive the execution of instrumented programs affect the accuracy of the profiling? This should be discussed in this section.
+
+>>> We added a measure of benchmark coverage in the last two paragraphs in Section 3.2. For most of the benchmarks the dynamic execution reaches more than 70% of the instrumented methods. We also investigated benchmarks with low coverage and found that most unreachable methods are just dummy methods. 
+
+The fixpoint needs a bit more discussion as well, for example, will a fixpoint always be reached.
+
+>>> We added a paragraph in Section 3.1 about the fixpoint calculation and explained why TFA computation is guaranteed to terminate.
+
+Fig. 8, "represented in green background". It is better not to use color.
+
+>>> Revised by using a different shape.
+
+The discussion of the 4 possible ways of instrument is confusing. What way is finally used? All of them or only the "Insert After"? As discussed, in the case of super class, both "Insert First" and "Insert Before" cannot be applied, then how this situation is solved? The example to support "Insert After" over "Insert Last" is confusing. First, the example needs to be elaborated, Second, how it supports the statement of "Insert After" over "Insert Last" needs to be elaborated.
+
+>>> We removed the 4 possible ways of instrument. Instead we only introduce the "Insert After" method that is used in the profiler accompanied by example code.
+
+Comments on Section 4 Evaluation
+"The choice of comparing with the context-insensitive points-to analysis implementation in Soot is due to our approach also being context-insensitive, thus the results from both approaches are comparable. " --> wrong sentence
+
+>>> We have revised the sentence.
+
+List tables with the Table index, rather than Figure
+
+>>> All changed to Table index.
+
+Minors:
+grountruth --> groundtruth
+Page 9 punctuation. "knowledge. ()" -> "knowledge ()."
+
+>>> Both fixed. Thank you.
+
+Reviewer #2: Summary:
+
+In this article, the authors proposed a method, type flow analysis (TFA), that can be used to statically compute the reachable types for variables. Compared to some existing techniques, TFA has a richer semantics, which includes a ternary relation to trace the load and store relationship between variables via field accesses. The authors proved that the precision of TFA is theoretically equivalent to the "points-to analysis" approaches (Sec. 2). A Soot framework based implementation of TFA is used to demonstrate that TFA outperforms the "points-to analysis" approaches in terms of efficiency and surpasses the class hierarchy analysis in precision (Sec. 4).
+
+More specifically, after introducing the background information and some of the existing approaches in Sec. 1, TFA is introduced in Sec. 2 with formal definitions and a proof about its precision. The tool implementation is discussed in Sec. 3, after which, the tool is evaluated in comparison with existing approaches on benchmark runs in Sec. 4. Also in Sec. 4, some of the limitations of TFA is discussed (Sec. 4.3). The article is concluded in Sec. 6 after discussions about related work in Sec. 5.
+
+Evaluation:
+
+In my opinion, the method proposed in this article is technically sound and has practical significance. The article itself is well-organised in general. Some minor changes could be used to help the readers' understanding (see comments below). Therefore, I would recommend this article to be accepted.
+
+General Comments:
+
+1. In the title and the abstract, the authors focus on the problem of resolving virtual method calls. This is indeed a good motivation to introduce an approach like TFA. However, in the rest of the article, TFA is presented in a more generalised manner, which is at the level of computing reachable types and the connection to virtual method calls becomes vague. Some more examples/discussions in the introduction could be helpful to build the linkage.
+
+>>> We have enriched Example 1 that resolves a call site to a particular method. Hope that will strengthen the motivation of the paper. 
+
+2. In Section 2, the definitions and proofs could be put into separate sub-sections.
+
+>>> We have included the proof into a new subsection.
+
+3. For Fig. 10, 11, 13, 14, it might be helpful if "total Recall" and "Total Pre" rows can be provided.
+
+>>> "total Recall" and "Total Pre" rows have been added.
+
+Typo:
+
+Page 14, line 50, sudied -> studied
+
+>>> Fixed. Thank you.
+
+Reviewer #3: This paper presents an approach of type flow analysis, called TFA, to improve the efficiency of virtual method call resolution of Java. TFA aims to propagate type information as well as field access information through the syntactic structure of a program. The method is evaluated in two aspects. One is theoretical foundation another one is experimental results. The theoretical foundation is solid with respect to Andersen's subset based points-to analysis method. The experiments are made on SPECjvm2008. TFA is evaluated by comparing with CHA, VTA and PTA on performance and accuracy.
+ 
+The paper is well written and structured. The topic is interesting. Extended relations extraction approach can help to computer a collection of reachable types of variables. The algorithm of type flow analysis, which is implemented in Soot framework, looks feasible to me. As far as the referee knows, the experiment evaluation results are relatively good, allowing a more efficient and better precision virtual method call resolution with type flow analysis. 
+
+In order to improve a little the paper, let me suggest some modification:
+
+- In section 2, the term type and class are mix-used and quite easily to cause confusing. I would suggest you to differentiate them clearly.
+
+>>> We have clarified the mix-usage. Most of the time we use the term "type", which actually denotes a variable's class name (bottom of page 4). The term "class" is mostly limited to syntax of the language.
+
+- The related work does not describe in what the approach is really new. In fact, the comparison is mainly made on some type analysis algorithms including CHA, VTA and PTA which are developed in 1995, 2000 and 1994.
+
+>>> We have extended the Related Work section by comparing with profiling works as well as with more recent AI based algorithms for type inference.
+
+-Definitions 2 （Extended Relations )
+
+- Page 5: Figure 5 is missing
+
+>>> Figure 5 is now at the top of page 5.
