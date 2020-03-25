@@ -103,7 +103,8 @@ General Comments:
 
 1. In the title and the abstract, the authors focus on the problem of resolving virtual method calls. This is indeed a good motivation to introduce an approach like TFA. However, in the rest of the article, TFA is presented in a more generalised manner, which is at the level of computing reachable types and the connection to virtual method calls becomes vague. Some more examples/discussions in the introduction could be helpful to build the linkage.
 
->>> We have enriched Example 1 that resolves a call site to a particular method. Hope that will strengthen the motivation of the paper. 
+>>> We have enriched Example 1 that resolves a call site to a particular method.  Also in Section 3.1 (Static Analysis) we added an explanation to the algorithm that "the task of tracing 
+value flow with field access and the task of resolving call sites to methods are mutually recursive". Hope that will help strengthen the virtual method resolution as a motivation of the paper. 
 
 2. In Section 2, the definitions and proofs could be put into separate sub-sections.
 
