@@ -656,7 +656,7 @@ The second reason is that some classes are designed as a pattern for different c
 %implements numerous inheriting methods from interface, tricklly doing nothing on their implementation. In this way, children classes could simply extend these pattern classes and override a few of methods. Note that interface`s method has to be all implemented on a non-abstract class. Therefore, if the children classes directly extend the original interface, they have to implement all the inheriting methods, even those they do not need at all.
 As shown in Listing~\ref{lst:uncovered-method}, class $BaseFileObject$ extends interface $JavaFileObject$ and implements $13$ methods by simply throwing an exception. $CachedFileObject$ and $OutputFileObject$ are two child classes extending $BaseFileObject$, %they
 each only overriding one method of its parent (\ie $getKind()$ at line 23 and $openOutputStream()$ at line 28).
-These methods would not be executed and they would not be recorded by the profiler during the tests.
+These methods in class $BaseFileObject$ would not be executed and they would not be recorded by the profiler during the tests.
 
 %Coverage
 \begin{table} %[!htbp]%
