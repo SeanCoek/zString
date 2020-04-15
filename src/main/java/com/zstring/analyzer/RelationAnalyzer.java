@@ -36,11 +36,11 @@ public class RelationAnalyzer {
         String pp = null;
         for(int i=0; i < args.length; i++) {
             switch (args[i]) {
-                case "-cp": cp = args[i+1]; break;
-                case "-pp": pp = args[i+1]; break;
+                case "-cp": cp = args[++i]; break;
+                case "-pp": pp = args[++i]; break;
                 case "-split": isSplit = true; break;
-                case "-d" : outputTxt = args[i+1]; break;
-                case "-lib" : LIB_APP = true;
+                case "-d" : outputTxt = args[++i]; break;
+                case "-lib" : LIB_APP = true; break;
                 default: printHelp(); return;
             }
         }
