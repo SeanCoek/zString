@@ -369,7 +369,7 @@ class B extends A{
 \hspace{2cm}
 \subfigure[Extended relation by Definition~\ref{def:extension}(4)] {\includegraphics[scale=0.5]{extend-type-flow.pdf} \label{fig:extend-type-flow}}
 \hspace{2cm}
-\subfigure[Extended relation by Definition~\ref{def:extension}(5)] {\includegraphics[scale=0.5]{extend-invocation.pdf} \label{fig:extend-invocation}}
+\subfigure[Extended relation by Definition~\ref{def:extension}(5)] {\includegraphics[scale=0.35]{extend-invocation.pdf} \label{fig:extend-invocation}}
 \caption{One round of relation generation for method $m()$ in Listing~\ref{lst:relation}}
 \label{fig:relations}
 \end{figure}
@@ -531,7 +531,7 @@ Given $x\lhflow{f}z$, $z'\less^*y$ and $z'\less^*x$, we need to show $y\lhflow{f
 %Given $x\lhflow{f\ *}z$, there exists
 Wlog., let $\xi(c)\in\VPT(z')$, then $\xi(c)\in\VPT(x)$ and $\xi(c)\in\VPT(y)$. Then $\VPT(z)\subseteq\HPT(\xi(c),f)$ by $\xi(c)\in\VPT(x)$ and $x\lhflow{f}z$. Therefore we have $y\lhflow{f\ *}z$ by the existence of $\xi(c)$.
 
-\item[-] \textbf{Def~\ref{def:extension}(3).} For each statement $x = y.f$, given $y\lhflow{f\ *}z$, we need to show $z\less^* x$. Equivalently, by definition there exists $o\in\VPT(y)$ such that $\VPT(z)\subseteq\HPT(o_1,f)$. Given the statement $x = y.f$, for all $o'\in \VPT(y)$ $\HPT(o',f)\subseteq\VPT(x)$, therefore by existence of $o$, we have $\VPT(z)\subseteq\VPT(x)$, the definition of $z\less^* x$.
+\item[-] \textbf{Def~\ref{def:extension}(3).} For each statement $x = y.f$, given $y\lhflow{f\ *}z$, we need to show $z\less^* x$. Equivalently, by definition there exists $o\in\VPT(y)$ such that $\VPT(z)\subseteq\HPT(o,f)$. Given the statement $x = y.f$, for all $o'\in \VPT(y)$ $\HPT(o',f)\subseteq\VPT(x)$, therefore by existence of $o$, we have $\VPT(z)\subseteq\VPT(x)$, the definition of $z\less^* x$.
 \item[-] \textbf{Def~\ref{def:extension}(4).} The first case that $c\tflow y$ implies $c\tflow^* y$ is trivial. Let $c\tflow^* x$ and $x\less^*y$, we need to show that $c\tflow^*y$. Since $\xi(c)\in\VPT(x)$ and $\VPT(x)\subseteq\VPT(x)$, we have $\xi(c)\in\VPT(y)$, which is equivalent to $c\tflow^*y$, as required.
 
 \item[-] \textbf{Def~\ref{def:extension}(5).} For each call site $x = y.m(z)$, and $\xi(c)\in\VPT(y)$ such that method $m()$ is defined in $c$, we need to show the following conditions.
@@ -763,7 +763,7 @@ We try to provide answers to these two questions as discussed in section~\ref{su
 
 \subsection{Analysis on Performance}\label{subsec:efficiency}
 
-We have executed all SPECjvm2008 benchmark programs $10$ times with the CHA, PTA and TFA algorithms. Then we calculate the average time consumption (in seconds) as displayed at column \textbf{T$_{CHA}$}(s), \textbf{T$_{PTA}$}(s) and \textbf{T$_{TFA}$}(s) in Table~\ref{table:TimeCost}. We also list the sizes of the generated relations (\ie, the type flow relation `$\tflow$', variable partial order `$\less$' and the field access relation `$\hflow$'), which provide an estimation of input size for the problems we are treating. The result confirms that our approach consumes more time than CHA, which is reasonable, as CHA does not apply any propagation on types, but only analyzes the class and interface hierarchy structure.\footnote{Note that we have implemented the current CHA algorithm by using the class hierarchy structure provided in the Soot framework. The default CHA implementation in Soot runs much slower, as shown in our earlier experiment result in~\cite{ZhuoZ19}.} TFA is in general more efficient than points-to analysis. In general, the run-time cost of TFA increases on benchmarks with larger size of generated relations as well as higher relational complexity, as most of the computation time in TFA is spent on calculating a fixpoint (\eg, on benchmark $check$ the number of generated relations reach to $34,406$, on which TFA spends the most amount of time($3.52s$) among all benchmarks). We conjecture that PTA is slower than TFA because it requires extra time for maintaining and updating a heap abstraction.
+We have executed all SPECjvm2008 benchmark programs $10$ times with the CHA, PTA and TFA algorithms. Then we calculate the average time consumption (in seconds) as displayed at column \textbf{T$_{CHA}$}(s), \textbf{T$_{PTA}$}(s) and \textbf{T$_{TFA}$}(s) in Table~\ref{table:TimeCost}. We also list the sizes of the generated relations (\ie, the type flow relation `$\tflow$', variable partial order `$\less$' and the field access relation `$\hflow$'), which provide an estimation of input size for the problems we are treating. The result confirms that our approach consumes more time than CHA, which is reasonable, as CHA does not apply any propagation on types, but only analyzes the class and interface hierarchy structure.\footnote{Note that we have implemented the current CHA algorithm by using the class hierarchy structure provided in the Soot framework. The default CHA implementation in Soot runs much slower, as shown in our earlier experiment result in~\cite{ZhuoZ19}.} TFA is in general more efficient than points-to analysis. In general, the run-time cost of TFA increases on benchmarks with larger size of generated relations as well as higher relational complexity, as most of the computation time in TFA is spent on calculating a fixpoint (\eg, on benchmark $startup$ the number of generated relations reach to $32,118$, on which TFA spends the most amount of time($1.46s$) among all benchmarks). We conjecture that PTA is slower than TFA because it requires extra time for maintaining and updating a heap abstraction.
 
 %\begin{figure}
 %\centering
@@ -781,7 +781,7 @@ We have executed all SPECjvm2008 benchmark programs $10$ times with the CHA, PTA
 	\hline
 	\textbf{Benchmark} & \hspace{-2pt}\textbf{T$_{\textsf{CHA}}(s)$}& \hspace{-2pt}\textbf{T$_{\textsf{PTA}}(s)$} & \hspace{-2pt}\textbf{T$_{\textsf{TFA}}(s)$} & \hspace{2pt}\textbf{R$_{\tflow}$}\hspace{2pt} & \hspace{2pt}\textbf{R$_{\less}$}\hspace{2pt} & \hspace{2pt}\textbf{R${\rightarrow}$}\hspace{2pt} &\textbf{R$_{total}$}\\
 	\hline
-check & 0.35 & 69.32 & 3.52 & 8718 & 15599 & 10089 & 34406\\
+check & 0.35 & 69.32 & 0.86 & 8232 & 12417 & 1836 & 22485\\
 compiler & 0.27 & 70.34 & 1.14 & 7781 & 11277 & 1990 & 21048\\
 compress & 0.28 & 71.73 & 1.09 & 7428 & 10947 & 1876 & 20251\\
 crypto & 0.25 & 69.22 & 1.13 & 7575 & 11220 & 1846 & 20641\\
@@ -1063,11 +1063,11 @@ In this section we briefly review the factors that hamper the performance of our
 \paragraph{Reflective calls.} Reflection is an advanced feature in the Java programming language which provides the ability to inspect and manipulate a Java class at run-time. It brings in extra complexity to programs and its behaviour is hard to predict statically. In Listing~\ref{lst:reflection} we show a sample code using reflection in one of the benchmark programs to discuss how reflection works and what our treatment is. Note that this is an example we have simplified from the real code in order to concentrate on the main functionality of reflection. We discuss in three cases.
 \begin{itemize}
 \item Object Creation.
-From line $6$ to line $10$, a new obejct of type $SPECJVMBenchmarkBase$ is created by method $newInstance()$ on variable $c$ at line $10$, where $c$ is an object of $Constructor$ type and it refers to a specific constructor of class $SPECJVMBenchmarkBase$. In the TFA analysis, we discard the type information of the new object in such a case because it is usually difficult to statically identify which constructor is invoked. For example, At line $6$, if statement $Class.forName()$ receives a string argument from the outside such as file input and user input, it is usually not easy to find out the real type of $benchmarkClass$. As a result, the run time type of $c$ and $benchmark$ cannot be identified.
+From line $6$ to line $11$, a new obejct of type $SPECJVMBenchmarkBase$ is created by method $newInstance()$ on variable $c$ at line $11$, where $c$ is an object of $Constructor$ type and it refers to a specific constructor of class $SPECJVMBenchmarkBase$. In the TFA analysis, we discard the type information of the new object in such a case because it is usually difficult to statically identify which constructor is invoked. For example, At line $6$, if statement $Class.forName()$ receives a string argument from the outside such as file input and user input, it is usually not easy to find out the real type of $benchmarkClass$. As a result, the run time type of $c$ and $benchmark$ cannot be identified.
 \item Method Invocation.
-After a new object is instantiated, we can get an object of $Method$ type, referring to a specific method of a class, and call this method by the method $invoke()$ (line $17$). This effect is similar to a normal invocation at line $12$. The invocation receiver is passed to the first argument of $invoke()$. In a case of static invocation, a \textbf{null} reference is passed to the first argument. We do not consider this way of reflective method invocation in TFA, for the same reason as we discuss about object creation.
+After a new object is instantiated, we can get an object of $Method$ type, referring to a specific method of a class, and call this method by the method $invoke()$ (line $19$). This effect is similar to a normal invocation at line $13$. The invocation receiver is passed to the first argument of $invoke()$. In a case of static invocation, a \textbf{null} reference is passed to the first argument. We do not consider this way of reflective method invocation in TFA, for the same reason as we discuss about object creation.
 \item Field Modification.
-The way to change a field using reflection is similar to processing method invocation. The line $24-25$ illustrate changing value of field $f$ on object $benchmark$ to a new object. %We discard this effect as well because of the difficulty on analyzing which class holds the target field.
+The way to change a field using reflection is similar to processing method invocation. The line $27-28$ illustrate changing value of field $f$ on object $benchmark$ to a new object. %We discard this effect as well because of the difficulty on analyzing which class holds the target field.
 We do not handle this effect in TFA, either.
 \end{itemize}
 
@@ -1127,7 +1127,7 @@ public class A {
 
 %\subsubsection{Library}\label{subsubsec:library}
 
-\paragraph{Library call.} Library calls included in an application (\eg, JDK libraries, third-party libraries) are usually in pre-compiled bit code format, and their source code is often large and not made explicitly available. Listing~\ref{lst:jdk} shows a common case of JDK invocation. We do not analyze the detailed logic inside library code which are written at line $10-11$. Instead, we perform an over approximation on library invocation, based on the method definition which appears at line $9$. We assume that library invocation will return the definition type and any subtype of this definition type as the result type. For Listing~\ref{lst:jdk}, $sb2$ will receive $\{StringBuilder,\ any\_subtype\_of\_StringBuilder\}$ as the set of reaching types under this strategy.
+\paragraph{Library call.} Library calls included in an application (\eg, JDK libraries, third-party libraries) are usually in pre-compiled bit code format, and their source code is often large and not made explicitly available. Listing~\ref{lst:jdk} shows a common case of JDK invocation. We do not analyze the detailed logic inside library code which are written at line $8$. Instead, we perform an over approximation on library invocation, based on the method definition which appears at line $8$. We assume that library invocation will return the definition type and any subtype of this definition type as the result type. For Listing~\ref{lst:jdk}, $sb2$ will receive $\{StringBuilder,\ any\_subtype\_of\_StringBuilder\}$ as the set of reaching types under this strategy.
 
 %\begin{minipage}{0.95\linewidth}
 %\vspace{5pt}
@@ -1151,9 +1151,9 @@ public void m() {
 \begin{lstlisting}[caption={Example code for array accesses},label={lst:array}]
 public void m() {
 	Object[] arr = new Object[2]{};
-	arr[1] = new A();
-	arr[2] = new B();
-	Object b = arr[1];  <---
+	arr[0] = new A();
+	arr[1] = new B();
+	Object b = arr[0];  <---
 }
 \end{lstlisting}
 %\end{minipage}
