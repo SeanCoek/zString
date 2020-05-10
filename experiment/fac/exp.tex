@@ -17,34 +17,36 @@
 \begin{document}
 
 % Recall with library
-\begin{table}[!htbp]\centering
-\begin{threeparttable}[b]
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-	\hline
-	\multirow{2}{*}{\textbf{Benchmark}} & \multirow{2}{*}{\textbf{Dynamic}} & \multicolumn{3}{c|}{\textbf{CHA}} & \multicolumn{3}{c|}{\textbf{VTA}} & \multicolumn{3}{c|}{\textbf{PTA}} & \multicolumn{3}{c|}{\textbf{TFA}}\\
-\cline{3-14} &  & \textit{TP} & \textit{FN} & \textit{Recall} & \textit{TP} & \textit{FN} & \textit{Recall}& \textit{TP} & \textit{FN} & \textit{Recall} & \textit{TP} & \textit{FN} & \textit{Recall}\\
-	\hline
-	\hline
-check & 149 & 149 & 0 & 1.000 & 116 & 33 & 0.779 & 116 & 33 & 0.779 & 145 & 4 & 0.973\\
-compiler & 487 & 486 & 1 & 0.998 & 297 & 190 & 0.610 & 300 & 187 & 0.616 & 466 & 21 & 0.957\\
-compress & 351 & 351 & 0 & 1.000 & 247 & 104 & 0.704 & 313 & 38 & 0.892 & 313 & 38 & 0.892\\
-crypto & 449 & 449 & 0 & 1.000 & 279 & 170 & 0.621 & 349 & 100 & 0.777 & 406 & 43 & 0.904\\
-derby & 583 & 583 & 0 & 1.000 & 352 & 231 & 0.604 & 433 & 150 & 0.743 & 549 & 34 & 0.942\\
-helloworld & 21 & 21 & 0 & 1.000 & 20 & 1 & 0.952 & 20 & 1 & 0.952 & 21 & 0 & 1.000\\
-mpegaudio & 254 & 254 & 0 & 1.000 & 213 & 41 & 0.839 & 232 & 22 & 0.913 & 246 & 8 & 0.969\\
-scimark & 377 & 377 & 0 & 1.000 & 283 & 94 & 0.751 & 349 & 28 & 0.926 & 367 & 10 & 0.973\\
-serial & 451 & 451 & 0 & 1.000 & 298 & 153 & 0.661 & 340 & 111 & 0.754 & 399 & 52 & 0.885\\
-startup & 1344 & 1337 & 7 & 0.995 & 1048 & 296 & 0.780 & 1117 & 227 & 0.831 & 1096 & 248 & 0.815\\
-sunflow & 225 & 225 & 0 & 1.000 & 200 & 25 & 0.889 & 200 & 25 & 0.889 & 214 & 11 & 0.951\\
-xml & 513 & 513 & 0 & 1.000 & 315 & 198 & 0.614 & 407 & 106 & 0.793 & 459 & 54 & 0.895\\
-	\hline
-\end{tabular}
-\begin{tablenotes}
-  \item[1] \textbf{Dynamic} denotes the number of dynamic records.
-  \item[2] \textit{TP}, \textit{FN} denote true positive, false nagative of different algorithms, respectively.
-\end{tablenotes}
-\end{threeparttable}
-\end{table}
+%\begin{table}[!htbp]\centering
+%\begin{threeparttable}[b]
+%\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+%	\hline
+%	\multirow{2}{*}{\textbf{Benchmark}} & \multirow{2}{*}{\textbf{Dynamic}} & \multicolumn{3}{c|}{\textbf{CHA}} & \multicolumn{3}{c|}{\textbf{VTA}} & \multicolumn{3}{c|}{\textbf{PTA}} & \multicolumn{3}{c|}{\textbf{TFA}}\\
+%\cline{3-14} &  & \textit{TP} & \textit{FN} & \textit{Recall} & \textit{TP} & \textit{FN} & \textit{Recall}& \textit{TP} & \textit{FN} & \textit{Recall} & \textit{TP} & \textit{FN} & \textit{Recall}\\
+%	\hline
+%	\hline
+%check & 149 & 149 & 0 & 1.000 & 116 & 33 & 0.779 & 116 & 33 & 0.779 & 145 & 4 & 0.973\\
+%compiler & 487 & 486 & 1 & 0.998 & 297 & 190 & 0.610 & 300 & 187 & 0.616 & 466 & 21 & 0.957\\
+%compress & 351 & 351 & 0 & 1.000 & 247 & 104 & 0.704 & 313 & 38 & 0.892 & 313 & 38 & 0.892\\
+%crypto & 449 & 449 & 0 & 1.000 & 279 & 170 & 0.621 & 349 & 100 & 0.777 & 406 & 43 & 0.904\\
+%derby & 583 & 583 & 0 & 1.000 & 352 & 231 & 0.604 & 433 & 150 & 0.743 & 549 & 34 & 0.942\\
+%helloworld & 21 & 21 & 0 & 1.000 & 20 & 1 & 0.952 & 20 & 1 & 0.952 & 21 & 0 & 1.000\\
+%mpegaudio & 254 & 254 & 0 & 1.000 & 213 & 41 & 0.839 & 232 & 22 & 0.913 & 246 & 8 & 0.969\\
+%scimark & 377 & 377 & 0 & 1.000 & 283 & 94 & 0.751 & 349 & 28 & 0.926 & 367 & 10 & 0.973\\
+%serial & 451 & 451 & 0 & 1.000 & 298 & 153 & 0.661 & 340 & 111 & 0.754 & 399 & 52 & 0.885\\
+%startup & 1344 & 1337 & 7 & 0.995 & 1048 & 296 & 0.780 & 1117 & 227 & 0.831 & 1096 & 248 & 0.815\\
+%sunflow & 225 & 225 & 0 & 1.000 & 200 & 25 & 0.889 & 200 & 25 & 0.889 & 214 & 11 & 0.951\\
+%xml & 513 & 513 & 0 & 1.000 & 315 & 198 & 0.614 & 407 & 106 & 0.793 & 459 & 54 & 0.895\\
+%\hline
+%\textbf{total} & & & & \textbf{0.999} & & & \textbf{0.734} & & & \textbf{0.822} & & & \textbf{0.930} \\
+%	\hline
+%\end{tabular}
+%\begin{tablenotes}
+%  \item[1] \textbf{Dynamic} denotes the number of dynamic records.
+%  \item[2] \textit{TP}, \textit{FN} denote true positive, false nagative of different algorithms, respectively.
+%\end{tablenotes}
+%\end{threeparttable}
+%\end{table}
 
 
 %% Recall without library
@@ -68,6 +70,8 @@ xml & 513 & 513 & 0 & 1.000 & 315 & 198 & 0.614 & 407 & 106 & 0.793 & 459 & 54 &
 %startup & 1344 & 1337 & 7 & 0.995 & 1048 & 296 & 0.780 & 1117 & 227 & 0.831 & 804 & 540 & 0.598\\
 %sunflow & 225 & 225 & 0 & 1.000 & 200 & 25 & 0.889 & 200 & 25 & 0.889 & 192 & 33 & 0.853\\
 %xml & 513 & 513 & 0 & 1.000 & 315 & 198 & 0.614 & 407 & 106 & 0.793 & 377 & 136 & 0.735\\
+%\hline
+%\textbf{total} & & & & \textbf{0.999} & & & \textbf{0.734} & & & \textbf{0.822} & & & \textbf{0.741} \\
 %	\hline
 %\end{tabular}
 %%\begin{tablenotes}
@@ -101,6 +105,8 @@ xml & 513 & 513 & 0 & 1.000 & 315 & 198 & 0.614 & 407 & 106 & 0.793 & 459 & 54 &
 %startup & 1344 & 1337 & 1700 & 0.440 & 1048 & 837 & 0.556 & 1117 & 1021 & 0.522 & 1096 & 989 & 0.526\\
 %sunflow & 225 & 225 & 50 & 0.818 & 200 & 0 & 1.000 & 200 & 0 & 1.000 & 214 & 23 & 0.903\\
 %xml & 513 & 513 & 322 & 0.614 & 315 & 4 & 0.987 & 407 & 60 & 0.872 & 459 & 122 & 0.790\\
+%\hline
+%\textbf{total} & & & & \textbf{0.674} & & & \textbf{0.957} & & & \textbf{0.853} & & & \textbf{0.811} \\
 %	\hline
 %\end{tabular}
 %\begin{tablenotes}
@@ -132,6 +138,8 @@ xml & 513 & 513 & 0 & 1.000 & 315 & 198 & 0.614 & 407 & 106 & 0.793 & 459 & 54 &
 %startup & 1344 & 1337 & 1700 & 0.440 & 1048 & 837 & 0.556 & 1117 & 1021 & 0.522 & 804 & 792 & 0.504\\
 %sunflow & 225 & 225 & 50 & 0.818 & 200 & 0 & 1.000 & 200 & 0 & 1.000 & 192 & 12 & 0.941\\
 %xml & 513 & 513 & 322 & 0.614 & 315 & 4 & 0.987 & 407 & 60 & 0.872 & 377 & 84 & 0.818\\
+%\hline
+%\textbf{total} & & & & \textbf{0.674} & & & \textbf{0.957} & & & \textbf{0.853} & & & \textbf{0.878} \\
 %	\hline
 %\end{tabular}
 %%\begin{tablenotes}
@@ -142,36 +150,88 @@ xml & 513 & 513 & 0 & 1.000 & 315 & 198 & 0.614 & 407 & 106 & 0.793 & 459 & 54 &
 %\end{table}
 
 
-%% runtime cost
+%% Runtime cost
+\begin{table}[!htbp]\centering
+\begin{threeparttable}[b]
+%\begin{table}[!htbp]\centering
+\begin{tabular}{lccccccc}
+	\hline
+	\textbf{Benchmark} & \hspace{5pt}\textbf{T$_{\textsf{CHA}}(s)$}& \hspace{5pt}\textbf{T$_{\textsf{PTA}}(s)$} & \hspace{5pt}\textbf{T$_{\textsf{TFA}}(s)$} & \hspace{10pt}\textbf{R${\tflow}$}\hspace{10pt} & \hspace{10pt}\textbf{R$_{\less}$}\hspace{10pt} & \hspace{10pt}\textbf{R${\rightarrow}$}\hspace{10pt} &\textbf{R$_{total}$}\\
+	\hline
+check & 0.35 & 69.32 & 0.86 & 8232 & 12417 & 1836 & 22485\\
+compiler & 0.27 & 70.34 & 1.14 & 7781 & 11277 & 1990 & 21048\\
+compress & 0.28 & 71.73 & 1.09 & 7428 & 10947 & 1876 & 20251\\
+crypto & 0.25 & 69.22 & 1.13 & 7575 & 11220 & 1846 & 20641\\
+derby & 0.31 & 70.79 & 1.38 & 7979 & 11450 & 2034 & 21463\\
+helloworld & 0.25 & 70.44 & 1.25 & 7230 & 10543 & 1828 & 19601\\
+mpegaudio & 0.25 & 69.13 & 1.04 & 7279 & 10612 & 1830 & 19721\\
+scimark & 0.24 & 71.01 & 1.15 & 7451 & 11344 & 1845 & 20640\\
+serial & 0.43 & 69.20 & 1.07 & 7683 & 10977 & 1886 & 20546\\
+startup & 0.47 & 134.09 & 1.46 & 11597 & 17870 & 2651 & 32118\\
+sunflow & 0.25 & 71.26 & 1.07 & 7245 & 10560 & 1830 & 19635\\
+xml & 0.45 & 140.72 & 1.24 & 7837 & 11673 & 2016 & 21526\\
+	\hline
+\end{tabular}
+%\caption{Runtime cost with different analysis}
+%\label{fig:TimeCost}
+\begin{tablenotes}
+  \item[1] \textbf{R}$_{relation}$ denotes different type of relation we generated.
+\end{tablenotes}
+%\end{table}
+\end{threeparttable}
+\end{table}
+
+
+%Coverage
 %\begin{table}[!htbp]\centering
 %\begin{threeparttable}[b]
-%%\begin{table}[!htbp]\centering
-%\begin{tabular}{lccccccc}
-%	\hline
-%	\textbf{Benchmark} & \hspace{5pt}\textbf{T$_{\textsf{CHA}}(s)$}& \hspace{5pt}\textbf{T$_{\textsf{PTA}}(s)$} & \hspace{5pt}\textbf{T$_{\textsf{TFA}}(s)$} & \hspace{10pt}\textbf{R${\tflow}$}\hspace{10pt} & \hspace{10pt}\textbf{R$_{\less}$}\hspace{10pt} & \hspace{10pt}\textbf{R${\rightarrow}$}\hspace{10pt} &\textbf{R$_{total}$}\\
-%	\hline
-%check & 0.35 & 69.32 & 3.52 & 8718 & 15599 & 10089 & 34406\\
-%compiler & 0.27 & 70.34 & 1.14 & 7781 & 11277 & 1990 & 21048\\
-%compress & 0.28 & 71.73 & 1.09 & 7428 & 10947 & 1876 & 20251\\
-%crypto & 0.25 & 69.22 & 1.13 & 7575 & 11220 & 1846 & 20641\\
-%derby & 0.31 & 70.79 & 1.38 & 7979 & 11450 & 2034 & 21463\\
-%helloworld & 0.25 & 70.44 & 1.25 & 7230 & 10543 & 1828 & 19601\\
-%mpegaudio & 0.25 & 69.13 & 1.04 & 7279 & 10612 & 1830 & 19721\\
-%scimark & 0.24 & 71.01 & 1.15 & 7451 & 11344 & 1845 & 20640\\
-%serial & 0.43 & 69.20 & 1.07 & 7683 & 10977 & 1886 & 20546\\
-%startup & 0.47 & 134.09 & 1.46 & 11597 & 17870 & 2651 & 32118\\
-%sunflow & 0.25 & 71.26 & 1.07 & 7245 & 10560 & 1830 & 19635\\
-%xml & 0.45 & 140.72 & 1.24 & 7837 & 11673 & 2016 & 21526\\
-%	\hline
+%\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|}
+%\hline
+% & check & compiler & compress & crypto & derby & helloworld & mpegaudio & scimark & serial & startup & sunflow & xml\\
+%\hline
+%\hline
+%\textbf{dynamic} & 21 & 57 & 53 & 27 & 64 & 5 & 11 & 89 & 81 & 10 & 6 & 57\\
+%\textbf{static} & 39 & 81 & 55 & 34 & 76 & 8 & 12 & 116 & 121 & 11 & 7 & 73\\
+%\textit{coverage} & 0.54 & 0.70 & 0.96 & 0.79 & 0.84 & 0.62 & 0.92 & 0.77 & 0.67 & 0.91 & 0.86 & 0.78\\
+%\hline
 %\end{tabular}
-%%\caption{Runtime cost with different analysis}
-%%\label{fig:TimeCost}
 %\begin{tablenotes}
-%  \item[1] \textbf{R}$_{relation}$ denotes different type of relation we generated.
+%  \item[1] \textbf{dynamic} denotes the number of reached methods at runtime.
+%  \item[2] \textbf{static} denotes the number of defined methods, excluding abstract methods.
+%  \item[3] $\textit{coverage} = \textbf{dynamic}\ /\ \textbf{static}$.
 %\end{tablenotes}
-%%\end{table}
 %\end{threeparttable}
 %\end{table}
 
+
+%%Coverage By Different Analysis
+%\begin{table}[!htbp]\centering
+%\begin{threeparttable}[b]
+%\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|}
+%	\hline
+%	\multirow{2}{*}{\textbf{Benchmark}} & \multirow{2}{*}{\textbf{Dynamic}} & \multicolumn{2}{c|}{\textbf{CHA}} & \multicolumn{2}{c|}{\textbf{VTA}} & \multicolumn{2}{c|}{\textbf{PTA}} & \multicolumn{2}{c|}{\textbf{TFA}}\\
+%\cline{3-10} &  & \textit{static} & \textit{converage} & \textit{static} & \textit{converage} & \textit{static} & \textit{converage} & \textit{static} & \textit{converage} \\
+%	\hline
+%	\hline
+%check & 26 & 714 & 27.5x & 389 & 15.0x & 389 & 15.0x & 714 & 27.5x \\
+%compiler & 96 & 686 & 7.1x & 316 & 3.3x & 316 & 3.3x & 686 & 7.1x \\
+%compress & 93 & 660 & 7.1x & 318 & 3.4x & 318 & 3.4x & 660 & 7.1x \\
+%crypto & 72 & 639 & 8.9x & 318 & 4.4x & 318 & 4.4x & 639 & 8.9x \\
+%derby & 103 & 681 & 6.6x & 315 & 3.1x & 315 & 3.1x & 681 & 6.6x \\
+%helloworld & 11 & 613 & 55.7x & 317 & 28.8x & 317 & 28.8x & 613 & 55.7x \\
+%mpegaudio & 52 & 617 & 11.9x & 316 & 6.1x & 316 & 6.1x & 617 & 11.9x \\
+%scimark & 128 & 721 & 5.6x & 324 & 2.5x & 324 & 2.5x & 721 & 5.6x \\
+%serial & 119 & 726 & 6.1x & 316 & 2.7x & 316 & 2.7x & 726 & 6.1x \\
+%startup & 209 & 616 & 2.9x & 431 & 2.1x & 431 & 2.1x & 616 & 2.9x \\
+%sunflow & 45 & 612 & 13.6x & 315 & 7.0x & 315 & 7.0x & 612 & 13.6x \\
+%xml & 109 & 678 & 6.2x & 318 & 2.9x & 318 & 2.9x & 678 & 6.2x \\
+%	\hline
+%\end{tabular}
+%\begin{tablenotes}
+%  \item[1] \textbf{Dynamic} denotes the number of dynamically reaching methods.
+%  \item[2] $\textit{coverage} = \textit{static}\ /\ \textbf{Dynamic}$.
+%\end{tablenotes}
+%\end{threeparttable}
+%\end{table}
 
 \end{document}
